@@ -8,6 +8,6 @@
 - I ran `python main.py --assignment-folder assignments/food-webs/ --output-folder results/food-webs` to get current results. The output failed twice and then the third time it passed all tests without further generation.
 
 ## TODO:
-1. Reduce the size of input for larger python files that cannot be pasted to the API
-2. Switch to a diffing approach instead of asking the model to generate all files each generation
+1. Switch to a diffing approach instead of asking the model to generate all files each generation
+  - Not sure this is a good idea any more. Seems like its better to just retry multiple times rather than trying to fix the output.
 
