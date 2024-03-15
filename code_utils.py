@@ -7,16 +7,17 @@ import shutil
 def extract_files(document_content):
     sections = document_content.split('```')
     files = []
+
     for section in sections:
-        if section.strip().startswith('python\n###'):
+        if section.strip().startswith('python\n###') or section.strip().startswith('plaintext\n###'):
             # Process the section
-            header_and_code = section.split('\n', 1)[1]  # Skip the 'python' line
-            header, code = header_and_code.split('\n', 1)
+            header_and_content = section.split('\n', 1)[1]  # Skip the first line indicating language/type
+            header, content = header_and_content.split('\n', 1)
             header = header.strip('#').strip()  # Remove leading and trailing # and spaces
             filename = ''
             is_provided = False
 
-            # Parse the header for filename and provided status
+            # Determine if the file is marked as provided
             if '- PROVIDED' in header:
                 filename, _ = header.split('- PROVIDED')
                 is_provided = True
@@ -24,18 +25,15 @@ def extract_files(document_content):
                 filename = header
 
             filename = filename.strip()
-            # Search for .py in the parsed filename or any part if it's in a longer string
-            if '.py' not in filename:
-                parts = filename.split()
-                for part in parts:
-                    if '.py' in part:
-                        filename = part
-                        break
 
-            # Clean up code content, ensuring it does not start with a newline
-            code_content = code.strip()
+            # For plaintext files without a clear .txt in the header, set a default .txt extension
+            if 'plaintext\n###' in section and not filename.endswith('.txt'):
+                filename += '.txt'
 
-            files.append((filename, code_content, is_provided))
+            # Clean up code/content, ensuring it does not start with a newline
+            content = content.strip()
+
+            files.append((filename, content, is_provided))
 
     return files
 
@@ -49,33 +47,37 @@ def save_files_to_tmp(files):
     return tmp_dir
 
 def run_tests(files, cleanup=True):
+    # Save files to a temporary directory
     tmp_dir = save_files_to_tmp(files)
-    test_suite = unittest.TestLoader().discover(tmp_dir, pattern='test_*.py')
     
-    # Create a StringIO object to capture the test output
-    test_output = io.StringIO()
+    # Save the current working directory
+    original_cwd = os.getcwd()
     
-    # Create a TextTestRunner with the StringIO object as the stream
-    test_runner = unittest.TextTestRunner(stream=test_output)
+    # Change the current working directory to the temporary directory
+    os.chdir(tmp_dir)
     
-    # Run the tests
-    test_result = test_runner.run(test_suite)
+    try:
+        test_suite = unittest.TestLoader().discover('.', pattern='test_*.py')
+        
+        test_output = io.StringIO()
+        test_runner = unittest.TextTestRunner(stream=test_output)
+        test_result = test_runner.run(test_suite)
+        
+        test_results = test_output.getvalue()
+    finally:
+        # Close the StringIO object
+        test_output.close()
+        
+        # Change back to the original directory
+        os.chdir(original_cwd)
+        
+        # Clean up the temporary directory if the cleanup flag is True
+        if cleanup:
+            shutil.rmtree(tmp_dir)
     
-    # Get the captured output as a string
-    test_results = test_output.getvalue()
-    
-    # Close the StringIO object
-    test_output.close()
-    
-    # Check if all tests passed
     all_tests_passed = test_result.wasSuccessful()
     
-    # Clean up the temporary directory if the cleanup flag is True
-    if cleanup:
-        shutil.rmtree(tmp_dir)
-    
     return all_tests_passed, test_results
-
 
 if __name__=="__main__":
     with open("response.txt", "r") as file:

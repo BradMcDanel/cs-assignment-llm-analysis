@@ -55,6 +55,8 @@ Instructions:
 	if __name__ == '__main__':
 	    unittest.main()
 	```
+- If a write-up (often a .txt) is required as part of the submission, you should include that at the end of your response.
+  - Sometimes, a template will be provided for you to fill in. Please ensure you fill in the template as part of your response.
 - Before writing code, think step-by-step what you want to do and write the steps as comments.
   - Ensure that you start by indentifying which files you can copy over as `PROVIDED` and which you need to implement.
   - Create a complete list of all files ahead of time before writing any code.
@@ -64,6 +66,7 @@ Example Response:
 2. Based on the description, create a new file `mymath.py` and implement the `add` function.
 3. Create a new file `main.py` and implement the `main` entrypoint.
 4. Create a new file `test_main.py` and implement the `TestMain` class using mocking.
+5. Complete the provided `write-up.txt` file and answer all the questions to the best of my ability.
 
 ```python
 ### utils/rand_utils.py - PROVIDED ###
@@ -114,3 +117,7 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
+```plaintext
+### write-up.txt ###
+In this assignment, I learned the importance of...
+```

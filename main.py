@@ -58,6 +58,18 @@ def postprocess_python(file_string):
     file_string = trim_collections(file_string)
     return file_string
 
+def postprocess_csv(file_string, n=20):
+    lines = file_string.split('\n')
+    total_lines = len(lines)
+    
+    if total_lines <= 2*n:
+        # If total lines are less than or equal to 2n, return the original string
+        return file_string
+    else:
+        # Keep the first n lines and the last n lines
+        trimmed_lines = lines[:n] + lines[-n:]
+        return '\n'.join(trimmed_lines)
+
 FILE_TYPES = {
     ".pdf": {
     "process_func": process_pdf,
@@ -66,6 +78,10 @@ FILE_TYPES = {
     ".txt": {
         "process_func": lambda path: open(path, "r").read(),
         "postprocess_func": lambda s: s,
+    },
+    ".csv": {
+        "process_func": lambda path: open(path, "r").read(),
+        "postprocess_func": postprocess_csv,
     },
     ".py": {
         "process_func": lambda path: open(path, "r").read(),
@@ -125,11 +141,11 @@ if __name__ == "__main__":
     ]
 
     # call LLM
-    response = llm.call(messages, model="gpt-4-turbo-preview", max_tokens=4096, temperature=0.7)
-    messages.append({"role": "assistant", "content": response})
-    print(response)
-
     for attempt in range(MAX_PASS_ATTEMPTS):
+        response = llm.call(messages, model="gpt-4-turbo-preview", max_tokens=4096, temperature=0.7)
+        messages.append({"role": "assistant", "content": response})
+        print(response)
+
         generated_files = code_utils.extract_files(response)
 
         for i, (filename, code_content, is_provided) in enumerate(generated_files):
@@ -140,9 +156,12 @@ if __name__ == "__main__":
                 else:
                     raise ValueError(f"File {filename} not found in the original files.")
 
-        for filename, code_content, is_provided in generated_files:
-            print(f"Generated {filename}, provided: {is_provided}")
-            print(code_content)
+        # also copy over all .txt and .csv files that were not generated
+        for filename, file_string in file_dict.items():
+            if filename not in [f[0] for f in generated_files]:
+                ext = os.path.splitext(filename)[1]
+                if ext in [".txt", ".csv"]:
+                    generated_files.append((filename, file_string, True))
 
         all_passed, test_results = code_utils.run_tests(generated_files, cleanup=False)
 
@@ -154,9 +173,6 @@ if __name__ == "__main__":
 
             fix = replace_placeholders(fix_prompt, {"test_results": test_results})
             messages.append({"role": "user", "content": fix})
-
-            response = llm.call(messages, model="gpt-4-turbo-preview", max_tokens=4096, temperature=0.7)
-            messages.append({"role": "assistant", "content": response})
 
     if not all_passed:
         print("All attempts failed")
