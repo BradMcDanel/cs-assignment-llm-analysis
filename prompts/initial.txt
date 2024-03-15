@@ -1,7 +1,7 @@
-Assignment to solve:
+***Assignment to solve***
 <|assignment|>
 
-Instructions:
+***Instructions***
 - Your response should consist of python codeblocks.
 - The first line of each codeblock should be a comment with the filename.
 - If starter code is provided, you must re-write a complete version of each starter file in your response.
@@ -61,7 +61,7 @@ Instructions:
   - Ensure that you start by indentifying which files you can copy over as `PROVIDED` and which you need to implement.
   - Create a complete list of all files ahead of time before writing any code.
 
-Example Response:
+***Example Response***
 1. Copy over the provided `utils/rand_utils.py` file.
 2. Based on the description, create a new file `mymath.py` and implement the `add` function.
 3. Create a new file `main.py` and implement the `main` entrypoint.

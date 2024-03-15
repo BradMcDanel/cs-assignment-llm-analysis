@@ -1,0 +1,82 @@
+***Provided Solution Code***
+<|assignment|>
+
+***Files to re-write is a simpler, more novice student-like way***
+<|modify_files|>
+
+***Instructions***
+- Your goal is to rewrite the provided solution file names in a more novice student-like way.
+- Your response should consist of python codeblocks.
+- Here are the types of strategies you should incorporate:
+  - Unnecessary variables: Creating variables for intermediate results that are only used once.
+  - Inefficient looping: Using a for loop with range(len(list)) instead of directly iterating over the list.
+  - Not using built-in functions: Manually implementing functionality that is already available through built-in functions or libraries.
+  - Overcomplicating logic: Using complex conditional statements where simpler ones would suffice.
+    - Specifically, use nested if-else statements instead of elif.
+    - Or strange use of loop conditions/variables.
+    - Or.... anything that makes the code more complex than it needs to be!
+  - Hardcoding values: Directly using values in the code instead of assigning them to variables or constants.
+  - Inconsistent naming conventions: Mixing different naming styles (e.g., snake_case and camelCase) for variables and functions.
+  - Lack of error handling: Not including try-except blocks to handle potential exceptions gracefully.
+  - Unnecessary casting: Explicitly converting types even when it's not required, such as str(input()) instead of just input().
+  - Printing for debugging: Leaving print statements in the code that were used for debugging purposes.
+    - That is, create print statements that no long are used and could break the program if uncommented.
+  - Redundant parentheses: Using parentheses around conditions in if statements, even when they are not needed due to operator precedence rules.
+- The above strategies are not exhaustive, but they should give you a good idea of what to look for.
+  - Use your best judgement on how to make the code extremely novice-like.
+- Before writing code, think step-by-step what you want to do and write the steps as comments.
+  - Specifically, think about how you can incorporate the strategies listed above into your response based on the code provided.
+  - Ensure that many of these strategies are incorporated into your response such that the code is truly novice-like and not just a simple re-write.
+- Note: You are not allowed to rename functions or arguments of functions, as these are used during testing. However, you can add/modify local variables inside functions.
+
+***Sample Solution code***
+```python
+### fizzbuzz.py ###
+def fizzbuzz(n):
+    for num in range(1, n + 1):
+        if num % 3 == 0 and num % 5 == 0:
+            print("FizzBuzz")
+        elif num % 3 == 0:
+            print("Fizz")
+        elif num % 5 == 0:
+            print("Buzz")
+        else:
+            print(num)
+
+fizzbuzz(100)
+```
+
+***Example Response***
+The conversion process begins by adding a long, single-line comment at the beginning of the code that repeats the problem statement in a poorly formatted and difficult-to-read manner. The indentation of the `if-else` statements inside the `fizzbuzz` function is then made inconsistent, making the code harder to read and understand. The concise `if-elif-else` structure is replaced with nested `if-else` statements, which are less efficient and make the code harder to follow. An unnecessary `num` variable is introduced to store the value of `i+1` inside the loop, even though `i+1` could be directly used in the conditions. The `numbers` list is created using a `for` loop and `append()` instead of the concise `[0] * 100` syntax, which is less efficient and more verbose. The variable `i` is used in the `for` loop to create the `numbers` list, even though it is not used, adding unnecessary complexity. The `fizzbuzz` function takes the `numbers` list as an argument, but the list is always created with a fixed size of 100, making the function less reusable and flexible. A commented out `print(num)` statement is added inside the loop, leaving commented out code in the final version, which is considered poor practice and can be confusing. Finally, a `print("Done")` statement is added at the end of the code, serving no real purpose and being redundant.
+
+
+```python
+### fizzbuzz.py ###
+
+# This is a program that prints the numbers from 1 to 100. But for multiples of three it prints "Fizz" instead of the number and for the multiples of five it prints "Buzz". For numbers which are multiples of both three and five it prints "FizzBuzz".
+
+
+def fizzbuzz(n):
+    for i in range(len(n)):
+        num = i+1
+        if num % 3 == 0:
+            if num % 5 == 0:
+                print("FizzBuzz")
+            else:
+                print("Fizz")
+        else:
+            if num % 5 == 0:
+                print("Buzz")
+            else:
+                print(str(num))
+        # print(num)
+
+numbers = []
+for i in range(100):
+    numbers.append(0)
+
+fizzbuzz(numbers)
+
+print("Done")
+```
+
