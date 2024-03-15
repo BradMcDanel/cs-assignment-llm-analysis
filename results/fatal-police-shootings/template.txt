@@ -1,0 +1,62 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The data from the Washington Post includes details of fatal police shootings in the United States, sourced from news reports, public records, social media, and other sources. It contains information such as the date, location, and characteristics (age, gender, race) of the individuals involved, as well as the circumstances of the shootings.
+
+Question 2:
+--------------------------------------------------------
+id - Unique identifier for each shooting incident. Examples: 3, 4, 5.
+date - The date of the shooting. Examples: 2015-01-02, 2015-01-03.
+threat_type - Describes the perceived threat level. Examples: "attack", "other".
+flee_status - Indicates if the individual was fleeing. Examples: "not", "car".
+armed_with - What, if anything, the individual was armed with. Examples: "gun", "knife".
+... (and so on for each column)
+
+Question 3:
+--------------------------------------------------------
+According to the United States Census Bureau, as of the latest data, Black or African American individuals make up approximately 13.4% of the United States population. Source: U.S. Census Bureau, 2019.
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The information stored in the database includes all columns from the CSV file, such as "id", "date", "threat_type", "flee_status", "armed_with", "city", "state", "latitude", "longitude", "name", "age", "gender", "race", and others.
+
+Question 2:
+--------------------------------------------------------
+The keys in the database are the unique identifiers of each shooting incident, as indicated by the "id" column.
+
+Question 3:
+--------------------------------------------------------
+The type of the values in the database is a dictionary, where each dictionary represents the details of a single shooting incident.
+
+Question 4:
+--------------------------------------------------------
+Each value stores information about a specific police shooting incident, including the name, date, whether the individual was armed, their age, gender, race, and the state the shooting occurred in. For example, an entry might include the name "John Doe", date "2023-01-19", armed_with "gun", age "34", gender "male", race "B", state "NY".
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The proportion of fatal police shootings with a black subject in our analysis was calculated to be higher than the proportion of black people in the United States population, indicating a potential disparity.
+
+Question 2:
+--------------------------------------------------------
+When focusing on unarmed fatal police shootings, the proportion with a black subject was found to be even higher compared to their representation in the general population. This disparity is also higher compared to the proportion of black subjects in all police shootings, suggesting significant racial biases in these incidents.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+This project was immensely informative and eye-opening. Working with real-world data allowed me to understand the gravity and complexity of fatal police shootings in the United States. The disparities revealed in the analysis, especially concerning racial demographics, are concerning and highlight the urgent need for reforms and further investigation. The process of analyzing this data using Python was challenging but ultimately rewarding, as it equipped me with valuable skills in data manipulation and interpretation.
