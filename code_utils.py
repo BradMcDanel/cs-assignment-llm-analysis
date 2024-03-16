@@ -7,9 +7,12 @@ import re
 
 import pytesseract
 from pdf2image import convert_from_path
+from PIL import Image
 
-MAX_INPUT_TOKENS = 8192
+MAX_INPUT_TOKENS = 16384
 MAX_PASS_ATTEMPTS = 1
+
+FILE_ORDER = [".pdf", ".txt", ".csv", ".py", "*"]
 
 def remove_comments(code):
     # Remove single-line comments
@@ -82,8 +85,12 @@ def postprocess_csv(file_string, n=20):
         return '\n'.join(trimmed_lines)
 
 FILE_TYPES = {
+    "*": {
+        "process_func": lambda path: open(path, "rb").read(),
+        "postprocess_func": lambda s: s,
+    },
     ".pdf": {
-    "process_func": process_pdf,
+        "process_func": process_pdf,
         "postprocess_func": lambda s: s,
     },
     ".txt": {
@@ -97,6 +104,10 @@ FILE_TYPES = {
     ".py": {
         "process_func": lambda path: open(path, "r").read(),
         "postprocess_func": postprocess_python,
+    },
+    ".png": {
+        "process_func": lambda path: Image.open(path),
+        "postprocess_func": lambda _: "", # don't include images in the response
     }
 }
 
@@ -114,14 +125,18 @@ def process_files(folder_path):
 
 def file_dict_to_str(file_dict):
     result = ""
-    for i, (relative_path, file_string) in enumerate(file_dict.items()):
-        ext = os.path.splitext(relative_path)[1]
-        result += f"# {relative_path}\n"
-        postprocess_func = FILE_TYPES[ext]["postprocess_func"]
-        result += postprocess_func(file_string)
-        if i < len(file_dict) - 1:
-            result += "\n"
-    return result
+    remaining_files = list(file_dict.items())
+
+    for ext in FILE_ORDER:
+        for relative_path, file_string in list(remaining_files):
+            if ext == "*" or os.path.splitext(relative_path)[1] == ext:
+                result += f"# {relative_path}\n"
+                postprocess_func = FILE_TYPES[os.path.splitext(relative_path)[1]]["postprocess_func"]
+                result += postprocess_func(file_string)
+                result += "\n"
+                remaining_files.remove((relative_path, file_string))
+
+    return result.rstrip("\n")
 
 def extract_files(document_content):
     sections = document_content.split('```')
@@ -156,18 +171,25 @@ def extract_files(document_content):
 
     return files
 
+def save_files(files, save_dir=None):
+    if save_dir is None:
+        save_dir = tempfile.mkdtemp(prefix='code_')
 
-def save_files_to_tmp(files):
-    tmp_dir = tempfile.mkdtemp(prefix='code_')
-    for filename, code_content, _ in files:
-        file_path = os.path.join(tmp_dir, filename)
-        with open(file_path, 'w') as file:
-            file.write(code_content)
-    return tmp_dir
+    for filename, content, _ in files:
+        file_path = os.path.join(save_dir, filename)
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        print(f"Saving {filename} to {file_path}")
+        if hasattr(content, "save"):
+            content.save(file_path)
+        else:
+            with open(file_path, "w") as f:
+                f.write(content)
+
+    return save_dir
 
 def run_tests(files, cleanup=True):
     # Save files to a temporary directory
-    tmp_dir = save_files_to_tmp(files)
+    tmp_dir = save_files(files)
     
     # Save the current working directory
     original_cwd = os.getcwd()

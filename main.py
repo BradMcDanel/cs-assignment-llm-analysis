@@ -26,9 +26,6 @@ if __name__ == "__main__":
     with open("prompts/initial.txt", "r") as f:
         initial_prompt = f.read()
 
-    with open("prompts/fix.txt", "r") as f:
-        fix_prompt = f.read()
-
     initial = code_utils.replace_placeholders(initial_prompt, {"assignment": result_string})
     messages = [
         {"role": "system", "content": "You are an expert in the field of computer science and competent programmer."},
@@ -38,7 +35,6 @@ if __name__ == "__main__":
     # call LLM
     for attempt in range(code_utils.MAX_PASS_ATTEMPTS):
         response = llm.call(messages, model="gpt-4-turbo-preview", max_tokens=4096, temperature=0.7)
-        messages.append({"role": "assistant", "content": response})
         print(response)
 
         generated_files = code_utils.extract_files(response)
@@ -51,12 +47,9 @@ if __name__ == "__main__":
                 else:
                     raise ValueError(f"File {filename} not found in the original files.")
 
-        # also copy over all .txt and .csv files that were not generated
-        for filename, file_string in file_dict.items():
+        for filename, content in file_dict.items():
             if filename not in [f[0] for f in generated_files]:
-                ext = os.path.splitext(filename)[1]
-                if ext in [".txt", ".csv"]:
-                    generated_files.append((filename, file_string, True))
+                generated_files.append((filename, content, True))
 
         all_passed, test_results = code_utils.run_tests(generated_files, cleanup=False)
 
@@ -66,15 +59,9 @@ if __name__ == "__main__":
             print(f"Attempt {attempt+1} failed")
             print(test_results)
 
-            fix = code_utils.replace_placeholders(fix_prompt, {"test_results": test_results})
-            messages.append({"role": "user", "content": fix})
 
     if not all_passed:
         print("All attempts failed")
     else:
-        print(f"All tests passed - saving files to {args.output_folder}")
-        os.makedirs(args.output_folder, exist_ok=True)
-        for filename, code_content, _ in generated_files:
-            with open(os.path.join(args.output_folder, filename), "w") as f:
-                f.write(code_content)
+        code_utils.save_files(generated_files, args.output_folder)
 
