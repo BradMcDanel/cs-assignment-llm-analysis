@@ -1,0 +1,72 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The Washington Post's data on fatal police shootings includes details such as the identity, race, and arming status of the individuals shot by police, as well as the location and date of the incidents. The data is sourced from news reports, public records, social media, and other sources, compiled to form an ongoing database.
+
+Question 2:
+--------------------------------------------------------
+id: Unique identifier for each shooting incident.
+date: The date on which the shooting occurred.
+threat_type: Classification of the perceived threat level posed by the subject.
+flee_status: The subject's status of movement when shot.
+armed_with: What the subject was armed with, if anything, at the time of the shooting.
+city, county, state: Geographic details of the shooting location.
+latitude, longitude: Coordinates of the incident location.
+location_precision: Detail level of the location provided.
+name: Name of the individual who was shot.
+age: Age of the individual at the time of the shooting.
+gender: Gender of the individual.
+race: Race of the individual, marked by single-letter codes.
+race_source: Source of the race information.
+was_mental_illness_related: Indicates if the shooting was related to a mental health issue.
+body_camera: Indicates if the incident was recorded on a body camera.
+agency_ids: Identifiers for the law enforcement agencies involved.
+
+Question 3:
+--------------------------------------------------------
+As of the latest available data, approximately 13.4% of the United States population is identified as Black or African American. Source: United States Census Bureau.
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The database dictionary stores information from the following columns: name, date, state, race, armed_with, age, and gender.
+
+Question 2:
+--------------------------------------------------------
+The keys used in the database dictionary are the unique 'id' values from the file.
+
+Question 3:
+--------------------------------------------------------
+The type of the values in the database dictionary is <class 'dict'>.
+
+Question 4:
+--------------------------------------------------------
+Each value in the dictionary is another dictionary containing details about the police shooting incident such as the name, date, state, race, whether the individual was armed, age, and gender. For example, database[3] might contain {'name': 'Tim Elliot', 'date': '2015-01-02', 'state': 'WA', 'race': 'A', 'armed': 'gun', 'age': '53', 'gender': 'male'}.
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The proportion of black subjects in fatal police shootings is significantly higher than their representation in the general population of the United States. This discrepancy indicates a potential racial bias or other systemic issues in police encounters.
+
+Question 2:
+--------------------------------------------------------
+The proportion of black subjects in fatal police shootings where the subject is unarmed is even higher compared to their general population representation and also higher compared to all fatal police shootings. This amplifies concerns about racial bias and the use of lethal force in situations where the individual was not armed.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+This project was enlightening and somewhat distressing due to the disparities revealed in the treatment of different races in fatal police shootings. Working with real-world data provided a concrete perspective on how data analysis can reveal underlying patterns that may not be visible from a superficial view. It also highlighted the importance of transparent and accessible data for public scrutiny and policy making. The process of coding and analyzing the data was challenging but rewarding, as it required careful thinking about how to structure data queries and comparisons to draw meaningful conclusions.

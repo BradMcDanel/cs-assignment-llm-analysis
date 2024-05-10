@@ -1,9 +1,9 @@
 import os
-import io
 import tempfile
-import unittest
+import subprocess
 import shutil
 import re
+import json
 
 import pytesseract
 from pdf2image import convert_from_path
@@ -178,7 +178,6 @@ def save_files(files, save_dir=None):
     for filename, content, _ in files:
         file_path = os.path.join(save_dir, filename)
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
-        print(f"Saving {filename} to {file_path}")
         if hasattr(content, "save"):
             content.save(file_path)
         else:
@@ -198,17 +197,20 @@ def run_tests(files, cleanup=True):
     os.chdir(tmp_dir)
     
     try:
-        test_suite = unittest.TestLoader().discover('.', pattern='test_*.py')
+        # Run pytest with the --json-report option and redirect output to /dev/null
+        pytest_cmd = ["pytest", "--json-report", "--json-report-file=test_report.json"]
         
-        test_output = io.StringIO()
-        test_runner = unittest.TextTestRunner(stream=test_output)
-        test_result = test_runner.run(test_suite)
+        with open(os.devnull, 'w') as devnull:
+            subprocess.run(pytest_cmd, stdout=devnull, stderr=devnull, check=False)
         
-        test_results = test_output.getvalue()
+        # Check if the JSON report file exists
+        if os.path.exists("test_report.json"):
+            # Read the JSON report
+            with open("test_report.json", "r") as f:
+                test_results = json.load(f)
+        else:
+            test_results = None
     finally:
-        # Close the StringIO object
-        test_output.close()
-        
         # Change back to the original directory
         os.chdir(original_cwd)
         
@@ -216,9 +218,7 @@ def run_tests(files, cleanup=True):
         if cleanup:
             shutil.rmtree(tmp_dir)
     
-    all_tests_passed = test_result.wasSuccessful()
-    
-    return all_tests_passed, test_results
+    return test_results
 
 if __name__=="__main__":
     with open("response.txt", "r") as file:

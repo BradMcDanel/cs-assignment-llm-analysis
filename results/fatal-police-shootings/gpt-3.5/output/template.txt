@@ -1,0 +1,53 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+- The data includes information on fatal police shootings, sourced from the Washington Post.
+- It consists of details such as date, threat type, armed status, location, demographics, and more.
+
+Question 2:
+- Column headers: id, date, threat_type, flee_status, armed_with, city, county, state, latitude, longitude, location_precision, name, age, gender, race, race_source, was_mental_illness_related, body_camera, agency_ids.
+- Example values: 
+  - id: 3, 4, 5
+  - date: 2015-01-02, 2015-01-02, 2015-01-03
+  - race: A, W, H
+
+Question 3:
+- The percentage of the US population that is black is approximately 13.4% (source: US Census Bureau).
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+- Information stored in database: name, date, armed status, age, gender, race, state.
+
+Question 2:
+- Keys in database: id numbers of the subjects of fatal police shootings.
+
+Question 3:
+- Type of values in database: dictionary.
+- Example type: <class 'dict'>
+
+Question 4:
+- The structure of values in database includes details of an individual involved in a fatal police shooting.
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+- The proportion of black subjects in fatal police shootings is compared to the representation of black people in the US population.
+
+Question 2:
+- The proportion of black subjects in fatal police shootings where the subject is unarmed can be compared to the US population and to all police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+- Reflection: This project provided insights into the analysis of real-world data using Python dictionaries. It shed light on the representation of different races in fatal police shootings and their comparison to population demographics.

@@ -14,47 +14,8 @@
   - e.g. `### main.py ###` or `### utility.py - PROVIDED ###`
 - Some longer dictionaries and lists in the assignment description may be shortened in the codeblocks for brevity.
   - If these are copied via (PROVIDED), they will be complete.
-- You must write an additional test program(s) using `unittest` that starts with "test_" to test the code.
-  - It should properly mock any input/output in the main entrypoint (if any).
-  - These test programs will be evaluated to ensure your code works as expected.
 - Make sure all filenames and class names are consistent with the assignment description.
   - Ensure the full filepath is used as shown in the initial comment on the first line `### ... ###`.
-- If the assignment requires a visual component (e.g., opening a canvas), ensure that you mock it without actually opening a window. Example snippet on how to mock such a component (tkinter in this case):
-	```python
-	### test_visual_components.py ###
-	import unittest
-	from unittest.mock import patch
-	import tkinter as tk
-
-	def create_button():
-	    window = tk.Tk()
-	    button = tk.Button(window, text="Click me!")
-	    button.pack()
-	    return window, button
-
-	class TestVisualComponents(unittest.TestCase):
-	    @patch('tkinter.Tk')
-	    @patch('tkinter.Button')
-	    def test_create_button(self, mock_button, mock_tk):
-		# Create a mock window and button
-		mock_window = mock_tk.return_value
-		mock_button.return_value.pack.return_value = None
-		
-		# Call the function under test
-		window, button = create_button()
-		
-		# Assert that the expected methods were called
-		mock_tk.assert_called_once()
-		mock_button.assert_called_once_with(mock_window, text="Click me!")
-		mock_button.return_value.pack.assert_called_once()
-		
-		# Assert that the window and button objects are the mock objects
-		self.assertIs(window, mock_window)
-		self.assertIs(button, mock_button.return_value)
-
-	if __name__ == '__main__':
-	    unittest.main()
-	```
 - If a write-up (often a .txt) is required as part of the submission, you should include that at the end of your response.
   - Sometimes, a template will be provided for you to fill in. Please ensure you fill in the template as part of your response.
 - Before writing code, think step-by-step what you want to do and write the steps as comments.
@@ -65,8 +26,7 @@
 1. Copy over the provided `utils/rand_utils.py` file.
 2. Based on the description, create a new file `mymath.py` and implement the `add` function.
 3. Create a new file `main.py` and implement the `main` entrypoint.
-4. Create a new file `test_main.py` and implement the `TestMain` class using mocking.
-5. Complete the provided `write-up.txt` file and answer all the questions to the best of my ability.
+4. Complete the provided `write-up.txt` file and answer all the questions to the best of my ability.
 
 ```python
 ### utils/rand_utils.py - PROVIDED ###
@@ -87,34 +47,6 @@ if __name__ == "__main__":
     a = int(input("Enter a number: "))
     b = rand_utils.get_random_number()
     print(mymath.add(a, b))
-```
-
-```python
-### test_main.py ###
-
-import unittest
-from unittest import mock
-import mymath
-import main
-import rand_utils
-
-class TestMain(unittest.TestCase):
-    @mock.patch('builtins.input', return_value='2')
-    @mock.patch('rand_utils.get_random_number', return_value=3)
-    @mock.patch('builtins.print')
-    def test_main(self, mock_print, mock_get_random_number, mock_input):
-        main.main()
-        mock_print.assert_called_once_with(5)
-
-    @mock.patch('builtins.input', return_value='10')
-    @mock.patch('rand_utils.get_random_number', return_value=20)
-    @mock.patch('builtins.print')
-    def test_main_large_numbers(self, mock_print, mock_get_random_number, mock_input):
-        main.main()
-        mock_print.assert_called_once_with(30)
-
-if __name__ == '__main__':
-    unittest.main()
 ```
 
 ```plaintext
