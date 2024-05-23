@@ -1,0 +1,113 @@
+# Task 1
+## Question 1
+The data contains information on fatal police shootings in the United States, including details such as the date, location, and demographics of the individuals involved. The data is compiled by the Washington Post and is publicly available on GitHub.
+
+## Question 2
+Column: id
+- Explanation: A unique identifier for each fatal police shooting.
+- Examples: 22, 325, 140.
+
+Column: name
+- Explanation: The name of the individual who was shot.
+- Examples: "John Doe", "Jane Smith".
+
+Column: date
+- Explanation: The date of the shooting.
+- Examples: "2021-01-01", "2021-02-15".
+
+Column: manner_of_death
+- Explanation: The manner in which the individual died.
+- Examples: "shot", "shot and Tasered".
+
+Column: armed
+- Explanation: Indicates if the individual was armed and with what.
+- Examples: "gun", "knife", "unarmed".
+
+Column: age
+- Explanation: The age of the individual.
+- Examples: 34, 27.
+
+Column: gender
+- Explanation: The gender of the individual.
+- Examples: "M", "F".
+
+Column: race
+- Explanation: The race of the individual.
+- Examples: "W", "B", "A".
+
+Column: city
+- Explanation: The city where the shooting occurred.
+- Examples: "New York", "Los Angeles".
+
+Column: state
+- Explanation: The state where the shooting occurred.
+- Examples: "NY", "CA".
+
+Column: signs_of_mental_illness
+- Explanation: Indicates if the individual showed signs of mental illness.
+- Examples: "True", "False".
+
+Column: threat_level
+- Explanation: The perceived threat level of the individual.
+- Examples: "attack", "other".
+
+Column: flee
+- Explanation: Indicates if the individual attempted to flee.
+- Examples: "Not fleeing", "Car", "Foot".
+
+Column: body_camera
+- Explanation: Indicates if a body camera was present.
+- Examples: "True", "False".
+
+Column: longitude
+- Explanation: The longitude of the location of the shooting.
+- Examples: -73.935242, -118.243683.
+
+Column: latitude
+- Explanation: The latitude of the location of the shooting.
+- Examples: 40.730610, 34.052235.
+
+## Question 3
+According to the U.S. Census Bureau, the Black or African American population in the United States is approximately 13.4%. (Source: https://www.census.gov/quickfacts/fact/table/US/RHI225219)
+
+# Task 2
+## Question 1
+The following columns from the .csv file are stored in the database: 'id', 'name', 'date', 'manner_of_death', 'armed', 'age', 'gender', 'race', 'city', 'state', 'signs_of_mental_illness', 'threat_level', 'flee', 'body_camera', 'longitude', and 'latitude'.
+
+## Question 2
+The 'id' field from the .csv file is used as the keys in the database.
+
+## Question 3
+The type of the values in the database is a dictionary.
+
+## Question 4
+Each value in the database stores the information of a fatal police shooting, with each key-value pair in the dictionary representing a column from the .csv file. For example, the value for key `1694` includes:
+{
+    'id': '1694',
+    'name': 'George Floyd',
+    'date': '2020-05-25',
+    'manner_of_death': 'shot',
+    'armed': 'unarmed',
+    'age': '46',
+    'gender': 'M',
+    'race': 'B',
+    'city': 'Minneapolis',
+    'state': 'MN',
+    'signs_of_mental_illness': 'False',
+    'threat_level': 'attack',
+    'flee': 'Not fleeing',
+    'body_camera': 'True',
+    'longitude': '-93.265',
+    'latitude': '44.9778'
+}
+
+# Task 3
+## Question 1
+The proportion of fatal police shootings with a black subject (approximately 0.25) is significantly higher than the representation of black people in the United States population (13.4%).
+
+## Question 2
+The proportion of unarmed fatal police shootings with a black subject (approximately 0.36) is also higher than the representation of black people in the United States population (13.4%). This proportion is also higher compared to the proportion of all fatal police shootings with a black subject (0.25).
+
+# Task 4
+## Question 1
+In this project, I learned how to analyze real-world data using Python dictionaries. It was eye-opening to see the disparity in the proportion of black subjects in fatal police shootings compared to their representation in the general population. I also gained experience in reading and processing CSV files, and organizing the data into a dictionary for further analysis. Additionally, I practiced using Python to compute various statistics and answer specific questions about the data. Overall, this project highlighted the importance of data analysis in uncovering social issues and disparities.

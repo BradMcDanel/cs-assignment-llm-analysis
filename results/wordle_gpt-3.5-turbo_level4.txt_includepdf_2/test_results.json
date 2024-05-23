@@ -1,0 +1,30 @@
+{
+    "created": 1716468234.9630964,
+    "duration": 0.033294677734375,
+    "exitcode": 2,
+    "root": "/tmp/code_s41rkiol",
+    "environment": {},
+    "summary": {
+        "total": 0,
+        "collected": 0
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "failed",
+            "result": [],
+            "longrepr": "ImportError while importing test module '/tmp/code_s41rkiol/test_wordle.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/home/brad/.miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\ntest_wordle.py:4: in <module>\n    import Wordle\nWordle.py:4: in <module>\n    from WordleGraphics import WordleGWindow, N_COLS, N_ROWS\nE   ImportError: cannot import name 'WordleGWindow' from 'WordleGraphics' (/tmp/code_s41rkiol/WordleGraphics.py)"
+        }
+    ],
+    "tests": []
+}

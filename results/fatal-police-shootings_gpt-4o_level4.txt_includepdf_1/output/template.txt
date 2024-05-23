@@ -1,0 +1,134 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The dataset includes information on individuals who were shot and killed by police officers in the United States. It contains data from the Washington Post, which has been collecting this information since 2015. The dataset includes details such as the date of the shooting, the name of the victim, their age, gender, race, and whether they were armed.
+
+Question 2:
+--------------------------------------------------------
+Column: id
+Description: A unique identifier for each fatal police shooting incident.
+Examples: 3, 4, 5
+
+Column: date
+Description: The date on which the fatal police shooting occurred.
+Examples: 2015-01-02, 2015-01-03, 2015-01-04
+
+Column: threat_type
+Description: The type of threat perceived by the police officer(s).
+Examples: point, move, attack
+
+Column: flee_status
+Description: Whether the subject was fleeing at the time of the incident.
+Examples: not, car, foot
+
+Column: armed_with
+Description: What the subject was armed with during the incident.
+Examples: gun, unarmed, knife
+
+Column: city
+Description: The city where the fatal police shooting occurred.
+Examples: Shelton, Aloha, Wichita
+
+Column: county
+Description: The county where the fatal police shooting occurred.
+Examples: Mason, Washington, Sedgwick
+
+Column: state
+Description: The state where the fatal police shooting occurred.
+Examples: WA, OR, KS
+
+Column: latitude
+Description: The latitude coordinate of the shooting location.
+Examples: 47.246826, 45.4874214, 37.694766
+
+Column: longitude
+Description: The longitude coordinate of the shooting location.
+Examples: -123.121592, -122.8916961, -97.280554
+
+Column: location_precision
+Description: The precision of the location data.
+Examples: not_available, block, intersection
+
+Column: name
+Description: The name of the subject who was shot.
+Examples: Tim Elliot, Lewis Lee Lembke, John Paul Quintero
+
+Column: age
+Description: The age of the subject who was shot.
+Examples: 53, 47, 23
+
+Column: gender
+Description: The gender of the subject who was shot.
+Examples: male, female
+
+Column: race
+Description: The race of the subject who was shot.
+Examples: A, W, H
+
+Column: race_source
+Description: The source of the race information.
+Examples: not_available, public_record, clip
+
+Column: was_mental_illness_related
+Description: Whether the incident was related to mental illness.
+Examples: True, False
+
+Column: body_camera
+Description: Whether a body camera was used during the incident.
+Examples: True, False
+
+Column: agency_ids
+Description: IDs of the agencies involved in the incident.
+Examples: 73, 70, 238
+
+Question 3:
+--------------------------------------------------------
+The percentage of the United States population that is Black is approximately 13.4%.
+Source: United States Census Bureau (https://www.census.gov/quickfacts/fact/table/US/PST045219)
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The information stored in the database dictionary includes the name, date, armed status, age, gender, race, and state of each subject involved in a fatal police shooting.
+
+Question 2:
+--------------------------------------------------------
+The keys in the dictionary are the unique ID numbers from the fatal-police-shootings-data.csv file.
+
+Question 3:
+--------------------------------------------------------
+The values in the database are dictionaries themselves. Each value dictionary contains information about a fatal police shooting, such as the name, date, armed status, age, gender, race, and state.
+
+Question 4:
+--------------------------------------------------------
+An example value in the database:
+{'name': 'Tim Elliot', 'date': '2015-01-02', 'armed': 'gun', 'age': '53', 'gender': 'male', 'race': 'A', 'state': 'WA'}
+This value stores the details of the shooting incident involving Tim Elliot, including the date, whether he was armed, his age, gender, race, and the state where the incident occurred.
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The proportion of Black subjects in fatal police shootings is higher than the proportion of Black people in the United States population. The fraction of fatal police shootings with a Black subject is approximately 0.24 (24%), which is significantly higher than the 13.4% representation of Black people in the general population.
+
+Question 2:
+--------------------------------------------------------
+The proportion of Black subjects in unarmed fatal police shootings is also disproportionately high. The fraction of unarmed fatal police shootings with a Black subject is approximately 0.36 (36%), which is higher than both the 13.4% representation of Black people in the general population and the 24% proportion of Black subjects in all fatal police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+In this project, I learned how to use Python to analyze real-world data related to fatal police shootings. By working with dictionaries and iterating through data, I was able to extract meaningful insights about the racial disparities in these incidents. It was eye-opening to see the stark contrast between the representation of Black people in the general population and their proportion among subjects of fatal police shootings, particularly those who were unarmed. Additionally, this project highlighted the importance of understanding and interpreting data accurately to draw informed conclusions. Overall, this experience has improved my data analysis skills and deepened my understanding of a critical social issue.

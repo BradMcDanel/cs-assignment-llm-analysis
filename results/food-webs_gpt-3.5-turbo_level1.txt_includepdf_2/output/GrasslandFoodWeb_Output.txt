@@ -1,0 +1,26 @@
+Predators and Prey:
+  Grasshopper eats Grass
+  Hawk eats Grasshopper, Lizard, Mouse, Rabbit and Snake
+  Lizard eats Grasshopper
+  Mouse eats Grass
+  Rabbit eats Grass
+  Snake eats Mouse
+
+Apex Predators: Hawk
+Producers: Grass
+Most Flexible Eaters: Hawk
+Tastiest: Grass
+
+Heights:
+  Grass: 0
+  Grasshopper: 1
+  Hawk: 3
+  Lizard: 2
+  Mouse: 1
+  Rabbit: 1
+  Snake: 2
+
+For an A+:
+  Herbivores: Grasshopper, Mouse and Rabbit
+  Omnivores: (None)
+  Carnivores: Hawk, Lizard and Snake

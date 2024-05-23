@@ -1,0 +1,34 @@
+Task 1:
+1. The data includes records of fatal police shootings in the United States, compiled by the Washington Post. It contains details about the individuals who were shot, including demographic information and the circumstances of the shooting. The data is publicly available on GitHub.
+
+2. Column Descriptions:
+- id: Unique identifier for each shooting. Examples: 22, 325, 1401
+- name: Name of the person shot. Examples: "John Doe", "Jane Smith"
+- date: Date of the shooting. Examples: "2015-01-02", "2016-03-15"
+- manner_of_death: How the person died (shot or shot and Tasered). Examples: "shot", "shot and Tasered"
+- armed: Whether the person was armed. Examples: "gun", "unarmed", "knife"
+- age: Age of the person shot. Examples: 34, 22, 45
+- gender: Gender of the person shot. Examples: "M", "F"
+- race: Race of the person shot. Examples: "W", "B", "A"
+- city: City where the shooting occurred. Examples: "Los Angeles", "New York"
+- state: State where the shooting occurred. Examples: "CA", "NY"
+- signs_of_mental_illness: Whether the person showed signs of mental illness. Examples: "True", "False"
+- threat_level: Perceived threat level. Examples: "attack", "other", "undetermined"
+- flee: Whether the person was fleeing. Examples: "Not fleeing", "Foot", "Car"
+- body_camera: Whether a body camera was present. Examples: "True", "False"
+
+3. According to the US Census Bureau, Black or African American people make up approximately 13.4% of the US population. (Source: https://www.census.gov/quickfacts/fact/table/US/RHI225219)
+
+Task 2:
+1. The columns used in the database are: id, name, date, manner_of_death, armed, age, gender, race, city, state, signs_of_mental_illness, threat_level, flee, body_camera.
+2. The keys in the database are the "id" values from the CSV file.
+3. The type of the values in the database is a dictionary.
+4. Example of a value in the database:
+{'id': '1', 'name': 'John Doe', 'date': '2015-01-02', 'manner_of_death': 'shot', 'armed': 'gun', 'age': '34', 'gender': 'M', 'race': 'W', 'city': 'Los Angeles', 'state': 'CA', 'signs_of_mental_illness': 'False', 'threat_level': 'attack', 'flee': 'Not fleeing', 'body_camera': 'False'}
+
+Task 3:
+1. The proportion of Black subjects in fatal police shootings is higher than their representation in the general US population. While Black people make up about 13.4% of the population, they are involved in a higher fraction of fatal police shootings.
+2. The proportion of Black subjects in unarmed fatal police shootings is also higher compared to their representation in the general US population and compared to the proportion in all police shootings.
+
+Task 4:
+1. From this project, I learned how to analyze real-world data using Python dictionaries. The findings show that Black individuals are disproportionately affected by fatal police shootings, both overall and when unarmed. This project also highlighted the importance of accurate data representation and the impact of data analysis on understanding societal issues. Working with real data provided valuable experience in data processing and analysis using Python. This project emphasized the significance of meaningful variable names and thorough code commenting for better readability and understanding.

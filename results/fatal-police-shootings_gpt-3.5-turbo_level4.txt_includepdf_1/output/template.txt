@@ -1,0 +1,61 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+- The data includes information on fatal police shootings compiled by the Washington Post and is available on GitHub.
+- It contains details such as date, threat type, armed status, location, demographics, and other related information.
+- Source: https://github.com/washingtonpost/data-police-shootings
+
+Question 2:
+- id: Unique identifier for each incident.
+  - Examples: 3, 4, 5
+- date: Date of the incident.
+  - Examples: 2015-01-02, 2015-01-03
+- threat_type: Type of threat posed by the subject.
+  - Examples: point, move
+- flee_status: Fleeing status of the subject.
+  - Examples: not, car
+- armed_with: Weapon the subject was armed with.
+  - Examples: gun, unarmed
+- city: City where the incident occurred.
+  - Examples: Shelton, Aloha
+- county: County where the incident occurred.
+  - Examples: Mason, Washington
+- state: State where the incident occurred.
+  - Examples: WA, OR
+- latitude: Latitude coordinates of the incident.
+  - Examples: 47.246826, 45.4874214
+- longitude: Longitude coordinates of the incident.
+  - Examples: -123.121592, -122.8916961
+- location_precision: Precision level of the location data.
+  - Examples: not_available, block
+- name: Name of the subject involved in the incident.
+  - Examples: Tim Elliot, John Paul Quintero
+- age: Age of the subject.
+  - Examples: 53, 23
+- gender: Gender of the subject.
+  - Examples: male, female
+- race: Race of the subject.
+  - Examples: A, W
+- race_source: Source of race information.
+  - Examples: not_available, public_record
+- was_mental_illness_related: Indicates if mental illness was related.
+  - Examples: True, False
+- body_camera: Indicates if the body camera was present.
+  - Examples: True, False
+- agency_ids: IDs of the agencies involved.
+  - Examples: 73, 238
+
+Question 3:
+- The percentage of the United States population that is black is approximately 13.4%.
+- Source: U.S. Census Bureau
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------

@@ -1,0 +1,194 @@
+{
+    "created": 1716468426.320527,
+    "duration": 0.03356480598449707,
+    "exitcode": 1,
+    "root": "/tmp/code_l5r591ct",
+    "environment": {},
+    "summary": {
+        "failed": 2,
+        "passed": 3,
+        "total": 5,
+        "collected": 5
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py::test_valid_guess",
+                    "type": "Function",
+                    "lineno": 111
+                },
+                {
+                    "nodeid": "test_wordle.py::test_invalid_guess",
+                    "type": "Function",
+                    "lineno": 122
+                },
+                {
+                    "nodeid": "test_wordle.py::test_correct_color_update",
+                    "type": "Function",
+                    "lineno": 134
+                },
+                {
+                    "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+                    "type": "Function",
+                    "lineno": 143
+                },
+                {
+                    "nodeid": "test_wordle.py::test_game_over",
+                    "type": "Function",
+                    "lineno": 156
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_wordle.py::test_valid_guess",
+            "lineno": 111,
+            "outcome": "failed",
+            "keywords": [
+                "test_valid_guess",
+                "test_wordle.py",
+                "code_l5r591ct"
+            ],
+            "setup": {
+                "duration": 0.00029278500005602837,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00011577503755688667,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_l5r591ct/test_wordle.py",
+                    "lineno": 121,
+                    "message": "assert False"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 121,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x73fadaca2d40>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x73fada4e0a60>\n\n    def test_valid_guess(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n        mock_window.enter_listeners[0]('apple'.upper())\n    \n        # Check for correct message\n        for msg in mock_window.messages:\n          if 'congratulations' in msg.lower():\n              return\n>       assert False\nE       assert False\n\ntest_wordle.py:121: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.00018253305461257696,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_invalid_guess",
+            "lineno": 122,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_guess",
+                "test_wordle.py",
+                "code_l5r591ct"
+            ],
+            "setup": {
+                "duration": 0.00017202203162014484,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00012095295824110508,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.9082947447896e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_correct_color_update",
+            "lineno": 134,
+            "outcome": "passed",
+            "keywords": [
+                "test_correct_color_update",
+                "test_wordle.py",
+                "code_l5r591ct"
+            ],
+            "setup": {
+                "duration": 0.00021054304670542479,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.300199311226606e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.380805280059576e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+            "lineno": 143,
+            "outcome": "passed",
+            "keywords": [
+                "test_present_and_missing_color_update",
+                "test_wordle.py",
+                "code_l5r591ct"
+            ],
+            "setup": {
+                "duration": 0.00012971693649888039,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.9128040447831154e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.97609905526042e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_game_over",
+            "lineno": 156,
+            "outcome": "failed",
+            "keywords": [
+                "test_game_over",
+                "test_wordle.py",
+                "code_l5r591ct"
+            ],
+            "setup": {
+                "duration": 0.00011166103649884462,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0002753260778263211,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_l5r591ct/test_wordle.py",
+                    "lineno": 167,
+                    "message": "assert False"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 167,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x73fada5e08e0>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x73fada4e2cb0>\n\n    def test_game_over(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n        for _ in range(6):\n            mock_window.enter_listeners[0]('wrong'.upper())\n    \n        # Check for game over message\n        for msg in mock_window.messages:\n          if 'game over' in msg.lower():\n              return\n>       assert False\nE       assert False\n\ntest_wordle.py:167: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.0001184289576485753,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+Predators and Prey:
+  Lion eats Zebra
+  Zebra eats Grass
+
+Apex Predators: Lion
+Producers: Grass
+Most Flexible Eaters: Lion and Zebra
+Tastiest: Grass and Zebra
+
+Heights:
+  Grass: 0
+  Lion: 2
+  Zebra: 1
+
+For an A+:
+  Herbivores: Zebra
+  Omnivores: (None)
+  Carnivores: Lion

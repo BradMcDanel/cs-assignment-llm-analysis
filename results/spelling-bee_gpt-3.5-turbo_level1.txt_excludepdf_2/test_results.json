@@ -1,0 +1,225 @@
+{
+    "created": 1716435928.1735103,
+    "duration": 0.024659395217895508,
+    "exitcode": 1,
+    "root": "/tmp/code_e9uhpruu",
+    "environment": {},
+    "summary": {
+        "passed": 1,
+        "failed": 4,
+        "total": 5,
+        "collected": 5
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_SpellingBee.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py::test_puzzle_action",
+                    "type": "Function",
+                    "lineno": 44
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+                    "type": "Function",
+                    "lineno": 57
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+                    "type": "Function",
+                    "lineno": 68
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_action",
+                    "type": "Function",
+                    "lineno": 79
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_action",
+                    "type": "Function",
+                    "lineno": 93
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_SpellingBee.py::test_puzzle_action",
+            "lineno": 44,
+            "outcome": "passed",
+            "keywords": [
+                "test_puzzle_action",
+                "test_SpellingBee.py",
+                "code_e9uhpruu"
+            ],
+            "setup": {
+                "duration": 0.00016061996575444937,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 8.130900096148252e-05,
+                "outcome": "passed",
+                "stdout": "Starting test_puzzle_action\nBeehive letters: abcdefg\nMessages: [('puzzle_action is not yet implemented', 'Red')]\n"
+            },
+            "teardown": {
+                "duration": 6.774708162993193e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+            "lineno": 57,
+            "outcome": "failed",
+            "keywords": [
+                "test_invalid_puzzle_length",
+                "test_SpellingBee.py",
+                "code_e9uhpruu"
+            ],
+            "setup": {
+                "duration": 9.119207970798016e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.204505477100611e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_e9uhpruu/test_SpellingBee.py",
+                    "lineno": 67,
+                    "message": "assert False\n +  where False = any(<generator object test_invalid_puzzle_length.<locals>.<genexpr> at 0x7fd2a0651bd0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 67,
+                        "message": "AssertionError"
+                    }
+                ],
+                "stdout": "Starting test_invalid_puzzle_length\nMessages: [('puzzle_action is not yet implemented', 'Red')]\n",
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7fd2a07da710>\n\n    def test_invalid_puzzle_length(mock_graphics):\n        print(\"Starting test_invalid_puzzle_length\")\n        sbg = mock_graphics\n        SpellingBee.spelling_bee()\n    \n        sbg.set_field(\"Puzzle\", \"abcde\")\n        sbg.field_callback(\"abcde\")\n    \n        print(\"Messages:\", sbg.messages)\n>       assert any(\"Invalid puzzle\" in msg or \"Not in the dictionary.\" in msg for msg, _ in sbg.messages)\nE       assert False\nE        +  where False = any(<generator object test_invalid_puzzle_length.<locals>.<genexpr> at 0x7fd2a0651bd0>)\n\ntest_SpellingBee.py:67: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.291006088256836e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+            "lineno": 68,
+            "outcome": "failed",
+            "keywords": [
+                "test_invalid_puzzle_duplicates",
+                "test_SpellingBee.py",
+                "code_e9uhpruu"
+            ],
+            "setup": {
+                "duration": 0.00010176992509514093,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.149906691163778e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_e9uhpruu/test_SpellingBee.py",
+                    "lineno": 78,
+                    "message": "assert False\n +  where False = any(<generator object test_invalid_puzzle_duplicates.<locals>.<genexpr> at 0x7fd2a068d850>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 78,
+                        "message": "AssertionError"
+                    }
+                ],
+                "stdout": "Starting test_invalid_puzzle_duplicates\nMessages: [('puzzle_action is not yet implemented', 'Red')]\n",
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7fd2a0ea30a0>\n\n    def test_invalid_puzzle_duplicates(mock_graphics):\n        print(\"Starting test_invalid_puzzle_duplicates\")\n        sbg = mock_graphics\n        SpellingBee.spelling_bee()\n    \n        sbg.set_field(\"Puzzle\", \"abcdeff\")\n        sbg.field_callback(\"abcdeff\")\n    \n        print(\"Messages:\", sbg.messages)\n>       assert any(\"Invalid puzzle\" in msg or \"Not in the dictionary.\" in msg for msg, _ in sbg.messages)\nE       assert False\nE        +  where False = any(<generator object test_invalid_puzzle_duplicates.<locals>.<genexpr> at 0x7fd2a068d850>)\n\ntest_SpellingBee.py:78: AssertionError"
+            },
+            "teardown": {
+                "duration": 7.797800935804844e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_action",
+            "lineno": 79,
+            "outcome": "failed",
+            "keywords": [
+                "test_solve_action",
+                "test_SpellingBee.py",
+                "code_e9uhpruu"
+            ],
+            "setup": {
+                "duration": 0.00010093895252794027,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00011663802433758974,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_e9uhpruu/test_SpellingBee.py",
+                    "lineno": 91,
+                    "message": "assert 0 > 0\n +  where 0 = len([])\n +    where [] = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7fd2a07d8580>.words"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 91,
+                        "message": "AssertionError"
+                    }
+                ],
+                "stdout": "Starting test_solve_action\nWords: []\nMessages: [('puzzle_action is not yet implemented', 'Red'), ('solve_action is not yet implemented', 'Red')]\n",
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7fd2a07d8580>\n\n    def test_solve_action(mock_graphics):\n        print(\"Starting test_solve_action\")\n        sbg = mock_graphics\n        SpellingBee.spelling_bee()\n    \n        sbg.set_field(\"Puzzle\", \"abcdefg\")\n        sbg.field_callback(\"abcdefg\")\n        sbg.button_callback(\"Solve\")\n    \n        print(\"Words:\", sbg.words)\n        print(\"Messages:\", sbg.messages)\n>       assert len(sbg.words) > 0  # Check that words are found and displayed\nE       assert 0 > 0\nE        +  where 0 = len([])\nE        +    where [] = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7fd2a07d8580>.words\n\ntest_SpellingBee.py:91: AssertionError"
+            },
+            "teardown": {
+                "duration": 7.421697955578566e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_action",
+            "lineno": 93,
+            "outcome": "failed",
+            "keywords": [
+                "test_word_action",
+                "test_SpellingBee.py",
+                "code_e9uhpruu"
+            ],
+            "setup": {
+                "duration": 0.00010317598935216665,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.059102740138769e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_e9uhpruu/test_SpellingBee.py",
+                    "lineno": 106,
+                    "message": "assert False\n +  where False = any(<generator object test_word_action.<locals>.<genexpr> at 0x7fd2a068e3b0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 106,
+                        "message": "AssertionError"
+                    }
+                ],
+                "stdout": "Starting test_word_action\nWords: []\nMessages: [('puzzle_action is not yet implemented', 'Red'), ('puzzle_action is not yet implemented', 'Red')]\n",
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7fd2a0ea20e0>\n\n    def test_word_action(mock_graphics):\n        print(\"Starting test_word_action\")\n        sbg = mock_graphics\n        SpellingBee.spelling_bee()\n    \n        sbg.set_field(\"Puzzle\", \"abcdefg\")\n        sbg.field_callback(\"abcdefg\")\n        sbg.set_field(\"Word\", \"face\")\n        sbg.field_callback(\"face\")\n    \n        print(\"Words:\", sbg.words)\n        print(\"Messages:\", sbg.messages)\n>       assert any(\"face\" in word for word, _ in sbg.words)  # Check that the word \"face\" is correctly added\nE       assert False\nE        +  where False = any(<generator object test_word_action.<locals>.<genexpr> at 0x7fd2a068e3b0>)\n\ntest_SpellingBee.py:106: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.51309159770608e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

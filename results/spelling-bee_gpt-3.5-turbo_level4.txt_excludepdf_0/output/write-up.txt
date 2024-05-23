@@ -1,0 +1,4 @@
+- In this assignment, I implemented a Spelling Bee solver in Python using string processing and interactivity.
+- The program allows users to enter a 7-letter puzzle and find legal words from a provided dictionary file.
+- The solver checks for legal puzzles, legal words, and displays scores for found words including pangrams.
+- Milestones included initializing the beehive, displaying legal words, adding scores, and user word input.

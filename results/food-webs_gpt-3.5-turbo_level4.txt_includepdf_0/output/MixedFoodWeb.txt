@@ -1,0 +1,13 @@
+Grasshopper,Terrestrial plants
+Harvest mouse,Grasshopper,Terrestrial plants
+Hawk,Harvest mouse,Rat,Shrew,Vole
+Heron,Shrimp,Smelt
+Mallard,Grasshopper,Terrestrial plants,Shrimp
+Owl,Rat,Sparrow,Mallard,Sandpiper
+Rat,Grasshopper,Terrestrial plants,Sparrow
+Sandpiper,Shrimp
+Shrew,Grasshopper
+Shrimp,Aquatic plants
+Smelt,Aquatic plants,Shrimp
+Sparrow,Grasshopper,Terrestrial plants
+Vole,Terrestrial plants,Grasshopper

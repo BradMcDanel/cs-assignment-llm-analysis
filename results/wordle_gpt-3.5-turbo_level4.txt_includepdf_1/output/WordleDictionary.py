@@ -1,0 +1,1 @@
+FIVE_LETTER_WORDS = ["aahed", "aalii", "abaca", "abaci", "aback", ... "zowie", "zymes"]

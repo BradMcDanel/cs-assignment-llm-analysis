@@ -1,0 +1,32 @@
+Predators and Prey:
+  Goat eats Plants
+  Jackal eats Goat and Rabbit
+  Kite eats Mouse and Snake
+  Lion eats Goat, Jackal and Wild Cat
+  Mouse eats Plants
+  Owl eats Mouse
+  Rabbit eats Plants
+  Snake eats Mouse
+  Wild Cat eats Mouse and Rabbit
+
+Apex Predators: Kite, Lion and Owl
+Producers: Plants
+Most Flexible Eaters: Lion
+Tastiest: Mouse
+
+Heights:
+  Goat: 1
+  Jackal: 2
+  Kite: 3
+  Lion: 3
+  Mouse: 1
+  Owl: 2
+  Plants: 0
+  Rabbit: 1
+  Snake: 2
+  Wild Cat: 2
+
+For an A+:
+  Herbivores: Goat, Mouse and Rabbit
+  Omnivores: (None)
+  Carnivores: Jackal, Kite, Lion, Owl, Snake and Wild Cat

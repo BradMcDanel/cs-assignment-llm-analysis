@@ -1,0 +1,2085 @@
+{
+    "created": 1716467704.3219156,
+    "duration": 0.8395185470581055,
+    "exitcode": 1,
+    "root": "/tmp/code_r39p6n2c",
+    "environment": {},
+    "summary": {
+        "passed": 21,
+        "failed": 33,
+        "total": 54,
+        "collected": 54
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_Assignment4.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_Assignment4.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_Assignment4.py::test_another_predators_and_prey",
+                    "type": "Function",
+                    "lineno": 102
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_another_apex_predators",
+                    "type": "Function",
+                    "lineno": 107
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_another_producers",
+                    "type": "Function",
+                    "lineno": 112
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_another_most_flexible_eaters",
+                    "type": "Function",
+                    "lineno": 117
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_another_tastiest",
+                    "type": "Function",
+                    "lineno": 122
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_another_heights",
+                    "type": "Function",
+                    "lineno": 127
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_another_herbivores",
+                    "type": "Function",
+                    "lineno": 132
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_another_omnivores",
+                    "type": "Function",
+                    "lineno": 137
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_another_carnivores",
+                    "type": "Function",
+                    "lineno": 142
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_aquatic_predators_and_prey",
+                    "type": "Function",
+                    "lineno": 147
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_aquatic_apex_predators",
+                    "type": "Function",
+                    "lineno": 152
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_aquatic_producers",
+                    "type": "Function",
+                    "lineno": 157
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_aquatic_most_flexible_eaters",
+                    "type": "Function",
+                    "lineno": 162
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_aquatic_tastiest",
+                    "type": "Function",
+                    "lineno": 167
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_aquatic_heights",
+                    "type": "Function",
+                    "lineno": 172
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_aquatic_herbivores",
+                    "type": "Function",
+                    "lineno": 177
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_aquatic_omnivores",
+                    "type": "Function",
+                    "lineno": 182
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_aquatic_carnivores",
+                    "type": "Function",
+                    "lineno": 187
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_grassland_predators_and_prey",
+                    "type": "Function",
+                    "lineno": 192
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_grassland_apex_predators",
+                    "type": "Function",
+                    "lineno": 197
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_grassland_producers",
+                    "type": "Function",
+                    "lineno": 202
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_grassland_most_flexible_eaters",
+                    "type": "Function",
+                    "lineno": 207
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_grassland_tastiest",
+                    "type": "Function",
+                    "lineno": 212
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_grassland_heights",
+                    "type": "Function",
+                    "lineno": 217
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_grassland_herbivores",
+                    "type": "Function",
+                    "lineno": 222
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_grassland_omnivores",
+                    "type": "Function",
+                    "lineno": 227
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_grassland_carnivores",
+                    "type": "Function",
+                    "lineno": 232
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_mixed_predators_and_prey",
+                    "type": "Function",
+                    "lineno": 237
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_mixed_apex_predators",
+                    "type": "Function",
+                    "lineno": 242
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_mixed_producers",
+                    "type": "Function",
+                    "lineno": 247
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_mixed_most_flexible_eaters",
+                    "type": "Function",
+                    "lineno": 252
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_mixed_tastiest",
+                    "type": "Function",
+                    "lineno": 257
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_mixed_heights",
+                    "type": "Function",
+                    "lineno": 262
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_mixed_herbivores",
+                    "type": "Function",
+                    "lineno": 267
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_mixed_omnivores",
+                    "type": "Function",
+                    "lineno": 272
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_mixed_carnivores",
+                    "type": "Function",
+                    "lineno": 277
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_simple_predators_and_prey",
+                    "type": "Function",
+                    "lineno": 282
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_simple_apex_predators",
+                    "type": "Function",
+                    "lineno": 287
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_simple_producers",
+                    "type": "Function",
+                    "lineno": 292
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_simple_most_flexible_eaters",
+                    "type": "Function",
+                    "lineno": 297
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_simple_tastiest",
+                    "type": "Function",
+                    "lineno": 302
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_simple_heights",
+                    "type": "Function",
+                    "lineno": 307
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_simple_herbivores",
+                    "type": "Function",
+                    "lineno": 312
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_simple_omnivores",
+                    "type": "Function",
+                    "lineno": 317
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_simple_carnivores",
+                    "type": "Function",
+                    "lineno": 322
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_terrestrial_predators_and_prey",
+                    "type": "Function",
+                    "lineno": 327
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_terrestrial_apex_predators",
+                    "type": "Function",
+                    "lineno": 332
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_terrestrial_producers",
+                    "type": "Function",
+                    "lineno": 337
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_terrestrial_most_flexible_eaters",
+                    "type": "Function",
+                    "lineno": 342
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_terrestrial_tastiest",
+                    "type": "Function",
+                    "lineno": 347
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_terrestrial_heights",
+                    "type": "Function",
+                    "lineno": 352
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_terrestrial_herbivores",
+                    "type": "Function",
+                    "lineno": 357
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_terrestrial_omnivores",
+                    "type": "Function",
+                    "lineno": 362
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_terrestrial_carnivores",
+                    "type": "Function",
+                    "lineno": 367
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_Assignment4.py::test_another_predators_and_prey",
+            "lineno": 102,
+            "outcome": "passed",
+            "keywords": [
+                "test_another_predators_and_prey",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 0.00010827207006514072,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.013938128016889095,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.705693133175373e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_another_apex_predators",
+            "lineno": 107,
+            "outcome": "passed",
+            "keywords": [
+                "test_another_apex_predators",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 6.133399438112974e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012604929972440004,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.850692443549633e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_another_producers",
+            "lineno": 112,
+            "outcome": "failed",
+            "keywords": [
+                "test_another_producers",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.6823017075657845e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012746452004648745,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 40,
+                    "message": "assert False\n +  where False = any(<generator object producers.<locals>.<genexpr> at 0x7366524dd3f0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 116,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 40,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_another_producers():\n        input_file = \"AnotherFoodWeb.txt\"\n        output_file = \"AnotherFoodWeb_Output.txt\"\n>       producers(input_file, output_file)\n\ntest_Assignment4.py:116: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'AnotherFoodWeb.txt', output_file = 'AnotherFoodWeb_Output.txt'\n\n    def producers(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       producers_line = next((line for line in expected_lines if line.startswith(\"Producers:\")), None)\n>      assert any(subline.strip() == producers_line.strip() for subline in main_lines if subline.startswith(\"Producers:\"))\nE      assert False\nE       +  where False = any(<generator object producers.<locals>.<genexpr> at 0x7366524dd3f0>)\n\ntest_Assignment4.py:40: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.506001904606819e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_another_most_flexible_eaters",
+            "lineno": 117,
+            "outcome": "passed",
+            "keywords": [
+                "test_another_most_flexible_eaters",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.38539607077837e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012503726058639586,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.67589483782649e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_another_tastiest",
+            "lineno": 122,
+            "outcome": "passed",
+            "keywords": [
+                "test_another_tastiest",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.6265038438141346e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.013002805993892252,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.973704487085342e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_another_heights",
+            "lineno": 127,
+            "outcome": "failed",
+            "keywords": [
+                "test_another_heights",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.6450022384524345e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.01233812898863107,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 71,
+                    "message": "assert False\n +  where False = any(<generator object heights.<locals>.<genexpr> at 0x7366523175a0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 131,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 71,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_another_heights():\n        input_file = \"AnotherFoodWeb.txt\"\n        output_file = \"AnotherFoodWeb_Output.txt\"\n>       heights(input_file, output_file)\n\ntest_Assignment4.py:131: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'AnotherFoodWeb.txt', output_file = 'AnotherFoodWeb_Output.txt'\n\n    def heights(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       heights_lines = [line for line in expected_lines if \":\" in line and line.split(\":\")[1].strip().isdigit()]\n       for line in heights_lines:\n>          assert any(subline.strip() == line.strip() for subline in main_lines)\nE          assert False\nE           +  where False = any(<generator object heights.<locals>.<genexpr> at 0x7366523175a0>)\n\ntest_Assignment4.py:71: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.316105231642723e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_another_herbivores",
+            "lineno": 132,
+            "outcome": "failed",
+            "keywords": [
+                "test_another_herbivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.520600825548172e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.01256104907952249,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 81,
+                    "message": "assert False\n +  where False = any(<generator object herbivores.<locals>.<genexpr> at 0x736652317df0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 136,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 81,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_another_herbivores():\n        input_file = \"AnotherFoodWeb.txt\"\n        output_file = \"AnotherFoodWeb_Output.txt\"\n>       herbivores(input_file, output_file)\n\ntest_Assignment4.py:136: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'AnotherFoodWeb.txt', output_file = 'AnotherFoodWeb_Output.txt'\n\n    def herbivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       herbivores_line = next((line for line in expected_lines if line.startswith(\"Herbivores:\")), None)\n>      assert any(subline.strip() == herbivores_line.strip() for subline in main_lines if subline.startswith(\"Herbivores:\"))\nE      assert False\nE       +  where False = any(<generator object herbivores.<locals>.<genexpr> at 0x736652317df0>)\n\ntest_Assignment4.py:81: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.869904559105635e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_another_omnivores",
+            "lineno": 137,
+            "outcome": "failed",
+            "keywords": [
+                "test_another_omnivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.730590783059597e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012754966039210558,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 91,
+                    "message": "assert False\n +  where False = any(<generator object omnivores.<locals>.<genexpr> at 0x7366524dc4a0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 141,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 91,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_another_omnivores():\n        input_file = \"AnotherFoodWeb.txt\"\n        output_file = \"AnotherFoodWeb_Output.txt\"\n>       omnivores(input_file, output_file)\n\ntest_Assignment4.py:141: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'AnotherFoodWeb.txt', output_file = 'AnotherFoodWeb_Output.txt'\n\n    def omnivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       omnivores_line = next((line for line in expected_lines if line.startswith(\"Omnivores:\")), None)\n>      assert any(subline.strip() == omnivores_line.strip() for subline in main_lines if subline.startswith(\"Omnivores:\"))\nE      assert False\nE       +  where False = any(<generator object omnivores.<locals>.<genexpr> at 0x7366524dc4a0>)\n\ntest_Assignment4.py:91: AssertionError"
+            },
+            "teardown": {
+                "duration": 7.792701944708824e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_another_carnivores",
+            "lineno": 142,
+            "outcome": "failed",
+            "keywords": [
+                "test_another_carnivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.2616000175476074e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012957466999068856,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 101,
+                    "message": "assert False\n +  where False = any(<generator object carnivores.<locals>.<genexpr> at 0x7366524de420>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 146,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 101,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_another_carnivores():\n        input_file = \"AnotherFoodWeb.txt\"\n        output_file = \"AnotherFoodWeb_Output.txt\"\n>       carnivores(input_file, output_file)\n\ntest_Assignment4.py:146: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'AnotherFoodWeb.txt', output_file = 'AnotherFoodWeb_Output.txt'\n\n    def carnivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       carnivores_line = next((line for line in expected_lines if line.startswith(\"Carnivores:\")), None)\n>      assert any(subline.strip() == carnivores_line.strip() for subline in main_lines if subline.startswith(\"Carnivores:\"))\nE      assert False\nE       +  where False = any(<generator object carnivores.<locals>.<genexpr> at 0x7366524de420>)\n\ntest_Assignment4.py:101: AssertionError"
+            },
+            "teardown": {
+                "duration": 7.558707147836685e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_aquatic_predators_and_prey",
+            "lineno": 147,
+            "outcome": "passed",
+            "keywords": [
+                "test_aquatic_predators_and_prey",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.5668060667812824e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012804879923351109,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.517007179558277e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_aquatic_apex_predators",
+            "lineno": 152,
+            "outcome": "passed",
+            "keywords": [
+                "test_aquatic_apex_predators",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.843001417815685e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012756500975228846,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 0.00017070106696337461,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_aquatic_producers",
+            "lineno": 157,
+            "outcome": "failed",
+            "keywords": [
+                "test_aquatic_producers",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 8.474104106426239e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012457491015084088,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 40,
+                    "message": "assert False\n +  where False = any(<generator object producers.<locals>.<genexpr> at 0x736652316f10>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 161,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 40,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_aquatic_producers():\n        input_file = \"AquaticFoodWeb.txt\"\n        output_file = \"AquaticFoodWeb_Output.txt\"\n>       producers(input_file, output_file)\n\ntest_Assignment4.py:161: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'AquaticFoodWeb.txt', output_file = 'AquaticFoodWeb_Output.txt'\n\n    def producers(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       producers_line = next((line for line in expected_lines if line.startswith(\"Producers:\")), None)\n>      assert any(subline.strip() == producers_line.strip() for subline in main_lines if subline.startswith(\"Producers:\"))\nE      assert False\nE       +  where False = any(<generator object producers.<locals>.<genexpr> at 0x736652316f10>)\n\ntest_Assignment4.py:40: AssertionError"
+            },
+            "teardown": {
+                "duration": 7.484003435820341e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_aquatic_most_flexible_eaters",
+            "lineno": 162,
+            "outcome": "passed",
+            "keywords": [
+                "test_aquatic_most_flexible_eaters",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.704700015485287e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012674228055402637,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.758996121585369e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_aquatic_tastiest",
+            "lineno": 167,
+            "outcome": "failed",
+            "keywords": [
+                "test_aquatic_tastiest",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.175208207219839e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012484765029512346,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 60,
+                    "message": "assert False\n +  where False = any(<generator object tastiest.<locals>.<genexpr> at 0x7366523ac040>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 171,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 60,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_aquatic_tastiest():\n        input_file = \"AquaticFoodWeb.txt\"\n        output_file = \"AquaticFoodWeb_Output.txt\"\n>       tastiest(input_file, output_file)\n\ntest_Assignment4.py:171: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'AquaticFoodWeb.txt', output_file = 'AquaticFoodWeb_Output.txt'\n\n    def tastiest(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       tastiest_line = next((line for line in expected_lines if line.startswith(\"Tastiest:\")), None)\n>      assert any(subline.strip() == tastiest_line.strip() for subline in main_lines if subline.startswith(\"Tastiest:\"))\nE      assert False\nE       +  where False = any(<generator object tastiest.<locals>.<genexpr> at 0x7366523ac040>)\n\ntest_Assignment4.py:60: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.00010127306450158358,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_aquatic_heights",
+            "lineno": 172,
+            "outcome": "failed",
+            "keywords": [
+                "test_aquatic_heights",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.673803389072418e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012738765915855765,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 71,
+                    "message": "assert False\n +  where False = any(<generator object heights.<locals>.<genexpr> at 0x7366524dcb30>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 176,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 71,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_aquatic_heights():\n        input_file = \"AquaticFoodWeb.txt\"\n        output_file = \"AquaticFoodWeb_Output.txt\"\n>       heights(input_file, output_file)\n\ntest_Assignment4.py:176: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'AquaticFoodWeb.txt', output_file = 'AquaticFoodWeb_Output.txt'\n\n    def heights(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       heights_lines = [line for line in expected_lines if \":\" in line and line.split(\":\")[1].strip().isdigit()]\n       for line in heights_lines:\n>          assert any(subline.strip() == line.strip() for subline in main_lines)\nE          assert False\nE           +  where False = any(<generator object heights.<locals>.<genexpr> at 0x7366524dcb30>)\n\ntest_Assignment4.py:71: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.285301737487316e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_aquatic_herbivores",
+            "lineno": 177,
+            "outcome": "failed",
+            "keywords": [
+                "test_aquatic_herbivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.5284006521105766e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012937747989781201,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 81,
+                    "message": "assert False\n +  where False = any(<generator object herbivores.<locals>.<genexpr> at 0x7366523ac270>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 181,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 81,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_aquatic_herbivores():\n        input_file = \"AquaticFoodWeb.txt\"\n        output_file = \"AquaticFoodWeb_Output.txt\"\n>       herbivores(input_file, output_file)\n\ntest_Assignment4.py:181: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'AquaticFoodWeb.txt', output_file = 'AquaticFoodWeb_Output.txt'\n\n    def herbivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       herbivores_line = next((line for line in expected_lines if line.startswith(\"Herbivores:\")), None)\n>      assert any(subline.strip() == herbivores_line.strip() for subline in main_lines if subline.startswith(\"Herbivores:\"))\nE      assert False\nE       +  where False = any(<generator object herbivores.<locals>.<genexpr> at 0x7366523ac270>)\n\ntest_Assignment4.py:81: AssertionError"
+            },
+            "teardown": {
+                "duration": 7.405504584312439e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_aquatic_omnivores",
+            "lineno": 182,
+            "outcome": "failed",
+            "keywords": [
+                "test_aquatic_omnivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.407608114182949e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012619714019820094,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 91,
+                    "message": "assert False\n +  where False = any(<generator object omnivores.<locals>.<genexpr> at 0x7366523ac3c0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 186,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 91,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_aquatic_omnivores():\n        input_file = \"AquaticFoodWeb.txt\"\n        output_file = \"AquaticFoodWeb_Output.txt\"\n>       omnivores(input_file, output_file)\n\ntest_Assignment4.py:186: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'AquaticFoodWeb.txt', output_file = 'AquaticFoodWeb_Output.txt'\n\n    def omnivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       omnivores_line = next((line for line in expected_lines if line.startswith(\"Omnivores:\")), None)\n>      assert any(subline.strip() == omnivores_line.strip() for subline in main_lines if subline.startswith(\"Omnivores:\"))\nE      assert False\nE       +  where False = any(<generator object omnivores.<locals>.<genexpr> at 0x7366523ac3c0>)\n\ntest_Assignment4.py:91: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.491201490163803e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_aquatic_carnivores",
+            "lineno": 187,
+            "outcome": "failed",
+            "keywords": [
+                "test_aquatic_carnivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.973502993583679e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0130710230441764,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 101,
+                    "message": "assert False\n +  where False = any(<generator object carnivores.<locals>.<genexpr> at 0x7366523acba0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 191,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 101,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_aquatic_carnivores():\n        input_file = \"AquaticFoodWeb.txt\"\n        output_file = \"AquaticFoodWeb_Output.txt\"\n>       carnivores(input_file, output_file)\n\ntest_Assignment4.py:191: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'AquaticFoodWeb.txt', output_file = 'AquaticFoodWeb_Output.txt'\n\n    def carnivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       carnivores_line = next((line for line in expected_lines if line.startswith(\"Carnivores:\")), None)\n>      assert any(subline.strip() == carnivores_line.strip() for subline in main_lines if subline.startswith(\"Carnivores:\"))\nE      assert False\nE       +  where False = any(<generator object carnivores.<locals>.<genexpr> at 0x7366523acba0>)\n\ntest_Assignment4.py:101: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.291502647101879e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_grassland_predators_and_prey",
+            "lineno": 192,
+            "outcome": "passed",
+            "keywords": [
+                "test_grassland_predators_and_prey",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.7194032706320286e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012596949003636837,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.695394404232502e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_grassland_apex_predators",
+            "lineno": 197,
+            "outcome": "passed",
+            "keywords": [
+                "test_grassland_apex_predators",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.512102507054806e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.013088112929835916,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.061392534524202e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_grassland_producers",
+            "lineno": 202,
+            "outcome": "failed",
+            "keywords": [
+                "test_grassland_producers",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.946995224803686e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.01263999508228153,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 40,
+                    "message": "assert False\n +  where False = any(<generator object producers.<locals>.<genexpr> at 0x7366523ad310>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 206,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 40,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_grassland_producers():\n        input_file = \"GrasslandFoodWeb.txt\"\n        output_file = \"GrasslandFoodWeb_Output.txt\"\n>       producers(input_file, output_file)\n\ntest_Assignment4.py:206: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'GrasslandFoodWeb.txt', output_file = 'GrasslandFoodWeb_Output.txt'\n\n    def producers(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       producers_line = next((line for line in expected_lines if line.startswith(\"Producers:\")), None)\n>      assert any(subline.strip() == producers_line.strip() for subline in main_lines if subline.startswith(\"Producers:\"))\nE      assert False\nE       +  where False = any(<generator object producers.<locals>.<genexpr> at 0x7366523ad310>)\n\ntest_Assignment4.py:40: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.477596566081047e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_grassland_most_flexible_eaters",
+            "lineno": 207,
+            "outcome": "passed",
+            "keywords": [
+                "test_grassland_most_flexible_eaters",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.8626988902688026e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012603780953213573,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.236007902771235e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_grassland_tastiest",
+            "lineno": 212,
+            "outcome": "passed",
+            "keywords": [
+                "test_grassland_tastiest",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.280389450490475e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012423962005414069,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.9302936531603336e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_grassland_heights",
+            "lineno": 217,
+            "outcome": "failed",
+            "keywords": [
+                "test_grassland_heights",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.527399480342865e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012916755047626793,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 71,
+                    "message": "assert False\n +  where False = any(<generator object heights.<locals>.<genexpr> at 0x7366523aceb0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 221,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 71,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_grassland_heights():\n        input_file = \"GrasslandFoodWeb.txt\"\n        output_file = \"GrasslandFoodWeb_Output.txt\"\n>       heights(input_file, output_file)\n\ntest_Assignment4.py:221: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'GrasslandFoodWeb.txt', output_file = 'GrasslandFoodWeb_Output.txt'\n\n    def heights(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       heights_lines = [line for line in expected_lines if \":\" in line and line.split(\":\")[1].strip().isdigit()]\n       for line in heights_lines:\n>          assert any(subline.strip() == line.strip() for subline in main_lines)\nE          assert False\nE           +  where False = any(<generator object heights.<locals>.<genexpr> at 0x7366523aceb0>)\n\ntest_Assignment4.py:71: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.147997479885817e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_grassland_herbivores",
+            "lineno": 222,
+            "outcome": "failed",
+            "keywords": [
+                "test_grassland_herbivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.764991510659456e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012984997942112386,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 81,
+                    "message": "assert False\n +  where False = any(<generator object herbivores.<locals>.<genexpr> at 0x7366523adaf0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 226,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 81,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_grassland_herbivores():\n        input_file = \"GrasslandFoodWeb.txt\"\n        output_file = \"GrasslandFoodWeb_Output.txt\"\n>       herbivores(input_file, output_file)\n\ntest_Assignment4.py:226: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'GrasslandFoodWeb.txt', output_file = 'GrasslandFoodWeb_Output.txt'\n\n    def herbivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       herbivores_line = next((line for line in expected_lines if line.startswith(\"Herbivores:\")), None)\n>      assert any(subline.strip() == herbivores_line.strip() for subline in main_lines if subline.startswith(\"Herbivores:\"))\nE      assert False\nE       +  where False = any(<generator object herbivores.<locals>.<genexpr> at 0x7366523adaf0>)\n\ntest_Assignment4.py:81: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.352997247129679e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_grassland_omnivores",
+            "lineno": 227,
+            "outcome": "failed",
+            "keywords": [
+                "test_grassland_omnivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 6.010499782860279e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012612588936462998,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 91,
+                    "message": "assert False\n +  where False = any(<generator object omnivores.<locals>.<genexpr> at 0x7366523ac9e0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 231,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 91,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_grassland_omnivores():\n        input_file = \"GrasslandFoodWeb.txt\"\n        output_file = \"GrasslandFoodWeb_Output.txt\"\n>       omnivores(input_file, output_file)\n\ntest_Assignment4.py:231: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'GrasslandFoodWeb.txt', output_file = 'GrasslandFoodWeb_Output.txt'\n\n    def omnivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       omnivores_line = next((line for line in expected_lines if line.startswith(\"Omnivores:\")), None)\n>      assert any(subline.strip() == omnivores_line.strip() for subline in main_lines if subline.startswith(\"Omnivores:\"))\nE      assert False\nE       +  where False = any(<generator object omnivores.<locals>.<genexpr> at 0x7366523ac9e0>)\n\ntest_Assignment4.py:91: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.661497849971056e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_grassland_carnivores",
+            "lineno": 232,
+            "outcome": "failed",
+            "keywords": [
+                "test_grassland_carnivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 6.115296855568886e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.01259949803352356,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 101,
+                    "message": "assert False\n +  where False = any(<generator object carnivores.<locals>.<genexpr> at 0x7366523aceb0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 236,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 101,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_grassland_carnivores():\n        input_file = \"GrasslandFoodWeb.txt\"\n        output_file = \"GrasslandFoodWeb_Output.txt\"\n>       carnivores(input_file, output_file)\n\ntest_Assignment4.py:236: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'GrasslandFoodWeb.txt', output_file = 'GrasslandFoodWeb_Output.txt'\n\n    def carnivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       carnivores_line = next((line for line in expected_lines if line.startswith(\"Carnivores:\")), None)\n>      assert any(subline.strip() == carnivores_line.strip() for subline in main_lines if subline.startswith(\"Carnivores:\"))\nE      assert False\nE       +  where False = any(<generator object carnivores.<locals>.<genexpr> at 0x7366523aceb0>)\n\ntest_Assignment4.py:101: AssertionError"
+            },
+            "teardown": {
+                "duration": 7.754599209874868e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_mixed_predators_and_prey",
+            "lineno": 237,
+            "outcome": "passed",
+            "keywords": [
+                "test_mixed_predators_and_prey",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.78039325773716e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012724342988803983,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.908201612532139e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_mixed_apex_predators",
+            "lineno": 242,
+            "outcome": "passed",
+            "keywords": [
+                "test_mixed_apex_predators",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.425396375358105e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012486123014241457,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.912800017744303e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_mixed_producers",
+            "lineno": 247,
+            "outcome": "failed",
+            "keywords": [
+                "test_mixed_producers",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.498598329722881e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.013041876023635268,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 40,
+                    "message": "assert False\n +  where False = any(<generator object producers.<locals>.<genexpr> at 0x7366523ae6c0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 251,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 40,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_mixed_producers():\n        input_file = \"MixedFoodWeb.txt\"\n        output_file = \"MixedFoodWeb_Output.txt\"\n>       producers(input_file, output_file)\n\ntest_Assignment4.py:251: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'MixedFoodWeb.txt', output_file = 'MixedFoodWeb_Output.txt'\n\n    def producers(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       producers_line = next((line for line in expected_lines if line.startswith(\"Producers:\")), None)\n>      assert any(subline.strip() == producers_line.strip() for subline in main_lines if subline.startswith(\"Producers:\"))\nE      assert False\nE       +  where False = any(<generator object producers.<locals>.<genexpr> at 0x7366523ae6c0>)\n\ntest_Assignment4.py:40: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.31320246309042e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_mixed_most_flexible_eaters",
+            "lineno": 252,
+            "outcome": "passed",
+            "keywords": [
+                "test_mixed_most_flexible_eaters",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.830102600157261e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012910907971672714,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.273598410189152e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_mixed_tastiest",
+            "lineno": 257,
+            "outcome": "failed",
+            "keywords": [
+                "test_mixed_tastiest",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.1798997446894646e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012301576905883849,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 60,
+                    "message": "assert False\n +  where False = any(<generator object tastiest.<locals>.<genexpr> at 0x7366523aed50>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 261,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 60,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_mixed_tastiest():\n        input_file = \"MixedFoodWeb.txt\"\n        output_file = \"MixedFoodWeb_Output.txt\"\n>       tastiest(input_file, output_file)\n\ntest_Assignment4.py:261: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'MixedFoodWeb.txt', output_file = 'MixedFoodWeb_Output.txt'\n\n    def tastiest(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       tastiest_line = next((line for line in expected_lines if line.startswith(\"Tastiest:\")), None)\n>      assert any(subline.strip() == tastiest_line.strip() for subline in main_lines if subline.startswith(\"Tastiest:\"))\nE      assert False\nE       +  where False = any(<generator object tastiest.<locals>.<genexpr> at 0x7366523aed50>)\n\ntest_Assignment4.py:60: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.49460081756115e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_mixed_heights",
+            "lineno": 262,
+            "outcome": "failed",
+            "keywords": [
+                "test_mixed_heights",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.772209260612726e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012435090029612184,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 71,
+                    "message": "assert False\n +  where False = any(<generator object heights.<locals>.<genexpr> at 0x7366523af840>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 266,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 71,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_mixed_heights():\n        input_file = \"MixedFoodWeb.txt\"\n        output_file = \"MixedFoodWeb_Output.txt\"\n>       heights(input_file, output_file)\n\ntest_Assignment4.py:266: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'MixedFoodWeb.txt', output_file = 'MixedFoodWeb_Output.txt'\n\n    def heights(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       heights_lines = [line for line in expected_lines if \":\" in line and line.split(\":\")[1].strip().isdigit()]\n       for line in heights_lines:\n>          assert any(subline.strip() == line.strip() for subline in main_lines)\nE          assert False\nE           +  where False = any(<generator object heights.<locals>.<genexpr> at 0x7366523af840>)\n\ntest_Assignment4.py:71: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.503401815891266e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_mixed_herbivores",
+            "lineno": 267,
+            "outcome": "failed",
+            "keywords": [
+                "test_mixed_herbivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.4011004976928234e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012563818949274719,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 81,
+                    "message": "assert False\n +  where False = any(<generator object herbivores.<locals>.<genexpr> at 0x7366523ae960>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 271,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 81,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_mixed_herbivores():\n        input_file = \"MixedFoodWeb.txt\"\n        output_file = \"MixedFoodWeb_Output.txt\"\n>       herbivores(input_file, output_file)\n\ntest_Assignment4.py:271: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'MixedFoodWeb.txt', output_file = 'MixedFoodWeb_Output.txt'\n\n    def herbivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       herbivores_line = next((line for line in expected_lines if line.startswith(\"Herbivores:\")), None)\n>      assert any(subline.strip() == herbivores_line.strip() for subline in main_lines if subline.startswith(\"Herbivores:\"))\nE      assert False\nE       +  where False = any(<generator object herbivores.<locals>.<genexpr> at 0x7366523ae960>)\n\ntest_Assignment4.py:81: AssertionError"
+            },
+            "teardown": {
+                "duration": 7.777207065373659e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_mixed_omnivores",
+            "lineno": 272,
+            "outcome": "failed",
+            "keywords": [
+                "test_mixed_omnivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.623896140605211e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012352879042737186,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 91,
+                    "message": "assert False\n +  where False = any(<generator object omnivores.<locals>.<genexpr> at 0x7366523ae490>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 276,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 91,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_mixed_omnivores():\n        input_file = \"MixedFoodWeb.txt\"\n        output_file = \"MixedFoodWeb_Output.txt\"\n>       omnivores(input_file, output_file)\n\ntest_Assignment4.py:276: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'MixedFoodWeb.txt', output_file = 'MixedFoodWeb_Output.txt'\n\n    def omnivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       omnivores_line = next((line for line in expected_lines if line.startswith(\"Omnivores:\")), None)\n>      assert any(subline.strip() == omnivores_line.strip() for subline in main_lines if subline.startswith(\"Omnivores:\"))\nE      assert False\nE       +  where False = any(<generator object omnivores.<locals>.<genexpr> at 0x7366523ae490>)\n\ntest_Assignment4.py:91: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.975105497986078e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_mixed_carnivores",
+            "lineno": 277,
+            "outcome": "failed",
+            "keywords": [
+                "test_mixed_carnivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.339703056961298e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.01244095095898956,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 101,
+                    "message": "assert False\n +  where False = any(<generator object carnivores.<locals>.<genexpr> at 0x7366523afd80>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 281,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 101,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_mixed_carnivores():\n        input_file = \"MixedFoodWeb.txt\"\n        output_file = \"MixedFoodWeb_Output.txt\"\n>       carnivores(input_file, output_file)\n\ntest_Assignment4.py:281: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'MixedFoodWeb.txt', output_file = 'MixedFoodWeb_Output.txt'\n\n    def carnivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       carnivores_line = next((line for line in expected_lines if line.startswith(\"Carnivores:\")), None)\n>      assert any(subline.strip() == carnivores_line.strip() for subline in main_lines if subline.startswith(\"Carnivores:\"))\nE      assert False\nE       +  where False = any(<generator object carnivores.<locals>.<genexpr> at 0x7366523afd80>)\n\ntest_Assignment4.py:101: AssertionError"
+            },
+            "teardown": {
+                "duration": 7.664400618523359e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_simple_predators_and_prey",
+            "lineno": 282,
+            "outcome": "passed",
+            "keywords": [
+                "test_simple_predators_and_prey",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.363591481000185e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0128006839659065,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.9628975577652454e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_simple_apex_predators",
+            "lineno": 287,
+            "outcome": "passed",
+            "keywords": [
+                "test_simple_apex_predators",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.380006041377783e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.01290008402429521,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.351103704422712e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_simple_producers",
+            "lineno": 292,
+            "outcome": "failed",
+            "keywords": [
+                "test_simple_producers",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.772593431174755e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012707117944955826,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 40,
+                    "message": "assert False\n +  where False = any(<generator object producers.<locals>.<genexpr> at 0x7366523f8190>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 296,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 40,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_simple_producers():\n        input_file = \"SimpleFoodWeb.txt\"\n        output_file = \"SimpleFoodWeb_Output.txt\"\n>       producers(input_file, output_file)\n\ntest_Assignment4.py:296: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'SimpleFoodWeb.txt', output_file = 'SimpleFoodWeb_Output.txt'\n\n    def producers(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       producers_line = next((line for line in expected_lines if line.startswith(\"Producers:\")), None)\n>      assert any(subline.strip() == producers_line.strip() for subline in main_lines if subline.startswith(\"Producers:\"))\nE      assert False\nE       +  where False = any(<generator object producers.<locals>.<genexpr> at 0x7366523f8190>)\n\ntest_Assignment4.py:40: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.179806172847748e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_simple_most_flexible_eaters",
+            "lineno": 297,
+            "outcome": "passed",
+            "keywords": [
+                "test_simple_most_flexible_eaters",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.6438962928950787e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012456763070076704,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.035005208104849e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_simple_tastiest",
+            "lineno": 302,
+            "outcome": "failed",
+            "keywords": [
+                "test_simple_tastiest",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.0261965952813625e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012270177016034722,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 60,
+                    "message": "assert False\n +  where False = any(<generator object tastiest.<locals>.<genexpr> at 0x7366523f8820>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 306,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 60,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_simple_tastiest():\n        input_file = \"SimpleFoodWeb.txt\"\n        output_file = \"SimpleFoodWeb_Output.txt\"\n>       tastiest(input_file, output_file)\n\ntest_Assignment4.py:306: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'SimpleFoodWeb.txt', output_file = 'SimpleFoodWeb_Output.txt'\n\n    def tastiest(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       tastiest_line = next((line for line in expected_lines if line.startswith(\"Tastiest:\")), None)\n>      assert any(subline.strip() == tastiest_line.strip() for subline in main_lines if subline.startswith(\"Tastiest:\"))\nE      assert False\nE       +  where False = any(<generator object tastiest.<locals>.<genexpr> at 0x7366523f8820>)\n\ntest_Assignment4.py:60: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.016498759388924e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_simple_heights",
+            "lineno": 307,
+            "outcome": "failed",
+            "keywords": [
+                "test_simple_heights",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.609693471342325e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012391378986649215,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 71,
+                    "message": "assert False\n +  where False = any(<generator object heights.<locals>.<genexpr> at 0x7366523afed0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 311,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 71,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_simple_heights():\n        input_file = \"SimpleFoodWeb.txt\"\n        output_file = \"SimpleFoodWeb_Output.txt\"\n>       heights(input_file, output_file)\n\ntest_Assignment4.py:311: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'SimpleFoodWeb.txt', output_file = 'SimpleFoodWeb_Output.txt'\n\n    def heights(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       heights_lines = [line for line in expected_lines if \":\" in line and line.split(\":\")[1].strip().isdigit()]\n       for line in heights_lines:\n>          assert any(subline.strip() == line.strip() for subline in main_lines)\nE          assert False\nE           +  where False = any(<generator object heights.<locals>.<genexpr> at 0x7366523afed0>)\n\ntest_Assignment4.py:71: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.54170648381114e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_simple_herbivores",
+            "lineno": 312,
+            "outcome": "failed",
+            "keywords": [
+                "test_simple_herbivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.686108488589525e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.013279395992867649,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 81,
+                    "message": "assert False\n +  where False = any(<generator object herbivores.<locals>.<genexpr> at 0x7366523f84a0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 316,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 81,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_simple_herbivores():\n        input_file = \"SimpleFoodWeb.txt\"\n        output_file = \"SimpleFoodWeb_Output.txt\"\n>       herbivores(input_file, output_file)\n\ntest_Assignment4.py:316: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'SimpleFoodWeb.txt', output_file = 'SimpleFoodWeb_Output.txt'\n\n    def herbivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       herbivores_line = next((line for line in expected_lines if line.startswith(\"Herbivores:\")), None)\n>      assert any(subline.strip() == herbivores_line.strip() for subline in main_lines if subline.startswith(\"Herbivores:\"))\nE      assert False\nE       +  where False = any(<generator object herbivores.<locals>.<genexpr> at 0x7366523f84a0>)\n\ntest_Assignment4.py:81: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.373202919960022e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_simple_omnivores",
+            "lineno": 317,
+            "outcome": "failed",
+            "keywords": [
+                "test_simple_omnivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.679205060005188e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012521130032837391,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 91,
+                    "message": "assert False\n +  where False = any(<generator object omnivores.<locals>.<genexpr> at 0x7366523f86d0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 321,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 91,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_simple_omnivores():\n        input_file = \"SimpleFoodWeb.txt\"\n        output_file = \"SimpleFoodWeb_Output.txt\"\n>       omnivores(input_file, output_file)\n\ntest_Assignment4.py:321: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'SimpleFoodWeb.txt', output_file = 'SimpleFoodWeb_Output.txt'\n\n    def omnivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       omnivores_line = next((line for line in expected_lines if line.startswith(\"Omnivores:\")), None)\n>      assert any(subline.strip() == omnivores_line.strip() for subline in main_lines if subline.startswith(\"Omnivores:\"))\nE      assert False\nE       +  where False = any(<generator object omnivores.<locals>.<genexpr> at 0x7366523f86d0>)\n\ntest_Assignment4.py:91: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.871499449014664e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_simple_carnivores",
+            "lineno": 322,
+            "outcome": "failed",
+            "keywords": [
+                "test_simple_carnivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.584396421909332e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.01224071707110852,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 101,
+                    "message": "assert False\n +  where False = any(<generator object carnivores.<locals>.<genexpr> at 0x7366523f8eb0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 326,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 101,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_simple_carnivores():\n        input_file = \"SimpleFoodWeb.txt\"\n        output_file = \"SimpleFoodWeb_Output.txt\"\n>       carnivores(input_file, output_file)\n\ntest_Assignment4.py:326: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'SimpleFoodWeb.txt', output_file = 'SimpleFoodWeb_Output.txt'\n\n    def carnivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       carnivores_line = next((line for line in expected_lines if line.startswith(\"Carnivores:\")), None)\n>      assert any(subline.strip() == carnivores_line.strip() for subline in main_lines if subline.startswith(\"Carnivores:\"))\nE      assert False\nE       +  where False = any(<generator object carnivores.<locals>.<genexpr> at 0x7366523f8eb0>)\n\ntest_Assignment4.py:101: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.70279797911644e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_terrestrial_predators_and_prey",
+            "lineno": 327,
+            "outcome": "passed",
+            "keywords": [
+                "test_terrestrial_predators_and_prey",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.6007993407547474e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012299243942834437,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.273598410189152e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_terrestrial_apex_predators",
+            "lineno": 332,
+            "outcome": "passed",
+            "keywords": [
+                "test_terrestrial_apex_predators",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.297199822962284e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012374427984468639,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.642103496938944e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_terrestrial_producers",
+            "lineno": 337,
+            "outcome": "failed",
+            "keywords": [
+                "test_terrestrial_producers",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.045498255640268e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.01226346893236041,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 40,
+                    "message": "assert False\n +  where False = any(<generator object producers.<locals>.<genexpr> at 0x7366523f8b30>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 341,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 40,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_terrestrial_producers():\n        input_file = \"TerrestrialFoodWeb.txt\"\n        output_file = \"TerrestrialFoodWeb_Output.txt\"\n>       producers(input_file, output_file)\n\ntest_Assignment4.py:341: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'TerrestrialFoodWeb.txt'\noutput_file = 'TerrestrialFoodWeb_Output.txt'\n\n    def producers(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       producers_line = next((line for line in expected_lines if line.startswith(\"Producers:\")), None)\n>      assert any(subline.strip() == producers_line.strip() for subline in main_lines if subline.startswith(\"Producers:\"))\nE      assert False\nE       +  where False = any(<generator object producers.<locals>.<genexpr> at 0x7366523f8b30>)\n\ntest_Assignment4.py:40: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.186895865947008e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_terrestrial_most_flexible_eaters",
+            "lineno": 342,
+            "outcome": "passed",
+            "keywords": [
+                "test_terrestrial_most_flexible_eaters",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.559693090617657e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012704674969427288,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.480701267719269e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_terrestrial_tastiest",
+            "lineno": 347,
+            "outcome": "passed",
+            "keywords": [
+                "test_terrestrial_tastiest",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.4468982852995396e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012496998067945242,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.014807149767876e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_terrestrial_heights",
+            "lineno": 352,
+            "outcome": "failed",
+            "keywords": [
+                "test_terrestrial_heights",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.183194298297167e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012429335969500244,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 71,
+                    "message": "assert False\n +  where False = any(<generator object heights.<locals>.<genexpr> at 0x7366523f93f0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 356,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 71,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_terrestrial_heights():\n        input_file = \"TerrestrialFoodWeb.txt\"\n        output_file = \"TerrestrialFoodWeb_Output.txt\"\n>       heights(input_file, output_file)\n\ntest_Assignment4.py:356: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'TerrestrialFoodWeb.txt'\noutput_file = 'TerrestrialFoodWeb_Output.txt'\n\n    def heights(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       heights_lines = [line for line in expected_lines if \":\" in line and line.split(\":\")[1].strip().isdigit()]\n       for line in heights_lines:\n>          assert any(subline.strip() == line.strip() for subline in main_lines)\nE          assert False\nE           +  where False = any(<generator object heights.<locals>.<genexpr> at 0x7366523f93f0>)\n\ntest_Assignment4.py:71: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.00010736507829278708,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_terrestrial_herbivores",
+            "lineno": 357,
+            "outcome": "failed",
+            "keywords": [
+                "test_terrestrial_herbivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.6801014579832554e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012338727014139295,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 81,
+                    "message": "assert False\n +  where False = any(<generator object herbivores.<locals>.<genexpr> at 0x7366523f9bd0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 361,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 81,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_terrestrial_herbivores():\n        input_file = \"TerrestrialFoodWeb.txt\"\n        output_file = \"TerrestrialFoodWeb_Output.txt\"\n>       herbivores(input_file, output_file)\n\ntest_Assignment4.py:361: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'TerrestrialFoodWeb.txt'\noutput_file = 'TerrestrialFoodWeb_Output.txt'\n\n    def herbivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       herbivores_line = next((line for line in expected_lines if line.startswith(\"Herbivores:\")), None)\n>      assert any(subline.strip() == herbivores_line.strip() for subline in main_lines if subline.startswith(\"Herbivores:\"))\nE      assert False\nE       +  where False = any(<generator object herbivores.<locals>.<genexpr> at 0x7366523f9bd0>)\n\ntest_Assignment4.py:81: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.405104745179415e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_terrestrial_omnivores",
+            "lineno": 362,
+            "outcome": "failed",
+            "keywords": [
+                "test_terrestrial_omnivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.675596185028553e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.012675781035795808,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 91,
+                    "message": "assert False\n +  where False = any(<generator object omnivores.<locals>.<genexpr> at 0x7366524dcc80>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 366,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 91,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_terrestrial_omnivores():\n        input_file = \"TerrestrialFoodWeb.txt\"\n        output_file = \"TerrestrialFoodWeb_Output.txt\"\n>       omnivores(input_file, output_file)\n\ntest_Assignment4.py:366: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'TerrestrialFoodWeb.txt'\noutput_file = 'TerrestrialFoodWeb_Output.txt'\n\n    def omnivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       omnivores_line = next((line for line in expected_lines if line.startswith(\"Omnivores:\")), None)\n>      assert any(subline.strip() == omnivores_line.strip() for subline in main_lines if subline.startswith(\"Omnivores:\"))\nE      assert False\nE       +  where False = any(<generator object omnivores.<locals>.<genexpr> at 0x7366524dcc80>)\n\ntest_Assignment4.py:91: AssertionError"
+            },
+            "teardown": {
+                "duration": 7.0211011916399e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_terrestrial_carnivores",
+            "lineno": 367,
+            "outcome": "failed",
+            "keywords": [
+                "test_terrestrial_carnivores",
+                "test_Assignment4.py",
+                "code_r39p6n2c"
+            ],
+            "setup": {
+                "duration": 5.372101441025734e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0125266540562734,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_r39p6n2c/test_Assignment4.py",
+                    "lineno": 101,
+                    "message": "assert False\n +  where False = any(<generator object carnivores.<locals>.<genexpr> at 0x736652317d10>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 371,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 101,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_terrestrial_carnivores():\n        input_file = \"TerrestrialFoodWeb.txt\"\n        output_file = \"TerrestrialFoodWeb_Output.txt\"\n>       carnivores(input_file, output_file)\n\ntest_Assignment4.py:371: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'TerrestrialFoodWeb.txt'\noutput_file = 'TerrestrialFoodWeb_Output.txt'\n\n    def carnivores(input_file, output_file):\n       main_output = run_main_py(input_file)\n       expected_output = read_output_file(output_file)\n    \n       main_lines = main_output.split(\"\\n\")\n       expected_lines = expected_output.split(\"\\n\")\n    \n       carnivores_line = next((line for line in expected_lines if line.startswith(\"Carnivores:\")), None)\n>      assert any(subline.strip() == carnivores_line.strip() for subline in main_lines if subline.startswith(\"Carnivores:\"))\nE      assert False\nE       +  where False = any(<generator object carnivores.<locals>.<genexpr> at 0x736652317d10>)\n\ntest_Assignment4.py:101: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.00010198599193245173,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

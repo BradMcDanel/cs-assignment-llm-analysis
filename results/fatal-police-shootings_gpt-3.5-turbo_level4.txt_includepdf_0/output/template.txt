@@ -1,0 +1,15 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.
+********************************************************************************************************************************
+
+Question 1:
+- The data includes information on fatal police shootings compiled by the Washington Post and is available on GitHub. It consists of various details such as date, threat type, armed status, gender, race, and state of the individual involved in the shooting.
+
+Question 2:
+- Column headers include: id, date, threat_type, flee_status, armed_with, city, county, state, latitude, longitude, location_precision, name, age, gender, race, race_source, was_mental_illness_related, body_camera, agency_ids.
+- For example, the "id" column contains unique identifiers for each incident, the "date" column contains the date of the incident, and so on.
+
+Question 3:
+- The percentage of the United States population that is black is approximately 13.4%. (Source: U.S. Census Bureau)
