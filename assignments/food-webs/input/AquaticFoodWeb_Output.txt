@@ -1,0 +1,33 @@
+Predators and Prey:
+  Bird eats Crab, Limpets, Mussels, Prawn and Whelk
+  Crab eats Limpets and Mussels
+  Fish eats Prawn
+  Limpets eats Seaweed
+  Lobster eats Crab, Limpets, Mussels and Whelk
+  Mussels eats Phytoplankton and Zooplankton
+  Prawn eats Zooplankton
+  Whelk eats Limpets and Mussels
+  Zooplankton eats Phytoplankton
+
+Apex Predators: Bird, Fish and Lobster
+Producers: Phytoplankton and Seaweed
+Most Flexible Eaters: Bird
+Tastiest: Limpets and Mussels
+
+Heights:
+  Bird: 4
+  Crab: 3
+  Fish: 3
+  Limpets: 1
+  Lobster: 4
+  Mussels: 2
+  Phytoplankton: 0
+  Prawn: 2
+  Seaweed: 0
+  Whelk: 3
+  Zooplankton: 1
+
+For an A+:
+  Herbivores: Limpets and Zooplankton
+  Omnivores: Mussels
+  Carnivores: Bird, Crab, Fish, Lobster, Prawn and Whelk

@@ -1,0 +1,9 @@
+Bird,Prawn,Mussels,Crab,Limpets,Whelk
+Crab,Mussels,Limpets
+Fish,Prawn
+Limpets,Seaweed
+Lobster,Crab,Mussels,Limpets,Whelk
+Mussels,Phytoplankton,Zooplankton
+Prawn,Zooplankton
+Whelk,Limpets,Mussels
+Zooplankton,Phytoplankton

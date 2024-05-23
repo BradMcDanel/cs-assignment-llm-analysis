@@ -52,12 +52,13 @@ if __name__ == "__main__":
     parser.add_argument("--num-evaluations", type=int, required=True, help="Number of evaluations per input.")
     parser.add_argument("--models", nargs='+', required=True, help="List of models to use for the LLM.")
     parser.add_argument("--prompt-files", nargs='+', required=True, help="List of paths to the prompt files.")
-    parser.add_argument("--exclude-non-pdf", nargs='+', type=bool, required=True, help="List of boolean values to exclude non-PDF files from the input.")
+    parser.add_argument("--exclude-non-pdf", nargs='+', type=str, required=True, help="List of boolean values to exclude non-PDF files from the input.")
     parser.add_argument("--input-dirs", nargs='+', required=True, help="List of input directories.")
     parser.add_argument("--base-output-dir", required=True, help="Base path for the output directories.")
     parser.add_argument("--silent", action="store_true", help="Suppress progress output.")
     
     args = parser.parse_args()
+    args.exclude_non_pdf = [True if x.lower() == 'true' else False for x in args.exclude_non_pdf]
 
     settings = {
         'num_evaluations': args.num_evaluations,
