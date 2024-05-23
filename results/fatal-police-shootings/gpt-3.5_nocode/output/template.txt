@@ -1,5 +1,0 @@
-Reflection:
-Working on this project provided insight into analyzing real-world data using Python dictionaries.
-The findings on the proportion of black subjects in fatal police shootings compared to the US population were eye-opening.
-The process of reading, organizing, and analyzing the data enhanced my Python programming skills.
-Overall, this project underscored the importance of data-driven analysis in understanding societal issues.

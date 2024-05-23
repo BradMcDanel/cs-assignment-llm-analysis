@@ -1,6 +1,0 @@
-Grasshopper,Grass
-Lizard,Grasshopper
-Hawk,Grasshopper,Lizard,Rabbit,Mouse,Snake
-Rabbit,Grass
-Snake,Mouse
-Mouse,Grass

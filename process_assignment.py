@@ -7,24 +7,14 @@ import tiktoken
 import llm
 import code_utils
 
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Process files in a folder recursively.")
-    parser.add_argument("--assignment-folder", required=True, help="Path to the assignment folder.")
-    parser.add_argument("--output-folder", required=True, help="Path to the output folder.")
-    parser.add_argument("--model", help="Model to use for the LLM.", default="gpt-4-turbo-preview")
-    parser.add_argument("--prompt-file", required=True, help="Path to the prompt file.")
-    # Ablation arguments
-    parser.add_argument("--exclude-non-pdf", action="store_true", help="Exclude non-PDF files from the input.")
-    args = parser.parse_args()
-
-    assignment_input_folder = os.path.join(args.assignment_folder, "input")
+def process_assignment(assignment_folder, output_folder, prompt_file, model="gpt-4-turbo-preview", exclude_non_pdf=False):
+    assignment_input_folder = os.path.join(assignment_folder, "input")
 
     file_dict = code_utils.process_files(assignment_input_folder)
 
     # Ablation: exclude non-PDF files from the input
     model_file_dict = {}
-    if args.exclude_non_pdf:
+    if exclude_non_pdf:
         for filename, content in file_dict.items():
             if filename.endswith(".pdf"):
                 model_file_dict[filename] = content
@@ -33,13 +23,13 @@ if __name__ == "__main__":
 
     result_string = code_utils.file_dict_to_str(model_file_dict)
 
-    enc = tiktoken.encoding_for_model("gpt-4")
+    enc = tiktoken.encoding_for_model(model)
     num_tokens = len(enc.encode(result_string))
     if num_tokens > code_utils.MAX_INPUT_TOKENS:
         raise ValueError(f"Input tokens ({num_tokens}) exceed the maximum limit ({code_utils.MAX_INPUT_TOKENS}).")
 
     # format messages
-    with open(args.prompt_file, "r") as f:
+    with open(prompt_file, "r") as f:
         prompt = f.read()
 
     prompt = code_utils.replace_placeholders(prompt, {"assignment": result_string})
@@ -49,7 +39,7 @@ if __name__ == "__main__":
         {"role": "user", "content": prompt},
     ]
 
-    response = llm.call(messages, model=args.model, max_tokens=4096, temperature=0.7)
+    response = llm.call(messages, model=model, max_tokens=4096, temperature=0.7)
 
     generated_files = code_utils.extract_files(response)
     for i, (filename, code_content, is_provided) in enumerate(generated_files):
@@ -65,7 +55,8 @@ if __name__ == "__main__":
             generated_files.append((filename, content, True))
 
     # Add test files from the input folder to generated_files
-    input_tests_folder = os.path.join(args.assignment_folder, "tests")
+    input_tests_folder = os.path.join(assignment_folder, "tests")
+    print(input_tests_folder)
     if os.path.exists(input_tests_folder):
         for root, _, files in os.walk(input_tests_folder):
             for file in files:
@@ -78,13 +69,24 @@ if __name__ == "__main__":
         print(f"No tests folder found in the input folder: {input_tests_folder}")
 
     # save all files to the output folder
-    model_output_folder = os.path.join(args.output_folder, "output")
+    model_output_folder = os.path.join(output_folder, "output")
     code_utils.save_files(generated_files, model_output_folder)
 
     # Run the unit tests
     test_results = code_utils.run_tests(generated_files)
 
-    test_results_json_path = os.path.join(args.output_folder, "test_results.json")
+    test_results_json_path = os.path.join(output_folder, "test_results.json")
     with open(test_results_json_path, "w") as f:
         json.dump(test_results, f, indent=4)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Process files in a folder recursively.")
+    parser.add_argument("--assignment-folder", required=True, help="Path to the assignment folder.")
+    parser.add_argument("--output-folder", required=True, help="Path to the output folder.")
+    parser.add_argument("--model", help="Model to use for the LLM.", default="gpt-4-turbo-preview")
+    parser.add_argument("--prompt-file", required=True, help="Path to the prompt file.")
+    parser.add_argument("--exclude-non-pdf", action="store_true", help="Exclude non-PDF files from the input.")
+    args = parser.parse_args()
+
+    process_assignment(args.assignment_folder, args.output_folder, args.prompt_file, args.model, args.exclude_non_pdf)
 

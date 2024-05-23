@@ -5,9 +5,10 @@ import shutil
 import re
 import json
 
-import pytesseract
 from pdf2image import convert_from_path
 from PIL import Image
+import pytesseract
+import fitz
 
 MAX_INPUT_TOKENS = 16384
 MAX_PASS_ATTEMPTS = 1
@@ -33,14 +34,25 @@ def replace_placeholders(string, prompt_args):
 
     return re.sub(r'<\|(.+?)\|>', replace, string)
 
-def process_pdf(pdf_path):
-    # Convert PDF to images
-    images = convert_from_path(pdf_path)
+def extract_text_from_image(image):
+    return pytesseract.image_to_string(image, config="--psm 6")
 
-    # Perform OCR on each image
+def process_pdf(pdf_path):
+    # Open the PDF with PyMuPDF
+    pdf_document = fitz.open(pdf_path)
     text = ""
-    for image in images:
-        text += pytesseract.image_to_string(image, config="--psm 6")
+    
+    for page_num in range(len(pdf_document)):
+        page = pdf_document.load_page(page_num)
+        # Extract text directly from the page if possible
+        page_text = page.get_text()
+        if page_text.strip():
+            text += page_text
+        else:
+            # Convert the page to an image and extract text using OCR if text extraction fails
+            pix = page.get_pixmap()
+            image = pix.tobytes("png")
+            text += extract_text_from_image(image)
 
     return text
 
@@ -84,6 +96,18 @@ def postprocess_csv(file_string, n=20):
         trimmed_lines = lines[:n] + lines[-n:]
         return '\n'.join(trimmed_lines)
 
+def postprocess_txt(file_string, n=20):
+    lines = file_string.split('\n')
+    total_lines = len(lines)
+    
+    if total_lines <= 2*n:
+        # If total lines are less than or equal to 2n, return the original string
+        return file_string
+    else:
+        # Keep the first n lines and the last n lines
+        trimmed_lines = lines[:n] + ["..."] + lines[-n:]
+        return '\n'.join(trimmed_lines)
+
 FILE_TYPES = {
     "*": {
         "process_func": lambda path: open(path, "rb").read(),
@@ -94,6 +118,10 @@ FILE_TYPES = {
         "postprocess_func": lambda s: s,
     },
     ".txt": {
+        "process_func": lambda path: open(path, "r").read(),
+        "postprocess_func": postprocess_txt,
+    },
+    ".html": {
         "process_func": lambda path: open(path, "r").read(),
         "postprocess_func": lambda s: s,
     },
@@ -175,13 +203,19 @@ def save_files(files, save_dir=None):
     if save_dir is None:
         save_dir = tempfile.mkdtemp(prefix='code_')
 
+    binary_types = ["pdf", "jpg", "jpeg", "png", "gif", "bmp", "tiff", "ico", "webp", "mp3", "wav", "mp4", "avi", "mkv", "mov", "zip", "rar", "7z", "tar", "gz", "bz2"]
+
     for filename, content, _ in files:
         file_path = os.path.join(save_dir, filename)
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        file_extension = filename.split('.')[-1].lower()
+        # mode = "wb" if file_extension in binary_types else "w"
+        mode = "w"
+        
         if hasattr(content, "save"):
             content.save(file_path)
         else:
-            with open(file_path, "w") as f:
+            with open(file_path, mode) as f:
                 f.write(content)
 
     return save_dir

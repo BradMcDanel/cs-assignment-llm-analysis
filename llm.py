@@ -1,14 +1,10 @@
 import os
 from copy import deepcopy
 
-import openai
+from openai import OpenAI
 import anthropic
 
-api_key = os.getenv("OPENAI_API_KEY", "")
-if api_key != "":
-    openai.api_key = api_key
-else:
-    print("Warning: OPENAI_API_KEY is not set")
+oai_client = OpenAI()
 
 ant_api_key = os.getenv("ANTHROPIC_API_KEY", "")
 if ant_api_key != "":
@@ -35,6 +31,6 @@ def call(messages, **kwargs) -> list:
         )
         return res.content[0].text
     else: # OPENAI
-        res = openai.ChatCompletion.create(messages=messages, **kwargs)
-        return res["choices"][0]["message"]["content"]
+        res = oai_client.chat.completions.create(messages=messages, **kwargs)
+        return res.choices[0].message.content
 
