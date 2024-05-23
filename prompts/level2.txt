@@ -1,0 +1,17 @@
+***Assignment to solve***
+<|assignment|>
+
+***Instructions***
+- Write Python codeblocks with filenames as comments at the top.
+- Use provided helper scripts as-is.
+
+```python
+### filename.py ###
+# Your code here
+```
+
+```plaintext
+### write-up.txt ###
+# Your write-up here
+```
+

@@ -1,0 +1,42 @@
+***Assignment to solve***
+<|assignment|>
+
+***Instructions***
+- Your response should consist of Python codeblocks.
+- Each codeblock should start with a comment indicating the filename.
+- Use any provided utility/helper scripts as-is and indicate with a comment.
+- Ensure each filename starts with triple `###` and the filename, e.g., `### main.py ###`.
+- Fill in any required write-up at the end.
+
+***Example Response***
+1. Copy over the provided `utils/rand_utils.py` file.
+2. Implement the `add` function in `mymath.py`.
+3. Implement the entry-point in `main.py`.
+4. Complete the provided `write-up.txt`.
+
+```python
+### utils/rand_utils.py - PROVIDED ###
+```
+
+```python
+### mymath.py ###
+def add(a, b):
+    return a + b
+```
+
+```python
+### main.py ###
+import mymath
+import rand_utils
+
+if __name__ == "__main__":
+    a = int(input("Enter a number: "))
+    b = rand_utils.get_random_number()
+    print(mymath.add(a, b))
+```
+
+```plaintext
+### write-up.txt ###
+In this assignment, I learned the importance of...
+```
+
