@@ -1,0 +1,394 @@
+{
+    "created": 1719502791.6486535,
+    "duration": 0.03733682632446289,
+    "exitcode": 1,
+    "root": "/tmp/code_6yrriizg",
+    "environment": {},
+    "summary": {
+        "passed": 3,
+        "failed": 7,
+        "total": 10,
+        "collected": 10
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_SpellingBee.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+                    "type": "Function",
+                    "lineno": 47
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+                    "type": "Function",
+                    "lineno": 52
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+                    "type": "Function",
+                    "lineno": 57
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_action",
+                    "type": "Function",
+                    "lineno": 62
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+                    "type": "Function",
+                    "lineno": 69
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+                    "type": "Function",
+                    "lineno": 77
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_pangram_identification",
+                    "type": "Function",
+                    "lineno": 84
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_score_calculation",
+                    "type": "Function",
+                    "lineno": 89
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+                    "type": "Function",
+                    "lineno": 96
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+                    "type": "Function",
+                    "lineno": 104
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+            "lineno": 47,
+            "outcome": "passed",
+            "keywords": [
+                "test_puzzle_initialization",
+                "test_SpellingBee.py",
+                "code_6yrriizg"
+            ],
+            "setup": {
+                "duration": 0.00017201597802340984,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.342190317809582e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.525102071464062e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+            "lineno": 52,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_puzzle_length",
+                "test_SpellingBee.py",
+                "code_6yrriizg"
+            ],
+            "setup": {
+                "duration": 9.173993021249771e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 4.85079362988472e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.269213579595089e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+            "lineno": 57,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_puzzle_duplicates",
+                "test_SpellingBee.py",
+                "code_6yrriizg"
+            ],
+            "setup": {
+                "duration": 9.299791418015957e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.163205787539482e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.4298900067806244e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_action",
+            "lineno": 62,
+            "outcome": "failed",
+            "keywords": [
+                "test_solve_action",
+                "test_SpellingBee.py",
+                "code_6yrriizg"
+            ],
+            "setup": {
+                "duration": 8.681486360728741e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0001382669433951378,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_6yrriizg/test_SpellingBee.py",
+                    "lineno": 66,
+                    "message": "assert 0 > 0\n +  where 0 = len([])\n +    where [] = <test_SpellingBee.MockSpellingBeeGraphics object at 0x781636c849a0>.words"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 66,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x781636c849a0>\n\n    def test_solve_action(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n        mock_graphics.solve_callback(\"Solve\")\n>       assert len(mock_graphics.words) > 0\nE       assert 0 > 0\nE        +  where 0 = len([])\nE        +    where [] = <test_SpellingBee.MockSpellingBeeGraphics object at 0x781636c849a0>.words\n\ntest_SpellingBee.py:66: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.483091369271278e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+            "lineno": 69,
+            "outcome": "failed",
+            "keywords": [
+                "test_word_entry_valid",
+                "test_SpellingBee.py",
+                "code_6yrriizg"
+            ],
+            "setup": {
+                "duration": 0.00010659894905984402,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.7066092267632484e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_6yrriizg/test_SpellingBee.py",
+                    "lineno": 73,
+                    "message": "AttributeError: 'MockSpellingBeeGraphics' object has no attribute 'word_callback'. Did you mean: 'solve_callback'?"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 73,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7816374a6b90>\n\n    def test_word_entry_valid(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n        initial_word_count = len(mock_graphics.words)\n>       mock_graphics.word_callback(\"excel\")\nE       AttributeError: 'MockSpellingBeeGraphics' object has no attribute 'word_callback'. Did you mean: 'solve_callback'?\n\ntest_SpellingBee.py:73: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.890886627137661e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+            "lineno": 77,
+            "outcome": "failed",
+            "keywords": [
+                "test_word_entry_invalid",
+                "test_SpellingBee.py",
+                "code_6yrriizg"
+            ],
+            "setup": {
+                "duration": 0.00010331999510526657,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.727098323404789e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_6yrriizg/test_SpellingBee.py",
+                    "lineno": 81,
+                    "message": "AttributeError: 'MockSpellingBeeGraphics' object has no attribute 'word_callback'. Did you mean: 'solve_callback'?"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 81,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x781636c851b0>\n\n    def test_word_entry_invalid(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n        initial_word_count = len(mock_graphics.words)\n>       mock_graphics.word_callback(\"invalid\")\nE       AttributeError: 'MockSpellingBeeGraphics' object has no attribute 'word_callback'. Did you mean: 'solve_callback'?\n\ntest_SpellingBee.py:81: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.945508696138859e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_pangram_identification",
+            "lineno": 84,
+            "outcome": "failed",
+            "keywords": [
+                "test_pangram_identification",
+                "test_SpellingBee.py",
+                "code_6yrriizg"
+            ],
+            "setup": {
+                "duration": 0.00010286201722919941,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.541602149605751e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_6yrriizg/test_SpellingBee.py",
+                    "lineno": 87,
+                    "message": "AttributeError: 'MockSpellingBeeGraphics' object has no attribute 'word_callback'. Did you mean: 'solve_callback'?"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 87,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x781636de2950>\n\n    def test_pangram_identification(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n>       mock_graphics.word_callback(\"excellently\")\nE       AttributeError: 'MockSpellingBeeGraphics' object has no attribute 'word_callback'. Did you mean: 'solve_callback'?\n\ntest_SpellingBee.py:87: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.911003194749355e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_score_calculation",
+            "lineno": 89,
+            "outcome": "failed",
+            "keywords": [
+                "test_score_calculation",
+                "test_SpellingBee.py",
+                "code_6yrriizg"
+            ],
+            "setup": {
+                "duration": 0.0001101240050047636,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.649006925523281e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_6yrriizg/test_SpellingBee.py",
+                    "lineno": 92,
+                    "message": "AttributeError: 'MockSpellingBeeGraphics' object has no attribute 'word_callback'. Did you mean: 'solve_callback'?"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 92,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x781636d4ad10>\n\n    def test_score_calculation(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n>       mock_graphics.word_callback(\"excel\")\nE       AttributeError: 'MockSpellingBeeGraphics' object has no attribute 'word_callback'. Did you mean: 'solve_callback'?\n\ntest_SpellingBee.py:92: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.78611283749342e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+            "lineno": 96,
+            "outcome": "failed",
+            "keywords": [
+                "test_duplicate_word_entry",
+                "test_SpellingBee.py",
+                "code_6yrriizg"
+            ],
+            "setup": {
+                "duration": 0.0001109119039028883,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.5265845730900764e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_6yrriizg/test_SpellingBee.py",
+                    "lineno": 99,
+                    "message": "AttributeError: 'MockSpellingBeeGraphics' object has no attribute 'word_callback'. Did you mean: 'solve_callback'?"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 99,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7816374a4e20>\n\n    def test_duplicate_word_entry(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n>       mock_graphics.word_callback(\"excel\")\nE       AttributeError: 'MockSpellingBeeGraphics' object has no attribute 'word_callback'. Did you mean: 'solve_callback'?\n\ntest_SpellingBee.py:99: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.78399407863617e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+            "lineno": 104,
+            "outcome": "failed",
+            "keywords": [
+                "test_solve_after_user_input",
+                "test_SpellingBee.py",
+                "code_6yrriizg"
+            ],
+            "setup": {
+                "duration": 0.00010795006528496742,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.5067939683794975e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_6yrriizg/test_SpellingBee.py",
+                    "lineno": 107,
+                    "message": "AttributeError: 'MockSpellingBeeGraphics' object has no attribute 'word_callback'. Did you mean: 'solve_callback'?"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 107,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x781636c86f80>\n\n    def test_solve_after_user_input(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n>       mock_graphics.word_callback(\"excel\")\nE       AttributeError: 'MockSpellingBeeGraphics' object has no attribute 'word_callback'. Did you mean: 'solve_callback'?\n\ntest_SpellingBee.py:107: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.747998461127281e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

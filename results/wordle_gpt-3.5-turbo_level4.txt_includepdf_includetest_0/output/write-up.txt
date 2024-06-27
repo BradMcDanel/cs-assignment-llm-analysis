@@ -1,0 +1,1 @@
+In this assignment, I learned about the Wordle game and how to implement it using Python. I also practiced writing unit tests to ensure the functionality of the Wordle game implementation. Overall, it was a great learning experience in working with strings, graphics, and game logic.

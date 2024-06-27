@@ -1,0 +1,288 @@
+{
+    "created": 1719502627.3941114,
+    "duration": 0.02889394760131836,
+    "exitcode": 1,
+    "root": "/tmp/code_gc_op1fw",
+    "environment": {},
+    "summary": {
+        "passed": 5,
+        "failed": 3,
+        "total": 8,
+        "collected": 8
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py::test_enigma_initialization",
+                    "type": "Function",
+                    "lineno": 6
+                },
+                {
+                    "nodeid": "test_enigma.py::test_key_press_and_release",
+                    "type": "Function",
+                    "lineno": 11
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_advance",
+                    "type": "Function",
+                    "lineno": 20
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_click",
+                    "type": "Function",
+                    "lineno": 29
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_encryption",
+                    "type": "Function",
+                    "lineno": 37
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_decryption",
+                    "type": "Function",
+                    "lineno": 48
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_full_rotation",
+                    "type": "Function",
+                    "lineno": 70
+                },
+                {
+                    "nodeid": "test_enigma.py::test_reflector",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_enigma.py::test_enigma_initialization",
+            "lineno": 6,
+            "outcome": "passed",
+            "keywords": [
+                "test_enigma_initialization",
+                "test_enigma.py",
+                "code_gc_op1fw"
+            ],
+            "setup": {
+                "duration": 8.884910494089127e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.572979666292667e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.561105743050575e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_key_press_and_release",
+            "lineno": 11,
+            "outcome": "failed",
+            "keywords": [
+                "test_key_press_and_release",
+                "test_enigma.py",
+                "code_gc_op1fw"
+            ],
+            "setup": {
+                "duration": 4.5181019231677055e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.000142193166539073,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_gc_op1fw/test_enigma.py",
+                    "lineno": 19,
+                    "message": "assert 1 == 0\n +  where 1 = sum(<generator object test_key_press_and_release.<locals>.<genexpr> at 0x7b15ea071ee0>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 19,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_key_press_and_release():\n        model = EnigmaModel()\n        model.key_pressed('A')\n        assert model.is_key_down('A') == True\n        assert sum(model.is_lamp_on(letter) for letter in ALPHABET) == 1\n        model.key_released('A')\n        assert model.is_key_down('A') == False\n>       assert sum(model.is_lamp_on(letter) for letter in ALPHABET) == 0\nE       assert 1 == 0\nE        +  where 1 = sum(<generator object test_key_press_and_release.<locals>.<genexpr> at 0x7b15ea071ee0>)\n\ntest_enigma.py:19: AssertionError"
+            },
+            "teardown": {
+                "duration": 7.875100709497929e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_advance",
+            "lineno": 20,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_advance",
+                "test_enigma.py",
+                "code_gc_op1fw"
+            ],
+            "setup": {
+                "duration": 5.349889397621155e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.897312752902508e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.0683895349502563e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_click",
+            "lineno": 29,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_click",
+                "test_enigma.py",
+                "code_gc_op1fw"
+            ],
+            "setup": {
+                "duration": 4.509999416768551e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.729504093527794e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.049413837492466e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_encryption",
+            "lineno": 37,
+            "outcome": "passed",
+            "keywords": [
+                "test_enigma_encryption",
+                "test_enigma.py",
+                "code_gc_op1fw"
+            ],
+            "setup": {
+                "duration": 4.767905920743942e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.58038368076086e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.850203938782215e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_decryption",
+            "lineno": 48,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_decryption",
+                "test_enigma.py",
+                "code_gc_op1fw"
+            ],
+            "setup": {
+                "duration": 4.376610741019249e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00016973307356238365,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_gc_op1fw/test_enigma.py",
+                    "lineno": 69,
+                    "message": "AssertionError: assert 'AAAAA' == 'HELLO'\n  - HELLO\n  + AAAAA"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 69,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_enigma_decryption():\n        model = EnigmaModel()\n        plaintext = \"HELLO\"\n        ciphertext = \"\"\n        for char in plaintext:\n            model.key_pressed(char)\n            ciphertext += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n    \n        # Reset rotor positions\n        for i in range(N_ROTORS):\n            while model.get_rotor_letter(i) != 'A':\n                model.rotor_clicked(i)\n    \n        decrypted = \"\"\n        for char in ciphertext:\n            model.key_pressed(char)\n            decrypted += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n    \n>       assert decrypted == plaintext\nE       AssertionError: assert 'AAAAA' == 'HELLO'\nE         - HELLO\nE         + AAAAA\n\ntest_enigma.py:69: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.165518425405025e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_full_rotation",
+            "lineno": 70,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_full_rotation",
+                "test_enigma.py",
+                "code_gc_op1fw"
+            ],
+            "setup": {
+                "duration": 5.23529015481472e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00010678893886506557,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.857607953250408e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_reflector",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_reflector",
+                "test_enigma.py",
+                "code_gc_op1fw"
+            ],
+            "setup": {
+                "duration": 4.2903004214167595e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0001910089049488306,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_gc_op1fw/test_enigma.py",
+                    "lineno": 91,
+                    "message": "AssertionError: assert 3 == 13\n +  where 3 = len({'A', 'R', 'Z'})\n +    where {'A', 'R', 'Z'} = set(dict_values(['Z', 'R', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']))\n +      where dict_values(['Z', 'R', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']) = <built-in method values of dict object at 0x7b15ea0c3d80>()\n +        where <built-in method values of dict object at 0x7b15ea0c3d80> = {'A': 'Z', 'B': 'R', 'C': 'A', 'D': 'A', ...}.values"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 91,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_reflector():\n        model = EnigmaModel()\n        results = {}\n        for char in ALPHABET:\n            model.key_pressed(char)\n            result = next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n            results[char] = result\n    \n        # Check that we have 13 pairs of letters\n>       assert len(set(results.values())) == 13\nE       AssertionError: assert 3 == 13\nE        +  where 3 = len({'A', 'R', 'Z'})\nE        +    where {'A', 'R', 'Z'} = set(dict_values(['Z', 'R', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']))\nE        +      where dict_values(['Z', 'R', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A']) = <built-in method values of dict object at 0x7b15ea0c3d80>()\nE        +        where <built-in method values of dict object at 0x7b15ea0c3d80> = {'A': 'Z', 'B': 'R', 'C': 'A', 'D': 'A', ...}.values\n\ntest_enigma.py:91: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.081000901758671e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}
