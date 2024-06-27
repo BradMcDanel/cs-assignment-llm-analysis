@@ -1,4 +1,0 @@
-- The program `profile.py` reads a CSV file containing STR counts for a list of individuals and a DNA sequence text file to identify to whom the DNA belongs.
-- The program computes the longest run of consecutive repeats of each STR in the DNA sequence and matches it with the data in the CSV file.
-- If a match is found, it prints the name of the individual; otherwise, it prints "No match".
-- Usage: `python profile.py data.csv sequence.txt`

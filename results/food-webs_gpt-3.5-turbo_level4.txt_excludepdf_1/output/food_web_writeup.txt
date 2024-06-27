@@ -1,5 +1,0 @@
-1. In this assignment, I learned about analyzing food webs and implementing various functions to extract meaningful information.
-2. The assignment required reading data from a file, storing it in a dictionary, and performing specific tasks based on the relationships defined.
-3. The assignment included tasks such as listing predators and their prey, identifying apex predators, producers, most flexible eaters, tastiest organisms, and determining organism heights.
-4. I followed the guidelines provided, ensured error checking, used appropriate functions, and maintained good programming style throughout the implementation.
-5. Overall, the assignment was challenging but rewarding in terms of understanding food web analysis and applying Python programming concepts.

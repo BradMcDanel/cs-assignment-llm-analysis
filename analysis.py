@@ -16,10 +16,18 @@ def extract_test_summary(file_path):
         data = json.load(f)
     
     summary = data.get("summary", {})
-    passed = summary.get("passed", 0)
-    failed = summary.get("failed", 0)
     total = summary.get("total", 0)
-    
+    collected = summary.get("collected", 0)
+    passed = 0
+    failed = 0
+
+    if collected > 0 and total == 0:
+        # If tests were collected but not executed, consider them all as failed
+        failed = collected
+    else:
+        passed = summary.get("passed", 0)
+        failed = total - passed
+
     if total > 0:
         pass_rate = (passed / total) * 100
     else:
@@ -33,15 +41,15 @@ def extract_test_summary(file_path):
     }
 
 def parse_filename(filename):
-    pattern = r'^(.*?)_(.*?)_(.*?)_(excludepdf|includepdf)_(\d+)$'
+    pattern = r'^(.*?)_(.*?)_(.*?)_(includepdf|includetest|excludepdf|excludetest)_(\d+)$'
     match = re.match(pattern, filename)
     if match:
-        input_dir, model, prompt_file, exclude_pdf, iteration = match.groups()
+        input_dir, model, prompt_file, include_test, iteration = match.groups()
         return {
             'input_dir': input_dir,
             'model': model,
             'prompt_file': prompt_file,
-            'exclude_pdf': exclude_pdf == 'excludepdf',
+            'include_test': include_test in ['includepdf', 'includetest'],
             'iteration': int(iteration)
         }
     return None
@@ -51,22 +59,19 @@ def read_test_results(directory):
     return extract_test_summary(test_results_path)
 
 def repair_invalid_tests(results):
-    # Group results by key without iteration
     grouped_results = defaultdict(list)
     for settings, summary in results:
-        key = (settings['input_dir'], settings['model'], settings['prompt_file'], settings['exclude_pdf'])
+        key = (settings['input_dir'], settings['model'], settings['prompt_file'], settings['include_test'])
         grouped_results[key].append((settings, summary))
     
     repaired_results = []
     
     for key, summaries in grouped_results.items():
-        # Find the max number of tests across all iterations for this key
         valid_totals = [summary['total'] for _, summary in summaries if summary['total'] > 1]
         max_tests = max(valid_totals) if valid_totals else 1
         
         for settings, summary in summaries:
             if summary['total'] == 1 and summary['failed'] == 1 and max_tests > 1:
-                # Repair invalid test result
                 summary['failed'] = max_tests
                 summary['total'] = max_tests
                 summary['pass_rate'] = 0.0
@@ -88,12 +93,10 @@ def analyze_results(base_output_dir):
                 if summary:
                     results.append((settings, summary))
     
-    # Repair invalid tests
     results = repair_invalid_tests(results)
     
-    # Aggregate results
     for settings, summary in results:
-        key = (settings['input_dir'], settings['model'], settings['prompt_file'], settings['exclude_pdf'])
+        key = (settings['input_dir'], settings['model'], settings['prompt_file'], settings['include_test'])
         aggregated_results[key]['passed'] += summary['passed']
         aggregated_results[key]['failed'] += summary['failed']
         aggregated_results[key]['total'] += summary['total']
@@ -101,7 +104,6 @@ def analyze_results(base_output_dir):
         aggregated_results[key]['count'] += 1
 
     aggregated_summary = {}
-    # Calculate aggregated results
     for key, agg in aggregated_results.items():
         pass_rate = (agg["passed"] / agg["total"]) * 100 if agg["total"] > 0 else 0.0
 
@@ -117,17 +119,15 @@ def analyze_results(base_output_dir):
     return results, aggregated_summary
 
 def main():
-    base_output_dir = "results"  # Adjust this as necessary
+    base_output_dir = "results"
     individual_results, aggregated_summary = analyze_results(base_output_dir)
 
-    # Print aggregated results
     print("Aggregated Results:\n")
     for key, agg_summary in aggregated_summary.items():
-        input_dir, model, prompt_file, exclude_pdf = key
-        print(f"Settings: input_dir={input_dir}, model={model}, prompt_file={prompt_file}, exclude_non_pdf={exclude_pdf}")
+        input_dir, model, prompt_file, include_test = key
+        print(f"Settings: input_dir={input_dir}, model={model}, prompt_file={prompt_file}, include_test={include_test}")
         print(f"Summary: {agg_summary}\n")
 
-    # Print individual results
     print("Individual Results:\n")
     for settings, summary in individual_results:
         print(f"Settings: {settings}")

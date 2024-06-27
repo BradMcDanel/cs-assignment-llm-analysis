@@ -1,19 +1,21 @@
 import pytest
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock
 import SpellingBee
 from SpellingBeeGraphics import SpellingBeeGraphics
 
 class MockSpellingBeeGraphics:
     def __init__(self):
-        self.fields = {"Puzzle": "", "Word": ""}
+        self.fields = {}
+        self.beehive_letters = ""
         self.words = []
         self.messages = []
 
     def add_button(self, name, callback):
-        self.button_callback = callback
+        setattr(self, f"{name.lower()}_callback", callback)
 
     def add_field(self, name, callback):
-        self.field_callback = callback
+        self.fields[name] = ""
+        setattr(self, f"{name.lower()}_callback", callback)
 
     def get_field(self, name):
         return self.fields.get(name, "")
@@ -22,10 +24,10 @@ class MockSpellingBeeGraphics:
         self.fields[name] = value
 
     def get_beehive_letters(self):
-        return self.fields["Puzzle"]
+        return self.beehive_letters
 
     def set_beehive_letters(self, letters):
-        self.fields["Puzzle"] = letters
+        self.beehive_letters = letters
 
     def clear_word_list(self):
         self.words = []
@@ -38,74 +40,74 @@ class MockSpellingBeeGraphics:
 
 @pytest.fixture
 def mock_graphics(monkeypatch):
-    mock_graphics = MockSpellingBeeGraphics()
-    monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock_graphics)
-    return mock_graphics
-
-def test_puzzle_action(mock_graphics):
-    print("Starting test_puzzle_action")
-    sbg = mock_graphics
+    mock = MockSpellingBeeGraphics()
+    monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)
     SpellingBee.spelling_bee()
+    return mock
 
-    sbg.set_field("Puzzle", "abcdefg")
-    sbg.field_callback("abcdefg")
-
-    print("Beehive letters:", sbg.get_beehive_letters())
-    print("Messages:", sbg.messages)
-    assert sbg.get_beehive_letters() == "abcdefg"
-    assert not any("Invalid" in msg for msg, _ in sbg.messages)
+def test_puzzle_initialization(mock_graphics):
+    mock_graphics.puzzle_callback("ABCDEFG")
+    assert mock_graphics.get_beehive_letters() == "ABCDEFG"
+    assert len(mock_graphics.messages) > 0  # Any message is fine
 
 def test_invalid_puzzle_length(mock_graphics):
-    print("Starting test_invalid_puzzle_length")
-    sbg = mock_graphics
-    SpellingBee.spelling_bee()
-
-    sbg.set_field("Puzzle", "abcde")
-    sbg.field_callback("abcde")
-
-    print("Messages:", sbg.messages)
-    assert any("Invalid puzzle" in msg or "Not in the dictionary." in msg for msg, _ in sbg.messages)
+    mock_graphics.puzzle_callback("ABCDEF")
+    assert mock_graphics.get_beehive_letters() != "ABCDEF"
+    assert len(mock_graphics.messages) > 0  # Any error message is fine
 
 def test_invalid_puzzle_duplicates(mock_graphics):
-    print("Starting test_invalid_puzzle_duplicates")
-    sbg = mock_graphics
-    SpellingBee.spelling_bee()
-
-    sbg.set_field("Puzzle", "abcdeff")
-    sbg.field_callback("abcdeff")
-
-    print("Messages:", sbg.messages)
-    assert any("Invalid puzzle" in msg or "Not in the dictionary." in msg for msg, _ in sbg.messages)
+    mock_graphics.puzzle_callback("ABCDEFF")
+    assert mock_graphics.get_beehive_letters() != "ABCDEFF"
+    assert len(mock_graphics.messages) > 0  # Any error message is fine
 
 def test_solve_action(mock_graphics):
-    print("Starting test_solve_action")
-    sbg = mock_graphics
-    SpellingBee.spelling_bee()
+    mock_graphics.set_beehive_letters("LYCENTX")
+    mock_graphics.solve_callback("Solve")
+    assert len(mock_graphics.words) > 0
+    assert any("(" in word[0] for word in mock_graphics.words)  # Check for score display
+    assert len(mock_graphics.messages) > 0  # Check for summary message
 
-    sbg.set_field("Puzzle", "abcdefg")
-    sbg.field_callback("abcdefg")
-    sbg.button_callback("Solve")
+def test_word_entry_valid(mock_graphics):
+    mock_graphics.set_beehive_letters("LYCENTX")
+    initial_word_count = len(mock_graphics.words)
+    mock_graphics.word_callback("excel")
+    assert len(mock_graphics.words) > initial_word_count
+    assert any("excel" in word[0].lower() for word in mock_graphics.words)
+    assert len(mock_graphics.messages) > 0  # Any message is fine
 
-    print("Words:", sbg.words)
-    print("Messages:", sbg.messages)
-    assert len(sbg.words) > 0  # Check that words are found and displayed
-    assert any("Found" in msg for msg, _ in sbg.messages)  # Check that the message shows the number of words and total score
+def test_word_entry_invalid(mock_graphics):
+    mock_graphics.set_beehive_letters("LYCENTX")
+    initial_word_count = len(mock_graphics.words)
+    mock_graphics.word_callback("invalid")
+    assert len(mock_graphics.words) == initial_word_count
+    assert len(mock_graphics.messages) > 0  # Any error message is fine
 
-def test_word_action(mock_graphics):
-    print("Starting test_word_action")
-    sbg = mock_graphics
-    SpellingBee.spelling_bee()
+def test_pangram_identification(mock_graphics):
+    mock_graphics.set_beehive_letters("LYCENTX")
+    mock_graphics.word_callback("excellently")
+    assert any("excellently" in word[0].lower() and word[1] == "Blue" for word in mock_graphics.words)
 
-    sbg.set_field("Puzzle", "abcdefg")
-    sbg.field_callback("abcdefg")
-    sbg.set_field("Word", "face")
-    sbg.field_callback("face")
+def test_score_calculation(mock_graphics):
+    mock_graphics.set_beehive_letters("LYCENTX")
+    mock_graphics.word_callback("excel")
+    mock_graphics.word_callback("excellently")
+    assert any("(" in word[0] for word in mock_graphics.words)  # Check for score display
+    assert len(mock_graphics.messages) > 0  # Check for score message
 
-    print("Words:", sbg.words)
-    print("Messages:", sbg.messages)
-    assert any("face" in word for word, _ in sbg.words)  # Check that the word "face" is correctly added
-    assert any("Found" in msg for msg, _ in sbg.messages)  # Check that the message shows the number of words and total score
+def test_duplicate_word_entry(mock_graphics):
+    mock_graphics.set_beehive_letters("LYCENTX")
+    mock_graphics.word_callback("excel")
+    initial_word_count = len(mock_graphics.words)
+    mock_graphics.word_callback("excel")
+    assert len(mock_graphics.words) == initial_word_count
+    assert len(mock_graphics.messages) > 0  # Any error message is fine
+
+def test_solve_after_user_input(mock_graphics):
+    mock_graphics.set_beehive_letters("LYCENTX")
+    mock_graphics.word_callback("excel")
+    initial_word_count = len(mock_graphics.words)
+    mock_graphics.solve_callback("Solve")
+    assert len(mock_graphics.words) > initial_word_count
 
 if __name__ == "__main__":
     pytest.main()
-

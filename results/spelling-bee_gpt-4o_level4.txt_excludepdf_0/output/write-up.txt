@@ -1,1 +1,0 @@
-In this assignment, I learned the importance of breaking down a larger problem into smaller, manageable milestones. Each milestone allowed me to test and verify the functionality incrementally, ensuring that the final solution was robust and correct. I also gained experience working with callback functions and handling user interactions effectively.

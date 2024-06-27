@@ -1,5 +1,0 @@
-1. In this assignment, we implemented a Python program that identifies to whom a sequence of DNA belongs based on a given CSV file containing STR counts for a list of individuals.
-2. The program reads the DNA sequence and the CSV file, computes the longest run of consecutive repeats of each STR in the DNA sequence, and matches it to an individual in the CSV file.
-3. We used file I/O operations to read the files into memory and a combination of loops and string manipulation to identify the matching individual.
-4. The program successfully matches the provided DNA sequences with the individuals in the CSV file and outputs the name of the matching individual.
-5. Overall, this assignment provided a practical application of algorithmic thinking and string manipulation in the context of DNA profiling, connecting computation with biology.

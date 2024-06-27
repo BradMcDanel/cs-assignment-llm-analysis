@@ -202,22 +202,25 @@ def extract_files(document_content):
 def save_files(files, save_dir=None):
     if save_dir is None:
         save_dir = tempfile.mkdtemp(prefix='code_')
-
     binary_types = ["pdf", "jpg", "jpeg", "png", "gif", "bmp", "tiff", "ico", "webp", "mp3", "wav", "mp4", "avi", "mkv", "mov", "zip", "rar", "7z", "tar", "gz", "bz2"]
-
     for filename, content, _ in files:
         file_path = os.path.join(save_dir, filename)
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
         file_extension = filename.split('.')[-1].lower()
-        # mode = "wb" if file_extension in binary_types else "w"
-        mode = "w"
+        
+        if file_extension == "pdf":
+            continue  # Skip PDF files
+        
+        mode = "wb" if file_extension in binary_types else "w"
         
         if hasattr(content, "save"):
             content.save(file_path)
         else:
             with open(file_path, mode) as f:
-                f.write(content)
-
+                if isinstance(content, str) and mode == "wb":
+                    f.write(content.encode('utf-8'))
+                else:
+                    f.write(content)
     return save_dir
 
 def run_tests(files, cleanup=True):

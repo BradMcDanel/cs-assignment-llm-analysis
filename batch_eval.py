@@ -11,15 +11,17 @@ def batch_evaluate(settings):
         settings['models'],
         settings['prompt_files'],
         settings['exclude_non_pdf'],
+        settings['exclude_tests'],
         range(settings['num_evaluations'])
     ))
 
     total_combinations = len(combinations)
 
     with tqdm(total=total_combinations, disable=settings['silent'], ncols=100, desc="Processing assignments") as pbar:
-        for input_dir, model, prompt_file, exclude_non_pdf, iteration in combinations:
-            exclude_flag = 'exclude' if exclude_non_pdf else 'include'
-            output_dir_name = f"{os.path.basename(input_dir)}_{model}_{os.path.basename(prompt_file)}_{exclude_flag}pdf_{iteration}"
+        for input_dir, model, prompt_file, exclude_non_pdf, exclude_tests, iteration in combinations:
+            exclude_pdf_flag = 'exclude' if exclude_non_pdf else 'include'
+            exclude_tests_flag = 'exclude' if exclude_tests else 'include'
+            output_dir_name = f"{os.path.basename(input_dir)}_{model}_{os.path.basename(prompt_file)}_{exclude_pdf_flag}pdf_{exclude_tests_flag}test_{iteration}"
             output_dir = os.path.join(settings['base_output_dir'], output_dir_name)
 
             if os.path.exists(output_dir):
@@ -53,18 +55,21 @@ if __name__ == "__main__":
     parser.add_argument("--models", nargs='+', required=True, help="List of models to use for the LLM.")
     parser.add_argument("--prompt-files", nargs='+', required=True, help="List of paths to the prompt files.")
     parser.add_argument("--exclude-non-pdf", nargs='+', type=str, required=True, help="List of boolean values to exclude non-PDF files from the input.")
+    parser.add_argument("--exclude-tests", nargs="+", type=str, required=True, help="List of boolean values to exclude test files from the input.")
     parser.add_argument("--input-dirs", nargs='+', required=True, help="List of input directories.")
     parser.add_argument("--base-output-dir", required=True, help="Base path for the output directories.")
     parser.add_argument("--silent", action="store_true", help="Suppress progress output.")
     
     args = parser.parse_args()
     args.exclude_non_pdf = [True if x.lower() == 'true' else False for x in args.exclude_non_pdf]
+    args.exclude_tests = [True if x.lower() == 'true' else False for x in args.exclude_tests]
 
     settings = {
         'num_evaluations': args.num_evaluations,
         'models': args.models,
         'prompt_files': args.prompt_files,
         'exclude_non_pdf': args.exclude_non_pdf,
+        'exclude_tests': args.exclude_tests,
         'input_dirs': args.input_dirs,
         'base_output_dir': args.base_output_dir,
         'silent': args.silent

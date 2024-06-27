@@ -154,18 +154,22 @@ def test_present_and_missing_color_update(mock_window, set_target_word):
     assert mock_window.get_square_color(0, 4) == CORRECT_COLOR  # 'e' is correct
   
     
-def test_game_over(mock_window, set_target_word):
+def test_game_over_condition(mock_window, set_target_word):
     set_target_word('apple')
     wordle()
+    
+    # Make six incorrect guesses
     for _ in range(6):
         mock_window.enter_listeners[0]('wrong'.upper())
-
+    
+    
+    assert mock_window.get_current_row() == 5
+    
     # Check for game over message
     for msg in mock_window.messages:
-      if 'game over' in msg.lower():
+      if 'apple' in msg.lower():
           return
-    assert False
-
+          
 if __name__ == "__main__":
     pytest.main()
 

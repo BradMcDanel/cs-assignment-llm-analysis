@@ -22,11 +22,12 @@ def call(messages, **kwargs) -> list:
             messages.pop(0)
         else:
             system = None
+        max_tokens = kwargs.pop("max_tokens", 4096)
             
         res = ant_client.messages.create(
             messages=messages,
             system=system,
-            max_tokens=kwargs.get("max_tokens", 4096),
+            max_tokens=max_tokens,
             **kwargs
         )
         return res.content[0].text

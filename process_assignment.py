@@ -7,10 +7,15 @@ import tiktoken
 import llm
 import code_utils
 
-def process_assignment(assignment_folder, output_folder, prompt_file, model="gpt-4-turbo-preview", exclude_non_pdf=False):
+def process_assignment(assignment_folder, output_folder, prompt_file, model="gpt-4o", exclude_non_pdf=False, exclude_tests=False):
     assignment_input_folder = os.path.join(assignment_folder, "input")
 
     file_dict = code_utils.process_files(assignment_input_folder)
+
+    if not exclude_tests:
+        test_folder = os.path.join(assignment_folder, "tests")
+        test_files = code_utils.process_files(test_folder)
+        file_dict.update(test_files)
 
     # Ablation: exclude non-PDF files from the input
     model_file_dict = {}
@@ -23,7 +28,10 @@ def process_assignment(assignment_folder, output_folder, prompt_file, model="gpt
 
     result_string = code_utils.file_dict_to_str(model_file_dict)
 
-    enc = tiktoken.encoding_for_model(model)
+    try:
+        enc = tiktoken.encoding_for_model(model)
+    except:
+        enc = tiktoken.encoding_for_model("gpt-4o")
     num_tokens = len(enc.encode(result_string))
     if num_tokens > code_utils.MAX_INPUT_TOKENS:
         raise ValueError(f"Input tokens ({num_tokens}) exceed the maximum limit ({code_utils.MAX_INPUT_TOKENS}).")
@@ -86,7 +94,8 @@ if __name__ == "__main__":
     parser.add_argument("--model", help="Model to use for the LLM.", default="gpt-4-turbo-preview")
     parser.add_argument("--prompt-file", required=True, help="Path to the prompt file.")
     parser.add_argument("--exclude-non-pdf", action="store_true", help="Exclude non-PDF files from the input.")
+    parser.add_argument("--exclude-tests", action="store_true", help="Exclude test files from the input.")
     args = parser.parse_args()
 
-    process_assignment(args.assignment_folder, args.output_folder, args.prompt_file, args.model, args.exclude_non_pdf)
+    process_assignment(args.assignment_folder, args.output_folder, args.prompt_file, args.model, args.exclude_non_pdf, args.exclude_tests)
 
