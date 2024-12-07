@@ -2,8 +2,8 @@
 
 This repository contains the experimental framework and data for our SIGCSE 2025 paper investigating Large Language Models' capabilities in solving computer science programming assignments.
 
-[![Assignment Analysis](figures/assignment_difficulty.pdf)](figures/assignment_difficulty.pdf)
-*Figure 1: Spectrum of nifty programming assignments across visual complexity and assignment length. We analyzed assignments ranging from simple text-based tasks (e.g., DNA '20) to intricate visual problems (e.g., Sankey Diagrams '21), considering both short (1 page) and long (10+ pages) assignments.*
+[![Assignment Analysis](figures/assignment_difficulty.png)](figures/assignment_difficulty.png)
+*Spectrum of nifty programming assignments across visual complexity and assignment length.*
 
 ## Abstract
 
