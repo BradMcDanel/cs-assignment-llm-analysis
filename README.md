@@ -64,19 +64,6 @@ Generate visualizations:
 python visualize.py
 ```
 
-## Repository Structure
-
-```
-.
-├── assignments/          # Curated programming assignments
-├── prompts/             # Structured LLM prompts
-├── code_utils.py        # Core analysis utilities
-├── process_assignment.py # Single assignment processor
-├── batch_eval.py        # Batch evaluation framework
-├── visualize.py         # Results visualization
-└── requirements.txt     # Environment specifications
-```
-
 ## Citation
 
 If you use this code or methodology in your research, please cite our paper:
