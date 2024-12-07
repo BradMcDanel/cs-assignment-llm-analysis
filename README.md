@@ -35,7 +35,7 @@ export ANTHROPIC_API_KEY="your-anthropic-key"
 
 ### Single Assignment Analysis
 
-For detailed analysis of individual assignments:
+Generating solutions for a single assignment:
 
 ```bash
 python process_assignment.py \
