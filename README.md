@@ -58,7 +58,7 @@ chmod +x run_batch_eval.sh
 
 ### Results Analysis
 
-Generate publication-quality visualizations:
+Generate visualizations:
 
 ```bash
 python visualize.py
