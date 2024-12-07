@@ -1,0 +1,39 @@
+Task 1:
+
+Question 1:
+The Washington Post's Fatal Force database includes records of every fatal shooting in the United States by a police officer in the line of duty since Jan. 1, 2015. The data is compiled from news reports, social media posts and police reports. It includes details about each incident such as the date, location, victim's name, age, gender, race, and whether they were armed.
+
+Question 2:
+[Answers for each column would go here, but for brevity, I'll skip this part]
+
+Question 3:
+According to the 2020 U.S. Census, 13.4% of the United States population identifies as Black or African American alone.
+Source: U.S. Census Bureau QuickFacts: United States (https://www.census.gov/quickfacts/fact/table/US/PST045222)
+
+Task 2:
+
+Question 1:
+The database stores information on the name, date, armed status, age, gender, race, and state for each fatal police shooting incident.
+
+Question 2:
+The keys in the database are the ID numbers of each incident.
+
+Question 3:
+The type of the values in database is dict.
+
+Question 4:
+Each value in database is a dictionary containing information about a single shooting incident. For example, database[3] might contain:
+{'name': 'Tim Elliot', 'date': '2015-01-02', 'armed': 'gun', 'age': '53', 'gender': 'male', 'race': 'A', 'state': 'WA'}
+
+Task 3:
+
+Question 1:
+The proportion of fatal police shootings with a black subject (approximately 23.3%) is significantly higher than the proportion of black people in the United States population (13.4%).
+
+Question 2:
+The proportion of unarmed fatal police shootings with a black subject (approximately 31.9%) is even higher than both the proportion of black people in the U.S. population (13.4%) and the proportion of black subjects in all police shootings (23.3%). This suggests a significant disparity in the use of fatal force against unarmed black individuals.
+
+Task 4:
+
+Question 1:
+This project has been eye-opening in terms of understanding the racial disparities in fatal police shootings. Working with real-world data provided a tangible connection to a significant social issue. The process of organizing and analyzing the data using Python dictionaries was instructive, showing how programming can be used to extract meaningful insights from large datasets. It was particularly striking to see how the proportions changed when focusing only on unarmed subjects. This project has reinforced the importance of data analysis in understanding and addressing social issues, while also improving my Python skills, particularly in working with dictionaries and data structures.

@@ -1,0 +1,220 @@
+{
+    "created": 1731002800.593163,
+    "duration": 0.03295254707336426,
+    "exitcode": 1,
+    "root": "/tmp/code__ewm8z88",
+    "environment": {},
+    "summary": {
+        "failed": 4,
+        "passed": 1,
+        "total": 5,
+        "collected": 5
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py::test_valid_guess",
+                    "type": "Function",
+                    "lineno": 111
+                },
+                {
+                    "nodeid": "test_wordle.py::test_invalid_guess",
+                    "type": "Function",
+                    "lineno": 122
+                },
+                {
+                    "nodeid": "test_wordle.py::test_correct_color_update",
+                    "type": "Function",
+                    "lineno": 134
+                },
+                {
+                    "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+                    "type": "Function",
+                    "lineno": 143
+                },
+                {
+                    "nodeid": "test_wordle.py::test_game_over_condition",
+                    "type": "Function",
+                    "lineno": 156
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_wordle.py::test_valid_guess",
+            "lineno": 111,
+            "outcome": "failed",
+            "keywords": [
+                "test_valid_guess",
+                "test_wordle.py",
+                "code__ewm8z88"
+            ],
+            "setup": {
+                "duration": 0.00017554592341184616,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00010265689343214035,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code__ewm8z88/test_wordle.py",
+                    "lineno": 121,
+                    "message": "assert False"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 121,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x7d14838c4a30>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x7d14830a0ee0>\n\n    def test_valid_guess(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n        mock_window.enter_listeners[0]('apple'.upper())\n    \n        # Check for correct message\n        for msg in mock_window.messages:\n          if 'congratulations' in msg.lower():\n              return\n>       assert False\nE       assert False\n\ntest_wordle.py:121: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.580818004906178e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_invalid_guess",
+            "lineno": 122,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_guess",
+                "test_wordle.py",
+                "code__ewm8z88"
+            ],
+            "setup": {
+                "duration": 0.00012800493277609348,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.346799924969673e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.99011143296957e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_correct_color_update",
+            "lineno": 134,
+            "outcome": "failed",
+            "keywords": [
+                "test_correct_color_update",
+                "test_wordle.py",
+                "code__ewm8z88"
+            ],
+            "setup": {
+                "duration": 0.00010972796007990837,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00014756713062524796,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code__ewm8z88/test_wordle.py",
+                    "lineno": 142,
+                    "message": "AssertionError: assert '#999999' == '#66BB66'\n  - #66BB66\n  + #999999"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 142,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x7d14831eb400>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x7d14830a3370>\n\n    def test_correct_color_update(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n        mock_window.enter_listeners[0]('apple'.upper())\n    \n        # Check if all squares are correct color\n        for i in range(5):\n>           assert mock_window.get_square_color(0, i) == CORRECT_COLOR\nE           AssertionError: assert '#999999' == '#66BB66'\nE             - #66BB66\nE             + #999999\n\ntest_wordle.py:142: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.589494973421097e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+            "lineno": 143,
+            "outcome": "failed",
+            "keywords": [
+                "test_present_and_missing_color_update",
+                "test_wordle.py",
+                "code__ewm8z88"
+            ],
+            "setup": {
+                "duration": 0.00012344308197498322,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00013539986684918404,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code__ewm8z88/test_wordle.py",
+                    "lineno": 150,
+                    "message": "AssertionError: assert '#999999' == '#66BB66'\n  - #66BB66\n  + #999999"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 150,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x7d14838b9de0>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x7d14830a35b0>\n\n    def test_present_and_missing_color_update(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n        mock_window.enter_listeners[0]('ample'.upper())\n    \n        # Check colors\n>       assert mock_window.get_square_color(0, 0) == CORRECT_COLOR  # 'a' is correct\nE       AssertionError: assert '#999999' == '#66BB66'\nE         - #66BB66\nE         + #999999\n\ntest_wordle.py:150: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.712406270205975e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_game_over_condition",
+            "lineno": 156,
+            "outcome": "failed",
+            "keywords": [
+                "test_game_over_condition",
+                "test_wordle.py",
+                "code__ewm8z88"
+            ],
+            "setup": {
+                "duration": 0.00012729899026453495,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0002930669579654932,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code__ewm8z88/test_wordle.py",
+                    "lineno": 166,
+                    "message": "assert 0 == 5\n +  where 0 = <bound method MockWordleGWindow.get_current_row of <test_wordle.MockWordleGWindow object at 0x7d1483044b80>>()\n +    where <bound method MockWordleGWindow.get_current_row of <test_wordle.MockWordleGWindow object at 0x7d1483044b80>> = <test_wordle.MockWordleGWindow object at 0x7d1483044b80>.get_current_row"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 166,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x7d1483044b80>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x7d14830a0e50>\n\n    def test_game_over_condition(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n    \n        # Make six incorrect guesses\n        for _ in range(6):\n            mock_window.enter_listeners[0]('wrong'.upper())\n    \n    \n>       assert mock_window.get_current_row() == 5\nE       assert 0 == 5\nE        +  where 0 = <bound method MockWordleGWindow.get_current_row of <test_wordle.MockWordleGWindow object at 0x7d1483044b80>>()\nE        +    where <bound method MockWordleGWindow.get_current_row of <test_wordle.MockWordleGWindow object at 0x7d1483044b80>> = <test_wordle.MockWordleGWindow object at 0x7d1483044b80>.get_current_row\n\ntest_wordle.py:166: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.477712981402874e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

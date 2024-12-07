@@ -1,0 +1,5 @@
+In this assignment, I learned how to implement a basic simulation of the Enigma machine using the Model-View-Controller pattern. By separating the model, view, and controller, we were able to maintain a clear structure and ensure that each part of the system was responsible for a specific aspect of the simulator. 
+
+This project also reinforced the importance of using object-oriented programming principles to encapsulate data and behavior within classes, such as the EnigmaRotor class. Furthermore, it highlighted the power of permutation and Caesar cipher techniques in encryption processes, providing insight into how the historic Enigma machine operated during World War II.
+
+Finally, by working through the milestones, I gained a deeper understanding of how to implement complex systems in a modular and incremental way, ensuring that each component functions correctly before integrating them into the larger system. This approach is crucial in software development and can be applied to a variety of programming challenges.

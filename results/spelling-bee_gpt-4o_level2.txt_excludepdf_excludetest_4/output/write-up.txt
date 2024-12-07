@@ -1,0 +1,11 @@
+Milestone #1: Initialize the beehive with the letters in the puzzle field
+- Implemented `puzzle_action` to check if the user's input is a legal puzzle. The input must contain exactly seven unique letters. If valid, it updates the beehive letters on the screen.
+
+Milestone #2: Display the legal words in the SpellingBee puzzle
+- Implemented `solve_action` to iterate through the dictionary and find words that are valid according to the puzzle rules. It checks word length, ensures all letters are in the puzzle, and that the word contains the center letter.
+
+Milestone #3: Add scores to the display
+- Enhanced `solve_action` to calculate and display the score for each word, including a bonus for pangrams. The application also displays the total number of words and total score.
+
+Milestone #4: Let the user try to find the words
+- Adds a "Word" field to allow users to input words they think are valid. The program checks the words against the same criteria and updates the word list and score interactively.

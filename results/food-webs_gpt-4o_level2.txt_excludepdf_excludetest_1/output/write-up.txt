@@ -1,0 +1,16 @@
+# Name: [Your Name]
+# Student Number: [Your Student Number]
+
+# This Python script analyzes a food web described in a CSV file. 
+# It reads predator-prey relationships, storing them in a dictionary, 
+# and performs several analyses:
+# - It lists what each predator eats.
+# - Identifies apex predators (those not eaten by any other animal).
+# - Identifies producers (those that do not eat any other animal).
+# - Finds the most flexible eaters (those that eat the most different organisms).
+# - Determines the tastiest organisms (those eaten by the most predators).
+# - Calculates the height of each organism in the food web based on its distance from producers.
+
+# The script follows good programming practices, with functions for each part
+# to ensure modularity and reusability. It handles command line arguments
+# and performs basic error checking for file existence.

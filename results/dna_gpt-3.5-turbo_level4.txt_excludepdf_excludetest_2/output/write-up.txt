@@ -1,0 +1,1 @@
+This program reads a CSV file containing STR counts for individuals and a text file containing a DNA sequence. It then computes the longest run of consecutive repeats of each STR in the DNA sequence and matches it with the individuals in the CSV file to identify to whom the DNA belongs. If there is a match, it outputs the name of the individual, otherwise, it prints "No match".

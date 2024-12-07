@@ -1,0 +1,28 @@
+Implementation details:
+
+1. The secret word is randomly chosen from the FIVE_LETTER_WORDS list and converted to uppercase.
+
+2. The enter_action function is called when the user submits a guess:
+   - It checks if the guess is valid (5 letters and in the word list)
+   - If valid, it processes the guess letter by letter:
+     - Compares each letter to the secret word
+     - Sets the appropriate color for each square
+     - Updates the color of the corresponding key on the virtual keyboard
+   - Checks if the game is won or lost, and displays appropriate messages
+   - Moves to the next row if the game continues
+
+3. The main wordle() function sets up the game window and adds the enter_action listener.
+
+4. The code includes a commented-out section to display the secret word in the first row for testing purposes.
+
+This implementation covers all the required milestones:
+1. Picks a random word (though doesn't display it by default)
+2. Checks if entered words are valid
+3. Colors the boxes based on letter correctness
+4. Colors the keys on the virtual keyboard
+
+Possible improvements and extensions:
+- Implement a more balanced word selection algorithm
+- Add animations for winning
+- Create an option to list possible words based on previous guesses
+- Implement a scoring system with file-based persistence

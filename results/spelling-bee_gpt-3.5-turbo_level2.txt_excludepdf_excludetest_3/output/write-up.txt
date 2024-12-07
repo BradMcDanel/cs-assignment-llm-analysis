@@ -1,0 +1,6 @@
+# Your write-up here
+# Write-up for Spelling Bee Solver and Word Checker implementations
+# I have created two Python scripts to solve the Spelling Bee puzzle.
+# SpellingBeeSolver.py allows the user to enter the puzzle letters and click the Solve button to display valid words from the dictionary that meet the puzzle requirements.
+# SpellingBeeWordChecker.py allows the user to enter a word and checks if it meets the puzzle requirements, adding it to the word list if valid.
+# Both scripts utilize the provided SpellingBeeGraphics class to interact with the user interface.

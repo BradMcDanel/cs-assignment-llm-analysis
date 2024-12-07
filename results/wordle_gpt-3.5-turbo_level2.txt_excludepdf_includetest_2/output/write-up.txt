@@ -1,0 +1,9 @@
+I have provided Python code snippets for each milestone of the Wordle assignment. Each code snippet includes the necessary imports and functions to achieve the specific milestone. It covers the basic functionality required for playing the Wordle game as outlined in the assignment document. 
+
+The milestones include:
+1. Displaying a random word in the first row of boxes.
+2. Checking whether the entered word is a legitimate English word.
+3. Coloring the boxes based on correct letters in the guess.
+4. Coloring the keys based on user input.
+
+The code snippets are structured to be integrated into the main Wordle.py file as part of the overall implementation of the Wordle game. Each milestone builds upon the previous one to gradually implement the full functionality of the Wordle game.

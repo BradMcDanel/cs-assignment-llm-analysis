@@ -1,0 +1,194 @@
+{
+    "created": 1731004788.5831468,
+    "duration": 0.08790016174316406,
+    "exitcode": 1,
+    "root": "/tmp/code_yy0mcgql",
+    "environment": {},
+    "summary": {
+        "failed": 3,
+        "passed": 1,
+        "total": 4,
+        "collected": 4
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_profile.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_alice",
+                    "type": "TestCaseFunction",
+                    "lineno": 4
+                },
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_bob",
+                    "type": "TestCaseFunction",
+                    "lineno": 8
+                },
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_charlie",
+                    "type": "TestCaseFunction",
+                    "lineno": 12
+                },
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase::test_no_match",
+                    "type": "TestCaseFunction",
+                    "lineno": 16
+                }
+            ]
+        },
+        {
+            "nodeid": "test_profile.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase",
+                    "type": "UnitTestCase"
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_alice",
+            "lineno": 4,
+            "outcome": "failed",
+            "keywords": [
+                "test_match_alice",
+                "DNAProfilerTestCase",
+                "test_profile.py",
+                "code_yy0mcgql"
+            ],
+            "setup": {
+                "duration": 0.00016949092969298363,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.018198448000475764,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/home/brad/.miniconda3/lib/python3.10/unittest/case.py",
+                    "lineno": 838,
+                    "message": "AssertionError: b'No match' != b'Alice'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_profile.py",
+                        "lineno": 7,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "self = <test_profile.DNAProfilerTestCase testMethod=test_match_alice>\n\n    def test_match_alice(self):\n        output = subprocess.check_output([\"python\", \"profile.py\", \"data.csv\", \"alice.txt\"])\n>       self.assertEqual(output.strip(), b\"Alice\")\nE       AssertionError: b'No match' != b'Alice'\n\ntest_profile.py:7: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.00012197298929095268,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_bob",
+            "lineno": 8,
+            "outcome": "failed",
+            "keywords": [
+                "test_match_bob",
+                "DNAProfilerTestCase",
+                "test_profile.py",
+                "code_yy0mcgql"
+            ],
+            "setup": {
+                "duration": 9.792391210794449e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.015763451112434268,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/home/brad/.miniconda3/lib/python3.10/unittest/case.py",
+                    "lineno": 838,
+                    "message": "AssertionError: b'No match' != b'Bob'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_profile.py",
+                        "lineno": 11,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "self = <test_profile.DNAProfilerTestCase testMethod=test_match_bob>\n\n    def test_match_bob(self):\n        output = subprocess.check_output([\"python\", \"profile.py\", \"data.csv\", \"bob.txt\"])\n>       self.assertEqual(output.strip(), b\"Bob\")\nE       AssertionError: b'No match' != b'Bob'\n\ntest_profile.py:11: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.85108781605959e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_charlie",
+            "lineno": 12,
+            "outcome": "failed",
+            "keywords": [
+                "test_match_charlie",
+                "DNAProfilerTestCase",
+                "test_profile.py",
+                "code_yy0mcgql"
+            ],
+            "setup": {
+                "duration": 0.00010595493949949741,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.016818187898024917,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/home/brad/.miniconda3/lib/python3.10/unittest/case.py",
+                    "lineno": 838,
+                    "message": "AssertionError: b'No match' != b'Charlie'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_profile.py",
+                        "lineno": 15,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "self = <test_profile.DNAProfilerTestCase testMethod=test_match_charlie>\n\n    def test_match_charlie(self):\n        output = subprocess.check_output([\"python\", \"profile.py\", \"data.csv\", \"charlie.txt\"])\n>       self.assertEqual(output.strip(), b\"Charlie\")\nE       AssertionError: b'No match' != b'Charlie'\n\ntest_profile.py:15: AssertionError"
+            },
+            "teardown": {
+                "duration": 7.933191955089569e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase::test_no_match",
+            "lineno": 16,
+            "outcome": "passed",
+            "keywords": [
+                "test_no_match",
+                "DNAProfilerTestCase",
+                "test_profile.py",
+                "code_yy0mcgql"
+            ],
+            "setup": {
+                "duration": 9.563285857439041e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.019929288187995553,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 0.00010842620395123959,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+Implementation details:
+
+1. The program chooses a random word from FIVE_LETTER_WORDS as the hidden word.
+
+2. The enter_action function is called when the user submits a guess:
+   - It checks if the guess is in the word list.
+   - If valid, it compares each letter to the hidden word and updates square/key colors.
+   - It checks for a win or if the game is over (6 guesses used).
+
+3. Color logic:
+   - Green (CORRECT_COLOR) for correct letter in correct position
+   - Yellow (PRESENT_COLOR) for correct letter in wrong position
+   - Gray (MISSING_COLOR) for letters not in the word
+
+4. The program keeps track of the current row and updates it after each guess.
+
+5. Messages are displayed for invalid words, wins, and game over scenarios.
+
+This implementation follows the milestones outlined in the assignment:
+- It picks a random word and allows user input
+- It checks if guesses are valid words
+- It colors the boxes and keys appropriately
+- It handles game logic including win/lose conditions
+
+The code uses the provided WordleGraphics module for the UI, making it easy to focus on game logic while having a functional graphical interface.

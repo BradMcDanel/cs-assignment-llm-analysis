@@ -1,0 +1,61 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The dataset includes information on individuals shot and killed by police in the United States. It contains details such as the name, age, race, and whether the person was armed. This data is compiled and maintained by the Washington Post from public sources and news reports.
+
+Question 2:
+--------------------------------------------------------
+1. id - A unique identifier for each incident. Examples: 3, 4, 5.
+2. date - The date on which the shooting occurred. Examples: 2015-01-02, 2015-01-03.
+3. threat_type - The type of threat perceived by the police. Examples: point, move.
+...
+14. state - The U.S. state where the incident occurred. Examples: WA, OR, KS.
+
+Question 3:
+--------------------------------------------------------
+According to the U.S. Census Bureau, approximately 13.4% of the United States population is black. (Source: U.S. Census Bureau, 2020)
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The database stores the following information: name, date, armed status, age, gender, race, and state from the dataset.
+
+Question 2:
+--------------------------------------------------------
+The keys used in the database are the unique 'id' values from the dataset.
+
+Question 3:
+--------------------------------------------------------
+The type of the values in the database is a dictionary.
+
+Question 4:
+--------------------------------------------------------
+A specific example of a value in the database is: {'name': 'Tim Elliot', 'date': '2015-01-02', 'armed': 'gun', 'age': '53', 'gender': 'male', 'race': 'A', 'state': 'WA'}.
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The proportion of black subjects in fatal police shootings is higher than their representation in the general United States population.
+
+Question 2:
+--------------------------------------------------------
+The proportion of black subjects in fatal police shootings where the subject is unarmed is also higher than their representation in the general United States population. This proportion is similar to the overall proportion of black subjects in all police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+In this project, I learned how to process and analyze real-world datasets using Python. I became familiar with using dictionaries to organize and retrieve data efficiently. Analyzing the dataset revealed disparities in fatal police shootings, particularly with respect to race, highlighting social issues that require attention. This project emphasized the importance of data science in understanding and addressing societal problems. Overall, the process enhanced my programming and analytical skills.

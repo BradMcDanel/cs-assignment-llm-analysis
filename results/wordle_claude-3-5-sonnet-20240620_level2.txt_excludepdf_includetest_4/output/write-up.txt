@@ -1,0 +1,25 @@
+This implementation of Wordle follows the milestones outlined in the assignment:
+
+1. Pick a random word:
+   - The hidden word is chosen randomly from FIVE_LETTER_WORDS and converted to uppercase.
+
+2. Check if entered word is valid:
+   - The enter_action function first checks if the guessed word is in the word list.
+   - If not, it displays "Not in word list" message.
+
+3. Color the boxes:
+   - The code iterates through the guess twice:
+     - First pass: Mark correct letters (green) and definitely wrong letters (gray)
+     - Second pass: Mark present but misplaced letters (yellow)
+   - This two-pass approach ensures correct handling of repeated letters.
+
+4. Color the keys:
+   - Key colors are updated along with the box colors.
+   - Once a key is colored green, it stays green.
+
+Additional features:
+- The game ends when the correct word is guessed or after 6 attempts.
+- A congratulatory message is shown on correct guess.
+- The hidden word is revealed if not guessed after 6 attempts.
+
+This implementation covers all the basic requirements of the Wordle game as specified in the assignment. It uses the provided WordleGraphics module for the UI and follows the game logic described in the instructions.

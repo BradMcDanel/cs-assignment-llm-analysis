@@ -1,0 +1,4 @@
+# This Python script reads a food web file, analyzes the data, and provides various outputs based on the relationships between predators and prey.
+# It implements functions for different parts of the assignment as specified in the provided instructions.
+# The script reads the filename from the command line argument, loads the predator-prey relationships into a dictionary, and then processes and displays the required information.
+# The script ensures error handling, proper use of functions, and follows good programming practices.

@@ -1,0 +1,4 @@
+# I have implemented the main program structure for the food web analysis assignment.
+# The Assignment4.py file reads the food web file, processes the data, and calls functions for each part of the assignment.
+# The formatList.py file contains a helper function for formatting lists with commas and "and" appropriately.
+# I will now proceed to implement the specific functions for each part of the assignment based on the provided requirements.

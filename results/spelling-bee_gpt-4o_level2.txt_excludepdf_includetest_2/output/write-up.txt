@@ -1,0 +1,25 @@
+# Spelling Bee Assignment Write-up
+
+## Overview
+The Spelling Bee assignment involves creating an interactive word puzzle game similar to the New York Times Spelling Bee puzzle. The task is to implement a Python program that allows users to enter a set of letters, find all the words that can be formed using those letters, and allows the user to attempt to find the words themselves.
+
+## Development Milestones
+
+### Milestone #1
+- **Objective**: Initialize the beehive with the letters in the puzzle field.
+- **Implementation**: Implemented `puzzle_action` function to accept user input, validate it, and update the beehive display.
+
+### Milestone #2
+- **Objective**: Display the legal words in the SpellingBee puzzle.
+- **Implementation**: Implemented `solve_action` function to read words from a dictionary and validate them against the puzzle rules.
+
+### Milestone #3
+- **Objective**: Add scores to the display.
+- **Implementation**: Updated `solve_action` to calculate and display the score for each word and the total score.
+
+### Milestone #4
+- **Objective**: Let the user try to find the words.
+- **Implementation**: Added a new input field for user attempts to find words and implemented `word_action` to validate and score user input.
+
+## Conclusion
+The implementation successfully follows the assignment guidelines, allowing users to solve or attempt to solve the Spelling Bee puzzle. Further enhancements can include additional features like generating puzzles or shuffling letters.

@@ -1,0 +1,25 @@
+# Write-up for the Wordle project implementation
+
+## Overview
+The Wordle project is a Python implementation of the popular word-guessing game. The objective is to guess a randomly selected five-letter word within six attempts. The game provides feedback on each guess by coloring the letters: green for correct letters in the correct position, yellow for correct letters in the wrong position, and gray for incorrect letters.
+
+## Implementation Details
+1. **Milestone #1**: The program selects a random word from a predefined list when it starts. This word is the secret word the player needs to guess.
+
+2. **Milestone #2**: The program checks if the user's guess is a valid word from the list. If not, it displays the message "Not in word list".
+
+3. **Milestone #3**: After validating the guess, the program colors the boxes based on the guess's accuracy compared to the secret word. This involves two passes:
+   - First pass: Correctly positioned letters are colored green.
+   - Second pass: Letters present in the word but misplaced are colored yellow.
+   - Remaining letters are colored gray.
+
+4. **Milestone #4**: The virtual keyboard updates its keys' colors to reflect the information known: green for correctly positioned letters, yellow for present but misplaced letters, and gray for letters not in the word.
+
+## Challenges
+Handling duplicate letters in the guess and the secret word required careful tracking of which letters had already been matched to prevent incorrect multiple colorings.
+
+## Extensions
+Potential extensions could include a more balanced dictionary, enhanced win animations, and tracking the player's performance over multiple games.
+
+## Conclusion
+The Wordle project offers an engaging way to practice string manipulation and interactive graphics in Python. It demonstrates the importance of incremental development and testing in building complex applications.

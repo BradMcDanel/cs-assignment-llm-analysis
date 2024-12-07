@@ -1,0 +1,3 @@
+# I have provided Python codeblocks for implementing each milestone of the Wordle game project.
+# Each codeblock focuses on achieving a specific milestone as outlined in the assignment instructions.
+# These code snippets can be used to build upon and complete the Wordle game implementation.

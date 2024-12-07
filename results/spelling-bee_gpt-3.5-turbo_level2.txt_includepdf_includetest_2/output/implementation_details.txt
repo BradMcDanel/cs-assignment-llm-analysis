@@ -1,0 +1,2 @@
+# Detailed explanation of the implementation approach, algorithms used, data structures, and any significant coding decisions in the SpellingBee program.
+# It provides insights into the logic behind the code and the reasoning for specific design choices.

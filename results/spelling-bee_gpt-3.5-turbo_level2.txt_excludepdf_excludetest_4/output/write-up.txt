@@ -1,0 +1,5 @@
+# My solution for the Spelling Bee project involves reading a dictionary file, checking words against the given beehive puzzle, and displaying valid words with their scores. I have implemented milestone #1 and #2 by verifying the puzzle input and finding legal words in the dictionary. I have also incorporated the necessary functions to handle these tasks efficiently.
+
+# To run the program, simply execute the SpellingBee.py file. The user can input the 7-letter puzzle and click the Solve button to find valid words and their respective scores displayed on the screen.
+
+# For further enhancements, milestone #3 and #4 can be implemented to add scores to the display and allow the user to find words interactively. Additionally, possible extensions mentioned in the assignment can be explored to make the Spelling Bee solver more engaging and dynamic.

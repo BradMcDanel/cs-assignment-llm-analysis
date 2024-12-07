@@ -1,0 +1,21 @@
+This implementation of Wordle follows the milestones outlined in the assignment:
+
+1. Pick a random word:
+   - The target word is chosen randomly from FIVE_LETTER_WORDS at the start of each game.
+
+2. Check if entered word is valid:
+   - The enter_action function first checks if the entered word is in the word list.
+
+3. Color the boxes:
+   - After a valid word is entered, the function checks each letter against the target word.
+   - It updates the color of each square based on whether the letter is correct, present, or missing.
+
+4. Color the keys:
+   - The keyboard keys are also updated with appropriate colors after each guess.
+
+Additional features:
+- The game tracks the current row and moves to the next row after each valid guess.
+- It displays a congratulatory message if the word is guessed correctly.
+- If the player runs out of guesses, it shows a game over message with the correct word.
+
+This implementation provides a complete, playable Wordle game that meets all the basic requirements specified in the assignment.

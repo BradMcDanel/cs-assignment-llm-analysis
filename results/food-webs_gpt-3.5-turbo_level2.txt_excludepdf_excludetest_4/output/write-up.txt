@@ -1,0 +1,3 @@
+# My name is [Your Name], and the program is a Python script that analyzes food webs based on predator-prey relationships. 
+# The script reads a CSV file containing predator-prey data, processes the information, and provides various analyses as specified in the assignment.
+# I have implemented separate functions for each part of the assignment and ensured appropriate error handling and good programming practices.

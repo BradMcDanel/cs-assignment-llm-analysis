@@ -1,0 +1,24 @@
+# The provided solution is a Python program that identifies to whom a DNA sequence belongs
+# based on a database of STR counts for different individuals. The program utilizes Python's
+# CSV module to read the database into memory and then determines the longest consecutive
+# repeats of specified STRs in a given DNA sequence. The key steps in the solution are:
+#
+# 1. Command-line Argument Handling: The program requires two command-line arguments: the path
+#    to a CSV file containing the STR database and the path to a text file containing the DNA
+#    sequence.
+#
+# 2. Reading Files: Using Python's file handling capabilities, the program reads the content
+#    of both the CSV and the text files into memory.
+#
+# 3. Data Extraction: The STR sequences are extracted from the CSV's header, while the longest
+#    run of each STR in the DNA sequence is calculated using a helper function `longest_run`.
+#
+# 4. STR Matching: The calculated STR counts are compared against each individual's counts in
+#    the database. If a match is found, the individual's name is printed; otherwise, "No match"
+#    is printed.
+#
+# 5. Efficiency: The solution is straightforward but could be optimized further for larger
+#    datasets by employing more advanced algorithms for searching and matching.
+#
+# This program provides a practical example of applying computational techniques to solve
+# problems in the field of computational biology.

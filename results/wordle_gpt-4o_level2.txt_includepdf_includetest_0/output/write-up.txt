@@ -1,0 +1,16 @@
+# Wordle Assignment Write-up
+
+## Milestone #1: Pick a random word and display it in the first row of boxes
+In this milestone, we selected a random word from the provided list and displayed it in the first row of the Wordle grid. The random word is chosen using `random.choice` and displayed using the `set_square_letter` method.
+
+## Milestone #2: Check whether the letters entered by the user form a word
+We implemented the `enter_action` function to check if the entered word exists in the dictionary. If the word is not in the dictionary, a message "Not in word list" is displayed.
+
+## Milestone #3: Color the boxes
+In this milestone, we extended the `enter_action` function to color the boxes based on the user's guess. The colors indicate whether the letters are correct (green), present but misplaced (yellow), or missing (gray). We also added logic to proceed to the next row if the guess is not correct and to handle the game over scenario.
+
+## Milestone #4: Color the keys
+In the final milestone, we implemented the coloring of the keys on the virtual keyboard based on the user's guesses. The keys are colored according to the same rules as the boxes, and once a key is colored green, it will not change to yellow or gray.
+
+## Summary
+The Wordle assignment was implemented in a series of milestones to ensure each part of the game worked correctly before moving on to the next. The final implementation allows users to play a full game of Wordle with feedback on their guesses, including box and key coloring.

@@ -1,0 +1,81 @@
+# Question 1:
+The data on fatal police shootings comes from the Washington Post and is available on GitHub. It includes information on incidents of fatal police shootings, such as the date, armed status, location, demographics of the subjects, and other related details.
+
+# Question 2:
+- id: Unique identifier for each incident.
+  Examples: 3, 4, 5
+- date: Date of the incident.
+  Examples: 2015-01-02, 2015-01-03
+- threat_type: Type of threat encountered by the police.
+  Examples: point, move, attack
+- flee_status: Flee status of the subject.
+  Examples: not, car, other
+- armed_with: Weapon the subject was armed with.
+  Examples: gun, unarmed, replica
+- city: City where the incident occurred.
+  Examples: Shelton, Aloha
+- county: County where the incident occurred.
+  Examples: Mason, Washington
+- state: State where the incident occurred.
+  Examples: WA, OR
+- latitude: Latitude of the incident location.
+  Examples: 47.246826, 45.4874214
+- longitude: Longitude of the incident location.
+  Examples: -123.121592, -122.8916961
+- location_precision: Precision of the location information.
+  Examples: not_available
+- name: Name of the subject involved.
+  Examples: Tim Elliot, Lewis Lee Lembke
+- age: Age of the subject.
+  Examples: 53, 47
+- gender: Gender of the subject.
+  Examples: male
+- race: Race of the subject.
+  Examples: A, W, H
+- race_source: Source of race information.
+  Examples: not_available
+- was_mental_illness_related: Indicates if the incident was related to mental illness.
+  Examples: True, False
+- body_camera: Indicates if body camera footage is available.
+  Examples: True, False
+- agency_ids: IDs of the agencies involved.
+  Examples: 73, 70
+
+# Question 3:
+The percentage of the United States population that is black is approximately 13.4%. [Source: U.S. Census Bureau]
+
+### Task 2: template.txt ###
+
+# Question 1:
+The following information from the file fatal-police-shootings-data.csv is stored in the database: name, date, armed, age, gender, race, state.
+
+# Question 2:
+The keys in the database are the unique identifiers (id) of the incidents.
+
+# Question 3:
+The type of the values in the database is dictionary.
+
+# Question 4:
+One of the values in the database stores information about an incident with ID 3:
+{
+    "name": "2015-01-02",
+    "date": "point",
+    "armed": "gun",
+    "age": "Shelton",
+    "gender": "Mason",
+    "race": "WA",
+    "state": "47.246826"
+}
+
+### Task 3: template.txt ###
+
+# Question 1:
+The proportion of black subjects in fatal police shootings is higher than the proportion of black people in the United States population.
+
+# Question 2:
+The proportion of black subjects in fatal police shootings where the subject is unarmed is also higher than the proportion of black people in the United States population, but slightly lower than the proportion of black subjects in all police shootings.
+
+### Task 4: template.txt ###
+
+# Question 1:
+This project has been a valuable learning experience in utilizing Python dictionaries to analyze real-world data on fatal police shootings. It has provided insights into the representation of different races in these incidents and how they compare to the general population demographics.

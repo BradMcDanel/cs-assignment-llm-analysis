@@ -1,0 +1,28 @@
+Wordle Implementation Write-up
+
+1. Game Initialization:
+   - The game starts by selecting a random five-letter word from the provided FIVE_LETTER_WORDS list.
+   - A WordleGWindow object is created to handle the game's graphical interface.
+
+2. Game Logic:
+   - The main game logic is implemented in the enter_action function, which is called every time the user enters a guess.
+   - The function checks if the entered word is valid (in the word list) and provides feedback if it's not.
+   - For valid guesses, it compares each letter with the secret word and updates the colors of the squares and keyboard keys accordingly.
+
+3. Color Logic:
+   - CORRECT_COLOR (green) is used for letters in the correct position.
+   - PRESENT_COLOR (yellow) is used for letters present in the word but in the wrong position.
+   - MISSING_COLOR (gray) is used for letters not in the word.
+   - The keyboard colors are updated to help the player keep track of used letters.
+
+4. Game Flow:
+   - The game continues until the player guesses the correct word or runs out of attempts (6 rows).
+   - Appropriate messages are displayed for winning or losing the game.
+
+5. Milestones Achieved:
+   - Milestone #1: Randomly selecting a word (implemented in the initialization).
+   - Milestone #2: Checking if entered words are valid.
+   - Milestone #3: Coloring the boxes based on letter correctness.
+   - Milestone #4: Updating the colors of the keyboard keys.
+
+This implementation provides a fully functional Wordle game that meets all the required milestones. It uses the provided WordleGraphics module for the UI and WordleDictionary for the word list, focusing on the game logic and user interaction.

@@ -1,0 +1,23 @@
+# Wordle Implementation Write-up
+
+The implementation of the Wordle game follows a structured approach, focusing on milestones that build upon one another. 
+
+1. **Milestone 1: Pick a Random Word**
+   - The game begins by selecting a random word from the provided list of 5-letter words. This word is stored as `secret_word`.
+
+2. **Milestone 2: Validate User Input**
+   - When the user inputs a word, the code checks if the word is of correct length and exists in the word list. If not, an error message is shown.
+
+3. **Milestone 3: Color the Boxes**
+   - The program checks each letter of the guessed word against the `secret_word`. It uses two passes:
+     - The first pass identifies letters that are in the correct position (green).
+     - The second pass identifies correct letters in the wrong position (yellow), while marking used letters to prevent incorrect double counting.
+   - The background colors of the letters are set according to their status (correct, present, or missing).
+
+4. **Milestone 4: Color the Keys**
+   - The virtual keyboard keys are also colored according to their status, providing a visual aid to the user.
+
+5. **Game Progression and Termination**
+   - The game progresses to the next row after each guess. It provides feedback via messages and ends if the word is guessed correctly or if the user exhausts all attempts.
+
+This implementation captures the core mechanics of Wordle, providing a functional and interactive experience that mirrors the original game.

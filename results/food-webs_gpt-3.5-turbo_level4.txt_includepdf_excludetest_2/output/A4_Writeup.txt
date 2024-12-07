@@ -1,0 +1,5 @@
+In this assignment, I successfully implemented a Python program to analyze food webs. 
+I followed the guidelines provided and ensured that the program reads the data file as a command line argument. 
+The program stores the predator-prey relationships in a dictionary, and then carries out various tasks as outlined in the assignment description. 
+I also made sure to adhere to good programming style by using appropriate variable names, including comments, and structuring the code into functions. 
+Overall, the assignment was challenging but rewarding, and I learned a lot about working with file data and dictionaries in Python.

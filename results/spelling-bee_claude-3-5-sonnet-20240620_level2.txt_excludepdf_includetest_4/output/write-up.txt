@@ -1,0 +1,38 @@
+This implementation of the Spelling Bee game addresses all 4 milestones:
+
+1. Initialize the beehive with letters in the puzzle field:
+   - The puzzle_action method checks if the entered puzzle is valid (7 unique letters).
+   - If valid, it updates the beehive display using set_beehive_letters.
+   - If invalid, it shows an error message.
+
+2. Display legal words in the SpellingBee puzzle:
+   - The solve_action method iterates through the dictionary.
+   - It checks each word against the puzzle rules using is_valid_word.
+   - Valid words are displayed with their scores using add_word.
+
+3. Add scores to the display:
+   - The score_word method calculates scores based on word length and pangram bonus.
+   - Words are displayed with their scores in parentheses.
+   - Pangrams are shown in blue.
+   - The total score and word count are updated and displayed.
+
+4. Let the user try to find words:
+   - The word_action method handles user input for words.
+   - It checks if the word is valid, not already found, and updates the display accordingly.
+   - The Word field is cleared after each valid entry.
+   - The Solve button still works to show all possible words.
+
+Key design decisions:
+
+1. Object-oriented approach: The SpellingBee class encapsulates all game logic and state.
+2. Modular design: Separate methods for different functionalities (e.g., is_valid_puzzle, is_valid_word, score_word).
+3. Efficient data structures: Using sets for quick lookups (dictionary, found_words).
+4. Clear separation of concerns: Game logic is separate from the graphics handling.
+
+The implementation follows good coding practices such as:
+- Consistent naming conventions
+- Clear and concise comments
+- Proper error handling and user feedback
+- Efficient algorithms for word checking and scoring
+
+This solution provides a complete and interactive Spelling Bee game that meets all the requirements outlined in the assignment.

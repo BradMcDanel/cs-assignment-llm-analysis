@@ -1,0 +1,7 @@
+In this assignment, I learned how to implement the Wordle game using Python. The key steps involved:
+- Picking a random word from a predefined list.
+- Implementing the logic to check if the entered word is valid.
+- Coloring the boxes based on the correctness of the letters in the guess.
+- Updating the colors of the keyboard keys for better user experience.
+
+The modular approach and breaking down the tasks into milestones helped in methodically building and testing the game. This project enhanced my understanding of working with strings, lists, and basic GUI handling in Python.

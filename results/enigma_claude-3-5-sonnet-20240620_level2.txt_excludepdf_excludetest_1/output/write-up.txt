@@ -1,0 +1,19 @@
+This implementation of the Enigma machine simulator follows the Model-View-Controller pattern and implements the key features described in the assignment:
+
+1. Keyboard activation: The EnigmaModel class keeps track of pressed keys and lit lamps using dictionaries. The key_pressed, key_released, and is_key_down methods handle keyboard interactions.
+
+2. Lamp panel: The is_lamp_on method returns the state of each lamp.
+
+3. Rotor implementation: The EnigmaRotor class represents each rotor, storing its permutation, inverse permutation, and current offset. The advance method handles rotor rotation.
+
+4. Encryption: The encrypt method implements the full encryption path, including right-to-left and left-to-right passes through the rotors and the reflector.
+
+5. Rotor advancement: The advance_rotors method is called on each key press, implementing the carry mechanism between rotors.
+
+Key aspects of the implementation:
+
+- The apply_permutation function handles the shifting of rotor wiring based on the current offset.
+- The invert_key method creates the inverse permutation for each rotor to handle the left-to-right pass.
+- The EnigmaModel class coordinates all components and handles user interactions.
+
+This implementation should provide a functional Enigma machine simulator that meets all the requirements outlined in the assignment.

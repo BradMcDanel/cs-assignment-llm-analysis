@@ -1,0 +1,1 @@
+In this assignment, I learned about the Enigma machine and the process of simulating its operation using Python. It was challenging to understand the encryption process and implement it step by step. I also gained insights into the importance of design patterns like Model-View-Controller in software development.

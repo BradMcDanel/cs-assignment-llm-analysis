@@ -1,0 +1,36 @@
+Wordle Implementation Explanation
+
+1. Game Initialization:
+   - We import necessary modules and constants from the provided helper scripts.
+   - The secret word is randomly chosen from the FIVE_LETTER_WORDS list and converted to uppercase.
+   - We initialize the current row to 0.
+
+2. Enter Action:
+   - The enter_action function is called when the user submits a guess.
+   - It first checks if the entered word is in the word list. If not, it displays "Not in word list".
+   - If the word is valid, it proceeds to color the boxes and update the keyboard.
+
+3. Coloring Boxes and Updating Keyboard:
+   - For each letter in the guess:
+     a. If the letter is in the correct position, it's colored green (CORRECT_COLOR).
+     b. If the letter is in the word but in the wrong position, it's colored yellow (PRESENT_COLOR).
+     c. If the letter is not in the word, it's colored gray (MISSING_COLOR).
+   - The keyboard colors are updated based on the most informative state for each letter:
+     - Green takes precedence over yellow, which takes precedence over gray.
+
+4. Win/Lose Condition:
+   - If the guess matches the secret word, a congratulatory message is shown.
+   - If the player runs out of guesses, the secret word is revealed.
+   - Otherwise, the game moves to the next row.
+
+5. Game Flow:
+   - The game continues until the player guesses the word correctly or runs out of guesses.
+   - After each guess, the current row is updated, and a new row is set for the next guess.
+
+This implementation follows the milestones outlined in the assignment:
+1. It picks a random word and displays it (internally).
+2. It checks whether entered words are valid.
+3. It colors the boxes according to the guess accuracy.
+4. It updates the colors of the keyboard keys.
+
+The code is structured to be easily readable and maintainable, with clear separation of concerns between game logic and GUI interaction.

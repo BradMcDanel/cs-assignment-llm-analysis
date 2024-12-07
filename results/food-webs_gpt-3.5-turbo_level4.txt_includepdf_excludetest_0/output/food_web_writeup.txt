@@ -1,0 +1,5 @@
+In this assignment, we analyzed various food webs to identify predators, prey, apex predators, producers, most flexible eaters, tastiest organisms, and the height of each organism in the food web. The program reads the data from a file, stores the relationships in a dictionary, and performs different analyses based on the requirements outlined in the assignment.
+
+The assignment involved processing CSV files containing predator-prey information, structuring the data into dictionaries, implementing functions for each part of the analysis, and following specific formatting guidelines for the output.
+
+Overall, the assignment focused on understanding food web dynamics and implementing algorithms to extract meaningful insights from the data. Additionally, error handling, file reading, dictionary manipulation, and function design were key components of the programming tasks.

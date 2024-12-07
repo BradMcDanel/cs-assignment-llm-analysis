@@ -1,0 +1,56 @@
+Task 1:
+Question 1: The dataset includes information on fatal police shootings in the United States, compiled by the Washington Post. It includes details such as the victim's name, age, gender, race, the state and city where the shooting occurred, whether the victim was armed, and additional circumstances. The data is collected from local news reports, law enforcement websites, social media, and independent databases like Killed by Police and Fatal Encounters.
+
+Question 2:
+- Column: "id"
+  Explanation: A unique identifier for each shooting incident.
+  Examples: 22, 325, 140
+- Column: "name"
+  Explanation: The name of the person who was shot.
+  Examples: "John Doe", "Jane Smith"
+- Column: "date"
+  Explanation: The date of the shooting.
+  Examples: "2015-01-02", "2016-11-20"
+- Column: "armed"
+  Explanation: Indicates if the person was armed and with what weapon.
+  Examples: "gun", "knife", "unarmed"
+- Column: "gender"
+  Explanation: The gender of the person shot.
+  Examples: "M", "F"
+- Column: "race"
+  Explanation: The race of the person shot.
+  Examples: "W", "B", "A"
+- Column: "city"
+  Explanation: The city where the shooting took place.
+  Examples: "Los Angeles", "New York"
+- Column: "state"
+  Explanation: The state where the shooting took place.
+  Examples: "CA", "NY"
+- Column: "signs_of_mental_illness"
+  Explanation: Indicates if the person showed signs of mental illness.
+  Examples: "True", "False"
+- Column: "threat_level"
+  Explanation: The threat level perceived by police.
+  Examples: "attack", "other"
+- Column: "flee"
+  Explanation: Indicates if the person was fleeing the scene.
+  Examples: "Foot", "Car", "Not fleeing"
+- Column: "body_camera"
+  Explanation: Whether a body camera was present.
+  Examples: "True", "False"
+
+Question 3: According to the United States Census Bureau, approximately 13.4% of the U.S. population is black. [Source: U.S. Census Bureau, 2020]
+
+Task 2:
+Question 1: The columns stored in the database dictionary include 'id', 'name', 'date', 'armed', 'gender', 'race', 'city', 'state', 'signs_of_mental_illness', 'threat_level', 'flee', and 'body_camera'.
+Question 2: The keys in the database dictionary are the 'id' values from the CSV file.
+Question 3: The type of the values in the database dictionary is a dictionary.
+Question 4: A value in the database stores information about a shooting incident, including details such as the victim's name, date of the incident, whether the victim was armed, etc. For instance, for ID 1694, it might store {'id': '1694', 'name': 'George Floyd', 'date': '2020-05-25', ...}.
+
+Task 3:
+Question 1: The proportion of black subjects in fatal police shootings is significantly higher than their proportion in the general U.S. population (13.4%). This suggests a disparity in fatal police encounters affecting black individuals.
+
+Question 2: The proportion of black subjects in fatal police shootings where the subject is unarmed is also disproportionately high compared to their population percentage. This highlights a concerning trend of unarmed black individuals being subjects of fatal police encounters, aligning with the overall trend observed in all police shootings.
+
+Reflection:
+Through this project, I learned about the complexities of handling real-world data and the importance of being critical about data sources and representation. The task of analyzing fatal police shootings was both enlightening and sobering, revealing stark disparities that exist in law enforcement outcomes. The use of Python dictionaries enabled efficient data organization and retrieval, demonstrating their utility in practical data analysis tasks. As we delved deeper into the dataset, the human stories behind the numbers became more pronounced, underscoring the importance of data-driven advocacy for social justice. Overall, this project reinforced the power of data to uncover truths and the responsibility that comes with analyzing sensitive information.

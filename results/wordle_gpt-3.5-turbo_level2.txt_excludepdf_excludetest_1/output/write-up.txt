@@ -1,0 +1,4 @@
+# I have implemented the Wordle game in Python following the provided instructions. 
+# The code allows the user to enter a word and checks if it matches the hidden word from the list.
+# The color of the boxes is updated based on correctness of the letters in the guess.
+# I have also created a separate file, WordleExtensions.py, to work on possible extensions mentioned in the assignment.

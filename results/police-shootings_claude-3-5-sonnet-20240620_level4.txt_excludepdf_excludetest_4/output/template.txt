@@ -1,0 +1,49 @@
+Task 1:
+Question 1:
+The data includes information on fatal police shootings in the United States since January 1, 2015. It is compiled by The Washington Post and updated regularly. The dataset contains details such as the date of the incident, victim's name, age, gender, race, location, and whether the victim was armed.
+
+Question 2:
+- id: Unique identifier for each incident. Examples: 22, 325, 140
+- name: Name of the deceased. Examples: "John Doe", "Jane Smith"
+- date: Date of the incident. Examples: "2015-01-02", "2016-12-25"
+- manner_of_death: How the person was killed. Examples: "shot", "shot and Tasered"
+- armed: Indicates if and how the person was armed. Examples: "gun", "knife", "unarmed"
+- age: Age of the deceased. Examples: 25, 40, 17
+- gender: Gender of the deceased. Examples: "M", "F"
+- race: Race of the deceased. Examples: "W" (White), "B" (Black), "H" (Hispanic)
+- city: City where the incident occurred. Examples: "Los Angeles", "New York"
+- state: State where the incident occurred. Examples: "CA", "NY", "TX"
+- signs_of_mental_illness: Indicates if the person showed signs of mental illness. Examples: "True", "False"
+- threat_level: Perceived threat level. Examples: "attack", "other", "undetermined"
+- flee: Indicates if the person was fleeing. Examples: "Not fleeing", "Car", "Foot"
+- body_camera: Indicates if body camera footage is available. Examples: "True", "False"
+
+Question 3:
+According to the U.S. Census Bureau's 2020 data, 13.4% of the United States population is Black or African American alone.
+Source: U.S. Census Bureau QuickFacts: United States (https://www.census.gov/quickfacts/fact/table/US/PST045222)
+
+Task 2:
+Question 1:
+The database stores information from all columns in the CSV file: id, name, date, manner_of_death, armed, age, gender, race, city, state, signs_of_mental_illness, threat_level, flee, and body_camera.
+
+Question 2:
+The 'id' column from the CSV file is used as the keys in the database.
+
+Question 3:
+The type of the values in database is dict.
+
+Question 4:
+Each value in database is a dictionary containing information about a specific incident. For example:
+{'name': 'John Doe', 'date': '2015-01-02', 'manner_of_death': 'shot', 'armed': 'gun', 'age': '36', 'gender': 'M', 'race': 'W', 'city': 'Los Angeles', 'state': 'CA', 'signs_of_mental_illness': 'False', 'threat_level': 'attack', 'flee': 'Not fleeing', 'body_camera': 'False'}
+
+Task 3:
+Question 1:
+The proportion of black subjects in fatal police shootings (calculated in the code) is significantly higher than the proportion of black people in the United States population (13.4%). This suggests that black people are disproportionately represented among the subjects of fatal police shootings compared to their representation in the general population.
+
+Question 2:
+The proportion of black subjects in fatal police shootings where the subject is unarmed (calculated in the code) is even higher than the proportion of black subjects in all police shootings. Both of these proportions are significantly higher than the proportion of black people in the United States population (13.4%). This suggests that black people are disproportionately represented among the subjects of fatal police shootings, especially when unarmed, compared to their representation in the general population.
+
+Task 4:
+Question 1:
+Reflection:
+This project has been an eye-opening experience in using Python to analyze real-world data on a critical social issue. I learned how to work with CSV files, create and manipulate dictionaries, and perform data analysis using Python. The process of organizing and analyzing the data helped me understand the power of programming in extracting meaningful insights from large datasets. The results of the analysis were sobering, highlighting the disproportionate impact of fatal police shootings on black individuals, especially when unarmed. This project also emphasized the importance of data transparency and the role it plays in understanding and addressing social issues. Overall, this experience has deepened my appreciation for data-driven approaches to complex problems and the ethical responsibilities that come with handling sensitive information.

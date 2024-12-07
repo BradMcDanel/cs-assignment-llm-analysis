@@ -1,0 +1,1 @@
+# In the write-up, you can discuss the implementation details, any challenges faced, design choices, and improvements/extensions that can be made to the Wordle game implementation.

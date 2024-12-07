@@ -1,0 +1,8 @@
+# This file should contain a comprehensive list of English words, each on a new line.
+# Example content:
+apple
+banana
+grape
+wizard
+wizardry
+# Note: The actual file should be complete with thousands of words.

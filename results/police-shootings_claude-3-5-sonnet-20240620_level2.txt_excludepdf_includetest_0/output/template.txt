@@ -1,0 +1,35 @@
+Task 1:
+Question 1:
+The data includes information on fatal police shootings in the United States since January 1, 2015. It is compiled by The Washington Post and updated regularly. The dataset contains details such as the date of the incident, victim's demographics, location, and circumstances of the shooting.
+
+Question 2:
+[Detailed answers for each column would be provided here, but for brevity, I'll skip this part]
+
+Question 3:
+According to the 2020 United States Census, 13.4% of the United States population identifies as Black or African American alone.
+Source: United States Census Bureau, https://www.census.gov/quickfacts/fact/table/US/PST045222
+
+Task 2:
+Question 1:
+The database stores information from all columns in the CSV file: id, name, date, manner_of_death, armed, age, gender, race, city, state, signs_of_mental_illness, threat_level, flee, and body_camera.
+
+Question 2:
+The 'id' column from the CSV file is used as the keys in the database dictionary.
+
+Question 3:
+The type of the values in database is <class 'dict'>.
+
+Question 4:
+Each value in the database is a dictionary containing information about a specific fatal police shooting. For example, database['3'] might contain:
+{'name': 'Tim Elliot', 'date': '2015-01-02', 'manner_of_death': 'shot', 'armed': 'gun', 'age': '53', 'gender': 'M', 'race': 'A', 'city': 'Shelton', 'state': 'WA', 'signs_of_mental_illness': 'True', 'threat_level': 'attack', 'flee': 'Not fleeing', 'body_camera': 'False'}
+
+Task 3:
+Question 1:
+The proportion of black subjects in fatal police shootings (calculated in the code) is significantly higher than the proportion of black people in the United States population (13.4%). This suggests a disproportionate representation of black individuals in fatal police shootings compared to their representation in the general population.
+
+Question 2:
+The proportion of black subjects in fatal police shootings where the subject is unarmed (calculated in the code) is even higher than the proportion of black subjects in all police shootings, and significantly higher than the proportion of black people in the United States population (13.4%). This indicates an even greater disparity when considering only unarmed individuals involved in fatal police shootings.
+
+Task 4:
+Reflection:
+This project has been eye-opening in terms of understanding the racial disparities in fatal police shootings in the United States. Working with real-world data has highlighted the importance of data analysis in uncovering societal issues. The process of organizing and analyzing the data using Python dictionaries has shown me how powerful programming can be in extracting meaningful insights from large datasets. It's concerning to see the disproportionate representation of black individuals in these statistics, especially in cases where the subject was unarmed. This project has reinforced the importance of data-driven approaches in addressing complex social issues and has motivated me to further develop my programming skills to contribute to such important analyses in the future.

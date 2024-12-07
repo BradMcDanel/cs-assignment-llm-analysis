@@ -1,0 +1,3 @@
+I have implemented the EnigmaRotor class to represent a rotor with its permutation and offset. 
+In the EnigmaModel, I initialize the rotors using the supplied permutations and implement key_pressed, 
+key_released, rotor_clicked, and get_rotor_letter methods to handle rotor advancements and letter mappings.

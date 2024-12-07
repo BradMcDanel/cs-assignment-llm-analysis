@@ -1,0 +1,8 @@
+# This solution involves reading a CSV file and a DNA sequence file to determine which individual's STR counts match the sequence's STR pattern.
+# Key steps include:
+# 1. Using csv.DictReader to read the CSV file into a list of dictionaries, where each dictionary represents an individual.
+# 2. Reading the DNA sequence from a text file into a string.
+# 3. Implementing a function `longest_match` to compute the longest run of consecutive repeats of each STR in the DNA sequence.
+# 4. Comparing the computed STR counts with each individual's recorded counts to find a match.
+# 5. Outputting the matching individual's name or "No match" if no individual matches the STR counts.
+# This approach efficiently finds the longest consecutive repeats and matches them with the database records.

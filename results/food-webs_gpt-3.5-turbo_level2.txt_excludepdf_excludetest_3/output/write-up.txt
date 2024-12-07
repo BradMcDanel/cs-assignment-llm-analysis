@@ -1,0 +1,7 @@
+# This Python script analyzes food webs by reading predator-prey relationships from a file
+# and performing various tasks such as listing what each predator eats, identifying apex predators,
+# producers, most flexible eaters, tastiest organisms, and determining heights of organisms.
+# The script reads the filename as a command line argument, stores the data in a dictionary,
+# and then applies different functions to achieve the desired analysis.
+# The script follows the guidelines provided in the assignment handout for proper formatting,
+# error handling, use of functions, and algorithmic approaches.

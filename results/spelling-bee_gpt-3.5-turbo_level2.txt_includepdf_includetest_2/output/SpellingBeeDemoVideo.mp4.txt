@@ -1,0 +1,2 @@
+# A video demonstration of the SpellingBee program in action, showcasing its features, functionality, and usage.
+# It provides a visual walkthrough of the program's capabilities for better understanding.

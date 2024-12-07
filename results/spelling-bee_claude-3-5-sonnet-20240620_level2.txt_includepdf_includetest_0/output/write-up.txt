@@ -1,0 +1,35 @@
+SpellingBee Project Write-up
+
+1. Project Structure and Design:
+   The project is structured around the main spelling_bee() function, which sets up the game and defines the callback functions for user interactions. The code is organized into smaller, focused functions to handle specific tasks, promoting readability and maintainability.
+
+2. Milestone Implementation:
+   - Milestone #1: The puzzle_action function checks if the entered puzzle is valid and updates the beehive letters accordingly.
+   - Milestone #2: The solve_action function finds and displays all valid words for the current puzzle.
+   - Milestone #3: Word scoring is implemented in the calculate_score function, and scores are displayed alongside words.
+   - Milestone #4: The word_action function allows users to enter words, checks their validity, and updates the score.
+
+3. Key Functions:
+   - load_dictionary: Reads the dictionary file into a set for efficient word lookup.
+   - is_valid_puzzle: Ensures the puzzle contains 7 unique letters.
+   - find_valid_words: Identifies all valid words in the dictionary for a given puzzle.
+   - is_valid_word: Checks if a single word is valid for the current puzzle.
+   - calculate_score: Computes the score for a word, including the pangram bonus.
+   - display_words and display_word: Handle the visual presentation of words and scores.
+   - show_summary and update_score: Keep track of and display the overall game progress.
+
+4. User Interaction:
+   The program provides feedback through messages for various user actions, including setting the puzzle, solving, and entering words. Error messages guide the user when invalid inputs are provided.
+
+5. Challenges and Solutions:
+   - Efficient word checking: Using a set for the dictionary allows for fast word lookups.
+   - Score tracking: Implemented a global total_score variable to keep track of the cumulative score.
+   - Pangram detection: Achieved by comparing the set of letters in a word to the set of puzzle letters.
+
+6. Possible Improvements:
+   - Implement puzzle generation as suggested in the extensions.
+   - Add a shuffle button to rearrange the outer hexagon letters.
+   - Optimize for very large dictionaries by preprocessing or using more advanced data structures.
+
+7. Conclusion:
+   This implementation successfully meets all the requirements of the SpellingBee project, providing an interactive and engaging word puzzle game. The modular design allows for easy extension and modification, making it a solid foundation for further enhancements.

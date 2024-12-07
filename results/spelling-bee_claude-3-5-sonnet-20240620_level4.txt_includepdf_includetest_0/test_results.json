@@ -1,8 +1,8 @@
 {
-    "created": 1719502812.5996087,
-    "duration": 0.2399895191192627,
+    "created": 1731002421.5682611,
+    "duration": 0.20827746391296387,
     "exitcode": 0,
-    "root": "/tmp/code_643b7icj",
+    "root": "/tmp/code_m7bdu4p0",
     "environment": {},
     "summary": {
         "passed": 10,
@@ -85,18 +85,18 @@
             "keywords": [
                 "test_puzzle_initialization",
                 "test_SpellingBee.py",
-                "code_643b7icj"
+                "code_m7bdu4p0"
             ],
             "setup": {
-                "duration": 0.015277780126780272,
+                "duration": 0.015717054018750787,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 7.950887084007263e-05,
+                "duration": 8.518202230334282e-05,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 7.489393465220928e-05,
+                "duration": 7.514399476349354e-05,
                 "outcome": "passed"
             }
         },
@@ -107,18 +107,18 @@
             "keywords": [
                 "test_invalid_puzzle_length",
                 "test_SpellingBee.py",
-                "code_643b7icj"
+                "code_m7bdu4p0"
             ],
             "setup": {
-                "duration": 0.015024382853880525,
+                "duration": 0.015007751062512398,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 8.534220978617668e-05,
+                "duration": 7.808883674442768e-05,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 7.468601688742638e-05,
+                "duration": 7.432303391397e-05,
                 "outcome": "passed"
             }
         },
@@ -129,18 +129,18 @@
             "keywords": [
                 "test_invalid_puzzle_duplicates",
                 "test_SpellingBee.py",
-                "code_643b7icj"
+                "code_m7bdu4p0"
             ],
             "setup": {
-                "duration": 0.015203102957457304,
+                "duration": 0.014788900036364794,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 0.00011180317960679531,
+                "duration": 8.172099478542805e-05,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 7.592909969389439e-05,
+                "duration": 6.577209569513798e-05,
                 "outcome": "passed"
             }
         },
@@ -151,18 +151,18 @@
             "keywords": [
                 "test_solve_action",
                 "test_SpellingBee.py",
-                "code_643b7icj"
+                "code_m7bdu4p0"
             ],
             "setup": {
-                "duration": 0.014976449077948928,
+                "duration": 0.015052851056680083,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 0.02075654803775251,
+                "duration": 0.01951334602199495,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 0.00010519195348024368,
+                "duration": 8.609099313616753e-05,
                 "outcome": "passed"
             }
         },
@@ -173,18 +173,18 @@
             "keywords": [
                 "test_word_entry_valid",
                 "test_SpellingBee.py",
-                "code_643b7icj"
+                "code_m7bdu4p0"
             ],
             "setup": {
-                "duration": 0.014686178183183074,
+                "duration": 0.015063415048643947,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 9.169196709990501e-05,
+                "duration": 8.701090700924397e-05,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 6.804196164011955e-05,
+                "duration": 7.296400144696236e-05,
                 "outcome": "passed"
             }
         },
@@ -195,18 +195,18 @@
             "keywords": [
                 "test_word_entry_invalid",
                 "test_SpellingBee.py",
-                "code_643b7icj"
+                "code_m7bdu4p0"
             ],
             "setup": {
-                "duration": 0.014517775969579816,
+                "duration": 0.015000521903857589,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 8.211401291191578e-05,
+                "duration": 8.128606714308262e-05,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 7.219100371003151e-05,
+                "duration": 7.035606540739536e-05,
                 "outcome": "passed"
             }
         },
@@ -217,18 +217,18 @@
             "keywords": [
                 "test_pangram_identification",
                 "test_SpellingBee.py",
-                "code_643b7icj"
+                "code_m7bdu4p0"
             ],
             "setup": {
-                "duration": 0.04618921293877065,
+                "duration": 0.014737227000296116,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 0.00010899105109274387,
+                "duration": 9.041000157594681e-05,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 7.932400330901146e-05,
+                "duration": 7.20401294529438e-05,
                 "outcome": "passed"
             }
         },
@@ -239,18 +239,18 @@
             "keywords": [
                 "test_score_calculation",
                 "test_SpellingBee.py",
-                "code_643b7icj"
+                "code_m7bdu4p0"
             ],
             "setup": {
-                "duration": 0.013630921952426434,
+                "duration": 0.014889023965224624,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 0.00010591000318527222,
+                "duration": 9.035691618919373e-05,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 7.942621596157551e-05,
+                "duration": 6.891484372317791e-05,
                 "outcome": "passed"
             }
         },
@@ -261,18 +261,18 @@
             "keywords": [
                 "test_duplicate_word_entry",
                 "test_SpellingBee.py",
-                "code_643b7icj"
+                "code_m7bdu4p0"
             ],
             "setup": {
-                "duration": 0.01408324996009469,
+                "duration": 0.014844427118077874,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 9.77290328592062e-05,
+                "duration": 8.753896690905094e-05,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 6.852298974990845e-05,
+                "duration": 6.784987635910511e-05,
                 "outcome": "passed"
             }
         },
@@ -283,18 +283,18 @@
             "keywords": [
                 "test_solve_after_user_input",
                 "test_SpellingBee.py",
-                "code_643b7icj"
+                "code_m7bdu4p0"
             ],
             "setup": {
-                "duration": 0.013850712915882468,
+                "duration": 0.014924224000424147,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 0.021902511129155755,
+                "duration": 0.019654944073408842,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 0.00010104081593453884,
+                "duration": 8.937600068747997e-05,
                 "outcome": "passed"
             }
         }

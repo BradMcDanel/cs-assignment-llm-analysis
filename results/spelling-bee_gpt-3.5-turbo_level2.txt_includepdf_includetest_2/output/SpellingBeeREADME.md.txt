@@ -1,0 +1,2 @@
+# A comprehensive README file for the SpellingBee project, detailing the program, setup instructions, usage guidelines, and any other relevant information.
+# It serves as a guide for users, developers, or reviewers to understand and interact with the SpellingBee program.

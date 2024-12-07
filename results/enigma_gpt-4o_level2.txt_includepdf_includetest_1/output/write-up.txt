@@ -1,0 +1,34 @@
+# Write-up for the Enigma Project
+
+## Overview
+The project involves creating a simulation of the World War II Enigma machine using the Model-View-Controller (MVC) design pattern. The Enigma machine is a complex encryption device that uses a series of rotors to perform letter-substitution ciphers. The simulator includes a graphical interface to represent the Enigma machine, and our task is to implement the model component.
+
+## Milestones
+
+### Milestone #1: Activate the keyboard
+- Implemented a dictionary to keep track of which keys are pressed.
+- Updated `key_pressed`, `key_released`, and `is_key_down` methods to reflect the state of the keys.
+
+### Milestone #2: Connect the keys directly to the lamps
+- Created a dictionary to manage the state of the lamps.
+- Modified `key_pressed` and `key_released` to also update the lamp state, lighting up the corresponding lamp when a key is pressed.
+
+### Milestone #3: Design and implement the rotor data structure
+- Defined an `EnigmaRotor` class to encapsulate rotor behavior and state.
+- Implemented methods for rotor advancement and permutation application.
+- Stored the three rotor permutations from the EnigmaConstants module.
+
+### Milestone #4: Implement one stage in the encryption
+- Developed an `apply_permutation` method in the `EnigmaRotor` class to simulate the first stage of the encryption process.
+- Updated the `key_pressed` method to use this encryption step.
+
+### Milestone #5: Implement the full encryption path
+- Extended the encryption process to include all rotors and the reflector.
+- Created an `encrypt` method in the `EnigmaModel` class to handle the entire encryption path.
+
+### Milestone #6: Implement the rotor advance on pressing a key
+- Modified the `advance` method in the `EnigmaRotor` class to handle rotor advancement and carry propagation.
+- Updated the `key_released` method to advance the rotors after a key press.
+
+## Conclusion
+The Enigma simulator successfully models the behavior of the historical Enigma machine, including key presses, lamp lighting, rotor advancement, and encryption. This project demonstrates the importance of the MVC design pattern and provides insight into the mechanics of one of the most famous encryption devices in history.

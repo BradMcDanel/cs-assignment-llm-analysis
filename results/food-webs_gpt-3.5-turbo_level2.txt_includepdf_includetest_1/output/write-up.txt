@@ -1,0 +1,5 @@
+# My solution for the Food Web analysis assignment involves reading the predator-prey relationships from a given file,
+# storing them in a dictionary, and performing various analyses as per the assignment requirements.
+# I have structured the code into separate functions for each part of the assignment, ensuring readability, modularity,
+# and adherence to the assignment guidelines.
+# I have also utilized the provided `formatList` function for nice formatting of lists, ensuring accurate output representation.

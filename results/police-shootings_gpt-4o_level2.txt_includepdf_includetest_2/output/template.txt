@@ -1,0 +1,65 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The dataset on fatal police shootings is compiled by the Washington Post and is publicly available on GitHub. It includes information on individuals shot and killed by police in the United States, spanning several years. The data highlights various details such as the date of shooting, the victim's demographics, and the circumstances of the incident.
+
+Question 2:
+--------------------------------------------------------
+- Column Header: id
+  Explanation: A unique identifier for each incident.
+  Examples: 3, 4, 5
+
+- Column Header: date
+  Explanation: The date when the shooting occurred.
+  Examples: 2015-01-02, 2015-01-03
+
+- Column Header: threat_type
+  Explanation: The type of threat perceived by police.
+  Examples: point, move, attack
+
+- Column Header: flee_status
+  Explanation: Indicates whether the individual was fleeing when shot.
+  Examples: not, car, foot
+
+- Column Header: armed_with
+  Explanation: Describes what the individual was armed with, if anything.
+  Examples: gun, unarmed, knife
+
+- Column Header: city
+  Explanation: The city where the shooting occurred.
+  Examples: Shelton, Aloha, Wichita
+
+- Column Header: county
+  Explanation: The county where the shooting occurred.
+  Examples: Mason, Washington, Sedgwick
+
+- Column Header: state
+  Explanation: The state where the shooting occurred.
+  Examples: WA, OR, KS
+
+- Column Header: name
+  Explanation: The name of the individual who was shot.
+  Examples: Tim Elliot, Lewis Lee Lembke
+
+- Column Header: age
+  Explanation: The age of the individual who was shot.
+  Examples: 53, 47
+
+- Column Header: gender
+  Explanation: The gender of the individual who was shot.
+  Examples: male, female
+
+- Column Header: race
+  Explanation: The race of the individual who was shot.
+  Examples: A, W, H, B
+
+Question 3:
+--------------------------------------------------------
+According to the United States Census Bureau, approximately 13.4% of the U.S. population identifies as Black or African American. [Source: U.S. Census Bureau, 2023]
+
+********************************************************************************************************************************

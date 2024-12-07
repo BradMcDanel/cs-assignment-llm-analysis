@@ -1,0 +1,275 @@
+{
+    "created": 1730997901.0902224,
+    "duration": 0.028539419174194336,
+    "exitcode": 1,
+    "root": "/tmp/code_ha831t5g",
+    "environment": {},
+    "summary": {
+        "passed": 6,
+        "failed": 2,
+        "total": 8,
+        "collected": 8
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py::test_enigma_initialization",
+                    "type": "Function",
+                    "lineno": 6
+                },
+                {
+                    "nodeid": "test_enigma.py::test_key_press_and_release",
+                    "type": "Function",
+                    "lineno": 11
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_advance",
+                    "type": "Function",
+                    "lineno": 20
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_click",
+                    "type": "Function",
+                    "lineno": 29
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_encryption",
+                    "type": "Function",
+                    "lineno": 37
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_decryption",
+                    "type": "Function",
+                    "lineno": 48
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_full_rotation",
+                    "type": "Function",
+                    "lineno": 70
+                },
+                {
+                    "nodeid": "test_enigma.py::test_reflector",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_enigma.py::test_enigma_initialization",
+            "lineno": 6,
+            "outcome": "passed",
+            "keywords": [
+                "test_enigma_initialization",
+                "test_enigma.py",
+                "code_ha831t5g"
+            ],
+            "setup": {
+                "duration": 8.435593917965889e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 8.174683898687363e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.365791730582714e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_key_press_and_release",
+            "lineno": 11,
+            "outcome": "passed",
+            "keywords": [
+                "test_key_press_and_release",
+                "test_enigma.py",
+                "code_ha831t5g"
+            ],
+            "setup": {
+                "duration": 4.927697591483593e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.509207352995872e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.102196544408798e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_advance",
+            "lineno": 20,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_advance",
+                "test_enigma.py",
+                "code_ha831t5g"
+            ],
+            "setup": {
+                "duration": 5.227397195994854e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.84899277985096e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.074606113135815e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_click",
+            "lineno": 29,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_click",
+                "test_enigma.py",
+                "code_ha831t5g"
+            ],
+            "setup": {
+                "duration": 4.375004209578037e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.571086123585701e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.903498873114586e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_encryption",
+            "lineno": 37,
+            "outcome": "passed",
+            "keywords": [
+                "test_enigma_encryption",
+                "test_enigma.py",
+                "code_ha831t5g"
+            ],
+            "setup": {
+                "duration": 4.236400127410889e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.758405990898609e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.84720042347908e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_decryption",
+            "lineno": 48,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_decryption",
+                "test_enigma.py",
+                "code_ha831t5g"
+            ],
+            "setup": {
+                "duration": 4.2329076677560806e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00019557890482246876,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ha831t5g/test_enigma.py",
+                    "lineno": 69,
+                    "message": "AssertionError: assert 'WHQFD' == 'HELLO'\n  - HELLO\n  + WHQFD"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 69,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_enigma_decryption():\n        model = EnigmaModel()\n        plaintext = \"HELLO\"\n        ciphertext = \"\"\n        for char in plaintext:\n            model.key_pressed(char)\n            ciphertext += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n    \n        # Reset rotor positions\n        for i in range(N_ROTORS):\n            while model.get_rotor_letter(i) != 'A':\n                model.rotor_clicked(i)\n    \n        decrypted = \"\"\n        for char in ciphertext:\n            model.key_pressed(char)\n            decrypted += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n    \n>       assert decrypted == plaintext\nE       AssertionError: assert 'WHQFD' == 'HELLO'\nE         - HELLO\nE         + WHQFD\n\ntest_enigma.py:69: AssertionError"
+            },
+            "teardown": {
+                "duration": 7.759500294923782e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_full_rotation",
+            "lineno": 70,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_full_rotation",
+                "test_enigma.py",
+                "code_ha831t5g"
+            ],
+            "setup": {
+                "duration": 5.661393515765667e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00013775890693068504,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.2185885831713676e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_reflector",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_reflector",
+                "test_enigma.py",
+                "code_ha831t5g"
+            ],
+            "setup": {
+                "duration": 4.5632943511009216e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00024222093634307384,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ha831t5g/test_enigma.py",
+                    "lineno": 91,
+                    "message": "AssertionError: assert 18 == 13\n +  where 18 = len({'A', 'B', 'C', 'D', 'E', 'F', ...})\n +    where {'A', 'B', 'C', 'D', 'E', 'F', ...} = set(dict_values(['Q', 'J', 'C', 'P', 'O', 'I', 'A', 'L', 'X', 'C', 'B', 'F', 'F', 'B', 'S', 'S', 'H', 'N', 'I', 'E', 'U', 'R', 'J', 'H', 'B', 'D']))\n +      where dict_values(['Q', 'J', 'C', 'P', 'O', 'I', 'A', 'L', 'X', 'C', 'B', 'F', 'F', 'B', 'S', 'S', 'H', 'N', 'I', 'E', 'U', 'R', 'J', 'H', 'B', 'D']) = <built-in method values of dict object at 0x7a0c87be2200>()\n +        where <built-in method values of dict object at 0x7a0c87be2200> = {'A': 'Q', 'B': 'J', 'C': 'C', 'D': 'P', ...}.values"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 91,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_reflector():\n        model = EnigmaModel()\n        results = {}\n        for char in ALPHABET:\n            model.key_pressed(char)\n            result = next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n            results[char] = result\n    \n        # Check that we have 13 pairs of letters\n>       assert len(set(results.values())) == 13\nE       AssertionError: assert 18 == 13\nE        +  where 18 = len({'A', 'B', 'C', 'D', 'E', 'F', ...})\nE        +    where {'A', 'B', 'C', 'D', 'E', 'F', ...} = set(dict_values(['Q', 'J', 'C', 'P', 'O', 'I', 'A', 'L', 'X', 'C', 'B', 'F', 'F', 'B', 'S', 'S', 'H', 'N', 'I', 'E', 'U', 'R', 'J', 'H', 'B', 'D']))\nE        +      where dict_values(['Q', 'J', 'C', 'P', 'O', 'I', 'A', 'L', 'X', 'C', 'B', 'F', 'F', 'B', 'S', 'S', 'H', 'N', 'I', 'E', 'U', 'R', 'J', 'H', 'B', 'D']) = <built-in method values of dict object at 0x7a0c87be2200>()\nE        +        where <built-in method values of dict object at 0x7a0c87be2200> = {'A': 'Q', 'B': 'J', 'C': 'C', 'D': 'P', ...}.values\n\ntest_enigma.py:91: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.645312532782555e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

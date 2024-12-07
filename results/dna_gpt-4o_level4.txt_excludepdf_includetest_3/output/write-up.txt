@@ -1,0 +1,1 @@
+In this assignment, I learned how to manipulate strings and files in Python to solve a problem that combines computer science and biology. I explored how to efficiently calculate the longest sequence of STRs and how to use this data to perform DNA profiling. This exercise demonstrated the practical application of algorithms and data manipulation in a real-world context.

@@ -1,0 +1,5 @@
+I have implemented the EnigmaRotor class to represent each rotor in the Enigma machine. The class stores the rotor permutation and offset, and has methods to get the offset, permutation, and advance the rotor.
+
+In the EnigmaModel class, I have initialized three rotors using the EnigmaRotor class with the provided rotor permutations. The model class handles updating views, key presses, releases, checking key and lamp states, rotor clicks, and getting the rotor letter based on the rotor offset.
+
+I have followed the instructions for Milestone #3 to design and implement the rotor data structure. The EnigmaRotor class encapsulates the rotor behavior and state, making it easier to manage the rotor operations in the Enigma simulation.

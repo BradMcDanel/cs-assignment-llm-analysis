@@ -1,0 +1,36 @@
+Milestone #1: Pick a random word and display it in the first row of boxes
+- Implemented by choosing a random word from FIVE_LETTER_WORDS using random.choice()
+- Displayed the word in the first row using gw.set_square_letter() in a loop
+
+Milestone #2: Check whether the letters entered by the user form a word
+- Implemented in the enter_action function
+- Collected letters from the current row to form a word
+- Checked if the word is in FIVE_LETTER_WORDS
+- Displayed "Not in word list" message if the word is not valid
+
+Milestone #3: Color the boxes
+- Implemented color logic in the enter_action function
+- Compared each letter of the guessed word with the hidden word
+- Used set_square_color to color each box appropriately
+- Handled the case of multiple occurrences of letters
+
+Milestone #4: Color the keys
+- Added key coloring logic in the enter_action function
+- Used set_key_color to update the color of each key on the virtual keyboard
+- Ensured that key colors don't downgrade (e.g., green doesn't change to yellow or gray)
+
+Additional features:
+- Implemented game end conditions (win or lose)
+- Displayed appropriate messages for game end scenarios
+- Automatically moved to the next row after a valid guess
+
+The implementation follows the milestone structure and incorporates all the required features of the Wordle game. It uses the provided WordleGraphics module for the user interface and WordleDictionary for the word list. The game logic is encapsulated in the enter_action function, which is called every time the user submits a guess.
+
+Possible improvements and extensions:
+1. Implement a more balanced word selection strategy
+2. Add animations for winning the game
+3. Create an option to list possible words based on previous guesses
+4. Implement a scoring system and store results in a file
+5. Enhance the user interface with additional feedback and statistics
+
+This implementation provides a solid foundation for the Wordle game and can be easily extended with additional features in the future.

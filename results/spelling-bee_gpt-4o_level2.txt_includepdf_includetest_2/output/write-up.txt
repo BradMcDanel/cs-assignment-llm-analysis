@@ -1,0 +1,44 @@
+# Spelling Bee Project Write-Up
+
+## Milestone #1: Initialize the beehive with the letters in the puzzle field
+For the first milestone, we implemented the `puzzle_action` function to validate the puzzle input:
+1. The puzzle must contain exactly seven characters.
+2. All characters must be letters.
+3. No letter should be repeated.
+
+Upon valid input, the letters are set in the beehive, and a success message is displayed. If the input is invalid, an error message is shown.
+
+## Milestone #2: Display the legal words in the SpellingBee puzzle
+For the second milestone, we implemented the `solve_action` function to find and display valid words from the dictionary:
+1. Load the dictionary from `EnglishWords.txt`.
+2. Check each word to see if it is valid based on the puzzle rules.
+3. Display valid words and their scores.
+
+## Milestone #3: Add scores to the display
+We extended `solve_action` to include word scores:
+1. A four-letter word scores 1 point.
+2. Longer words score based on their length.
+3. Pangrams (using all letters) score an additional 7 points.
+4. The total score and number of words are displayed.
+
+## Milestone #4: Let the user try to find the words
+A new text field labeled "Word" was added, allowing users to input words:
+1. The word is validated against the puzzle rules.
+2. If valid, the word and its score are displayed.
+3. Invalid words are rejected with appropriate messages.
+4. The Solve button still functions to find any missed words.
+
+## Testing
+We created a `test_SpellingBee.py` file with tests to validate our implementation:
+1. Test puzzle initialization.
+2. Test invalid puzzle inputs (length and duplicates).
+3. Test solving the puzzle.
+4. Test user word entry (valid and invalid).
+5. Test pangram identification.
+6. Test score calculation.
+7. Test duplicate word entries.
+
+The tests ensure our implementation functions correctly and handles edge cases.
+
+## Extensions
+Possible extensions include generating puzzles, implementing a shuffle button, and finding interesting puzzles based on specific criteria.

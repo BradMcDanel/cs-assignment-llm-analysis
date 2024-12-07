@@ -1,0 +1,3 @@
+# The provided SpellingBeeGraphics class for managing the graphical display of the SpellingBee project.
+# The class includes methods for adding buttons, input fields, word lists, displaying messages, and handling the beehive structure.
+# It is used to interact with the graphical interface of the SpellingBee program.

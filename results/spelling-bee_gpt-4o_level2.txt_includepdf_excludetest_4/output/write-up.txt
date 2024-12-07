@@ -1,0 +1,34 @@
+# Spelling Bee Project Write-up
+
+## Overview
+The Spelling Bee project involves implementing a word puzzle game similar to the New York Times' Spelling Bee. The game requires users to identify valid words from a set of 7 unique letters arranged in a beehive format, with specific rules to follow.
+
+## Implementation Steps
+
+### Milestone #1: Initialize the Beehive
+- Users can input a 7-letter puzzle.
+- The program checks that the input consists of exactly 7 unique alphabets.
+- If valid, the letters are set in the beehive display.
+- If invalid, an error message is shown.
+
+### Milestone #2: Display Legal Words
+- Implemented a function to read from the dictionary file and validate each word.
+- The word must be at least 4 letters long, contain the center letter, and only use the given beehive letters.
+- Valid words are displayed along with their scores.
+
+### Milestone #3: Scoring
+- Scored words based on length, with a bonus for pangrams that use all 7 letters.
+- The total score and number of words are displayed.
+
+### Milestone #4: User Interaction
+- Users can attempt to find words using a new input field.
+- Each word is validated and scored as the user inputs.
+- Duplicate entries are not allowed.
+
+## Lessons Learned
+- The importance of breaking down large tasks into smaller, manageable milestones.
+- Using sets for quick membership testing, especially for dictionary lookups.
+- The necessity of refactoring to accommodate new features, such as the user word input handling.
+
+## Extensions
+Future improvements could include generating random puzzles, implementing a shuffle feature for letters, and finding unique or challenging puzzles programmatically.

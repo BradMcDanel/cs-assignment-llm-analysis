@@ -1,0 +1,32 @@
+# Implementation Write-up for Wordle Assignment
+
+## Overview
+The Wordle assignment involves creating a simple version of the popular Wordle game using Python. The game is played by guessing a five-letter word within six attempts. For each guess, the game provides feedback by coloring the tiles: green for correct letters in the correct position, yellow for correct letters in the wrong position, and gray for incorrect letters.
+
+## Implementation Steps
+
+1. **Setup and Initialization:**
+   - The game starts by importing necessary modules and defining the main `wordle()` function.
+   - A random word is selected from the provided `FIVE_LETTER_WORDS` list when the game starts.
+
+2. **Enter Action Event:**
+   - An `enter_action` function is defined to handle the event when the user submits a guess.
+   - This function checks if the guessed word is valid by looking it up in `FIVE_LETTER_WORDS`.
+   - If invalid, a message is displayed; otherwise, the tiles and keyboard colors are updated based on the guess.
+
+3. **Tile Coloring Logic:**
+   - For each letter in the guessed word, the function checks if it matches the corresponding letter in the secret word.
+   - Colors are assigned to the tiles: green for correct, yellow for present, and gray for missing letters.
+
+4. **Keyboard Coloring:**
+   - The function also updates the color of the on-screen keyboard keys based on the guessed letters.
+
+5. **End Conditions:**
+   - The game checks if the guessed word is correct, and if so, displays a congratulatory message.
+   - If the player exhausts all attempts without guessing correctly, the game reveals the secret word.
+
+6. **Extensions:**
+   - Additional features, such as balanced word choices or enhanced graphics, can be added for further improvements.
+
+## Conclusion
+This assignment provides practice with string manipulation, event handling, and basic GUI interaction in Python. It underscores the importance of planning implementations with milestones and testing each feature incrementally.

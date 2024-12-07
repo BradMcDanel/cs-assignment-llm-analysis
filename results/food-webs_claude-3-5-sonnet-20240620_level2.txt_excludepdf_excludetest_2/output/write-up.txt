@@ -1,0 +1,22 @@
+This program analyzes a food web from a given CSV file. It performs the following tasks:
+
+1. Loads the food web data from the file into a dictionary.
+2. Prints each predator and its prey.
+3. Identifies and prints the apex predators (animals not eaten by any other animal).
+4. Identifies and prints the producers (animals that don't eat any other animal).
+5. Finds and prints the most flexible eaters (animals that eat the most different prey).
+6. Determines and prints the tastiest organisms (animals eaten by the most predators).
+7. Calculates and prints the height of each organism in the food web.
+
+The program uses functions to modularize each task, making the code more organized and easier to maintain. It handles command-line arguments for the input file name, with error checking for file existence and number of arguments.
+
+The program follows good programming practices:
+- Uses descriptive variable and function names
+- Includes error handling for file operations
+- Avoids global variables
+- Uses appropriate data structures (dictionaries and sets) for efficient operations
+- Follows the assignment's formatting requirements
+
+The calculate_heights function uses an iterative approach instead of recursion, as per the assignment guidelines. This function repeatedly updates the heights of organisms until no further changes are made, ensuring correct height calculation even for complex food webs with multiple levels.
+
+Overall, the program fulfills all the requirements of the assignment, providing a comprehensive analysis of the given food web.

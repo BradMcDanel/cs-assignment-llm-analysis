@@ -1,0 +1,9 @@
+For this assignment, I have implemented a Python program named profile.py that takes a CSV file containing STR counts for a list of individuals and a text file containing a DNA sequence as input. The program then identifies to whom the DNA sequence most likely belongs by comparing the STR counts.
+
+The program reads the CSV file and DNA sequence into memory, computes the longest consecutive repeats of each STR in the DNA sequence, and compares these counts with the data from the CSV file to determine the likely owner of the DNA.
+
+If there is an exact match with any individual in the CSV file, the program outputs the name of the matching individual. If there is no match, it outputs "No match".
+
+I have also included test cases in test_profile.py to verify the functionality of the program using unittest.
+
+Overall, the program provides a practical application of algorithmic thinking and string manipulation in the context of DNA profiling.

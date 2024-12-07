@@ -1,0 +1,7 @@
+This Python program takes a DNA sequence and a CSV file containing STR counts for individuals as input. It then identifies to whom the DNA sequence most likely belongs by comparing the longest runs of consecutive repeats of STRs in the DNA sequence with the provided data in the CSV file.
+
+The program first reads the CSV file into memory, extracting the individual names and their corresponding STR counts. It then reads the DNA sequence file into memory.
+
+For each individual in the CSV file, the program computes the longest run of consecutive repeats of each STR in the DNA sequence. If the computed STR counts match exactly with any individual in the CSV file, the program outputs the name of the matching individual. If there is no match found, it outputs "No match".
+
+The program demonstrates the use of file I/O, string manipulation, and algorithmic thinking to solve the problem of DNA profiling based on STR counts. It follows the specified input requirements and provides the expected output for identifying the owner of a given DNA sequence.

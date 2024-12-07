@@ -1,0 +1,1 @@
+# Contains the WordleGWindow class with graphical capabilities for the Wordle game.

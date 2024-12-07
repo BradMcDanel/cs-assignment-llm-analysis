@@ -1,0 +1,1 @@
+FIVE_LETTER_WORDS = [ "aahed", "aalii", "zoril", "zowie" ]  # Placeholder for more words

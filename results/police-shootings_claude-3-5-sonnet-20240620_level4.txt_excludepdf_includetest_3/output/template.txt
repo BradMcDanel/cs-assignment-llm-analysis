@@ -1,0 +1,43 @@
+Task 1:
+Question 1: The Washington Post's database contains records of every fatal shooting in the United States by a police officer in the line of duty since Jan. 1, 2015. The data is compiled from news reports, social media posts, and police reports. It includes details about each incident such as the race of the deceased, the circumstances of the shooting, and whether the person was armed.
+
+Question 2:
+- id: Unique identifier for each incident. Examples: 22, 325, 140
+- name: Name of the deceased. Examples: "John Doe", "Jane Smith"
+- date: Date of the incident. Examples: "2015-01-02", "2016-07-15"
+- manner_of_death: How the person died. Examples: "shot", "shot and Tasered"
+- armed: Whether and how the person was armed. Examples: "gun", "knife", "unarmed"
+- age: Age of the deceased. Examples: 25, 40, 18
+- gender: Gender of the deceased. Examples: "M", "F"
+- race: Race of the deceased. Examples: "W" (White), "B" (Black), "H" (Hispanic)
+- city: City where the incident occurred. Examples: "Los Angeles", "New York"
+- state: State where the incident occurred. Examples: "CA", "NY", "TX"
+- signs_of_mental_illness: Whether the person showed signs of mental illness. Examples: "True", "False"
+- threat_level: Level of threat posed by the deceased. Examples: "attack", "other", "undetermined"
+- flee: Whether the person was fleeing. Examples: "Not fleeing", "Car", "Foot"
+- body_camera: Whether officers wore body cameras. Examples: "True", "False"
+
+Question 3: According to the 2020 United States Census, 13.4% of the United States population identifies as Black or African American. (Source: United States Census Bureau, https://www.census.gov/quickfacts/fact/table/US/PST045222)
+
+Task 2:
+Question 1: The database stores information from all columns in the CSV file: id, name, date, manner_of_death, armed, age, gender, race, city, state, signs_of_mental_illness, threat_level, flee, and body_camera.
+
+Question 2: The 'id' column is used as the keys in the database dictionary.
+
+Question 3: The type of the values in database is dict.
+
+Question 4: Each value in the database is a dictionary containing all the information for a single incident. For example, database['1'] might contain: {'name': 'John Doe', 'date': '2015-01-02', 'manner_of_death': 'shot', 'armed': 'gun', 'age': '36', 'gender': 'M', 'race': 'W', 'city': 'Los Angeles', 'state': 'CA', 'signs_of_mental_illness': 'False', 'threat_level': 'attack', 'flee': 'Not fleeing', 'body_camera': 'False'}
+
+Task 3:
+Question 1: The proportion of black subjects in fatal police shootings is higher than their representation in the general U.S. population. While black people make up 13.4% of the U.S. population, they represent a larger percentage of fatal police shooting victims according to our analysis.
+
+Question 2: The proportion of black subjects in fatal police shootings where the subject is unarmed is even higher than both their representation in the general U.S. population and their proportion in all fatal police shootings. This suggests a significant disparity in the use of lethal force against unarmed black individuals compared to other racial groups.
+
+Task 4:
+Reflection: This project has been eye-opening in several ways. First, it demonstrated the power of data analysis in uncovering societal issues. The stark disparities revealed in the data regarding fatal police shootings, particularly those involving unarmed individuals, are deeply concerning and highlight the need for systemic changes in law enforcement practices and policies.
+
+Working with real-world data also presented challenges that aren't often encountered in textbook examples. The data required careful cleaning and interpretation, and I had to make decisions about how to handle missing or ambiguous information. This experience has given me a greater appreciation for the complexities involved in data science and the importance of critical thinking when drawing conclusions from data.
+
+Furthermore, this project has shown me how programming skills can be applied to important social issues. By using Python to analyze this dataset, we were able to quickly process a large amount of information and uncover patterns that might not be immediately apparent. This reinforces the idea that computer science isn't just about technology, but can be a powerful tool for understanding and addressing societal problems.
+
+Lastly, this project has made me reflect on the ethical responsibilities that come with data analysis. The conclusions we draw from data can have real-world implications, and it's crucial to approach such analysis with care, acknowledging potential biases and limitations in the data or our methods. Overall, this project has not only improved my programming skills but also broadened my perspective on the role of technology in addressing complex social issues.

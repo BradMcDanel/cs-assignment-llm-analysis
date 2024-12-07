@@ -1,0 +1,71 @@
+# Task 1
+Question 1: The dataset contains information on fatal police shootings in the United States, compiled by the Washington Post. It includes details about each incident, such as the date, location, and demographics of the individuals involved. The data is sourced from news reports, public records, social media, and other sources.
+
+Question 2:
+- Column: id
+  Explanation: A unique identifier for each police shooting incident.
+  Examples: 22, 325, 140
+- Column: name
+  Explanation: The name of the individual who was fatally shot.
+  Examples: John Doe, Jane Smith
+- Column: date
+  Explanation: The date on which the shooting occurred.
+  Examples: 2015-01-02, 2016-03-12
+- Column: manner_of_death
+  Explanation: The manner in which the individual died.
+  Examples: shot, shot and Tasered
+- Column: armed
+  Explanation: Indicates whether the individual was armed and, if so, with what.
+  Examples: gun, knife, unarmed
+- Column: age
+  Explanation: The age of the individual who was shot.
+  Examples: 34, 22, 45
+- Column: gender
+  Explanation: The gender of the individual.
+  Examples: M, F
+- Column: race
+  Explanation: The race of the individual.
+  Examples: W, B, H, A, N, O
+- Column: city
+  Explanation: The city where the shooting occurred.
+  Examples: Los Angeles, New York
+- Column: state
+  Explanation: The state where the shooting occurred.
+  Examples: CA, NY
+- Column: signs_of_mental_illness
+  Explanation: Indicates whether there were signs of mental illness.
+  Examples: True, False
+- Column: threat_level
+  Explanation: The perceived threat level.
+  Examples: attack, other, undetermined
+- Column: flee
+  Explanation: Indicates whether the individual was fleeing.
+  Examples: Not fleeing, Car, Foot
+- Column: body_camera
+  Explanation: Indicates whether a body camera was present.
+  Examples: True, False
+- Column: longitude
+  Explanation: The longitude of the shooting location.
+  Examples: -118.2437, -73.9851
+- Column: latitude
+  Explanation: The latitude of the shooting location.
+  Examples: 34.0522, 40.7128
+- Column: is_geocoding_exact
+  Explanation: Indicates whether the geocoding is exact.
+  Examples: True, False
+
+Question 3: According to the U.S. Census Bureau (2020), approximately 13.4% of the U.S. population is black. (Source: https://www.census.gov/quickfacts/fact/table/US/RHI225219)
+
+# Task 2
+Question 1: The columns stored in database are: 'id', 'name', 'date', 'manner_of_death', 'armed', 'age', 'gender', 'race', 'city', 'state', 'signs_of_mental_illness', 'threat_level', 'flee', 'body_camera', 'longitude', 'latitude', 'is_geocoding_exact'.
+
+Question 2: The keys in database are the 'id' values from the CSV file.
+
+Question 3: The type of the values in database is a dictionary.
+
+Question 4: One of the values in database is a dictionary containing the details of a shooting incident. For example, {'id': '1', 'name': 'John Doe', 'date': '2015-01-02', ..., 'is_geocoding_exact': 'True'}.
+
+# Task 3
+Question 1: The proportion of black subjects in fatal police shootings is significantly higher than their representation in the overall U.S. population, which is 13.4%.
+
+Question 2: The proportion of unarmed fatal police shootings with a black subject is also disproportionately high compared to their representation in the U.S. population. It is also notably higher than the proportion of black subjects in all police shootings, indicating a concerning trend.

@@ -1,0 +1,7 @@
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+This project provided valuable insights into the use of Python for data analysis, particularly with real-world datasets that have significant societal implications. Working with the dataset on fatal police shootings was a sobering experience, highlighting the importance of data in understanding and addressing social justice issues. The process of organizing data into dictionaries and performing calculations to uncover disparities in the data was both challenging and enlightening. It was particularly striking to see the disproportionate representation of black subjects in fatal police shootings, underscoring systemic issues that require attention. Overall, this project reinforced the power of programming in contributing to important societal conversations and the need for responsible and ethical data analysis.

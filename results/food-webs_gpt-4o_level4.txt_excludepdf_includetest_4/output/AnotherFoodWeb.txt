@@ -1,0 +1,12 @@
+Fox,Rabbit,Squirrel,Mouse,Seed Eating Bird,Insectivor Bird,Toad
+Hawk,Rabbit,Squirrel,Seed Eating Bird,Insectivor Bird
+Snake,Mouse,Seed Eating Bird,Insectivor Bird,Herbivor Insect,Predaceous Insect,Toad
+Herbivor Insect,Plants
+Insectivor Bird,Spider,Herbivor Insect
+Predaceous Insect,Herbivor Insect
+Mouse,Plants
+Rabbit,Plants
+Seed Eating Bird,Plants
+Squirrel,Plants
+Spider,Herbivor Insect,Predaceous Insect
+Toad,Predaceous Insect

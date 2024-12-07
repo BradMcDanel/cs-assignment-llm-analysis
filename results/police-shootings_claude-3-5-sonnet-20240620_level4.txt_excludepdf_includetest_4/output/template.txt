@@ -1,0 +1,37 @@
+Task 1:
+Question 1: The data includes information on fatal police shootings in the United States since January 1, 2015. It is compiled by The Washington Post and updated regularly. The data covers various details about each incident, including demographic information of the victim and circumstances of the shooting.
+
+Question 2:
+- id: Unique identifier for each shooting incident. Examples: 22, 325, 140.
+- name: Name of the person killed. Examples: "John Doe", "Jane Smith".
+- date: Date of the incident. Examples: "2015-01-02", "2016-07-15".
+- manner_of_death: How the person was killed. Examples: "shot", "shot and Tasered".
+- armed: Type of weapon in possession of the person. Examples: "gun", "knife", "unarmed".
+- age: Age of the person killed. Examples: 25, 40, 18.
+- gender: Gender of the person killed. Examples: "M", "F".
+- race: Race of the person killed. Examples: "W" (White), "B" (Black), "H" (Hispanic).
+- city: City where the incident occurred. Examples: "Los Angeles", "New York".
+- state: State where the incident occurred. Examples: "CA", "NY", "TX".
+- signs_of_mental_illness: Whether the person showed signs of mental illness. Examples: "True", "False".
+- threat_level: Perceived threat level of the person. Examples: "attack", "other", "undetermined".
+- flee: Whether the person was fleeing at the time. Examples: "Not fleeing", "Car", "Foot".
+- body_camera: Whether officers were wearing body cameras. Examples: "True", "False".
+
+Question 3: According to the 2020 United States Census, 13.4% of the United States population identifies as Black or African American alone. (Source: United States Census Bureau, https://www.census.gov/quickfacts/fact/table/US/PST045222)
+
+Task 2:
+Question 1: The database stores information from the following columns: name, date, manner_of_death, armed, age, gender, race, city, state, signs_of_mental_illness, threat_level, flee, and body_camera.
+
+Question 2: The 'id' column from the CSV file is used as the keys in the database.
+
+Question 3: The type of the values in database is dict.
+
+Question 4: Each value in the database is a dictionary containing information about a specific shooting incident. For example, database['1'] might store {'name': 'Tim Elliot', 'date': '2015-01-02', 'manner_of_death': 'shot', 'armed': 'gun', 'age': '53', 'gender': 'M', 'race': 'A', 'city': 'Shelton', 'state': 'WA', 'signs_of_mental_illness': 'True', 'threat_level': 'attack', 'flee': 'Not fleeing', 'body_camera': 'False'}.
+
+Task 3:
+Question 1: Based on the results, the proportion of fatal police shootings with a black subject is higher than the proportion of black people in the United States population. While black people make up 13.4% of the US population, they represent a larger percentage of fatal police shooting victims.
+
+Question 2: The proportion of black subjects in fatal police shootings where the subject is unarmed is even higher than both the proportion of black people in the United States population and the proportion of black subjects in all police shootings. This suggests a significant disparity in the use of fatal force against unarmed black individuals compared to their representation in the general population and even compared to all fatal police shootings.
+
+Task 4:
+Reflection: Through this project, I gained valuable experience in working with real-world data using Python. I learned how to read and process CSV files, organize data into dictionaries, and perform analysis on the structured data. The process of investigating the racial demographics of fatal police shootings was eye-opening and highlighted the importance of data analysis in understanding social issues. I found it particularly challenging to work with the race data, as the categorization used in the dataset is limited and doesn't fully capture the complexity of racial identities. This project also emphasized the power of programming in quickly processing large datasets and extracting meaningful insights. Overall, this experience has deepened my understanding of both Python programming and the critical issue of racial disparities in policing, motivating me to further explore data science and its applications in addressing social problems.

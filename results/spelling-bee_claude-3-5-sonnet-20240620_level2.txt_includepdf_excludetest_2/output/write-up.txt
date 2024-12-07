@@ -1,0 +1,30 @@
+SpellingBee Implementation Write-up
+
+1. Overall Structure:
+   The implementation follows the milestone structure outlined in the assignment. The main function, spelling_bee(), sets up the game and defines helper functions for each aspect of the gameplay.
+
+2. Helper Functions:
+   - read_dictionary(): Reads words from the DICTIONARY_FILE and returns a set of lowercase words.
+   - is_valid_puzzle(): Checks if a given puzzle string is valid (7 unique letters).
+   - is_valid_word(): Checks if a word is valid for the current puzzle.
+   - calculate_score(): Calculates the score for a given word.
+
+3. Milestone 1: Initialize the beehive
+   The puzzle_action() function handles this. It checks if the input is valid using is_valid_puzzle() and then sets the beehive letters or shows an error message.
+
+4. Milestone 2: Display legal words
+   The solve_action() function implements this. It reads the dictionary, finds valid words, and displays them using the SpellingBeeGraphics methods.
+
+5. Milestone 3: Add scores
+   This is integrated into the solve_action() function. Each word is displayed with its score, and pangrams are shown in blue. The total score and word count are displayed at the bottom.
+
+6. Milestone 4: User word input
+   The word_action() function handles user input. It checks if the word is valid, hasn't been found before, and updates the display accordingly. The score is updated after each valid word.
+
+7. Refactoring:
+   The code is structured to allow easy reuse of functions. For example, calculate_score() is used in both solve_action() and word_action().
+
+8. Error Handling:
+   The code includes various checks to ensure valid input and provide informative error messages to the user.
+
+This implementation covers all the required milestones and provides a functional SpellingBee game. The code is modular and can be easily extended for additional features if needed.

@@ -1,0 +1,24 @@
+# Spelling Bee Project Write-Up
+
+## Overview
+The Spelling Bee project is a Python implementation of the popular New York Times puzzle, which requires the player to find words that can be formed using a set of seven letters, with each word containing the center letter at least once.
+
+## Milestones
+
+### Milestone #1: Initialize the Beehive
+We implemented functionality to check the validity of the puzzle input by ensuring it contains exactly seven unique letters. Upon validation, these letters are displayed in a beehive pattern.
+
+### Milestone #2: Display Legal Words
+We extended the project to read from a dictionary and identify words that meet the puzzle's criteria. This involved filtering words based on length, letter inclusion, and the presence of the center letter.
+
+### Milestone #3: Add Scores
+We calculated scores for each word based on its length and whether it is a pangram. The total score for all valid words is displayed, with pangrams highlighted in blue.
+
+### Milestone #4: User Interaction
+We provided an interface for users to input words they find. Valid words are added to the display, and the score is updated in real-time. Feedback is given for invalid inputs.
+
+## Challenges and Refactoring
+Throughout the project, we frequently refactored the code to ensure maintainability and readability, particularly when integrating user interaction with automatic solving.
+
+## Extensions
+Potential extensions could include generating puzzles automatically or implementing a shuffle feature to rearrange the outer letters.

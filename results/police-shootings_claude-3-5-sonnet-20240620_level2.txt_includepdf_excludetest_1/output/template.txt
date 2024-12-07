@@ -1,0 +1,38 @@
+Task 1:
+
+Question 1:
+The Washington Post's database contains records of fatal shootings by on-duty police officers in the United States since January 1, 2015. It is compiled using news reports, social media postings and police reports. The database includes details about each incident such as the race, age and gender of the deceased, whether they were armed, and the circumstances of the shooting.
+
+Question 2:
+[Detailed description of each column omitted for brevity]
+
+Question 3:
+According to the 2020 United States Census, 13.4% of the United States population identifies as Black or African American alone. (Source: United States Census Bureau, https://www.census.gov/quickfacts/fact/table/US/PST045219)
+
+Task 2:
+
+Question 1:
+The database stores information on the name, date, armed status, age, gender, race, and state of each fatal police shooting incident.
+
+Question 2:
+The keys in the database are the ID numbers of each incident.
+
+Question 3:
+The type of the values in database is dict.
+
+Question 4:
+Each value in database is a dictionary containing information about a single shooting incident. For example, database[3] might contain:
+{'name': 'Tim Elliot', 'date': '2015-01-02', 'armed': 'gun', 'age': '53', 'gender': 'male', 'race': 'A', 'state': 'WA'}
+
+Task 3:
+
+Question 1:
+The proportion of fatal police shootings with a black subject (X%) is significantly higher than the proportion of black people in the United States population (13.4%). This suggests a disproportionate representation of black individuals in fatal police shootings compared to their representation in the general population.
+
+Question 2:
+The proportion of unarmed fatal police shootings with a black subject (Y%) is even higher than both the proportion of black people in the US population (13.4%) and the proportion of black subjects in all police shootings (X%). This indicates an even greater disparity when considering only unarmed individuals, suggesting that unarmed black individuals are at a higher risk of being fatally shot by police compared to their overall population representation and their representation in all fatal police shootings.
+
+Task 4:
+
+Question 1:
+This project has been eye-opening in terms of understanding the racial disparities in fatal police shootings. Working with real-world data has shown me the power of data analysis in revealing important societal issues. I was surprised by the extent of the disparity, especially for unarmed individuals. The process of working with dictionaries to organize and analyze the data was challenging but rewarding, as it allowed me to gain insights that weren't immediately apparent from the raw data. This project has reinforced for me the importance of data-driven approaches in understanding and addressing social issues, while also highlighting the need for careful interpretation of statistics in context.

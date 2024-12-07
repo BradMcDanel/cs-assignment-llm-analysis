@@ -1,0 +1,30 @@
+This implementation of the Spelling Bee game covers all four milestones:
+
+1. Initialize the beehive with the letters in the puzzle field:
+   - The puzzle_action function checks if the entered puzzle is valid (7 unique letters).
+   - If valid, it updates the beehive display; otherwise, it shows an error message.
+
+2. Display the legal words in the SpellingBee puzzle:
+   - The solve_action function finds all valid words from the dictionary.
+   - It displays each word with its score and highlights pangrams in blue.
+
+3. Add scores to the display:
+   - The calculate_score function computes the score for each word.
+   - The total score and word count are displayed at the bottom of the window.
+
+4. Let the user try to find the words:
+   - The word_action function handles user input for guessing words.
+   - It checks if the word is valid, already found, or has any issues.
+   - Valid words are added to the display with their scores.
+
+The code is structured with several helper functions to improve readability and maintainability:
+
+- read_dictionary: Loads the word list from the file.
+- is_valid_puzzle: Checks if a puzzle string is valid.
+- is_valid_word: Determines if a word is valid for the current puzzle.
+- calculate_score: Computes the score for a given word.
+- update_score_display: Updates the score display at the bottom of the window.
+
+The main spelling_bee function sets up the game state and GUI elements. It uses global variables for the dictionary, found words, and total score to maintain the game state across different actions.
+
+This implementation provides a complete and interactive Spelling Bee game experience, allowing users to input puzzles, solve them automatically, or play the game by entering words manually.

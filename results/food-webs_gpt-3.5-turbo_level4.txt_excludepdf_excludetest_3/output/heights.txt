@@ -1,0 +1,12 @@
+Heights:
+  Bird: 4
+  Crab: 3
+  Fish: 3
+  Limpets: 1
+  Lobster: 4
+  Mussels: 2
+  Phytoplankton: 0
+  Prawn: 2
+  Seaweed: 0
+  Whelk: 3
+  Zooplankton: 1

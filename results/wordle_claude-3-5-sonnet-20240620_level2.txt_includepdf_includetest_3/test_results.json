@@ -1,0 +1,204 @@
+{
+    "created": 1731004333.9308572,
+    "duration": 0.03450369834899902,
+    "exitcode": 1,
+    "root": "/tmp/code_uv_zkljh",
+    "environment": {},
+    "summary": {
+        "passed": 3,
+        "failed": 2,
+        "total": 5,
+        "collected": 5
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py::test_valid_guess",
+                    "type": "Function",
+                    "lineno": 111
+                },
+                {
+                    "nodeid": "test_wordle.py::test_invalid_guess",
+                    "type": "Function",
+                    "lineno": 122
+                },
+                {
+                    "nodeid": "test_wordle.py::test_correct_color_update",
+                    "type": "Function",
+                    "lineno": 134
+                },
+                {
+                    "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+                    "type": "Function",
+                    "lineno": 143
+                },
+                {
+                    "nodeid": "test_wordle.py::test_game_over_condition",
+                    "type": "Function",
+                    "lineno": 156
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_wordle.py::test_valid_guess",
+            "lineno": 111,
+            "outcome": "passed",
+            "keywords": [
+                "test_valid_guess",
+                "test_wordle.py",
+                "code_uv_zkljh"
+            ],
+            "setup": {
+                "duration": 0.0002111948560923338,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.72750936448574e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.648300379514694e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_invalid_guess",
+            "lineno": 122,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_guess",
+                "test_wordle.py",
+                "code_uv_zkljh"
+            ],
+            "setup": {
+                "duration": 0.00011755106970667839,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00010811397805809975,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.08152074366808e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_correct_color_update",
+            "lineno": 134,
+            "outcome": "passed",
+            "keywords": [
+                "test_correct_color_update",
+                "test_wordle.py",
+                "code_uv_zkljh"
+            ],
+            "setup": {
+                "duration": 0.00012120883911848068,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.153993308544159e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.266497075557709e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+            "lineno": 143,
+            "outcome": "failed",
+            "keywords": [
+                "test_present_and_missing_color_update",
+                "test_wordle.py",
+                "code_uv_zkljh"
+            ],
+            "setup": {
+                "duration": 0.00010630395263433456,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.643706001341343e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_uv_zkljh/Wordle.py",
+                    "lineno": 29,
+                    "message": "NameError: name 'UNKNOWN_COLOR' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 147,
+                        "message": ""
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 29,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x7a28632b7be0>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x7a2862aa1090>\n\n    def test_present_and_missing_color_update(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n>       mock_window.enter_listeners[0]('ample'.upper())\n\ntest_wordle.py:147: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = 'ample'\n\n    def enter_action(s):\n        nonlocal current_row\n        s = s.lower()\n    \n        if s not in FIVE_LETTER_WORDS:\n            gw.show_message(\"Not in word list\")\n            return\n    \n        # Check letters and update colors\n        for i in range(N_COLS):\n            letter = s[i]\n            if letter == secret_word[i]:\n                color = CORRECT_COLOR\n            elif letter in secret_word:\n                color = PRESENT_COLOR\n            else:\n                color = MISSING_COLOR\n            gw.set_square_color(current_row, i, color)\n    \n            # Update key colors\n            current_key_color = gw.get_key_color(letter.upper())\n            if color == CORRECT_COLOR or (color == PRESENT_COLOR and current_key_color != CORRECT_COLOR):\n                gw.set_key_color(letter.upper(), color)\n>           elif color == MISSING_COLOR and current_key_color == UNKNOWN_COLOR:\nE           NameError: name 'UNKNOWN_COLOR' is not defined\n\nWordle.py:29: NameError"
+            },
+            "teardown": {
+                "duration": 0.00023204809986054897,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_game_over_condition",
+            "lineno": 156,
+            "outcome": "failed",
+            "keywords": [
+                "test_game_over_condition",
+                "test_wordle.py",
+                "code_uv_zkljh"
+            ],
+            "setup": {
+                "duration": 0.00021407706663012505,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00014715385623276234,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_uv_zkljh/Wordle.py",
+                    "lineno": 29,
+                    "message": "NameError: name 'UNKNOWN_COLOR' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 163,
+                        "message": ""
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 29,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x7a2862beb550>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x7a2862aa1360>\n\n    def test_game_over_condition(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n    \n        # Make six incorrect guesses\n        for _ in range(6):\n>           mock_window.enter_listeners[0]('wrong'.upper())\n\ntest_wordle.py:163: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = 'wrong'\n\n    def enter_action(s):\n        nonlocal current_row\n        s = s.lower()\n    \n        if s not in FIVE_LETTER_WORDS:\n            gw.show_message(\"Not in word list\")\n            return\n    \n        # Check letters and update colors\n        for i in range(N_COLS):\n            letter = s[i]\n            if letter == secret_word[i]:\n                color = CORRECT_COLOR\n            elif letter in secret_word:\n                color = PRESENT_COLOR\n            else:\n                color = MISSING_COLOR\n            gw.set_square_color(current_row, i, color)\n    \n            # Update key colors\n            current_key_color = gw.get_key_color(letter.upper())\n            if color == CORRECT_COLOR or (color == PRESENT_COLOR and current_key_color != CORRECT_COLOR):\n                gw.set_key_color(letter.upper(), color)\n>           elif color == MISSING_COLOR and current_key_color == UNKNOWN_COLOR:\nE           NameError: name 'UNKNOWN_COLOR' is not defined\n\nWordle.py:29: NameError"
+            },
+            "teardown": {
+                "duration": 0.00014674197882413864,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

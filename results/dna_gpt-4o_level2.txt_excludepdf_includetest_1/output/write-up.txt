@@ -1,0 +1,25 @@
+# Write-up for the DNA Profiling Assignment
+
+## Overview
+This assignment required the development of a Python program to match a given DNA sequence to an individual in a database by comparing the counts of specific Short Tandem Repeats (STRs). The program reads a CSV file containing DNA profiles and a text file with a DNA sequence to identify the match.
+
+## Key Steps
+1. **Reading Files:**
+   - The program accepts two command-line arguments: a CSV file and a text file.
+   - It utilizes Python’s `csv` module to read and parse the CSV file into a list of dictionaries, where each dictionary corresponds to an individual's STR profile.
+   - The DNA sequence file is read into a string.
+
+2. **Finding Longest STR Matches:**
+   - For each STR in the database, the program calculates the longest run of consecutive repeats in the DNA sequence using the `longest_match` function.
+   - This function iterates over the DNA sequence, checking for consecutive subsequences.
+
+3. **Matching Profiles:**
+   - It checks each individual's profile from the database to see if the calculated counts of each STR match exactly.
+   - If a match is found, the individual's name is printed; otherwise, "No match" is outputted.
+
+## Challenges and Considerations
+- **Efficiency:** The algorithm for finding the longest run of a subsequence, while potentially not the most efficient, is straightforward and effective for the given data size.
+- **Edge Cases:** The program assumes correctly formatted inputs as specified, but in real-world applications, additional error handling might be required.
+
+## Conclusion
+This assignment demonstrates the application of string manipulation and algorithmic thinking in a computational biology context. It provides a practical example of how DNA profiling can be computationally achieved, bridging concepts in computer science with biology.

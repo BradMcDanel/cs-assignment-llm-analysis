@@ -1,0 +1,11 @@
+# The Spelling Bee assignment requires implementing a word puzzle game in Python.
+# The game involves finding words based on a set of rules using a given set of letters.
+# The solution is structured into four milestones, each building on the previous:
+# 
+# 1. Milestone #1 ensures the puzzle consists of exactly seven unique letters.
+# 2. Milestone #2 involves checking a dictionary to find valid words for the puzzle.
+# 3. Milestone #3 adds scoring to the game, rewarding longer words and pangrams.
+# 4. Milestone #4 introduces user interactivity, allowing users to find words.
+# 
+# The project utilizes the provided SpellingBeeGraphics class for graphical display,
+# enabling focus on string processing and logic implementation.

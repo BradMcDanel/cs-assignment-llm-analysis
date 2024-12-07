@@ -1,0 +1,442 @@
+{
+    "created": 1731001610.568922,
+    "duration": 0.25963902473449707,
+    "exitcode": 1,
+    "root": "/tmp/code_ym7gcdks",
+    "environment": {},
+    "summary": {
+        "error": 10,
+        "total": 10,
+        "collected": 10
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_SpellingBee.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+                    "type": "Function",
+                    "lineno": 47
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+                    "type": "Function",
+                    "lineno": 52
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+                    "type": "Function",
+                    "lineno": 57
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_action",
+                    "type": "Function",
+                    "lineno": 62
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+                    "type": "Function",
+                    "lineno": 69
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+                    "type": "Function",
+                    "lineno": 77
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_pangram_identification",
+                    "type": "Function",
+                    "lineno": 84
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_score_calculation",
+                    "type": "Function",
+                    "lineno": 89
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+                    "type": "Function",
+                    "lineno": 96
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+                    "type": "Function",
+                    "lineno": 104
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+            "lineno": 47,
+            "outcome": "error",
+            "keywords": [
+                "test_puzzle_initialization",
+                "test_SpellingBee.py",
+                "code_ym7gcdks"
+            ],
+            "setup": {
+                "duration": 0.015699330950155854,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ym7gcdks/SpellingBee.py",
+                    "lineno": 41,
+                    "message": "TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 41,
+                        "message": "TypeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f85875b5a50>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        sbg = SpellingBeeGraphics()\n        dictionary = load_dictionary(DICTIONARY_FILE)\n        found_words = set()\n        total_score = 0\n    \n        def puzzle_action(s):\n            if is_valid_puzzle(s):\n                sbg.set_beehive_letters(s.upper())\n                sbg.show_message(\"Puzzle set! Click Solve or enter words.\", \"Green\")\n            else:\n                sbg.show_message(\"Invalid puzzle. Enter 7 unique letters.\", \"Red\")\n    \n        def solve_action(s):\n            words = find_valid_words(sbg.get_beehive_letters().lower(), dictionary)\n            display_words(words)\n            show_score(len(words), calculate_total_score(words))\n    \n        def word_action(s):\n            word = s.lower()\n            center_letter = sbg.get_beehive_letters()[0].lower()\n            if is_valid_word(word, sbg.get_beehive_letters().lower(), center_letter, dictionary):\n                if word not in found_words:\n                    found_words.add(word)\n                    score = calculate_word_score(word, sbg.get_beehive_letters())\n                    display_word(word, score)\n                    nonlocal total_score\n                    total_score += score\n                    show_score(len(found_words), total_score)\n                    sbg.set_field(\"Word\", \"\")\n                else:\n                    sbg.show_message(\"Word already found!\", \"Red\")\n            else:\n                show_error_message(word, sbg.get_beehive_letters().lower(), center_letter, dictionary)\n    \n>       sbg.add_field(\"Puzzle\", puzzle_action, 7)\nE       TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given\n\nSpellingBee.py:41: TypeError"
+            },
+            "teardown": {
+                "duration": 0.00011238898150622845,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+            "lineno": 52,
+            "outcome": "error",
+            "keywords": [
+                "test_invalid_puzzle_length",
+                "test_SpellingBee.py",
+                "code_ym7gcdks"
+            ],
+            "setup": {
+                "duration": 0.015059198951348662,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ym7gcdks/SpellingBee.py",
+                    "lineno": 41,
+                    "message": "TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 41,
+                        "message": "TypeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f85875c0bb0>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        sbg = SpellingBeeGraphics()\n        dictionary = load_dictionary(DICTIONARY_FILE)\n        found_words = set()\n        total_score = 0\n    \n        def puzzle_action(s):\n            if is_valid_puzzle(s):\n                sbg.set_beehive_letters(s.upper())\n                sbg.show_message(\"Puzzle set! Click Solve or enter words.\", \"Green\")\n            else:\n                sbg.show_message(\"Invalid puzzle. Enter 7 unique letters.\", \"Red\")\n    \n        def solve_action(s):\n            words = find_valid_words(sbg.get_beehive_letters().lower(), dictionary)\n            display_words(words)\n            show_score(len(words), calculate_total_score(words))\n    \n        def word_action(s):\n            word = s.lower()\n            center_letter = sbg.get_beehive_letters()[0].lower()\n            if is_valid_word(word, sbg.get_beehive_letters().lower(), center_letter, dictionary):\n                if word not in found_words:\n                    found_words.add(word)\n                    score = calculate_word_score(word, sbg.get_beehive_letters())\n                    display_word(word, score)\n                    nonlocal total_score\n                    total_score += score\n                    show_score(len(found_words), total_score)\n                    sbg.set_field(\"Word\", \"\")\n                else:\n                    sbg.show_message(\"Word already found!\", \"Red\")\n            else:\n                show_error_message(word, sbg.get_beehive_letters().lower(), center_letter, dictionary)\n    \n>       sbg.add_field(\"Puzzle\", puzzle_action, 7)\nE       TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given\n\nSpellingBee.py:41: TypeError"
+            },
+            "teardown": {
+                "duration": 0.00014453893527388573,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+            "lineno": 57,
+            "outcome": "error",
+            "keywords": [
+                "test_invalid_puzzle_duplicates",
+                "test_SpellingBee.py",
+                "code_ym7gcdks"
+            ],
+            "setup": {
+                "duration": 0.013418622082099319,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ym7gcdks/SpellingBee.py",
+                    "lineno": 41,
+                    "message": "TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 41,
+                        "message": "TypeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f8586d83760>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        sbg = SpellingBeeGraphics()\n        dictionary = load_dictionary(DICTIONARY_FILE)\n        found_words = set()\n        total_score = 0\n    \n        def puzzle_action(s):\n            if is_valid_puzzle(s):\n                sbg.set_beehive_letters(s.upper())\n                sbg.show_message(\"Puzzle set! Click Solve or enter words.\", \"Green\")\n            else:\n                sbg.show_message(\"Invalid puzzle. Enter 7 unique letters.\", \"Red\")\n    \n        def solve_action(s):\n            words = find_valid_words(sbg.get_beehive_letters().lower(), dictionary)\n            display_words(words)\n            show_score(len(words), calculate_total_score(words))\n    \n        def word_action(s):\n            word = s.lower()\n            center_letter = sbg.get_beehive_letters()[0].lower()\n            if is_valid_word(word, sbg.get_beehive_letters().lower(), center_letter, dictionary):\n                if word not in found_words:\n                    found_words.add(word)\n                    score = calculate_word_score(word, sbg.get_beehive_letters())\n                    display_word(word, score)\n                    nonlocal total_score\n                    total_score += score\n                    show_score(len(found_words), total_score)\n                    sbg.set_field(\"Word\", \"\")\n                else:\n                    sbg.show_message(\"Word already found!\", \"Red\")\n            else:\n                show_error_message(word, sbg.get_beehive_letters().lower(), center_letter, dictionary)\n    \n>       sbg.add_field(\"Puzzle\", puzzle_action, 7)\nE       TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given\n\nSpellingBee.py:41: TypeError"
+            },
+            "teardown": {
+                "duration": 0.0001169079914689064,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_action",
+            "lineno": 62,
+            "outcome": "error",
+            "keywords": [
+                "test_solve_action",
+                "test_SpellingBee.py",
+                "code_ym7gcdks"
+            ],
+            "setup": {
+                "duration": 0.014816497918218374,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ym7gcdks/SpellingBee.py",
+                    "lineno": 41,
+                    "message": "TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 41,
+                        "message": "TypeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f8586d1b070>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        sbg = SpellingBeeGraphics()\n        dictionary = load_dictionary(DICTIONARY_FILE)\n        found_words = set()\n        total_score = 0\n    \n        def puzzle_action(s):\n            if is_valid_puzzle(s):\n                sbg.set_beehive_letters(s.upper())\n                sbg.show_message(\"Puzzle set! Click Solve or enter words.\", \"Green\")\n            else:\n                sbg.show_message(\"Invalid puzzle. Enter 7 unique letters.\", \"Red\")\n    \n        def solve_action(s):\n            words = find_valid_words(sbg.get_beehive_letters().lower(), dictionary)\n            display_words(words)\n            show_score(len(words), calculate_total_score(words))\n    \n        def word_action(s):\n            word = s.lower()\n            center_letter = sbg.get_beehive_letters()[0].lower()\n            if is_valid_word(word, sbg.get_beehive_letters().lower(), center_letter, dictionary):\n                if word not in found_words:\n                    found_words.add(word)\n                    score = calculate_word_score(word, sbg.get_beehive_letters())\n                    display_word(word, score)\n                    nonlocal total_score\n                    total_score += score\n                    show_score(len(found_words), total_score)\n                    sbg.set_field(\"Word\", \"\")\n                else:\n                    sbg.show_message(\"Word already found!\", \"Red\")\n            else:\n                show_error_message(word, sbg.get_beehive_letters().lower(), center_letter, dictionary)\n    \n>       sbg.add_field(\"Puzzle\", puzzle_action, 7)\nE       TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given\n\nSpellingBee.py:41: TypeError"
+            },
+            "teardown": {
+                "duration": 0.00010594818741083145,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+            "lineno": 69,
+            "outcome": "error",
+            "keywords": [
+                "test_word_entry_valid",
+                "test_SpellingBee.py",
+                "code_ym7gcdks"
+            ],
+            "setup": {
+                "duration": 0.015140994917601347,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ym7gcdks/SpellingBee.py",
+                    "lineno": 41,
+                    "message": "TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 41,
+                        "message": "TypeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f8586ee6260>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        sbg = SpellingBeeGraphics()\n        dictionary = load_dictionary(DICTIONARY_FILE)\n        found_words = set()\n        total_score = 0\n    \n        def puzzle_action(s):\n            if is_valid_puzzle(s):\n                sbg.set_beehive_letters(s.upper())\n                sbg.show_message(\"Puzzle set! Click Solve or enter words.\", \"Green\")\n            else:\n                sbg.show_message(\"Invalid puzzle. Enter 7 unique letters.\", \"Red\")\n    \n        def solve_action(s):\n            words = find_valid_words(sbg.get_beehive_letters().lower(), dictionary)\n            display_words(words)\n            show_score(len(words), calculate_total_score(words))\n    \n        def word_action(s):\n            word = s.lower()\n            center_letter = sbg.get_beehive_letters()[0].lower()\n            if is_valid_word(word, sbg.get_beehive_letters().lower(), center_letter, dictionary):\n                if word not in found_words:\n                    found_words.add(word)\n                    score = calculate_word_score(word, sbg.get_beehive_letters())\n                    display_word(word, score)\n                    nonlocal total_score\n                    total_score += score\n                    show_score(len(found_words), total_score)\n                    sbg.set_field(\"Word\", \"\")\n                else:\n                    sbg.show_message(\"Word already found!\", \"Red\")\n            else:\n                show_error_message(word, sbg.get_beehive_letters().lower(), center_letter, dictionary)\n    \n>       sbg.add_field(\"Puzzle\", puzzle_action, 7)\nE       TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given\n\nSpellingBee.py:41: TypeError"
+            },
+            "teardown": {
+                "duration": 0.00013104896061122417,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+            "lineno": 77,
+            "outcome": "error",
+            "keywords": [
+                "test_word_entry_invalid",
+                "test_SpellingBee.py",
+                "code_ym7gcdks"
+            ],
+            "setup": {
+                "duration": 0.01387648400850594,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ym7gcdks/SpellingBee.py",
+                    "lineno": 41,
+                    "message": "TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 41,
+                        "message": "TypeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f85875c0f10>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        sbg = SpellingBeeGraphics()\n        dictionary = load_dictionary(DICTIONARY_FILE)\n        found_words = set()\n        total_score = 0\n    \n        def puzzle_action(s):\n            if is_valid_puzzle(s):\n                sbg.set_beehive_letters(s.upper())\n                sbg.show_message(\"Puzzle set! Click Solve or enter words.\", \"Green\")\n            else:\n                sbg.show_message(\"Invalid puzzle. Enter 7 unique letters.\", \"Red\")\n    \n        def solve_action(s):\n            words = find_valid_words(sbg.get_beehive_letters().lower(), dictionary)\n            display_words(words)\n            show_score(len(words), calculate_total_score(words))\n    \n        def word_action(s):\n            word = s.lower()\n            center_letter = sbg.get_beehive_letters()[0].lower()\n            if is_valid_word(word, sbg.get_beehive_letters().lower(), center_letter, dictionary):\n                if word not in found_words:\n                    found_words.add(word)\n                    score = calculate_word_score(word, sbg.get_beehive_letters())\n                    display_word(word, score)\n                    nonlocal total_score\n                    total_score += score\n                    show_score(len(found_words), total_score)\n                    sbg.set_field(\"Word\", \"\")\n                else:\n                    sbg.show_message(\"Word already found!\", \"Red\")\n            else:\n                show_error_message(word, sbg.get_beehive_letters().lower(), center_letter, dictionary)\n    \n>       sbg.add_field(\"Puzzle\", puzzle_action, 7)\nE       TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given\n\nSpellingBee.py:41: TypeError"
+            },
+            "teardown": {
+                "duration": 0.00012001907452940941,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_pangram_identification",
+            "lineno": 84,
+            "outcome": "error",
+            "keywords": [
+                "test_pangram_identification",
+                "test_SpellingBee.py",
+                "code_ym7gcdks"
+            ],
+            "setup": {
+                "duration": 0.014045400079339743,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ym7gcdks/SpellingBee.py",
+                    "lineno": 41,
+                    "message": "TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 41,
+                        "message": "TypeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f8586d3b550>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        sbg = SpellingBeeGraphics()\n        dictionary = load_dictionary(DICTIONARY_FILE)\n        found_words = set()\n        total_score = 0\n    \n        def puzzle_action(s):\n            if is_valid_puzzle(s):\n                sbg.set_beehive_letters(s.upper())\n                sbg.show_message(\"Puzzle set! Click Solve or enter words.\", \"Green\")\n            else:\n                sbg.show_message(\"Invalid puzzle. Enter 7 unique letters.\", \"Red\")\n    \n        def solve_action(s):\n            words = find_valid_words(sbg.get_beehive_letters().lower(), dictionary)\n            display_words(words)\n            show_score(len(words), calculate_total_score(words))\n    \n        def word_action(s):\n            word = s.lower()\n            center_letter = sbg.get_beehive_letters()[0].lower()\n            if is_valid_word(word, sbg.get_beehive_letters().lower(), center_letter, dictionary):\n                if word not in found_words:\n                    found_words.add(word)\n                    score = calculate_word_score(word, sbg.get_beehive_letters())\n                    display_word(word, score)\n                    nonlocal total_score\n                    total_score += score\n                    show_score(len(found_words), total_score)\n                    sbg.set_field(\"Word\", \"\")\n                else:\n                    sbg.show_message(\"Word already found!\", \"Red\")\n            else:\n                show_error_message(word, sbg.get_beehive_letters().lower(), center_letter, dictionary)\n    \n>       sbg.add_field(\"Puzzle\", puzzle_action, 7)\nE       TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given\n\nSpellingBee.py:41: TypeError"
+            },
+            "teardown": {
+                "duration": 0.00011446303687989712,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_score_calculation",
+            "lineno": 89,
+            "outcome": "error",
+            "keywords": [
+                "test_score_calculation",
+                "test_SpellingBee.py",
+                "code_ym7gcdks"
+            ],
+            "setup": {
+                "duration": 0.01404068386182189,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ym7gcdks/SpellingBee.py",
+                    "lineno": 41,
+                    "message": "TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 41,
+                        "message": "TypeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f8586d82f50>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        sbg = SpellingBeeGraphics()\n        dictionary = load_dictionary(DICTIONARY_FILE)\n        found_words = set()\n        total_score = 0\n    \n        def puzzle_action(s):\n            if is_valid_puzzle(s):\n                sbg.set_beehive_letters(s.upper())\n                sbg.show_message(\"Puzzle set! Click Solve or enter words.\", \"Green\")\n            else:\n                sbg.show_message(\"Invalid puzzle. Enter 7 unique letters.\", \"Red\")\n    \n        def solve_action(s):\n            words = find_valid_words(sbg.get_beehive_letters().lower(), dictionary)\n            display_words(words)\n            show_score(len(words), calculate_total_score(words))\n    \n        def word_action(s):\n            word = s.lower()\n            center_letter = sbg.get_beehive_letters()[0].lower()\n            if is_valid_word(word, sbg.get_beehive_letters().lower(), center_letter, dictionary):\n                if word not in found_words:\n                    found_words.add(word)\n                    score = calculate_word_score(word, sbg.get_beehive_letters())\n                    display_word(word, score)\n                    nonlocal total_score\n                    total_score += score\n                    show_score(len(found_words), total_score)\n                    sbg.set_field(\"Word\", \"\")\n                else:\n                    sbg.show_message(\"Word already found!\", \"Red\")\n            else:\n                show_error_message(word, sbg.get_beehive_letters().lower(), center_letter, dictionary)\n    \n>       sbg.add_field(\"Puzzle\", puzzle_action, 7)\nE       TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given\n\nSpellingBee.py:41: TypeError"
+            },
+            "teardown": {
+                "duration": 0.0001605579163879156,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+            "lineno": 96,
+            "outcome": "error",
+            "keywords": [
+                "test_duplicate_word_entry",
+                "test_SpellingBee.py",
+                "code_ym7gcdks"
+            ],
+            "setup": {
+                "duration": 0.013394301990047097,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ym7gcdks/SpellingBee.py",
+                    "lineno": 41,
+                    "message": "TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 41,
+                        "message": "TypeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f8586ee6620>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        sbg = SpellingBeeGraphics()\n        dictionary = load_dictionary(DICTIONARY_FILE)\n        found_words = set()\n        total_score = 0\n    \n        def puzzle_action(s):\n            if is_valid_puzzle(s):\n                sbg.set_beehive_letters(s.upper())\n                sbg.show_message(\"Puzzle set! Click Solve or enter words.\", \"Green\")\n            else:\n                sbg.show_message(\"Invalid puzzle. Enter 7 unique letters.\", \"Red\")\n    \n        def solve_action(s):\n            words = find_valid_words(sbg.get_beehive_letters().lower(), dictionary)\n            display_words(words)\n            show_score(len(words), calculate_total_score(words))\n    \n        def word_action(s):\n            word = s.lower()\n            center_letter = sbg.get_beehive_letters()[0].lower()\n            if is_valid_word(word, sbg.get_beehive_letters().lower(), center_letter, dictionary):\n                if word not in found_words:\n                    found_words.add(word)\n                    score = calculate_word_score(word, sbg.get_beehive_letters())\n                    display_word(word, score)\n                    nonlocal total_score\n                    total_score += score\n                    show_score(len(found_words), total_score)\n                    sbg.set_field(\"Word\", \"\")\n                else:\n                    sbg.show_message(\"Word already found!\", \"Red\")\n            else:\n                show_error_message(word, sbg.get_beehive_letters().lower(), center_letter, dictionary)\n    \n>       sbg.add_field(\"Puzzle\", puzzle_action, 7)\nE       TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given\n\nSpellingBee.py:41: TypeError"
+            },
+            "teardown": {
+                "duration": 0.0001179608516395092,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+            "lineno": 104,
+            "outcome": "error",
+            "keywords": [
+                "test_solve_after_user_input",
+                "test_SpellingBee.py",
+                "code_ym7gcdks"
+            ],
+            "setup": {
+                "duration": 0.013948299223557115,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ym7gcdks/SpellingBee.py",
+                    "lineno": 41,
+                    "message": "TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 41,
+                        "message": "TypeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f858614bee0>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        sbg = SpellingBeeGraphics()\n        dictionary = load_dictionary(DICTIONARY_FILE)\n        found_words = set()\n        total_score = 0\n    \n        def puzzle_action(s):\n            if is_valid_puzzle(s):\n                sbg.set_beehive_letters(s.upper())\n                sbg.show_message(\"Puzzle set! Click Solve or enter words.\", \"Green\")\n            else:\n                sbg.show_message(\"Invalid puzzle. Enter 7 unique letters.\", \"Red\")\n    \n        def solve_action(s):\n            words = find_valid_words(sbg.get_beehive_letters().lower(), dictionary)\n            display_words(words)\n            show_score(len(words), calculate_total_score(words))\n    \n        def word_action(s):\n            word = s.lower()\n            center_letter = sbg.get_beehive_letters()[0].lower()\n            if is_valid_word(word, sbg.get_beehive_letters().lower(), center_letter, dictionary):\n                if word not in found_words:\n                    found_words.add(word)\n                    score = calculate_word_score(word, sbg.get_beehive_letters())\n                    display_word(word, score)\n                    nonlocal total_score\n                    total_score += score\n                    show_score(len(found_words), total_score)\n                    sbg.set_field(\"Word\", \"\")\n                else:\n                    sbg.show_message(\"Word already found!\", \"Red\")\n            else:\n                show_error_message(word, sbg.get_beehive_letters().lower(), center_letter, dictionary)\n    \n>       sbg.add_field(\"Puzzle\", puzzle_action, 7)\nE       TypeError: MockSpellingBeeGraphics.add_field() takes 3 positional arguments but 4 were given\n\nSpellingBee.py:41: TypeError"
+            },
+            "teardown": {
+                "duration": 0.0001127829309552908,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

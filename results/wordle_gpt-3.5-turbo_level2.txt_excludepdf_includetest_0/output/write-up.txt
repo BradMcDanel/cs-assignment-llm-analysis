@@ -1,0 +1,5 @@
+# I have implemented the main logic for the Wordle game in Wordle.py file. The program checks if the entered word is in the list of five-letter words and displays a message accordingly. Next steps involve implementing the coloring logic for the boxes based on the correctness of the guessed word.
+
+# Additionally, I provided helper functions in WordleHelper.py to assist in checking occurrences of letters in a word and determining matching letters between the word and the guess.
+
+# The implementation follows the guidelines provided in the assignment document and utilizes the provided modules and constants.

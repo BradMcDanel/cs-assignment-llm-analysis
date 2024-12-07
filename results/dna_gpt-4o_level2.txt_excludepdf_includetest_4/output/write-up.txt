@@ -1,0 +1,5 @@
+# This program reads a DNA database from a CSV file and a DNA sequence from a text file.
+# It calculates the longest consecutive repeats of each STR in the sequence.
+# The program then checks these counts against the database to determine the individual the DNA belongs to.
+# The implementation uses Python's csv module for file handling and a custom function for finding STR repeats.
+# Challenges included ensuring accurate count of STR repeats and matching them to the correct individual.

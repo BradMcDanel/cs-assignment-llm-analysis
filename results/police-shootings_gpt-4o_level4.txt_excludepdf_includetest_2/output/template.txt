@@ -1,0 +1,46 @@
+Task 1:
+Question 1:
+The data includes information on fatal police shootings in the United States, compiled by the Washington Post. It contains details such as the victim's name, race, and whether they were armed. The data is publicly available on GitHub.
+
+Question 2:
+- id: A unique identifier for each shooting. Examples: 22, 325, 140.
+- name: The name of the person who was shot. Examples: John Doe, Jane Smith.
+- date: The date the shooting occurred. Examples: 2015-01-02, 2016-05-13.
+- manner_of_death: How the death occurred, generally "shot" or "shot and Tasered". Examples: shot, shot and Tasered.
+- armed: Indicates if the person was armed and with what. Examples: gun, knife, unarmed.
+- age: The age of the person. Examples: 34, 22, 50.
+- gender: The gender of the person. Examples: M, F.
+- race: The race of the person. Examples: W (White), B (Black), A (Asian).
+- city: The city where the shooting occurred. Examples: Los Angeles, New York.
+- state: The state where the shooting occurred. Examples: CA, NY.
+- signs_of_mental_illness: Whether there were signs of mental illness. Examples: True, False.
+- threat_level: The perceived threat level. Examples: attack, other, undetermined.
+- flee: If the person was fleeing. Examples: Not fleeing, Car, Foot.
+- body_camera: If a body camera was present. Examples: True, False.
+
+Question 3:
+According to the U.S. Census Bureau, the percentage of the U.S. population that is black or African American is approximately 13.4%. (Source: https://www.census.gov/quickfacts/fact/table/US/PST045219)
+
+Task 2:
+Question 1:
+The database stores information from the following columns: id, name, date, manner_of_death, armed, age, gender, race, city, state, signs_of_mental_illness, threat_level, flee, and body_camera.
+
+Question 2:
+The keys in the database are the unique IDs from the 'id' column.
+
+Question 3:
+The type of the values in the database is 'dict', where each dictionary contains data from a single row of the CSV file.
+
+Question 4:
+The values in the database store detailed information about each shooting. For example, for ID 1694, the value includes the name of the person, date of the shooting, whether they were armed, and more.
+
+Task 3:
+Question 1:
+The proportion of black subjects in fatal police shootings is significantly higher than the proportion of black people in the United States population, indicating a disproportionate impact.
+
+Question 2:
+The proportion of unarmed fatal police shootings with a black subject is also disproportionately high compared to their representation in the general U.S. population. This proportion is higher than the proportion of black subjects in all police shootings, highlighting a concerning trend.
+
+Task 4:
+Reflection:
+This project highlighted the importance of using programming skills to analyze real-world data and uncover significant societal issues. The findings about the disproportionate impact of fatal police shootings on black individuals are both revealing and concerning. Working with the dataset also emphasized the importance of understanding data structures such as dictionaries for effective data analysis. Additionally, it reinforced the need for thorough documentation and commenting in code to ensure clarity and reproducibility. Overall, this project was an enlightening experience in both technical skills and social awareness.

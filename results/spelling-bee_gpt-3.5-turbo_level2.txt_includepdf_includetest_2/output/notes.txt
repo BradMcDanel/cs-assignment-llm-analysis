@@ -1,0 +1,2 @@
+# Any additional notes, observations, or ideas related to the SpellingBee project.
+# It can include thoughts on algorithm improvements, code optimization, or potential future enhancements.

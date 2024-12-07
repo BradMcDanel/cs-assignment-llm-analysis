@@ -1,0 +1,4 @@
+# Task 4: Reflection
+
+## Question 1
+This project provided a significant insight into the disproportionate impact of fatal police shootings on black individuals in the United States. Through data analysis, it became evident that the number of black subjects involved in these incidents exceeds their representation in the general population. The process of analyzing real-world data using Python dictionaries was enlightening and helped reinforce concepts related to data manipulation and dictionary use. Additionally, it emphasized the importance of understanding data representation and the need for accurate and fair data collection. This project highlighted critical social issues and the role of data science in uncovering and addressing such disparities.

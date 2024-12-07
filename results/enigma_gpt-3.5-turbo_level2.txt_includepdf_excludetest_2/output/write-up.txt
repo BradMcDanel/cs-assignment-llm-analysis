@@ -1,0 +1,6 @@
+1. Overview of the Enigma Project
+2. Description of the Model-View-Controller pattern
+3. Milestones breakdown and explanation
+4. Possible extensions for the project
+5. Tips and strategies for completing the assignment
+6. Reflection on the historical context and importance of the project

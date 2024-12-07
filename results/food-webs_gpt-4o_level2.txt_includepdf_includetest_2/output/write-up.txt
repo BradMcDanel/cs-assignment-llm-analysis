@@ -1,0 +1,11 @@
+This project implements an analysis of food webs, identifying relationships such as apex predators, producers, and other ecological properties. The implementation follows a command-line interface where the user provides a CSV file containing predator-prey relationships.
+
+The solution loads this data into a dictionary and processes it to determine:
+1. What each predator eats.
+2. Apex predators (those not preyed upon by others).
+3. Producers (those that do not prey on others).
+4. Most flexible eaters (those with the most diverse diet).
+5. Tastiest organisms (those most commonly eaten).
+6. The height of each organism in the food web (path to producers).
+
+The code follows good practices by using separate functions for each part, ensuring modularity and readability. Error handling is implemented for command-line arguments and file operations. A test suite is provided to validate the program's correctness against expected outputs.

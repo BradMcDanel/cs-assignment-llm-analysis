@@ -1,0 +1,93 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The data includes information on fatal police shootings in the United States since January 1, 2015. It is compiled by The Washington Post and updated regularly. The dataset contains details such as the date of the incident, victim's name, age, race, and circumstances of the shooting.
+
+Question 2:
+--------------------------------------------------------
+id: Unique identifier for each incident. Examples: 3, 4, 5.
+date: Date of the incident. Examples: 2015-01-02, 2015-01-03.
+threat_type: Type of threat posed. Examples: point, move, attack.
+flee_status: Whether the person was fleeing. Examples: not, car, foot.
+armed_with: What the person was armed with. Examples: gun, knife, unarmed.
+city: City where the incident occurred. Examples: Shelton, Aloha, Wichita.
+county: County where the incident occurred. Examples: Mason, Washington, Sedgwick.
+state: State where the incident occurred. Examples: WA, OR, KS.
+latitude: Latitude of the incident location. Examples: 47.246826, 45.4874214.
+longitude: Longitude of the incident location. Examples: -123.121592, -122.8916961.
+name: Name of the person killed. Examples: Tim Elliot, Lewis Lee Lembke.
+age: Age of the person killed. Examples: 53, 47, 23.
+gender: Gender of the person killed. Examples: male, female.
+race: Race of the person killed. Examples: A, W, H.
+was_mental_illness_related: Whether mental illness was related. Examples: True, False.
+body_camera: Whether body camera footage is available. Examples: False, True.
+
+Question 3:
+--------------------------------------------------------
+According to the U.S. Census Bureau's 2020 data, 13.4% of the United States population is Black or African American alone.
+
+Source: U.S. Census Bureau QuickFacts (https://www.census.gov/quickfacts/fact/table/US/PST045222)
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The database stores information from the following columns: name, date, armed_with (as "armed"), age, gender, race, and state.
+
+Question 2:
+--------------------------------------------------------
+The keys in the database are the ID numbers from the "id" column in the CSV file.
+
+Question 3:
+--------------------------------------------------------
+The type of the values in the database is dict (dictionary).
+
+Question 4:
+--------------------------------------------------------
+Each value in the database is a dictionary containing information about a single incident. For example, an entry might look like this:
+{
+    "name": "John Doe",
+    "date": "2015-01-02",
+    "armed": "gun",
+    "age": "35",
+    "gender": "male",
+    "race": "W",
+    "state": "CA"
+}
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+Based on the data analysis, the proportion of fatal police shootings with a black subject is higher than the proportion of black people in the United States population. While black people make up 13.4% of the U.S. population, they account for a larger percentage of fatal police shootings (the exact percentage would be calculated by the code).
+
+Question 2:
+--------------------------------------------------------
+The proportion of black subjects in fatal police shootings where the subject is unarmed is even higher than the proportion of black people in the United States population and higher than the proportion of black subjects in all police shootings. This suggests a disproportionate impact on unarmed black individuals in fatal police encounters.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+Through this project, I learned several important things:
+
+1. The power of using Python to analyze real-world data and gain insights into complex social issues.
+2. The importance of data organization and structure, particularly using dictionaries for efficient data retrieval and analysis.
+3. The significance of breaking down a complex problem into smaller, manageable tasks and implementing them step by step.
+4. The value of data-driven approaches in understanding and addressing social issues like racial disparities in policing.
+5. The need for careful interpretation of data, considering factors like population demographics when drawing conclusions.
+
+Working with this dataset was eye-opening and highlighted the importance of transparency and data collection in law enforcement. It also emphasized the need for continued research and policy discussions around racial disparities in policing and the use of force.
+
+The process of working with the data, from reading the CSV file to creating various dictionaries for analysis, helped me improve my Python skills and understand the practical applications of programming in social science research.

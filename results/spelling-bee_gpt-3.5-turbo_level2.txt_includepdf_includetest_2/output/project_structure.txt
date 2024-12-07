@@ -1,0 +1,2 @@
+# A brief overview of the file structure for the SpellingBee project, listing the purpose of each file.
+# It helps in understanding the role of each file in the project.

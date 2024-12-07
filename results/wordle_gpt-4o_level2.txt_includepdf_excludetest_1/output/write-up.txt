@@ -1,0 +1,11 @@
+The Wordle game implementation is divided into four milestones, each building on the previous one to achieve a fully functional game.
+
+1. **Milestone #1**: We randomly select a word from the provided dictionary and display it on the first row of the Wordle grid. This is mainly for debugging and verifying that we can manipulate the grid.
+
+2. **Milestone #2**: We verify whether the word entered by the user is in the dictionary. If it is not, we display a message indicating that the word is not valid.
+
+3. **Milestone #3**: We implement the core logic to check each letter of the user's guess against the hidden word and color the boxes accordingly. Correct letters in the correct position are colored green, correct letters in the wrong position are colored yellow, and incorrect letters are colored gray.
+
+4. **Milestone #4**: We extend the coloring feature to the virtual keyboard. As the user enters guesses, the keys on the virtual keyboard are updated to reflect letters that are correct, present, or missing.
+
+This structured approach ensures that each part of the program is tested and working correctly before moving on to the next, which is essential for handling a project of this size.

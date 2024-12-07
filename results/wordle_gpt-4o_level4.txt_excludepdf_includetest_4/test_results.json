@@ -1,0 +1,167 @@
+{
+    "created": 1731003684.1443083,
+    "duration": 0.02269911766052246,
+    "exitcode": 0,
+    "root": "/tmp/code_eksr186y",
+    "environment": {},
+    "summary": {
+        "passed": 5,
+        "total": 5,
+        "collected": 5
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py::test_valid_guess",
+                    "type": "Function",
+                    "lineno": 111
+                },
+                {
+                    "nodeid": "test_wordle.py::test_invalid_guess",
+                    "type": "Function",
+                    "lineno": 122
+                },
+                {
+                    "nodeid": "test_wordle.py::test_correct_color_update",
+                    "type": "Function",
+                    "lineno": 134
+                },
+                {
+                    "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+                    "type": "Function",
+                    "lineno": 143
+                },
+                {
+                    "nodeid": "test_wordle.py::test_game_over_condition",
+                    "type": "Function",
+                    "lineno": 156
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_wordle.py::test_valid_guess",
+            "lineno": 111,
+            "outcome": "passed",
+            "keywords": [
+                "test_valid_guess",
+                "test_wordle.py",
+                "code_eksr186y"
+            ],
+            "setup": {
+                "duration": 0.00023309211246669292,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 8.572591468691826e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.797195576131344e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_invalid_guess",
+            "lineno": 122,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_guess",
+                "test_wordle.py",
+                "code_eksr186y"
+            ],
+            "setup": {
+                "duration": 0.00012118509039282799,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 8.991383947432041e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.64649996906519e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_correct_color_update",
+            "lineno": 134,
+            "outcome": "passed",
+            "keywords": [
+                "test_correct_color_update",
+                "test_wordle.py",
+                "code_eksr186y"
+            ],
+            "setup": {
+                "duration": 0.00012073689140379429,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.966192111372948e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.27471599727869e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+            "lineno": 143,
+            "outcome": "passed",
+            "keywords": [
+                "test_present_and_missing_color_update",
+                "test_wordle.py",
+                "code_eksr186y"
+            ],
+            "setup": {
+                "duration": 0.00010811188258230686,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.7518016546964645e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.244191899895668e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_game_over_condition",
+            "lineno": 156,
+            "outcome": "passed",
+            "keywords": [
+                "test_game_over_condition",
+                "test_wordle.py",
+                "code_eksr186y"
+            ],
+            "setup": {
+                "duration": 0.00010373396798968315,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00023871520534157753,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.401096470654011e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

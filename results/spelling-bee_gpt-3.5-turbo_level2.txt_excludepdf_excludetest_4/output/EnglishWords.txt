@@ -1,0 +1,6 @@
+# This file contains a list of English words that will be used as the dictionary for the Spelling Bee project.
+# Each word is on a separate line in lowercase format.
+# Example:
+# word1
+# word2
+# ...

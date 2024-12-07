@@ -84,7 +84,7 @@ def postprocess_python(file_string):
     file_string = trim_collections(file_string)
     return file_string
 
-def postprocess_csv(file_string, n=20):
+def postprocess_csv(file_string, n=40):
     lines = file_string.split('\n')
     total_lines = len(lines)
     
@@ -96,7 +96,7 @@ def postprocess_csv(file_string, n=20):
         trimmed_lines = lines[:n] + lines[-n:]
         return '\n'.join(trimmed_lines)
 
-def postprocess_txt(file_string, n=20):
+def postprocess_txt(file_string, n=40):
     lines = file_string.split('\n')
     total_lines = len(lines)
     
@@ -237,8 +237,11 @@ def run_tests(files, cleanup=True):
         # Run pytest with the --json-report option and redirect output to /dev/null
         pytest_cmd = ["pytest", "--json-report", "--json-report-file=test_report.json"]
         
-        with open(os.devnull, 'w') as devnull:
-            subprocess.run(pytest_cmd, stdout=devnull, stderr=devnull, check=False)
+        try:
+            with open(os.devnull, 'w') as devnull:
+                subprocess.run(pytest_cmd, stdout=devnull, stderr=devnull, check=False, timeout=10)
+        except subprocess.TimeoutExpired:
+            print("Pytest execution timed out after 10 seconds")
         
         # Check if the JSON report file exists
         if os.path.exists("test_report.json"):

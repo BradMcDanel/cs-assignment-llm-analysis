@@ -1,0 +1,5 @@
+In this assignment, I learned about implementing a Spelling Bee puzzle solver in Python. The program involves working with strings, arrays, text files, and user interactivity. The assignment was divided into milestones, each focusing on different aspects of the puzzle solving process. I followed a systematic approach by completing each milestone before moving on to the next. The assignment emphasized the importance of decomposition in problem-solving and the significance of testing each stage of development.
+
+I successfully implemented the Spelling Bee solver program that allows users to input a puzzle, find legal words, calculate scores, and validate user-entered words. The program utilizes a dictionary of English words to validate legal words based on specific rules. I also integrated user interaction through graphical controls provided by the SpellingBeeGraphics class.
+
+Overall, this assignment enhanced my understanding of string processing, file handling, callback functions, and user interface design in Python programming.

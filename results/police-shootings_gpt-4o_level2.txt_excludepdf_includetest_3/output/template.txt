@@ -1,0 +1,3 @@
+# Task 4: Reflection
+
+- Working on this project has highlighted the importance of data analysis in understanding social issues such as police violence. By translating raw data into meaningful insights, I was able to observe the disproportionality in fatal police shootings involving black individuals. The process of organizing data into dictionaries and iterating over them to extract relevant information was a practical exercise in Python programming. Additionally, I learned about the significance of structured data in uncovering patterns and trends that may not be immediately visible. This project underscores the critical role of data in informing public discourse and policy decisions.

@@ -1,0 +1,28 @@
+# Spelling Bee Project Write-up
+
+## Overview
+The Spelling Bee project is a Python application that simulates the popular New York Times Spelling Bee puzzle. The game allows users to find as many words as possible using a set of seven letters arranged in a beehive pattern, adhering to specific rules.
+
+## Key Features
+1. **Puzzle Initialization**: Users can input a string of seven unique letters to form a puzzle. The application checks for validity before setting the beehive letters.
+2. **Word Solver**: The application can automatically solve the puzzle and display all possible words that meet the rules using a dictionary file.
+3. **User Interaction**: Users can manually enter words they think are valid. The application checks these words against the puzzle rules and dictionary.
+4. **Scoring System**: Each word earns points based on its length, with a bonus for using all seven letters (pangram).
+5. **Feedback**: The application provides feedback messages to guide the user when errors occur or when words are successfully entered.
+
+## Implementation Details
+- **Data Structures**: The program uses sets and lists to efficiently manage dictionary words and user inputs.
+- **Graphics**: The SpellingBeeGraphics class handles the graphical interface, allowing for interaction and display of results.
+- **Validation and Constraints**: The program validates the puzzle rules and word constraints using helper functions to ensure clarity and maintainability.
+
+## Challenges and Solutions
+- **Dictionary Size**: The dictionary file is large, so it is loaded once at the start to optimize performance.
+- **Case Sensitivity**: The application converts input and dictionary words to lowercase to ensure consistent comparisons.
+- **User Experience**: Feedback messages and interactive elements are used to enhance the user experience, providing clarity on actions and errors.
+
+## Future Extensions
+- **Puzzle Generation**: Implementing a feature to generate random valid puzzles could add replay value.
+- **Shuffle Feature**: Adding a shuffle option for the outer hexagons could help users find words more easily.
+- **Advanced Analytics**: Providing more detailed stats, such as hints or word difficulty levels, could deepen user engagement.
+
+The Spelling Bee project is a comprehensive application that combines string processing, file handling, and user interaction to recreate a popular word puzzle game. The modular design and use of helper functions ensure clarity and allow for future extensions.

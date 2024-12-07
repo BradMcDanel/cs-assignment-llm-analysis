@@ -1,0 +1,24 @@
+This implementation of Wordle follows the milestones outlined in the assignment:
+
+1. Pick a random word:
+   - The game selects a random word from FIVE_LETTER_WORDS at the start.
+
+2. Check if entered word is valid:
+   - The enter_action function checks if the guessed word is in the word list.
+   - If not, it displays "Not in word list".
+
+3. Color the boxes:
+   - After a valid guess, it colors each letter box appropriately:
+     - Green for correct position
+     - Yellow for correct letter in wrong position
+     - Gray for letters not in the word
+
+4. Color the keys:
+   - The virtual keyboard keys are colored to match the most significant color for each letter:
+     - Green takes precedence, then yellow, then gray
+
+Additional features:
+- The game ends when the word is guessed correctly or after 6 guesses.
+- It displays a congratulatory message on winning or reveals the word if not guessed.
+
+This implementation provides a fully functional Wordle game as described in the assignment. It uses the provided WordleGraphics module for the UI and WordleDictionary for the word list.

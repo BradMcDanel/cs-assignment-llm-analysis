@@ -1,0 +1,6 @@
+# I have implemented the EnigmaRotor class to handle the state and behavior of a rotor in the Enigma machine.
+# In the EnigmaModel class, I have added the rotor initialization using the provided rotor permutations.
+# The advance_rotors method advances the rotors based on the Enigma machine's rules.
+# The key_pressed method now advances the rotors before updating the views.
+# The rotor_clicked method advances the specified rotor and updates the views.
+# The get_rotor_letter method retrieves the current letter in the rotor window based on the rotor's offset and permutation.

@@ -1,0 +1,11 @@
+The implementation of the Wordle game was broken down into four milestones.
+
+1. **Milestone #1**: We started by picking a random word from a predefined list and displaying it in the first row of the grid. This helped us familiarize ourselves with the WordleGWindow class and its methods for setting letters.
+
+2. **Milestone #2**: We added functionality to check if the user's input is a valid word from the list. If the word is not valid, a message is displayed to notify the user.
+
+3. **Milestone #3**: We implemented the logic to color the boxes based on the correctness of the guessed word. This involved checking for correct letters in both the correct and incorrect positions and using the appropriate colors for each case.
+
+4. **Milestone #4**: We enhanced the game by coloring the keys on the virtual keyboard, providing visual feedback on which letters have been used and their status in the game.
+
+Throughout these milestones, we ensured to test each stage of development and used constants for clarity and maintainability. The final implementation successfully mimics the core functionalities of the Wordle game.

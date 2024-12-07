@@ -1,0 +1,26 @@
+This implementation of Wordle follows the milestones outlined in the assignment:
+
+1. Pick a random word:
+   - The secret word is chosen randomly from FIVE_LETTER_WORDS at the start of each game.
+
+2. Check if entered word is valid:
+   - The enter_action function first checks if the entered word is in FIVE_LETTER_WORDS.
+   - If not, it displays "Not in word list" and doesn't proceed further.
+
+3. Color the boxes:
+   - The coloring is done in two passes to handle cases with multiple occurrences of a letter correctly.
+   - First pass marks correct letters (green).
+   - Second pass marks present but misplaced letters (yellow) and missing letters (gray).
+   - This approach ensures that correct positions are prioritized over present-but-misplaced.
+
+4. Color the keys:
+   - Key colors are updated along with the square colors.
+   - A key's color is only changed to yellow if it's not already green.
+   - A key's color is only changed to gray if it's not already green or yellow.
+
+Additional features:
+- The game ends when the word is guessed correctly or after 6 attempts.
+- Appropriate messages are shown for winning and losing conditions.
+- The current row is tracked and updated after each valid guess.
+
+This implementation covers all the basic requirements of the Wordle game while handling edge cases like repeated letters correctly.

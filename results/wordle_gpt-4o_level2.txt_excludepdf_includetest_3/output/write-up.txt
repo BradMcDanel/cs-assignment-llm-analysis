@@ -1,0 +1,24 @@
+# Wordle Game Implementation
+
+## Overview
+This project implements a simplified version of the popular Wordle game using Python. The game logic is implemented in `Wordle.py`, utilizing the graphical capabilities provided by the `WordleGraphics.py` module to display the game board and handle user interactions.
+
+## Implementation Details
+The game was implemented in four main milestones:
+
+1. **Random Word Display:** A random five-letter word from a predefined dictionary is selected and displayed in the first row of the game board.
+
+2. **Word Validation:** When the user enters a word, the game checks if it's a valid five-letter word from the dictionary and displays a message accordingly.
+
+3. **Coloring Logic:** The game colors each letter box based on its correctness compared to the hidden word. Correct letters in the correct position are green, correct letters in the wrong position are yellow, and incorrect letters are gray.
+
+4. **Keyboard Coloring:** The virtual keyboard updates to reflect the correctness of the letters, helping the user keep track of their guesses.
+
+## Future Extensions
+Potential extensions could include:
+- Implementing a more balanced dictionary to avoid bias in word selection.
+- Enhancing graphics for a more engaging user experience.
+- Adding a scoring system to track user performance across games.
+
+## Conclusion
+This project provided a hands-on opportunity to practice working with strings and graphical interfaces in Python, culminating in a functional and entertaining game implementation.

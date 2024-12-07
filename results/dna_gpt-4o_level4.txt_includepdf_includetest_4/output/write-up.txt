@@ -1,0 +1,1 @@
+In this assignment, I learned how to manipulate strings to find patterns, use Python's CSV module to handle data, and apply algorithmic thinking to solve a problem related to computational biology. Developing a program that interacts with real-world data has reinforced my understanding of file I/O and the importance of efficient algorithms in processing large datasets.

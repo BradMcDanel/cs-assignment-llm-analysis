@@ -1,0 +1,13 @@
+# Implementation of Wordle Game
+
+The Wordle game was implemented by following a series of milestones:
+
+1. **Milestone #1** involved selecting a random word from the provided dictionary and displaying it in the first row of the game window. This was achieved using the `set_square_letter` method from the `WordleGWindow` class.
+
+2. **Milestone #2** required checking whether the entered word is valid by comparing it against the word list. The message "Not in word list" is displayed for invalid words.
+
+3. **Milestone #3** added the functionality to color the boxes based on the correctness of each letter in a guess. This involved careful handling of letter usage to account for repeated letters in the target word.
+
+4. **Milestone #4** extended the game by adding color coding to the virtual keyboard, giving players feedback on the letters they have used correctly, incorrectly, or partially correctly.
+
+Further extensions could include more balanced word selection and enhanced graphics for a more engaging user experience.

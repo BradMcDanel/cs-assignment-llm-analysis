@@ -1,0 +1,407 @@
+{
+    "created": 1730997028.4840384,
+    "duration": 0.04084324836730957,
+    "exitcode": 1,
+    "root": "/tmp/code_mf0xqjs1",
+    "environment": {},
+    "summary": {
+        "failed": 8,
+        "total": 8,
+        "collected": 8
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py::test_enigma_initialization",
+                    "type": "Function",
+                    "lineno": 6
+                },
+                {
+                    "nodeid": "test_enigma.py::test_key_press_and_release",
+                    "type": "Function",
+                    "lineno": 11
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_advance",
+                    "type": "Function",
+                    "lineno": 20
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_click",
+                    "type": "Function",
+                    "lineno": 29
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_encryption",
+                    "type": "Function",
+                    "lineno": 37
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_decryption",
+                    "type": "Function",
+                    "lineno": 48
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_full_rotation",
+                    "type": "Function",
+                    "lineno": 70
+                },
+                {
+                    "nodeid": "test_enigma.py::test_reflector",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_enigma.py::test_enigma_initialization",
+            "lineno": 6,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_initialization",
+                "test_enigma.py",
+                "code_mf0xqjs1"
+            ],
+            "setup": {
+                "duration": 8.496502414345741e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.005819447338581e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_mf0xqjs1/test_enigma.py",
+                    "lineno": 10,
+                    "message": "AttributeError: 'EnigmaModel' object has no attribute 'get_rotor_letter'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 10,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 10,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "def test_enigma_initialization():\n        model = EnigmaModel()\n        assert len(model._rotors) == N_ROTORS\n>       assert all(model.get_rotor_letter(i) == 'A' for i in range(N_ROTORS))\n\ntest_enigma.py:10: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n.0 = <range_iterator object at 0x7b02fb860480>\n\n>   assert all(model.get_rotor_letter(i) == 'A' for i in range(N_ROTORS))\nE   AttributeError: 'EnigmaModel' object has no attribute 'get_rotor_letter'\n\ntest_enigma.py:10: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.780804298818111e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_key_press_and_release",
+            "lineno": 11,
+            "outcome": "failed",
+            "keywords": [
+                "test_key_press_and_release",
+                "test_enigma.py",
+                "code_mf0xqjs1"
+            ],
+            "setup": {
+                "duration": 5.442788824439049e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.697311230003834e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_mf0xqjs1/EnigmaModel.py",
+                    "lineno": 41,
+                    "message": "AttributeError: 'EnigmaRotor' object has no attribute 'advance'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 14,
+                        "message": ""
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 19,
+                        "message": "in key_pressed"
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 41,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "def test_key_press_and_release():\n        model = EnigmaModel()\n>       model.key_pressed('A')\n\ntest_enigma.py:14: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nEnigmaModel.py:19: in key_pressed\n    self.advance_rotors()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7b02fb946e00>\n\n    def advance_rotors(self):\n        # Always advance the fast rotor\n>       carry = self._rotors[2].advance()\nE       AttributeError: 'EnigmaRotor' object has no attribute 'advance'\n\nEnigmaModel.py:41: AttributeError"
+            },
+            "teardown": {
+                "duration": 6.804917939007282e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_advance",
+            "lineno": 20,
+            "outcome": "failed",
+            "keywords": [
+                "test_rotor_advance",
+                "test_enigma.py",
+                "code_mf0xqjs1"
+            ],
+            "setup": {
+                "duration": 5.436711944639683e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.271114736795425e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_mf0xqjs1/test_enigma.py",
+                    "lineno": 23,
+                    "message": "AttributeError: 'EnigmaModel' object has no attribute 'get_rotor_letter'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 23,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 23,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "def test_rotor_advance():\n        model = EnigmaModel()\n>       initial_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n\ntest_enigma.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n.0 = <range_iterator object at 0x7b02fb862c40>\n\n>   initial_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\nE   AttributeError: 'EnigmaModel' object has no attribute 'get_rotor_letter'\n\ntest_enigma.py:23: AttributeError"
+            },
+            "teardown": {
+                "duration": 6.403378210961819e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_click",
+            "lineno": 29,
+            "outcome": "failed",
+            "keywords": [
+                "test_rotor_click",
+                "test_enigma.py",
+                "code_mf0xqjs1"
+            ],
+            "setup": {
+                "duration": 5.1206909120082855e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.413490675389767e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_mf0xqjs1/test_enigma.py",
+                    "lineno": 33,
+                    "message": "AttributeError: 'EnigmaModel' object has no attribute 'get_rotor_letter'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 33,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "def test_rotor_click():\n        model = EnigmaModel()\n        for i in range(N_ROTORS):\n>           initial_letter = model.get_rotor_letter(i)\nE           AttributeError: 'EnigmaModel' object has no attribute 'get_rotor_letter'\n\ntest_enigma.py:33: AttributeError"
+            },
+            "teardown": {
+                "duration": 6.434693932533264e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_encryption",
+            "lineno": 37,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_encryption",
+                "test_enigma.py",
+                "code_mf0xqjs1"
+            ],
+            "setup": {
+                "duration": 5.232705734670162e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.55060464143753e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_mf0xqjs1/EnigmaModel.py",
+                    "lineno": 41,
+                    "message": "AttributeError: 'EnigmaRotor' object has no attribute 'advance'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 43,
+                        "message": ""
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 19,
+                        "message": "in key_pressed"
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 41,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "def test_enigma_encryption():\n        model = EnigmaModel()\n        plaintext = \"HELLO\"\n        ciphertext = \"\"\n        for char in plaintext:\n>           model.key_pressed(char)\n\ntest_enigma.py:43: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nEnigmaModel.py:19: in key_pressed\n    self.advance_rotors()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7b02fc0c0340>\n\n    def advance_rotors(self):\n        # Always advance the fast rotor\n>       carry = self._rotors[2].advance()\nE       AttributeError: 'EnigmaRotor' object has no attribute 'advance'\n\nEnigmaModel.py:41: AttributeError"
+            },
+            "teardown": {
+                "duration": 6.122305057942867e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_decryption",
+            "lineno": 48,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_decryption",
+                "test_enigma.py",
+                "code_mf0xqjs1"
+            ],
+            "setup": {
+                "duration": 5.152588710188866e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.502804510295391e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_mf0xqjs1/EnigmaModel.py",
+                    "lineno": 41,
+                    "message": "AttributeError: 'EnigmaRotor' object has no attribute 'advance'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 54,
+                        "message": ""
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 19,
+                        "message": "in key_pressed"
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 41,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "def test_enigma_decryption():\n        model = EnigmaModel()\n        plaintext = \"HELLO\"\n        ciphertext = \"\"\n        for char in plaintext:\n>           model.key_pressed(char)\n\ntest_enigma.py:54: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nEnigmaModel.py:19: in key_pressed\n    self.advance_rotors()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7b02fb946620>\n\n    def advance_rotors(self):\n        # Always advance the fast rotor\n>       carry = self._rotors[2].advance()\nE       AttributeError: 'EnigmaRotor' object has no attribute 'advance'\n\nEnigmaModel.py:41: AttributeError"
+            },
+            "teardown": {
+                "duration": 6.0715945437550545e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_full_rotation",
+            "lineno": 70,
+            "outcome": "failed",
+            "keywords": [
+                "test_rotor_full_rotation",
+                "test_enigma.py",
+                "code_mf0xqjs1"
+            ],
+            "setup": {
+                "duration": 5.661812610924244e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.055513560771942e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_mf0xqjs1/test_enigma.py",
+                    "lineno": 73,
+                    "message": "AttributeError: 'EnigmaModel' object has no attribute 'get_rotor_letter'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 73,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 73,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "def test_rotor_full_rotation():\n        model = EnigmaModel()\n>       initial_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n\ntest_enigma.py:73: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n.0 = <range_iterator object at 0x7b02fc0b7cf0>\n\n>   initial_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\nE   AttributeError: 'EnigmaModel' object has no attribute 'get_rotor_letter'\n\ntest_enigma.py:73: AttributeError"
+            },
+            "teardown": {
+                "duration": 6.19981437921524e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_reflector",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_reflector",
+                "test_enigma.py",
+                "code_mf0xqjs1"
+            ],
+            "setup": {
+                "duration": 5.7031866163015366e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.102708332240582e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_mf0xqjs1/EnigmaModel.py",
+                    "lineno": 41,
+                    "message": "AttributeError: 'EnigmaRotor' object has no attribute 'advance'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 85,
+                        "message": ""
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 19,
+                        "message": "in key_pressed"
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 41,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "def test_reflector():\n        model = EnigmaModel()\n        results = {}\n        for char in ALPHABET:\n>           model.key_pressed(char)\n\ntest_enigma.py:85: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nEnigmaModel.py:19: in key_pressed\n    self.advance_rotors()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7b02fb946fe0>\n\n    def advance_rotors(self):\n        # Always advance the fast rotor\n>       carry = self._rotors[2].advance()\nE       AttributeError: 'EnigmaRotor' object has no attribute 'advance'\n\nEnigmaModel.py:41: AttributeError"
+            },
+            "teardown": {
+                "duration": 6.254389882087708e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

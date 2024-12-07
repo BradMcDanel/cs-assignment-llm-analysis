@@ -1,0 +1,17 @@
+# My name: [Your Name]
+# Student Number: [Your Student Number]
+
+# Description:
+# This program analyzes a food web provided in a CSV file format. It reads the predator-prey relationships from the file,
+# then performs various analyses on the food web such as listing predators and their prey, identifying apex predators,
+# producers, most flexible eaters, tastiest organisms, and determining the heights of each organism in the food web.
+
+# I have followed the assignment instructions and divided the code into functions for each part of the assignment.
+# The program reads the filename as a command line argument, performs basic error checking, and uses a dictionary to store
+# the predator-prey relationships. It adheres to good programming style with appropriate variable names, comments,
+# and function descriptions.
+
+# To test the program, you can run it with a food web file as a command line argument. Make sure to provide the correct
+# file format as described in the assignment instructions.
+
+# Note: Remember to remove the 'sys.argv' line modification before submission.

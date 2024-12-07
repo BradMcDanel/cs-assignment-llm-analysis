@@ -1,0 +1,6 @@
+In this assignment, I learned how to implement a simplified version of the Wordle game using Python. 
+The key components involved working with string manipulations, implementing logic to validate user inputs,
+and using a graphical library to provide visual feedback to the user. Additionally, I understood the importance 
+of planning and implementing the project in milestones, which made debugging and testing individual components 
+more manageable. This project helped solidify my understanding of event-driven programming and the use of 
+external libraries to enhance the functionality of a program.

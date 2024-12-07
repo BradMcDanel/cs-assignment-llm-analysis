@@ -1,0 +1,4 @@
+In this assignment, I learned how to structure a Python program using callback functions for interactivity.
+The main challenging part was ensuring that the words found met all the criteria specified in the SpellingBee puzzle rules.
+I also learned the importance of reading and processing data from an external file, which is a crucial skill in many real-world applications.
+Refactoring code to add new functionality was an essential part of the project, especially when integrating new features incrementally.

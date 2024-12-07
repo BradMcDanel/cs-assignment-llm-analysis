@@ -1,0 +1,13 @@
+1. **Project Overview**: The Spelling Bee project is an interactive word puzzle game where users find valid words using a set of letters in a beehive configuration. The game includes several milestones: initializing the beehive, solving the puzzle automatically, adding scores, and allowing user input for interactive play.
+
+2. **Milestone Breakdown**:
+   - **Milestone #1**: Implemented the function to validate and set the beehive letters from user input. Ensured the input has 7 unique letters.
+   - **Milestone #2**: Developed a function to find and display all valid words from the dictionary that fit the puzzle constraints.
+   - **Milestone #3**: Integrated word scoring, considering word length and pangram status.
+   - **Milestone #4**: Added user interaction to input words, validating their correctness and updating the word list accordingly.
+
+3. **Additional Features**: The solution is modular, allowing for easy extensions such as generating puzzles and shuffling letters. The code can be refactored to enhance efficiency and readability.
+
+4. **Testing**: Included a test suite using `pytest` to validate puzzle initialization, solving, user's word entry, and scoring mechanisms. This ensures robustness across different scenarios.
+
+5. **Challenges**: The primary challenge was ensuring proper interaction between user inputs and automatic solving. Testing and refactoring played critical roles in overcoming integration issues.

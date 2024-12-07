@@ -1,0 +1,1 @@
+In this assignment, I learned the importance of breaking down a large programming project into manageable milestones. By implementing each milestone separately, I was able to test and debug my code effectively. Additionally, I gained experience working with string processing, dictionaries, and GUI elements in Python.

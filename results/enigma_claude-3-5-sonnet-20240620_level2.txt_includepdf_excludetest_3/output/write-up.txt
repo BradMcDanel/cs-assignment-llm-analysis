@@ -1,0 +1,29 @@
+Enigma Machine Simulation Implementation
+
+1. Design Choices:
+   - I implemented the EnigmaRotor as a separate class to encapsulate rotor-specific behavior and state.
+   - The EnigmaModel class manages the overall state of the machine, including keys, lamps, and rotors.
+   - I used dictionaries to track the state of keys and lamps for efficient lookup.
+
+2. Encryption Process:
+   - The encrypt method simulates the path of the electrical signal through the Enigma machine.
+   - It passes the signal through each rotor from right to left, then through the reflector, and back through the rotors from left to right.
+   - The apply_permutation function handles the letter substitution for each rotor, taking into account the rotor's current offset.
+
+3. Rotor Advancement:
+   - The advance_rotors method implements the cascading advancement of rotors.
+   - The fast rotor (rightmost) advances on every keystroke, while the others advance when the rotor to their right completes a full revolution.
+
+4. Challenges and Solutions:
+   - Implementing the inverse permutation for the left-to-right pass through the rotors was tricky. I solved this by creating an invert_key method in the EnigmaRotor class.
+   - Handling the wrapping of letters (A to Z) required careful use of modulo arithmetic in several places.
+
+5. Testing:
+   - I tested the implementation by comparing its output to known Enigma machine encodings and by ensuring that encoding a message and then encoding the result with the same settings returned the original message.
+
+6. Possible Improvements:
+   - Implement additional features of the historical Enigma machine, such as the plugboard.
+   - Add a user interface for changing rotor settings and initial positions.
+   - Implement error handling for invalid inputs or configurations.
+
+This implementation successfully simulates the core functionality of the Enigma machine, including rotor mechanics, reflector usage, and the full encryption path.

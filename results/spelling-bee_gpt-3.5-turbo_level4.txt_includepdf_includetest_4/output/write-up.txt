@@ -1,0 +1,5 @@
+In this assignment, I learned the importance of working with strings, arrays, and text files in Python. The Spelling Bee project provided an opportunity to implement an interactive puzzle solver that enforces specific rules for word formation. By breaking down the project into milestones, I was able to tackle each part systematically, ensuring that each component worked before moving on to the next. Additionally, testing each milestone independently helped in debugging and verifying the correctness of the code.
+
+The project involved implementing functions to handle user input, validate the puzzle format, solve the Spelling Bee puzzle, calculate scores, and allow users to find words. By leveraging callback functions and the provided SpellingBeeGraphics class, I was able to create an interactive application that displays legal words in the puzzle and calculates scores based on word lengths and pangrams.
+
+Overall, this assignment enhanced my skills in Python programming, string manipulation, and working with external files. It also emphasized the importance of decomposition, testing, and refactoring to build a robust and functional solution.

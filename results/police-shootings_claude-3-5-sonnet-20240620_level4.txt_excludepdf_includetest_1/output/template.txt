@@ -1,0 +1,37 @@
+Task 1:
+Question 1: The Washington Post's Fatal Force database contains records of every fatal shooting in the United States by a police officer in the line of duty since January 1, 2015. The data is compiled by Washington Post journalists through news reports, public records, social media, and other sources. It includes details such as the race, age, and gender of the deceased, the circumstances of the shooting, and whether the person was armed.
+
+Question 2:
+- id: Unique identifier for each incident. Examples: 1, 2, 3.
+- name: Name of the deceased. Examples: "Tim Elliot", "Lewis Lee Lembke", "John Paul Quintero".
+- date: Date of the incident. Examples: "2015-01-02", "2015-01-02", "2015-01-03".
+- manner_of_death: How the person died. Examples: "shot", "shot and Tasered".
+- armed: Whether and how the person was armed. Examples: "gun", "knife", "unarmed".
+- age: Age of the deceased. Examples: 53, 47, 23.
+- gender: Gender of the deceased. Examples: "M", "F".
+- race: Race of the deceased. Examples: "W" (White), "B" (Black), "H" (Hispanic).
+- city: City where the incident occurred. Examples: "Shelton", "Aloha", "Wichita".
+- state: State where the incident occurred. Examples: "WA", "OR", "KS".
+- signs_of_mental_illness: Whether the person showed signs of mental illness. Examples: "True", "False".
+- threat_level: Level of threat posed by the deceased. Examples: "attack", "other", "undetermined".
+- flee: Whether the person was fleeing. Examples: "Not fleeing", "Car", "Foot".
+- body_camera: Whether body camera footage is available. Examples: "True", "False".
+
+Question 3: According to the 2020 United States Census, 13.4% of the United States population identifies as Black or African American alone. (Source: United States Census Bureau, https://www.census.gov/quickfacts/fact/table/US/PST045222)
+
+Task 2:
+Question 1: The database stores information from the following columns: id, name, date, manner_of_death, armed, age, gender, race, city, state, signs_of_mental_illness, threat_level, flee, and body_camera.
+
+Question 2: The 'id' column is used as the keys in the database.
+
+Question 3: The type of the values in database is <class 'dict'>.
+
+Question 4: Each value in database is a dictionary containing information about a specific incident. For example, database['1'] might contain: {'name': 'Tim Elliot', 'date': '2015-01-02', 'manner_of_death': 'shot', 'armed': 'gun', 'age': '53', 'gender': 'M', 'race': 'W', 'city': 'Shelton', 'state': 'WA', 'signs_of_mental_illness': 'True', 'threat_level': 'attack', 'flee': 'Not fleeing', 'body_camera': 'False'}.
+
+Task 3:
+Question 1: The proportion of black subjects in fatal police shootings (calculated in the code) is significantly higher than the proportion of black people in the United States population (13.4%). This suggests that black people are disproportionately represented among the subjects of fatal police shootings.
+
+Question 2: The proportion of black subjects in fatal police shootings where the subject is unarmed (calculated in the code) is even higher than the proportion of black subjects in all police shootings. Both of these proportions are significantly higher than the proportion of black people in the United States population (13.4%). This suggests that black people, especially when unarmed, are even more disproportionately represented among the subjects of fatal police shootings.
+
+Task 4:
+Reflection: Through this project, I gained valuable experience in working with real-world data using Python. I learned how to read and process data from a CSV file, organize it into a dictionary structure, and perform various analyses on it. The process of working with this data was eye-opening, as it allowed me to see how programming skills can be applied to understand important social issues. The results of the analysis were sobering, highlighting the disproportionate impact of fatal police shootings on black individuals, especially when unarmed. This project also reinforced the importance of data analysis in understanding complex societal problems and the potential for technology to contribute to discussions about social justice. Additionally, I improved my skills in using dictionaries, which are crucial data structures in Python. Overall, this project demonstrated the power of programming as a tool for social analysis and the responsibility that comes with interpreting such impactful data.

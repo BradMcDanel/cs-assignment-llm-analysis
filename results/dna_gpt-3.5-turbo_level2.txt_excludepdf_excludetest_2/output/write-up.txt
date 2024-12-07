@@ -1,0 +1,7 @@
+This program reads a CSV file containing STR counts for a list of individuals and a text file containing a DNA sequence. It then identifies to whom the DNA sequence most likely belongs by computing the longest run of consecutive repeats of each STR in the DNA sequence and comparing them with the provided data.
+
+The program uses file I/O to read the CSV file and DNA sequence into memory. It then iterates through each individual in the CSV file, computes the longest run of consecutive repeats for each STR in the DNA sequence, and checks if they match the provided counts. If there is a match, it prints out the name of the matching individual; otherwise, it prints "No match".
+
+The program utilizes string manipulation and loops to efficiently compute the longest run of a particular substring in the DNA sequence. It demonstrates algorithmic thinking and file handling in Python, making it suitable for CS1 or CS2 students.
+
+Overall, this program provides a practical application of computational biology, showcasing the use of algorithms to analyze DNA profiles and identify individuals based on their genetic information.

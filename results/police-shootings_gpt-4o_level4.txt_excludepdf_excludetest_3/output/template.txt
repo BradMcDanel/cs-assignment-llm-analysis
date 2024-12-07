@@ -1,0 +1,43 @@
+Task 1:
+Question 1. The data includes information on fatal police shootings in the United States, compiled by the Washington Post. It contains details such as the name of the subject, date, location, race, and whether the subject was armed. The data is sourced from public records and news reports.
+
+Question 2.
+- Column: id
+  Explanation: Unique identifier for each shooting incident.
+  Examples: 22, 325, 140
+
+- Column: name
+  Explanation: Name of the subject involved in the shooting.
+  Examples: John Doe, Jane Smith
+
+- Column: date
+  Explanation: Date of the incident.
+  Examples: 2015-01-02, 2016-12-15
+
+- Column: state
+  Explanation: US state where the incident occurred.
+  Examples: CA, TX, MN
+
+- Column: race
+  Explanation: Race of the subject.
+  Examples: W, B, H
+
+- Column: armed
+  Explanation: Whether the subject was armed.
+  Examples: gun, knife, unarmed
+
+Question 3. According to the U.S. Census Bureau, approximately 13.4% of the United States population is black. (Source: U.S. Census Bureau QuickFacts)
+
+Task 2:
+Question 1. The database stores information from the columns: 'id', 'name', 'date', 'state', 'race', and 'armed'.
+Question 2. The 'id' column is used as the keys in the database.
+Question 3. The type of the values in the database is a dictionary.
+Question 4. A value in the database contains information such as the subject's name, date, state, race, and whether they were armed. For example, an entry might look like {'name': 'John Doe', 'date': '2015-01-02', 'state': 'CA', 'race': 'W', 'armed': 'gun'}.
+
+Task 3:
+Question 1. The proportion of black subjects in fatal police shootings is significantly higher than their representation in the general United States population.
+
+Question 2. The proportion of unarmed fatal police shootings with a black subject is also significantly higher than their representation in the general population, similar to the overall shootings.
+
+Task 4:
+In this project, I learned how to handle real-world data using Python dictionaries, exploring how data can reveal societal issues. The results were eye-opening, showing a disproportionate representation of black individuals in police shootings. Working through the tasks deepened my understanding of data manipulation and analysis in Python. The project highlighted the importance of examining data critically and considering its societal implications. Overall, it was an enlightening experience that combined technical skills with social awareness.

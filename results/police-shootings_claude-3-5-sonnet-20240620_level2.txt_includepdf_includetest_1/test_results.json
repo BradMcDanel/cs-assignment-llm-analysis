@@ -1,0 +1,140 @@
+{
+    "created": 1731007964.8836358,
+    "duration": 0.05178260803222656,
+    "exitcode": 0,
+    "root": "/tmp/code_ihs9ahkd",
+    "environment": {},
+    "summary": {
+        "passed": 4,
+        "total": 4,
+        "collected": 4
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_police_shootings.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_police_shootings.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_police_shootings.py::test_subject_1694",
+                    "type": "Function",
+                    "lineno": 9
+                },
+                {
+                    "nodeid": "test_police_shootings.py::test_minnesota_subjects",
+                    "type": "Function",
+                    "lineno": 12
+                },
+                {
+                    "nodeid": "test_police_shootings.py::test_black_fraction_output",
+                    "type": "Function",
+                    "lineno": 40
+                },
+                {
+                    "nodeid": "test_police_shootings.py::test_unarmed_black_fraction_output",
+                    "type": "Function",
+                    "lineno": 43
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_police_shootings.py::test_subject_1694",
+            "lineno": 9,
+            "outcome": "passed",
+            "keywords": [
+                "test_subject_1694",
+                "test_police_shootings.py",
+                "code_ihs9ahkd"
+            ],
+            "setup": {
+                "duration": 0.03967822599224746,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0001720970030874014,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 0.0001292969100177288,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_police_shootings.py::test_minnesota_subjects",
+            "lineno": 12,
+            "outcome": "passed",
+            "keywords": [
+                "test_minnesota_subjects",
+                "test_police_shootings.py",
+                "code_ihs9ahkd"
+            ],
+            "setup": {
+                "duration": 0.00012498092837631702,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0023237508721649647,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.487492308020592e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_police_shootings.py::test_black_fraction_output",
+            "lineno": 40,
+            "outcome": "passed",
+            "keywords": [
+                "test_black_fraction_output",
+                "test_police_shootings.py",
+                "code_ihs9ahkd"
+            ],
+            "setup": {
+                "duration": 6.391783244907856e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00010223290883004665,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.2321160435676575e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_police_shootings.py::test_unarmed_black_fraction_output",
+            "lineno": 43,
+            "outcome": "passed",
+            "keywords": [
+                "test_unarmed_black_fraction_output",
+                "test_police_shootings.py",
+                "code_ihs9ahkd"
+            ],
+            "setup": {
+                "duration": 5.333707667887211e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.614392183721066e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.63180835545063e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

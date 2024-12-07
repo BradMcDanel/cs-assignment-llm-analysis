@@ -1,0 +1,31 @@
+# Spelling Bee Project Write-up
+
+## Overview
+The Spelling Bee project is designed to implement a game where users find words using a set of given letters in a beehive pattern. The project emphasizes string processing, file handling, and interactivity through a graphical interface.
+
+## Milestones
+
+### Milestone #1: Initialize the Beehive
+- Implemented the `puzzle_action` function to validate and set puzzle letters. 
+- The function checks for a 7-letter input, uniqueness, and alphabetic characters.
+
+### Milestone #2: Display Legal Words
+- Implemented the `solve_action` function to find valid words from a dictionary.
+- The function checks word length, letter validity, and presence of the center letter.
+
+### Milestone #3: Add Scores
+- Extended `solve_action` to calculate and display word scores.
+- Implemented additional bonus for pangrams and displayed them in a different color.
+
+### Milestone #4: User Interaction
+- Added a "Word" field for user input.
+- Implemented validation checks for user input and provided feedback through messages.
+
+## Challenges
+- Handling case sensitivity and ensuring the correct conversion between uppercase and lowercase letters.
+- Refactoring code to ensure modularity and reusability of functions.
+
+## Possible Extensions
+- Implement a shuffle feature for the outer letters.
+- Generate new puzzle configurations programmatically.
+- Explore interesting puzzles with unique characteristics like high scores or rare words.

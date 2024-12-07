@@ -1,0 +1,3 @@
+Task 4 - Reflection
+
+Question 1: Working on this project has been an eye-opening experience regarding the representation of races in fatal police shootings. The data analysis clearly shows that black individuals are disproportionately affected, both in general and when unarmed. This has reinforced the importance of using data-driven approaches to understand social issues. It was insightful to learn how Python dictionaries can be used to manipulate and analyze complex datasets. Overall, this project has increased my awareness of the systemic issues in policing and the power of data in uncovering such disparities.

@@ -1,0 +1,38 @@
+Predators and Prey:
+  Fox eats Insectivor Bird, Mouse, Rabbit, Seed Eating Bird, Squirrel and Toad
+  Hawk eats Insectivor Bird, Rabbit, Seed Eating Bird and Squirrel
+  Herbivor Insect eats Plants
+  Insectivor Bird eats Herbivor Insect and Spider
+  Mouse eats Plants
+  Predaceous Insect eats Herbivor Insect
+  Rabbit eats Plants
+  Seed Eating Bird eats Plants
+  Snake eats Herbivor Insect, Insectivor Bird, Mouse, Predaceous Insect, Seed Eating Bird and Toad
+  Spider eats Herbivor Insect and Predaceous Insect
+  Squirrel eats Plants
+  Toad eats Predaceous Insect
+
+Apex Predators: Fox, Hawk and Snake
+Producers: Plants
+Most Flexible Eaters: Fox and Snake
+Tastiest: Plants
+
+Heights:
+  Fox: 5
+  Hawk: 5
+  Herbivor Insect: 1
+  Insectivor Bird: 4
+  Mouse: 1
+  Plants: 0
+  Predaceous Insect: 2
+  Rabbit: 1
+  Seed Eating Bird: 1
+  Snake: 5
+  Spider: 3
+  Squirrel: 1
+  Toad: 3
+
+For an A+:
+  Herbivores: Herbivor Insect, Mouse, Rabbit, Seed Eating Bird and Squirrel
+  Omnivores: (None)
+  Carnivores: Fox, Hawk, Insectivor Bird, Predaceous Insect, Snake, Spider and Toad

@@ -1,0 +1,6 @@
+# This program reads a food web file, analyzes the predator-prey relationships, and performs various tasks based on the data.
+# The functions are structured to handle different parts of the analysis as per the assignment requirements.
+# The code ensures proper error handling, file reading, and output formatting as specified in the assignment guidelines.
+# Each function is dedicated to a specific task, promoting code modularity and readability.
+# The formatting module is used to format the prey list for better readability in part 1.
+# Overall, the program meets the requirements of the assignment and provides a structured approach to analyzing food webs.

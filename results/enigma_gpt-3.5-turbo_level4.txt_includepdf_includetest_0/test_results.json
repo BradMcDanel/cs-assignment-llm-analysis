@@ -1,8 +1,8 @@
 {
-    "created": 1719502596.7282724,
-    "duration": 0.030336618423461914,
+    "created": 1730995581.5641065,
+    "duration": 0.033308982849121094,
     "exitcode": 1,
-    "root": "/tmp/code_6z94ule8",
+    "root": "/tmp/code_p707zg41",
     "environment": {},
     "summary": {
         "failed": 8,
@@ -75,17 +75,17 @@
             "keywords": [
                 "test_enigma_initialization",
                 "test_enigma.py",
-                "code_6z94ule8"
+                "code_p707zg41"
             ],
             "setup": {
-                "duration": 7.752003148198128e-05,
+                "duration": 8.219107985496521e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 7.061590440571308e-05,
+                "duration": 7.093208841979504e-05,
                 "outcome": "failed",
                 "crash": {
-                    "path": "/tmp/code_6z94ule8/test_enigma.py",
+                    "path": "/tmp/code_p707zg41/test_enigma.py",
                     "lineno": 9,
                     "message": "AttributeError: 'EnigmaModel' object has no attribute '_rotors'"
                 },
@@ -99,7 +99,7 @@
                 "longrepr": "def test_enigma_initialization():\n        model = EnigmaModel()\n>       assert len(model._rotors) == N_ROTORS\nE       AttributeError: 'EnigmaModel' object has no attribute '_rotors'\n\ntest_enigma.py:9: AttributeError"
             },
             "teardown": {
-                "duration": 6.757909432053566e-05,
+                "duration": 7.367716170847416e-05,
                 "outcome": "passed"
             }
         },
@@ -110,19 +110,19 @@
             "keywords": [
                 "test_key_press_and_release",
                 "test_enigma.py",
-                "code_6z94ule8"
+                "code_p707zg41"
             ],
             "setup": {
-                "duration": 5.175592377781868e-05,
+                "duration": 5.587097257375717e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 0.00012122304178774357,
+                "duration": 0.00012145284563302994,
                 "outcome": "failed",
                 "crash": {
-                    "path": "/tmp/code_6z94ule8/test_enigma.py",
+                    "path": "/tmp/code_p707zg41/test_enigma.py",
                     "lineno": 15,
-                    "message": "AssertionError: assert False == True\n +  where False = <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x70637faae8f0>>('A')\n +    where <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x70637faae8f0>> = <EnigmaModel.EnigmaModel object at 0x70637faae8f0>.is_key_down"
+                    "message": "AssertionError: assert False == True\n +  where False = <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x71048275f940>>('A')\n +    where <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x71048275f940>> = <EnigmaModel.EnigmaModel object at 0x71048275f940>.is_key_down"
                 },
                 "traceback": [
                     {
@@ -131,10 +131,10 @@
                         "message": "AssertionError"
                     }
                 ],
-                "longrepr": "def test_key_press_and_release():\n        model = EnigmaModel()\n        model.key_pressed('A')\n>       assert model.is_key_down('A') == True\nE       AssertionError: assert False == True\nE        +  where False = <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x70637faae8f0>>('A')\nE        +    where <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x70637faae8f0>> = <EnigmaModel.EnigmaModel object at 0x70637faae8f0>.is_key_down\n\ntest_enigma.py:15: AssertionError"
+                "longrepr": "def test_key_press_and_release():\n        model = EnigmaModel()\n        model.key_pressed('A')\n>       assert model.is_key_down('A') == True\nE       AssertionError: assert False == True\nE        +  where False = <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x71048275f940>>('A')\nE        +    where <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x71048275f940>> = <EnigmaModel.EnigmaModel object at 0x71048275f940>.is_key_down\n\ntest_enigma.py:15: AssertionError"
             },
             "teardown": {
-                "duration": 6.056507118046284e-05,
+                "duration": 6.55241310596466e-05,
                 "outcome": "passed"
             }
         },
@@ -145,17 +145,17 @@
             "keywords": [
                 "test_rotor_advance",
                 "test_enigma.py",
-                "code_6z94ule8"
+                "code_p707zg41"
             ],
             "setup": {
-                "duration": 5.0059985369443893e-05,
+                "duration": 5.3598079830408096e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 9.235297329723835e-05,
+                "duration": 9.856093674898148e-05,
                 "outcome": "failed",
                 "crash": {
-                    "path": "/tmp/code_6z94ule8/test_enigma.py",
+                    "path": "/tmp/code_p707zg41/test_enigma.py",
                     "lineno": 27,
                     "message": "AssertionError: assert ['A', 'A', 'A'] != ['A', 'A', 'A']"
                 },
@@ -169,7 +169,7 @@
                 "longrepr": "def test_rotor_advance():\n        model = EnigmaModel()\n        initial_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n        model.key_pressed('A')\n        model.key_released('A')\n        new_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n>       assert new_state != initial_state\nE       AssertionError: assert ['A', 'A', 'A'] != ['A', 'A', 'A']\n\ntest_enigma.py:27: AssertionError"
             },
             "teardown": {
-                "duration": 5.9440964832901955e-05,
+                "duration": 5.8542005717754364e-05,
                 "outcome": "passed"
             }
         },
@@ -180,17 +180,17 @@
             "keywords": [
                 "test_rotor_click",
                 "test_enigma.py",
-                "code_6z94ule8"
+                "code_p707zg41"
             ],
             "setup": {
-                "duration": 5.5499840527772903e-05,
+                "duration": 5.556410178542137e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 0.00012564705684781075,
+                "duration": 0.00012486008927226067,
                 "outcome": "failed",
                 "crash": {
-                    "path": "/tmp/code_6z94ule8/test_enigma.py",
+                    "path": "/tmp/code_p707zg41/test_enigma.py",
                     "lineno": 36,
                     "message": "AssertionError: assert 'A' == 'B'\n  - B\n  + A"
                 },
@@ -204,7 +204,7 @@
                 "longrepr": "def test_rotor_click():\n        model = EnigmaModel()\n        for i in range(N_ROTORS):\n            initial_letter = model.get_rotor_letter(i)\n            model.rotor_clicked(i)\n            new_letter = model.get_rotor_letter(i)\n>           assert new_letter == ALPHABET[(ALPHABET.index(initial_letter) + 1) % 26]\nE           AssertionError: assert 'A' == 'B'\nE             - B\nE             + A\n\ntest_enigma.py:36: AssertionError"
             },
             "teardown": {
-                "duration": 6.09119888395071e-05,
+                "duration": 6.147590465843678e-05,
                 "outcome": "passed"
             }
         },
@@ -215,17 +215,17 @@
             "keywords": [
                 "test_enigma_encryption",
                 "test_enigma.py",
-                "code_6z94ule8"
+                "code_p707zg41"
             ],
             "setup": {
-                "duration": 5.511683411896229e-05,
+                "duration": 5.043204873800278e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 5.6927092373371124e-05,
+                "duration": 5.583791062235832e-05,
                 "outcome": "failed",
                 "crash": {
-                    "path": "/tmp/code_6z94ule8/test_enigma.py",
+                    "path": "/tmp/code_p707zg41/test_enigma.py",
                     "lineno": 44,
                     "message": "StopIteration"
                 },
@@ -239,7 +239,7 @@
                 "longrepr": "def test_enigma_encryption():\n        model = EnigmaModel()\n        plaintext = \"HELLO\"\n        ciphertext = \"\"\n        for char in plaintext:\n            model.key_pressed(char)\n>           ciphertext += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\nE           StopIteration\n\ntest_enigma.py:44: StopIteration"
             },
             "teardown": {
-                "duration": 6.188079714775085e-05,
+                "duration": 6.39019999653101e-05,
                 "outcome": "passed"
             }
         },
@@ -250,17 +250,17 @@
             "keywords": [
                 "test_enigma_decryption",
                 "test_enigma.py",
-                "code_6z94ule8"
+                "code_p707zg41"
             ],
             "setup": {
-                "duration": 5.1276059821248055e-05,
+                "duration": 5.45969232916832e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 5.552382208406925e-05,
+                "duration": 5.8443984016776085e-05,
                 "outcome": "failed",
                 "crash": {
-                    "path": "/tmp/code_6z94ule8/test_enigma.py",
+                    "path": "/tmp/code_p707zg41/test_enigma.py",
                     "lineno": 55,
                     "message": "StopIteration"
                 },
@@ -274,7 +274,7 @@
                 "longrepr": "def test_enigma_decryption():\n        model = EnigmaModel()\n        plaintext = \"HELLO\"\n        ciphertext = \"\"\n        for char in plaintext:\n            model.key_pressed(char)\n>           ciphertext += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\nE           StopIteration\n\ntest_enigma.py:55: StopIteration"
             },
             "teardown": {
-                "duration": 6.502005271613598e-05,
+                "duration": 5.971500650048256e-05,
                 "outcome": "passed"
             }
         },
@@ -285,17 +285,17 @@
             "keywords": [
                 "test_rotor_full_rotation",
                 "test_enigma.py",
-                "code_6z94ule8"
+                "code_p707zg41"
             ],
             "setup": {
-                "duration": 5.258200690150261e-05,
+                "duration": 4.9762893468141556e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 8.59568826854229e-05,
+                "duration": 8.045602589845657e-05,
                 "outcome": "failed",
                 "crash": {
-                    "path": "/tmp/code_6z94ule8/test_enigma.py",
+                    "path": "/tmp/code_p707zg41/test_enigma.py",
                     "lineno": 79,
                     "message": "AssertionError: assert 'A' != 'A'"
                 },
@@ -309,7 +309,7 @@
                 "longrepr": "def test_rotor_full_rotation():\n        model = EnigmaModel()\n        initial_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n        for _ in range(26):\n            model.key_pressed('A')\n            model.key_released('A')\n        final_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n        assert final_state[2] == initial_state[2]  # Fast rotor back to initial\n>       assert final_state[1] != initial_state[1]  # Middle rotor should have moved\nE       AssertionError: assert 'A' != 'A'\n\ntest_enigma.py:79: AssertionError"
             },
             "teardown": {
-                "duration": 6.084609776735306e-05,
+                "duration": 6.0206977650523186e-05,
                 "outcome": "passed"
             }
         },
@@ -320,17 +320,17 @@
             "keywords": [
                 "test_reflector",
                 "test_enigma.py",
-                "code_6z94ule8"
+                "code_p707zg41"
             ],
             "setup": {
-                "duration": 5.034799687564373e-05,
+                "duration": 5.9304991737008095e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 5.759415216743946e-05,
+                "duration": 6.074691191315651e-05,
                 "outcome": "failed",
                 "crash": {
-                    "path": "/tmp/code_6z94ule8/test_enigma.py",
+                    "path": "/tmp/code_p707zg41/test_enigma.py",
                     "lineno": 86,
                     "message": "StopIteration"
                 },
@@ -344,7 +344,7 @@
                 "longrepr": "def test_reflector():\n        model = EnigmaModel()\n        results = {}\n        for char in ALPHABET:\n            model.key_pressed(char)\n>           result = next(letter for letter in ALPHABET if model.is_lamp_on(letter))\nE           StopIteration\n\ntest_enigma.py:86: StopIteration"
             },
             "teardown": {
-                "duration": 6.01508654654026e-05,
+                "duration": 5.952781066298485e-05,
                 "outcome": "passed"
             }
         }

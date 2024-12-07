@@ -1,0 +1,41 @@
+Predators and Prey:
+  Grasshopper eats Terrestrial plants
+  Harvest mouse eats Grasshopper and Terrestrial plants
+  Hawk eats Harvest mouse, Rat, Shrew and Vole
+  Heron eats Shrimp and Smelt
+  Mallard eats Grasshopper, Shrimp and Terrestrial plants
+  Owl eats Mallard, Rat, Sandpiper and Sparrow
+  Rat eats Grasshopper, Sparrow and Terrestrial plants
+  Sandpiper eats Shrimp
+  Shrew eats Grasshopper
+  Shrimp eats Aquatic plants
+  Smelt eats Aquatic plants and Shrimp
+  Sparrow eats Grasshopper and Terrestrial plants
+  Vole eats Grasshopper and Terrestrial plants
+
+Apex Predators: Hawk, Heron and Owl
+Producers: Aquatic plants and Terrestrial plants
+Most Flexible Eaters: Hawk and Owl
+Tastiest: Grasshopper and Terrestrial plants
+
+Heights:
+  Aquatic plants: 0
+  Grasshopper: 1
+  Harvest mouse: 2
+  Hawk: 4
+  Heron: 3
+  Mallard: 2
+  Owl: 4
+  Rat: 3
+  Sandpiper: 2
+  Shrew: 2
+  Shrimp: 1
+  Smelt: 2
+  Sparrow: 2
+  Terrestrial plants: 0
+  Vole: 2
+
+For an A+:
+  Herbivores: Grasshopper and Shrimp
+  Omnivores: Harvest mouse, Mallard, Rat, Smelt, Sparrow and Vole
+  Carnivores: Hawk, Heron, Owl, Sandpiper and Shrew

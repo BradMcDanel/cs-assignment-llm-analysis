@@ -1,0 +1,75 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The dataset provided by the Washington Post includes information about fatal police shootings in the United States. It contains data on the date, location, and circumstances of each shooting, as well as demographic information about the subject involved. The data is derived from news reports, public records, and social media.
+
+Question 2:
+--------------------------------------------------------
+Column: id - This column contains a unique identifier for each fatal police shooting incident. Examples include 3, 4, 5.
+Column: date - This column records the date of the incident. Examples include 2015-01-02, 2015-01-03, 2015-01-04.
+Column: threat_type - This column describes the type of threat perceived. Examples include point, move, attack.
+Column: flee_status - This column indicates whether the subject was fleeing. Examples include not, car, foot.
+Column: armed_with - This column lists the weapon or object the subject was armed with. Examples include gun, knife, unarmed.
+Column: city - This column gives the city where the shooting took place. Examples include Shelton, Aloha, Wichita.
+Column: county - This column lists the county of the incident. Examples include Mason, Washington, Sedgwick.
+Column: state - This column states the state abbreviation where the incident occurred. Examples include WA, OR, KS.
+Column: latitude - This column contains the latitude coordinate of the incident location. Examples include 47.246826, 45.4874214, 37.694766.
+Column: longitude - This column contains the longitude coordinate of the incident location. Examples include -123.121592, -122.8916961, -97.280554.
+Column: location_precision - This column indicates the precision of the location data. Examples include not_available.
+Column: name - This column lists the name of the individual involved. Examples include Tim Elliot, Lewis Lee Lembke, John Paul Quintero.
+Column: age - This column gives the age of the subject at the time of the incident. Examples include 53, 47, 23.
+Column: gender - This column records the gender of the subject. Examples include male, female.
+Column: race - This column denotes the race of the subject. Examples include A (Asian), W (White), H (Hispanic).
+Column: race_source - This column indicates the source of race information. Examples include not_available.
+Column: was_mental_illness_related - This column indicates if the incident involved mental illness. Examples include True, False.
+Column: body_camera - This column states whether a body camera was present. Examples include True, False.
+Column: agency_ids - This column contains identifiers for the agencies involved. Examples include 73, 70, 238.
+
+Question 3:
+--------------------------------------------------------
+According to the United States Census Bureau, approximately 13.4% of the U.S. population is Black or African American. (Source: United States Census Bureau)
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The database stores the following columns from the CSV file: name, date, armed, age, gender, race, and state.
+
+Question 2:
+--------------------------------------------------------
+The keys in the database are the IDs from the CSV file, which are unique identifiers for each shooting incident.
+
+Question 3:
+--------------------------------------------------------
+The values in the database are dictionaries containing the details of each shooting. Each value is a dictionary with keys: name, date, armed, age, gender, race, and state.
+
+Question 4:
+--------------------------------------------------------
+An example value in the database for a specific entry might contain details such as: {"name": "Tim Elliot", "date": "2015-01-02", "armed": "gun", "age": "53", "gender": "male", "race": "A", "state": "WA"}.
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The proportion of Black subjects in fatal police shootings is higher than their representation in the general U.S. population. In the dataset, Black subjects are involved in approximately 23% of the shootings, whereas they make up about 13.4% of the U.S. population.
+
+Question 2:
+--------------------------------------------------------
+When focusing on unarmed fatal police shootings, the proportion of Black subjects is even higher, around 32%. This indicates a significant disparity compared to their representation in the general population and also compared to the proportion of Black subjects in all police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+This project provided insight into the disproportionate representation of Black individuals in fatal police shootings in the United States. The analysis revealed that Black individuals are more frequently involved in these incidents, particularly when unarmed. This exercise also highlighted the importance of using programming skills to analyze real-world data and extract meaningful insights. The process of working with real datasets, cleaning data, and using Python dictionaries to organize and analyze data was a valuable learning experience. It underscores the critical role that data analysis plays in understanding social issues and driving informed discussions on policy and reform.

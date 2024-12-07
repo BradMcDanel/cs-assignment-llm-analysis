@@ -1,0 +1,25 @@
+# Wordle Game Implementation Write-up
+
+## Milestone #1: Pick a random word and display it
+- Randomly select a word from the provided FIVE_LETTER_WORDS list.
+- Utilize the WordleGWindow class to handle the graphical interface.
+
+## Milestone #2: Check if the entered word is valid
+- Implemented a function to verify if the user's input is a valid five-letter word from the dictionary.
+- Displayed an appropriate message if the word is not in the list.
+
+## Milestone #3: Color the boxes
+- Designed the logic to color the squares based on the guess.
+- Managed cases where letters were in the correct position, present in the word but in the wrong position, or not present at all.
+- Handled special cases where letters appear multiple times in the word.
+
+## Milestone #4: Color the keys
+- Updated the keyboard display to reflect the status of each letter based on previous guesses.
+- Ensured the key color does not regress from green to yellow or gray once correctly positioned.
+
+## Challenges
+- Handling repeated letters in both the guess and the target word required careful tracking of letter counts.
+- Ensuring the GUI updates correctly and efficiently after each guess.
+
+## Extensions
+- The framework could be extended to track game history, provide hints, or adjust word difficulty based on user performance.

@@ -1,0 +1,12 @@
+# This project implements the Spelling Bee game inspired by the New York Times puzzle.
+# We followed a structured milestone-based approach to build the solution:
+
+# Milestone 1: We implemented the `puzzle_action` function to validate and update the beehive letters.
+# Milestone 2: We added the `solve_action` function to find and display valid words from the dictionary.
+# Milestone 3: We extended the solution to calculate and display scores for each valid word.
+# Milestone 4: We allowed user interaction by adding a "Word" field where users can input words and check them against the puzzle rules.
+
+# Throughout the project, we maintained an incremental approach to development, ensuring each milestone was tested and working before moving on to the next.
+# We also utilized the SpellingBeeGraphics library to handle graphical display, focusing our efforts on the logic and word validation processes.
+
+# The project illustrates key programming concepts like string processing, file I/O, user interaction, and modular design.

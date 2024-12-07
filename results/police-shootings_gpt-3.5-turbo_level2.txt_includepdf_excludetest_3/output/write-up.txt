@@ -1,0 +1,13 @@
+# Fatal Police Shootings
+
+# Task 1:
+# Answered questions regarding the data source, column information, and the percentage of Black people in the US population.
+
+# Task 2:
+# Provided explanations about the data stored in the database, keys used, type of values, and structure of the values.
+
+# Task 3:
+# Discussed the comparison of black subjects in fatal police shootings to the US population, and specifically for unarmed subjects.
+
+# Task 4:
+# Reflecting on the project, it was an informative experience exploring real-world data and understanding the implications of racial disparities in fatal police shootings. The project underscored the importance of data analysis in shedding light on societal issues.

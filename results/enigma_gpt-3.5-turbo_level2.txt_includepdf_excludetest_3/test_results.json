@@ -1,0 +1,377 @@
+{
+    "created": 1730995393.7624755,
+    "duration": 0.0448610782623291,
+    "exitcode": 1,
+    "root": "/tmp/code_wm4ql2ri",
+    "environment": {},
+    "summary": {
+        "failed": 8,
+        "total": 8,
+        "collected": 8
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py::test_enigma_initialization",
+                    "type": "Function",
+                    "lineno": 6
+                },
+                {
+                    "nodeid": "test_enigma.py::test_key_press_and_release",
+                    "type": "Function",
+                    "lineno": 11
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_advance",
+                    "type": "Function",
+                    "lineno": 20
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_click",
+                    "type": "Function",
+                    "lineno": 29
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_encryption",
+                    "type": "Function",
+                    "lineno": 37
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_decryption",
+                    "type": "Function",
+                    "lineno": 48
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_full_rotation",
+                    "type": "Function",
+                    "lineno": 70
+                },
+                {
+                    "nodeid": "test_enigma.py::test_reflector",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_enigma.py::test_enigma_initialization",
+            "lineno": 6,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_initialization",
+                "test_enigma.py",
+                "code_wm4ql2ri"
+            ],
+            "setup": {
+                "duration": 8.514593355357647e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00019318400882184505,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_wm4ql2ri/test_enigma.py",
+                    "lineno": 9,
+                    "message": "assert 0 == 3\n +  where 0 = len([])\n +    where [] = <EnigmaModel.EnigmaModel object at 0x7f30c0362ad0>._rotors"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 9,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_enigma_initialization():\n        model = EnigmaModel()\n>       assert len(model._rotors) == N_ROTORS\nE       assert 0 == 3\nE        +  where 0 = len([])\nE        +    where [] = <EnigmaModel.EnigmaModel object at 0x7f30c0362ad0>._rotors\n\ntest_enigma.py:9: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.0001001360360532999,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_key_press_and_release",
+            "lineno": 11,
+            "outcome": "failed",
+            "keywords": [
+                "test_key_press_and_release",
+                "test_enigma.py",
+                "code_wm4ql2ri"
+            ],
+            "setup": {
+                "duration": 6.097601726651192e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00013130810111761093,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_wm4ql2ri/test_enigma.py",
+                    "lineno": 15,
+                    "message": "AssertionError: assert False == True\n +  where False = <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x7f30c0bc0190>>('A')\n +    where <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x7f30c0bc0190>> = <EnigmaModel.EnigmaModel object at 0x7f30c0bc0190>.is_key_down"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 15,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_key_press_and_release():\n        model = EnigmaModel()\n        model.key_pressed('A')\n>       assert model.is_key_down('A') == True\nE       AssertionError: assert False == True\nE        +  where False = <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x7f30c0bc0190>>('A')\nE        +    where <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x7f30c0bc0190>> = <EnigmaModel.EnigmaModel object at 0x7f30c0bc0190>.is_key_down\n\ntest_enigma.py:15: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.132014095783234e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_advance",
+            "lineno": 20,
+            "outcome": "failed",
+            "keywords": [
+                "test_rotor_advance",
+                "test_enigma.py",
+                "code_wm4ql2ri"
+            ],
+            "setup": {
+                "duration": 5.125114694237709e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.074807606637478e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_wm4ql2ri/EnigmaModel.py",
+                    "lineno": 36,
+                    "message": "IndexError: list index out of range"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 23,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 23,
+                        "message": "in <listcomp>"
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 36,
+                        "message": "IndexError"
+                    }
+                ],
+                "longrepr": "def test_rotor_advance():\n        model = EnigmaModel()\n>       initial_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n\ntest_enigma.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntest_enigma.py:23: in <listcomp>\n    initial_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7f30c04ef2e0>, index = 0\n\n    def get_rotor_letter(self, index):\n>       rotor = self._rotors[index]\nE       IndexError: list index out of range\n\nEnigmaModel.py:36: IndexError"
+            },
+            "teardown": {
+                "duration": 0.00010004499927163124,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_click",
+            "lineno": 29,
+            "outcome": "failed",
+            "keywords": [
+                "test_rotor_click",
+                "test_enigma.py",
+                "code_wm4ql2ri"
+            ],
+            "setup": {
+                "duration": 5.411379970610142e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.88179100304842e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_wm4ql2ri/EnigmaModel.py",
+                    "lineno": 36,
+                    "message": "IndexError: list index out of range"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 33,
+                        "message": ""
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 36,
+                        "message": "IndexError"
+                    }
+                ],
+                "longrepr": "def test_rotor_click():\n        model = EnigmaModel()\n        for i in range(N_ROTORS):\n>           initial_letter = model.get_rotor_letter(i)\n\ntest_enigma.py:33: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7f30c04e1420>, index = 0\n\n    def get_rotor_letter(self, index):\n>       rotor = self._rotors[index]\nE       IndexError: list index out of range\n\nEnigmaModel.py:36: IndexError"
+            },
+            "teardown": {
+                "duration": 6.47478736937046e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_encryption",
+            "lineno": 37,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_encryption",
+                "test_enigma.py",
+                "code_wm4ql2ri"
+            ],
+            "setup": {
+                "duration": 6.59269280731678e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.965190939605236e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_wm4ql2ri/test_enigma.py",
+                    "lineno": 44,
+                    "message": "StopIteration"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 44,
+                        "message": "StopIteration"
+                    }
+                ],
+                "longrepr": "def test_enigma_encryption():\n        model = EnigmaModel()\n        plaintext = \"HELLO\"\n        ciphertext = \"\"\n        for char in plaintext:\n            model.key_pressed(char)\n>           ciphertext += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\nE           StopIteration\n\ntest_enigma.py:44: StopIteration"
+            },
+            "teardown": {
+                "duration": 6.344402208924294e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_decryption",
+            "lineno": 48,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_decryption",
+                "test_enigma.py",
+                "code_wm4ql2ri"
+            ],
+            "setup": {
+                "duration": 5.333591252565384e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.119604222476482e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_wm4ql2ri/test_enigma.py",
+                    "lineno": 55,
+                    "message": "StopIteration"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 55,
+                        "message": "StopIteration"
+                    }
+                ],
+                "longrepr": "def test_enigma_decryption():\n        model = EnigmaModel()\n        plaintext = \"HELLO\"\n        ciphertext = \"\"\n        for char in plaintext:\n            model.key_pressed(char)\n>           ciphertext += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\nE           StopIteration\n\ntest_enigma.py:55: StopIteration"
+            },
+            "teardown": {
+                "duration": 7.03129917383194e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_full_rotation",
+            "lineno": 70,
+            "outcome": "failed",
+            "keywords": [
+                "test_rotor_full_rotation",
+                "test_enigma.py",
+                "code_wm4ql2ri"
+            ],
+            "setup": {
+                "duration": 5.145510658621788e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.6992052122950554e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_wm4ql2ri/EnigmaModel.py",
+                    "lineno": 36,
+                    "message": "IndexError: list index out of range"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 73,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 73,
+                        "message": "in <listcomp>"
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 36,
+                        "message": "IndexError"
+                    }
+                ],
+                "longrepr": "def test_rotor_full_rotation():\n        model = EnigmaModel()\n>       initial_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n\ntest_enigma.py:73: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntest_enigma.py:73: in <listcomp>\n    initial_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7f30c0bc0940>, index = 0\n\n    def get_rotor_letter(self, index):\n>       rotor = self._rotors[index]\nE       IndexError: list index out of range\n\nEnigmaModel.py:36: IndexError"
+            },
+            "teardown": {
+                "duration": 6.178999319672585e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_reflector",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_reflector",
+                "test_enigma.py",
+                "code_wm4ql2ri"
+            ],
+            "setup": {
+                "duration": 5.0402944907546043e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.825492553412914e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_wm4ql2ri/test_enigma.py",
+                    "lineno": 86,
+                    "message": "StopIteration"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 86,
+                        "message": "StopIteration"
+                    }
+                ],
+                "longrepr": "def test_reflector():\n        model = EnigmaModel()\n        results = {}\n        for char in ALPHABET:\n            model.key_pressed(char)\n>           result = next(letter for letter in ALPHABET if model.is_lamp_on(letter))\nE           StopIteration\n\ntest_enigma.py:86: StopIteration"
+            },
+            "teardown": {
+                "duration": 5.964585579931736e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

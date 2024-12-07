@@ -1,0 +1,7 @@
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+This project provided a valuable insight into the use of Python dictionaries for real-world data analysis. Working with the data on fatal police shootings highlighted the importance of data structure understanding before analysis. It was enlightening to see how racial representation in shootings compared to the general population, though it was sobering to confront the implications of the findings. The process of iterating over datasets and constructing new data structures helped solidify my understanding of Python’s capabilities in handling complex data. Overall, this project emphasized the role of data as a powerful tool in revealing societal issues.

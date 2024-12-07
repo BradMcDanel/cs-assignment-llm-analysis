@@ -1,0 +1,18 @@
+# Spelling Bee Implementation Write-Up
+
+The Spelling Bee assignment was implemented with a focus on step-by-step milestone completion. Below is a summary of each milestone:
+
+## Milestone #1: Initialize the beehive with the letters in the puzzle field
+In this milestone, we implemented a function to validate the input puzzle string ensuring it has exactly seven unique alphabetic characters. If valid, the beehive is initialized with these letters using the `set_beehive_letters` method.
+
+## Milestone #2: Display the legal words in the SpellingBee puzzle
+The logic to find and display valid words from the dictionary was implemented. A word is considered valid if it is at least 4 letters long, contains only the beehive letters, and includes the center letter. We iterate through the dictionary and utilize the `add_word` method to display each valid word.
+
+## Milestone #3: Add scores to the display
+This milestone introduced scoring for each valid word. Words score based on their length, with a bonus for pangrams. The total score and word count are displayed at the end using the `show_message` method.
+
+## Milestone #4: Let the user try to find the words
+A new interactive feature was added allowing users to input words and check if they are valid. Valid words are added to the word list with their scores, and feedback is given for invalid attempts. The solution retains the ability to solve the puzzle programmatically.
+
+## Additional Thoughts
+The assignment highlights the importance of breaking down a problem into manageable tasks. It also showcases the use of callback functions for interactivity and the importance of refactoring as additional features are integrated.

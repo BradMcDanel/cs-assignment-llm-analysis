@@ -1,0 +1,92 @@
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The data includes information on fatal police shootings in the United States, compiled by the Washington Post. 
+It contains details such as the date of the incident, the name of the individual shot, their age, gender, and race, 
+as well as the circumstances of the shooting. The data is sourced from news reports, public records, social media, and other sources.
+
+Question 2:
+--------------------------------------------------------
+Column: id
+- This column represents a unique identifier for each incident.
+- Examples: 22, 325, 140.
+
+Column: date
+- This column records the date on which the shooting incident occurred.
+- Examples: "2015-01-02", "2023-01-11".
+
+Column: threat_type
+- This column describes the type of threat presented when the shooting occurred.
+- Examples: "point", "move", "attack".
+
+Column: flee_status
+- This column indicates whether the individual was fleeing at the time of the shooting.
+- Examples: "not", "car", "foot".
+
+Column: armed_with
+- This column specifies what the individual was armed with, if anything.
+- Examples: "gun", "unarmed", "knife".
+
+Column: city
+- This column lists the city where the shooting took place.
+- Examples: "Shelton", "Aloha", "Wichita".
+
+Column: county
+- This column lists the county where the shooting took place.
+- Examples: "Mason", "Washington", "Sedgwick".
+
+Column: state
+- This column lists the state where the shooting occurred.
+- Examples: "WA", "OR", "KS".
+
+Column: latitude
+- This column provides the latitude coordinate of the shooting location.
+- Examples: 47.246826, 45.4874214.
+
+Column: longitude
+- This column provides the longitude coordinate of the shooting location.
+- Examples: -123.121592, -122.8916961.
+
+Column: location_precision
+- This column indicates the precision of the location data.
+- Examples: "not_available", "intersection".
+
+Column: name
+- This column lists the name of the person shot.
+- Examples: "Tim Elliot", "Lewis Lee Lembke".
+
+Column: age
+- This column records the age of the person shot.
+- Examples: 53, 47, 23.
+
+Column: gender
+- This column indicates the gender of the person shot.
+- Examples: "male", "female".
+
+Column: race
+- This column records the race of the person shot.
+- Examples: "A", "W", "H".
+
+Column: race_source
+- This column provides the source of the race information.
+- Examples: "not_available", "public_record".
+
+Column: was_mental_illness_related
+- This column indicates whether the incident was related to mental illness.
+- Examples: True, False.
+
+Column: body_camera
+- This column shows whether a body camera was present during the incident.
+- Examples: True, False.
+
+Column: agency_ids
+- This column lists the identifiers for the agencies involved.
+- Examples: 73, 70, 238.
+
+Question 3:
+--------------------------------------------------------
+According to the U.S. Census Bureau, as of the most recent data, approximately 13.4% of the United States population identifies as Black or African American.
+Source: https://www.census.gov/quickfacts/fact/table/US/RHI225221

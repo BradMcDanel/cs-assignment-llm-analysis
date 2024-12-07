@@ -1,0 +1,6 @@
+# English dictionary containing common words
+# Each word on a new line
+# Example:
+# word1
+# word2
+# ...

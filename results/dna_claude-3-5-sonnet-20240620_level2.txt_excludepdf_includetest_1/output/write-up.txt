@@ -1,0 +1,19 @@
+This Python program implements a DNA profiling system as specified. Here's a brief explanation of how it works:
+
+1. The program takes two command-line arguments: a CSV file containing STR counts for individuals, and a text file containing a DNA sequence to identify.
+
+2. It reads the CSV file into memory using the csv module, storing each person's data as a dictionary in a list.
+
+3. The STRs to be analyzed are extracted from the CSV header.
+
+4. The DNA sequence is read from the text file.
+
+5. For each STR, the program computes the longest run of consecutive repeats in the DNA sequence using the longest_match function.
+
+6. The program then compares the computed STR counts against each person in the database. If an exact match is found, it prints the person's name and exits.
+
+7. If no match is found after checking all individuals, it prints "No match".
+
+The longest_match function works by iterating through the sequence and counting consecutive matches of the subsequence. It keeps track of the longest run found.
+
+This implementation should correctly identify DNA sequences as per the given examples and handle cases where there is no match in the database.

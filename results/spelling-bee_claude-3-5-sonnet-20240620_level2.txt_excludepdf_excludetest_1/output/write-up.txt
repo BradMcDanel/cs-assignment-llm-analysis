@@ -1,0 +1,37 @@
+This implementation of the Spelling Bee game covers all four milestones:
+
+1. Initialize the beehive with the letters in the puzzle field:
+   - The puzzle_action function checks if the entered puzzle is valid (7 unique letters).
+   - If valid, it sets the beehive letters and shows a success message.
+   - If invalid, it displays an error message.
+
+2. Display the legal words in the SpellingBee puzzle:
+   - The solve_action function finds all valid words for the current puzzle.
+   - It displays the words with their scores and shows the total score.
+
+3. Add scores to the display:
+   - Words are displayed with their individual scores in parentheses.
+   - Pangrams (words using all 7 letters) are displayed in blue.
+   - The total word count and score are shown at the bottom.
+
+4. Let the user try to find the words:
+   - A "Word" field is added for user input.
+   - The word_action function checks if the entered word is valid and not already found.
+   - Valid words are added to the display with their scores.
+   - The total score is updated after each valid word.
+   - Appropriate error messages are shown for invalid words.
+
+The code is structured with helper functions to improve readability and maintainability:
+
+- load_dictionary: Reads the dictionary file into a set for efficient lookups.
+- is_valid_puzzle: Checks if a puzzle string is valid.
+- find_valid_words: Finds all valid words for a given puzzle.
+- is_valid_word: Checks if a word is valid for the current puzzle.
+- calculate_word_score: Calculates the score for a single word.
+- calculate_total_score: Calculates the total score for a list of words.
+- display_words: Displays all words with their scores.
+- display_word: Displays a single word with its score.
+- show_score: Updates the score display.
+- show_error_message: Shows appropriate error messages for invalid words.
+
+This implementation provides a complete and interactive Spelling Bee game experience, allowing users to input puzzles, solve them automatically, or play the game by entering words one at a time.

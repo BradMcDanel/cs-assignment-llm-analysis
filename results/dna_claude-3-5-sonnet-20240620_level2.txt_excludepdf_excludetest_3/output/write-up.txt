@@ -1,0 +1,22 @@
+This program implements a DNA profiling system as specified in the assignment. Here are some key points about the implementation:
+
+1. Data Structures:
+   - The CSV database is stored as a list of dictionaries, where each dictionary represents a person and their STR counts.
+   - The STR counts for the DNA sequence being analyzed are stored in a dictionary for easy comparison.
+
+2. Algorithm:
+   - The program uses a simple but effective algorithm to find the longest run of each STR in the sequence.
+   - It iterates through the sequence, checking for consecutive matches of the STR and keeping track of the longest run found.
+
+3. Efficiency:
+   - The program reads the entire DNA sequence into memory, which might be inefficient for very large sequences. For real-world applications with longer sequences, a streaming approach might be more appropriate.
+   - The longest_match function has a time complexity of O(nm) where n is the length of the sequence and m is the length of the subsequence (STR). This could potentially be optimized using more advanced string matching algorithms for very large datasets.
+
+4. Robustness:
+   - The program handles command-line arguments and file operations with basic error checking.
+   - It assumes the CSV file is correctly formatted with 'name' as the first column.
+
+5. Extensibility:
+   - The program is designed to work with any number of STRs, as long as they are specified in the CSV file header.
+
+Overall, this implementation provides a solid solution to the DNA profiling problem as specified, balancing simplicity and functionality.

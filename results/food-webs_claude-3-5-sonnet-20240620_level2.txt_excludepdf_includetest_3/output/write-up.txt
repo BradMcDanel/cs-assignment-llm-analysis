@@ -1,0 +1,19 @@
+This implementation follows the requirements outlined in the assignment:
+
+1. It reads the food web file name from command line arguments or prompts the user if not provided.
+2. It performs error checking for file existence and number of command line arguments.
+3. The predator-prey relationships are stored in a dictionary as required.
+4. The file is only read once.
+5. Files are properly closed using a with statement.
+6. The code is divided into appropriate functions for each part of the assignment.
+7. There are no global variables used (except for imports and the main function call).
+8. The code follows good programming style with appropriate variable names, comments, and function descriptions.
+9. No break or continue statements are used.
+
+The main data structure used is a dictionary where keys are predator names and values are lists of prey. This allows for efficient lookup and storage of the food web relationships.
+
+For calculating heights, an iterative approach is used instead of recursion, following the algorithm provided in the assignment.
+
+The format_list function from the provided module is used for formatting output lists.
+
+This implementation should correctly handle the sample AquaticFoodWeb.txt file and produce the expected output for all parts of the assignment.

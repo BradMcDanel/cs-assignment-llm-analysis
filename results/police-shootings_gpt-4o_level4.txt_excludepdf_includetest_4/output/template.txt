@@ -1,0 +1,44 @@
+Task 1:
+Question 1:
+The dataset compiled by the Washington Post includes data on fatal police shootings in the USA. It contains information such as the ID of the incident, name, date, manner of death, whether the individual was armed, age, gender, race, the city and state where the shooting occurred, signs of mental illness, threat level, and whether the individual attempted to flee. The data is sourced from news reports, public records, and social media.
+
+Question 2:
+- id: Unique identifier for each shooting. Examples: 22, 325, 140.
+- name: Name of the individual shot. Examples: John Doe, Jane Smith.
+- date: Date of the shooting. Examples: 2021-01-01, 2022-05-15.
+- manner_of_death: How the death occurred. Examples: shot, shot and Tasered.
+- armed: Whether the individual was armed. Examples: gun, knife, unarmed.
+- age: Age of the individual. Examples: 34, 19, 50.
+- gender: Gender of the individual. Examples: M, F.
+- race: Race of the individual. Examples: W (White), B (Black), A (Asian).
+- city: City where the shooting occurred. Examples: Los Angeles, Minneapolis.
+- state: State where the shooting occurred. Examples: CA, MN.
+- signs_of_mental_illness: Whether there were signs of mental illness. Examples: True, False.
+- threat_level: The perceived threat level. Examples: attack, other.
+- flee: Whether the individual attempted to flee. Examples: Foot, Car, Not fleeing.
+
+Question 3:
+According to the U.S. Census Bureau, about 13.4% of the U.S. population is Black. [Citation: U.S. Census Bureau]
+
+Task 2:
+Question 1:
+The 'database' dictionary stores all the information from the CSV file.
+
+Question 2:
+The keys in the 'database' dictionary are the 'id' values from the CSV file.
+
+Question 3:
+The type of the values in 'database' is 'dict'.
+
+Question 4:
+Each value in 'database' is a dictionary containing the shooting details, such as name, date, manner_of_death, armed status, etc.
+
+Task 3:
+Question 1:
+The proportion of Black subjects in fatal police shootings is significantly higher than their representation in the general U.S. population, which is 13.4%.
+
+Question 2:
+The proportion of unarmed Black subjects in fatal police shootings is also higher than their representation in the general U.S. population and similar to the overall statistic for all police shootings.
+
+Task 4:
+In this project, I learned how to handle real-world data using Python dictionaries. The analysis revealed alarming statistics on racial disparities in fatal police shootings, particularly for Black individuals. This exercise reinforced the importance of data analysis in understanding societal issues. The process of building dictionaries and extracting meaningful insights from data was both challenging and enlightening. This project underscored the value of programming skills in addressing critical social questions.

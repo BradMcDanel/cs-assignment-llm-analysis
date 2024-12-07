@@ -1,0 +1,33 @@
+Task 1:
+Question 1: The data includes information about fatal police shootings in the United States, compiled by the Washington Post. It contains details such as the ID, name, date, manner of death, whether the subject was armed, age, gender, race, city, state, signs of mental illness, threat level, and whether the subject was fleeing. The source of the data is publicly available on GitHub and updated regularly.
+
+Question 2:
+- Column 'id': Unique identifier for each incident. Examples: 22, 325, 140.
+- Column 'name': Name of the subject involved in the shooting. Examples: "John Smith", "Jane Doe".
+- Column 'date': Date of the incident. Examples: "2015-01-02", "2016-05-23".
+- Column 'manner_of_death': Manner in which the death occurred. Examples: "shot", "shot and Tasered".
+- Column 'armed': Whether the subject was armed or not. Examples: "gun", "unarmed".
+- Column 'age': Age of the subject. Examples: "34", "45".
+- Column 'gender': Gender of the subject. Examples: "M", "F".
+- Column 'race': Race of the subject. Examples: "B", "W".
+- Column 'city': City where the incident occurred. Examples: "Chicago", "Los Angeles".
+- Column 'state': State where the incident occurred. Examples: "IL", "CA".
+- Column 'signs_of_mental_illness': Whether the subject showed signs of mental illness. Examples: "True", "False".
+- Column 'threat_level': Threat level perceived. Examples: "attack", "other".
+- Column 'flee': Whether the subject was fleeing. Examples: "Not fleeing", "Foot".
+
+Question 3: According to recent data, approximately 13.4% of the United States population is black. [Source: United States Census Bureau]
+
+Task 2:
+Question 1: Information stored includes 'id', 'name', 'date', 'manner_of_death', 'armed', 'age', 'gender', 'race', 'city', 'state', 'signs_of_mental_illness', 'threat_level', 'flee'.
+Question 2: The keys used in the dictionary are the 'id' values from the CSV file.
+Question 3: The type of the values in the dictionary is 'dict'.
+Question 4: A specific example of a value stored could be: {'id': '22', 'name': 'John Smith', ...}.
+
+Task 3:
+Question 1: The proportion of black subjects in fatal police shootings is significantly higher than their representation in the general US population, which is 13.4%.
+
+Question 2: The proportion of black subjects in fatal police shootings where the subject is unarmed is also disproportionately high compared to their representation in the general population and compared to all police shootings.
+
+Task 4:
+Reflection: Working on this project provided me with a deeper understanding of the racial disparities in fatal police shootings in the United States. The data analysis showed a concerning trend of disproportionate representation of black individuals as subjects in these incidents. Moreover, the fact that a significant portion of unarmed subjects who were fatally shot are also black highlights systemic issues. The process of analyzing real-world data using Python was enlightening and underscored the importance of data literacy in addressing social justice issues.

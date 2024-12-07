@@ -1,0 +1,20 @@
+' Input for sankeymatic.com
+' CPSC Courses
+CS [3] First Year
+CS [6] Second Year
+CS [7] Third Year
+CS [3] Fourth Year
+First Year [6] Specific Course
+Second Year [5] Specific Course
+Second Year [3] Flexible
+Third Year [3] Specific Course
+Third Year [4] Flexible
+Fourth Year [3] Flexible
+Software Engineering [1] Second Year
+Math [2] First Year
+Philosophy [1] First Year
+Philosophy [1] Second Year
+Non-Science Option [4] Any Year
+Non-CS Option [10] Any Year
+Open Option [2] Any Year
+Any Year [16] Flexible

@@ -1,0 +1,352 @@
+{
+    "created": 1730995366.5888908,
+    "duration": 0.031119346618652344,
+    "exitcode": 1,
+    "root": "/tmp/code_niknkhj9",
+    "environment": {},
+    "summary": {
+        "failed": 8,
+        "total": 8,
+        "collected": 8
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py::test_enigma_initialization",
+                    "type": "Function",
+                    "lineno": 6
+                },
+                {
+                    "nodeid": "test_enigma.py::test_key_press_and_release",
+                    "type": "Function",
+                    "lineno": 11
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_advance",
+                    "type": "Function",
+                    "lineno": 20
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_click",
+                    "type": "Function",
+                    "lineno": 29
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_encryption",
+                    "type": "Function",
+                    "lineno": 37
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_decryption",
+                    "type": "Function",
+                    "lineno": 48
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_full_rotation",
+                    "type": "Function",
+                    "lineno": 70
+                },
+                {
+                    "nodeid": "test_enigma.py::test_reflector",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_enigma.py::test_enigma_initialization",
+            "lineno": 6,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_initialization",
+                "test_enigma.py",
+                "code_niknkhj9"
+            ],
+            "setup": {
+                "duration": 9.690411388874054e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.016398012638092e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_niknkhj9/test_enigma.py",
+                    "lineno": 9,
+                    "message": "AttributeError: 'EnigmaModel' object has no attribute '_rotors'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 9,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "def test_enigma_initialization():\n        model = EnigmaModel()\n>       assert len(model._rotors) == N_ROTORS\nE       AttributeError: 'EnigmaModel' object has no attribute '_rotors'\n\ntest_enigma.py:9: AttributeError"
+            },
+            "teardown": {
+                "duration": 8.574593812227249e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_key_press_and_release",
+            "lineno": 11,
+            "outcome": "failed",
+            "keywords": [
+                "test_key_press_and_release",
+                "test_enigma.py",
+                "code_niknkhj9"
+            ],
+            "setup": {
+                "duration": 5.739904008805752e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00013275793753564358,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_niknkhj9/test_enigma.py",
+                    "lineno": 15,
+                    "message": "AssertionError: assert False == True\n +  where False = <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x7e714a9b65f0>>('A')\n +    where <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x7e714a9b65f0>> = <EnigmaModel.EnigmaModel object at 0x7e714a9b65f0>.is_key_down"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 15,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_key_press_and_release():\n        model = EnigmaModel()\n        model.key_pressed('A')\n>       assert model.is_key_down('A') == True\nE       AssertionError: assert False == True\nE        +  where False = <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x7e714a9b65f0>>('A')\nE        +    where <bound method EnigmaModel.is_key_down of <EnigmaModel.EnigmaModel object at 0x7e714a9b65f0>> = <EnigmaModel.EnigmaModel object at 0x7e714a9b65f0>.is_key_down\n\ntest_enigma.py:15: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.386404857039452e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_advance",
+            "lineno": 20,
+            "outcome": "failed",
+            "keywords": [
+                "test_rotor_advance",
+                "test_enigma.py",
+                "code_niknkhj9"
+            ],
+            "setup": {
+                "duration": 5.639204755425453e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.674206376075745e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_niknkhj9/test_enigma.py",
+                    "lineno": 27,
+                    "message": "AssertionError: assert ['A', 'A', 'A'] != ['A', 'A', 'A']"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 27,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_rotor_advance():\n        model = EnigmaModel()\n        initial_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n        model.key_pressed('A')\n        model.key_released('A')\n        new_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n>       assert new_state != initial_state\nE       AssertionError: assert ['A', 'A', 'A'] != ['A', 'A', 'A']\n\ntest_enigma.py:27: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.043212488293648e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_click",
+            "lineno": 29,
+            "outcome": "failed",
+            "keywords": [
+                "test_rotor_click",
+                "test_enigma.py",
+                "code_niknkhj9"
+            ],
+            "setup": {
+                "duration": 5.2134040743112564e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0001320738811045885,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_niknkhj9/test_enigma.py",
+                    "lineno": 36,
+                    "message": "AssertionError: assert 'A' == 'B'\n  - B\n  + A"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 36,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_rotor_click():\n        model = EnigmaModel()\n        for i in range(N_ROTORS):\n            initial_letter = model.get_rotor_letter(i)\n            model.rotor_clicked(i)\n            new_letter = model.get_rotor_letter(i)\n>           assert new_letter == ALPHABET[(ALPHABET.index(initial_letter) + 1) % 26]\nE           AssertionError: assert 'A' == 'B'\nE             - B\nE             + A\n\ntest_enigma.py:36: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.304914131760597e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_encryption",
+            "lineno": 37,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_encryption",
+                "test_enigma.py",
+                "code_niknkhj9"
+            ],
+            "setup": {
+                "duration": 5.246791988611221e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.221607327461243e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_niknkhj9/test_enigma.py",
+                    "lineno": 44,
+                    "message": "StopIteration"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 44,
+                        "message": "StopIteration"
+                    }
+                ],
+                "longrepr": "def test_enigma_encryption():\n        model = EnigmaModel()\n        plaintext = \"HELLO\"\n        ciphertext = \"\"\n        for char in plaintext:\n            model.key_pressed(char)\n>           ciphertext += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\nE           StopIteration\n\ntest_enigma.py:44: StopIteration"
+            },
+            "teardown": {
+                "duration": 6.0644932091236115e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_decryption",
+            "lineno": 48,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_decryption",
+                "test_enigma.py",
+                "code_niknkhj9"
+            ],
+            "setup": {
+                "duration": 5.453103221952915e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.071990355849266e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_niknkhj9/test_enigma.py",
+                    "lineno": 55,
+                    "message": "StopIteration"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 55,
+                        "message": "StopIteration"
+                    }
+                ],
+                "longrepr": "def test_enigma_decryption():\n        model = EnigmaModel()\n        plaintext = \"HELLO\"\n        ciphertext = \"\"\n        for char in plaintext:\n            model.key_pressed(char)\n>           ciphertext += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\nE           StopIteration\n\ntest_enigma.py:55: StopIteration"
+            },
+            "teardown": {
+                "duration": 6.084796041250229e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_full_rotation",
+            "lineno": 70,
+            "outcome": "failed",
+            "keywords": [
+                "test_rotor_full_rotation",
+                "test_enigma.py",
+                "code_niknkhj9"
+            ],
+            "setup": {
+                "duration": 5.2061863243579865e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 8.771498687565327e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_niknkhj9/test_enigma.py",
+                    "lineno": 79,
+                    "message": "AssertionError: assert 'A' != 'A'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 79,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_rotor_full_rotation():\n        model = EnigmaModel()\n        initial_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n        for _ in range(26):\n            model.key_pressed('A')\n            model.key_released('A')\n        final_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n        assert final_state[2] == initial_state[2]  # Fast rotor back to initial\n>       assert final_state[1] != initial_state[1]  # Middle rotor should have moved\nE       AssertionError: assert 'A' != 'A'\n\ntest_enigma.py:79: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.169592961668968e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_reflector",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_reflector",
+                "test_enigma.py",
+                "code_niknkhj9"
+            ],
+            "setup": {
+                "duration": 5.3551048040390015e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.074691191315651e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_niknkhj9/test_enigma.py",
+                    "lineno": 86,
+                    "message": "StopIteration"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 86,
+                        "message": "StopIteration"
+                    }
+                ],
+                "longrepr": "def test_reflector():\n        model = EnigmaModel()\n        results = {}\n        for char in ALPHABET:\n            model.key_pressed(char)\n>           result = next(letter for letter in ALPHABET if model.is_lamp_on(letter))\nE           StopIteration\n\ntest_enigma.py:86: StopIteration"
+            },
+            "teardown": {
+                "duration": 5.8606965467333794e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

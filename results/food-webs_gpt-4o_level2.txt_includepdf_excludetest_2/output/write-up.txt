@@ -1,0 +1,21 @@
+# This assignment implements a food web analyzer that reads a CSV file containing predator-prey relationships and processes this data to extract various insights. The insights include:
+# 1. Displaying predators and their prey.
+# 2. Identifying apex predators.
+# 3. Identifying producers.
+# 4. Identifying the most flexible eaters.
+# 5. Identifying the tastiest organisms.
+# 6. Calculating the height of each organism in the food web.
+
+# The solution follows a structured approach:
+# - The main script reads the file name from the command line or prompts the user.
+# - It loads the food web data into a dictionary.
+# - Functions are used to perform each part of the analysis, ensuring modularity and reusability.
+# - The `formatList` function is used to format the output nicely.
+
+# Key points:
+# - The script handles errors such as file not found.
+# - The use of sorting ensures consistent output order.
+# - The height calculation follows an iterative approach to avoid recursion.
+# - The solution is tested with different food web files to ensure correctness.
+
+# The code adheres to good programming practices, including appropriate variable naming, comments, and function definitions.

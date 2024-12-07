@@ -1,0 +1,7 @@
+For Milestone 1, the code checks if the entered puzzle is legal, containing exactly 7 unique alphabetic characters.
+
+For Milestone 2, the code reads from the dictionary file, iterates through words, and adds valid words to the word list.
+
+For Milestone 3, the code calculates scores for each word based on the game rules and displays the total score at the end.
+
+For Milestone 4, the code allows the user to enter words, validates them against the puzzle, and adds them to the word list.

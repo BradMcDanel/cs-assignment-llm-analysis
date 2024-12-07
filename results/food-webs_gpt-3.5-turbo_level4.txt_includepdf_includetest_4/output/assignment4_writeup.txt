@@ -1,0 +1,1 @@
+In this assignment, I implemented a program to analyze food webs by identifying predators, apex predators, producers, most flexible eaters, tastiest organisms, and determining the height of each organism in the food web. The program reads data from a CSV file, processes the relationships between predators and prey, and outputs various analyses based on the information provided.

@@ -1,0 +1,6 @@
+# This project demonstrates a real-world application of computational biology in DNA profiling.
+# The program reads a DNA database and a DNA sequence, computes the STR counts, and identifies
+# the individual that matches these counts. The use of Python's csv module simplifies file I/O,
+# and string manipulation is central to determining the longest run of STRs in a sequence.
+# This assignment highlights the intersection of algorithmic thinking and practical programming
+# skills, making it ideal for students interested in both computer science and biological sciences.

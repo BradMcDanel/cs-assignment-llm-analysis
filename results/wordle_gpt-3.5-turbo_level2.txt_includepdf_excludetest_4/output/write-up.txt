@@ -1,0 +1,2 @@
+# Write-up for the milestones completed in the Wordle game implementation.
+# Include explanations of each milestone, the code logic, and any observations or challenges faced.

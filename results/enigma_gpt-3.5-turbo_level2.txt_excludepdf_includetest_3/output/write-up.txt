@@ -1,0 +1,5 @@
+# I have implemented the EnigmaRotor class to maintain the state of the rotors, including the permutation and offset.
+# In the EnigmaModel class, I have initialized the rotors using the ROTOR_PERMUTATIONS provided in EnigmaConstants.py.
+# I have updated the key_pressed method to advance the rotors and carry to the next rotor when needed.
+# The rotor_clicked method advances the specified rotor.
+# The get_rotor_letter method determines the letter in the rotor window based on the current offset.

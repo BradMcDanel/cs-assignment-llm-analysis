@@ -1,0 +1,79 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The dataset includes information on fatal police shootings in the United States, compiled by The Washington Post. 
+The data contains various details like the date, location, and demographics of the individuals involved. 
+It also notes whether the subject was armed and other relevant circumstances surrounding the incident.
+
+Question 2:
+--------------------------------------------------------
+Column: id
+Description: Unique identifier for each shooting incident.
+Examples: 3, 4, 5
+
+Column: date
+Description: The date when the shooting occurred.
+Examples: 2015-01-02, 2015-01-03
+
+Column: threat_type
+Description: Indicates the type of threat perceived in the incident.
+Examples: point, move, attack
+
+[... continue with other columns ...]
+
+Question 3:
+--------------------------------------------------------
+As per the latest census data, approximately 13.4% of the United States population is black.
+(Source: U.S. Census Bureau)
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The columns stored in the database are: "name", "date", "armed", "age", "gender", "race", "state".
+
+Question 2:
+--------------------------------------------------------
+The keys used in the database are the unique "id" numbers from the dataset.
+
+Question 3:
+--------------------------------------------------------
+The values in the database are dictionaries containing information related to each shooting incident.
+
+Question 4:
+--------------------------------------------------------
+For a given entry, the value stores information like the subject's name, the date of the incident, 
+whether the subject was armed, age, gender, race, and state of occurrence.
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The proportion of black subjects in fatal police shootings is significantly higher than their representation 
+in the general U.S. population, indicating a disproportionate impact on this demographic.
+
+Question 2:
+--------------------------------------------------------
+The proportion of black subjects in unarmed fatal police shootings is also higher compared to their 
+representation in the U.S. population and is slightly higher than in all police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+This project highlighted the importance and power of data analysis in understanding social issues. 
+By working with real-world data, I learned how to use Python to organize and analyze datasets effectively. 
+The disparity revealed by the data analysis was striking and underscored the need for addressing these issues. 
+Additionally, it provided insight into how data can be structured and queried using dictionaries in Python. 
+Overall, it emphasized the significant role of data science in societal awareness and reform.

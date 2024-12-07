@@ -1,0 +1,27 @@
+# Enigma Machine Simulation Write-up
+
+**Milestone #1: Activate the keyboard**
+- Implemented a dictionary to store key states.
+- Completed `key_pressed`, `key_released`, and `is_key_down` methods to update and check key states.
+
+**Milestone #2: Connect the keys directly to the lamps**
+- Added a dictionary to store lamp states.
+- Updated `key_pressed` and `key_released` methods to also update lamp states corresponding to the pressed keys.
+
+**Milestone #3: Design and implement the rotor data structure**
+- Defined `EnigmaRotor` class with methods to manage rotor state and permutation.
+- Updated `EnigmaModel` to initialize rotors and handle rotor clicks.
+
+**Milestone #4: Implement one stage in the encryption**
+- Implemented `apply_permutation` function to apply rotor permutation with offsets.
+- Updated `key_pressed` and `key_released` methods to use the permutation for encryption.
+
+**Milestone #5: Implement the full encryption path**
+- Implemented full encryption path including reflector and reverse path through rotors.
+- Added `invert_permutation` method to `EnigmaRotor` to get inverse permutation for reverse path.
+
+**Milestone #6: Implement the rotor advance on pressing a key**
+- Updated `key_pressed` method to advance rotors before performing encryption.
+- Implemented carry mechanism for rotor advancements.
+
+The Enigma simulator now responds to key presses, advances rotors, and performs encryption/decryption according to the Enigma machine's mechanics.

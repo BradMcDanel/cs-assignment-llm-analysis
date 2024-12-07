@@ -1,0 +1,24 @@
+# Wordle Game Implementation
+
+## Overview
+This implementation of the Wordle game allows players to guess a randomly selected five-letter word in six attempts. Each guess provides feedback by coloring the letter boxes, indicating whether the letters are correct and in the right position, present but mispositioned, or absent from the word.
+
+## Implementation Details
+
+### Milestone 1: Display Random Word
+- A random word is selected from the predefined list of five-letter words when the game starts.
+
+### Milestone 2: Validate Guesses
+- The `enter_action` function checks if the guessed word is valid (exists in the word list). If not, a "Not in word list" message is displayed.
+
+### Milestone 3: Color the Boxes
+- The program colors the boxes based on the correctness of each letter in the guess. It uses two passes: the first pass identifies correct positions, and the second pass identifies correct letters in incorrect positions.
+
+### Milestone 4: Color the Keys
+- The virtual keyboard's keys are colored to reflect the player's progress. Correctly guessed letters turn green, present letters turn yellow, and missing letters become gray.
+
+## Game Over Conditions
+- The game ends after six incorrect guesses, displaying the correct word. A successful guess congratulates the player.
+
+## Extensions
+- The game could be extended with additional features, such as better word balancing, enhanced victory animations, or a hint system.

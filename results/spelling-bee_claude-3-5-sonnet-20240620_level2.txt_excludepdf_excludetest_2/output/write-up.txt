@@ -1,0 +1,28 @@
+This implementation of the Spelling Bee game covers all four milestones:
+
+1. Initialize the beehive with the letters in the puzzle field:
+   - The puzzle_action function checks if the input is valid (7 unique letters) and sets the beehive letters if so.
+
+2. Display the legal words in the SpellingBee puzzle:
+   - The solve_action function finds all valid words in the dictionary and displays them with their scores.
+
+3. Add scores to the display:
+   - Words are displayed with their scores in parentheses.
+   - Pangrams are shown in blue.
+   - The total word count and score are displayed at the bottom.
+
+4. Let the user try to find the words:
+   - A "Word" field is added for user input.
+   - The word_action function checks if the entered word is valid and updates the display accordingly.
+   - The user's score is tracked and updated with each valid word.
+
+Key features:
+- Modular design with separate functions for each major task (e.g., loading dictionary, checking word validity, calculating scores).
+- Efficient use of data structures (set for dictionary and found words for quick lookups).
+- Clear error messages for invalid inputs.
+- Proper integration with the provided SpellingBeeGraphics class.
+
+Possible improvements:
+- Implement puzzle generation as suggested in the extensions.
+- Add a shuffle button to rearrange the outer hexagon letters.
+- Optimize performance for very large dictionaries if needed.

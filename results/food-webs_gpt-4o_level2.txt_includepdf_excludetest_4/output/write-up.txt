@@ -1,0 +1,14 @@
+# Write-up for the Food Web Analyzer
+This Python program reads predator-prey relationships from a CSV file and analyzes the food web. The tasks include identifying:
+- Predators and their prey with formatted output.
+- Apex predators, which are not eaten by any other organisms.
+- Producers, which do not eat any other species.
+- The most flexible eaters, or those that eat the most different organisms.
+- The tastiest organisms, or those eaten by the most different predators.
+- The height of each organism in the food web, defined as the longest path to a producer.
+
+The program reads the data file name from the command line, performs error checking, and outputs results according to the specified format.
+
+The code is modular, with separate functions for each part of the analysis, ensuring clarity and reusability. The `formatList` function is used to format the output neatly.
+
+To test the program, run it with different data files as input. Ensure that the data file is present in the working directory.

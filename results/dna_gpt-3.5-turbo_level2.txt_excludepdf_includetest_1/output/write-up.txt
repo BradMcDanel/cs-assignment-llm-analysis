@@ -1,0 +1,10 @@
+This program takes a CSV file representing a DNA database and a text file representing a DNA sequence as input. It then identifies to whom the DNA sequence belongs by computing the longest run of each Short Tandem Repeat (STR) in the DNA sequence and comparing it with the individuals in the database.
+
+The program reads the CSV file and DNA sequence file provided as command-line arguments. It calculates the longest consecutive repeats of each STR in the DNA sequence. Then, it compares these counts with the STR counts of each individual in the CSV file to determine the best match.
+
+If a match is found, the program outputs the name of the individual. If no match is found, it prints "No match".
+
+The program makes use of Python's csv module for reading CSV files and utilizes string manipulation to compute the longest runs of STRs in the DNA sequence.
+
+To run the program, execute it with the command:
+$ python profile.py data.csv sequence.txt

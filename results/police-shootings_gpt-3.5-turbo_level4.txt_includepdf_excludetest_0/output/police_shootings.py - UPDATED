@@ -1,0 +1,29 @@
+data_file = open("fatal-police-shootings-data.csv", 'r')
+data_lines = data_file.readlines()
+
+database = {}
+for row in range(1, len(data_lines)):
+    line = data_lines[row]
+    entries = line.split(',')
+    db_entry = {}
+    db_entry["id"] = int(entries[0])
+    db_entry["date"] = entries[1]
+    db_entry["threat_type"] = entries[2]
+    db_entry["flee_status"] = entries[3]
+    db_entry["armed_with"] = entries[4]
+    db_entry["city"] = entries[5]
+    db_entry["county"] = entries[6]
+    db_entry["state"] = entries[7]
+    db_entry["latitude"] = float(entries[8])
+    db_entry["longitude"] = float(entries[9])
+    db_entry["location_precision"] = entries[10]
+    db_entry["name"] = entries[11]
+    db_entry["age"] = int(entries[12])
+    db_entry["gender"] = entries[13]
+    db_entry["race"] = entries[14]
+    db_entry["race_source"] = entries[15]
+    db_entry["was_mental_illness_related"] = entries[16]
+    db_entry["body_camera"] = entries[17]
+    db_entry["agency_ids"] = entries[18].split(';') if entries[18] else []
+
+    database[db_entry["id"]] = db_entry

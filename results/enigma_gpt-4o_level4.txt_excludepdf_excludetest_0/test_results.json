@@ -1,0 +1,288 @@
+{
+    "created": 1730996323.7820785,
+    "duration": 0.029694557189941406,
+    "exitcode": 1,
+    "root": "/tmp/code__xe5l2ie",
+    "environment": {},
+    "summary": {
+        "failed": 3,
+        "passed": 5,
+        "total": 8,
+        "collected": 8
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py::test_enigma_initialization",
+                    "type": "Function",
+                    "lineno": 6
+                },
+                {
+                    "nodeid": "test_enigma.py::test_key_press_and_release",
+                    "type": "Function",
+                    "lineno": 11
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_advance",
+                    "type": "Function",
+                    "lineno": 20
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_click",
+                    "type": "Function",
+                    "lineno": 29
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_encryption",
+                    "type": "Function",
+                    "lineno": 37
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_decryption",
+                    "type": "Function",
+                    "lineno": 48
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_full_rotation",
+                    "type": "Function",
+                    "lineno": 70
+                },
+                {
+                    "nodeid": "test_enigma.py::test_reflector",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_enigma.py::test_enigma_initialization",
+            "lineno": 6,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_initialization",
+                "test_enigma.py",
+                "code__xe5l2ie"
+            ],
+            "setup": {
+                "duration": 8.449796587228775e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00019285292364656925,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code__xe5l2ie/test_enigma.py",
+                    "lineno": 9,
+                    "message": "AttributeError: 'EnigmaModel' object has no attribute '_rotors'. Did you mean: 'rotors'?"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 9,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "def test_enigma_initialization():\n        model = EnigmaModel()\n>       assert len(model._rotors) == N_ROTORS\nE       AttributeError: 'EnigmaModel' object has no attribute '_rotors'. Did you mean: 'rotors'?\n\ntest_enigma.py:9: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.668300531804562e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_key_press_and_release",
+            "lineno": 11,
+            "outcome": "passed",
+            "keywords": [
+                "test_key_press_and_release",
+                "test_enigma.py",
+                "code__xe5l2ie"
+            ],
+            "setup": {
+                "duration": 6.539002060890198e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 8.221995085477829e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.2629893869161606e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_advance",
+            "lineno": 20,
+            "outcome": "failed",
+            "keywords": [
+                "test_rotor_advance",
+                "test_enigma.py",
+                "code__xe5l2ie"
+            ],
+            "setup": {
+                "duration": 4.440010525286198e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0001518111675977707,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code__xe5l2ie/test_enigma.py",
+                    "lineno": 28,
+                    "message": "AssertionError: assert 'A' == 'B'\n  - B\n  + A"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 28,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_rotor_advance():\n        model = EnigmaModel()\n        initial_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n        model.key_pressed('A')\n        model.key_released('A')\n        new_state = [model.get_rotor_letter(i) for i in range(N_ROTORS)]\n        assert new_state != initial_state\n>       assert new_state[2] == ALPHABET[(ALPHABET.index(initial_state[2]) + 1) % 26]\nE       AssertionError: assert 'A' == 'B'\nE         - B\nE         + A\n\ntest_enigma.py:28: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.472412496805191e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_click",
+            "lineno": 29,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_click",
+                "test_enigma.py",
+                "code__xe5l2ie"
+            ],
+            "setup": {
+                "duration": 5.3220195695757866e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.278705015778542e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.268297925591469e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_encryption",
+            "lineno": 37,
+            "outcome": "passed",
+            "keywords": [
+                "test_enigma_encryption",
+                "test_enigma.py",
+                "code__xe5l2ie"
+            ],
+            "setup": {
+                "duration": 4.460709169507027e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 8.226698264479637e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.448811523616314e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_decryption",
+            "lineno": 48,
+            "outcome": "passed",
+            "keywords": [
+                "test_enigma_decryption",
+                "test_enigma.py",
+                "code__xe5l2ie"
+            ],
+            "setup": {
+                "duration": 4.283292219042778e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00010532396845519543,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.968807868659496e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_full_rotation",
+            "lineno": 70,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_full_rotation",
+                "test_enigma.py",
+                "code__xe5l2ie"
+            ],
+            "setup": {
+                "duration": 4.5903027057647705e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00014965306036174297,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.330603405833244e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_reflector",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_reflector",
+                "test_enigma.py",
+                "code__xe5l2ie"
+            ],
+            "setup": {
+                "duration": 4.9833906814455986e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0002484680153429508,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code__xe5l2ie/test_enigma.py",
+                    "lineno": 91,
+                    "message": "AssertionError: assert 15 == 13\n +  where 15 = len({'B', 'D', 'E', 'F', 'H', 'I', ...})\n +    where {'B', 'D', 'E', 'F', 'H', 'I', ...} = set(dict_values(['F', 'W', 'D', 'E', 'M', 'H', 'P', 'M', 'K', 'I', 'H', 'F', 'Z', 'F', 'J', 'Q', 'I', 'B', 'U', 'M', 'H', 'J', 'Q', 'P', 'P', 'V']))\n +      where dict_values(['F', 'W', 'D', 'E', 'M', 'H', 'P', 'M', 'K', 'I', 'H', 'F', 'Z', 'F', 'J', 'Q', 'I', 'B', 'U', 'M', 'H', 'J', 'Q', 'P', 'P', 'V']) = <built-in method values of dict object at 0x7a60f12f0a80>()\n +        where <built-in method values of dict object at 0x7a60f12f0a80> = {'A': 'F', 'B': 'W', 'C': 'D', 'D': 'E', ...}.values"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 91,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_reflector():\n        model = EnigmaModel()\n        results = {}\n        for char in ALPHABET:\n            model.key_pressed(char)\n            result = next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n            results[char] = result\n    \n        # Check that we have 13 pairs of letters\n>       assert len(set(results.values())) == 13\nE       AssertionError: assert 15 == 13\nE        +  where 15 = len({'B', 'D', 'E', 'F', 'H', 'I', ...})\nE        +    where {'B', 'D', 'E', 'F', 'H', 'I', ...} = set(dict_values(['F', 'W', 'D', 'E', 'M', 'H', 'P', 'M', 'K', 'I', 'H', 'F', 'Z', 'F', 'J', 'Q', 'I', 'B', 'U', 'M', 'H', 'J', 'Q', 'P', 'P', 'V']))\nE        +      where dict_values(['F', 'W', 'D', 'E', 'M', 'H', 'P', 'M', 'K', 'I', 'H', 'F', 'Z', 'F', 'J', 'Q', 'I', 'B', 'U', 'M', 'H', 'J', 'Q', 'P', 'P', 'V']) = <built-in method values of dict object at 0x7a60f12f0a80>()\nE        +        where <built-in method values of dict object at 0x7a60f12f0a80> = {'A': 'F', 'B': 'W', 'C': 'D', 'D': 'E', ...}.values\n\ntest_enigma.py:91: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.413320079445839e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

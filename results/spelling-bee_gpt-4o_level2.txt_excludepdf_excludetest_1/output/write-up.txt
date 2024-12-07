@@ -1,0 +1,13 @@
+# Write-up for Spelling Bee Assignment
+
+## Milestone 1
+Implemented a `puzzle_action` function to validate the input and update the beehive letters. The function checks if the input puzzle string contains exactly seven unique alphabetic characters. If valid, it updates the beehive letters; otherwise, it displays an error message.
+
+## Milestone 2
+Implemented a `solve_action` function to read the dictionary file and validate each word against the puzzle rules. The function checks if each word is at least four letters long, contains only letters from the puzzle, and includes the center letter. Valid words are displayed on the screen.
+
+## Milestone 3
+Extended the `solve_action` function to include scoring. Each word's score is calculated based on its length, with a bonus for pangrams. The total score and word count are displayed on the screen.
+
+## Milestone 4
+Added a new field for the user to enter words. Implemented a `word_action` function to validate user input against the puzzle rules and the dictionary. If valid, the word is added to the list along with its score. The function also ensures that each word is only scored once.

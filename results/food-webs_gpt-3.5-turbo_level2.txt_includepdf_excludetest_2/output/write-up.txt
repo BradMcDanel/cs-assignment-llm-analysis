@@ -1,0 +1,13 @@
+# The Python scripts provided are designed to analyze food webs by reading predator-prey relationships from a file and performing various tasks as described in the assignment handout.
+
+# The script 'food_web_analyzer.py' reads the food web file, processes the data, and performs tasks such as listing predators and their prey, identifying apex predators, producers, most flexible eaters, tastiest organisms, and calculating heights of organisms in the food web. Each task is implemented as a separate function for modularity and readability.
+
+# The script 'herbivores_omnivores_carnivores.py' extends the analysis by identifying herbivores, omnivores, and carnivores within the food web. Herbivores are organisms that only eat plants, omnivores consume both plants and animals, and carnivores exclusively feed on other animals. These categories are determined based on the predator-prey relationships in the food web data.
+
+# The formatting module 'formatList.py' provides a function to format lists of items with commas and "and" for readability in the output.
+
+# The scripts adhere to the assignment requirements by using functions for each part of the analysis, reading the file once, handling errors, and ensuring good programming style with appropriate variable names and comments.
+
+# To run the scripts, provide the food web file as a command line argument. For example:
+# python food_web_analyzer.py AquaticFoodWeb.txt
+# python herbivores_omnivores_carnivores.py AquaticFoodWeb.txt

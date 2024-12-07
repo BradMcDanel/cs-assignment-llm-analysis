@@ -1,0 +1,92 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The Washington Post has been compiling a database of every fatal shooting in the United States by a police officer in the line of duty since January 1, 2015. The data comes from news reports, social media postings and police reports. The database includes information about the race, age, and gender of the deceased, the circumstances of the shooting, and whether the person was armed.
+
+Question 2:
+--------------------------------------------------------
+id: Unique identifier for each shooting incident. Examples: 3, 4, 5.
+date: Date of the incident. Examples: 2015-01-02, 2015-01-03, 2015-01-04.
+threat_type: Type of threat posed by the subject. Examples: point, move, attack.
+flee_status: Whether the subject was fleeing. Examples: not, car, foot.
+armed_with: What the subject was armed with. Examples: gun, knife, unarmed.
+city: City where the incident occurred. Examples: Shelton, Aloha, Wichita.
+county: County where the incident occurred. Examples: Mason, Washington, Sedgwick.
+state: State where the incident occurred. Examples: WA, OR, KS.
+latitude: Latitude coordinate of the incident. Examples: 47.246826, 45.4874214, 37.694766.
+longitude: Longitude coordinate of the incident. Examples: -123.121592, -122.8916961, -97.280554.
+location_precision: Precision of the location data. Example: not_available.
+name: Name of the deceased. Examples: Tim Elliot, Lewis Lee Lembke, John Paul Quintero.
+age: Age of the deceased. Examples: 53, 47, 23.
+gender: Gender of the deceased. Examples: male, female.
+race: Race of the deceased. Examples: A, W, H.
+race_source: Source of race information. Example: not_available.
+was_mental_illness_related: Whether mental illness was related to the incident. Examples: True, False.
+body_camera: Whether body camera footage is available. Examples: False.
+agency_ids: IDs of the agencies involved. Examples: 73, 70, 238.
+
+Question 3:
+--------------------------------------------------------
+According to the U.S. Census Bureau's 2020 data, 13.4% of the United States population is Black or African American alone.
+
+Source: U.S. Census Bureau. (2021). QuickFacts: United States. Retrieved from https://www.census.gov/quickfacts/fact/table/US/PST045221
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The database stores information from the following columns: id, name, date, armed_with, age, gender, race, and state.
+
+Question 2:
+--------------------------------------------------------
+The keys in the database are the unique identifier (id) for each shooting incident.
+
+Question 3:
+--------------------------------------------------------
+The type of the values in database is dict (dictionary).
+
+Question 4:
+--------------------------------------------------------
+Each value in the database is a dictionary containing information about a specific shooting incident. For example:
+{
+    "name": "Tim Elliot",
+    "date": "2015-01-02",
+    "armed": "gun",
+    "age": "53",
+    "gender": "male",
+    "race": "A",
+    "state": "WA"
+}
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The proportion of fatal police shootings with a black subject (approximately 23.2%) is significantly higher than the proportion of black people in the United States population (13.4%). This suggests that black people are disproportionately represented among the subjects of fatal police shootings compared to their representation in the general population.
+
+Question 2:
+--------------------------------------------------------
+The proportion of unarmed fatal police shootings with a black subject (approximately 31.9%) is even higher than the proportion of black people in the United States population (13.4%) and also higher than the proportion of black subjects in all police shootings (23.2%). This indicates an even greater disparity in unarmed fatal police shootings involving black subjects compared to their representation in the general population and in all fatal police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+Through this project, I gained valuable experience in working with real-world data using Python. I learned how to read and process data from a CSV file, organize it into a dictionary structure, and perform various analyses on the data. The project highlighted the importance of data analysis in understanding social issues, particularly in the context of police shootings and racial disparities.
+
+I was struck by the significant overrepresentation of black individuals in fatal police shootings, especially in cases where the subject was unarmed. This project emphasized the power of data in revealing patterns and disparities that might not be immediately apparent otherwise.
+
+Working with dictionaries in Python proved to be an effective way to organize and analyze complex data. I also gained experience in calculating proportions and comparing them to population statistics, which is a crucial skill in data analysis.
+
+Overall, this project deepened my understanding of both the technical aspects of data analysis in Python and the critical importance of using data to examine and address social issues. It has motivated me to further explore data science techniques and their applications in understanding and addressing societal challenges.

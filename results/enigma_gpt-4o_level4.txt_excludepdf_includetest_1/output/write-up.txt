@@ -1,0 +1,5 @@
+In this assignment, I learned about the implementation of the Enigma machine using the Model-View-Controller pattern.
+I implemented the model component that simulates the internal state and operations of the Enigma machine, including
+key presses, lamp lighting, and rotor advancement and encryption. I also understood how to handle permutations and
+rotor offsets to achieve the desired encryption behavior. Overall, this project deepened my understanding of how
+historical cryptographic devices functioned and how to simulate them in a modern programming environment.

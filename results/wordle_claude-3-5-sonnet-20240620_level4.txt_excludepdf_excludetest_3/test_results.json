@@ -1,0 +1,280 @@
+{
+    "created": 1731004418.5266938,
+    "duration": 0.04398536682128906,
+    "exitcode": 1,
+    "root": "/tmp/code_ktt9haco",
+    "environment": {},
+    "summary": {
+        "failed": 4,
+        "passed": 1,
+        "total": 5,
+        "collected": 5
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py::test_valid_guess",
+                    "type": "Function",
+                    "lineno": 111
+                },
+                {
+                    "nodeid": "test_wordle.py::test_invalid_guess",
+                    "type": "Function",
+                    "lineno": 122
+                },
+                {
+                    "nodeid": "test_wordle.py::test_correct_color_update",
+                    "type": "Function",
+                    "lineno": 134
+                },
+                {
+                    "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+                    "type": "Function",
+                    "lineno": 143
+                },
+                {
+                    "nodeid": "test_wordle.py::test_game_over_condition",
+                    "type": "Function",
+                    "lineno": 156
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_wordle.py::test_valid_guess",
+            "lineno": 111,
+            "outcome": "failed",
+            "keywords": [
+                "test_valid_guess",
+                "test_wordle.py",
+                "code_ktt9haco"
+            ],
+            "setup": {
+                "duration": 0.00019332300871610641,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 8.501904085278511e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ktt9haco/test_wordle.py",
+                    "lineno": 40,
+                    "message": "KeyError: ''"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 115,
+                        "message": ""
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 25,
+                        "message": "in enter_action"
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 58,
+                        "message": "in color_keys"
+                    },
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 40,
+                        "message": "KeyError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x77bada8fd960>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x77bada7e1000>\n\n    def test_valid_guess(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n>       mock_window.enter_listeners[0]('apple'.upper())\n\ntest_wordle.py:115: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nWordle.py:25: in enter_action\n    color_keys(gw, current_row)\nWordle.py:58: in color_keys\n    current_key_color = gw.get_key_color(letter)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <test_wordle.MockWordleGWindow object at 0x77bada8fd960>, ch = ''\n\n    def get_key_color(self, ch):\n>       return self.keys[ch]['color']\nE       KeyError: ''\n\ntest_wordle.py:40: KeyError"
+            },
+            "teardown": {
+                "duration": 0.0001263609156012535,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_invalid_guess",
+            "lineno": 122,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_guess",
+                "test_wordle.py",
+                "code_ktt9haco"
+            ],
+            "setup": {
+                "duration": 0.00014858786016702652,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00011375593021512032,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.475299596786499e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_correct_color_update",
+            "lineno": 134,
+            "outcome": "failed",
+            "keywords": [
+                "test_correct_color_update",
+                "test_wordle.py",
+                "code_ktt9haco"
+            ],
+            "setup": {
+                "duration": 0.00011247093789279461,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.601912900805473e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ktt9haco/test_wordle.py",
+                    "lineno": 40,
+                    "message": "KeyError: ''"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 138,
+                        "message": ""
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 25,
+                        "message": "in enter_action"
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 58,
+                        "message": "in color_keys"
+                    },
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 40,
+                        "message": "KeyError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x77bada8e6b30>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x77bada7e3370>\n\n    def test_correct_color_update(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n>       mock_window.enter_listeners[0]('apple'.upper())\n\ntest_wordle.py:138: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nWordle.py:25: in enter_action\n    color_keys(gw, current_row)\nWordle.py:58: in color_keys\n    current_key_color = gw.get_key_color(letter)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <test_wordle.MockWordleGWindow object at 0x77bada8e6b30>, ch = ''\n\n    def get_key_color(self, ch):\n>       return self.keys[ch]['color']\nE       KeyError: ''\n\ntest_wordle.py:40: KeyError"
+            },
+            "teardown": {
+                "duration": 0.00010853703133761883,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+            "lineno": 143,
+            "outcome": "failed",
+            "keywords": [
+                "test_present_and_missing_color_update",
+                "test_wordle.py",
+                "code_ktt9haco"
+            ],
+            "setup": {
+                "duration": 0.00013703294098377228,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.059192284941673e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ktt9haco/test_wordle.py",
+                    "lineno": 40,
+                    "message": "KeyError: ''"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 147,
+                        "message": ""
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 25,
+                        "message": "in enter_action"
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 58,
+                        "message": "in color_keys"
+                    },
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 40,
+                        "message": "KeyError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x77badafc06d0>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x77bada7e3520>\n\n    def test_present_and_missing_color_update(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n>       mock_window.enter_listeners[0]('ample'.upper())\n\ntest_wordle.py:147: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nWordle.py:25: in enter_action\n    color_keys(gw, current_row)\nWordle.py:58: in color_keys\n    current_key_color = gw.get_key_color(letter)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <test_wordle.MockWordleGWindow object at 0x77badafc06d0>, ch = ''\n\n    def get_key_color(self, ch):\n>       return self.keys[ch]['color']\nE       KeyError: ''\n\ntest_wordle.py:40: KeyError"
+            },
+            "teardown": {
+                "duration": 0.00010037398897111416,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_game_over_condition",
+            "lineno": 156,
+            "outcome": "failed",
+            "keywords": [
+                "test_game_over_condition",
+                "test_wordle.py",
+                "code_ktt9haco"
+            ],
+            "setup": {
+                "duration": 0.00013511604629456997,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00012206798419356346,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_ktt9haco/test_wordle.py",
+                    "lineno": 40,
+                    "message": "KeyError: ''"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 163,
+                        "message": ""
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 25,
+                        "message": "in enter_action"
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 58,
+                        "message": "in color_keys"
+                    },
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 40,
+                        "message": "KeyError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x77bada73cf70>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x77bada7e0f70>\n\n    def test_game_over_condition(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n    \n        # Make six incorrect guesses\n        for _ in range(6):\n>           mock_window.enter_listeners[0]('wrong'.upper())\n\ntest_wordle.py:163: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nWordle.py:25: in enter_action\n    color_keys(gw, current_row)\nWordle.py:58: in color_keys\n    current_key_color = gw.get_key_color(letter)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <test_wordle.MockWordleGWindow object at 0x77bada73cf70>, ch = ''\n\n    def get_key_color(self, ch):\n>       return self.keys[ch]['color']\nE       KeyError: ''\n\ntest_wordle.py:40: KeyError"
+            },
+            "teardown": {
+                "duration": 9.938585571944714e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

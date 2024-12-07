@@ -1,0 +1,36 @@
+Milestone #1: Initialize the beehive with the letters in the puzzle field
+- Implemented in the puzzle_action method.
+- Checks if the puzzle is valid (7 unique letters) using is_valid_puzzle method.
+- If valid, sets the beehive letters and clears previous game state.
+- If invalid, shows an error message.
+
+Milestone #2: Display the legal words in the SpellingBee puzzle
+- Implemented in the solve_action method.
+- Iterates through the dictionary and checks each word using is_valid_word method.
+- Adds valid words to the display with their scores.
+
+Milestone #3: Add scores to the display
+- Score calculation implemented in calculate_score method.
+- Words are displayed with their scores in parentheses.
+- Pangrams (words using all 7 letters) are displayed in blue.
+- Total word count and score are updated and displayed after each word.
+
+Milestone #4: Let the user try to find the words
+- Implemented in the word_action method.
+- Checks if the entered word is valid and not already found.
+- Adds valid words to the display with their scores.
+- Provides specific feedback for invalid words.
+- The Solve button still works and adds any words the user missed.
+
+Additional features:
+- Refactored code to update score after each word entry.
+- Implemented error handling for various invalid input scenarios.
+- Used set data structure for efficient word lookup and uniqueness checking.
+
+The implementation follows good programming practices:
+- Modular design with separate methods for different functionalities.
+- Clear and descriptive variable and method names.
+- Efficient use of data structures (sets for dictionary and found words).
+- Error handling and user feedback for invalid inputs.
+
+The game now provides a complete SpellingBee experience, allowing users to enter puzzles, guess words, and solve the entire puzzle, with appropriate scoring and feedback throughout the process.

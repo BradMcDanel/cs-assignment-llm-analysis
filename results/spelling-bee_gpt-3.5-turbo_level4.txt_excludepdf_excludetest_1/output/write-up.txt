@@ -1,0 +1,9 @@
+In this assignment, the Spelling Bee project was implemented in Python. The program allows users to input a puzzle consisting of seven unique letters and find valid words based on specific rules. The project was divided into four milestones:
+1. Initializing the beehive with the letters in the puzzle field.
+2. Displaying legal words in the Spelling Bee puzzle.
+3. Adding scores to the display based on word lengths and pangrams.
+4. Allowing users to try to find words and updating the score accordingly.
+
+Each milestone required implementing specific functionalities and ensuring the program's interactivity. Proper error handling and user feedback were incorporated at each stage to enhance the user experience. Additionally, a utility script `dictionary_utils.py` was created to handle the English dictionary file for word validation.
+
+The project provided valuable experience in working with strings, arrays, GUI elements, and file handling in Python. Understanding callback functions and milestone-based development proved effective in managing and completing the assignment successfully.

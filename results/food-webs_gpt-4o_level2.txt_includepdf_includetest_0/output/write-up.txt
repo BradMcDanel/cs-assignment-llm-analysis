@@ -1,0 +1,25 @@
+# Write-up by [Your Name]
+
+## Approach
+1. **Reading the Input File**: The program reads the food web data from a CSV file provided either as a command-line argument or through user input. The data is stored in a dictionary where the keys are predators and the values are lists of their respective prey.
+
+2. **Displaying Predators and Prey**: The program formats and displays the predator-prey relationships using the `format_list` function to ensure proper formatting.
+
+3. **Identifying Apex Predators**: Apex predators are identified as those that do not appear in any prey list.
+
+4. **Identifying Producers**: Producers are those organisms that do not act as predators in the food web.
+
+5. **Finding the Most Flexible Eaters**: The most flexible eaters are identified as predators with the highest number of prey.
+
+6. **Finding the Tastiest Organisms**: Tastiest organisms are those that are preyed upon by the most number of different predators.
+
+7. **Calculating Heights**: The program calculates the height of each organism in the food web based on the longest path to a producer.
+
+8. **Modular Design**: The solution is divided into multiple functions for each part of the assignment to ensure modularity and readability.
+
+## Challenges
+- **Formatting the Output**: Ensuring proper formatting for the predator-prey relationships required careful handling of commas and conjunctions.
+- **Calculating Heights**: Determining the height of each organism involved understanding and implementing a recursive-like algorithm iteratively.
+
+## Conclusion
+This assignment provided a comprehensive exercise in file handling, data processing, and algorithm design in Python. It emphasized the importance of modular programming and proper formatting in generating readable and maintainable code.

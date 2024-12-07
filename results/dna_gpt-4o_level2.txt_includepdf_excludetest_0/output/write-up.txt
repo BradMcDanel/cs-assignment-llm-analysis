@@ -1,0 +1,11 @@
+# Write-up for the DNA profiling assignment:
+
+The program `profile.py` reads a DNA sequence and a CSV file containing STR counts for individuals. It computes the longest consecutive run of each STR in the DNA sequence, compares it to the STR counts in the CSV, and identifies the matching individual.
+
+**Key Components**:
+1. **File Reading**: Utilizes the `csv` module for CSV reading and standard file I/O for reading the DNA sequence file.
+2. **String Manipulation**: The `longest_match` function finds the longest consecutive repeats of a given STR in the DNA sequence.
+3. **Data Structures**: Uses dictionaries to store STR counts and lists to store people from the CSV file.
+4. **Algorithmic Logic**: Matches computed STR counts against each individual in the database and determines a match or reports "No match".
+
+This assignment effectively demonstrates practical skills in handling file I/O, string processing, and algorithmic thinking in Python, with real-world relevance in computational biology.

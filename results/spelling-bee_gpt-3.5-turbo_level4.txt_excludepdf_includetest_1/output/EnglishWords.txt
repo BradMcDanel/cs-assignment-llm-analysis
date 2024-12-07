@@ -1,0 +1,8 @@
+# Sample English words dictionary file
+# Contains a list of English words for the Spelling Bee project
+# Note: Actual file may contain more words
+
+apple
+banana
+carrot
+...

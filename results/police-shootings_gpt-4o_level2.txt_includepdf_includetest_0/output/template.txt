@@ -1,0 +1,7 @@
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+Working on this project has highlighted the power and importance of data analysis in understanding societal issues. Through Python and data manipulation, we can uncover trends and patterns that might not be immediately apparent. The findings of this project, particularly the disproportionate representation of black individuals in fatal police shootings, are both enlightening and concerning. It underscores the need for further investigation and possible policy changes to address these disparities. Overall, this project also enhanced my skills in handling real-world datasets, utilizing dictionaries, and performing meaningful data analysis using Python.

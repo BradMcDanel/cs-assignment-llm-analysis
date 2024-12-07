@@ -1,0 +1,3 @@
+In this assignment, the Spelling Bee project was implemented in Python with a focus on working with strings, arrays, and text files. The project involved creating a program to solve the Spelling Bee puzzle by finding valid English words based on specific rules and scoring mechanisms. The implementation included milestones such as initializing the beehive with puzzle letters, displaying legal words, adding scores to the display, and allowing the user to find words interactively.
+
+The project emphasized the importance of decomposing the problem into smaller, manageable parts, testing each milestone independently, and refactoring code when necessary. Overall, it provided a practical way to apply string processing concepts in a fun and interactive puzzle-solving context.

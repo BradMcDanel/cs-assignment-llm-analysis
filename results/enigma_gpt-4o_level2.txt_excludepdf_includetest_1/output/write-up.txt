@@ -1,0 +1,37 @@
+# Write-up: Enigma Project
+
+## Introduction
+
+This project implements a simulation of the Enigma machine used by the German military during World War II. The implementation follows the Model-View-Controller (MVC) design pattern, with the main focus on developing the model component, which maintains the state and logic of the Enigma machine.
+
+## Milestones
+
+### Milestone #1: Activate the Keyboard
+
+We created a dictionary `_key_state` to keep track of which keys are pressed. The methods `key_pressed`, `key_released`, and `is_key_down` were implemented to manage and query the state of keys.
+
+### Milestone #2: Connect the Keys Directly to the Lamps
+
+We introduced another dictionary `_lamp_state` to manage the state of the lamps. The `key_pressed` and `key_released` methods were updated to also change the state of the corresponding lamp.
+
+### Milestone #3: Design and Implement the Rotor Data Structure
+
+An `EnigmaRotor` class was created to encapsulate the state and behavior of each rotor. The rotors are initialized in the `EnigmaModel` class using predefined permutations. The `get_rotor_letter` and `rotor_clicked` methods were updated to interact with the rotor objects.
+
+### Milestone #4: Implement One Stage in the Encryption
+
+We implemented the `apply_permutation` function, which handles the permutation of a letter based on the rotor's offset. The `key_pressed` method was updated to use this function to encrypt a letter through the fast rotor.
+
+### Milestone #5: Implement the Full Encryption Path
+
+The encryption path was extended to pass through all three rotors and the reflector before returning through the rotors in reverse order. The `invert_key` method was added to generate the inverse permutation for each rotor.
+
+### Milestone #6: Implement the Rotor Advance on Pressing a Key
+
+The rotor advancement was implemented with carry-over to ensure the medium and slow rotors advance correctly when the fast rotor completes a full revolution. The `key_pressed` method was updated to advance the rotors before performing encryption.
+
+## Conclusion
+
+The Enigma machine simulation was successfully implemented, following a structured approach through six milestones. The final program allows users to interact with the Enigma machine, pressing keys to see the encrypted output and rotor movements.
+
+Further extensions could include adding more rotors, implementing a plugboard, and simulating the decryption process using the Bombe machine.

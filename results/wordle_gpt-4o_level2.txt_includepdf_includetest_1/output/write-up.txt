@@ -1,0 +1,36 @@
+# Implementation Details and Explanation
+
+This implementation of Wordle in Python follows a structured approach through several milestones, each building upon the previous to achieve the final working game.
+
+1. **Milestone #1: Random Word Selection and Display**
+   - A random word is selected from the Wordle dictionary `FIVE_LETTER_WORDS` using `random.choice`.
+   - Although the word isn't displayed directly to the user, it is stored in `target_word` for subsequent checks.
+
+2. **Milestone #2: Valid Word Check**
+   - An event listener is attached to respond to the ENTER key press, executing the `enter_action` function.
+   - The entered guess is validated against `FIVE_LETTER_WORDS`. If invalid, a message "Not in word list" is displayed.
+
+3. **Milestone #3: Coloring Logic**
+   - For each letter in the guess, the function checks if it matches the corresponding position in `target_word`.
+   - The squares are colored based on the result: CORRECT_COLOR for correct positions, PRESENT_COLOR for correct letters in wrong positions, and MISSING_COLOR for incorrect letters.
+   - The function also manages multiple occurrences of the same letter using a boolean list `used_letters`.
+
+4. **Milestone #4: Keyboard Feedback**
+   - The virtual keyboard is updated to reflect the status of guessed letters using the `set_key_color` method.
+   - Once a key is marked as CORRECT_COLOR, it will not be changed back to PRESENT_COLOR or MISSING_COLOR.
+
+# Testing and Validation
+
+The implementation is accompanied by test cases in `test_wordle.py` that validate the logic of the game, ensuring the following:
+- The correct message is shown for valid and invalid guesses.
+- The coloring logic for CORRECT, PRESENT, and MISSING letters works as expected.
+- The game ends after six guesses, displaying the correct word if not guessed.
+
+# Extensions
+
+For potential extensions, one could:
+- Implement a more balanced dictionary as suggested.
+- Enhance the user interface with animations or additional feedback.
+- Add a scoring system that tracks performance across multiple games.
+
+Overall, this project demonstrates the integration of string manipulation, graphical user interface handling, and logic development in Python to simulate a popular word game.

@@ -1,0 +1,20 @@
+# Spelling Bee Project Write-up
+
+## Introduction
+The Spelling Bee project is an interactive Python application that allows users to solve a spelling puzzle by finding valid words using a set of seven given letters. The project involves string manipulation, file handling, and user interaction, leveraging a provided graphics library for visualization.
+
+## Milestones
+The project is divided into four main milestones:
+
+1. **Initialize the Beehive:** Implemented a function to validate and set the letters in the beehive based on user input.
+2. **Display Legal Words:** Read a dictionary file and display words that meet the puzzle's rules.
+3. **Add Scores:** Extended the solution to include scoring for each word and a total score.
+4. **User Interaction:** Allowed users to input words and check them against the puzzle, updating scores dynamically.
+
+## Challenges and Solutions
+- **Validation:** Ensuring user input for the puzzle is valid required string manipulation and set operations.
+- **Dictionary Handling:** Efficiently reading and storing dictionary words involved file I/O and set operations for quick look-ups.
+- **User Feedback:** Providing clear user feedback was crucial for usability, achieved through message displays and color coding.
+
+## Conclusion
+The project successfully implemented an interactive spelling game, with potential for further extensions such as generating puzzles and shuffling letters. Overall, it provided valuable practice with Python programming and handling user interactions within a graphical application.

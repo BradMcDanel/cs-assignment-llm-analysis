@@ -1,0 +1,18 @@
+# This Python program identifies the owner of a DNA sequence by comparing it
+# against a database of individuals with known short tandem repeat (STR) counts.
+# It takes a CSV file with the database and a text file with the DNA sequence 
+# as command-line arguments.
+
+# The program first loads the database and DNA sequence into memory. It then computes
+# the longest consecutive run of each STR in the DNA sequence. Using these counts,
+# it attempts to find a match in the database. If the STR counts for an individual
+# match the counts found in the sequence, the program outputs the individual's name.
+# If no match is found, it outputs "No match".
+
+# Key functionalities include:
+# - Reading and parsing CSV and text files.
+# - Calculating the longest consecutive repetition of a substring in a string.
+# - Comparing calculated STR counts with those in the database for matching.
+
+# This program is an application of algorithmic thinking and string manipulation
+# techniques, demonstrating the intersection of computational biology and computer science.

@@ -1,0 +1,172 @@
+{
+    "created": 1731004050.2914433,
+    "duration": 0.021875619888305664,
+    "exitcode": 0,
+    "root": "/tmp/code_vclaw_0s",
+    "environment": {},
+    "summary": {
+        "passed": 5,
+        "total": 5,
+        "collected": 5
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py::test_valid_guess",
+                    "type": "Function",
+                    "lineno": 111
+                },
+                {
+                    "nodeid": "test_wordle.py::test_invalid_guess",
+                    "type": "Function",
+                    "lineno": 122
+                },
+                {
+                    "nodeid": "test_wordle.py::test_correct_color_update",
+                    "type": "Function",
+                    "lineno": 134
+                },
+                {
+                    "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+                    "type": "Function",
+                    "lineno": 143
+                },
+                {
+                    "nodeid": "test_wordle.py::test_game_over_condition",
+                    "type": "Function",
+                    "lineno": 156
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_wordle.py::test_valid_guess",
+            "lineno": 111,
+            "outcome": "passed",
+            "keywords": [
+                "test_valid_guess",
+                "test_wordle.py",
+                "code_vclaw_0s"
+            ],
+            "setup": {
+                "duration": 0.00019311089999973774,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 8.353102020919323e-05,
+                "outcome": "passed",
+                "stdout": "Secret word: APPLE\n"
+            },
+            "teardown": {
+                "duration": 7.469416595995426e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_invalid_guess",
+            "lineno": 122,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_guess",
+                "test_wordle.py",
+                "code_vclaw_0s"
+            ],
+            "setup": {
+                "duration": 0.00012199091725051403,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.149219840765e-05,
+                "outcome": "passed",
+                "stdout": "Secret word: APPLE\n"
+            },
+            "teardown": {
+                "duration": 6.461911834776402e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_correct_color_update",
+            "lineno": 134,
+            "outcome": "passed",
+            "keywords": [
+                "test_correct_color_update",
+                "test_wordle.py",
+                "code_vclaw_0s"
+            ],
+            "setup": {
+                "duration": 0.00011880998499691486,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.703496910631657e-05,
+                "outcome": "passed",
+                "stdout": "Secret word: APPLE\n"
+            },
+            "teardown": {
+                "duration": 6.265216507017612e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+            "lineno": 143,
+            "outcome": "passed",
+            "keywords": [
+                "test_present_and_missing_color_update",
+                "test_wordle.py",
+                "code_vclaw_0s"
+            ],
+            "setup": {
+                "duration": 0.00010929605923593044,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.775883957743645e-05,
+                "outcome": "passed",
+                "stdout": "Secret word: APPLE\n"
+            },
+            "teardown": {
+                "duration": 6.128381937742233e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_game_over_condition",
+            "lineno": 156,
+            "outcome": "passed",
+            "keywords": [
+                "test_game_over_condition",
+                "test_wordle.py",
+                "code_vclaw_0s"
+            ],
+            "setup": {
+                "duration": 0.0001066070981323719,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00024064304307103157,
+                "outcome": "passed",
+                "stdout": "Secret word: APPLE\n"
+            },
+            "teardown": {
+                "duration": 6.276508793234825e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

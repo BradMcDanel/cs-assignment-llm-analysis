@@ -1,0 +1,5 @@
+# The code has been implemented for the Wordle game using the provided starter files.
+# The Wordle.py file contains the main logic for the game, including handling user inputs and displaying messages.
+# The test_wordle.py file contains comprehensive test cases to ensure the functionality of the Wordle game.
+# The tests cover valid guesses, invalid guesses, color updates, and game over conditions.
+# The test cases utilize a mock WordleGWindow to simulate game interactions and verify expected behaviors.

@@ -1,0 +1,284 @@
+{
+    "created": 1730998115.592627,
+    "duration": 0.025259971618652344,
+    "exitcode": 1,
+    "root": "/tmp/code_7xo8lr8r",
+    "environment": {},
+    "summary": {
+        "error": 6,
+        "total": 6,
+        "collected": 6
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_Assignment4.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_Assignment4.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files0]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files1]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files2]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files3]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files4]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files5]",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files0]",
+            "lineno": 80,
+            "outcome": "error",
+            "keywords": [
+                "test_predators_and_prey[food_web_files0]",
+                "food_web_files0",
+                "test_Assignment4.py",
+                "code_7xo8lr8r"
+            ],
+            "setup": {
+                "duration": 0.00016193417832255363,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_7xo8lr8r/test_Assignment4.py",
+                    "lineno": 14,
+                    "message": "FileNotFoundError: Neither Assignment4.py nor main.py was found in any case variation."
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 74,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 14,
+                        "message": "FileNotFoundError"
+                    }
+                ],
+                "longrepr": "food_web_files = ('AnotherFoodWeb.txt', 'AnotherFoodWeb_Output.txt')\n\n    @pytest.fixture\n    def main_output(food_web_files):\n        input_file, _ = food_web_files\n>       return run_main_py(input_file)\n\ntest_Assignment4.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'AnotherFoodWeb.txt'\n\n    def run_main_py(input_file):\n        possible_names = [\"Assignment4.py\", \"assignment4.py\", \"main.py\", \"Main.py\"]\n        script_name = None\n        for name in possible_names:\n            if os.path.isfile(name):\n                script_name = name\n                break\n        if script_name is None:\n>           raise FileNotFoundError(\"Neither Assignment4.py nor main.py was found in any case variation.\")\nE           FileNotFoundError: Neither Assignment4.py nor main.py was found in any case variation.\n\ntest_Assignment4.py:14: FileNotFoundError"
+            },
+            "teardown": {
+                "duration": 8.668308146297932e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files1]",
+            "lineno": 80,
+            "outcome": "error",
+            "keywords": [
+                "test_predators_and_prey[food_web_files1]",
+                "food_web_files1",
+                "test_Assignment4.py",
+                "code_7xo8lr8r"
+            ],
+            "setup": {
+                "duration": 0.00012650410644710064,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_7xo8lr8r/test_Assignment4.py",
+                    "lineno": 14,
+                    "message": "FileNotFoundError: Neither Assignment4.py nor main.py was found in any case variation."
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 74,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 14,
+                        "message": "FileNotFoundError"
+                    }
+                ],
+                "longrepr": "food_web_files = ('AquaticFoodWeb.txt', 'AquaticFoodWeb_Output.txt')\n\n    @pytest.fixture\n    def main_output(food_web_files):\n        input_file, _ = food_web_files\n>       return run_main_py(input_file)\n\ntest_Assignment4.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'AquaticFoodWeb.txt'\n\n    def run_main_py(input_file):\n        possible_names = [\"Assignment4.py\", \"assignment4.py\", \"main.py\", \"Main.py\"]\n        script_name = None\n        for name in possible_names:\n            if os.path.isfile(name):\n                script_name = name\n                break\n        if script_name is None:\n>           raise FileNotFoundError(\"Neither Assignment4.py nor main.py was found in any case variation.\")\nE           FileNotFoundError: Neither Assignment4.py nor main.py was found in any case variation.\n\ntest_Assignment4.py:14: FileNotFoundError"
+            },
+            "teardown": {
+                "duration": 8.037593215703964e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files2]",
+            "lineno": 80,
+            "outcome": "error",
+            "keywords": [
+                "test_predators_and_prey[food_web_files2]",
+                "food_web_files2",
+                "test_Assignment4.py",
+                "code_7xo8lr8r"
+            ],
+            "setup": {
+                "duration": 0.00012428686022758484,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_7xo8lr8r/test_Assignment4.py",
+                    "lineno": 14,
+                    "message": "FileNotFoundError: Neither Assignment4.py nor main.py was found in any case variation."
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 74,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 14,
+                        "message": "FileNotFoundError"
+                    }
+                ],
+                "longrepr": "food_web_files = ('GrasslandFoodWeb.txt', 'GrasslandFoodWeb_Output.txt')\n\n    @pytest.fixture\n    def main_output(food_web_files):\n        input_file, _ = food_web_files\n>       return run_main_py(input_file)\n\ntest_Assignment4.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'GrasslandFoodWeb.txt'\n\n    def run_main_py(input_file):\n        possible_names = [\"Assignment4.py\", \"assignment4.py\", \"main.py\", \"Main.py\"]\n        script_name = None\n        for name in possible_names:\n            if os.path.isfile(name):\n                script_name = name\n                break\n        if script_name is None:\n>           raise FileNotFoundError(\"Neither Assignment4.py nor main.py was found in any case variation.\")\nE           FileNotFoundError: Neither Assignment4.py nor main.py was found in any case variation.\n\ntest_Assignment4.py:14: FileNotFoundError"
+            },
+            "teardown": {
+                "duration": 7.880805060267448e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files3]",
+            "lineno": 80,
+            "outcome": "error",
+            "keywords": [
+                "test_predators_and_prey[food_web_files3]",
+                "food_web_files3",
+                "test_Assignment4.py",
+                "code_7xo8lr8r"
+            ],
+            "setup": {
+                "duration": 0.00011944607831537724,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_7xo8lr8r/test_Assignment4.py",
+                    "lineno": 14,
+                    "message": "FileNotFoundError: Neither Assignment4.py nor main.py was found in any case variation."
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 74,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 14,
+                        "message": "FileNotFoundError"
+                    }
+                ],
+                "longrepr": "food_web_files = ('MixedFoodWeb.txt', 'MixedFoodWeb_Output.txt')\n\n    @pytest.fixture\n    def main_output(food_web_files):\n        input_file, _ = food_web_files\n>       return run_main_py(input_file)\n\ntest_Assignment4.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'MixedFoodWeb.txt'\n\n    def run_main_py(input_file):\n        possible_names = [\"Assignment4.py\", \"assignment4.py\", \"main.py\", \"Main.py\"]\n        script_name = None\n        for name in possible_names:\n            if os.path.isfile(name):\n                script_name = name\n                break\n        if script_name is None:\n>           raise FileNotFoundError(\"Neither Assignment4.py nor main.py was found in any case variation.\")\nE           FileNotFoundError: Neither Assignment4.py nor main.py was found in any case variation.\n\ntest_Assignment4.py:14: FileNotFoundError"
+            },
+            "teardown": {
+                "duration": 7.390300743281841e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files4]",
+            "lineno": 80,
+            "outcome": "error",
+            "keywords": [
+                "test_predators_and_prey[food_web_files4]",
+                "food_web_files4",
+                "test_Assignment4.py",
+                "code_7xo8lr8r"
+            ],
+            "setup": {
+                "duration": 0.00012382306158542633,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_7xo8lr8r/test_Assignment4.py",
+                    "lineno": 14,
+                    "message": "FileNotFoundError: Neither Assignment4.py nor main.py was found in any case variation."
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 74,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 14,
+                        "message": "FileNotFoundError"
+                    }
+                ],
+                "longrepr": "food_web_files = ('SimpleFoodWeb.txt', 'SimpleFoodWeb_Output.txt')\n\n    @pytest.fixture\n    def main_output(food_web_files):\n        input_file, _ = food_web_files\n>       return run_main_py(input_file)\n\ntest_Assignment4.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'SimpleFoodWeb.txt'\n\n    def run_main_py(input_file):\n        possible_names = [\"Assignment4.py\", \"assignment4.py\", \"main.py\", \"Main.py\"]\n        script_name = None\n        for name in possible_names:\n            if os.path.isfile(name):\n                script_name = name\n                break\n        if script_name is None:\n>           raise FileNotFoundError(\"Neither Assignment4.py nor main.py was found in any case variation.\")\nE           FileNotFoundError: Neither Assignment4.py nor main.py was found in any case variation.\n\ntest_Assignment4.py:14: FileNotFoundError"
+            },
+            "teardown": {
+                "duration": 7.980107329785824e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files5]",
+            "lineno": 80,
+            "outcome": "error",
+            "keywords": [
+                "test_predators_and_prey[food_web_files5]",
+                "food_web_files5",
+                "test_Assignment4.py",
+                "code_7xo8lr8r"
+            ],
+            "setup": {
+                "duration": 0.00012259185314178467,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_7xo8lr8r/test_Assignment4.py",
+                    "lineno": 14,
+                    "message": "FileNotFoundError: Neither Assignment4.py nor main.py was found in any case variation."
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 74,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 14,
+                        "message": "FileNotFoundError"
+                    }
+                ],
+                "longrepr": "food_web_files = ('TerrestrialFoodWeb.txt', 'TerrestrialFoodWeb_Output.txt')\n\n    @pytest.fixture\n    def main_output(food_web_files):\n        input_file, _ = food_web_files\n>       return run_main_py(input_file)\n\ntest_Assignment4.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput_file = 'TerrestrialFoodWeb.txt'\n\n    def run_main_py(input_file):\n        possible_names = [\"Assignment4.py\", \"assignment4.py\", \"main.py\", \"Main.py\"]\n        script_name = None\n        for name in possible_names:\n            if os.path.isfile(name):\n                script_name = name\n                break\n        if script_name is None:\n>           raise FileNotFoundError(\"Neither Assignment4.py nor main.py was found in any case variation.\")\nE           FileNotFoundError: Neither Assignment4.py nor main.py was found in any case variation.\n\ntest_Assignment4.py:14: FileNotFoundError"
+            },
+            "teardown": {
+                "duration": 7.363199256360531e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

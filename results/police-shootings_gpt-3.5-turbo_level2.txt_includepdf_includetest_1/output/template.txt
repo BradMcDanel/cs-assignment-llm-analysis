@@ -1,0 +1,93 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+The data includes information on fatal police shootings and comes from the Washington Post's compilation. It provides details such as the date, threat type, armed status, location, demographics of the subjects, and other related information.
+
+Question 2:
+- id: Identifier for the incident
+  Examples: 3, 4, 5
+- date: Date of the incident
+  Examples: 2015-01-02, 2015-01-03
+- threat_type: Type of threat posed
+  Examples: point, move
+- flee_status: Fleeing status
+  Examples: not, car
+- armed_with: Weapon used
+  Examples: gun, replica
+- city: City where the incident occurred
+  Examples: Shelton, Aloha
+- county: County where the incident occurred
+  Examples: Mason, Washington
+- state: State where the incident occurred
+  Examples: WA, OR
+- latitude: Latitude coordinate
+  Examples: 47.246826, 45.4874214
+- longitude: Longitude coordinate
+  Examples: -123.121592, -122.8916961
+- location_precision: Precision of the location
+  Examples: not_available
+- name: Name of the subject
+  Examples: Tim Elliot, Lewis Lee Lembke
+- age: Age of the subject
+  Examples: 53, 47
+- gender: Gender of the subject
+  Examples: male
+- race: Race of the subject
+  Examples: A, W
+- race_source: Source of race information
+  Examples: not_available
+- was_mental_illness_related: Whether the incident was related to mental illness
+  Examples: True, False
+- body_camera: Whether body camera footage is available
+  Examples: False, True
+- agency_ids: Identifier(s) of the agency(s) involved
+  Examples: 73, 70
+
+Question 3:
+The percentage of the United States population that is black is approximately 13.4% (as of 2021) according to the United States Census Bureau (https://www.census.gov/quickfacts/fact/table/US/PST045219).
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+The information from the file fatal-police-shootings-data.csv that is stored in the database includes the columns: name, date, armed, age, gender, race, and state.
+
+Question 2:
+The keys in the dictionary database are the entry IDs from the dataset.
+
+Question 3:
+The type of the values in the dictionary database is dict.
+
+Question 4:
+One of the values in database stores information about a subject of a fatal police shooting, for example:
+{
+  "name": "Tim Elliot",
+  "date": "2015-01-02",
+  "armed": "gun",
+  "age": "53",
+  "gender": "male",
+  "race": "A",
+  "state": "WA"
+}
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+The proportion of black subjects in fatal police shootings is higher compared to the proportion of black people in the United States population.
+
+Question 2:
+The proportion of black subjects in fatal police shootings where the subject is unarmed is also higher compared to the proportion of black people in the United States population, but slightly lower than the proportion of black subjects in all police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+Working on this project has provided insights into the analysis of real-world data using Python dictionaries. It has highlighted the importance of understanding demographics and how to interpret data to draw meaningful conclusions. The process of investigating fatal police shootings data has raised awareness about racial disparities and the need for further examination in this area.

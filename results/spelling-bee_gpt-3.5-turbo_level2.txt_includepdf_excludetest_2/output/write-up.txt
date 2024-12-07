@@ -1,0 +1,5 @@
+For each milestone:
+- Implemented the required functionality as specified in the assignment.
+- Used helper functions to break down the tasks into smaller, manageable parts.
+- Ensured error handling and validation checks for user inputs.
+- Demonstrated clear understanding of the problem statement and provided solutions accordingly.

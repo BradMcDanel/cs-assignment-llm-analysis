@@ -1,0 +1,5 @@
+# This Python program analyzes a food web described in a CSV file. 
+# It loads the data, processes and displays various information like predators and prey, apex predators, producers, etc.
+# The program reads the filename as a command line argument and performs basic error checking.
+# It uses functions for different parts of the assignment, follows good programming style, and avoids global variables.
+# The output is formatted according to the assignment requirements.

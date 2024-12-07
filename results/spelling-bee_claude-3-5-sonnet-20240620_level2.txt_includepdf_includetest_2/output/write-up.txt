@@ -1,0 +1,33 @@
+Implementation Explanation:
+
+1. Dictionary Loading:
+   - The dictionary is loaded from the DICTIONARY_FILE into a set for efficient lookup.
+
+2. Puzzle Validation:
+   - is_valid_puzzle() checks if the input contains 7 unique letters.
+
+3. Word Validation:
+   - is_valid_word() ensures words are at least 4 letters long, contain the center letter, and only use puzzle letters.
+
+4. Scoring:
+   - calculate_score() implements the scoring system, including the pangram bonus.
+
+5. Puzzle Action:
+   - Sets the beehive letters if the input is valid.
+
+6. Solve Action:
+   - Finds all valid words in the dictionary and displays them with scores.
+
+7. Word Action:
+   - Handles user word input, validates it, and updates the score and word list.
+
+8. User Interface:
+   - Utilizes SpellingBeeGraphics for display and interaction.
+
+This implementation covers all four milestones:
+- Initializing the beehive with valid puzzles
+- Displaying legal words with scores
+- Adding scores to the display
+- Allowing user input to find words
+
+The code is structured to be modular and easily extendable, with clear separation of concerns between different functionalities.

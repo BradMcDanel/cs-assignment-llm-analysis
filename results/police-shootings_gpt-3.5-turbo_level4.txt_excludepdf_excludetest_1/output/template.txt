@@ -1,0 +1,14 @@
+# Answer the questions and provide explanations as required in the assignment.
+
+Question 1. Summary of the data and its source:
+- The data on fatal police shootings comes from the Washington Post and is available on GitHub.
+- It includes information about the subjects of fatal police shootings, such as demographics and circumstances.
+- This data provides insights into the prevalence of fatal police shootings and the demographics of the victims.
+
+Question 2. Description of the columns in the dataset:
+- ...
+- ...
+
+Question 3. Percent of people in the United States who are black:
+- The percentage of the U.S. population that is black is approximately X%, as per [citation].
+...

@@ -1,0 +1,2 @@
+- Make sure to run the code with the food web file as a command line argument.
+- Follow the instructions provided in the assignment handout for each part implementation.

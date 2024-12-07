@@ -1,0 +1,30 @@
+SpellingBee Project Implementation
+
+This implementation of the SpellingBee project fulfills all the requirements specified in the assignment. Here's a breakdown of how each milestone was addressed:
+
+Milestone #1: Initialize the beehive with the letters in the puzzle field
+- The puzzle_action function checks if the entered puzzle is valid using the is_valid_puzzle helper function.
+- If valid, it sets the beehive letters using sbg.set_beehive_letters.
+- If invalid, it displays an error message.
+
+Milestone #2: Display the legal words in the SpellingBee puzzle
+- The solve_action function iterates through the dictionary and checks each word using the is_valid_word helper function.
+- Valid words are added to the display using the add_word helper function.
+
+Milestone #3: Add scores to the display
+- The calculate_score function computes the score for each word, including the pangram bonus.
+- Scores are displayed next to each word in parentheses.
+- The total score and word count are tracked and displayed using the update_score_display function.
+
+Milestone #4: Let the user try to find the words
+- The word_action function handles user input for individual words.
+- It checks if the word is valid, not already found, and in the dictionary.
+- Valid words are added to the display and score is updated.
+- Appropriate feedback messages are shown for invalid inputs.
+
+Additional features:
+- The program uses helper functions to improve readability and maintainability.
+- The dictionary is read only once and stored in memory for efficiency.
+- The found_words set prevents duplicate entries and allows for quick lookup.
+
+This implementation provides a complete and interactive SpellingBee game that meets all the specified requirements while maintaining clean and organized code.

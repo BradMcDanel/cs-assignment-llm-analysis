@@ -1,0 +1,5 @@
+I have implemented the EnigmaRotor class in EnigmaRotor.py, which includes methods for initializing the rotor with a permutation, getting the offset, getting the permutation, and advancing the rotor.
+
+In EnigmaModel.py, I have initialized the rotors using the provided rotor permutations. I have also added placeholder methods for key_pressed and key_released to implement the encryption path. Additionally, I have implemented the invert_key function for inverting the rotor permutation.
+
+These implementations are essential for simulating the Enigma machine and encrypting messages. Further work is needed to complete the encryption process and ensure the rotors advance correctly.

@@ -1,0 +1,30 @@
+{
+    "created": 1731004100.9303806,
+    "duration": 0.05653095245361328,
+    "exitcode": 2,
+    "root": "/tmp/code_v3_5q2sg",
+    "environment": {},
+    "summary": {
+        "total": 0,
+        "collected": 0
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "failed",
+            "result": [],
+            "longrepr": "/home/brad/.miniconda3/lib/python3.10/site-packages/_pytest/python.py:617: in _importtestmodule\n    mod = import_path(self.path, mode=importmode, root=self.config.rootpath)\n/home/brad/.miniconda3/lib/python3.10/site-packages/_pytest/pathlib.py:567: in import_path\n    importlib.import_module(module_name)\n/home/brad/.miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:1050: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1027: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:688: in _load_unlocked\n    ???\n/home/brad/.miniconda3/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\ntest_wordle.py:4: in <module>\n    import Wordle\nE     File \"/tmp/code_v3_5q2sg/Wordle.py\", line 27\nE       nonlocal current_row\nE       ^^^^^^^^^^^^^^^^^^^^\nE   SyntaxError: name 'current_row' is used prior to nonlocal declaration"
+        }
+    ],
+    "tests": []
+}

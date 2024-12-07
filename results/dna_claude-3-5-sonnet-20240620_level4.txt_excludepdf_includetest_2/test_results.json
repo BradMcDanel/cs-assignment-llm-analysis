@@ -1,0 +1,154 @@
+{
+    "created": 1731005963.7337122,
+    "duration": 0.07831597328186035,
+    "exitcode": 0,
+    "root": "/tmp/code__e1b_rz2",
+    "environment": {},
+    "summary": {
+        "passed": 4,
+        "total": 4,
+        "collected": 4
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_profile.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_alice",
+                    "type": "TestCaseFunction",
+                    "lineno": 4
+                },
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_bob",
+                    "type": "TestCaseFunction",
+                    "lineno": 8
+                },
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_charlie",
+                    "type": "TestCaseFunction",
+                    "lineno": 12
+                },
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase::test_no_match",
+                    "type": "TestCaseFunction",
+                    "lineno": 16
+                }
+            ]
+        },
+        {
+            "nodeid": "test_profile.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase",
+                    "type": "UnitTestCase"
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_alice",
+            "lineno": 4,
+            "outcome": "passed",
+            "keywords": [
+                "test_match_alice",
+                "DNAProfilerTestCase",
+                "test_profile.py",
+                "code__e1b_rz2"
+            ],
+            "setup": {
+                "duration": 0.00019078399054706097,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.016941441223025322,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 8.605280891060829e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_bob",
+            "lineno": 8,
+            "outcome": "passed",
+            "keywords": [
+                "test_match_bob",
+                "DNAProfilerTestCase",
+                "test_profile.py",
+                "code__e1b_rz2"
+            ],
+            "setup": {
+                "duration": 0.00010322988964617252,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.01718535809777677,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.696310058236122e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_charlie",
+            "lineno": 12,
+            "outcome": "passed",
+            "keywords": [
+                "test_match_charlie",
+                "DNAProfilerTestCase",
+                "test_profile.py",
+                "code__e1b_rz2"
+            ],
+            "setup": {
+                "duration": 9.281816892325878e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.017865875037387013,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.538396701216698e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase::test_no_match",
+            "lineno": 16,
+            "outcome": "passed",
+            "keywords": [
+                "test_no_match",
+                "DNAProfilerTestCase",
+                "test_profile.py",
+                "code__e1b_rz2"
+            ],
+            "setup": {
+                "duration": 0.0001274319365620613,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.01771065196953714,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 0.00011208094656467438,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

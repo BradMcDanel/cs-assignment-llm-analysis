@@ -1,0 +1,24 @@
+# Wordle Game Implementation Write-up
+
+This program implements a text-based version of the popular game Wordle using Python. The implementation follows a structured approach by breaking down the project into manageable milestones. Here's a brief overview of each milestone:
+
+Milestone #1: Random Word Selection
+- The program selects a random word from a predefined list of five-letter words provided in `WordleDictionary.py`.
+- This word is stored and used as the hidden word for the game.
+
+Milestone #2: User Input Validation
+- The program allows users to input their guesses and checks if the input is a valid five-letter word from the dictionary.
+- It displays a message "Not in word list" for invalid words.
+
+Milestone #3: Color the Boxes
+- After validating the guess, the program colors the boxes based on how accurate the guess is.
+- It uses three colors: green for correct letters in the correct position, yellow for correct letters in the wrong position, and gray for incorrect letters.
+
+Milestone #4: Keyboard Color Updates
+- The program updates the on-screen keyboard to reflect the letters' status: green for correct and positioned letters, yellow for correct but misplaced letters, and gray for incorrect letters.
+- Once a key is marked green, it doesn't change back to yellow or gray.
+
+Extensions and Enhancements
+- While the base implementation is complete, there are opportunities for further enhancements, such as balancing the dictionary for better word choices, enhancing graphics for successful guesses, or implementing a score-tracking system.
+
+This implementation uses the graphical capabilities provided by `WordleGraphics.py`, and all logic is contained within the `Wordle.py` file, adhering to the project guidelines.

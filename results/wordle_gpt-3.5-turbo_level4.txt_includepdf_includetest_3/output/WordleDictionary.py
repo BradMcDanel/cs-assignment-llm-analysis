@@ -1,0 +1,1 @@
+FIVE_LETTER_WORDS = ["apple", "zebra", "python", "hello", "world", "knife", "happy", "music", "beach"]

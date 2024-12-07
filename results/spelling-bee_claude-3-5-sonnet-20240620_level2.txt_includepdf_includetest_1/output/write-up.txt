@@ -1,0 +1,34 @@
+Milestone #1: Initialize the beehive with the letters in the puzzle field
+- Implemented in the puzzle_action method.
+- Checks if the input is valid (7 unique letters) using is_valid_puzzle method.
+- If valid, sets the beehive letters and clears previous game state.
+- If invalid, shows an error message.
+
+Milestone #2: Display the legal words in the SpellingBee puzzle
+- Implemented in the solve_action method.
+- Iterates through the dictionary, checking each word with is_valid_word method.
+- Adds valid words to the display using sbg.add_word.
+
+Milestone #3: Add scores to the display
+- Implemented the calculate_score method to compute word scores.
+- Modified solve_action and word_action to display scores with words.
+- Added update_score_message to show total words and score.
+- Pangrams (words using all 7 letters) are displayed in blue.
+
+Milestone #4: Let the user try to find the words
+- Implemented the word_action method to handle user word input.
+- Checks if the word is valid, not already found, and in the puzzle.
+- Updates the score and display for valid words.
+- Provides feedback for invalid or duplicate words.
+- The Solve button still works, adding any words the user missed.
+
+Additional Notes:
+- The code uses a set (self.found_words) to efficiently track found words and prevent duplicates.
+- The dictionary is loaded once at initialization for better performance.
+- The code is structured to be easily extendable for future enhancements.
+
+Possible future improvements:
+- Implement puzzle generation.
+- Add a shuffle button for the outer hexagon letters.
+- Optimize dictionary search for very large dictionaries.
+- Add difficulty levels or hints system.

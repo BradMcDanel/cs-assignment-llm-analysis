@@ -1,0 +1,1 @@
+This program takes a CSV file containing STR counts for a list of individuals and a text file containing a DNA sequence as input. It then identifies to whom the DNA sequence most likely belongs by comparing the STR counts in the DNA sequence with the individuals in the CSV file. The program outputs the name of the matching individual or "No match" if there is no exact match.

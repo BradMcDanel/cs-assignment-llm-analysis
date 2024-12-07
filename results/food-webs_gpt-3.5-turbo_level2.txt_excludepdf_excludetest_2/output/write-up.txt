@@ -1,0 +1,3 @@
+# My name: [Your Name]
+# Student number: [Your Student Number]
+# Description: This program reads a food web data file, analyzes the relationships, and provides various insights like predator-prey relationships, apex predators, producers, most flexible eaters, tastiest organisms, and heights of organisms in the food web.

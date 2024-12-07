@@ -1,0 +1,26 @@
+Enigma Machine Simulator Implementation
+
+This project implements a simulator for the Enigma machine used by German forces during World War II. The implementation follows the Model-View-Controller (MVC) design pattern, with the model component being the focus of our implementation.
+
+Key components:
+
+1. EnigmaModel: The main class that represents the state and behavior of the Enigma machine.
+2. EnigmaRotor: A class representing individual rotors in the Enigma machine.
+3. Helper functions: apply_permutation and invert_key for encryption operations.
+
+The implementation was completed in six milestones:
+
+1. Activate the keyboard: Implemented key press and release functionality.
+2. Connect keys to lamps: Directly connected key presses to lamp illumination.
+3. Design rotor data structure: Created the EnigmaRotor class to represent rotors.
+4. Implement one stage of encryption: Applied encryption using the fast rotor.
+5. Implement full encryption path: Completed the encryption process through all rotors and the reflector.
+6. Implement rotor advance: Added rotor advancement mechanics on key presses.
+
+Challenges and Solutions:
+
+1. Rotor permutations: Implemented both forward and inverse permutations for each rotor to handle the signal path in both directions.
+2. Rotor advancement: Used a cascading system where each rotor returns a boolean indicating if it has completed a full revolution, triggering the next rotor's advancement.
+3. Encryption process: Carefully traced the signal path through the rotors, reflector, and back, ensuring correct application of offsets at each stage.
+
+The final implementation accurately simulates the complex encryption process of the Enigma machine, providing an interactive and educational tool for understanding this historical cryptographic device.

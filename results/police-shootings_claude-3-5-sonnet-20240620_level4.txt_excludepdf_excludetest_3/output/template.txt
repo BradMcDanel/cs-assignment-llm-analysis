@@ -1,0 +1,57 @@
+Task 1:
+Question 1:
+The Washington Post's Fatal Force database contains records of every fatal shooting in the United States by a police officer in the line of duty since January 1, 2015. The data is compiled by Washington Post journalists through news reports, public records, social media, and other sources. It includes details such as the race, age, and gender of the deceased, the circumstances of the shooting, and whether the person was armed.
+
+Question 2:
+1. id: Unique identifier for each incident
+   Examples: 1, 2, 3
+
+2. name: Name of the deceased
+   Examples: "Tim Elliot", "Lewis Lee Lembke", "John Paul Quintero"
+
+3. date: Date of the incident
+   Examples: "2015-01-02", "2015-01-02", "2015-01-03"
+
+4. manner_of_death: How the person died
+   Examples: "shot", "shot and Tasered"
+
+5. armed: Whether and how the person was armed
+   Examples: "gun", "knife", "unarmed"
+
+6. age: Age of the deceased
+   Examples: 53, 47, 23
+
+7. gender: Gender of the deceased
+   Examples: "M", "F"
+
+8. race: Race of the deceased
+   Examples: "W" (White), "B" (Black), "H" (Hispanic)
+
+9. city: City where the incident occurred
+   Examples: "Shelton", "Aloha", "Wichita"
+
+10. state: State where the incident occurred
+    Examples: "WA", "OR", "KS"
+
+Question 3:
+According to the U.S. Census Bureau's 2020 data, 13.4% of the United States population identifies as Black or African American alone.
+Source: U.S. Census Bureau QuickFacts: United States (https://www.census.gov/quickfacts/fact/table/US/PST045221)
+
+Task 2:
+Question 1: The database stores information from the following columns: id, name, date, manner_of_death, armed, age, gender, race, city, and state.
+
+Question 2: The 'id' column is used as the keys in the database dictionary.
+
+Question 3: The type of the values in database is dict.
+
+Question 4: Each value in database is a dictionary containing information about a single incident. For example:
+{'name': 'John Doe', 'date': '2015-01-01', 'manner_of_death': 'shot', 'armed': 'gun', 'age': '35', 'gender': 'M', 'race': 'W', 'city': 'Anytown', 'state': 'CA'}
+
+Task 3:
+Question 1: The proportion of black subjects in fatal police shootings (calculated in the code) is higher than their representation in the U.S. population (13.4%). This suggests that black people are disproportionately the subject of fatal police shootings compared to their representation in the general population.
+
+Question 2: The proportion of black subjects in fatal police shootings where the subject is unarmed (calculated in the code) is even higher than both their representation in the U.S. population (13.4%) and their proportion in all police shootings. This indicates an even greater disparity for unarmed black individuals in fatal police shootings.
+
+Task 4:
+Reflection:
+This project has been eye-opening and informative. Working with real-world data on such a sensitive and important topic has made me realize the power of data analysis in understanding societal issues. I was surprised by the extent of the disparity between the proportion of black subjects in fatal police shootings and their representation in the general population, especially for unarmed individuals. This project has also improved my Python skills, particularly in working with dictionaries and data manipulation. I've learned the importance of careful data interpretation and the need to consider multiple factors when analyzing complex issues. Overall, this project has deepened my understanding of both the technical aspects of data analysis and the broader implications of the findings in the context of social justice and policing in the United States.

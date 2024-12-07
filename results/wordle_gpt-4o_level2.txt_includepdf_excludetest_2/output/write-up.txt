@@ -1,0 +1,30 @@
+# Write-up for the Wordle Assignment
+
+## Overview
+This Wordle implementation consists of a graphical interface where users can guess a five-letter word within six attempts. The game provides feedback on each guess by coloring the boxes: green for correct letters in the correct position, yellow for correct letters in the wrong position, and gray for letters not in the word.
+
+## Implementation Details
+
+### Milestone #1: Pick a random word and display in the first row
+- A random word is selected from the `FIVE_LETTER_WORDS` list and converted to uppercase to match the display requirements.
+- The `set_square_letter` method is used to display the chosen word for debugging purposes, though in the final implementation, it's hidden from the player.
+
+### Milestone #2: Check if the letters form a valid word
+- Implement the `enter_action` function to check if the entered word exists in the `FIVE_LETTER_WORDS` list.
+- Display a message if the word is not found.
+
+### Milestone #3: Color the boxes
+- Iterate through each letter of the guessed word and compare it to the secret word.
+- Use `set_square_color` and `set_key_color` to color the squares and keys appropriately.
+
+### Milestone #4: Color the keys
+- Ensure the keys are updated to reflect the game's state, using colors to indicate if letters are correct, present, or missing.
+- The key color does not revert to a less significant color once set (e.g., green should not change to yellow or gray).
+
+## Extensions and Improvements
+- Use a balanced dictionary to enhance game fairness.
+- Implement additional feedback or animations for a more engaging experience.
+- Create a scoring system to track performance over multiple games.
+
+## Conclusion
+The Wordle game is a simple yet challenging application that enhances string manipulation skills and provides a fun way to practice Python programming. The use of graphics makes the user interface interactive and engaging.

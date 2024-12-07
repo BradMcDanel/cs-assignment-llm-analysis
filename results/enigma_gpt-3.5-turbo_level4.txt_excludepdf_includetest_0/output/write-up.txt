@@ -1,0 +1,1 @@
+In this assignment, I learned about the Enigma machine and how to simulate its operation using Python. I implemented the rotor data structure, encryption path, and rotor advance feature. I also gained a deeper understanding of the Model-View-Controller pattern and its application in this context.

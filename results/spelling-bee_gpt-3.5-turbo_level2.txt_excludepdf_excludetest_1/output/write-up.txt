@@ -1,0 +1,7 @@
+# This Python script implements a solver for the Spelling Bee puzzle as described in the assignment.
+# The script reads a dictionary of English words from a file, checks each word against the puzzle requirements,
+# and then displays the legal words found, along with the total score and pangram status.
+# The script utilizes the provided SpellingBeeGraphics library for the graphical display and user interaction.
+# The solver is broken down into functions for reading the dictionary, checking words, and solving the puzzle.
+# Milestones such as initializing the beehive, displaying words, adding scores, and letting the user find words are achieved.
+# The script follows best practices like decomposing the problem and refactoring code for better maintainability.

@@ -1,0 +1,10 @@
+# The implementation of the Wordle game follows a step-by-step approach based on the milestones provided in the assignment.
+# 
+# - Milestone #1: A random word is selected from the provided dictionary and displayed in the first row.
+# - Milestone #2: The enter_action function checks if the user's guess is a valid word from the dictionary, displaying a message accordingly.
+# - Milestone #3: The program colors the squares based on the correctness of each letter, distinguishing between correct, present, and missing letters.
+# - Milestone #4: The program updates the colors of the keys on the virtual keyboard to provide visual feedback, following the same color rules.
+# 
+# The implementation makes use of the graphical capabilities provided by the WordleGWindow class, and utilizes constants for colors and dimensions to keep the code clean and adaptable.
+# 
+# This solution is extensible and can be further enhanced with additional features as suggested in the assignment.

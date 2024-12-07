@@ -1,0 +1,20 @@
+...
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The proportion of black subjects in fatal police shootings is approximately 23.2%. This is significantly higher compared to the proportion of black people in the United States population, which is around 13.4%.
+
+Question 2:
+--------------------------------------------------------
+The proportion of black subjects in fatal police shootings where the subject is unarmed is approximately 31.9%. This is also significantly higher compared to the proportion of black people in the United States population, and higher than the proportion of black subjects in all police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+In this project, I learned how to use Python to analyze real-world data sets and the importance of organizing data into dictionaries for efficient querying. The analysis revealed that black individuals are disproportionately represented among subjects of fatal police shootings, both in general and when unarmed. This exercise also highlighted the importance of data accuracy and representation, as well as the ethical considerations when handling sensitive real-world data. Working through the project emphasized the need for clear documentation and meaningful variable names to ensure code readability and maintainability.

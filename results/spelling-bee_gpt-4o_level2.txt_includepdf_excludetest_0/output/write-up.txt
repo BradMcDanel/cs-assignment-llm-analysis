@@ -1,0 +1,26 @@
+# Implementation of the Spelling Bee Assignment
+
+## Overview
+
+The Spelling Bee project involves creating an interactive puzzle game where users can find words based on a given set of letters arranged in a beehive pattern. The project is divided into several milestones, each adding more functionality to the game. The main focus is on string manipulation and file handling in Python.
+
+## Milestones
+
+1. **Initialize the Beehive**: Implemented functionality to take user input for the puzzle and validate it. The puzzle must contain exactly seven unique alphabetic characters.
+
+2. **Display Legal Words**: Developed a function to read words from the dictionary and check if they can be formed using the puzzle's letters, following set rules. Valid words are displayed in the UI.
+
+3. **Add Scores**: Extended the solution to calculate and display scores for each word, with additional points for pangrams. The total score is shown at the bottom of the interface.
+
+4. **User Interaction**: Added a field for users to input words they find. The program validates these words and checks against the dictionary, updating the score if the word is valid and hasn't been used before.
+
+## Key Challenges
+
+- Validating user input to ensure it forms a legal puzzle.
+- Efficiently checking dictionary words against puzzle rules.
+- Implementing a scoring system that recognizes pangrams.
+- Ensuring interactive elements update the UI correctly.
+
+## Conclusion
+
+The project demonstrates effective use of Python for interactive applications, focusing on string manipulation, file handling, and user interface updates using the provided `SpellingBeeGraphics` class. The modular approach ensured each milestone could be tested and debugged independently, facilitating a smooth development process.

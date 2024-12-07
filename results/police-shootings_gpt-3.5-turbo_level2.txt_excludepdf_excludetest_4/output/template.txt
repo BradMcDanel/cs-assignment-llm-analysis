@@ -1,0 +1,2 @@
+# Answer the questions and tasks specified in the assignment here
+# Include the summary of the data, column descriptions, proportion comparisons, and reflection

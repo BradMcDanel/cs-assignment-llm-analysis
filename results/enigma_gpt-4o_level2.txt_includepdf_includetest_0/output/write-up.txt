@@ -1,0 +1,31 @@
+# Enigma Machine Simulation Write-up
+
+## Objective
+The objective of this project was to create a simulator for the Enigma machine, a cipher device used by the German military during World War II. This simulator allows users to interact with an on-screen Enigma machine, pressing keys to encode messages and observing the corresponding lamps light up.
+
+## Implementation Details
+The implementation followed a Model-View-Controller (MVC) pattern. The provided `EnigmaView.py` handled the graphical representation and user inputs, while the `EnigmaModel.py` managed the state and logic of the Enigma machine. The project was divided into six milestones, each building on the previous one to incrementally add functionalities.
+
+### Milestone #1: Activate the Keyboard
+The first milestone focused on making the keyboard operational. We created a dictionary to track the state of each key (whether it was pressed or released). The `key_pressed`, `key_released`, and `is_key_down` methods were implemented to update and query this state.
+
+### Milestone #2: Connect the Keys Directly to the Lamps
+In this milestone, we connected the keys to the lamps. Temporarily, pressing a key immediately lit the corresponding lamp without any encryption. This ensured that the key and lamp states were correctly updated and displayed.
+
+### Milestone #3: Design and Implement the Rotor Data Structure
+We designed and implemented the `EnigmaRotor` class to encapsulate the state and behavior of a rotor. Each rotor has a permutation and an offset, and can advance its position. The `EnigmaModel` was updated to initialize three rotors with predefined permutations.
+
+### Milestone #4: Implement One Stage in the Encryption
+We implemented a helper function `apply_permutation` to simulate the encryption path through one rotor. The `key_pressed` method was updated to apply this permutation to the pressed key, resulting in a basic encryption mechanism.
+
+### Milestone #5: Implement the Full Encryption Path
+The full encryption path was implemented by traversing the signal through all three rotors, a reflector, and back through the rotors in reverse. This involved inverting the rotor permutations for the reverse path.
+
+### Milestone #6: Implement the Rotor Advance on Pressing a Key
+The final milestone implemented the rotor advancement mechanism. The fast rotor advances with each key press, and carries over to the medium and slow rotors as needed. This ensures the machine's state changes correctly with each key press, mimicking the behavior of the actual Enigma machine.
+
+### Testing
+Automated tests were created using `pytest` to verify the correctness of the implementation. These tests checked the initialization, key press and release, rotor advancement, encryption and decryption consistency, and the reflector's behavior.
+
+## Conclusion
+The Enigma machine simulator project provided a hands-on experience with the Model-View-Controller design pattern and the complexities of historical cryptographic devices. By breaking down the implementation into manageable milestones, we were able to incrementally build and verify the functionality of the simulator, ensuring a robust and accurate representation of the Enigma machine.

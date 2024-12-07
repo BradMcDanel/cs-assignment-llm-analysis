@@ -1,0 +1,10 @@
+# Enigma Machine Simulation Write-up
+
+## Overview
+This project involves simulating the operation of the Enigma machine, a cipher device used by the German military during World War II. The project is broken down into milestones, each progressively building up to a fully functional Enigma machine simulator.
+
+## Milestones
+
+### Milestone #1: Activate the Keyboard
+- Objective: Make the keyboard operational.
+- Implementation: Created a dictionary to keep

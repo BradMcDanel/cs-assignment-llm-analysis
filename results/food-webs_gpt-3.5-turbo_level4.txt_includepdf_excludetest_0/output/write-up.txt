@@ -1,0 +1,3 @@
+In this assignment, I learned the importance of analyzing food webs and implementing a program to process predator-prey relationships. The assignment required loading data from CSV files, storing relationships in a dictionary, and performing various analyses such as identifying apex predators, producers, most flexible eaters, tastiest organisms, and determining the height of each organism in the food web. 
+
+I followed the guidelines provided, including proper error handling, structuring the code with functions for different parts of the assignment, and ensuring good programming style. The assignment helped me understand the complexity of food webs and how computational analysis can provide insights into ecological relationships.

@@ -1,0 +1,471 @@
+{
+    "created": 1731002555.672006,
+    "duration": 0.29281187057495117,
+    "exitcode": 1,
+    "root": "/tmp/code_1p63gs5g",
+    "environment": {},
+    "summary": {
+        "passed": 4,
+        "failed": 6,
+        "total": 10,
+        "collected": 10
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_SpellingBee.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+                    "type": "Function",
+                    "lineno": 47
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+                    "type": "Function",
+                    "lineno": 52
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+                    "type": "Function",
+                    "lineno": 57
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_action",
+                    "type": "Function",
+                    "lineno": 62
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+                    "type": "Function",
+                    "lineno": 69
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+                    "type": "Function",
+                    "lineno": 77
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_pangram_identification",
+                    "type": "Function",
+                    "lineno": 84
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_score_calculation",
+                    "type": "Function",
+                    "lineno": 89
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+                    "type": "Function",
+                    "lineno": 96
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+                    "type": "Function",
+                    "lineno": 104
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+            "lineno": 47,
+            "outcome": "passed",
+            "keywords": [
+                "test_puzzle_initialization",
+                "test_SpellingBee.py",
+                "code_1p63gs5g"
+            ],
+            "setup": {
+                "duration": 0.019542836816981435,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.213993325829506e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.629604078829288e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+            "lineno": 52,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_puzzle_length",
+                "test_SpellingBee.py",
+                "code_1p63gs5g"
+            ],
+            "setup": {
+                "duration": 0.018783651059493423,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.457402534782887e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.226807065308094e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+            "lineno": 57,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_puzzle_duplicates",
+                "test_SpellingBee.py",
+                "code_1p63gs5g"
+            ],
+            "setup": {
+                "duration": 0.01878302195109427,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.492303848266602e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.097888737916946e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_action",
+            "lineno": 62,
+            "outcome": "failed",
+            "keywords": [
+                "test_solve_action",
+                "test_SpellingBee.py",
+                "code_1p63gs5g"
+            ],
+            "setup": {
+                "duration": 0.018612005980685353,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0007215829100459814,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_1p63gs5g/SpellingBee.py",
+                    "lineno": 84,
+                    "message": "NameError: name 'sbg' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 65,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 32,
+                        "message": "in solve_action"
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 54,
+                        "message": "in add_word"
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 84,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x775b1b546980>\n\n    def test_solve_action(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n>       mock_graphics.solve_callback(\"Solve\")\n\ntest_SpellingBee.py:65: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nSpellingBee.py:32: in solve_action\n    add_word(word)\nSpellingBee.py:54: in add_word\n    score = calculate_score(word)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nword = 'excel'\n\n    def calculate_score(word):\n        base_score = len(word) if len(word) > 4 else 1\n>       return base_score + (7 if is_pangram(word, sbg.get_beehive_letters()) else 0)\nE       NameError: name 'sbg' is not defined\n\nSpellingBee.py:84: NameError"
+            },
+            "teardown": {
+                "duration": 0.00013439706526696682,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+            "lineno": 69,
+            "outcome": "failed",
+            "keywords": [
+                "test_word_entry_valid",
+                "test_SpellingBee.py",
+                "code_1p63gs5g"
+            ],
+            "setup": {
+                "duration": 0.017375313909724355,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.232689626514912e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_1p63gs5g/SpellingBee.py",
+                    "lineno": 84,
+                    "message": "NameError: name 'sbg' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 73,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 48,
+                        "message": "in word_action"
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 54,
+                        "message": "in add_word"
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 84,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x775b1bcc0340>\n\n    def test_word_entry_valid(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n        initial_word_count = len(mock_graphics.words)\n>       mock_graphics.word_callback(\"excel\")\n\ntest_SpellingBee.py:73: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nSpellingBee.py:48: in word_action\n    add_word(word)\nSpellingBee.py:54: in add_word\n    score = calculate_score(word)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nword = 'excel'\n\n    def calculate_score(word):\n        base_score = len(word) if len(word) > 4 else 1\n>       return base_score + (7 if is_pangram(word, sbg.get_beehive_letters()) else 0)\nE       NameError: name 'sbg' is not defined\n\nSpellingBee.py:84: NameError"
+            },
+            "teardown": {
+                "duration": 0.0001336138229817152,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+            "lineno": 77,
+            "outcome": "passed",
+            "keywords": [
+                "test_word_entry_invalid",
+                "test_SpellingBee.py",
+                "code_1p63gs5g"
+            ],
+            "setup": {
+                "duration": 0.017268731957301497,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 8.267303928732872e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.823008880019188e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_pangram_identification",
+            "lineno": 84,
+            "outcome": "failed",
+            "keywords": [
+                "test_pangram_identification",
+                "test_SpellingBee.py",
+                "code_1p63gs5g"
+            ],
+            "setup": {
+                "duration": 0.01777430297806859,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.200791828334332e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_1p63gs5g/SpellingBee.py",
+                    "lineno": 84,
+                    "message": "NameError: name 'sbg' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 87,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 48,
+                        "message": "in word_action"
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 54,
+                        "message": "in add_word"
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 84,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x775b1b43a9e0>\n\n    def test_pangram_identification(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n>       mock_graphics.word_callback(\"excellently\")\n\ntest_SpellingBee.py:87: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nSpellingBee.py:48: in word_action\n    add_word(word)\nSpellingBee.py:54: in add_word\n    score = calculate_score(word)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nword = 'excellently'\n\n    def calculate_score(word):\n        base_score = len(word) if len(word) > 4 else 1\n>       return base_score + (7 if is_pangram(word, sbg.get_beehive_letters()) else 0)\nE       NameError: name 'sbg' is not defined\n\nSpellingBee.py:84: NameError"
+            },
+            "teardown": {
+                "duration": 0.0001342098694294691,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_score_calculation",
+            "lineno": 89,
+            "outcome": "failed",
+            "keywords": [
+                "test_score_calculation",
+                "test_SpellingBee.py",
+                "code_1p63gs5g"
+            ],
+            "setup": {
+                "duration": 0.016844209050759673,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.605800732970238e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_1p63gs5g/SpellingBee.py",
+                    "lineno": 84,
+                    "message": "NameError: name 'sbg' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 92,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 48,
+                        "message": "in word_action"
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 54,
+                        "message": "in add_word"
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 84,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x775b197c4ac0>\n\n    def test_score_calculation(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n>       mock_graphics.word_callback(\"excel\")\n\ntest_SpellingBee.py:92: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nSpellingBee.py:48: in word_action\n    add_word(word)\nSpellingBee.py:54: in add_word\n    score = calculate_score(word)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nword = 'excel'\n\n    def calculate_score(word):\n        base_score = len(word) if len(word) > 4 else 1\n>       return base_score + (7 if is_pangram(word, sbg.get_beehive_letters()) else 0)\nE       NameError: name 'sbg' is not defined\n\nSpellingBee.py:84: NameError"
+            },
+            "teardown": {
+                "duration": 0.0001078159548342228,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+            "lineno": 96,
+            "outcome": "failed",
+            "keywords": [
+                "test_duplicate_word_entry",
+                "test_SpellingBee.py",
+                "code_1p63gs5g"
+            ],
+            "setup": {
+                "duration": 0.01790598384104669,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.281095117330551e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_1p63gs5g/SpellingBee.py",
+                    "lineno": 84,
+                    "message": "NameError: name 'sbg' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 99,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 48,
+                        "message": "in word_action"
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 54,
+                        "message": "in add_word"
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 84,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x775b1b481bd0>\n\n    def test_duplicate_word_entry(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n>       mock_graphics.word_callback(\"excel\")\n\ntest_SpellingBee.py:99: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nSpellingBee.py:48: in word_action\n    add_word(word)\nSpellingBee.py:54: in add_word\n    score = calculate_score(word)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nword = 'excel'\n\n    def calculate_score(word):\n        base_score = len(word) if len(word) > 4 else 1\n>       return base_score + (7 if is_pangram(word, sbg.get_beehive_letters()) else 0)\nE       NameError: name 'sbg' is not defined\n\nSpellingBee.py:84: NameError"
+            },
+            "teardown": {
+                "duration": 0.00010993797332048416,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+            "lineno": 104,
+            "outcome": "failed",
+            "keywords": [
+                "test_solve_after_user_input",
+                "test_SpellingBee.py",
+                "code_1p63gs5g"
+            ],
+            "setup": {
+                "duration": 0.018812027061358094,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.933486580848694e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_1p63gs5g/SpellingBee.py",
+                    "lineno": 84,
+                    "message": "NameError: name 'sbg' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 107,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 48,
+                        "message": "in word_action"
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 54,
+                        "message": "in add_word"
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 84,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x775b1b547310>\n\n    def test_solve_after_user_input(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n>       mock_graphics.word_callback(\"excel\")\n\ntest_SpellingBee.py:107: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nSpellingBee.py:48: in word_action\n    add_word(word)\nSpellingBee.py:54: in add_word\n    score = calculate_score(word)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nword = 'excel'\n\n    def calculate_score(word):\n        base_score = len(word) if len(word) > 4 else 1\n>       return base_score + (7 if is_pangram(word, sbg.get_beehive_letters()) else 0)\nE       NameError: name 'sbg' is not defined\n\nSpellingBee.py:84: NameError"
+            },
+            "teardown": {
+                "duration": 0.00012213201262056828,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

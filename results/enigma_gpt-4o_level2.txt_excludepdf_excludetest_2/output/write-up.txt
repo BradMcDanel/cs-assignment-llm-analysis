@@ -1,0 +1,20 @@
+# Write-up for Enigma Project
+
+## Overview
+This project implements a simulation of the Enigma machine using the Model-View-Controller (MVC) design pattern. The main task was to create an interactive model that responded to user inputs to simulate the encryption and decryption process of the historical Enigma machine.
+
+## Milestones
+1. **Activate the keyboard**: Implemented key press and release functionalities to track the state of each key.
+2. **Connect the keys directly to the lamps**: Extended the key press and release functionalities to also control the state of the lamps.
+3. **Design and implement the rotor data structure**: Created an `EnigmaRotor` class to manage the state and permutation of each rotor.
+4. **Implement one stage in the encryption**: Added functionality to handle the first stage of encryption using the rotor's permutation.
+5. **Implement the full encryption path**: Extended the encryption path to include the reflector and the backward pass through the rotors.
+6. **Implement the rotor advance on pressing a key**: Implemented the logic to advance the rotors appropriately on each key press.
+
+## Challenges
+- Understanding the historical context and the mechanical operations of the Enigma machine.
+- Implementing the rotor advancement and carry-over logic.
+- Ensuring the encryption and decryption worked correctly with the permutations and offsets.
+
+## Conclusion
+The project provided an insightful experience into both historical cryptographic machines and modern software design patterns. The MVC pattern was particularly useful in separating concerns and ensuring a clean, maintainable codebase.

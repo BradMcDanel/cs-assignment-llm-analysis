@@ -1,0 +1,2 @@
+# Sample outputs or screenshots from running the SpellingBee program.
+# It demonstrates the program's functionality, displays puzzle solutions, word lists, scores, and any other relevant information.

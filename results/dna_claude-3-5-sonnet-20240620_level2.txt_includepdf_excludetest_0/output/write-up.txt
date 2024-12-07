@@ -1,0 +1,31 @@
+DNA Profile Matching Program
+
+This Python program is designed to identify an individual based on their DNA sequence by comparing it to a database of known DNA profiles. The program takes two command-line arguments: a CSV file containing STR (Short Tandem Repeat) counts for various individuals, and a text file containing a DNA sequence to be identified.
+
+Key components of the program:
+
+1. Command-line argument handling:
+   The program checks for the correct number of arguments and exits with an error message if they are not provided correctly.
+
+2. CSV file reading:
+   The program uses the csv module to read the database file into memory as a list of dictionaries, where each dictionary represents an individual's profile.
+
+3. DNA sequence reading:
+   The program reads the DNA sequence from the provided text file.
+
+4. STR extraction:
+   The program extracts the list of STRs from the CSV header, excluding the 'name' column.
+
+5. STR counting:
+   For each STR, the program computes the longest run of consecutive repeats in the DNA sequence using the longest_match function.
+
+6. Profile matching:
+   The program compares the computed STR counts with each individual in the database. If an exact match is found, it prints the name of the matching individual and exits.
+
+7. No match handling:
+   If no match is found after checking all individuals, the program prints "No match".
+
+The longest_match function:
+This helper function takes a DNA sequence and an STR as input. It iterates through the sequence, counting the maximum number of consecutive repeats of the STR. This is done efficiently by using nested loops: the outer loop starts at each position in the sequence, while the inner loop counts consecutive repeats starting from that position.
+
+Overall, this program demonstrates the use of file I/O, data structures (lists and dictionaries), string manipulation, and algorithm implementation to solve a real-world problem in the field of computational biology.

@@ -1,0 +1,6 @@
+# This program analyzes food webs by reading predator-prey relationships from a file and storing
+# them in a dictionary. It identifies what each predator eats, apex predators, producers, the most
+# flexible eaters, the tastiest organisms, and calculates the height of each organism in the food web.
+# The program follows guidelines such as command line parameter handling, error checking, and
+# modular function design. Each part of the problem is broken into separate functions for ease of
+# testing and potential reuse. The program also formats the output according to specified conventions.

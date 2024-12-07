@@ -1,0 +1,10 @@
+In this assignment, I implemented a Wordle game clone by following a series of milestones. The key steps included:
+
+1. Displaying a randomly selected word in the first row of boxes.
+2. Checking if the entered word by the user is in the dictionary and displaying a message if it isn't.
+3. Coloring the boxes based on the entered word's correctness, including handling multiple instances of the same letter.
+4. Updating the colors on the virtual keyboard to reflect the status of the guessed letters.
+
+I learned the importance of breaking down a larger project into smaller milestones to ensure each part works correctly before moving on to the next. This approach helps in managing complexity and debugging effectively.
+
+Future extensions could include creating a more balanced dictionary, enhancing the graphics for winning the game, and keeping score across multiple games.

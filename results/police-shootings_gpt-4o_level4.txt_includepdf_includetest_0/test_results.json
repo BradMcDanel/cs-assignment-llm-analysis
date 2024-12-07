@@ -1,0 +1,154 @@
+{
+    "created": 1731007422.9602993,
+    "duration": 0.04246187210083008,
+    "exitcode": 1,
+    "root": "/tmp/code_recoa4uw",
+    "environment": {},
+    "summary": {
+        "passed": 3,
+        "failed": 1,
+        "total": 4,
+        "collected": 4
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_police_shootings.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_police_shootings.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_police_shootings.py::test_subject_1694",
+                    "type": "Function",
+                    "lineno": 9
+                },
+                {
+                    "nodeid": "test_police_shootings.py::test_minnesota_subjects",
+                    "type": "Function",
+                    "lineno": 12
+                },
+                {
+                    "nodeid": "test_police_shootings.py::test_black_fraction_output",
+                    "type": "Function",
+                    "lineno": 40
+                },
+                {
+                    "nodeid": "test_police_shootings.py::test_unarmed_black_fraction_output",
+                    "type": "Function",
+                    "lineno": 43
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_police_shootings.py::test_subject_1694",
+            "lineno": 9,
+            "outcome": "passed",
+            "keywords": [
+                "test_subject_1694",
+                "test_police_shootings.py",
+                "code_recoa4uw"
+            ],
+            "setup": {
+                "duration": 0.02493785717524588,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0001749880611896515,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.1377108320593834e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_police_shootings.py::test_minnesota_subjects",
+            "lineno": 12,
+            "outcome": "failed",
+            "keywords": [
+                "test_minnesota_subjects",
+                "test_police_shootings.py",
+                "code_recoa4uw"
+            ],
+            "setup": {
+                "duration": 7.614190690219402e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00015417695976793766,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_recoa4uw/test_police_shootings.py",
+                    "lineno": 39,
+                    "message": "AssertionError: assert None\n +  where None = <function search at 0x76b257561b40>('Marcus\\\\ Golden', 'Philando Castile\\n0.23291697281410728\\n0.31965442764578833\\n', re.IGNORECASE)\n +    where <function search at 0x76b257561b40> = re.search\n +    and   'Marcus\\\\ Golden' = <function escape at 0x76b257562050>('Marcus Golden')\n +      where <function escape at 0x76b257562050> = re.escape\n +    and   re.IGNORECASE = re.IGNORECASE"
+                },
+                "traceback": [
+                    {
+                        "path": "test_police_shootings.py",
+                        "lineno": 39,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "police_shootings_output = 'Philando Castile\\n0.23291697281410728\\n0.31965442764578833\\n'\n\n    def test_minnesota_subjects(police_shootings_output):\n        expected_names = [\n            \"Marcus Golden\", \"Quincy Reed Reindl\", \"Raymond Kmetz\", \"Justin Tolkinen\",\n            \"Sam Holmes\", \"Derek Wolfsteller\", \"Adam Schneider\", \"Philip Quinn\",\n            \"Robert Christen\", \"Luverne Roy Christensen\", \"Jamar Clark\", \"Michael Kirvelay\",\n            \"John Birkeland\", \"Map Kong\", \"Denise Fairchild\", \"Raul Salvador Marquez Heraldes\",\n            \"Jaffort Smith\", \"Eugene Geno Francis Smith\", \"Philando Castile\", \"Adam Jo Klimek\",\n            \"Justin Kulhanek-Derks\", \"Dahir Adan\", \"Jamie Joseph Lewis\", \"Kristofer Daniel Youngquist\",\n            \"Jay Johannes Holmgren\", \"Chase Anthony Tuseth\", \"Ronnie Johnson\", \"Jamison Christopher Anderson\",\n            \"Cordale Quinn Handy\", \"Clarence Duane Huderle\", \"Darren Jahnke\", \"Gregory Shawn Thrower\",\n            \"Justine Damond\", \"Phumee Lee\", \"Ronald L. Klitzka\", \"Jeffrey John Golnick\",\n            \"Nicholas Daniel Moore\", \"Gilbert Salas\", \"Benjamin Evans\", \"Thurman Blevins\",\n            \"Archer Amorosi\", \"William James Hughes\", \"Keagan Johnson\", \"Travis Jordan\",\n            \"James Hanchett\", \"Keaton James Larson\", \"J Scot Alan Widmark\", \"Vernon May\",\n            \"Joseph Roberts\", \"Matthew Neil Tuhkanen\", \"Tyler Schmidtbauer\", \"John Duane Fairbanks\",\n            \"Timothy Russell Majchrzak\", \"Isak Abdirahman Aden\", \"Mario Benjamin\", \"Kobe Heisler\",\n            \"Brian Quinones\", \"Ronald Davis\", \"Chiasher Fong Vue\", \"Kent Richard Kruger\",\n            \"Keith P. Haux\", \"Austin Dean Heights\", \"Arlan Kaleb Schultz\", \"Kirby Joseph Michael Hengel\",\n            \"Anthony Michael Legato\", \"Estavon Elioff\", \"Dolal Idd\", \"Brian Andren\",\n            \"Dominic Lucas Koch\", \"David Joseph Wayne Conwell\", \"Shannon Savela\", \"David Savela\",\n            \"Daunte Wright\", \"Bradley Michael Olsen\", \"Winston Boogie Smith Jr.\", \"Ricardo Torres Jr.\",\n            \"Noah Douglas Kelly\", \"Bradley George Erickson\", \"Kokou Christopher Fiafonou\", \"Amir Locke\",\n            \"Jesse Henri Werling\", \"Michael David Johnson\", \"Charles Bangs\", \"Andrew Tekle Sundberg\",\n            \"Joshua Hippler\", \"Jordyn John Hansen\", \"Howard Johnson\", \"Brent A. Alsleben\"\n        ]\n        for name in expected_names:\n>           assert re.search(re.escape(name), police_shootings_output, re.IGNORECASE)\nE           AssertionError: assert None\nE            +  where None = <function search at 0x76b257561b40>('Marcus\\\\ Golden', 'Philando Castile\\n0.23291697281410728\\n0.31965442764578833\\n', re.IGNORECASE)\nE            +    where <function search at 0x76b257561b40> = re.search\nE            +    and   'Marcus\\\\ Golden' = <function escape at 0x76b257562050>('Marcus Golden')\nE            +      where <function escape at 0x76b257562050> = re.escape\nE            +    and   re.IGNORECASE = re.IGNORECASE\n\ntest_police_shootings.py:39: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.576091542840004e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_police_shootings.py::test_black_fraction_output",
+            "lineno": 40,
+            "outcome": "passed",
+            "keywords": [
+                "test_black_fraction_output",
+                "test_police_shootings.py",
+                "code_recoa4uw"
+            ],
+            "setup": {
+                "duration": 7.359404116868973e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00011499691754579544,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.4114887714385986e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_police_shootings.py::test_unarmed_black_fraction_output",
+            "lineno": 43,
+            "outcome": "passed",
+            "keywords": [
+                "test_unarmed_black_fraction_output",
+                "test_police_shootings.py",
+                "code_recoa4uw"
+            ],
+            "setup": {
+                "duration": 5.6379009038209915e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.735208004713058e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.687710992991924e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

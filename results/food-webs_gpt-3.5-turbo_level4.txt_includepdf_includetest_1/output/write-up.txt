@@ -1,0 +1,1 @@
+In this assignment, I learned about analyzing food webs, storing relationships in dictionaries, identifying apex predators, producers, most flexible eaters, and tastiest organisms. I also implemented functions for each part of the assignment, read data from files, and ensured error handling for file operations.

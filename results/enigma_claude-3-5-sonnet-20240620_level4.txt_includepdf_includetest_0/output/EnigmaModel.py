@@ -10,18 +10,20 @@ class EnigmaRotor:
     def _invert_permutation(self, permutation):
         return ''.join(sorted(permutation, key=lambda c: permutation.index(c)))
 
+    def get_offset(self):
+        return self.offset
+
+    def get_permutation(self):
+        return self.permutation
+
     def advance(self):
         self.offset = (self.offset + 1) % 26
         return self.offset == 0
 
-    def encode(self, char, reverse=False):
-        if reverse:
-            perm = self.inverse_permutation
-        else:
-            perm = self.permutation
-        index = (ALPHABET.index(char) + self.offset) % 26
-        encoded = perm[index]
-        return ALPHABET[(ALPHABET.index(encoded) - self.offset) % 26]
+def apply_permutation(index, permutation, offset):
+    shifted_index = (index + offset) % 26
+    new_index = ALPHABET.index(permutation[shifted_index])
+    return (new_index - offset) % 26
 
 class EnigmaModel:
     def __init__(self):
@@ -29,7 +31,6 @@ class EnigmaModel:
         self._keys_down = {letter: False for letter in ALPHABET}
         self._lamps_on = {letter: False for letter in ALPHABET}
         self._rotors = [EnigmaRotor(perm) for perm in ROTOR_PERMUTATIONS]
-        self._reflector = EnigmaRotor(REFLECTOR_PERMUTATION)
 
     def add_view(self, view):
         self._views.append(view)
@@ -47,17 +48,17 @@ class EnigmaModel:
     def key_pressed(self, letter):
         self._keys_down[letter] = True
         self._advance_rotors()
-        encoded = self._encode(letter)
-        self._lamps_on = {l: l == encoded for l in ALPHABET}
+        encrypted_letter = self._encrypt(letter)
+        self._lamps_on = {l: l == encrypted_letter for l in ALPHABET}
         self.update()
 
     def key_released(self, letter):
         self._keys_down[letter] = False
-        self._lamps_on = {l: False for l in ALPHABET}
+        self._lamps_on = {letter: False for letter in ALPHABET}
         self.update()
 
     def get_rotor_letter(self, index):
-        return ALPHABET[self._rotors[index].offset]
+        return ALPHABET[self._rotors[index].get_offset()]
 
     def rotor_clicked(self, index):
         self._rotors[index].advance()
@@ -71,19 +72,21 @@ class EnigmaModel:
             else:
                 break
 
-    def _encode(self, letter):
+    def _encrypt(self, letter):
+        index = ALPHABET.index(letter)
+        
         # Right to left through rotors
         for rotor in reversed(self._rotors):
-            letter = rotor.encode(letter)
+            index = apply_permutation(index, rotor.get_permutation(), rotor.get_offset())
         
         # Through reflector
-        letter = self._reflector.encode(letter)
+        index = ALPHABET.index(REFLECTOR_PERMUTATION[index])
         
         # Left to right through rotors
         for rotor in self._rotors:
-            letter = rotor.encode(letter, reverse=True)
+            index = apply_permutation(index, rotor.inverse_permutation, rotor.get_offset())
         
-        return letter
+        return ALPHABET[index]
 
 def enigma():
     model = EnigmaModel()

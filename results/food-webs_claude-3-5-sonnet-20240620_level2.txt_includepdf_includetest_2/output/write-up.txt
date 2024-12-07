@@ -1,0 +1,15 @@
+This implementation follows the assignment requirements by:
+
+1. Using a dictionary to store the food web data, with predators as keys and lists of prey as values.
+2. Reading the file only once and storing all data in memory.
+3. Implementing separate functions for each analysis task (apex predators, producers, etc.).
+4. Using the provided formatList function for consistent output formatting.
+5. Handling command-line arguments and file input errors appropriately.
+6. Avoiding global variables and following good programming practices.
+
+The height calculation uses an iterative approach as suggested in the assignment, avoiding recursion.
+
+Potential improvements could include:
+- Implementing the A+ part (identifying herbivores, omnivores, and carnivores).
+- Adding more detailed error handling and input validation.
+- Optimizing some of the functions for larger food webs if performance becomes an issue.

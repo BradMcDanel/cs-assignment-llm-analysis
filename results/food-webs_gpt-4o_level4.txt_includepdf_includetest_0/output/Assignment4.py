@@ -1,83 +1,102 @@
 import sys
-from collections import defaultdict
 from formatList import formatList
 
-def read_food_web(filename):
+def load_food_web(filename):
+    """Load the predator-prey relations from the given file."""
     try:
-        with open(filename, 'r') as file:
-            food_web = defaultdict(list)
-            for line in file:
+        with open(filename, 'r') as f:
+            food_web = {}
+            for line in f:
                 parts = line.strip().split(',')
                 predator = parts[0]
-                preys = parts[1:]
-                food_web[predator].extend(preys)
-        return food_web
+                prey = parts[1:]
+                food_web[predator] = prey
+            return food_web
     except FileNotFoundError:
-        print(f"Error: The file '{filename}' does not exist.")
+        print(f"Error: File '{filename}' not found.")
         sys.exit(1)
 
-def print_predators_and_prey(food_web):
+def display_predators_and_prey(food_web):
+    """Display what each predator eats."""
     print("Predators and Prey:")
-    for predator, preys in sorted(food_web.items()):
-        print(f"  {predator} eats {formatList(preys)}")
+    for predator, prey in sorted(food_web.items()):
+        print(f"  {predator} eats {formatList(prey)}")
 
 def find_apex_predators(food_web):
-    prey_set = {prey for preys in food_web.values() for prey in preys}
-    apex_predators = [predator for predator in food_web if predator not in prey_set]
+    """Identify apex predators."""
+    all_prey = set(prey for preys in food_web.values() for prey in preys)
+    apex_predators = [predator for predator in food_web if predator not in all_prey]
     print(f"Apex Predators: {formatList(apex_predators)}")
 
 def find_producers(food_web):
-    producers = [predator for predator, preys in food_web.items() if not preys]
+    """Identify producers."""
+    producers = [predator for predator, prey in food_web.items() if not prey]
     print(f"Producers: {formatList(producers)}")
 
 def find_most_flexible_eaters(food_web):
-    max_prey_count = max(len(preys) for preys in food_web.values())
-    most_flexible_eaters = [predator for predator, preys in food_web.items() if len(preys) == max_prey_count]
-    print(f"Most Flexible Eaters: {formatList(most_flexible_eaters)}")
+    """Identify the most flexible eaters."""
+    max_variety = max(len(prey) for prey in food_web.values())
+    flexible_eaters = [predator for predator, prey in food_web.items() if len(prey) == max_variety]
+    print(f"Most Flexible Eaters: {formatList(flexible_eaters)}")
 
 def find_tastiest_organisms(food_web):
-    prey_count = defaultdict(int)
-    for preys in food_web.values():
-        for prey in preys:
+    """Identify the tastiest organisms."""
+    prey_count = {}
+    for prey_list in food_web.values():
+        for prey in prey_list:
+            if prey not in prey_count:
+                prey_count[prey] = 0
             prey_count[prey] += 1
-    max_count = max(prey_count.values())
-    tastiest_organisms = [prey for prey, count in prey_count.items() if count == max_count]
-    print(f"Tastiest: {formatList(tastiest_organisms)}")
+    max_count = max(prey_count.values(), default=0)
+    tastiest = [prey for prey, count in prey_count.items() if count == max_count]
+    print(f"Tastiest: {formatList(tastiest)}")
 
 def calculate_heights(food_web):
+    """Determine the height of each organism in the food web."""
     heights = {organism: 0 for organism in food_web}
     changed = True
     while changed:
         changed = False
-        for predator, preys in food_web.items():
-            for prey in preys:
-                if heights[predator] <= heights[prey]:
-                    heights[predator] = heights[prey] + 1
+        for predator, prey_list in food_web.items():
+            for prey in prey_list:
+                if heights[predator] <= heights.get(prey, 0):
+                    heights[predator] = heights.get(prey, 0) + 1
                     changed = True
-    return heights
-
-def print_heights(heights):
     print("Heights:")
     for organism, height in sorted(heights.items()):
         print(f"  {organism}: {height}")
 
 def main():
+    # Handle command line arguments
     if len(sys.argv) == 2:
         filename = sys.argv[1]
-    elif len(sys.argv) == 1:
-        filename = input("Please enter the name of the food web file: ")
-    else:
-        print("Error: Too many command line arguments.")
+    elif len(sys.argv) > 2:
+        print("Error: More than one command line argument provided.")
         sys.exit(1)
+    else:
+        filename = input("Please enter the file name: ")
 
-    food_web = read_food_web(filename)
-    print_predators_and_prey(food_web)
+    # Load the food web
+    food_web = load_food_web(filename)
+
+    # Part 1: Display predators and prey
+    display_predators_and_prey(food_web)
+
+    # Part 2: Identify apex predators
     find_apex_predators(food_web)
-    find_producers(food_web)
-    find_most_flexible_eaters(food_web)
-    find_tastiest_organisms(food_web)
-    heights = calculate_heights(food_web)
-    print_heights(heights)
 
+    # Part 3: Identify producers
+    find_producers(food_web)
+
+    # Part 4: Identify the most flexible eaters
+    find_most_flexible_eaters(food_web)
+
+    # Part 5: Identify the tastiest organisms
+    find_tastiest_organisms(food_web)
+
+    # Part 6: Calculate heights
+    calculate_heights(food_web)
+
+# Ensure the script is executable
 if __name__ == "__main__":
     main()

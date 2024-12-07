@@ -1,0 +1,8 @@
+This program reads a DNA database from a CSV file and a DNA sequence from a text file, then determines the individual to whom the DNA most likely belongs. It does so by comparing the longest consecutive runs of Short Tandem Repeats (STRs) in the DNA sequence against the counts in the database.
+
+Key Components:
+1. **File Reading**: Utilizes the `csv` module to read the CSV file and standard file I/O for reading the DNA sequence.
+2. **String Manipulation**: Computes the longest run of each STR in the DNA sequence using a loop over the sequence.
+3. **Matching Logic**: Compares computed STR counts with those in the database and outputs the matching individual's name or "No match".
+
+The program handles input errors, processes the data efficiently, and outputs the correct result based on the provided DNA database and sequence.

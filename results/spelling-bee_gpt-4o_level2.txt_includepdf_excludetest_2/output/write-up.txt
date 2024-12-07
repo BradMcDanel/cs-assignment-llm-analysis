@@ -1,0 +1,9 @@
+# This project implements a Spelling Bee puzzle solver with interactive components.
+# It utilizes the SpellingBeeGraphics class for GUI operations and handles user inputs
+# to validate and solve puzzles. We implemented four milestones:
+# 1. Validate and display puzzle letters.
+# 2. Find and display legal words from a dictionary.
+# 3. Calculate and display scores for found words.
+# 4. Allow user interaction to find words and validate inputs.
+# We refactored code to ensure reusability and clear separation of logic, such as word validation
+# and score calculation, which are crucial for adding user interaction in the final milestone.

@@ -1,0 +1,37 @@
+Task 1:
+Question 1: The Washington Post's database contains records of every fatal shooting in the United States by a police officer in the line of duty since Jan. 1, 2015. The data is compiled from news reports, social media postings and police reports. It includes details about each incident such as the race of the deceased, the circumstances of the shooting, and whether the person was armed.
+
+Question 2:
+- id: Unique identifier for each incident. Examples: 22, 325, 140
+- name: Name of the deceased. Examples: "John Doe", "Jane Smith"
+- date: Date of the incident. Examples: "2015-01-02", "2016-12-25"
+- manner_of_death: How the person died. Examples: "shot", "shot and Tasered"
+- armed: Whether and how the person was armed. Examples: "gun", "knife", "unarmed"
+- age: Age of the deceased. Examples: 25, 40, 18
+- gender: Gender of the deceased. Examples: "M", "F"
+- race: Race of the deceased. Examples: "W" (White), "B" (Black), "H" (Hispanic)
+- city: City where the incident occurred. Examples: "Los Angeles", "New York"
+- state: State where the incident occurred. Examples: "CA", "NY", "TX"
+- signs_of_mental_illness: Whether the person showed signs of mental illness. Examples: "True", "False"
+- threat_level: Level of threat posed by the deceased. Examples: "attack", "other", "undetermined"
+- flee: Whether the person was fleeing. Examples: "Not fleeing", "Car", "Foot"
+- body_camera: Whether officers were wearing body cameras. Examples: "True", "False"
+
+Question 3: According to the 2020 U.S. Census, 13.4% of the United States population identifies as Black or African American alone. (Source: U.S. Census Bureau, 2020 Census)
+
+Task 2:
+Question 1: The database stores information from all columns in the CSV file: id, name, date, manner_of_death, armed, age, gender, race, city, state, signs_of_mental_illness, threat_level, flee, and body_camera.
+
+Question 2: The 'id' column from the CSV file is used as the keys in the database.
+
+Question 3: The type of the values in database is dict.
+
+Question 4: Each value in database is a dictionary containing all the information for a single incident. For example, database['1'] might contain: {'name': 'John Doe', 'date': '2015-01-02', 'manner_of_death': 'shot', 'armed': 'gun', 'age': '36', 'gender': 'M', 'race': 'W', 'city': 'Los Angeles', 'state': 'CA', 'signs_of_mental_illness': 'False', 'threat_level': 'attack', 'flee': 'Not fleeing', 'body_camera': 'False'}
+
+Task 3:
+Question 1: The proportion of black subjects in fatal police shootings (as calculated in the code) is higher than the proportion of black people in the United States population (13.4% according to the 2020 Census).
+
+Question 2: The proportion of black subjects in fatal police shootings where the subject is unarmed is even higher than both the proportion of black people in the United States population and the proportion of black subjects in all police shootings. This suggests a significant disparity in the rate of unarmed black individuals being fatally shot by police compared to their representation in the general population.
+
+Task 4:
+Reflection: This project has been eye-opening in several ways. First, it demonstrated the power of data analysis in uncovering patterns and disparities in real-world situations. The process of working with the data, from understanding its structure to manipulating it with Python dictionaries, enhanced my programming skills and showed me how coding can be applied to important social issues. The results of the analysis were sobering, revealing a disproportionate impact of fatal police shootings on black individuals, especially when unarmed. This project also highlighted the importance of careful data collection and analysis in understanding complex societal problems. It made me reflect on the responsibilities we have as data scientists and programmers to use our skills to shed light on important issues and potentially contribute to positive change. Overall, this project has deepened my appreciation for the role of data analysis in understanding and addressing social inequities.

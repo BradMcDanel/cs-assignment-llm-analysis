@@ -1,0 +1,39 @@
+def determine_heights(food_web):
+    heights = {species: 0 for species in food_web.keys()}
+    changed = True
+
+    while changed:
+        changed = False
+        for predator, prey_list in food_web.items():
+            for prey in prey_list:
+                if prey in heights and heights[predator] <= heights[prey]:
+                    heights[predator] = heights[prey] + 1
+                    changed = True
+    return heights
+
+def display_heights(heights):
+    print("Heights:")
+    for species, height in sorted(heights.items()):
+        print(f"  {species}: {height}")
+
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: python food_web.py <filename>")
+        sys.exit(1)
+    
+    filename = sys.argv[1]
+    food_web = load_food_web(filename)
+    display_predator_prey(food_web)
+    apex_predators = find_apex_predators(food_web)
+    display_apex_predators(apex_predators)
+    producers = find_producers(food_web)
+    display_producers(producers)
+    flexible_eaters = find_most_flexible_eaters(food_web)
+    display_most_flexible_eaters(flexible_eaters)
+    tastiest_organisms = find_tastiest_organisms(food_web)
+    display_tastiest_organisms(tastiest_organisms)
+    heights = determine_heights(food_web)
+    display_heights(heights)
+
+if __name__ == "__main__":
+    main()

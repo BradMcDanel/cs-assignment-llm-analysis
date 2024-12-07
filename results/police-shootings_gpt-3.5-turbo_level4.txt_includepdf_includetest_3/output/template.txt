@@ -1,0 +1,52 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.
+********************************************************************************************************************************
+
+Question 1:
+The data includes information on fatal police shootings and is sourced from the Washington Post dataset available on GitHub.
+
+Question 2:
+- Column Headers: id, date, threat_type, flee_status, armed_with, city, county, state, latitude, longitude, location_precision, name, age, gender, race, race_source, was_mental_illness_related, body_camera, agency_ids
+- Explanation: The 'id' column contains unique identifiers, 'date' includes the date of the incident, 'race' denotes the race of the subject, and so on.
+- Examples: 
+  - id: 3, date: 2015-01-02, threat_type: point, flee_status: not, armed_with: gun, city: Shelton
+  - id: 4, date: 2015-01-02, threat_type: point, flee_status: not, armed_with: gun, city: Aloha
+
+Question 3:
+The percentage of the United States population that is black is approximately 13.4% (U.S. Census Bureau, 2020).
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.
+********************************************************************************************************************************
+
+Question 1:
+The information from the file that is stored in 'database' includes the columns: 'name', 'date', 'armed', 'age', 'gender', 'race', and 'state'.
+
+Question 2:
+The keys in 'database' are the unique identifiers of the fatal police shootings.
+
+Question 3:
+The type of the values in 'database' is dictionary.
+
+Question 4:
+The value in 'database' stores information about a fatal police shooting, for example:
+{'name': 'Tim Elliot', 'date': '2015-01-02', 'armed': 'gun', 'age': '53', 'gender': 'male', 'race': 'A', 'state': 'WA'}
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.
+********************************************************************************************************************************
+
+Question 1:
+The proportion of black subjects in fatal police shootings is higher than their representation in the United States population.
+
+Question 2:
+The proportion of black subjects in fatal police shootings where the subject is unarmed is also higher than their representation in the United States population and compared to all police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.
+********************************************************************************************************************************
+
+Question 1:
+In this project, I learned about the process of analyzing real-world data using Python dictionaries. It was interesting to investigate the representation of different races in fatal police shootings and compare it to the overall population demographics. This project highlighted the importance of data analysis in understanding complex social issues.

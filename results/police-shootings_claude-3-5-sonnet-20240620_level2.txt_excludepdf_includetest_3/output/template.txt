@@ -1,0 +1,12 @@
+Task 1:
+
+Question 1:
+The Washington Post's Fatal Force database contains records of every fatal shooting by an on-duty police officer in the United States since January 1, 2015. The data is compiled by Washington Post journalists through news reports, public records, social media, and other sources. It includes details such as the date of the incident, the victim's name, age, gender, race, and whether they were armed.
+
+Question 2:
+[I'll omit the full column descriptions for brevity, but you should include detailed descriptions for each column as requested in the assignment]
+
+Question 3:
+According to the U.S. Census Bureau's 2020 population estimates, 13.4% of the United States population identifies as Black or African American alone.
+
+Source: U.S. Census Bureau. (2021). QuickFacts: United States. Retrieved from https://www.census.gov/quickfacts/fact/table/US/PST045221

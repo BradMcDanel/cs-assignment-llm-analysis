@@ -1,0 +1,11 @@
+# This implementation of Wordle consists of several milestones that progressively build up the functionality of the game:
+# 
+# 1. **Random Word Selection**: We begin by selecting a random word from the provided dictionary. This word is displayed on the grid for testing purposes in the initial milestone.
+# 
+# 2. **Word Validation**: We ensure that the user's guess is a valid word from the dictionary. This involves checking against the word list and providing feedback.
+# 
+# 3. **Coloring Logic**: The coloring logic is implemented in two passes to ensure accuracy when handling repeated letters. First, we identify letters that are in the correct position, then we mark those that are present but incorrectly positioned.
+# 
+# 4. **Virtual Keyboard Update**: The virtual keyboard is updated to provide visual feedback on which letters have been confirmed as correct, present, or missing. This enhances the user experience and mimics the actual Wordle game.
+# 
+# Each milestone was developed and tested incrementally to ensure functionality before moving onto the next. This modular approach is crucial for handling complex projects.

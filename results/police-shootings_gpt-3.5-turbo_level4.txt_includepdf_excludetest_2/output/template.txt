@@ -1,0 +1,47 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+Followed the link provided and wrote a summary of the fatal police shootings data.
+
+Question 2:
+Recorded the column headers, information, and examples of values in the data file.
+
+Question 3:
+Found the percentage of the United States population that is black.
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+The information stored in the database includes name, date, armed status, age, gender, race, and state.
+
+Question 2:
+The keys in the database are the unique ID numbers of the subjects.
+
+Question 3:
+The type of the values in the database is dictionary.
+
+Question 4:
+The values in the database store detailed information about each subject.
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+The proportion of black subjects in fatal police shootings is compared to the representation of black people in the United States population.
+
+Question 2:
+The proportion of black subjects in fatal police shootings where the subject is unarmed is compared to the representation of black people in the United States population and in all police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+Wrote a reflection on what was learned from the project.

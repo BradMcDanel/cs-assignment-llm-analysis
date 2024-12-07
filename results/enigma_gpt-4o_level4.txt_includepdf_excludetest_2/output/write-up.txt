@@ -1,0 +1,16 @@
+In this assignment, I implemented a simulation of the Enigma machine used by the German military during World War II. The project required a detailed understanding of the Enigma machine's mechanics, including the keyboard, lamps, rotors, and reflector.
+
+The implementation was broken down into several milestones, each building upon the previous one. The major steps included:
+
+1. Activating the keyboard by tracking key presses and releases.
+2. Connecting the keys directly to the lamps to verify the basic functionality.
+3. Designing and implementing the rotor data structure to simulate the rotation and letter mapping.
+4. Implementing the first stage of the encryption path, ensuring that the letter substitution logic was correct.
+5. Completing the full encryption path by passing the signal through multiple rotors and the reflector.
+6. Implementing the rotor advancement mechanism to simulate the mechanical stepping of the rotors.
+
+Throughout the implementation, I utilized object-oriented programming principles to encapsulate the rotor behavior and state. This made it easier to manage the complex interactions between the different components of the Enigma machine.
+
+One of the key challenges was ensuring that the letter mappings correctly accounted for the rotor offsets and wrapped around the alphabet as required. Careful debugging and the use of print statements helped verify that each step of the encryption process was functioning as expected.
+
+Overall, this project provided valuable insights into both historical cryptography and modern software design patterns, particularly the Model-View-Controller (MVC) architecture. Implementing the Enigma machine was a fascinating exercise in both computer science and history.

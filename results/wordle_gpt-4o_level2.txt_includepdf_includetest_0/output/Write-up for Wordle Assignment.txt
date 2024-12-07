@@ -1,0 +1,29 @@
+This implementation of the Wordle game follows the popular word puzzle format, where the objective is to guess a hidden five-letter word within six attempts. The graphical interface is provided by the WordleGraphics module, which manages the display of the letter grid and the on-screen keyboard.
+
+Key Components:
+1. **Random Word Selection**: The game begins by selecting a random word from a provided list of five-letter words. This word is stored in the variable `target_word`.
+
+2. **User Interaction**: The user enters guesses through the on-screen keyboard or their physical keyboard. Each guess triggers the `enter_action` function.
+
+3. **Word Validation**: Upon entering a guess, the program checks if the guess is a valid five-letter word from the list. If the word is not valid, an error message is displayed.
+
+4. **Feedback Mechanism**: The program provides feedback by coloring the letter boxes:
+   - Green (CORRECT_COLOR) for correct letters in correct positions.
+   - Yellow (PRESENT_COLOR) for correct letters in incorrect positions.
+   - Gray (MISSING_COLOR) for incorrect letters.
+
+5. **Keyboard Coloring**: The virtual keyboard updates its key colors based on the user's guesses, providing visual hints for future attempts.
+
+6. **Game End Conditions**: The game ends when the user guesses the word correctly or exhausts all six attempts. A congratulatory message or the correct word is displayed accordingly.
+
+Milestones Achieved:
+- Display a randomly selected word in the first row.
+- Validate user-entered words against the dictionary.
+- Color the squares based on the entered word's correctness.
+- Update the virtual keyboard colors.
+- Handle game win and loss scenarios.
+
+Extensions and Enhancements:
+- The game can be extended by adding features like scoring, animations, or cheat options to display possible words based on previous guesses.
+
+This implementation provides a comprehensive and engaging experience, closely mirroring the popular Wordle game format.

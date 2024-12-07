@@ -1,0 +1,30 @@
+{
+    "created": 1730995607.4081008,
+    "duration": 0.040572166442871094,
+    "exitcode": 2,
+    "root": "/tmp/code_dhv_38ti",
+    "environment": {},
+    "summary": {
+        "total": 0,
+        "collected": 0
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "failed",
+            "result": [],
+            "longrepr": "ImportError while importing test module '/tmp/code_dhv_38ti/test_enigma.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/home/brad/.miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\ntest_enigma.py:4: in <module>\n    from EnigmaModel import EnigmaModel\nEnigmaModel.py:1: in <module>\n    from EnigmaView import EnigmaView\nEnigmaView.py:4: in <module>\n    from EnigmaModel import EnigmaModel\nE   ImportError: cannot import name 'EnigmaModel' from partially initialized module 'EnigmaModel' (most likely due to a circular import) (/tmp/code_dhv_38ti/EnigmaModel.py)"
+        }
+    ],
+    "tests": []
+}

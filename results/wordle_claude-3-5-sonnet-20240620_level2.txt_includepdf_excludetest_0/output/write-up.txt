@@ -1,0 +1,22 @@
+This implementation of Wordle meets all the requirements specified in the assignment:
+
+1. It chooses a random word from the FIVE_LETTER_WORDS list.
+2. It checks if the entered guess is a valid word in the list.
+3. It colors the boxes appropriately:
+   - Green for correct letters in the correct position
+   - Yellow for correct letters in the wrong position
+   - Gray for letters not in the word
+4. It updates the colors of the keyboard keys.
+5. It handles multiple occurrences of letters correctly.
+6. It displays appropriate messages for invalid words, wins, and losses.
+
+The code is structured to follow the milestones outlined in the assignment:
+
+Milestone #1: The random word selection is done at the start of the game.
+Milestone #2: The enter_action function checks if the guess is a valid word.
+Milestone #3: The coloring of boxes is implemented in the enter_action function.
+Milestone #4: The coloring of keyboard keys is also handled in enter_action.
+
+The implementation uses the provided WordleGraphics module for all GUI operations, making use of methods like set_square_color, set_key_color, and show_message.
+
+This solution provides a fully functional Wordle game that meets all the specified requirements and follows the suggested implementation strategy.

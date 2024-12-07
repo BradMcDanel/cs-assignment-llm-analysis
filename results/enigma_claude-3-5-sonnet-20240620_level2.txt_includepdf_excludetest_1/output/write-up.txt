@@ -1,0 +1,42 @@
+Enigma Machine Simulator Implementation
+
+This implementation of the Enigma machine simulator follows the Model-View-Controller (MVC) design pattern:
+
+- Model: EnigmaModel class in EnigmaModel.py
+- View/Controller: EnigmaView class in EnigmaView.py (provided)
+
+Key components:
+
+1. EnigmaRotor class
+   - Represents a single rotor
+   - Stores forward and inverse permutations
+   - Handles encryption through the rotor in both directions
+   - Implements rotor advancement
+
+2. EnigmaModel class
+   - Manages the overall state of the Enigma machine
+   - Contains 3 rotors and a reflector
+   - Handles key presses/releases and rotor clicks
+   - Implements the full encryption path
+
+3. Encryption process:
+   - Advance rotors
+   - Pass signal right-to-left through rotors
+   - Pass through reflector
+   - Pass signal left-to-right back through rotors
+
+4. Rotor advancement:
+   - Fast rotor advances on every key press
+   - Medium rotor advances when fast rotor completes revolution
+   - Slow rotor advances when medium rotor completes revolution
+
+The implementation closely follows the milestones outlined in the assignment:
+
+1. Keyboard activation
+2. Connecting keys to lamps (temporary direct connection)
+3. Rotor data structure design
+4. Single-stage encryption
+5. Full encryption path
+6. Rotor advancement on key press
+
+This simulator accurately replicates the core functionality of the historical Enigma machine, providing an interactive way to explore its encryption mechanism.

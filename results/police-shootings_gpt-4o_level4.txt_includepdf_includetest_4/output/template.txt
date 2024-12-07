@@ -1,0 +1,78 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The data includes information on individuals shot and killed by police in the United States since January 1, 2015. 
+It is compiled by the Washington Post and includes details such as date, location, and demographics of the individuals involved.
+It was created to track and analyze the scope of police shootings in America.
+
+Question 2:
+--------------------------------------------------------
+- 'id': A unique identifier for each incident, e.g., 3, 4, 5.
+- 'date': The date when the incident occurred, e.g., '2015-01-02'.
+- 'threat_type': The nature of the threat, e.g., 'point', 'move'.
+- 'flee_status': The fleeing status of the subject, e.g., 'not', 'car'.
+- 'armed_with': Indicates if the subject was armed, e.g., 'gun', 'unarmed'.
+- 'city': City where the incident occurred, e.g., 'Shelton', 'Aloha'.
+- 'county': County of the incident, e.g., 'Mason', 'Washington'.
+- 'state': State of the incident, e.g., 'WA', 'OR'.
+- 'latitude': Geographic latitude, e.g., 47.246826.
+- 'longitude': Geographic longitude, e.g., -123.121592.
+- 'location_precision': Precision of the location data, e.g., 'not_available'.
+- 'name': Name of the individual shot, e.g., 'Tim Elliot'.
+- 'age': Age of the individual, e.g., 53, 47.
+- 'gender': Gender of the individual, e.g., 'male', 'female'.
+- 'race': Race of the individual, e.g., 'A', 'W'.
+- 'race_source': Source of race data, e.g., 'not_available'.
+- 'was_mental_illness_related': If mental illness was a factor, e.g., True, False.
+- 'body_camera': If a body camera was present, e.g., True, False.
+- 'agency_ids': Identifiers for the agency involved, e.g., 73, 70.
+
+Question 3:
+--------------------------------------------------------
+According to the United States Census Bureau, approximately 13.4% of the U.S. population is Black or African American.
+Source: United States Census Bureau, "QuickFacts"
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The database stores the following information from the CSV: 'name', 'date', 'armed', 'age', 'gender', 'race', and 'state'.
+
+Question 2:
+--------------------------------------------------------
+The keys used in the database are the unique 'id' values from the CSV file.
+
+Question 3:
+--------------------------------------------------------
+The type of the values in the database is a dictionary, where each dictionary contains information about a specific incident.
+
+Question 4:
+--------------------------------------------------------
+An example value in the database for ID 1694 would include: {'name': 'Philando Castile', 'date': '2016-07-06', 'armed': 'gun', 'age': '32', 'gender': 'male', 'race': 'B', 'state': 'MN'}.
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The proportion of Black subjects in fatal police shootings is significantly higher than their representation in the general U.S. population. The fraction calculated was around 0.23, compared to 13.4% of the population.
+
+Question 2:
+--------------------------------------------------------
+The proportion of unarmed Black subjects in fatal police shootings is also disproportionately high. The fraction calculated was around 0.32, which is higher than both their general population representation and their representation in all fatal police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+In this project, I learned how to work with real-world data and analyze it using Python dictionaries. By organizing data into a dictionary, I was able to efficiently perform operations like counting and filtering. The insights gained from this data were striking, highlighting a significant disproportion in the number of fatal police shootings involving Black individuals. This project underscored the importance of data analysis in understanding social issues and informed decision-making. It was also a valuable exercise in reading and interpreting CSV files, as well as using Python for data manipulation.

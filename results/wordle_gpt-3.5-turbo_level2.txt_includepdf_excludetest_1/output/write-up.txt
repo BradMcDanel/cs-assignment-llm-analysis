@@ -1,0 +1,4 @@
+# In this assignment, I implemented the Wordle game in Python by completing four milestones as instructed.
+# Each milestone focused on a specific aspect of the game implementation, such as displaying a random word,
+# checking user-entered words, coloring the boxes based on word matching, and coloring the keys on the keyboard.
+# By following the provided instructions and using the helper scripts, I was able to successfully implement the Wordle game.

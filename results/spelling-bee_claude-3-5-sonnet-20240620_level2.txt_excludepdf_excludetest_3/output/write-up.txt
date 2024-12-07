@@ -1,0 +1,39 @@
+Spelling Bee Project Implementation
+
+This implementation of the Spelling Bee puzzle game covers all four milestones outlined in the assignment:
+
+1. Initialize the beehive with the letters in the puzzle field
+   - The puzzle_action function checks if the entered puzzle is valid (7 unique letters) and sets the beehive letters if it is.
+
+2. Display the legal words in the SpellingBee puzzle
+   - The solve_action function finds all valid words for the current puzzle and displays them with their scores.
+
+3. Add scores to the display
+   - Words are displayed with their individual scores in parentheses.
+   - Pangrams are shown in blue.
+   - The total word count and score are displayed at the bottom of the window.
+
+4. Let the user try to find the words
+   - A "Word" field is added for user input.
+   - The word_action function checks if the entered word is valid and updates the display and score accordingly.
+   - Appropriate error messages are shown for invalid words.
+
+Key features of the implementation:
+
+1. Modular design: The code is broken down into smaller, focused functions for better readability and maintainability.
+
+2. Efficient data structures: 
+   - The dictionary is stored as a set for fast word lookups.
+   - Found words are also stored in a set to prevent duplicates.
+
+3. Reusable functions: 
+   - is_valid_word is used both for solving the puzzle and checking user input.
+   - calculate_word_score is used for both individual words and the total score.
+
+4. User experience improvements:
+   - The "Word" field is cleared after each valid word entry.
+   - Detailed error messages are provided for invalid words.
+
+5. Extensibility: The structure allows for easy addition of new features, such as generating puzzles or implementing a shuffle button.
+
+This implementation provides a complete and interactive Spelling Bee game that meets all the requirements specified in the assignment.

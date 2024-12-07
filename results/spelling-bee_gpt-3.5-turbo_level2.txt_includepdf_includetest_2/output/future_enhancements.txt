@@ -1,0 +1,2 @@
+# Ideas or suggestions for future enhancements and features that could be added to the SpellingBee program.
+# It explores possibilities for extending the functionality, improving user experience, or optimizing performance.

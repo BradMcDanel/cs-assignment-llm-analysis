@@ -1,0 +1,9 @@
+The DNA profiling program reads a CSV file containing STR counts for various individuals and a text file containing a DNA sequence. It computes the longest runs of specified STRs in the sequence and compares them against the database. The program outputs the name of the matching individual or "No match" if there is no exact match.
+
+Key Steps:
+1. CSV and DNA sequence files are read into memory.
+2. For each STR, the longest consecutive repeat in the DNA sequence is calculated.
+3. The calculated STR counts are compared with each individual's counts in the database.
+4. The first matching individual is printed; otherwise, "No match" is printed.
+
+The program uses Python's csv module for reading CSV files and handles string manipulation for finding STR repeats.

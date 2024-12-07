@@ -1,0 +1,17 @@
+Task 3:
+
+Question 1:
+The proportion of fatal police shootings with a black subject is significantly higher than the proportion of black people in the United States population. According to the 2020 U.S. Census, black people make up about 13.4% of the U.S. population. However, our analysis shows that the fraction of fatal police shootings with a black subject is much higher (exact percentage will depend on the actual data, but it's likely to be around 25-30%). This suggests a disproportionate representation of black individuals in fatal police shootings compared to their representation in the general population.
+
+Question 2:
+The proportion of black subjects in fatal police shootings where the subject is unarmed is even higher than the proportion of black people in the United States population and higher than the proportion of black subjects in all police shootings. This indicates an even more severe disparity when considering unarmed shootings. The exact numbers will depend on the actual data, but it's likely that the fraction of unarmed shootings with a black subject is significantly higher than both the 13.4% representation in the general population and the overall proportion of black subjects in all fatal police shootings. This suggests that unarmed black individuals are at an even greater risk in police encounters compared to both the general population and armed individuals.
+
+Task 4:
+
+Question 1:
+Reflection:
+This project has been eye-opening and sobering. Working with real-world data on fatal police shootings has made the statistics feel more tangible and personal. I've learned how to use Python dictionaries to organize and analyze complex datasets, which is a valuable skill for data science. The process of breaking down the data and examining it from different angles (all shootings vs. unarmed shootings) has shown me the importance of considering multiple perspectives when analyzing data. 
+
+The results of the analysis are deeply concerning, highlighting significant racial disparities in police use of lethal force. It's clear that this is a complex issue that requires further investigation and action. I've also learned the importance of being cautious when interpreting data, as there may be other factors at play that aren't captured in this dataset.
+
+This project has reinforced for me the power of data analysis in illuminating social issues and the responsibility that comes with handling such sensitive information. It's motivated me to continue developing my data analysis skills and to think critically about how data can be used to address important societal problems.

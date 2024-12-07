@@ -1,0 +1,4 @@
+In this assignment, I implemented a program that analyzes predator-prey relationships in a food web. 
+The program reads data from a file, identifies what each predator eats, determines apex predators, 
+producers, and calculates the height of each organism in the food web. The program follows good 
+programming practices, uses functions appropriately, handles errors, and formats the output as required.

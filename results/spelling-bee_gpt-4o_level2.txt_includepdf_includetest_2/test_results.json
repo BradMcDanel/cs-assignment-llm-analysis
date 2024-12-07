@@ -1,0 +1,392 @@
+{
+    "created": 1731001174.1667242,
+    "duration": 0.036797523498535156,
+    "exitcode": 1,
+    "root": "/tmp/code_t3c96a5t",
+    "environment": {},
+    "summary": {
+        "error": 10,
+        "total": 10,
+        "collected": 10
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_SpellingBee.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+                    "type": "Function",
+                    "lineno": 47
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+                    "type": "Function",
+                    "lineno": 52
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+                    "type": "Function",
+                    "lineno": 57
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_action",
+                    "type": "Function",
+                    "lineno": 62
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+                    "type": "Function",
+                    "lineno": 69
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+                    "type": "Function",
+                    "lineno": 77
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_pangram_identification",
+                    "type": "Function",
+                    "lineno": 84
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_score_calculation",
+                    "type": "Function",
+                    "lineno": 89
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+                    "type": "Function",
+                    "lineno": 96
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+                    "type": "Function",
+                    "lineno": 104
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+            "lineno": 47,
+            "outcome": "error",
+            "keywords": [
+                "test_puzzle_initialization",
+                "test_SpellingBee.py",
+                "code_t3c96a5t"
+            ],
+            "setup": {
+                "duration": 0.00016054301522672176,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_t3c96a5t/test_SpellingBee.py",
+                    "lineno": 44,
+                    "message": "AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 44,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7b1925847be0>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n>       monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\nE       AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'\n\ntest_SpellingBee.py:44: AttributeError"
+            },
+            "teardown": {
+                "duration": 0.00010351394303143024,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+            "lineno": 52,
+            "outcome": "error",
+            "keywords": [
+                "test_invalid_puzzle_length",
+                "test_SpellingBee.py",
+                "code_t3c96a5t"
+            ],
+            "setup": {
+                "duration": 0.00012839888222515583,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_t3c96a5t/test_SpellingBee.py",
+                    "lineno": 44,
+                    "message": "AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 44,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7b1925736cb0>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n>       monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\nE       AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'\n\ntest_SpellingBee.py:44: AttributeError"
+            },
+            "teardown": {
+                "duration": 9.721284732222557e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+            "lineno": 57,
+            "outcome": "error",
+            "keywords": [
+                "test_invalid_puzzle_duplicates",
+                "test_SpellingBee.py",
+                "code_t3c96a5t"
+            ],
+            "setup": {
+                "duration": 0.00011657294817268848,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_t3c96a5t/test_SpellingBee.py",
+                    "lineno": 44,
+                    "message": "AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 44,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7b1925846650>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n>       monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\nE       AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'\n\ntest_SpellingBee.py:44: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.606879808008671e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_action",
+            "lineno": 62,
+            "outcome": "error",
+            "keywords": [
+                "test_solve_action",
+                "test_SpellingBee.py",
+                "code_t3c96a5t"
+            ],
+            "setup": {
+                "duration": 0.00012521608732640743,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_t3c96a5t/test_SpellingBee.py",
+                    "lineno": 44,
+                    "message": "AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 44,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7b1925737550>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n>       monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\nE       AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'\n\ntest_SpellingBee.py:44: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.755681872367859e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+            "lineno": 69,
+            "outcome": "error",
+            "keywords": [
+                "test_word_entry_valid",
+                "test_SpellingBee.py",
+                "code_t3c96a5t"
+            ],
+            "setup": {
+                "duration": 0.00011151609942317009,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_t3c96a5t/test_SpellingBee.py",
+                    "lineno": 44,
+                    "message": "AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 44,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7b1925846800>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n>       monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\nE       AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'\n\ntest_SpellingBee.py:44: AttributeError"
+            },
+            "teardown": {
+                "duration": 8.589704521000385e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+            "lineno": 77,
+            "outcome": "error",
+            "keywords": [
+                "test_word_entry_invalid",
+                "test_SpellingBee.py",
+                "code_t3c96a5t"
+            ],
+            "setup": {
+                "duration": 0.00011047301813960075,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_t3c96a5t/test_SpellingBee.py",
+                    "lineno": 44,
+                    "message": "AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 44,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7b1925fc0670>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n>       monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\nE       AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'\n\ntest_SpellingBee.py:44: AttributeError"
+            },
+            "teardown": {
+                "duration": 8.230796083807945e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_pangram_identification",
+            "lineno": 84,
+            "outcome": "error",
+            "keywords": [
+                "test_pangram_identification",
+                "test_SpellingBee.py",
+                "code_t3c96a5t"
+            ],
+            "setup": {
+                "duration": 0.00010927300900220871,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_t3c96a5t/test_SpellingBee.py",
+                    "lineno": 44,
+                    "message": "AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 44,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7b1925847c40>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n>       monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\nE       AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'\n\ntest_SpellingBee.py:44: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.322197780013084e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_score_calculation",
+            "lineno": 89,
+            "outcome": "error",
+            "keywords": [
+                "test_score_calculation",
+                "test_SpellingBee.py",
+                "code_t3c96a5t"
+            ],
+            "setup": {
+                "duration": 0.0001050031278282404,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_t3c96a5t/test_SpellingBee.py",
+                    "lineno": 44,
+                    "message": "AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 44,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7b192571a590>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n>       monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\nE       AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'\n\ntest_SpellingBee.py:44: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.691187784075737e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+            "lineno": 96,
+            "outcome": "error",
+            "keywords": [
+                "test_duplicate_word_entry",
+                "test_SpellingBee.py",
+                "code_t3c96a5t"
+            ],
+            "setup": {
+                "duration": 0.00010837195441126823,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_t3c96a5t/test_SpellingBee.py",
+                    "lineno": 44,
+                    "message": "AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 44,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7b19258467a0>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n>       monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\nE       AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'\n\ntest_SpellingBee.py:44: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.746112532913685e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+            "lineno": 104,
+            "outcome": "error",
+            "keywords": [
+                "test_solve_after_user_input",
+                "test_SpellingBee.py",
+                "code_t3c96a5t"
+            ],
+            "setup": {
+                "duration": 0.00011486303992569447,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_t3c96a5t/test_SpellingBee.py",
+                    "lineno": 44,
+                    "message": "AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 44,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7b19257186d0>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n>       monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\nE       AttributeError: <module 'SpellingBee' from '/tmp/code_t3c96a5t/SpellingBee.py'> has no attribute 'SpellingBeeGraphics'\n\ntest_SpellingBee.py:44: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.837382145226002e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

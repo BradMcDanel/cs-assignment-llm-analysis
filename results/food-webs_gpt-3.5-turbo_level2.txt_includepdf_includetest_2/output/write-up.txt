@@ -1,0 +1,6 @@
+# My approach for solving the Food Web analysis assignment was to follow the provided guidelines step by step.
+# I implemented functions for each part of the assignment, ensuring proper data handling and output formatting.
+# The program reads the food web data file, stores predator-prey relationships in a dictionary, and performs various analyses.
+# I utilized the provided formatList module for formatting output in Part 1.
+# The code follows good programming practices, including appropriate use of functions, error checking, and readability.
+# I have included appropriate comments to explain the purpose of each function and section of the code.

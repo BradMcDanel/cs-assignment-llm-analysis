@@ -1,0 +1,316 @@
+{
+    "created": 1731002377.412212,
+    "duration": 0.2681734561920166,
+    "exitcode": 1,
+    "root": "/tmp/code_vcgbfaqb",
+    "environment": {},
+    "summary": {
+        "passed": 9,
+        "failed": 1,
+        "total": 10,
+        "collected": 10
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_SpellingBee.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+                    "type": "Function",
+                    "lineno": 47
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+                    "type": "Function",
+                    "lineno": 52
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+                    "type": "Function",
+                    "lineno": 57
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_action",
+                    "type": "Function",
+                    "lineno": 62
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+                    "type": "Function",
+                    "lineno": 69
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+                    "type": "Function",
+                    "lineno": 77
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_pangram_identification",
+                    "type": "Function",
+                    "lineno": 84
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_score_calculation",
+                    "type": "Function",
+                    "lineno": 89
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+                    "type": "Function",
+                    "lineno": 96
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+                    "type": "Function",
+                    "lineno": 104
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+            "lineno": 47,
+            "outcome": "passed",
+            "keywords": [
+                "test_puzzle_initialization",
+                "test_SpellingBee.py",
+                "code_vcgbfaqb"
+            ],
+            "setup": {
+                "duration": 0.00015166006051003933,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.698095239698887e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.791297346353531e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+            "lineno": 52,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_puzzle_length",
+                "test_SpellingBee.py",
+                "code_vcgbfaqb"
+            ],
+            "setup": {
+                "duration": 9.748479351401329e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 4.8856018111109734e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.652802065014839e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+            "lineno": 57,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_puzzle_duplicates",
+                "test_SpellingBee.py",
+                "code_vcgbfaqb"
+            ],
+            "setup": {
+                "duration": 8.92900861799717e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 4.7483015805482864e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.5543845519423485e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_action",
+            "lineno": 62,
+            "outcome": "passed",
+            "keywords": [
+                "test_solve_action",
+                "test_SpellingBee.py",
+                "code_vcgbfaqb"
+            ],
+            "setup": {
+                "duration": 9.405496530234814e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.06997916591353714,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 0.00011332286521792412,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+            "lineno": 69,
+            "outcome": "passed",
+            "keywords": [
+                "test_word_entry_valid",
+                "test_SpellingBee.py",
+                "code_vcgbfaqb"
+            ],
+            "setup": {
+                "duration": 0.00014837016351521015,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.015199176035821438,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 8.597783744335175e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+            "lineno": 77,
+            "outcome": "passed",
+            "keywords": [
+                "test_word_entry_invalid",
+                "test_SpellingBee.py",
+                "code_vcgbfaqb"
+            ],
+            "setup": {
+                "duration": 0.00013206317089498043,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.169406697154045e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.74188306927681e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_pangram_identification",
+            "lineno": 84,
+            "outcome": "passed",
+            "keywords": [
+                "test_pangram_identification",
+                "test_SpellingBee.py",
+                "code_vcgbfaqb"
+            ],
+            "setup": {
+                "duration": 9.525613859295845e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.015133068896830082,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 9.055901318788528e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_score_calculation",
+            "lineno": 89,
+            "outcome": "passed",
+            "keywords": [
+                "test_score_calculation",
+                "test_SpellingBee.py",
+                "code_vcgbfaqb"
+            ],
+            "setup": {
+                "duration": 0.00013861386105418205,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.029778618132695556,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 9.115412831306458e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+            "lineno": 96,
+            "outcome": "failed",
+            "keywords": [
+                "test_duplicate_word_entry",
+                "test_SpellingBee.py",
+                "code_vcgbfaqb"
+            ],
+            "setup": {
+                "duration": 0.00013044499792158604,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.02952869003638625,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_vcgbfaqb/test_SpellingBee.py",
+                    "lineno": 102,
+                    "message": "AssertionError: assert 2 == 1\n +  where 2 = len([('excel (5)', 'Black'), ('excel (5)', 'Black')])\n +    where [('excel (5)', 'Black'), ('excel (5)', 'Black')] = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7fbbe3547d60>.words"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 102,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7fbbe3547d60>\n\n    def test_duplicate_word_entry(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n        mock_graphics.word_callback(\"excel\")\n        initial_word_count = len(mock_graphics.words)\n        mock_graphics.word_callback(\"excel\")\n>       assert len(mock_graphics.words) == initial_word_count\nE       AssertionError: assert 2 == 1\nE        +  where 2 = len([('excel (5)', 'Black'), ('excel (5)', 'Black')])\nE        +    where [('excel (5)', 'Black'), ('excel (5)', 'Black')] = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7fbbe3547d60>.words\n\ntest_SpellingBee.py:102: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.00011641019955277443,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+            "lineno": 104,
+            "outcome": "passed",
+            "keywords": [
+                "test_solve_after_user_input",
+                "test_SpellingBee.py",
+                "code_vcgbfaqb"
+            ],
+            "setup": {
+                "duration": 0.00012986198998987675,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.08198796212673187,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 0.00010621710680425167,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

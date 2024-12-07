@@ -1,0 +1,23 @@
+# Implementation of Enigma Machine Simulator
+This project implements a simulation of the Enigma machine used by the German military in World War II. The project is divided into several milestones, each focusing on a different aspect of the Enigma machine's functionality.
+
+## Milestone #1: Activate the Keyboard
+We initialized a dictionary to track the state of each key. The `key_pressed` and `key_released` methods update this dictionary, and `is_key_down` returns the current state of a key.
+
+## Milestone #2: Connect the Keys Directly to the Lamps
+We added a dictionary to track the state of the lamps, which are directly tied to the keys for initial testing. Pressing a key lights the corresponding lamp.
+
+## Milestone #3: Design and Implement the Rotor Data Structure
+Introduced the `EnigmaRotor` class to manage each rotor's permutation and offset. This class provides methods to get the current offset, permutation, and a method to advance the rotor.
+
+## Milestone #4: Implement One Stage in the Encryption
+Implemented the `apply_permutation` function to encrypt a letter using the fast rotor. This function adjusts for the rotor's offset, simulating the letter substitution.
+
+## Milestone #5: Implement the Full Encryption Path
+Completed the encryption path through all rotors and the reflector. This involved handling both forward and reverse signal paths through the Enigma machine.
+
+## Milestone #6: Implement the Rotor Advance on Pressing a Key
+Added rotor advancement logic with carrying over to the next rotor. The rotors advance before encryption occurs when a key is pressed.
+
+# Conclusion
+The Enigma simulator successfully replicates the basic functionality of the historic Enigma machine, demonstrating the complexity and ingenuity of early cryptographic machines.

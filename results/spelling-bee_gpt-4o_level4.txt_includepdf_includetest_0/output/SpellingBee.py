@@ -3,62 +3,53 @@ from SpellingBeeGraphics import SpellingBeeGraphics
 # Constants
 DICTIONARY_FILE = "EnglishWords.txt"
 
+def load_dictionary():
+    """Loads the dictionary file into a set of words."""
+    with open(DICTIONARY_FILE) as file:
+        return set(line.strip().lower() for line in file)
+
+def is_valid_puzzle(puzzle):
+    """Validates the puzzle string."""
+    if len(puzzle) != 7 or not puzzle.isalpha() or len(set(puzzle)) != 7:
+        return False
+    return True
+
+def calculate_word_score(word, is_pangram):
+    """Calculates the score for a given word."""
+    score = len(word) if len(word) > 4 else 1
+    if is_pangram:
+        score += 7
+    return score
+
 def spelling_bee():
-    def is_legal_puzzle(puzzle):
-        if len(puzzle) != 7:
-            return False, "Puzzle must contain exactly seven characters."
-        if not all(char.isalpha() for char in puzzle):
-            return False, "Puzzle must contain only letters."
-        if len(set(puzzle)) != 7:
-            return False, "Puzzle must not contain duplicate letters."
-        return True, ""
+    dictionary = load_dictionary()
 
-    def puzzle_action(puzzle):
-        puzzle = puzzle.upper()
-        is_legal, message = is_legal_puzzle(puzzle)
-        if is_legal:
-            sbg.set_beehive_letters(puzzle)
-            sbg.show_message("Puzzle updated successfully.", "Green")
+    def puzzle_action(s):
+        if is_valid_puzzle(s):
+            sbg.set_beehive_letters(s.upper())
+            sbg.show_message("Puzzle set successfully.", "Green")
         else:
-            sbg.show_message(message, "Red")
+            sbg.show_message("Invalid puzzle. Must be 7 unique letters.", "Red")
 
-    def load_dictionary():
-        with open(DICTIONARY_FILE) as f:
-            return set(word.strip().lower() for word in f)
-
-    def is_valid_word(word, letters, center_letter):
-        if len(word) < 4:
-            return False
-        if center_letter not in word:
-            return False
-        if any(char not in letters for char in word):
-            return False
-        return True
-
-    def solve_action(name):
-        sbg.clear_word_list()
-        letters = sbg.get_beehive_letters().lower()
-        center_letter = letters[0]
-        dictionary = load_dictionary()
-        found_words = []
-        total_score = 0
+    def solve_action(s):
+        beehive_letters = sbg.get_beehive_letters().lower()
+        center_letter = beehive_letters[0]
+        valid_words = []
 
         for word in dictionary:
-            if is_valid_word(word, letters, center_letter):
-                score = 1 if len(word) == 4 else len(word)
-                if set(word) == set(letters):
-                    score += 7
-                    sbg.add_word(f"{word} ({score})", "Blue")
-                else:
-                    sbg.add_word(f"{word} ({score})")
-                found_words.append(word)
-                total_score += score
+            if len(word) >= 4 and all(c in beehive_letters for c in word) and center_letter in word:
+                is_pangram = all(c in word for c in beehive_letters)
+                score = calculate_word_score(word, is_pangram)
+                color = "Blue" if is_pangram else "Black"
+                sbg.add_word(f"{word} ({score})", color)
+                valid_words.append(word)
 
-        sbg.show_message(f"Found {len(found_words)} words, Total score: {total_score}", "Blue")
+        sbg.show_message(f"Found {len(valid_words)} words.", "Green")
 
     sbg = SpellingBeeGraphics()
     sbg.add_field("Puzzle", puzzle_action)
     sbg.add_button("Solve", solve_action)
 
+# Startup code
 if __name__ == "__main__":
     spelling_bee()

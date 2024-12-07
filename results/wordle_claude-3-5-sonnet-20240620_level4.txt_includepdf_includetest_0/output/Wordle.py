@@ -4,47 +4,48 @@ from WordleGraphics import WordleGWindow, N_COLS, N_ROWS, CORRECT_COLOR, PRESENT
 
 def wordle():
     # Choose a random word from the dictionary
-    secret_word = random.choice(FIVE_LETTER_WORDS).upper()
+    target_word = random.choice(FIVE_LETTER_WORDS).upper()
     
-    # Create the game window
+    # Initialize the game window
     gw = WordleGWindow()
-
+    
     def enter_action(s):
-        nonlocal secret_word
+        nonlocal target_word
         
         # Check if the guess is a valid word
         if s.lower() not in FIVE_LETTER_WORDS:
             gw.show_message("Not in word list")
             return
-
+        
         # Get the current row
         current_row = gw.get_current_row()
-
-        # Check each letter and update colors
+        
+        # Check each letter of the guess
         for col in range(N_COLS):
             letter = s[col]
-            if letter == secret_word[col]:
+            if letter == target_word[col]:
                 color = CORRECT_COLOR
-            elif letter in secret_word:
+            elif letter in target_word:
                 color = PRESENT_COLOR
             else:
                 color = MISSING_COLOR
             
+            # Set the color of the square and the key
             gw.set_square_color(current_row, col, color)
-            
-            # Update key color
-            current_key_color = gw.get_key_color(letter)
-            if current_key_color != CORRECT_COLOR:
-                gw.set_key_color(letter, color)
-
-        # Check if the word is correct
-        if s == secret_word:
+            gw.set_key_color(letter, color)
+        
+        # Check if the guess is correct
+        if s == target_word:
             gw.show_message("Congratulations!")
-        elif current_row == N_ROWS - 1:
-            gw.show_message(f"Game over. The word was {secret_word}")
         else:
-            gw.set_current_row(current_row + 1)
+            # Move to the next row
+            next_row = current_row + 1
+            if next_row < N_ROWS:
+                gw.set_current_row(next_row)
+            else:
+                gw.show_message(f"Game over. The word was {target_word}")
 
+    # Add the enter listener
     gw.add_enter_listener(enter_action)
 
 # Startup code

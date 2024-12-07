@@ -1,0 +1,222 @@
+{
+    "created": 1731004688.9188836,
+    "duration": 0.03425312042236328,
+    "exitcode": 1,
+    "root": "/tmp/code__38j5u7_",
+    "environment": {},
+    "summary": {
+        "passed": 2,
+        "failed": 3,
+        "total": 5,
+        "collected": 5
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py::test_valid_guess",
+                    "type": "Function",
+                    "lineno": 111
+                },
+                {
+                    "nodeid": "test_wordle.py::test_invalid_guess",
+                    "type": "Function",
+                    "lineno": 122
+                },
+                {
+                    "nodeid": "test_wordle.py::test_correct_color_update",
+                    "type": "Function",
+                    "lineno": 134
+                },
+                {
+                    "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+                    "type": "Function",
+                    "lineno": 143
+                },
+                {
+                    "nodeid": "test_wordle.py::test_game_over_condition",
+                    "type": "Function",
+                    "lineno": 156
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_wordle.py::test_valid_guess",
+            "lineno": 111,
+            "outcome": "passed",
+            "keywords": [
+                "test_valid_guess",
+                "test_wordle.py",
+                "code__38j5u7_"
+            ],
+            "setup": {
+                "duration": 0.0001902750227600336,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.876893505454063e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.64110591262579e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_invalid_guess",
+            "lineno": 122,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_guess",
+                "test_wordle.py",
+                "code__38j5u7_"
+            ],
+            "setup": {
+                "duration": 0.00012129591777920723,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 8.791987784206867e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.339892908930779e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_correct_color_update",
+            "lineno": 134,
+            "outcome": "failed",
+            "keywords": [
+                "test_correct_color_update",
+                "test_wordle.py",
+                "code__38j5u7_"
+            ],
+            "setup": {
+                "duration": 0.00012062420137226582,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00017546815797686577,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code__38j5u7_/test_wordle.py",
+                    "lineno": 142,
+                    "message": "AssertionError: assert '#999999' == '#66BB66'\n  - #66BB66\n  + #999999"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 142,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x77b2c73fdae0>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x77b2c72e11b0>\n\n    def test_correct_color_update(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n        mock_window.enter_listeners[0]('apple'.upper())\n    \n        # Check if all squares are correct color\n        for i in range(5):\n>           assert mock_window.get_square_color(0, i) == CORRECT_COLOR\nE           AssertionError: assert '#999999' == '#66BB66'\nE             - #66BB66\nE             + #999999\n\ntest_wordle.py:142: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.0001268479973077774,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+            "lineno": 143,
+            "outcome": "failed",
+            "keywords": [
+                "test_present_and_missing_color_update",
+                "test_wordle.py",
+                "code__38j5u7_"
+            ],
+            "setup": {
+                "duration": 0.00018152897246181965,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00015625800006091595,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code__38j5u7_/test_wordle.py",
+                    "lineno": 150,
+                    "message": "AssertionError: assert '#999999' == '#66BB66'\n  - #66BB66\n  + #999999"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 150,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x77b2c734ba30>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x77b2c72e15a0>\n\n    def test_present_and_missing_color_update(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n        mock_window.enter_listeners[0]('ample'.upper())\n    \n        # Check colors\n>       assert mock_window.get_square_color(0, 0) == CORRECT_COLOR  # 'a' is correct\nE       AssertionError: assert '#999999' == '#66BB66'\nE         - #66BB66\nE         + #999999\n\ntest_wordle.py:150: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.148102253675461e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_game_over_condition",
+            "lineno": 156,
+            "outcome": "failed",
+            "keywords": [
+                "test_game_over_condition",
+                "test_wordle.py",
+                "code__38j5u7_"
+            ],
+            "setup": {
+                "duration": 0.00014204601757228374,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.000371050089597702,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code__38j5u7_/test_wordle.py",
+                    "lineno": 37,
+                    "message": "IndexError: list index out of range"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 163,
+                        "message": ""
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 20,
+                        "message": "in enter_action"
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 42,
+                        "message": "in color_guess"
+                    },
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 37,
+                        "message": "IndexError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x77b2c7ab2290>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x77b2c72e1750>\n\n    def test_game_over_condition(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n    \n        # Make six incorrect guesses\n        for _ in range(6):\n>           mock_window.enter_listeners[0]('wrong'.upper())\n\ntest_wordle.py:163: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nWordle.py:20: in enter_action\n    color_guess(s)\nWordle.py:42: in color_guess\n    gw.set_square_color(guess_count, col, color)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <test_wordle.MockWordleGWindow object at 0x77b2c7ab2290>, row = 6\ncol = 0, color = '#999999'\n\n    def set_square_color(self, row, col, color):\n>       self.squares[row][col]['color'] = color\nE       IndexError: list index out of range\n\ntest_wordle.py:37: IndexError"
+            },
+            "teardown": {
+                "duration": 0.00011447793804109097,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

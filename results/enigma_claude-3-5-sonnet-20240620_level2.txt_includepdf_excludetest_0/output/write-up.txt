@@ -1,0 +1,26 @@
+This implementation of the Enigma machine simulation follows the Model-View-Controller (MVC) design pattern. The key components are:
+
+1. EnigmaRotor class:
+   - Represents a single rotor with its permutation, inverse permutation, and offset
+   - Handles advancing the rotor and applying permutations in both directions
+
+2. EnigmaModel class:
+   - Maintains the state of the entire Enigma machine
+   - Contains three rotors and a reflector
+   - Implements key press/release logic and encryption
+
+3. Key features:
+   - Rotor advancement mechanism, including carrying to next rotor
+   - Full encryption path through all rotors and reflector
+   - Bidirectional permutation application (forward and backward through rotors)
+
+The implementation follows the milestones outlined in the assignment:
+
+1. Keyboard activation: Tracks key presses/releases
+2. Lamp panel connection: Lights corresponding lamps for encrypted letters
+3. Rotor data structure: EnigmaRotor class with permutations and offset
+4. Single-stage encryption: Implemented in encrypt() method
+5. Full encryption path: Includes all rotors and reflector
+6. Rotor advancement on key press: Handled in key_pressed() method
+
+This simulation accurately replicates the core functionality of the Enigma machine, providing an interactive experience for users to encrypt messages using the historical encryption device.

@@ -1,0 +1,442 @@
+{
+    "created": 1731002533.891873,
+    "duration": 0.2505202293395996,
+    "exitcode": 1,
+    "root": "/tmp/code_9ent8lon",
+    "environment": {},
+    "summary": {
+        "error": 10,
+        "total": 10,
+        "collected": 10
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_SpellingBee.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+                    "type": "Function",
+                    "lineno": 47
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+                    "type": "Function",
+                    "lineno": 52
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+                    "type": "Function",
+                    "lineno": 57
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_action",
+                    "type": "Function",
+                    "lineno": 62
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+                    "type": "Function",
+                    "lineno": 69
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+                    "type": "Function",
+                    "lineno": 77
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_pangram_identification",
+                    "type": "Function",
+                    "lineno": 84
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_score_calculation",
+                    "type": "Function",
+                    "lineno": 89
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+                    "type": "Function",
+                    "lineno": 96
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+                    "type": "Function",
+                    "lineno": 104
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+            "lineno": 47,
+            "outcome": "error",
+            "keywords": [
+                "test_puzzle_initialization",
+                "test_SpellingBee.py",
+                "code_9ent8lon"
+            ],
+            "setup": {
+                "duration": 0.01570963393896818,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_9ent8lon/SpellingBee.py",
+                    "lineno": 18,
+                    "message": "UnboundLocalError: local variable 'puzzle_action' referenced before assignment"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 18,
+                        "message": "UnboundLocalError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7e186ae9d360>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        # Load the dictionary\n        dictionary = load_dictionary(DICTIONARY_FILE)\n    \n        # Initialize the graphics\n        sbg = SpellingBeeGraphics()\n>       sbg.add_field(\"Puzzle\", puzzle_action)\nE       UnboundLocalError: local variable 'puzzle_action' referenced before assignment\n\nSpellingBee.py:18: UnboundLocalError"
+            },
+            "teardown": {
+                "duration": 0.00012015295214951038,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+            "lineno": 52,
+            "outcome": "error",
+            "keywords": [
+                "test_invalid_puzzle_length",
+                "test_SpellingBee.py",
+                "code_9ent8lon"
+            ],
+            "setup": {
+                "duration": 0.01486545498482883,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_9ent8lon/SpellingBee.py",
+                    "lineno": 18,
+                    "message": "UnboundLocalError: local variable 'puzzle_action' referenced before assignment"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 18,
+                        "message": "UnboundLocalError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7e186b6c07c0>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        # Load the dictionary\n        dictionary = load_dictionary(DICTIONARY_FILE)\n    \n        # Initialize the graphics\n        sbg = SpellingBeeGraphics()\n>       sbg.add_field(\"Puzzle\", puzzle_action)\nE       UnboundLocalError: local variable 'puzzle_action' referenced before assignment\n\nSpellingBee.py:18: UnboundLocalError"
+            },
+            "teardown": {
+                "duration": 0.00011364300735294819,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+            "lineno": 57,
+            "outcome": "error",
+            "keywords": [
+                "test_invalid_puzzle_duplicates",
+                "test_SpellingBee.py",
+                "code_9ent8lon"
+            ],
+            "setup": {
+                "duration": 0.015134562971070409,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_9ent8lon/SpellingBee.py",
+                    "lineno": 18,
+                    "message": "UnboundLocalError: local variable 'puzzle_action' referenced before assignment"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 18,
+                        "message": "UnboundLocalError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7e186afe1db0>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        # Load the dictionary\n        dictionary = load_dictionary(DICTIONARY_FILE)\n    \n        # Initialize the graphics\n        sbg = SpellingBeeGraphics()\n>       sbg.add_field(\"Puzzle\", puzzle_action)\nE       UnboundLocalError: local variable 'puzzle_action' referenced before assignment\n\nSpellingBee.py:18: UnboundLocalError"
+            },
+            "teardown": {
+                "duration": 0.00014300993643701077,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_action",
+            "lineno": 62,
+            "outcome": "error",
+            "keywords": [
+                "test_solve_action",
+                "test_SpellingBee.py",
+                "code_9ent8lon"
+            ],
+            "setup": {
+                "duration": 0.013292533112689853,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_9ent8lon/SpellingBee.py",
+                    "lineno": 18,
+                    "message": "UnboundLocalError: local variable 'puzzle_action' referenced before assignment"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 18,
+                        "message": "UnboundLocalError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7e186af46cb0>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        # Load the dictionary\n        dictionary = load_dictionary(DICTIONARY_FILE)\n    \n        # Initialize the graphics\n        sbg = SpellingBeeGraphics()\n>       sbg.add_field(\"Puzzle\", puzzle_action)\nE       UnboundLocalError: local variable 'puzzle_action' referenced before assignment\n\nSpellingBee.py:18: UnboundLocalError"
+            },
+            "teardown": {
+                "duration": 0.00011213403195142746,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+            "lineno": 69,
+            "outcome": "error",
+            "keywords": [
+                "test_word_entry_valid",
+                "test_SpellingBee.py",
+                "code_9ent8lon"
+            ],
+            "setup": {
+                "duration": 0.014022701885551214,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_9ent8lon/SpellingBee.py",
+                    "lineno": 18,
+                    "message": "UnboundLocalError: local variable 'puzzle_action' referenced before assignment"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 18,
+                        "message": "UnboundLocalError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7e186af47b50>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        # Load the dictionary\n        dictionary = load_dictionary(DICTIONARY_FILE)\n    \n        # Initialize the graphics\n        sbg = SpellingBeeGraphics()\n>       sbg.add_field(\"Puzzle\", puzzle_action)\nE       UnboundLocalError: local variable 'puzzle_action' referenced before assignment\n\nSpellingBee.py:18: UnboundLocalError"
+            },
+            "teardown": {
+                "duration": 0.00011618994176387787,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+            "lineno": 77,
+            "outcome": "error",
+            "keywords": [
+                "test_word_entry_invalid",
+                "test_SpellingBee.py",
+                "code_9ent8lon"
+            ],
+            "setup": {
+                "duration": 0.01488276501186192,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_9ent8lon/SpellingBee.py",
+                    "lineno": 18,
+                    "message": "UnboundLocalError: local variable 'puzzle_action' referenced before assignment"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 18,
+                        "message": "UnboundLocalError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7e186ae39630>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        # Load the dictionary\n        dictionary = load_dictionary(DICTIONARY_FILE)\n    \n        # Initialize the graphics\n        sbg = SpellingBeeGraphics()\n>       sbg.add_field(\"Puzzle\", puzzle_action)\nE       UnboundLocalError: local variable 'puzzle_action' referenced before assignment\n\nSpellingBee.py:18: UnboundLocalError"
+            },
+            "teardown": {
+                "duration": 0.00011705700308084488,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_pangram_identification",
+            "lineno": 84,
+            "outcome": "error",
+            "keywords": [
+                "test_pangram_identification",
+                "test_SpellingBee.py",
+                "code_9ent8lon"
+            ],
+            "setup": {
+                "duration": 0.01505395700223744,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_9ent8lon/SpellingBee.py",
+                    "lineno": 18,
+                    "message": "UnboundLocalError: local variable 'puzzle_action' referenced before assignment"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 18,
+                        "message": "UnboundLocalError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7e186b6c0c70>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        # Load the dictionary\n        dictionary = load_dictionary(DICTIONARY_FILE)\n    \n        # Initialize the graphics\n        sbg = SpellingBeeGraphics()\n>       sbg.add_field(\"Puzzle\", puzzle_action)\nE       UnboundLocalError: local variable 'puzzle_action' referenced before assignment\n\nSpellingBee.py:18: UnboundLocalError"
+            },
+            "teardown": {
+                "duration": 0.00011963094584643841,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_score_calculation",
+            "lineno": 89,
+            "outcome": "error",
+            "keywords": [
+                "test_score_calculation",
+                "test_SpellingBee.py",
+                "code_9ent8lon"
+            ],
+            "setup": {
+                "duration": 0.013467604061588645,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_9ent8lon/SpellingBee.py",
+                    "lineno": 18,
+                    "message": "UnboundLocalError: local variable 'puzzle_action' referenced before assignment"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 18,
+                        "message": "UnboundLocalError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7e186b62b1f0>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        # Load the dictionary\n        dictionary = load_dictionary(DICTIONARY_FILE)\n    \n        # Initialize the graphics\n        sbg = SpellingBeeGraphics()\n>       sbg.add_field(\"Puzzle\", puzzle_action)\nE       UnboundLocalError: local variable 'puzzle_action' referenced before assignment\n\nSpellingBee.py:18: UnboundLocalError"
+            },
+            "teardown": {
+                "duration": 0.00010837684385478497,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+            "lineno": 96,
+            "outcome": "error",
+            "keywords": [
+                "test_duplicate_word_entry",
+                "test_SpellingBee.py",
+                "code_9ent8lon"
+            ],
+            "setup": {
+                "duration": 0.013584019150584936,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_9ent8lon/SpellingBee.py",
+                    "lineno": 18,
+                    "message": "UnboundLocalError: local variable 'puzzle_action' referenced before assignment"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 18,
+                        "message": "UnboundLocalError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7e186ae38850>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        # Load the dictionary\n        dictionary = load_dictionary(DICTIONARY_FILE)\n    \n        # Initialize the graphics\n        sbg = SpellingBeeGraphics()\n>       sbg.add_field(\"Puzzle\", puzzle_action)\nE       UnboundLocalError: local variable 'puzzle_action' referenced before assignment\n\nSpellingBee.py:18: UnboundLocalError"
+            },
+            "teardown": {
+                "duration": 0.00010627112351357937,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+            "lineno": 104,
+            "outcome": "error",
+            "keywords": [
+                "test_solve_after_user_input",
+                "test_SpellingBee.py",
+                "code_9ent8lon"
+            ],
+            "setup": {
+                "duration": 0.014206331921741366,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_9ent8lon/SpellingBee.py",
+                    "lineno": 18,
+                    "message": "UnboundLocalError: local variable 'puzzle_action' referenced before assignment"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 45,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 18,
+                        "message": "UnboundLocalError"
+                    }
+                ],
+                "longrepr": "monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7e186ae18520>\n\n    @pytest.fixture\n    def mock_graphics(monkeypatch):\n        mock = MockSpellingBeeGraphics()\n        monkeypatch.setattr(SpellingBee, 'SpellingBeeGraphics', lambda: mock)\n>       SpellingBee.spelling_bee()\n\ntest_SpellingBee.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n    def spelling_bee():\n        # Load the dictionary\n        dictionary = load_dictionary(DICTIONARY_FILE)\n    \n        # Initialize the graphics\n        sbg = SpellingBeeGraphics()\n>       sbg.add_field(\"Puzzle\", puzzle_action)\nE       UnboundLocalError: local variable 'puzzle_action' referenced before assignment\n\nSpellingBee.py:18: UnboundLocalError"
+            },
+            "teardown": {
+                "duration": 0.0001222440041601658,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

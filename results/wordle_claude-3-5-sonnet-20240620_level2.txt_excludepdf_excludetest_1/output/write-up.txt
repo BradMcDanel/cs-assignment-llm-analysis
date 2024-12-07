@@ -1,0 +1,26 @@
+This implementation of Wordle follows the milestones outlined in the assignment:
+
+1. Pick a random word:
+   - The secret word is chosen randomly from FIVE_LETTER_WORDS and converted to uppercase.
+
+2. Check if entered word is valid:
+   - The enter_action function checks if the guess is 5 letters long and in the word list.
+   - If not, it displays "Not in word list".
+
+3. Color the boxes:
+   - After a valid guess, it loops through each letter to determine its color:
+     - Green if the letter is in the correct position
+     - Yellow if the letter is in the word but wrong position
+     - Gray if the letter is not in the word
+   - The colors are set using gw.set_square_color()
+
+4. Color the keys:
+   - The virtual keyboard keys are colored using gw.set_key_color()
+   - Key colors are updated based on the most "correct" status of each letter
+
+Additional features:
+- The game ends with a congratulatory message if the word is guessed correctly
+- If the player runs out of guesses, the secret word is revealed
+- The current row is updated after each valid guess
+
+This implementation covers all the basic functionality of Wordle as described in the assignment. For further improvements, the suggested extensions could be implemented, such as using a more balanced dictionary, enhancing victory animations, or adding a scoring system.

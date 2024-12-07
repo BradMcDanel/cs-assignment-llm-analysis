@@ -1,0 +1,19 @@
+Milestone #5: Implement the full encryption path
+
+For this milestone, I implemented the full encryption path through all rotors and the reflector. Here are the key changes:
+
+1. In EnigmaRotor.py:
+   - I added an invert_key function to create the inverse permutation.
+   - I modified the EnigmaRotor class to store both the forward and inverse permutations.
+   - I added an apply_backward method to apply the inverse permutation.
+
+2. In EnigmaModel.py:
+   - I added a reflector rotor in the __init__ method.
+   - I updated the key_pressed method to implement the full encryption path:
+     * Forward through all three rotors (right to left)
+     * Through the reflector
+     * Backward through all three rotors (left to right)
+
+This implementation now follows the complete Enigma encryption path. When a key is pressed, the signal goes through all rotors in both directions and the reflector, resulting in the final encrypted letter.
+
+The next and final step will be to implement the rotor advance mechanism in Milestone #6.

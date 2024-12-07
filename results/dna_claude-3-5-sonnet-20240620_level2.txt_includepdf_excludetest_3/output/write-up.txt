@@ -1,0 +1,31 @@
+This Python program implements a DNA profiling system that can identify individuals based on Short Tandem Repeats (STRs) in their DNA sequence. Here's a breakdown of how the program works:
+
+1. Command-line arguments:
+   The program expects two command-line arguments: the name of a CSV file containing STR counts for individuals, and the name of a text file containing the DNA sequence to identify.
+
+2. Reading the CSV database:
+   The program reads the CSV file into memory using the csv module. Each row represents an individual, with the first column being the name and subsequent columns representing STR counts.
+
+3. Extracting STRs:
+   The program extracts the list of STRs from the header of the CSV file, excluding the 'name' column.
+
+4. Reading the DNA sequence:
+   The program reads the DNA sequence from the specified text file.
+
+5. Computing STR counts:
+   For each STR, the program computes the longest run of consecutive repeats in the DNA sequence using the longest_match function.
+
+6. Matching:
+   The program compares the computed STR counts against each individual in the database. If an exact match is found for all STRs, it prints the name of the matching individual.
+
+7. No match case:
+   If no match is found after checking all individuals, the program prints "No match".
+
+The longest_match function:
+This helper function computes the longest run of a given subsequence within the main sequence. It does this by iterating through the sequence and counting consecutive matches of the subsequence.
+
+Efficiency considerations:
+- The program reads the entire CSV file into memory, which is fine for small databases but might be inefficient for very large datasets.
+- The longest_match function uses a nested loop approach, which has a time complexity of O(nm) where n is the length of the sequence and m is the length of the subsequence. For very long sequences or subsequences, more efficient string-matching algorithms could be considered.
+
+Overall, this program provides a straightforward implementation of DNA profiling based on STR counting, suitable for educational purposes and small-scale applications.

@@ -1,0 +1,4 @@
+# EnglishWords.txt
+# The text file containing a list of English words used for validation in the SpellingBee program.
+# The words are in lowercase and each word is on a separate line.
+# This file is essential for checking the validity of words found in the Spelling Bee puzzle.

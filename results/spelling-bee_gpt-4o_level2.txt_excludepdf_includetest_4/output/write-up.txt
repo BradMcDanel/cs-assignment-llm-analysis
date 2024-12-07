@@ -1,0 +1,26 @@
+# Spelling Bee Assignment Write-up
+
+## Overview
+The Spelling Bee assignment involves creating an interactive game where users can solve puzzles by finding words using a subset of letters. Our implementation focuses on developing functionality in increments, with each milestone adding new features to the application.
+
+## Milestones
+
+### Milestone #1: Initialize the Beehive
+We implemented a function to check if the input is a legal puzzle with exactly seven unique alphabetic characters. If valid, the letters are set in the beehive; otherwise, an error message is displayed.
+
+### Milestone #2: Display Legal Words
+We read a dictionary file and checked each word to see if it is valid according to the puzzle rules. Valid words are displayed on the screen.
+
+### Milestone #3: Add Scores
+Scores for valid words are calculated and displayed. Pangrams receive a bonus score. The total score is shown after solving the puzzle.
+
+### Milestone #4: User Interaction
+A new input field allows users to find words interactively. The program checks if the entered word is valid and provides feedback. It tracks the total score and displays the results in real-time.
+
+## Considerations
+- We handle uppercase and lowercase conversions for letters and words.
+- Found words are stored to prevent duplicate entries.
+- The implementation assumes the availability of helper scripts and a dictionary file.
+
+## Extensions
+Future improvements could include generating new puzzles, implementing a shuffle feature, or finding interesting puzzles with unique characteristics.

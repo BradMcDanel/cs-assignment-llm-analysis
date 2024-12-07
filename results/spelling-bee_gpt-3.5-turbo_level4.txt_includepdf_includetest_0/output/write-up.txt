@@ -1,0 +1,5 @@
+In this assignment, I successfully implemented the Spelling Bee project in Python as per the provided instructions. The project involved working with strings, arrays, and text files to create a Spelling Bee puzzle solver. The project was broken down into several milestones, each focusing on specific tasks such as initializing the beehive with puzzle letters, displaying legal words, adding scores, and letting the user find words.
+
+I utilized callback functions and a dictionary file of English words to validate and find legal words within the puzzle constraints. The project also involved calculating scores based on word lengths and pangram bonuses. Testing was done using pytest with mock objects to simulate user interactions and verify the functionality of the program.
+
+Overall, the project provided a good opportunity to practice string processing and interactive program development in Python.

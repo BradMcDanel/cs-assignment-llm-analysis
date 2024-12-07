@@ -1,0 +1,163 @@
+{
+    "created": 1731005535.831746,
+    "duration": 0.0777280330657959,
+    "exitcode": 0,
+    "root": "/tmp/code_q_kiu_m7",
+    "environment": {},
+    "summary": {
+        "passed": 4,
+        "total": 4,
+        "collected": 4
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_profile.py",
+                    "type": "Module"
+                },
+                {
+                    "nodeid": "test_profile.py.txt",
+                    "type": "DoctestTextfile"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_alice",
+                    "type": "TestCaseFunction",
+                    "lineno": 4
+                },
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_bob",
+                    "type": "TestCaseFunction",
+                    "lineno": 8
+                },
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_charlie",
+                    "type": "TestCaseFunction",
+                    "lineno": 12
+                },
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase::test_no_match",
+                    "type": "TestCaseFunction",
+                    "lineno": 16
+                }
+            ]
+        },
+        {
+            "nodeid": "test_profile.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_profile.py::DNAProfilerTestCase",
+                    "type": "UnitTestCase"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_profile.py.txt",
+            "outcome": "passed",
+            "result": []
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_alice",
+            "lineno": 4,
+            "outcome": "passed",
+            "keywords": [
+                "test_match_alice",
+                "DNAProfilerTestCase",
+                "test_profile.py",
+                "code_q_kiu_m7"
+            ],
+            "setup": {
+                "duration": 0.00017112679779529572,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.017610313137993217,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 8.505093865096569e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_bob",
+            "lineno": 8,
+            "outcome": "passed",
+            "keywords": [
+                "test_match_bob",
+                "DNAProfilerTestCase",
+                "test_profile.py",
+                "code_q_kiu_m7"
+            ],
+            "setup": {
+                "duration": 9.140488691627979e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.016160228988155723,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.185914389789104e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase::test_match_charlie",
+            "lineno": 12,
+            "outcome": "passed",
+            "keywords": [
+                "test_match_charlie",
+                "DNAProfilerTestCase",
+                "test_profile.py",
+                "code_q_kiu_m7"
+            ],
+            "setup": {
+                "duration": 9.392015635967255e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.016733314841985703,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 8.895108476281166e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_profile.py::DNAProfilerTestCase::test_no_match",
+            "lineno": 16,
+            "outcome": "passed",
+            "keywords": [
+                "test_no_match",
+                "DNAProfilerTestCase",
+                "test_profile.py",
+                "code_q_kiu_m7"
+            ],
+            "setup": {
+                "duration": 9.67241358011961e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.01647850894369185,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 0.000100764911621809,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

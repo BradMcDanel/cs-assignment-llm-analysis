@@ -1,0 +1,31 @@
+DNA Profiler Implementation
+
+This program implements a DNA profiler that can identify a person based on their DNA sequence and a database of Short Tandem Repeat (STR) counts.
+
+Key components of the implementation:
+
+1. File I/O:
+   - The program reads a CSV file containing the STR counts for individuals.
+   - It also reads a text file containing the DNA sequence to be identified.
+
+2. STR Counting:
+   - The `longest_match` function calculates the longest run of consecutive repeats for a given STR in the DNA sequence.
+   - This function uses a sliding window approach to efficiently count repeats.
+
+3. Database Matching:
+   - The program compares the computed STR counts from the DNA sequence against each person in the database.
+   - It checks for an exact match of all STR counts.
+
+4. Output:
+   - If a match is found, the program prints the name of the matching individual.
+   - If no match is found, it prints "No match".
+
+Efficiency considerations:
+- The `longest_match` function has a time complexity of O(n), where n is the length of the DNA sequence.
+- The overall time complexity is O(m * n), where m is the number of STRs, as we need to compute the longest match for each STR.
+
+Potential improvements:
+- Implement caching or memoization in the `longest_match` function to avoid redundant calculations for overlapping subsequences.
+- Use more efficient data structures like suffix arrays or suffix trees for faster string matching, especially for larger DNA sequences.
+
+This implementation provides a balance between readability and efficiency, suitable for the given problem scale.

@@ -1,0 +1,263 @@
+{
+    "created": 1730996538.1037726,
+    "duration": 0.02539849281311035,
+    "exitcode": 1,
+    "root": "/tmp/code_t_l2m9pe",
+    "environment": {},
+    "summary": {
+        "failed": 1,
+        "passed": 7,
+        "total": 8,
+        "collected": 8
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py::test_enigma_initialization",
+                    "type": "Function",
+                    "lineno": 6
+                },
+                {
+                    "nodeid": "test_enigma.py::test_key_press_and_release",
+                    "type": "Function",
+                    "lineno": 11
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_advance",
+                    "type": "Function",
+                    "lineno": 20
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_click",
+                    "type": "Function",
+                    "lineno": 29
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_encryption",
+                    "type": "Function",
+                    "lineno": 37
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_decryption",
+                    "type": "Function",
+                    "lineno": 48
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_full_rotation",
+                    "type": "Function",
+                    "lineno": 70
+                },
+                {
+                    "nodeid": "test_enigma.py::test_reflector",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_enigma.py::test_enigma_initialization",
+            "lineno": 6,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_initialization",
+                "test_enigma.py",
+                "code_t_l2m9pe"
+            ],
+            "setup": {
+                "duration": 8.897809311747551e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 8.297106251120567e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_t_l2m9pe/test_enigma.py",
+                    "lineno": 9,
+                    "message": "AttributeError: 'EnigmaModel' object has no attribute '_rotors'. Did you mean: 'rotors'?"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 9,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "def test_enigma_initialization():\n        model = EnigmaModel()\n>       assert len(model._rotors) == N_ROTORS\nE       AttributeError: 'EnigmaModel' object has no attribute '_rotors'. Did you mean: 'rotors'?\n\ntest_enigma.py:9: AttributeError"
+            },
+            "teardown": {
+                "duration": 8.440297096967697e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_key_press_and_release",
+            "lineno": 11,
+            "outcome": "passed",
+            "keywords": [
+                "test_key_press_and_release",
+                "test_enigma.py",
+                "code_t_l2m9pe"
+            ],
+            "setup": {
+                "duration": 5.6724995374679565e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.91910570114851e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.126294516026974e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_advance",
+            "lineno": 20,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_advance",
+                "test_enigma.py",
+                "code_t_l2m9pe"
+            ],
+            "setup": {
+                "duration": 4.535680636763573e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.765197031199932e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.878399729728699e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_click",
+            "lineno": 29,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_click",
+                "test_enigma.py",
+                "code_t_l2m9pe"
+            ],
+            "setup": {
+                "duration": 4.3152133002877235e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.044306792318821e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.795698285102844e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_encryption",
+            "lineno": 37,
+            "outcome": "passed",
+            "keywords": [
+                "test_enigma_encryption",
+                "test_enigma.py",
+                "code_t_l2m9pe"
+            ],
+            "setup": {
+                "duration": 4.2221974581480026e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.596705108880997e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.762403503060341e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_decryption",
+            "lineno": 48,
+            "outcome": "passed",
+            "keywords": [
+                "test_enigma_decryption",
+                "test_enigma.py",
+                "code_t_l2m9pe"
+            ],
+            "setup": {
+                "duration": 4.24790196120739e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00010391394607722759,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.9479928091168404e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_full_rotation",
+            "lineno": 70,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_full_rotation",
+                "test_enigma.py",
+                "code_t_l2m9pe"
+            ],
+            "setup": {
+                "duration": 4.35470137745142e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00012708199210464954,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.7038931623101234e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_reflector",
+            "lineno": 80,
+            "outcome": "passed",
+            "keywords": [
+                "test_reflector",
+                "test_enigma.py",
+                "code_t_l2m9pe"
+            ],
+            "setup": {
+                "duration": 4.867394454777241e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0002974849194288254,
+                "outcome": "passed",
+                "stdout": "Reflector mapping:\nA -> Z\nB -> R\nC -> A\nD -> Z\nE -> F\nF -> B\nG -> Z\nH -> W\nI -> X\nJ -> H\nK -> S\nL -> R\nM -> R\nN -> W\nO -> M\nP -> B\nQ -> A\nR -> H\nS -> Q\nT -> J\nU -> Z\nV -> S\nW -> T\nX -> A\nY -> W\nZ -> A\n"
+            },
+            "teardown": {
+                "duration": 3.9384933188557625e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

@@ -1,0 +1,392 @@
+{
+    "created": 1730995318.860948,
+    "duration": 0.035919189453125,
+    "exitcode": 1,
+    "root": "/tmp/code_pb_h_lqu",
+    "environment": {},
+    "summary": {
+        "failed": 8,
+        "total": 8,
+        "collected": 8
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py::test_enigma_initialization",
+                    "type": "Function",
+                    "lineno": 6
+                },
+                {
+                    "nodeid": "test_enigma.py::test_key_press_and_release",
+                    "type": "Function",
+                    "lineno": 11
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_advance",
+                    "type": "Function",
+                    "lineno": 20
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_click",
+                    "type": "Function",
+                    "lineno": 29
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_encryption",
+                    "type": "Function",
+                    "lineno": 37
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_decryption",
+                    "type": "Function",
+                    "lineno": 48
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_full_rotation",
+                    "type": "Function",
+                    "lineno": 70
+                },
+                {
+                    "nodeid": "test_enigma.py::test_reflector",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_enigma.py::test_enigma_initialization",
+            "lineno": 6,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_initialization",
+                "test_enigma.py",
+                "code_pb_h_lqu"
+            ],
+            "setup": {
+                "duration": 8.216104470193386e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.747711449861526e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_pb_h_lqu/EnigmaModel.py",
+                    "lineno": 21,
+                    "message": "NameError: name 'ROTOR_PERMUTATIONS' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 8,
+                        "message": ""
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 21,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "def test_enigma_initialization():\n>       model = EnigmaModel()\n\ntest_enigma.py:8: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7db00ef46350>\n\n    def __init__(self):\n        self._views = []\n>       self.rotors = [EnigmaRotor(ROTOR_PERMUTATIONS[0]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[1]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[2])]\nE       NameError: name 'ROTOR_PERMUTATIONS' is not defined\n\nEnigmaModel.py:21: NameError"
+            },
+            "teardown": {
+                "duration": 6.866105832159519e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_key_press_and_release",
+            "lineno": 11,
+            "outcome": "failed",
+            "keywords": [
+                "test_key_press_and_release",
+                "test_enigma.py",
+                "code_pb_h_lqu"
+            ],
+            "setup": {
+                "duration": 5.344906821846962e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.6826043874025345e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_pb_h_lqu/EnigmaModel.py",
+                    "lineno": 21,
+                    "message": "NameError: name 'ROTOR_PERMUTATIONS' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 13,
+                        "message": ""
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 21,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "def test_key_press_and_release():\n>       model = EnigmaModel()\n\ntest_enigma.py:13: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7db00f6b2530>\n\n    def __init__(self):\n        self._views = []\n>       self.rotors = [EnigmaRotor(ROTOR_PERMUTATIONS[0]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[1]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[2])]\nE       NameError: name 'ROTOR_PERMUTATIONS' is not defined\n\nEnigmaModel.py:21: NameError"
+            },
+            "teardown": {
+                "duration": 6.155506707727909e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_advance",
+            "lineno": 20,
+            "outcome": "failed",
+            "keywords": [
+                "test_rotor_advance",
+                "test_enigma.py",
+                "code_pb_h_lqu"
+            ],
+            "setup": {
+                "duration": 5.191005766391754e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.053620018064976e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_pb_h_lqu/EnigmaModel.py",
+                    "lineno": 21,
+                    "message": "NameError: name 'ROTOR_PERMUTATIONS' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 22,
+                        "message": ""
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 21,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "def test_rotor_advance():\n>       model = EnigmaModel()\n\ntest_enigma.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7db00f6c0520>\n\n    def __init__(self):\n        self._views = []\n>       self.rotors = [EnigmaRotor(ROTOR_PERMUTATIONS[0]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[1]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[2])]\nE       NameError: name 'ROTOR_PERMUTATIONS' is not defined\n\nEnigmaModel.py:21: NameError"
+            },
+            "teardown": {
+                "duration": 6.115692667663097e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_click",
+            "lineno": 29,
+            "outcome": "failed",
+            "keywords": [
+                "test_rotor_click",
+                "test_enigma.py",
+                "code_pb_h_lqu"
+            ],
+            "setup": {
+                "duration": 5.269283428788185e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.6037912145256996e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_pb_h_lqu/EnigmaModel.py",
+                    "lineno": 21,
+                    "message": "NameError: name 'ROTOR_PERMUTATIONS' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 31,
+                        "message": ""
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 21,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "def test_rotor_click():\n>       model = EnigmaModel()\n\ntest_enigma.py:31: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7db00f6b33d0>\n\n    def __init__(self):\n        self._views = []\n>       self.rotors = [EnigmaRotor(ROTOR_PERMUTATIONS[0]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[1]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[2])]\nE       NameError: name 'ROTOR_PERMUTATIONS' is not defined\n\nEnigmaModel.py:21: NameError"
+            },
+            "teardown": {
+                "duration": 6.2623992562294e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_encryption",
+            "lineno": 37,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_encryption",
+                "test_enigma.py",
+                "code_pb_h_lqu"
+            ],
+            "setup": {
+                "duration": 5.077989771962166e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.56048471480608e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_pb_h_lqu/EnigmaModel.py",
+                    "lineno": 21,
+                    "message": "NameError: name 'ROTOR_PERMUTATIONS' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 39,
+                        "message": ""
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 21,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "def test_enigma_encryption():\n>       model = EnigmaModel()\n\ntest_enigma.py:39: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7db00f6c0ac0>\n\n    def __init__(self):\n        self._views = []\n>       self.rotors = [EnigmaRotor(ROTOR_PERMUTATIONS[0]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[1]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[2])]\nE       NameError: name 'ROTOR_PERMUTATIONS' is not defined\n\nEnigmaModel.py:21: NameError"
+            },
+            "teardown": {
+                "duration": 6.105611100792885e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_decryption",
+            "lineno": 48,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_decryption",
+                "test_enigma.py",
+                "code_pb_h_lqu"
+            ],
+            "setup": {
+                "duration": 5.1219016313552856e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.707191303372383e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_pb_h_lqu/EnigmaModel.py",
+                    "lineno": 21,
+                    "message": "NameError: name 'ROTOR_PERMUTATIONS' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 50,
+                        "message": ""
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 21,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "def test_enigma_decryption():\n>       model = EnigmaModel()\n\ntest_enigma.py:50: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7db00f6b3610>\n\n    def __init__(self):\n        self._views = []\n>       self.rotors = [EnigmaRotor(ROTOR_PERMUTATIONS[0]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[1]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[2])]\nE       NameError: name 'ROTOR_PERMUTATIONS' is not defined\n\nEnigmaModel.py:21: NameError"
+            },
+            "teardown": {
+                "duration": 6.058812141418457e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_full_rotation",
+            "lineno": 70,
+            "outcome": "failed",
+            "keywords": [
+                "test_rotor_full_rotation",
+                "test_enigma.py",
+                "code_pb_h_lqu"
+            ],
+            "setup": {
+                "duration": 5.49820251762867e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.6175049394369125e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_pb_h_lqu/EnigmaModel.py",
+                    "lineno": 21,
+                    "message": "NameError: name 'ROTOR_PERMUTATIONS' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 72,
+                        "message": ""
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 21,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "def test_rotor_full_rotation():\n>       model = EnigmaModel()\n\ntest_enigma.py:72: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7db00ef462f0>\n\n    def __init__(self):\n        self._views = []\n>       self.rotors = [EnigmaRotor(ROTOR_PERMUTATIONS[0]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[1]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[2])]\nE       NameError: name 'ROTOR_PERMUTATIONS' is not defined\n\nEnigmaModel.py:21: NameError"
+            },
+            "teardown": {
+                "duration": 6.567593663930893e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_reflector",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_reflector",
+                "test_enigma.py",
+                "code_pb_h_lqu"
+            ],
+            "setup": {
+                "duration": 5.6507065892219543e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.63028734177351e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_pb_h_lqu/EnigmaModel.py",
+                    "lineno": 21,
+                    "message": "NameError: name 'ROTOR_PERMUTATIONS' is not defined"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 82,
+                        "message": ""
+                    },
+                    {
+                        "path": "EnigmaModel.py",
+                        "lineno": 21,
+                        "message": "NameError"
+                    }
+                ],
+                "longrepr": "def test_reflector():\n>       model = EnigmaModel()\n\ntest_enigma.py:82: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <EnigmaModel.EnigmaModel object at 0x7db00ee33a60>\n\n    def __init__(self):\n        self._views = []\n>       self.rotors = [EnigmaRotor(ROTOR_PERMUTATIONS[0]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[1]),\n                       EnigmaRotor(ROTOR_PERMUTATIONS[2])]\nE       NameError: name 'ROTOR_PERMUTATIONS' is not defined\n\nEnigmaModel.py:21: NameError"
+            },
+            "teardown": {
+                "duration": 6.53520692139864e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

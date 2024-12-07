@@ -1,0 +1,4 @@
+# This file contains the raw data on fatal police shootings with various attributes for each incident.
+
+### police_shootings.py ###
+# The provided Python script reads the data from fatal-police-shootings-data.csv, organizes it into a dictionary, and performs analysis on the data as per the project tasks.

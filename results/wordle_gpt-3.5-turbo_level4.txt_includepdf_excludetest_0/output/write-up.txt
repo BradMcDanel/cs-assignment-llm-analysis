@@ -1,0 +1,1 @@
+In this assignment, the provided code structure for the Wordle game is given along with milestones and guidelines for implementation. The assignment involves working with strings, graphics, and implementing the logic of the Wordle game. The assignment is structured into milestones for a step-by-step approach to building the game functionality.

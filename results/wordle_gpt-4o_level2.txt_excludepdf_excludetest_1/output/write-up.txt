@@ -1,0 +1,23 @@
+Wordle Assignment Write-up
+
+This assignment involves implementing the popular Wordle game using Python. The task was broken down into four main milestones, each building upon the previous to eventually create a fully functional Wordle game.
+
+Milestone #1: Pick a random word and display it in the first row of boxes
+- We started by picking a random word from the provided list in `WordleDictionary.py`.
+- This word was then displayed in the first row of the Wordle grid using the `set_square_letter` method.
+
+Milestone #2: Check whether the letters entered by the user form a word
+- We implemented the `enter_action` function to handle the event when the user presses the ENTER key.
+- This function checks if the entered word is in the provided word list. If not, it shows a "Not in word list" message.
+
+Milestone #3: Color the boxes
+- We extended the `enter_action` function to color the boxes based on the user's guess.
+- Correct letters in the correct position are colored green, letters in the word but in the wrong position are colored yellow, and letters not in the word are colored gray.
+
+Milestone #4: Color the keys
+- We further enhanced the `enter_action` function to color the keys on the virtual keyboard.
+- The keys are colored according to their status: green for correct position, yellow for present in the word, and gray for missing.
+
+Throughout the implementation, we ensured that each milestone was completed and tested thoroughly before moving on to the next. This approach helped in managing the complexity and allowed for incremental development and testing.
+
+Overall, this assignment provided valuable practice in handling strings, implementing event-driven programming, and working with graphical user interfaces in Python.

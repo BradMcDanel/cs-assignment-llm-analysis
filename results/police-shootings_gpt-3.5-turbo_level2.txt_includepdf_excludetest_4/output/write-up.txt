@@ -1,0 +1,3 @@
+# Write-up content for the tasks and questions in the assignment.
+# Include detailed explanations, analysis, and any insights gained from completing the tasks.
+# Ensure to provide a clear and concise reflection on the project overall.

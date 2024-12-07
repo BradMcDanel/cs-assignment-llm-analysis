@@ -1,0 +1,3 @@
+# Your write-up for the Spelling Bee project implementation
+# Include explanations of the code structure, milestones, and any challenges faced
+# Discuss possible extensions and improvements to the project

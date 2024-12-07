@@ -1,0 +1,276 @@
+{
+    "created": 1730996656.4178784,
+    "duration": 0.031366825103759766,
+    "exitcode": 1,
+    "root": "/tmp/code_xwefjjbp",
+    "environment": {},
+    "summary": {
+        "failed": 2,
+        "passed": 6,
+        "total": 8,
+        "collected": 8
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py::test_enigma_initialization",
+                    "type": "Function",
+                    "lineno": 6
+                },
+                {
+                    "nodeid": "test_enigma.py::test_key_press_and_release",
+                    "type": "Function",
+                    "lineno": 11
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_advance",
+                    "type": "Function",
+                    "lineno": 20
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_click",
+                    "type": "Function",
+                    "lineno": 29
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_encryption",
+                    "type": "Function",
+                    "lineno": 37
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_decryption",
+                    "type": "Function",
+                    "lineno": 48
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_full_rotation",
+                    "type": "Function",
+                    "lineno": 70
+                },
+                {
+                    "nodeid": "test_enigma.py::test_reflector",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_enigma.py::test_enigma_initialization",
+            "lineno": 6,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_initialization",
+                "test_enigma.py",
+                "code_xwefjjbp"
+            ],
+            "setup": {
+                "duration": 8.64050816744566e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.06770583242178e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_xwefjjbp/test_enigma.py",
+                    "lineno": 9,
+                    "message": "AttributeError: 'EnigmaModel' object has no attribute '_rotors'. Did you mean: 'rotors'?"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 9,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "def test_enigma_initialization():\n        model = EnigmaModel()\n>       assert len(model._rotors) == N_ROTORS\nE       AttributeError: 'EnigmaModel' object has no attribute '_rotors'. Did you mean: 'rotors'?\n\ntest_enigma.py:9: AttributeError"
+            },
+            "teardown": {
+                "duration": 7.333792746067047e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_key_press_and_release",
+            "lineno": 11,
+            "outcome": "failed",
+            "keywords": [
+                "test_key_press_and_release",
+                "test_enigma.py",
+                "code_xwefjjbp"
+            ],
+            "setup": {
+                "duration": 5.963188596069813e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0001412190031260252,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_xwefjjbp/test_enigma.py",
+                    "lineno": 19,
+                    "message": "assert 1 == 0\n +  where 1 = sum(<generator object test_key_press_and_release.<locals>.<genexpr> at 0x72e8175ad620>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 19,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_key_press_and_release():\n        model = EnigmaModel()\n        model.key_pressed('A')\n        assert model.is_key_down('A') == True\n        assert sum(model.is_lamp_on(letter) for letter in ALPHABET) == 1\n        model.key_released('A')\n        assert model.is_key_down('A') == False\n>       assert sum(model.is_lamp_on(letter) for letter in ALPHABET) == 0\nE       assert 1 == 0\nE        +  where 1 = sum(<generator object test_key_press_and_release.<locals>.<genexpr> at 0x72e8175ad620>)\n\ntest_enigma.py:19: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.723101250827312e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_advance",
+            "lineno": 20,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_advance",
+                "test_enigma.py",
+                "code_xwefjjbp"
+            ],
+            "setup": {
+                "duration": 5.239085294306278e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.151905447244644e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.079216159880161e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_click",
+            "lineno": 29,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_click",
+                "test_enigma.py",
+                "code_xwefjjbp"
+            ],
+            "setup": {
+                "duration": 4.475098103284836e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.963398143649101e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.371604882180691e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_encryption",
+            "lineno": 37,
+            "outcome": "passed",
+            "keywords": [
+                "test_enigma_encryption",
+                "test_enigma.py",
+                "code_xwefjjbp"
+            ],
+            "setup": {
+                "duration": 4.2309053242206573e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.762620225548744e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.9645005017519e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_decryption",
+            "lineno": 48,
+            "outcome": "passed",
+            "keywords": [
+                "test_enigma_decryption",
+                "test_enigma.py",
+                "code_xwefjjbp"
+            ],
+            "setup": {
+                "duration": 4.764599725604057e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00010539009235799313,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.78431286662817e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_full_rotation",
+            "lineno": 70,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_full_rotation",
+                "test_enigma.py",
+                "code_xwefjjbp"
+            ],
+            "setup": {
+                "duration": 4.16820403188467e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00013123499229550362,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.760610707104206e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_reflector",
+            "lineno": 80,
+            "outcome": "passed",
+            "keywords": [
+                "test_reflector",
+                "test_enigma.py",
+                "code_xwefjjbp"
+            ],
+            "setup": {
+                "duration": 4.187994636595249e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00032826908864080906,
+                "outcome": "passed",
+                "stdout": "Reflector mapping:\nA -> Z\nB -> R\nC -> A\nD -> Z\nE -> F\nF -> B\nG -> Z\nH -> W\nI -> X\nJ -> H\nK -> S\nL -> R\nM -> R\nN -> W\nO -> M\nP -> B\nQ -> A\nR -> H\nS -> Q\nT -> J\nU -> Z\nV -> S\nW -> T\nX -> A\nY -> W\nZ -> A\n"
+            },
+            "teardown": {
+                "duration": 3.944500349462032e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+The SpellingBeeSolver.py script is designed to solve the Spelling Bee puzzle as described in the assignment. 
+It loads the dictionary of English words, validates the user input puzzle, and then finds and displays the valid words 
+along with their scores based on the puzzle rules. The script implements the required milestones in a modular and 
+readable manner. Each milestone is tackled with specific functions and checks to ensure proper functionality and 
+interactivity with the SpellingBeeGraphics class.

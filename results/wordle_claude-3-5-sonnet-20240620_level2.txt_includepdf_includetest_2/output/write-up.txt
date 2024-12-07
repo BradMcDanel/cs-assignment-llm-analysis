@@ -1,0 +1,18 @@
+This implementation of Wordle follows the milestones outlined in the assignment:
+
+1. The program selects a random word from FIVE_LETTER_WORDS as the target word.
+
+2. The enter_action function checks if the entered word is in the word list. If not, it displays "Not in word list".
+
+3. If the word is valid, it colors the squares:
+   - Green (CORRECT_COLOR) for correct letters in the correct position
+   - Yellow (PRESENT_COLOR) for correct letters in the wrong position
+   - Gray (MISSING_COLOR) for letters not in the word
+
+4. The keyboard keys are also colored accordingly, with the rule that once a key is colored green, it stays green.
+
+5. The game checks for a win condition (all letters correct) or if the player has used all 6 guesses.
+
+The implementation uses the provided WordleGraphics module for all UI interactions, including displaying messages, setting square and key colors, and managing the current row.
+
+This version implements all basic Wordle functionality as described in the assignment. For further improvements, one could consider implementing some of the suggested extensions, such as using a more balanced word selection strategy or adding score tracking.

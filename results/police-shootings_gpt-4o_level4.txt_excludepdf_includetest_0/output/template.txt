@@ -1,0 +1,50 @@
+Task 1:
+Question 1: 
+The dataset includes data on fatal police shootings in the United States, compiled by the Washington Post. It contains various fields such as the age, gender, race, and state of each victim, as well as whether they were armed. The data is sourced from news reports, public records, social media, and other sources.
+
+Question 2:
+- Column "id": Unique identifier for each record. Examples: 22, 325, 140.
+- Column "name": Name of the individual involved in the shooting. Examples: John Doe, Jane Smith.
+- Column "date": Date of the shooting. Examples: 2020-01-01, 2019-05-15.
+- Column "manner_of_death": How the death occurred. Examples: shot, shot and Tasered.
+- Column "armed": Whether the individual was armed. Examples: gun, knife, unarmed.
+- Column "age": Age of the individual. Examples: 34, 23, 45.
+- Column "gender": Gender of the individual. Examples: M, F.
+- Column "race": Race of the individual. Examples: W, B, A.
+- Column "city": City where the shooting occurred. Examples: Los Angeles, New York.
+- Column "state": State where the shooting occurred. Examples: CA, NY.
+- Column "signs_of_mental_illness": Whether the individual showed signs of mental illness. Examples: True, False.
+- Column "threat_level": Perceived threat level. Examples: attack, other.
+- Column "flee": Whether the individual was fleeing. Examples: Not fleeing, Foot.
+- Column "body_camera": Whether a body camera was present. Examples: True, False.
+- Column "longitude": Longitude of the location. Examples: -118.2437, -73.935242.
+- Column "latitude": Latitude of the location. Examples: 34.0522, 40.73061.
+- Column "is_geocoding_exact": Whether the geolocation is exact. Examples: True, False.
+
+Question 3:
+According to the U.S. Census Bureau, approximately 13.4% of the U.S. population is Black. [Source: U.S. Census Bureau]
+
+Task 2:
+Question 1: 
+The `database` dictionary stores columns such as "id", "name", "race", "armed", "state", and other relevant information from each row of the CSV file.
+
+Question 2:
+The keys in `database` are the unique "id" values from the CSV file.
+
+Question 3:
+The values in `database` are dictionaries themselves, each storing data for a single shooting record.
+
+Question 4:
+Each value in `database` is a dictionary containing information like "name", "race", "armed status", etc. For example, a value might be: 
+{'id': '22', 'name': 'John Doe', 'race': 'W', 'armed': 'gun', 'state': 'CA', ...}
+
+Task 3:
+Question 1:
+The proportion of Black subjects in fatal police shootings is significantly higher than their representation in the U.S. population, which is concerning and indicates a racial disparity.
+
+Question 2:
+The proportion of Black subjects in unarmed fatal police shootings is also disproportionately high compared to their representation in the general U.S. population and even higher compared to the overall shootings. This suggests that Black individuals may be at a greater risk even when unarmed.
+
+Task 4:
+Reflection:
+In this project, I learned how to use Python to analyze real-world data, focusing on dictionaries to manage and process the dataset. The exercise highlighted the importance of understanding data structure and using programming to extract meaningful insights. Analyzing the data on fatal police shootings revealed troubling racial disparities, prompting reflection on societal issues. The project also enhanced my skills in working with CSV files, using dictionaries, and implementing data analysis techniques in Python. Overall, it was a valuable learning experience in both technical and ethical dimensions.

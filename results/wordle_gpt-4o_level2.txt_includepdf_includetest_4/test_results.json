@@ -1,0 +1,167 @@
+{
+    "created": 1731003463.0871553,
+    "duration": 0.020922422409057617,
+    "exitcode": 0,
+    "root": "/tmp/code_bq9ty6pf",
+    "environment": {},
+    "summary": {
+        "passed": 5,
+        "total": 5,
+        "collected": 5
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py::test_valid_guess",
+                    "type": "Function",
+                    "lineno": 111
+                },
+                {
+                    "nodeid": "test_wordle.py::test_invalid_guess",
+                    "type": "Function",
+                    "lineno": 122
+                },
+                {
+                    "nodeid": "test_wordle.py::test_correct_color_update",
+                    "type": "Function",
+                    "lineno": 134
+                },
+                {
+                    "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+                    "type": "Function",
+                    "lineno": 143
+                },
+                {
+                    "nodeid": "test_wordle.py::test_game_over_condition",
+                    "type": "Function",
+                    "lineno": 156
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_wordle.py::test_valid_guess",
+            "lineno": 111,
+            "outcome": "passed",
+            "keywords": [
+                "test_valid_guess",
+                "test_wordle.py",
+                "code_bq9ty6pf"
+            ],
+            "setup": {
+                "duration": 0.00017708702944219112,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.903405301272869e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.244106382131577e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_invalid_guess",
+            "lineno": 122,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_guess",
+                "test_wordle.py",
+                "code_bq9ty6pf"
+            ],
+            "setup": {
+                "duration": 0.0001166430301964283,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 8.185114711523056e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.743008270859718e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_correct_color_update",
+            "lineno": 134,
+            "outcome": "passed",
+            "keywords": [
+                "test_correct_color_update",
+                "test_wordle.py",
+                "code_bq9ty6pf"
+            ],
+            "setup": {
+                "duration": 0.00011609797365963459,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.9074023738503456e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.704102270305157e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+            "lineno": 143,
+            "outcome": "passed",
+            "keywords": [
+                "test_present_and_missing_color_update",
+                "test_wordle.py",
+                "code_bq9ty6pf"
+            ],
+            "setup": {
+                "duration": 0.00010666390880942345,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.887099541723728e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.147590465843678e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_game_over_condition",
+            "lineno": 156,
+            "outcome": "passed",
+            "keywords": [
+                "test_game_over_condition",
+                "test_wordle.py",
+                "code_bq9ty6pf"
+            ],
+            "setup": {
+                "duration": 0.00010986113920807838,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00023888004943728447,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.391503848135471e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

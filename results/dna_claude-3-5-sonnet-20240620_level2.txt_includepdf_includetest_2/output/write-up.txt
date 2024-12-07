@@ -1,0 +1,25 @@
+DNA Profiler Implementation
+
+This program implements a DNA profiler that can identify individuals based on their Short Tandem Repeat (STR) counts in a DNA sequence. Here's a brief overview of the implementation:
+
+1. Command-line arguments:
+   The program takes two command-line arguments: the CSV file containing the STR database and the text file containing the DNA sequence to be identified.
+
+2. CSV file parsing:
+   The CSV file is read using the csv.DictReader, which allows easy access to named columns. The data is stored in a dictionary where the keys are the individuals' names, and the values are dictionaries of their STR counts.
+
+3. DNA sequence reading:
+   The DNA sequence is read from the specified text file and stored as a string.
+
+4. STR counting:
+   The longest_match function is implemented to find the longest run of consecutive repeats for a given STR in the DNA sequence. This function is called for each STR in the database.
+
+5. Profile matching:
+   The program compares the computed STR counts with each profile in the database. If an exact match is found, the name of the matching individual is printed. If no match is found, "No match" is printed.
+
+Key aspects of the implementation:
+- The use of dictionaries for efficient storage and lookup of STR counts.
+- The longest_match function uses a sliding window approach to find the longest consecutive repeat of an STR.
+- The program handles variable numbers of STRs in the database by dynamically reading the STR names from the CSV file.
+
+This implementation provides a balance between readability and efficiency, making it suitable for the given problem scale while remaining easy to understand and modify if needed.

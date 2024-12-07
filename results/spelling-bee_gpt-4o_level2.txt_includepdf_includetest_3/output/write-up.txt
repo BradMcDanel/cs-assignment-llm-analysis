@@ -1,0 +1,11 @@
+The Spelling Bee project involves creating an interactive puzzle game where users find words that meet specific criteria. The solution is broken down into milestones:
+
+1. **Initialization**: We validate the puzzle input to ensure it contains exactly 7 unique letters, using the `puzzle_action` function.
+
+2. **Word Validation and Display**: The `solve_action` function iterates over a dictionary of words, checking each against the puzzle rules: minimum length, use of the center letter, and presence in the beehive letters. Valid words are displayed with their scores.
+
+3. **Scoring**: Words are scored based on length, with pangrams earning a bonus. The total word count and score are displayed.
+
+4. **User Interaction**: Users can input words to validate against the puzzle. The system provides feedback and updates scores dynamically.
+
+The project emphasizes modular design and refactoring, allowing for easy testing and extension. The `SpellingBeeGraphics` class handles GUI elements, while `test_SpellingBee.py` includes tests for validation and functionality using mock objects.

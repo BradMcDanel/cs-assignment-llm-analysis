@@ -1,0 +1,11 @@
+# In the Wordle.py code:
+1. The wordle function is defined to handle the main game logic.
+2. The enter_action function checks if the entered word is in the word list and calls the check_word function.
+3. The check_word function compares the entered word with a randomly selected hidden word, displaying appropriate messages.
+4. The color_squares function colors the squares based on the correctness of guessed letters compared to the hidden word.
+
+# WordleDictionary.py:
+- Contains the constant FIVE_LETTER_WORDS with a list of five-letter words.
+
+# WordleGraphics.py:
+- Contains the WordleGWindow class with graphical capabilities for the Wordle game.

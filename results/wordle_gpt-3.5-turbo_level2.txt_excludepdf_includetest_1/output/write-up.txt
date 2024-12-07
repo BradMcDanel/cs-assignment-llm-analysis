@@ -1,0 +1,15 @@
+The Wordle project involves implementing the popular Wordle game where the player needs to guess a hidden word within six attempts. The project provides milestones to guide the implementation process:
+
+Milestone #1:
+- Pick a random word from the provided list and display it in the first row of boxes.
+
+Milestone #2:
+- Check if the entered word is a legitimate English word and provide appropriate feedback.
+
+Milestone #3:
+- Color the boxes to indicate correct, present, or missing letters in the guessed word.
+
+Milestone #4:
+- Color the keys on the virtual keyboard to indicate used, found, or determined letters.
+
+Each milestone builds upon the previous one to gradually implement the full Wordle game functionality. Extensions for further enhancements are also provided for future development.

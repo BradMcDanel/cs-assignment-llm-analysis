@@ -1,0 +1,5 @@
+# I have gained experience in using Python dictionaries to analyze real-world data on fatal police shootings.
+# The project helped me understand how to read data from a CSV file, organize it into a dictionary, and perform analysis using Python.
+# It was interesting to compare the proportion of black subjects in fatal police shootings with their representation in the United States population.
+# Working through the tasks provided a hands-on experience in data analysis and reinforced my programming skills in Python.
+# Overall, this project was insightful and engaging, allowing me to apply Python programming concepts to real data analysis scenarios.

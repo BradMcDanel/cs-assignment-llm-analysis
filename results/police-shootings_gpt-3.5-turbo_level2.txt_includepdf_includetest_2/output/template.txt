@@ -1,0 +1,38 @@
+# Task 1, write your answers to the corresponding questions.
+
+Question 1:
+- The data includes information on fatal police shootings and is sourced from the Washington Post's GitHub repository.
+
+Question 2:
+- Column headers: id, date, threat_type, flee_status, armed_with, city, county, state, latitude, longitude, location_precision, name, age, gender, race, race_source, was_mental_illness_related, body_camera, agency_ids
+- Explanation and examples for each column.
+
+Question 3:
+- The percentage of the United States population that is black is X%, as per citation.
+
+# Task 2, write your answers to the corresponding questions.
+
+Question 1:
+- Information from the dataset stored in database includes name, date, armed status, age, gender, race, and state.
+
+Question 2:
+- Keys in the dictionary are the ID numbers of the entries.
+
+Question 3:
+- The values in database are of type dictionary.
+
+Question 4:
+- Structure of values in database includes information about a fatal police shooting entry.
+
+# Task 3, write your answers to the corresponding questions.
+
+Question 1:
+- Proportion of black subjects in fatal police shootings compared to the representation of black people in the US population is X.
+
+Question 2:
+- Comparison of the proportion of unarmed black subjects in fatal police shootings to the US population and all police shootings.
+
+# Task 4, write your answers to the corresponding question.
+
+Question 1:
+- Reflection on the project learnings and process.

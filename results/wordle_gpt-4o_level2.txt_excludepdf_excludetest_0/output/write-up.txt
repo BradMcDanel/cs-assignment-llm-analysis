@@ -1,0 +1,12 @@
+# Implementation Overview:
+This implementation of Wordle follows a structured approach by breaking down the task into milestones. We start by selecting a random word and displaying it, then move on to checking the validity of user-entered words, coloring the boxes based on guess correctness, and finally updating the keyboard colors.
+
+# Challenges and Considerations:
+1. **Coloring Logic:** Properly handling letter coloring, especially with repeated letters, requires careful tracking of used letters.
+2. **Case Sensitivity:** Ensuring consistent letter casing between user input and dictionary lookup.
+3. **User Feedback:** Providing clear messages for valid guesses and incorrect attempts enhances user experience.
+
+# Extensions:
+1. Implement a separate dictionary for selected hidden words to balance letter frequency.
+2. Enhance victory animation by cycling colors.
+3. Track user statistics across games in a persistent manner.

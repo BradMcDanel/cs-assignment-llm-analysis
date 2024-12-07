@@ -1,0 +1,17 @@
+This DNA profiling program implements the specified functionality to identify individuals based on their Short Tandem Repeat (STR) counts in a DNA sequence. The program uses Python's csv module to read the database file and efficiently processes the DNA sequence to find the longest runs of STRs.
+
+Key aspects of the implementation:
+
+1. Command-line argument handling: The program checks for the correct number of arguments and provides usage instructions if incorrect.
+
+2. CSV file processing: Using csv.DictReader, the program reads the database into a list of dictionaries, making it easy to access individual STR counts.
+
+3. STR identification: The program dynamically extracts the STR names from the CSV header, allowing for flexibility in the number and names of STRs.
+
+4. Efficient longest run calculation: The longest_match function uses a sliding window approach to find the longest run of consecutive STR repeats, optimizing for performance.
+
+5. Matching algorithm: The program compares the computed STR counts against each person in the database, ensuring an exact match for all STRs before declaring a match.
+
+6. Error handling: The program includes basic error handling for file operations and invalid inputs.
+
+This implementation balances readability and efficiency, making it suitable for processing large DNA sequences and databases. Future improvements could include more robust error handling and support for larger datasets through file streaming or database integration.

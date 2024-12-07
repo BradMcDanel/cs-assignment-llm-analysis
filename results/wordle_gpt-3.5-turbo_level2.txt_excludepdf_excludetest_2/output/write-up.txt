@@ -1,0 +1,9 @@
+The Wordle assignment involves implementing the Wordle game in Python by following a series of milestones. The provided starter files include Wordle.py, WordleDictionary.py, and WordleGraphics.py. The main goal is to allow the player to guess a five-letter word and provide feedback based on correct letters and positions.
+
+Milestones:
+1. Pick a random word and display it in the first row of boxes.
+2. Check whether the entered word is legitimate.
+3. Color the boxes based on correct letters and positions.
+4. Color the keys to track input letters.
+
+The assignment also suggests possible extensions to enhance the game, such as creating a balanced dictionary, improving word selection strategies, enhancing graphics for wins, providing a list of possible words based on previous guesses, and keeping score in a file.

@@ -1,0 +1,275 @@
+{
+    "created": 1730996638.6409771,
+    "duration": 0.02771449089050293,
+    "exitcode": 1,
+    "root": "/tmp/code_a4vinxbz",
+    "environment": {},
+    "summary": {
+        "failed": 2,
+        "passed": 6,
+        "total": 8,
+        "collected": 8
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py::test_enigma_initialization",
+                    "type": "Function",
+                    "lineno": 6
+                },
+                {
+                    "nodeid": "test_enigma.py::test_key_press_and_release",
+                    "type": "Function",
+                    "lineno": 11
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_advance",
+                    "type": "Function",
+                    "lineno": 20
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_click",
+                    "type": "Function",
+                    "lineno": 29
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_encryption",
+                    "type": "Function",
+                    "lineno": 37
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_decryption",
+                    "type": "Function",
+                    "lineno": 48
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_full_rotation",
+                    "type": "Function",
+                    "lineno": 70
+                },
+                {
+                    "nodeid": "test_enigma.py::test_reflector",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_enigma.py::test_enigma_initialization",
+            "lineno": 6,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_initialization",
+                "test_enigma.py",
+                "code_a4vinxbz"
+            ],
+            "setup": {
+                "duration": 0.00010835588909685612,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00013327202759683132,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_a4vinxbz/test_enigma.py",
+                    "lineno": 9,
+                    "message": "AttributeError: 'EnigmaModel' object has no attribute '_rotors'. Did you mean: 'rotors'?"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 9,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "def test_enigma_initialization():\n        model = EnigmaModel()\n>       assert len(model._rotors) == N_ROTORS\nE       AttributeError: 'EnigmaModel' object has no attribute '_rotors'. Did you mean: 'rotors'?\n\ntest_enigma.py:9: AttributeError"
+            },
+            "teardown": {
+                "duration": 6.99399970471859e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_key_press_and_release",
+            "lineno": 11,
+            "outcome": "passed",
+            "keywords": [
+                "test_key_press_and_release",
+                "test_enigma.py",
+                "code_a4vinxbz"
+            ],
+            "setup": {
+                "duration": 5.3113093599677086e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.999013178050518e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.41789161413908e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_advance",
+            "lineno": 20,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_advance",
+                "test_enigma.py",
+                "code_a4vinxbz"
+            ],
+            "setup": {
+                "duration": 4.623108543455601e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.274211384356022e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.9893900975584984e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_click",
+            "lineno": 29,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_click",
+                "test_enigma.py",
+                "code_a4vinxbz"
+            ],
+            "setup": {
+                "duration": 4.348112270236015e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.874992348253727e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.843987360596657e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_encryption",
+            "lineno": 37,
+            "outcome": "passed",
+            "keywords": [
+                "test_enigma_encryption",
+                "test_enigma.py",
+                "code_a4vinxbz"
+            ],
+            "setup": {
+                "duration": 4.2930012568831444e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.755588740110397e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.800494596362114e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_decryption",
+            "lineno": 48,
+            "outcome": "passed",
+            "keywords": [
+                "test_enigma_decryption",
+                "test_enigma.py",
+                "code_a4vinxbz"
+            ],
+            "setup": {
+                "duration": 4.1763996705412865e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.781285189092159e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.282011650502682e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_full_rotation",
+            "lineno": 70,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_full_rotation",
+                "test_enigma.py",
+                "code_a4vinxbz"
+            ],
+            "setup": {
+                "duration": 4.4478802010416985e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00013231299817562103,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.833603113889694e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_reflector",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_reflector",
+                "test_enigma.py",
+                "code_a4vinxbz"
+            ],
+            "setup": {
+                "duration": 4.2590079829096794e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0002456961665302515,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_a4vinxbz/test_enigma.py",
+                    "lineno": 91,
+                    "message": "AssertionError: assert 14 == 13\n +  where 14 = len({'B', 'C', 'D', 'E', 'G', 'I', ...})\n +    where {'B', 'C', 'D', 'E', 'G', 'I', ...} = set(dict_values(['R', 'D', 'K', 'K', 'G', 'E', 'D', 'T', 'M', 'P', 'L', 'I', 'K', 'P', 'C', 'D', 'C', 'S', 'G', 'G', 'M', 'E', 'P', 'B', 'O', 'K']))\n +      where dict_values(['R', 'D', 'K', 'K', 'G', 'E', 'D', 'T', 'M', 'P', 'L', 'I', 'K', 'P', 'C', 'D', 'C', 'S', 'G', 'G', 'M', 'E', 'P', 'B', 'O', 'K']) = <built-in method values of dict object at 0x74e54b408a00>()\n +        where <built-in method values of dict object at 0x74e54b408a00> = {'A': 'R', 'B': 'D', 'C': 'K', 'D': 'K', ...}.values"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 91,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_reflector():\n        model = EnigmaModel()\n        results = {}\n        for char in ALPHABET:\n            model.key_pressed(char)\n            result = next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n            results[char] = result\n    \n        # Check that we have 13 pairs of letters\n>       assert len(set(results.values())) == 13\nE       AssertionError: assert 14 == 13\nE        +  where 14 = len({'B', 'C', 'D', 'E', 'G', 'I', ...})\nE        +    where {'B', 'C', 'D', 'E', 'G', 'I', ...} = set(dict_values(['R', 'D', 'K', 'K', 'G', 'E', 'D', 'T', 'M', 'P', 'L', 'I', 'K', 'P', 'C', 'D', 'C', 'S', 'G', 'G', 'M', 'E', 'P', 'B', 'O', 'K']))\nE        +      where dict_values(['R', 'D', 'K', 'K', 'G', 'E', 'D', 'T', 'M', 'P', 'L', 'I', 'K', 'P', 'C', 'D', 'C', 'S', 'G', 'G', 'M', 'E', 'P', 'B', 'O', 'K']) = <built-in method values of dict object at 0x74e54b408a00>()\nE        +        where <built-in method values of dict object at 0x74e54b408a00> = {'A': 'R', 'B': 'D', 'C': 'K', 'D': 'K', ...}.values\n\ntest_enigma.py:91: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.287312135100365e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

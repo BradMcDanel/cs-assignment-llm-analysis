@@ -1,0 +1,30 @@
+{
+    "created": 1730997684.9235015,
+    "duration": 0.031599998474121094,
+    "exitcode": 2,
+    "root": "/tmp/code_jvx16w0r",
+    "environment": {},
+    "summary": {
+        "total": 0,
+        "collected": 0
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "failed",
+            "result": [],
+            "longrepr": "ImportError while importing test module '/tmp/code_jvx16w0r/test_enigma.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/home/brad/.miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\ntest_enigma.py:5: in <module>\n    from EnigmaConstants import ALPHABET, N_ROTORS\nE   ImportError: cannot import name 'ALPHABET' from 'EnigmaConstants' (/tmp/code_jvx16w0r/EnigmaConstants.py)"
+        }
+    ],
+    "tests": []
+}

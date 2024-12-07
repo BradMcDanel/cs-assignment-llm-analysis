@@ -1,0 +1,167 @@
+{
+    "created": 1731004470.1734943,
+    "duration": 0.021925926208496094,
+    "exitcode": 0,
+    "root": "/tmp/code_ovfa_4fl",
+    "environment": {},
+    "summary": {
+        "passed": 5,
+        "total": 5,
+        "collected": 5
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py::test_valid_guess",
+                    "type": "Function",
+                    "lineno": 111
+                },
+                {
+                    "nodeid": "test_wordle.py::test_invalid_guess",
+                    "type": "Function",
+                    "lineno": 122
+                },
+                {
+                    "nodeid": "test_wordle.py::test_correct_color_update",
+                    "type": "Function",
+                    "lineno": 134
+                },
+                {
+                    "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+                    "type": "Function",
+                    "lineno": 143
+                },
+                {
+                    "nodeid": "test_wordle.py::test_game_over_condition",
+                    "type": "Function",
+                    "lineno": 156
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_wordle.py::test_valid_guess",
+            "lineno": 111,
+            "outcome": "passed",
+            "keywords": [
+                "test_valid_guess",
+                "test_wordle.py",
+                "code_ovfa_4fl"
+            ],
+            "setup": {
+                "duration": 0.00020699389278888702,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.220908395946026e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 9.956699796020985e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_invalid_guess",
+            "lineno": 122,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_guess",
+                "test_wordle.py",
+                "code_ovfa_4fl"
+            ],
+            "setup": {
+                "duration": 0.00013664504513144493,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.659607894718647e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.034000009298325e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_correct_color_update",
+            "lineno": 134,
+            "outcome": "passed",
+            "keywords": [
+                "test_correct_color_update",
+                "test_wordle.py",
+                "code_ovfa_4fl"
+            ],
+            "setup": {
+                "duration": 0.00011440389789640903,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.939602851867676e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.261398084461689e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+            "lineno": 143,
+            "outcome": "passed",
+            "keywords": [
+                "test_present_and_missing_color_update",
+                "test_wordle.py",
+                "code_ovfa_4fl"
+            ],
+            "setup": {
+                "duration": 0.00010680011473596096,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.231921724975109e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.225798279047012e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_game_over_condition",
+            "lineno": 156,
+            "outcome": "passed",
+            "keywords": [
+                "test_game_over_condition",
+                "test_wordle.py",
+                "code_ovfa_4fl"
+            ],
+            "setup": {
+                "duration": 0.00010416097939014435,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0002463669516146183,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.407196633517742e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

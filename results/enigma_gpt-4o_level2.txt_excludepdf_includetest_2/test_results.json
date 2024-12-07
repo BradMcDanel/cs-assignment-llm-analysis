@@ -1,0 +1,30 @@
+{
+    "created": 1730995876.3265157,
+    "duration": 0.05514192581176758,
+    "exitcode": 2,
+    "root": "/tmp/code_cr6f83ex",
+    "environment": {},
+    "summary": {
+        "total": 0,
+        "collected": 0
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "failed",
+            "result": [],
+            "longrepr": "/home/brad/.miniconda3/lib/python3.10/site-packages/_pytest/python.py:617: in _importtestmodule\n    mod = import_path(self.path, mode=importmode, root=self.config.rootpath)\n/home/brad/.miniconda3/lib/python3.10/site-packages/_pytest/pathlib.py:567: in import_path\n    importlib.import_module(module_name)\n/home/brad/.miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:1050: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:1027: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:688: in _load_unlocked\n    ???\n/home/brad/.miniconda3/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module\n    exec(co, module.__dict__)\ntest_enigma.py:4: in <module>\n    from EnigmaModel import EnigmaModel\nE     File \"/tmp/code_cr6f83ex/EnigmaModel.py\", line 4\nE       def advance(self):\nE   IndentationError: unexpected indent"
+        }
+    ],
+    "tests": []
+}

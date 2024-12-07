@@ -1,0 +1,393 @@
+{
+    "created": 1731001889.8760192,
+    "duration": 0.1683046817779541,
+    "exitcode": 1,
+    "root": "/tmp/code_kdhstol8",
+    "environment": {},
+    "summary": {
+        "passed": 5,
+        "failed": 5,
+        "total": 10,
+        "collected": 10
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_SpellingBee.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+                    "type": "Function",
+                    "lineno": 47
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+                    "type": "Function",
+                    "lineno": 52
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+                    "type": "Function",
+                    "lineno": 57
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_action",
+                    "type": "Function",
+                    "lineno": 62
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+                    "type": "Function",
+                    "lineno": 69
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+                    "type": "Function",
+                    "lineno": 77
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_pangram_identification",
+                    "type": "Function",
+                    "lineno": 84
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_score_calculation",
+                    "type": "Function",
+                    "lineno": 89
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+                    "type": "Function",
+                    "lineno": 96
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+                    "type": "Function",
+                    "lineno": 104
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+            "lineno": 47,
+            "outcome": "passed",
+            "keywords": [
+                "test_puzzle_initialization",
+                "test_SpellingBee.py",
+                "code_kdhstol8"
+            ],
+            "setup": {
+                "duration": 0.00015013315714895725,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.275204941630363e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.359287701547146e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+            "lineno": 52,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_puzzle_length",
+                "test_SpellingBee.py",
+                "code_kdhstol8"
+            ],
+            "setup": {
+                "duration": 9.63839702308178e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 4.95819840580225e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.632499232888222e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+            "lineno": 57,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_puzzle_duplicates",
+                "test_SpellingBee.py",
+                "code_kdhstol8"
+            ],
+            "setup": {
+                "duration": 8.954992517828941e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.401391535997391e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.640415474772453e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_action",
+            "lineno": 62,
+            "outcome": "passed",
+            "keywords": [
+                "test_solve_action",
+                "test_SpellingBee.py",
+                "code_kdhstol8"
+            ],
+            "setup": {
+                "duration": 8.865701965987682e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.03611087892204523,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 9.402795694768429e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+            "lineno": 69,
+            "outcome": "failed",
+            "keywords": [
+                "test_word_entry_valid",
+                "test_SpellingBee.py",
+                "code_kdhstol8"
+            ],
+            "setup": {
+                "duration": 0.00013340101577341557,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.01520172506570816,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_kdhstol8/SpellingBee.py",
+                    "lineno": 65,
+                    "message": "AttributeError: 'MockSpellingBeeGraphics' object has no attribute '_wordlist'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 73,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 65,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x78ec963c01c0>\n\n    def test_word_entry_valid(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n        initial_word_count = len(mock_graphics.words)\n>       mock_graphics.word_callback(\"excel\")\n\ntest_SpellingBee.py:73: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = 'excel'\n\n    def word_action(s):\n        letters = sbg.get_beehive_letters().lower()\n        center = letters[0]\n        word = s.lower()\n    \n        if word not in read_dictionary():\n            sbg.show_message(\"Word not in dictionary.\", \"Red\")\n        elif len(word) < 4:\n            sbg.show_message(\"Word must be at least 4 letters long.\", \"Red\")\n        elif center not in word:\n            sbg.show_message(f\"Word must contain the center letter '{center.upper()}'.\", \"Red\")\n        elif not all(letter in letters for letter in word):\n            sbg.show_message(\"Word contains invalid letters.\", \"Red\")\n>       elif sbg.get_field(\"Word\") in [item.split()[0] for item in sbg._wordlist]:\nE       AttributeError: 'MockSpellingBeeGraphics' object has no attribute '_wordlist'\n\nSpellingBee.py:65: AttributeError"
+            },
+            "teardown": {
+                "duration": 0.00011106487363576889,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+            "lineno": 77,
+            "outcome": "passed",
+            "keywords": [
+                "test_word_entry_invalid",
+                "test_SpellingBee.py",
+                "code_kdhstol8"
+            ],
+            "setup": {
+                "duration": 0.00012215995229780674,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.016290202038362622,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 9.435182437300682e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_pangram_identification",
+            "lineno": 84,
+            "outcome": "failed",
+            "keywords": [
+                "test_pangram_identification",
+                "test_SpellingBee.py",
+                "code_kdhstol8"
+            ],
+            "setup": {
+                "duration": 0.0001336738932877779,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.01526174508035183,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_kdhstol8/SpellingBee.py",
+                    "lineno": 65,
+                    "message": "AttributeError: 'MockSpellingBeeGraphics' object has no attribute '_wordlist'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 87,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 65,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x78ec963c0a60>\n\n    def test_pangram_identification(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n>       mock_graphics.word_callback(\"excellently\")\n\ntest_SpellingBee.py:87: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = 'excellently'\n\n    def word_action(s):\n        letters = sbg.get_beehive_letters().lower()\n        center = letters[0]\n        word = s.lower()\n    \n        if word not in read_dictionary():\n            sbg.show_message(\"Word not in dictionary.\", \"Red\")\n        elif len(word) < 4:\n            sbg.show_message(\"Word must be at least 4 letters long.\", \"Red\")\n        elif center not in word:\n            sbg.show_message(f\"Word must contain the center letter '{center.upper()}'.\", \"Red\")\n        elif not all(letter in letters for letter in word):\n            sbg.show_message(\"Word contains invalid letters.\", \"Red\")\n>       elif sbg.get_field(\"Word\") in [item.split()[0] for item in sbg._wordlist]:\nE       AttributeError: 'MockSpellingBeeGraphics' object has no attribute '_wordlist'\n\nSpellingBee.py:65: AttributeError"
+            },
+            "teardown": {
+                "duration": 0.00010378798469901085,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_score_calculation",
+            "lineno": 89,
+            "outcome": "failed",
+            "keywords": [
+                "test_score_calculation",
+                "test_SpellingBee.py",
+                "code_kdhstol8"
+            ],
+            "setup": {
+                "duration": 0.00016635097563266754,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.015621510101482272,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_kdhstol8/SpellingBee.py",
+                    "lineno": 65,
+                    "message": "AttributeError: 'MockSpellingBeeGraphics' object has no attribute '_wordlist'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 92,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 65,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x78ec95b386a0>\n\n    def test_score_calculation(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n>       mock_graphics.word_callback(\"excel\")\n\ntest_SpellingBee.py:92: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = 'excel'\n\n    def word_action(s):\n        letters = sbg.get_beehive_letters().lower()\n        center = letters[0]\n        word = s.lower()\n    \n        if word not in read_dictionary():\n            sbg.show_message(\"Word not in dictionary.\", \"Red\")\n        elif len(word) < 4:\n            sbg.show_message(\"Word must be at least 4 letters long.\", \"Red\")\n        elif center not in word:\n            sbg.show_message(f\"Word must contain the center letter '{center.upper()}'.\", \"Red\")\n        elif not all(letter in letters for letter in word):\n            sbg.show_message(\"Word contains invalid letters.\", \"Red\")\n>       elif sbg.get_field(\"Word\") in [item.split()[0] for item in sbg._wordlist]:\nE       AttributeError: 'MockSpellingBeeGraphics' object has no attribute '_wordlist'\n\nSpellingBee.py:65: AttributeError"
+            },
+            "teardown": {
+                "duration": 9.876792319118977e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+            "lineno": 96,
+            "outcome": "failed",
+            "keywords": [
+                "test_duplicate_word_entry",
+                "test_SpellingBee.py",
+                "code_kdhstol8"
+            ],
+            "setup": {
+                "duration": 0.00013482687063515186,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.015230703866109252,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_kdhstol8/SpellingBee.py",
+                    "lineno": 65,
+                    "message": "AttributeError: 'MockSpellingBeeGraphics' object has no attribute '_wordlist'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 99,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 65,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x78ec95ce45e0>\n\n    def test_duplicate_word_entry(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n>       mock_graphics.word_callback(\"excel\")\n\ntest_SpellingBee.py:99: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = 'excel'\n\n    def word_action(s):\n        letters = sbg.get_beehive_letters().lower()\n        center = letters[0]\n        word = s.lower()\n    \n        if word not in read_dictionary():\n            sbg.show_message(\"Word not in dictionary.\", \"Red\")\n        elif len(word) < 4:\n            sbg.show_message(\"Word must be at least 4 letters long.\", \"Red\")\n        elif center not in word:\n            sbg.show_message(f\"Word must contain the center letter '{center.upper()}'.\", \"Red\")\n        elif not all(letter in letters for letter in word):\n            sbg.show_message(\"Word contains invalid letters.\", \"Red\")\n>       elif sbg.get_field(\"Word\") in [item.split()[0] for item in sbg._wordlist]:\nE       AttributeError: 'MockSpellingBeeGraphics' object has no attribute '_wordlist'\n\nSpellingBee.py:65: AttributeError"
+            },
+            "teardown": {
+                "duration": 0.0001066459808498621,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+            "lineno": 104,
+            "outcome": "failed",
+            "keywords": [
+                "test_solve_after_user_input",
+                "test_SpellingBee.py",
+                "code_kdhstol8"
+            ],
+            "setup": {
+                "duration": 0.00012378091923892498,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.015512621961534023,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_kdhstol8/SpellingBee.py",
+                    "lineno": 65,
+                    "message": "AttributeError: 'MockSpellingBeeGraphics' object has no attribute '_wordlist'"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 107,
+                        "message": ""
+                    },
+                    {
+                        "path": "SpellingBee.py",
+                        "lineno": 65,
+                        "message": "AttributeError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x78ec95b1b6a0>\n\n    def test_solve_after_user_input(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n>       mock_graphics.word_callback(\"excel\")\n\ntest_SpellingBee.py:107: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = 'excel'\n\n    def word_action(s):\n        letters = sbg.get_beehive_letters().lower()\n        center = letters[0]\n        word = s.lower()\n    \n        if word not in read_dictionary():\n            sbg.show_message(\"Word not in dictionary.\", \"Red\")\n        elif len(word) < 4:\n            sbg.show_message(\"Word must be at least 4 letters long.\", \"Red\")\n        elif center not in word:\n            sbg.show_message(f\"Word must contain the center letter '{center.upper()}'.\", \"Red\")\n        elif not all(letter in letters for letter in word):\n            sbg.show_message(\"Word contains invalid letters.\", \"Red\")\n>       elif sbg.get_field(\"Word\") in [item.split()[0] for item in sbg._wordlist]:\nE       AttributeError: 'MockSpellingBeeGraphics' object has no attribute '_wordlist'\n\nSpellingBee.py:65: AttributeError"
+            },
+            "teardown": {
+                "duration": 0.0001264049205929041,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

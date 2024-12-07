@@ -1,0 +1,9 @@
+I have implemented the profile.py script according to the provided specifications. The script reads a CSV file containing STR counts for a list of individuals and a text file containing a DNA sequence. It then identifies to whom the DNA sequence most likely belongs by computing the longest run of consecutive repeats of each STR in the DNA sequence and comparing it with the data in the CSV file.
+
+The script first reads the CSV file into memory, extracting the headers and data rows. It then reads the DNA sequence file into memory. For each STR in the CSV file, the script computes the longest consecutive run of repeats in the DNA sequence using a helper function find_longest_str. It compares these counts with the data in the CSV file to determine the matching individual.
+
+If a match is found, the script prints the name of the matching individual. If no match is found, it prints "No match".
+
+The script takes two command-line arguments - the CSV file and the DNA sequence file. It follows the usage example provided in the assignment prompt.
+
+Overall, the script provides a simple and efficient solution to the problem of identifying individuals based on DNA sequences and STR counts.

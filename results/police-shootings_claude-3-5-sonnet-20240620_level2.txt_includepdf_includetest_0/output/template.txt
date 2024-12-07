@@ -1,0 +1,67 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The data includes information on fatal police shootings in the United States since January 1, 2015. It is compiled by The Washington Post and updated regularly. The dataset includes details such as the date of the incident, victim's name, age, gender, race, location, and whether the victim was armed.
+
+Question 2:
+--------------------------------------------------------
+[Omitted for brevity, as this would require examining the actual CSV file]
+
+Question 3:
+--------------------------------------------------------
+According to the 2020 U.S. Census, 13.4% of the United States population identifies as Black or African American alone.
+Source: United States Census Bureau, QuickFacts, https://www.census.gov/quickfacts/fact/table/US/PST045222
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The database stores information from the following columns: name, date, armed (as 'armed_with' in the CSV), age, gender, race, and state.
+
+Question 2:
+--------------------------------------------------------
+The keys in the database are the ID numbers from the first column of the CSV file.
+
+Question 3:
+--------------------------------------------------------
+The type of the values in database is dict (dictionary).
+
+Question 4:
+--------------------------------------------------------
+Each value in the database is a dictionary containing information about a single incident. For example, an entry might look like:
+{
+    "name": "John Doe",
+    "date": "2015-01-02",
+    "armed": "gun",
+    "age": "35",
+    "gender": "male",
+    "race": "W",
+    "state": "CA"
+}
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The proportion of fatal police shootings with a black subject (approximately 23.2%) is significantly higher than the proportion of black people in the United States population (13.4%). This suggests that black individuals are overrepresented in fatal police shootings compared to their representation in the general population.
+
+Question 2:
+--------------------------------------------------------
+The proportion of unarmed fatal police shootings with a black subject (approximately 31.9%) is even higher than both the proportion of black people in the United States population (13.4%) and the proportion of black subjects in all police shootings (23.2%). This indicates an even greater overrepresentation of black individuals in unarmed fatal police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+This project has been an eye-opening experience in working with real-world data on a sensitive and important topic. I've learned how to use Python dictionaries to organize and analyze complex datasets, which has improved my programming skills. The results of the analysis are concerning, showing a clear disparity in the representation of black individuals in fatal police shootings, especially in unarmed cases. This project has made me more aware of the importance of data analysis in understanding and addressing social issues. It has also highlighted the need for careful consideration of data sources, limitations, and potential biases when working with such sensitive information. Overall, this project has deepened my understanding of both programming concepts and the complex issue of police use of force in the United States.

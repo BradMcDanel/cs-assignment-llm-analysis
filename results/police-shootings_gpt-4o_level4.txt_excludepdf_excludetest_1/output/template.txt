@@ -1,0 +1,106 @@
+Task 1: Understanding the data
+
+Question 1. 
+The data includes records of fatal police shootings in the United States compiled by the Washington Post. 
+It contains information such as the victim's name, age, gender, race, state, and whether they were armed or not. 
+The dataset is publicly available and aims to provide transparency in reporting police violence.
+
+Question 2.
+- Column: "id"
+  Explanation: Unique identifier for each shooting incident.
+  Examples: 22, 325, 140.
+  
+- Column: "name"
+  Explanation: Name of the individual shot in the incident.
+  Examples: Michael Brown, Eric Garner, Tamir Rice.
+  
+- Column: "date"
+  Explanation: Date when the shooting incident occurred.
+  Examples: 2015-01-02, 2015-01-03, 2015-01-04.
+  
+- Column: "manner_of_death"
+  Explanation: Method by which the individual was killed.
+  Examples: shot, shot and Tasered.
+  
+- Column: "armed"
+  Explanation: Whether the individual was armed and with what.
+  Examples: gun, unarmed, knife.
+  
+- Column: "age"
+  Explanation: Age of the individual at the time of death.
+  Examples: 34, 22, 39.
+  
+- Column: "gender"
+  Explanation: Gender of the individual.
+  Examples: M, F.
+  
+- Column: "race"
+  Explanation: Race of the individual.
+  Examples: W (White), B (Black), A (Asian).
+  
+- Column: "city"
+  Explanation: City where the shooting took place.
+  Examples: Los Angeles, New York, Chicago.
+  
+- Column: "state"
+  Explanation: State where the shooting took place.
+  Examples: CA, NY, IL.
+
+- Column: "signs_of_mental_illness"
+  Explanation: Indicates if the individual showed signs of mental illness.
+  Examples: True, False.
+  
+- Column: "threat_level"
+  Explanation: Perceived threat level of the individual.
+  Examples: attack, other, undetermined.
+  
+- Column: "flee"
+  Explanation: Whether the individual was fleeing when shot.
+  Examples: Foot, Car, Not fleeing.
+  
+- Column: "body_camera"
+  Explanation: Indicates if a body camera was present during the shooting.
+  Examples: True, False.
+  
+- Column: "longitude"
+  Explanation: Longitude of the shooting location.
+  Examples: -118.243, -73.935242.
+  
+- Column: "latitude"
+  Explanation: Latitude of the shooting location.
+  Examples: 34.0522, 40.730610.
+  
+- Column: "is_geocoding_exact"
+  Explanation: Indicates if the geocoding information is exact.
+  Examples: True, False.
+
+Question 3.
+According to the latest data from the U.S. Census Bureau, approximately 13.4% of the United States population is Black. 
+(Source: United States Census Bureau, 2021)
+
+Task 2: Reading the data into a dictionary
+
+Question 1. 
+The information stored in the database includes: id, name, date, manner_of_death, armed, age, gender, race, city, state, signs_of_mental_illness, threat_level, flee, body_camera, longitude, latitude, is_geocoding_exact.
+
+Question 2. 
+The keys in the database are the "id" values from the fatal-police-shootings-data.csv file.
+
+Question 3. 
+The type of values in the database is a dictionary. Each value is a dictionary containing the details of an individual shooting incident.
+
+Question 4. 
+For an entry in the database, it stores information such as the individual's name, age, race, whether they were armed, and other details about the shooting incident. For example, for the id '1694', it stores { 'name': 'George Floyd', 'age': 46, 'gender': 'M', ... }.
+
+Task 3: Using the database
+
+Question 1. 
+The proportion of Black subjects in fatal police shootings is significantly higher than their representation in the general U.S. population, which is approximately 13.4%.
+
+Question 2. 
+The proportion of unarmed fatal police shootings with a Black subject is still higher than their representation in the U.S. population. This also exceeds the proportion of Black subjects in all police shootings, indicating a disproportionate impact on Black individuals even when unarmed.
+
+Task 4: Reflection
+
+Question 1. 
+In this project, I learned how to use Python dictionaries to organize and analyze real-world data systematically. The results highlight the disproportionate impact of police shootings on Black individuals. Working with such data brings awareness to societal issues and the importance of transparency and accountability. The project also reinforced the importance of data-driven insights in understanding and addressing complex problems. Overall, it was both an informative and eye-opening experience.

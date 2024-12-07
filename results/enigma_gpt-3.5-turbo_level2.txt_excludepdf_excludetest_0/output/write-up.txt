@@ -1,0 +1,5 @@
+# I have implemented the EnigmaRotor class with methods to handle rotor permutation and advancement.
+# In the EnigmaModel class, I have initialized the rotors using the provided rotor permutations.
+# Implemented methods for key_pressed, key_released, rotor_clicked, get_rotor_letter, and advance_rotors.
+# The advance_rotors method ensures the rotors advance correctly based on the Enigma machine rules.
+# Each rotor advances independently, and the fast rotor advances on each key press.

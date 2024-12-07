@@ -1,0 +1,5 @@
+# This Python program analyzes a food web stored in a CSV file. 
+# The program reads the predator-prey relationships, identifies predators and their prey, 
+# apex predators, producers, most flexible eaters, tastiest organisms, and determines the height of each organism in the food web.
+# The program follows the guidelines provided in the assignment description including command line arguments, error handling, and use of functions.
+# The output is formatted according to the assignment requirements.

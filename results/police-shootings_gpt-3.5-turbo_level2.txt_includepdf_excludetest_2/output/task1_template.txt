@@ -1,0 +1,88 @@
+# Question 1:
+# The data on fatal police shootings compiled by the Washington Post includes information such as date, threat type, flee status, armed status, city, county, state, coordinates, name, age, gender, race, mental illness relation, body camera usage, and agency IDs. The data comes from the Washington Post's compilation efforts.
+
+# Question 2:
+# - id: Unique identifier for each incident.
+#   Explanation: Identifier for each fatal police shooting incident.
+#   Examples: 3, 4, 5
+# - date: Date of the incident.
+#   Explanation: Date when the fatal police shooting occurred.
+#   Examples: 2015-01-02, 2015-01-03
+# - threat_type: Type of threat posed by the subject.
+#   Explanation: Describes the type of threat the subject posed.
+#   Examples: point, move
+# - flee_status: Flee status of the subject.
+#   Explanation: Indicates whether the subject attempted to flee.
+#   Examples: not, car
+# - armed_with: Type of weapon the subject was armed with.
+#   Explanation: Specifies the weapon carried by the subject.
+#   Examples: gun, unarmed
+# - city: City where the incident took place.
+#   Explanation: City where the fatal police shooting incident occurred.
+#   Examples: Shelton, Aloha
+# - county: County where the incident took place.
+#   Explanation: County where the fatal police shooting incident occurred.
+#   Examples: Mason, Washington
+# - state: State where the incident took place.
+#   Explanation: State where the fatal police shooting incident occurred.
+#   Examples: WA, OR
+# - latitude: Latitude coordinates of the incident location.
+#   Explanation: Latitude coordinates of the fatal police shooting incident.
+#   Examples: 47.246826, 45.4874214
+# - longitude: Longitude coordinates of the incident location.
+#   Explanation: Longitude coordinates of the fatal police shooting incident.
+#   Examples: -123.121592, -122.8916961
+# - location_precision: Precision of the location data.
+#   Explanation: Indicates the precision of the location data.
+#   Examples: not_available
+# - name: Name of the subject involved in the incident.
+#   Explanation: Name of the individual involved in the fatal police shooting.
+#   Examples: Tim Elliot, Lewis Lee Lembke
+# - age: Age of the subject.
+#   Explanation: Age of the individual involved in the fatal police shooting.
+#   Examples: 53, 47
+# - gender: Gender of the subject.
+#   Explanation: Gender of the individual involved in the fatal police shooting.
+#   Examples: male
+# - race: Race of the subject.
+#   Explanation: Race of the individual involved in the fatal police shooting.
+#   Examples: A (Asian), W (White)
+# - race_source: Source of race information.
+#   Explanation: Source of information regarding the race of the subject.
+#   Examples: not_available
+# - was_mental_illness_related: Indicates if the incident was related to mental illness.
+#   Explanation: Specifies if the fatal police shooting incident was related to mental illness.
+#   Examples: True, False
+# - body_camera: Indicates if body camera footage was available.
+#   Explanation: Specifies if body camera footage was available for the incident.
+#   Examples: True, False
+# - agency_ids: IDs of agencies involved in the incident.
+#   Explanation: IDs of the agencies involved in the fatal police shooting incident.
+#   Examples: 73, 70
+
+# Question 3:
+# The percentage of the United States population that is black is approximately 13.4% according to the 2020 United States Census data.
+
+### task2_template.txt ###
+# Question 1:
+# The information stored in the database from the file fatal-police-shootings-data.csv includes columns: name, date, armed, age, gender, race, and state.
+
+# Question 2:
+# The keys used in the database are the unique identifiers (id) of each incident.
+
+# Question 3:
+# The type of the values in the database is dictionary.
+
+# Question 4:
+# An example value in the database stores information about the subject of a fatal police shooting incident, such as their name, date, armed status, age, gender, race, and state.
+
+### task3_template.txt ###
+# Question 1:
+# The proportion of black subjects in fatal police shootings is compared to the representation of black people in the United States population by calculating the fraction of fatal police shootings with a black subject and comparing it to the percentage of black people in the population.
+
+# Question 2:
+# The proportion of black subjects in fatal police shootings where the subject is unarmed is compared to the representation of black people in the United States population and to the proportion of black subjects in all police shootings.
+
+### task4_template.txt ###
+# Question 1:
+# My reflection on this project includes understanding the process of analyzing real-world data using Python dictionaries, investigating racial demographics in fatal police shootings, and comparing representation to population percentages. It was insightful to work through the tasks and draw conclusions based on the data analysis conducted in the project.

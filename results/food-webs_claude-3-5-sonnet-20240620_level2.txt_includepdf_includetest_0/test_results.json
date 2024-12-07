@@ -1,0 +1,200 @@
+{
+    "created": 1730999610.909018,
+    "duration": 0.1110544204711914,
+    "exitcode": 0,
+    "root": "/tmp/code_ome8pu6f",
+    "environment": {},
+    "summary": {
+        "passed": 6,
+        "total": 6,
+        "collected": 6
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_Assignment4.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_Assignment4.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files0]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files1]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files2]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files3]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files4]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files5]",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files0]",
+            "lineno": 80,
+            "outcome": "passed",
+            "keywords": [
+                "test_predators_and_prey[food_web_files0]",
+                "food_web_files0",
+                "test_Assignment4.py",
+                "code_ome8pu6f"
+            ],
+            "setup": {
+                "duration": 0.016909034922719002,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00030226586386561394,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.937196642160416e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files1]",
+            "lineno": 80,
+            "outcome": "passed",
+            "keywords": [
+                "test_predators_and_prey[food_web_files1]",
+                "food_web_files1",
+                "test_Assignment4.py",
+                "code_ome8pu6f"
+            ],
+            "setup": {
+                "duration": 0.02179374801926315,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.000215115025639534,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 0.00012073502875864506,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files2]",
+            "lineno": 80,
+            "outcome": "passed",
+            "keywords": [
+                "test_predators_and_prey[food_web_files2]",
+                "food_web_files2",
+                "test_Assignment4.py",
+                "code_ome8pu6f"
+            ],
+            "setup": {
+                "duration": 0.01569773117080331,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0001257078256458044,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.056095637381077e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files3]",
+            "lineno": 80,
+            "outcome": "passed",
+            "keywords": [
+                "test_predators_and_prey[food_web_files3]",
+                "food_web_files3",
+                "test_Assignment4.py",
+                "code_ome8pu6f"
+            ],
+            "setup": {
+                "duration": 0.013598144054412842,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00017255498096346855,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.569603621959686e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files4]",
+            "lineno": 80,
+            "outcome": "passed",
+            "keywords": [
+                "test_predators_and_prey[food_web_files4]",
+                "food_web_files4",
+                "test_Assignment4.py",
+                "code_ome8pu6f"
+            ],
+            "setup": {
+                "duration": 0.015814036829397082,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00010377704165875912,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.023103535175323e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files5]",
+            "lineno": 80,
+            "outcome": "passed",
+            "keywords": [
+                "test_predators_and_prey[food_web_files5]",
+                "food_web_files5",
+                "test_Assignment4.py",
+                "code_ome8pu6f"
+            ],
+            "setup": {
+                "duration": 0.01634846907109022,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00013833306729793549,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.149903103709221e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+# My solution for the Spelling Bee project involves implementing the necessary functions to interact with the SpellingBeeGraphics library to solve the puzzle.
+# I have defined functions to read the dictionary file, check if a word is valid according to the puzzle rules, and then solve the puzzle by iterating through the dictionary.
+# The puzzle_action function validates the user input for the puzzle and updates the beehive if the input is valid.
+# The solve_action function reads the dictionary, retrieves the puzzle, and solves the puzzle by checking each word against the puzzle rules.
+# After solving the puzzle, the total score and the number of words found are displayed using the show_message method.
+# It is important to test each milestone independently and ensure that the code is structured and decomposed for better understanding and maintenance.

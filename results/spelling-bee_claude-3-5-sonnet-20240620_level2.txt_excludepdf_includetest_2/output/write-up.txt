@@ -1,0 +1,34 @@
+This implementation of the Spelling Bee game covers all four milestones:
+
+1. Initialize the beehive with the letters in the puzzle field:
+   - The puzzle_action function checks if the entered puzzle is valid (7 unique letters).
+   - If valid, it updates the beehive display; if not, it shows an error message.
+
+2. Display the legal words in the SpellingBee puzzle:
+   - The solve_action function reads the dictionary, finds all valid words for the puzzle, and displays them with scores.
+   - It uses helper functions like word_is_valid and calculate_score to determine valid words and their scores.
+
+3. Add scores to the display:
+   - Words are displayed with their scores in parentheses.
+   - Pangrams (words using all 7 letters) are displayed in blue and receive a 7-point bonus.
+   - The total word count and score are shown at the bottom of the screen.
+
+4. Let the user try to find the words:
+   - A "Word" field is added for user input.
+   - The word_action function checks user-entered words for validity and uniqueness.
+   - Valid words are added to the display with their scores, and the total score is updated.
+   - Appropriate error messages are shown for invalid words.
+
+The code is structured with several helper functions to improve readability and maintainability:
+
+- read_dictionary: Reads the word list from the file.
+- is_valid_puzzle: Checks if a puzzle string is valid.
+- word_is_valid: Checks if a word is valid for the current puzzle.
+- calculate_score: Calculates the score for a word.
+- update_score_display: Updates the displayed word count and total score.
+
+The implementation uses global variables (found_words and total_score) to keep track of the game state across different function calls. While this approach works for this small project, for larger applications, it would be better to use a class-based structure to encapsulate the game state.
+
+The code handles both uppercase and lowercase letters appropriately, converting to lowercase for word checking and uppercase for the puzzle display.
+
+Overall, this implementation provides a functional and interactive Spelling Bee game that meets all the requirements specified in the assignment.

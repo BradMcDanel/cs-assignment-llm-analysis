@@ -1,0 +1,42 @@
+# SpellingBee Project Write-up
+
+## Overview
+The SpellingBee project is designed to simulate the popular New York Times Spelling Bee game. The player must find as many words as possible using the given seven letters, with the requirement that each word includes the center letter and is at least four letters long. The project is divided into several milestones to incrementally build the functionality.
+
+## Milestones
+
+### Milestone #1: Initialize the Beehive
+- Implemented the `puzzle_action` function to validate the user's input and update the beehive letters on the screen.
+- Validation checks included ensuring the input has exactly seven unique letters.
+- If the input is valid, the `set_beehive_letters` method is called to update the display; otherwise, an error message is shown.
+
+### Milestone #2: Display the Legal Words
+- Implemented the `solve_action` function to find all valid words from the dictionary that fit the puzzle's rules.
+- Loaded the dictionary from `EnglishWords.txt`.
+- Checked each word to ensure it is at least four letters long, contains the center letter, and only uses the puzzle letters.
+- Valid words are displayed on the screen using the `add_word` method.
+
+### Milestone #3: Add Scores to the Display
+- Extended `solve_action` to calculate and display the score for each word.
+- The score is the length of the word, with a bonus of 7 points for pangrams (words using all seven letters).
+- Displayed the total number of words and the total score at the bottom of the screen.
+
+### Milestone #4: Let the User Try to Find the Words
+- Added a new field for the user to input words.
+- Implemented a callback function to validate the user's input and display valid words along with their scores.
+- Handled errors for invalid words, such as words not in the dictionary, too short, missing the center letter, or already found.
+- Cleared the input field after each valid word entry.
+
+## Testing
+- Created `test_SpellingBee.py` with unit tests to verify the functionality of the SpellingBee project.
+- Used pytest for testing.
+- Mocked the SpellingBeeGraphics class to isolate the logic from the graphical interface.
+- Tested various scenarios, including valid and invalid puzzle inputs, solving the puzzle, and user word entries.
+
+## Conclusion
+The SpellingBee project provides a comprehensive exercise in string manipulation, file I/O, and interactive GUI programming. By breaking the project into milestones, we were able to develop and test the functionality incrementally, ensuring a robust final product.
+
+## Possible Extensions
+- Generate puzzles with specific characteristics, such as including at least one pangram.
+- Implement a shuffle button to rearrange the outer letters.
+- Find and display the most interesting or challenging puzzles based on specific criteria.

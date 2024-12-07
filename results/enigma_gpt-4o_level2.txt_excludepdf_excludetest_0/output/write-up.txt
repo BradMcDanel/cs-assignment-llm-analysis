@@ -1,0 +1,21 @@
+# Enigma Machine Simulator
+
+This project is a simulation of the Enigma machine, used by the German military during World War II. The Enigma machine was a complex encryption device that used rotors and a reflector to encrypt messages. This simulation involves implementing the core functionalities of the Enigma machine, such as handling key presses, managing rotor states, and encrypting letters through a series of rotors.
+
+## Implementation Steps
+
+1. **Activate the Keyboard**: Implemented a dictionary to keep track of which keys are pressed, allowing the simulator to change the color of keys when they are pressed or released.
+
+2. **Connect Keys to Lamps**: Extended the key press functionality to light up corresponding lamps, verifying that pressing a key correctly lights up its corresponding lamp.
+
+3. **Design Rotor Data Structure**: Created an `EnigmaRotor` class to encapsulate each rotor's state, permutation, and offset. This class manages the rotor's current position and its permutation mapping.
+
+4. **Implement One Stage in the Encryption**: Developed an `apply_permutation` function to handle the encryption through a single rotor, considering its offset. This function simulates the letter substitution based on the rotor's internal wiring.
+
+5. **Full Encryption Path**: Extended encryption to pass a signal through all rotors and the reflector, then return through the rotors to determine which lamp to light up. Implemented inverse permutation logic for signal reflection.
+
+6. **Rotor Advance on Key Press**: Managed rotor advancement with carry over, ensuring that the medium and slow rotors advance appropriately when the fast rotor completes a full revolution.
+
+## Conclusion
+
+The Enigma machine simulator provides an interactive model of a historical encryption device, allowing users to understand how encryption was performed during World War II. By simulating key presses, rotor advancement, and letter encryption, this project offers insight into the complexities and challenges faced by cryptographers of the time.

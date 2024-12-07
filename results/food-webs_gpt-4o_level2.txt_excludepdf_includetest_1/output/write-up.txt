@@ -1,0 +1,9 @@
+# This Python script analyzes food webs from a CSV file to determine predator-prey relationships.
+# It identifies apex predators, producers, most flexible eaters, tastiest organisms, and the heights
+# of each organism in the food web. The script follows good coding practices, including using 
+# functions, error handling, and appropriate formatting.
+#
+# To run the script:
+# python food_web.py [filename]
+#
+# If no filename is provided, the script will prompt the user for the file name.

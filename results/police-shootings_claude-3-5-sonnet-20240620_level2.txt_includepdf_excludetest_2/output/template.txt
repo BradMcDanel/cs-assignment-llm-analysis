@@ -1,0 +1,35 @@
+Task 2:
+
+Question 1:
+The database stores information on the name, date, armed status, age, gender, race, and state of each fatal police shooting incident from the CSV file.
+
+Question 2:
+The keys in the database are the ID numbers of each incident, which are integers.
+
+Question 3:
+The type of the values in the database is dict (dictionary).
+
+Question 4:
+Each value in the database is a dictionary containing information about a specific shooting incident. For example, an entry might look like this:
+{
+    "name": "John Doe",
+    "date": "2015-01-02",
+    "armed": "gun",
+    "age": "25",
+    "gender": "male",
+    "race": "W",
+    "state": "CA"
+}
+
+Task 3:
+
+Question 1:
+The proportion of fatal police shootings with a black subject is higher than the proportion of black people in the United States population. According to the 2020 Census, black people make up about 13.4% of the US population, while our analysis shows a higher percentage of black subjects in fatal police shootings.
+
+Question 2:
+The proportion of black subjects in fatal police shootings where the subject is unarmed is even higher than both the proportion of black people in the US population and the proportion of black subjects in all police shootings. This suggests a significant disparity in the use of lethal force against unarmed black individuals compared to their representation in the general population and in overall police shootings.
+
+Task 4:
+
+Question 1:
+This project has been eye-opening in terms of understanding the racial disparities in fatal police shootings. Working with real-world data has shown me the power of data analysis in revealing important societal issues. The process of organizing and analyzing the data using Python dictionaries has improved my programming skills and demonstrated the importance of data structures in handling complex information. I was surprised by the extent of the disparity, especially when focusing on unarmed subjects. This project has motivated me to further explore data science and its applications in addressing social justice issues. Overall, it has been a valuable learning experience that combines technical skills with critical thinking about important societal problems.

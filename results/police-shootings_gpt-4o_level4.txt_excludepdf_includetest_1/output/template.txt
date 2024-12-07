@@ -1,0 +1,32 @@
+Task 1:
+Question 1: The dataset includes information about individuals who were fatally shot by police officers in the United States. This data is compiled by The Washington Post and includes various attributes such as the individual's id, name, age, gender, race, and the circumstances of the shooting. The source of the data is a publicly available GitHub repository managed by The Washington Post.
+
+Question 2:
+Column: id
+Explanation: A unique identifier for each entry in the dataset.
+Examples: 22, 325, 140
+
+Column: name
+Explanation: The name of the individual who was fatally shot.
+Examples: John Doe, Jane Smith
+
+Column: race
+Explanation: The race of the individual who was fatally shot, represented by a single character.
+Examples: W (White), B (Black), H (Hispanic)
+
+Question 3:
+As of the latest data, approximately 13.4% of the United States population is Black. [Source: U.S. Census Bureau]
+
+Task 2:
+Question 1: The columns stored in the database are 'id', 'name', 'age', 'gender', 'race', 'state', 'armed', among others.
+Question 2: The keys in the database are the 'id' values from the CSV file.
+Question 3: The type of the values in the database is a dictionary.
+Question 4: A single value in the database contains the details of one shooting incident, including attributes such as 'name', 'age', 'gender', 'race', 'state', and 'armed'.
+
+Task 3:
+Question 1: The proportion of black subjects in fatal police shootings is higher than the proportion of black people in the United States population.
+
+Question 2: The proportion of unarmed fatal police shootings with a black subject is also disproportionately high compared to their representation in the general population, similar to the overall shootings statistics.
+
+Task 4:
+In this project, I learned how to work with real-world datasets using Python, particularly focusing on reading CSV files and managing data using dictionaries. The process of analyzing and interpreting data on sensitive topics such as police shootings was both challenging and enlightening. It emphasized the importance of data literacy in understanding social issues. The results indicated a disproportionate representation of black subjects in fatal police shootings, which aligns with broader discussions on racial disparities. This project underscored the potential of programming in conducting meaningful data analysis.

@@ -1,0 +1,26 @@
+This implementation follows the Model-View-Controller pattern as described in the assignment. The EnigmaModel class acts as the model, while the provided EnigmaView class handles both the view and controller aspects.
+
+Key features implemented:
+
+1. Keyboard activation: The keys_down dictionary tracks which keys are pressed.
+
+2. Lamp panel: The lamps_on dictionary tracks which lamps are lit.
+
+3. Rotor data structure: The EnigmaRotor class encapsulates rotor behavior, including permutations, offsets, and advancement.
+
+4. Encryption: The encrypt method implements the full encryption path through the rotors and reflector.
+
+5. Rotor advancement: The advance_rotors method handles advancing rotors, including carrying to the next rotor when a full revolution is made.
+
+The implementation follows the milestones outlined in the assignment:
+
+1. Keyboard activation is implemented in key_pressed, key_released, and is_key_down methods.
+2. Lamp panel is connected to keys in the key_pressed and key_released methods.
+3. Rotor data structure is implemented in the EnigmaRotor class.
+4. One stage encryption is part of the full encryption path.
+5. Full encryption path is implemented in the encrypt method.
+6. Rotor advancement on key press is handled in the key_pressed method.
+
+The code uses helper functions like apply_permutation to handle the core encryption logic, making it easier to understand and maintain. The EnigmaRotor class encapsulates rotor-specific behavior, following object-oriented design principles.
+
+This implementation should provide a working Enigma machine simulator as specified in the assignment.

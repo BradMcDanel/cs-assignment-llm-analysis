@@ -1,0 +1,37 @@
+Task 1:
+Question 1: 
+The data on fatal police shootings is compiled by the Washington Post and includes details about individuals who were fatally shot by police officers in the United States. It includes information such as the date of the shooting, the location, the race of the individual, whether they were armed, and other relevant details. The dataset is updated regularly and is publicly available on GitHub.
+
+Question 2:
+- id: A unique identifier for each fatal police shooting record. Examples: 22, 325, 140.
+- name: The name of the individual who was fatally shot. Examples: "John Doe", "Jane Smith".
+- date: The date the shooting occurred. Examples: "2021-05-15", "2020-01-09".
+- manner_of_death: How the individual died, typically "shot" or "shot and Tasered". Examples: "shot", "shot and Tasered".
+- armed: Indicates if the individual was armed. Examples: "gun", "knife", "unarmed".
+- age: Age of the individual. Examples: 34, 23, 45.
+- gender: Gender of the individual. Examples: "M", "F".
+- race: Race of the individual. Examples: "W", "B", "A".
+- city: City where the shooting occurred. Examples: "Los Angeles", "New York".
+- state: State where the shooting occurred. Examples: "CA", "NY".
+- signs_of_mental_illness: Indicates if there were signs of mental illness. Examples: True, False.
+- threat_level: The perceived threat level. Examples: "attack", "other".
+- flee: Indicates if the individual was fleeing. Examples: "Foot", "Car", "Not fleeing".
+- body_camera: Indicates if body camera footage exists. Examples: True, False.
+
+Question 3:
+According to the U.S. Census Bureau, approximately 13.4% of the United States population is Black or African American. (Source: U.S. Census Bureau)
+
+Task 2:
+Question 1: The database stores the following columns from the .csv file: id, name, date, manner_of_death, armed, age, gender, race, city, state, signs_of_mental_illness, threat_level, flee, and body_camera.
+Question 2: The keys in the database are the unique id values from the .csv file.
+Question 3: The values in the database are dictionaries, each containing all the information about a single fatal police shooting.
+Question 4: Each value in the database stores a dictionary with keys corresponding to columns: name, date, manner_of_death, armed, age, gender, race, city, state, signs_of_mental_illness, threat_level, flee, and body_camera. For example, a value might look like: {'name': 'John Doe', 'date': '2021-05-15', 'manner_of_death': 'shot', 'armed': 'gun', 'age': 34, 'gender': 'M', 'race': 'B', 'city': 'Los Angeles', 'state': 'CA', 'signs_of_mental_illness': False, 'threat_level': 'attack', 'flee': 'Not fleeing', 'body_camera': True}.
+
+Task 3:
+Question 1: The proportion of Black subjects in fatal police shootings is significantly higher than the proportion of Black people in the United States population, indicating a possible racial disparity.
+
+Question 2: The proportion of Black subjects in fatal police shootings where the subject is unarmed is also significantly higher than their representation in the general population and is similar to the overall proportion of Black subjects in all police shootings.
+
+Task 4:
+Reflection:
+Through this project, I learned about the process of analyzing real-world data using Python dictionaries. The data on fatal police shootings highlights significant racial disparities, particularly affecting Black individuals. Working with this kind of data requires careful consideration of ethical and societal implications, as well as an understanding of the limitations of the dataset, such as the lack of recognition for multiracial individuals. The project also improved my skills in handling CSV data in Python and using dictionaries to structure and analyze information. Overall, it was an eye-opening experience into how data science can be applied to real-world issues.

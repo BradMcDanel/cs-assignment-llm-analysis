@@ -1,0 +1,6 @@
+# This implementation of the Enigma simulator closely follows the historical design of the Enigma machine used in World War II.
+# The code is structured to simulate the three rotors and their movement, as well as the reflector permutation.
+# The EnigmaModel class handles the state of the keys and lamps and manages the encryption process.
+# It uses an object-oriented approach with the EnigmaRotor to encapsulate the behavior of each rotor.
+# The program processes key events to simulate the encryption path through the rotors and reflector.
+# This simulation highlights the importance of historical cryptographic techniques and their impact on modern computing.

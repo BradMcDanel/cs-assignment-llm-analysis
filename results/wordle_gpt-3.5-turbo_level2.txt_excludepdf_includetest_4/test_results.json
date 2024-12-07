@@ -1,0 +1,30 @@
+{
+    "created": 1731002634.1305737,
+    "duration": 0.029733657836914062,
+    "exitcode": 2,
+    "root": "/tmp/code_12ka82_c",
+    "environment": {},
+    "summary": {
+        "total": 0,
+        "collected": 0
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "failed",
+            "result": [],
+            "longrepr": "ImportError while importing test module '/tmp/code_12ka82_c/test_wordle.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/home/brad/.miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\ntest_wordle.py:4: in <module>\n    import Wordle\nWordle.py:2: in <module>\n    from WordleDictionary import FIVE_LETTER_WORDS\nE   ImportError: cannot import name 'FIVE_LETTER_WORDS' from 'WordleDictionary' (/tmp/code_12ka82_c/WordleDictionary.py)"
+        }
+    ],
+    "tests": []
+}

@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Define the settings
-NUM_EVALUATIONS=1
+NUM_EVALUATIONS=5
 MODELS=("gpt-3.5-turbo" "gpt-4o" "claude-3-5-sonnet-20240620")
-PROMPT_FILES=("prompts/level4.txt")
-EXCLUDE_NON_PDF=("false")
-EXCLUDE_TESTS=("false")
-INPUT_DIRS=("assignments/enigma" "assignments/food-webs" "assignments/spelling-bee" "assignments/wordle")
+PROMPT_FILES=("prompts/level2.txt" "prompts/level4.txt")
+EXCLUDE_NON_PDF=("true" "false")
+EXCLUDE_TESTS=("true" "false")
+INPUT_DIRS=("assignments/enigma" "assignments/food-webs" "assignments/spelling-bee" "assignments/wordle" "assignments/dna" "assignments/police-shootings")
 BASE_OUTPUT_DIR="results"
 SILENT=false
 

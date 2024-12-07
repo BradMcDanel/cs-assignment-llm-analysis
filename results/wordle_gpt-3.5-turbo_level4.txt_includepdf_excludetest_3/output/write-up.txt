@@ -1,0 +1,1 @@
+In this assignment, the Wordle game was implemented in Python by utilizing strings and graphics. The program allows users to guess a hidden word based on feedback provided by the game. Different milestones were achieved, including displaying the hidden word, checking user input, coloring boxes, and implementing keyboard functionality.

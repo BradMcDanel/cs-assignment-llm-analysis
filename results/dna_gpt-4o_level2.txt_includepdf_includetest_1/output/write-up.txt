@@ -1,0 +1,5 @@
+The DNA profiling program works by reading a CSV file which contains individuals' names and their corresponding counts of specific Short Tandem Repeats (STRs). It also reads a text file containing a DNA sequence. The program calculates the longest consecutive repeats of each STR within the DNA sequence and compares these counts to those in the CSV file to identify the individual to whom the DNA sequence most likely belongs.
+
+The `longest_match` function calculates the longest run of a given subsequence in a DNA sequence. The program iterates over each STR and computes its longest run in the provided DNA sequence. It then checks these computed counts against each individual's STR counts in the CSV file to find a match. If a match is found, the individual's name is outputted; otherwise, "No match" is printed.
+
+This program effectively demonstrates the application of computational biology concepts using Python, showcasing how algorithms and string manipulation can be used in biological data analysis.

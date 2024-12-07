@@ -1,0 +1,28 @@
+This implementation of Wordle follows the milestones outlined in the assignment:
+
+1. Pick a random word:
+   - The secret word is chosen randomly from FIVE_LETTER_WORDS at the start of the game.
+
+2. Check if entered word is valid:
+   - The enter_action function checks if the entered word is in FIVE_LETTER_WORDS.
+   - If not, it displays "Not in word list" message.
+
+3. Color the boxes:
+   - After a valid word is entered, it colors each letter box:
+     - Green for correct position
+     - Yellow for correct letter in wrong position
+     - Gray for letters not in the word
+
+4. Color the keys:
+   - The keyboard keys are colored based on the guesses:
+     - Green for correctly placed letters
+     - Yellow for letters in the word but wrong position
+     - Gray for letters not in the word
+   - Key colors are updated to reflect the best information (e.g., green overrides yellow)
+
+Additional features:
+- Tracks the current row and moves to the next row after each valid guess
+- Displays a win message if the correct word is guessed
+- Shows the secret word if the player runs out of guesses
+
+This implementation provides a fully functional Wordle game that meets all the basic requirements outlined in the assignment.

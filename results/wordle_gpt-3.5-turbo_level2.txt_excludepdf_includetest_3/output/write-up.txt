@@ -1,0 +1,8 @@
+I have implemented the Wordle game in Python based on the provided instructions and milestones. Here is a brief description of the implementation:
+
+1. In the `Wordle.py` file, I have defined the `wordle` function which sets up the game window and handles the logic for checking the user's input word against the hidden word and coloring the boxes accordingly.
+2. The `enter_action` function checks if the entered word is a valid English word, displays appropriate messages, and colors the boxes based on the correctness of the letters.
+3. The `display_message` function is used to show messages in the game window with specified colors.
+4. The `color_word` function randomly selects a hidden word from the word list and colors the boxes based on the comparison with the user's input word.
+
+Overall, the implementation follows the provided guidelines and milestones to create a basic version of the Wordle game. Further extensions and enhancements can be added to improve the game experience.

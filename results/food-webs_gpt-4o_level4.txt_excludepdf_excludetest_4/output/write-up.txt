@@ -1,0 +1,1 @@
+In this assignment, I learned how to effectively parse and analyze data from a file, store it in a dictionary, and use the relationships between data elements to solve various problems. I also gained experience in handling command-line arguments and structuring a Python program with multiple functions for better code organization and readability.

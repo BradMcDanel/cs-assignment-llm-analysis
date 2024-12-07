@@ -1,0 +1,29 @@
+Approach to solving the DNA profiling problem:
+
+1. Command-line argument handling:
+   - Ensure the correct number of arguments are provided (CSV file and DNA sequence file).
+
+2. Reading the CSV database:
+   - Use csv.DictReader to read the CSV file into a list of dictionaries.
+   - Each dictionary represents a person with their name and STR counts.
+
+3. Reading the DNA sequence:
+   - Read the contents of the DNA sequence file into a string.
+
+4. Extracting STRs:
+   - Get the list of STRs from the CSV header (excluding the 'name' column).
+
+5. Computing STR counts:
+   - Implement a longest_match function to find the longest run of consecutive repeats for a given STR in the DNA sequence.
+   - Use this function to compute the counts for each STR in the sequence.
+
+6. Matching:
+   - Compare the computed STR counts with each person in the database.
+   - If an exact match is found, print the person's name and exit.
+   - If no match is found, print "No match".
+
+7. Efficiency considerations:
+   - The longest_match function uses a sliding window approach to find the longest run, which is more efficient than checking every possible substring.
+   - The matching process stops as soon as a match is found, avoiding unnecessary comparisons.
+
+This solution efficiently handles the DNA profiling task by reading the necessary data, computing STR counts, and performing the matching process in a straightforward manner.

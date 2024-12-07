@@ -1,0 +1,9 @@
+Goat,Plants
+Jackal,Goat,Rabbit
+Kite,Snake,Mouse
+Lion,Goat,Jackal,Wild Cat
+Mouse,Plants
+Owl,Mouse
+Rabbit,Plants
+Snake,Mouse
+Wild Cat,Rabbit,Mouse

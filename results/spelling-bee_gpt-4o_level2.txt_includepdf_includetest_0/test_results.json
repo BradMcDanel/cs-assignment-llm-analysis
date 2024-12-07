@@ -1,0 +1,342 @@
+{
+    "created": 1731001106.986714,
+    "duration": 0.32244253158569336,
+    "exitcode": 1,
+    "root": "/tmp/code_f4_p2boo",
+    "environment": {},
+    "summary": {
+        "passed": 7,
+        "failed": 3,
+        "total": 10,
+        "collected": 10
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_SpellingBee.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+                    "type": "Function",
+                    "lineno": 47
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+                    "type": "Function",
+                    "lineno": 52
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+                    "type": "Function",
+                    "lineno": 57
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_action",
+                    "type": "Function",
+                    "lineno": 62
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+                    "type": "Function",
+                    "lineno": 69
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+                    "type": "Function",
+                    "lineno": 77
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_pangram_identification",
+                    "type": "Function",
+                    "lineno": 84
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_score_calculation",
+                    "type": "Function",
+                    "lineno": 89
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+                    "type": "Function",
+                    "lineno": 96
+                },
+                {
+                    "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+                    "type": "Function",
+                    "lineno": 104
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_SpellingBee.py::test_puzzle_initialization",
+            "lineno": 47,
+            "outcome": "passed",
+            "keywords": [
+                "test_puzzle_initialization",
+                "test_SpellingBee.py",
+                "code_f4_p2boo"
+            ],
+            "setup": {
+                "duration": 0.00016543595120310783,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.676302291452885e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.93020410835743e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_length",
+            "lineno": 52,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_puzzle_length",
+                "test_SpellingBee.py",
+                "code_f4_p2boo"
+            ],
+            "setup": {
+                "duration": 9.637908078730106e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.0859060138463974e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.857297219336033e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_invalid_puzzle_duplicates",
+            "lineno": 57,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_puzzle_duplicates",
+                "test_SpellingBee.py",
+                "code_f4_p2boo"
+            ],
+            "setup": {
+                "duration": 9.506009519100189e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.584792234003544e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 5.707796663045883e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_action",
+            "lineno": 62,
+            "outcome": "passed",
+            "keywords": [
+                "test_solve_action",
+                "test_SpellingBee.py",
+                "code_f4_p2boo"
+            ],
+            "setup": {
+                "duration": 9.060418233275414e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.030898400116711855,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 8.370191790163517e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_valid",
+            "lineno": 69,
+            "outcome": "passed",
+            "keywords": [
+                "test_word_entry_valid",
+                "test_SpellingBee.py",
+                "code_f4_p2boo"
+            ],
+            "setup": {
+                "duration": 0.00012622703798115253,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.029528798069804907,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 9.586196392774582e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_word_entry_invalid",
+            "lineno": 77,
+            "outcome": "failed",
+            "keywords": [
+                "test_word_entry_invalid",
+                "test_SpellingBee.py",
+                "code_f4_p2boo"
+            ],
+            "setup": {
+                "duration": 0.00013967487029731274,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.02935601817443967,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_f4_p2boo/test_SpellingBee.py",
+                    "lineno": 82,
+                    "message": "AssertionError: assert 27 == 0\n +  where 27 = len([('cell (1)', 'Black'), ('celt (1)', 'Black'), ('cycle (5)', 'Black'), ('eely (1)', 'Black'), ('elect (5)', 'Black'), ('excel (5)', 'Black'), ...])\n +    where [('cell (1)', 'Black'), ('celt (1)', 'Black'), ('cycle (5)', 'Black'), ('eely (1)', 'Black'), ('elect (5)', 'Black'), ('excel (5)', 'Black'), ...] = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7b0fb2a47b50>.words"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 82,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7b0fb2a47b50>\n\n    def test_word_entry_invalid(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n        initial_word_count = len(mock_graphics.words)\n        mock_graphics.word_callback(\"invalid\")\n>       assert len(mock_graphics.words) == initial_word_count\nE       AssertionError: assert 27 == 0\nE        +  where 27 = len([('cell (1)', 'Black'), ('celt (1)', 'Black'), ('cycle (5)', 'Black'), ('eely (1)', 'Black'), ('elect (5)', 'Black'), ('excel (5)', 'Black'), ...])\nE        +    where [('cell (1)', 'Black'), ('celt (1)', 'Black'), ('cycle (5)', 'Black'), ('eely (1)', 'Black'), ('elect (5)', 'Black'), ('excel (5)', 'Black'), ...] = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7b0fb2a47b50>.words\n\ntest_SpellingBee.py:82: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.0001214419025927782,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_pangram_identification",
+            "lineno": 84,
+            "outcome": "passed",
+            "keywords": [
+                "test_pangram_identification",
+                "test_SpellingBee.py",
+                "code_f4_p2boo"
+            ],
+            "setup": {
+                "duration": 0.000128595856949687,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.029298502020537853,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 8.568516932427883e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_score_calculation",
+            "lineno": 89,
+            "outcome": "passed",
+            "keywords": [
+                "test_score_calculation",
+                "test_SpellingBee.py",
+                "code_f4_p2boo"
+            ],
+            "setup": {
+                "duration": 0.00012536300346255302,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.058854212053120136,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 9.482493624091148e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_duplicate_word_entry",
+            "lineno": 96,
+            "outcome": "failed",
+            "keywords": [
+                "test_duplicate_word_entry",
+                "test_SpellingBee.py",
+                "code_f4_p2boo"
+            ],
+            "setup": {
+                "duration": 0.00012799794785678387,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.056409690994769335,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_f4_p2boo/test_SpellingBee.py",
+                    "lineno": 102,
+                    "message": "AssertionError: assert 27 == 28\n +  where 27 = len([('cell (1)', 'Black'), ('celt (1)', 'Black'), ('cycle (5)', 'Black'), ('eely (1)', 'Black'), ('elect (5)', 'Black'), ('excel (5)', 'Black'), ...])\n +    where [('cell (1)', 'Black'), ('celt (1)', 'Black'), ('cycle (5)', 'Black'), ('eely (1)', 'Black'), ('elect (5)', 'Black'), ('excel (5)', 'Black'), ...] = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7b0fb2936260>.words"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 102,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7b0fb2936260>\n\n    def test_duplicate_word_entry(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n        mock_graphics.word_callback(\"excel\")\n        initial_word_count = len(mock_graphics.words)\n        mock_graphics.word_callback(\"excel\")\n>       assert len(mock_graphics.words) == initial_word_count\nE       AssertionError: assert 27 == 28\nE        +  where 27 = len([('cell (1)', 'Black'), ('celt (1)', 'Black'), ('cycle (5)', 'Black'), ('eely (1)', 'Black'), ('elect (5)', 'Black'), ('excel (5)', 'Black'), ...])\nE        +    where [('cell (1)', 'Black'), ('celt (1)', 'Black'), ('cycle (5)', 'Black'), ('eely (1)', 'Black'), ('elect (5)', 'Black'), ('excel (5)', 'Black'), ...] = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7b0fb2936260>.words\n\ntest_SpellingBee.py:102: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.00010858802124857903,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_SpellingBee.py::test_solve_after_user_input",
+            "lineno": 104,
+            "outcome": "failed",
+            "keywords": [
+                "test_solve_after_user_input",
+                "test_SpellingBee.py",
+                "code_f4_p2boo"
+            ],
+            "setup": {
+                "duration": 0.0001296401023864746,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.057371817994862795,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_f4_p2boo/test_SpellingBee.py",
+                    "lineno": 110,
+                    "message": "AssertionError: assert 27 > 28\n +  where 27 = len([('cell (1)', 'Black'), ('celt (1)', 'Black'), ('cycle (5)', 'Black'), ('eely (1)', 'Black'), ('elect (5)', 'Black'), ('excel (5)', 'Black'), ...])\n +    where [('cell (1)', 'Black'), ('celt (1)', 'Black'), ('cycle (5)', 'Black'), ('eely (1)', 'Black'), ('elect (5)', 'Black'), ('excel (5)', 'Black'), ...] = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7b0fb2a472b0>.words"
+                },
+                "traceback": [
+                    {
+                        "path": "test_SpellingBee.py",
+                        "lineno": 110,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "mock_graphics = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7b0fb2a472b0>\n\n    def test_solve_after_user_input(mock_graphics):\n        mock_graphics.set_beehive_letters(\"LYCENTX\")\n        mock_graphics.word_callback(\"excel\")\n        initial_word_count = len(mock_graphics.words)\n        mock_graphics.solve_callback(\"Solve\")\n>       assert len(mock_graphics.words) > initial_word_count\nE       AssertionError: assert 27 > 28\nE        +  where 27 = len([('cell (1)', 'Black'), ('celt (1)', 'Black'), ('cycle (5)', 'Black'), ('eely (1)', 'Black'), ('elect (5)', 'Black'), ('excel (5)', 'Black'), ...])\nE        +    where [('cell (1)', 'Black'), ('celt (1)', 'Black'), ('cycle (5)', 'Black'), ('eely (1)', 'Black'), ('elect (5)', 'Black'), ('excel (5)', 'Black'), ...] = <test_SpellingBee.MockSpellingBeeGraphics object at 0x7b0fb2a472b0>.words\n\ntest_SpellingBee.py:110: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.894301183521748e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

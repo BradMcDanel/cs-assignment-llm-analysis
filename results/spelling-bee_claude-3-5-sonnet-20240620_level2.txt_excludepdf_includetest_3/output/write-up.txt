@@ -1,0 +1,27 @@
+Milestone #1: Initialize the beehive with the letters in the puzzle field
+- Implemented the puzzle_action function to validate the input and set the beehive letters.
+- Created a helper function is_valid_puzzle to check if the puzzle meets all criteria.
+
+Milestone #2: Display the legal words in the SpellingBee puzzle
+- Implemented the solve_action function to find all valid words in the dictionary.
+- Created helper functions read_dictionary and word_is_valid to modularize the code.
+
+Milestone #3: Add scores to the display
+- Extended solve_action to calculate and display scores for each word.
+- Implemented calculate_score function to handle scoring logic, including pangram bonus.
+- Added total word count and score display.
+
+Milestone #4: Let the user try to find the words
+- Added a "Word" field and implemented word_action function to handle user input.
+- Implemented logic to check if the word is valid, already found, or invalid.
+- Updated the score and word count as the user finds words.
+- Integrated the solve functionality to work alongside user input.
+
+The implementation follows a modular approach, breaking down the problem into smaller, manageable functions. This makes the code easier to understand, test, and maintain. The use of helper functions like is_valid_puzzle, word_is_valid, and calculate_score improves code readability and reusability.
+
+The program now allows for an interactive experience where users can input puzzles, try to find words, and use the solve functionality to see all possible words. The scoring system is implemented as per the specifications, including the pangram bonus.
+
+Possible future improvements could include:
+1. Implementing a puzzle generator
+2. Adding a shuffle button for the outer hexagon letters
+3. Creating an algorithm to find interesting puzzles (e.g., with unique properties like lowest total score or longest pangrams)

@@ -1,0 +1,65 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+The data includes information on fatal police shootings and comes from the Washington Post.
+
+Question 2:
+- id: ID number of the shooting incident
+  Examples: 3, 4, 5
+- date: Date of the shooting
+  Examples: 2015-01-02, 2015-01-03
+- threat_type: Type of threat
+  Examples: point, move
+- flee_status: Flee status
+  Examples: not, car
+- armed_with: Weapon with which the subject was armed
+  Examples: gun, replica
+- ...
+
+Question 3:
+The percentage of the United States population that is black is 13.4%. 
+(Source: U.S. Census Bureau)
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+The columns stored in the database are 'name', 'date', 'armed', 'age', 'gender', 'race', and 'state'.
+
+Question 2:
+The keys in the database are the ID numbers of the shooting incidents.
+
+Question 3:
+The type of the values in the database is dictionary.
+
+Question 4:
+The information stored in one of the values is:
+- name: Tim Elliot
+- date: 2015-01-02
+- armed: gun
+- age: 53
+- gender: male
+- race: A
+- state: WA
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+The proportion of black subjects in fatal police shootings is higher than the proportion of black people in the United States population.
+
+Question 2:
+The proportion of black subjects in fatal police shootings where the subject is unarmed is also higher than the proportion of black people in the United States population, and it is higher than the proportion of black subjects in all police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+In this project, I learned about the process of analyzing real-world data using Python dictionaries. I also gained insights into the representation of different races in fatal police shootings compared to their representation in the general population.

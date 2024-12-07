@@ -1,0 +1,26 @@
+The Enigma machine simulator was implemented by following a milestone-based approach to ensure incremental development and testing of the features. The Model-View-Controller (MVC) design pattern was used to separate concerns and make the code modular.
+
+1. **Milestone #1: Activate the keyboard**
+   - Implemented key press and release handling using a dictionary to track the state of each key.
+   - Updated the graphical view to reflect key states.
+
+2. **Milestone #2: Connect the keys directly to the lamps**
+   - Temporarily linked key presses directly to lamp activation to verify the lamp functionality.
+
+3. **Milestone #3: Design and implement the rotor data structure**
+   - Defined the EnigmaRotor class to encapsulate rotor state and behavior.
+   - Initialized the rotors with real WWII Enigma machine permutations.
+
+4. **Milestone #4: Implement one stage in the encryption**
+   - Implemented the apply_permutation function to handle letter substitution with rotor offset.
+
+5. **Milestone #5: Implement the full encryption path**
+   - Implemented the full encryption path, including traversal through all rotors and the reflector.
+   - Added the inverse permutation for backward traversal through rotors.
+
+6. **Milestone #6: Implement the rotor advance on pressing a key**
+   - Ensured rotors advance correctly with carry-over to the next rotor when a complete revolution occurs.
+
+The implementation was verified using a comprehensive test suite to ensure the correctness of each component and the overall encryption and decryption processes. The tests covered initialization, key press and release, rotor advancement, encryption, decryption, and reflector functionality.
+
+This project demonstrates the historical significance and computational complexity of the Enigma machine, highlighting the importance of cryptography in modern computing.

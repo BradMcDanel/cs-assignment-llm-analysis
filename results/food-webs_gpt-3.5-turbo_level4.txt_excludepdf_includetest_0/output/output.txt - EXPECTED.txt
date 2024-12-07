@@ -1,0 +1,23 @@
+Predators and Prey:
+  Bird eats Crab, Limpets, Mussels, Prawn and Whelk
+  Crab eats Limpets and Mussels
+  Fish eats Prawn
+  ...
+
+Apex Predators:
+  Bird, Fish
+
+Producers:
+  Phytoplankton, Seaweed
+
+Most Flexible Eaters:
+  Bird
+
+Tastiest Organisms:
+  Limpets, Mussels
+
+Heights:
+  Bird: 4
+  Crab: 3
+  Fish: 3
+  ...

@@ -1,0 +1,2 @@
+# A visual representation of the design or flow of the SpellingBee program.
+# It could be a UML diagram, flowchart, or any other diagram illustrating the structure and interactions in the program.

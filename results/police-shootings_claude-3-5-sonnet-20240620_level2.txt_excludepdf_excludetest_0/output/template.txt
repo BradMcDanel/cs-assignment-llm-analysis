@@ -1,0 +1,12 @@
+Task 3:
+
+Question 1:
+The proportion of black subjects in fatal police shootings (calculated fraction) is significantly higher than the proportion of black people in the United States population (13.4%). This suggests a disproportionate representation of black individuals in fatal police shootings compared to their representation in the general population.
+
+Question 2:
+The proportion of black subjects in fatal police shootings where the subject is unarmed (calculated unarmed fraction) is even higher than both the proportion of black people in the United States population (13.4%) and the proportion of black subjects in all police shootings (calculated fraction). This indicates an even greater disparity when considering only unarmed individuals involved in fatal police shootings.
+
+Task 4:
+
+Reflection:
+This project has been eye-opening in several ways. First, working with real-world data on such a sensitive topic made the gravity of the situation very apparent. The process of cleaning and analyzing the data showed me how important it is to handle such information responsibly and accurately. I was surprised by the extent of the disparities revealed in the data, which has deepened my understanding of the issues surrounding police shootings and racial bias. From a technical perspective, I found the use of dictionaries to be an effective way to organize and analyze complex data. This project has reinforced for me the power of data analysis in illuminating important social issues, while also highlighting the need for careful interpretation and context when drawing conclusions from such analyses.

@@ -1,0 +1,2 @@
+# Any specific requirements or dependencies needed to run the SpellingBee program.
+# It can include details about Python version, library installations, or other prerequisites.

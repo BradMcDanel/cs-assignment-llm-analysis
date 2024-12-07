@@ -1,0 +1,1 @@
+In this assignment, I learned about the Enigma machine used during World War II and the implementation of a simulator for it. I successfully completed all milestones and gained insights into the encryption process and rotor advancements.

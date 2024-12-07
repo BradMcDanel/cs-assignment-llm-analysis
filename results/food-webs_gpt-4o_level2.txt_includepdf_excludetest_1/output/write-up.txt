@@ -1,0 +1,37 @@
+# Assignment 4 - Food Web Analysis
+# Author: [Your Name]
+# Student Number: [Your Student Number]
+# Description: This program analyzes food webs from a provided CSV file. The program reads 
+# the predator-prey relationships, stores them in a dictionary, and performs various analyses 
+# including identifying apex predators, producers, most flexible eaters, tastiest organisms, 
+# and determining the height of each organism in the food web.
+
+## Part 1: What do the Predators Eat?
+# The program reads the predator-prey relationships from the input file and stores them in a 
+# dictionary where the keys are predators and the values are lists of their prey. The program 
+# then prints each predator and its prey in a nicely formatted manner.
+
+## Part 2: Identify the Apex Predators
+# An apex predator is defined as a species that is not eaten by any other species. The program 
+# identifies and prints all apex predators.
+
+## Part 3: Identify the Producers
+# A producer is defined as a species that does not eat any other species. The program identifies 
+# and prints all producers.
+
+## Part 4: Identify the Most Flexible Eaters
+# The most flexible eater is the organism that eats the greatest number of other organisms. The 
+# program identifies and prints the most flexible eaters.
+
+## Part 5: The Tastiest Organism
+# The tastiest organism is the one that is eaten by the most different members of the food chain. 
+# The program identifies and prints the tastiest organisms.
+
+## Part 6: Determine the Height of Each Organism in the Food Web
+# The height of an organism is defined as the longest path from that organism to a producer. The 
+# program calculates and prints the height of each organism.
+
+## Additional Notes
+# - Command line arguments are used to specify the input file.
+# - Basic error checking is performed to ensure the file exists.
+# - Functions are used to modularize the code, each responsible for a specific part of the assignment.

@@ -1,0 +1,1 @@
+In this assignment, I learned the importance of implementing the Enigma machine simulation, understanding the rotor mechanism, encryption, and decryption processes. I also learned about the historical significance of the Enigma machine during World War II.

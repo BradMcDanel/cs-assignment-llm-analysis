@@ -1,0 +1,1 @@
+# Contains the FIVE_LETTER_WORDS constant with a list of five-letter words.

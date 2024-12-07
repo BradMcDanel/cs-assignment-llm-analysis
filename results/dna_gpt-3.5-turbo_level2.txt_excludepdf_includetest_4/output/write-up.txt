@@ -1,0 +1,1 @@
+This Python program reads a DNA sequence and a CSV file containing STR counts for individuals. It then calculates the longest run of consecutive repeats of each STR in the DNA sequence and matches it with the individuals in the CSV file. If a match is found, it outputs the name of the individual; otherwise, it prints "No match".

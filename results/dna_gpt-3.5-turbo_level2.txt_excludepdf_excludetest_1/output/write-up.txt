@@ -1,0 +1,4 @@
+# The program 'profile.py' reads a CSV file containing STR counts for individuals and a DNA sequence text file.
+# It computes the longest run of consecutive repeats for each STR in the DNA sequence and matches it with the individuals in the CSV file.
+# If there is an exact match, it outputs the name of the individual, otherwise prints "No match".
+# The program demonstrates the use of file I/O, string manipulation, and algorithmic thinking to perform DNA profiling.

@@ -1,0 +1,8 @@
+# This program analyzes a food web described in a CSV file. It reads the file and processes the predator-prey relationships to:
+# 1. Display what each predator eats.
+# 2. Identify apex predators that are not preyed upon by any other species.
+# 3. Identify producers that do not eat other species.
+# 4. Identify the most flexible eaters who consume the highest number of different species.
+# 5. Identify the tastiest organisms eaten by the most predators.
+# 6. Determine the height of each organism in the food web, based on the longest path to a producer.
+# It follows the assignment requirements including the use of command line arguments, structured code with functions, and error checking.

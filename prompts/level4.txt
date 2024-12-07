@@ -21,9 +21,10 @@
 - Before writing code, think step-by-step what you want to do and write the steps as comments.
   - Ensure that you start by indentifying which files you can copy over as `PROVIDED` and which you need to implement.
   - Create a complete list of all files ahead of time before writing any code.
-- In the written instructions, pay careful attentino to the name of the files you should be generating.
+- In the written instructions, pay careful attention to the name of the files you should be generating.
   - Make sure your entry-point and all other files conform to the naming conventions provided in the instructions.
   - If it is not provided, use reasonable defaults (e.g., `main.py` for the entry-point).
+- There could be inconsistencies between the instructions/data files/provided code samples. Do your best to predict the expected behavior based on the data itself and do not trust any single source.
 
 ***Example Response***
 1. Copy over the provided `utils/rand_utils.py` file.

@@ -1,0 +1,3 @@
+I have written test cases for the SpellingBee program using pytest and mocked the SpellingBeeGraphics class for isolated testing. 
+- Each test case focuses on a specific functionality like puzzle initialization, solving, word entry validation, pangram identification, and score calculation.
+- The test cases ensure that the program functions correctly and handles different scenarios appropriately.

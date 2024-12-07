@@ -1,0 +1,16 @@
+# The Enigma machine simulation was developed using a series of milestones,
+# each building upon the previous. The design followed the Model-View-Controller
+# (MVC) pattern, where the view and controller were provided, and the model
+# was implemented to simulate the Enigma machine's functionality.
+#
+# The implementation included:
+# 1. Keyboard activation to detect and record key states.
+# 2. Connecting keys to lamps to visually display key presses.
+# 3. Designing EnigmaRotor class to simulate rotor behavior.
+# 4. Implementing letter permutation for encryption through rotors.
+# 5. Completing the full encryption path including the reflector.
+# 6. Implementing rotor advancement with carry logic.
+#
+# The Enigma simulation provides a simplified yet accurate representation
+# of the historical machine used during World War II, demonstrating key
+# concepts in encryption and decryption.

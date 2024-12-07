@@ -1,0 +1,2 @@
+# This is the library file provided that handles the graphical display for the Spelling Bee game.
+# No modifications are needed in this file.

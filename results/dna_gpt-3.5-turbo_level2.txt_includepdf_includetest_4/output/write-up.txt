@@ -1,0 +1,8 @@
+This program takes a DNA sequence and a CSV file containing STR counts for a list of individuals as input. It then computes the longest run of consecutive repeats for each STR in the DNA sequence and matches it with the corresponding individual in the database. If a match is found, it outputs the name of the individual, otherwise it prints "No match".
+
+The program reads the CSV file and DNA sequence, computes the longest runs, and compares them with the data in the CSV file to identify the individual to whom the DNA most likely belongs. The implementation uses Python's csv module for reading CSV files and performs string manipulation to compute the longest runs of the specified STRs in the DNA sequence.
+
+To run the program, execute it with the command:
+$ python profile.py data.csv sequence.txt
+
+The program has been tested with provided test cases using the test_profile.py script and passes all the tests successfully.

@@ -1,0 +1,30 @@
+{
+    "created": 1731002782.1648843,
+    "duration": 0.037483930587768555,
+    "exitcode": 2,
+    "root": "/tmp/code__gvi4spn",
+    "environment": {},
+    "summary": {
+        "total": 0,
+        "collected": 0
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "failed",
+            "result": [],
+            "longrepr": "ImportError while importing test module '/tmp/code__gvi4spn/test_wordle.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/home/brad/.miniconda3/lib/python3.10/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\ntest_wordle.py:6: in <module>\n    from Wordle import wordle, CORRECT_COLOR, PRESENT_COLOR, MISSING_COLOR\nE   ImportError: cannot import name 'CORRECT_COLOR' from 'Wordle' (/tmp/code__gvi4spn/Wordle.py)"
+        }
+    ],
+    "tests": []
+}

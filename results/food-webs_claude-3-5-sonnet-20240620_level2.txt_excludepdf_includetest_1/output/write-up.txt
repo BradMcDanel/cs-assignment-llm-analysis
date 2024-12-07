@@ -1,0 +1,18 @@
+This program implements a food web analyzer as specified in the assignment. It reads a food web from a CSV file and performs various analyses on the relationships between predators and prey.
+
+Key features:
+1. Loads food web data from a file into a dictionary
+2. Prints predator-prey relationships
+3. Identifies apex predators
+4. Identifies producers
+5. Finds the most flexible eaters
+6. Determines the tastiest organisms
+7. Calculates the height of each organism in the food web
+
+The program is structured into functions for each main task, improving readability and maintainability. It handles command-line arguments and file input errors appropriately.
+
+The height calculation uses an iterative approach rather than recursion, as suggested in the assignment. This method repeatedly updates heights until no further changes occur, ensuring correct heights even for complex food webs with multiple levels.
+
+The program uses the provided format_list function for consistent output formatting. It follows good programming practices such as using appropriate variable names, adding comments, and avoiding global variables.
+
+Potential improvements could include more detailed error handling and additional food web analyses.

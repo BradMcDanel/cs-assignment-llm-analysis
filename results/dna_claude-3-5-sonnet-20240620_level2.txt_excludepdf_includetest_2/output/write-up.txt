@@ -1,0 +1,23 @@
+This program solves the DNA profiling problem by following these steps:
+
+1. It reads the CSV database file and the DNA sequence file from command-line arguments.
+
+2. The CSV file is parsed using the csv module, storing each person's data as a dictionary in a list.
+
+3. The list of STRs is extracted from the CSV header.
+
+4. The DNA sequence is read from the text file.
+
+5. For each STR, the program computes the longest run of consecutive repeats in the DNA sequence using the longest_match function. This function iterates through the sequence, counting consecutive matches of the STR and keeping track of the longest run found.
+
+6. The program then compares the computed STR counts against each person in the database. If an exact match is found for all STRs, it prints the person's name and exits.
+
+7. If no match is found after checking all individuals, it prints "No match".
+
+This solution efficiently handles the DNA profiling task by:
+- Using appropriate data structures (list of dictionaries for the database, dictionary for STR counts)
+- Implementing an efficient algorithm for finding the longest STR run
+- Utilizing Python's built-in csv module for parsing the database file
+- Following a clear and logical flow of operations
+
+The program is designed to be flexible, working with any number of STRs specified in the CSV file, and can easily be extended to handle larger databases or more complex matching criteria if needed.

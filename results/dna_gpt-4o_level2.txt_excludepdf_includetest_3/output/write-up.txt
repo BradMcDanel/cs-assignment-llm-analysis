@@ -1,0 +1,9 @@
+# The program is designed to identify the individual to whom a given DNA sequence belongs by matching STR counts.
+# It accepts two command-line arguments: a CSV file with DNA profiles and a text file with a DNA sequence.
+# Steps involved:
+# 1. Load the DNA database from the CSV file into a list of dictionaries, where each dictionary represents an individual.
+# 2. Load the DNA sequence from the text file.
+# 3. For each STR listed in the database, calculate the longest consecutive repeats in the DNA sequence.
+# 4. Compare the calculated STR counts against each individual's profile in the database.
+# 5. Print the name of the individual if an exact match is found, otherwise print "No match".
+# The program uses Python's `csv` module to handle CSV files and processes the DNA sequence using string manipulation.

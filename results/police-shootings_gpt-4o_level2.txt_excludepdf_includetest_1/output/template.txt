@@ -1,0 +1,3 @@
+# Task 4
+# Reflection
+Through this project, I learned how to analyze real-world data using Python, specifically focusing on the issue of fatal police shootings. The process involved reading and organizing data into dictionaries, which was crucial for efficient data manipulation. I was able to identify significant disparities in the data, particularly concerning the racial demographics of the subjects involved in these incidents. It was eye-opening to see the extent of disproportionality in the data, emphasizing the importance of data analysis in highlighting societal issues. Additionally, working with real-world data presented challenges in handling missing information and making sense of complex datasets, but it was a valuable learning experience.

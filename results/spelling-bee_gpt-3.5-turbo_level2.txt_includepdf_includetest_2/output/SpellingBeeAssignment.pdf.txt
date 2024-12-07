@@ -1,0 +1,3 @@
+# The assignment document outlining the requirements and milestones for the SpellingBee project.
+# It provides detailed instructions on implementing different parts of the program to solve the Spelling Bee puzzle.
+# The document includes information on the puzzle rules, graphical display, milestones, and possible extensions.

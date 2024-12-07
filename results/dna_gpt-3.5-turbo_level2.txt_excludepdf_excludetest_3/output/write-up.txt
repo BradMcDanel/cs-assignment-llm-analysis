@@ -1,0 +1,6 @@
+# I have implemented a Python program that reads a CSV file containing DNA profiles of individuals and a text file containing a DNA sequence to identify who the sequence belongs to.
+# The program reads the CSV file data into memory and then reads the DNA sequence file into memory.
+# It then compares the longest runs of consecutive repeats of the STRs in the DNA sequence with the data from the CSV file to identify a match.
+# If a match is found, the program outputs the name of the matching individual. If no match is found, it prints "No match".
+# The program takes two command-line arguments: the CSV file and the DNA sequence file.
+# Example usage: python profile.py data.csv sequence.txt

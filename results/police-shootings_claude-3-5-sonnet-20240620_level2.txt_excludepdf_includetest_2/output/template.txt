@@ -1,0 +1,12 @@
+Task 3:
+
+Question 1:
+The proportion of fatal police shootings with a black subject (approximately 0.2370 or 23.70%) is significantly higher than the proportion of black people in the United States population (13.4%). This suggests that black individuals are overrepresented among the subjects of fatal police shootings compared to their representation in the general population.
+
+Question 2:
+The proportion of black subjects in fatal police shootings where the subject is unarmed (approximately 0.3093 or 30.93%) is even higher than the proportion of black subjects in all police shootings (23.70%). Both of these proportions are significantly higher than the proportion of black people in the United States population (13.4%). This data suggests that black individuals are disproportionately represented among the subjects of fatal police shootings, especially in cases where the subject is unarmed.
+
+Task 4:
+
+Reflection:
+This project has been eye-opening and sobering. Working with real-world data on fatal police shootings has given me a deeper understanding of the racial disparities in law enforcement interactions. I was struck by the significant overrepresentation of black individuals in fatal police shootings, especially in cases where the subject was unarmed. This project has also highlighted the importance of data analysis in uncovering and quantifying social issues. From a technical perspective, I've gained valuable experience in working with CSV files, manipulating dictionaries, and performing data analysis using Python. The process of breaking down the problem into smaller tasks and incrementally building the analysis was an effective approach. This project has reinforced the power of data in shaping our understanding of complex societal issues and the responsibility we have as data scientists to approach such analyses with care and objectivity.

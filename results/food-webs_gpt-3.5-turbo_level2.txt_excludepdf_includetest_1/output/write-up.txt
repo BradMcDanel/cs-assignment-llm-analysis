@@ -1,0 +1,5 @@
+# The Python program food_web_analysis.py reads a food web file provided as a command line argument or from user input if not provided. 
+# It analyzes the predator-prey relationships in the food web and performs various tasks as described in the assignment document.
+# The program loads the data into a dictionary, processes the relationships, identifies apex predators, producers, most flexible eaters, tastiest organisms, and determines the height of each organism in the food web. 
+# The formatting module provides a function to format the output for listing what each predator eats.
+# The program adheres to the requirements specified in the assignment including error handling, use of functions, and good programming style.

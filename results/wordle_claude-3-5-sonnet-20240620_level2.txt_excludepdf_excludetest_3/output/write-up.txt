@@ -1,0 +1,40 @@
+Wordle Implementation Write-up
+
+This implementation of the Wordle game follows the milestones outlined in the assignment:
+
+Milestone #1: Pick a random word
+- We use random.choice() to select a random word from FIVE_LETTER_WORDS.
+- The hidden word is stored in the hidden_word variable.
+- For testing purposes, you can uncomment the print statement to see the hidden word.
+
+Milestone #2: Check whether entered letters form a word
+- In the enter_action function, we collect the letters from the current row to form a word.
+- We check if the word is in FIVE_LETTER_WORDS. If not, we show "Not in word list".
+
+Milestone #3: Color the boxes
+- We iterate through each letter of the guessed word and compare it with the hidden word.
+- We use set_square_color to color each square based on the letter's correctness:
+  - Green (CORRECT_COLOR) for correct letter in correct position
+  - Yellow (PRESENT_COLOR) for correct letter in wrong position
+  - Gray (MISSING_COLOR) for letters not in the word
+
+Milestone #4: Color the keys
+- After coloring the squares, we update the colors of the keys on the virtual keyboard.
+- We use get_key_color and set_key_color to manage key colors.
+- We ensure that key colors don't "downgrade" (e.g., green doesn't change to yellow or gray).
+
+Additional features:
+- The game ends when the word is guessed correctly or after 6 attempts.
+- Appropriate messages are displayed for winning or losing the game.
+- The current row is updated after each valid guess.
+
+This implementation provides a fully functional Wordle game that meets all the requirements
+specified in the assignment. It uses the provided WordleGraphics module for the UI and
+interacts with it as described in the assignment.
+
+Possible improvements and extensions:
+1. Implement a more balanced word selection strategy.
+2. Add animations for winning the game.
+3. Create an option to list possible words based on previous guesses.
+4. Implement a scoring system and store results in a file.
+5. Add difficulty levels or different word lengths.

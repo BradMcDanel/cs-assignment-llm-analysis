@@ -1,0 +1,25 @@
+# Write-up for DNA Profiling Program
+
+## Overview
+The program reads a CSV file containing DNA profiles with counts of Short Tandem Repeats (STRs) for several individuals, and a text file containing a DNA sequence. It identifies to whom the DNA sequence belongs by computing the longest consecutive runs of each STR in the sequence and comparing these to the profiles in the database.
+
+## Steps
+1. **File Reading**: 
+   - The CSV file is read using Python's `csv.DictReader` to map each row to a dictionary with column headers as keys.
+   - The DNA sequence is read into a string from a text file.
+
+2. **STR Matching**:
+   - For each STR listed in the CSV file, the program calculates the longest contiguous subsequence in the given DNA sequence using the `longest_match` function.
+   - This function iterates over the sequence and checks for consecutive matches of the STR, updating the longest run found.
+
+3. **Identification**:
+   - The program then compares these longest runs with the data in the CSV file.
+   - If a match is found (i.e., all STR counts match for an individual), it prints the individual's name.
+   - If no such match exists, it prints "No match".
+
+## Challenges
+- Ensuring the correct counting of consecutive STRs, handling overlaps correctly.
+- Efficiently searching for STR patterns within potentially large DNA sequences.
+
+## Conclusion
+The program demonstrates a practical application of string manipulation and file I/O in Python, providing insight into the world of DNA profiling in computational biology.

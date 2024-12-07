@@ -1,0 +1,27 @@
+Approach to solving the DNA profiling problem:
+
+1. Command-line arguments:
+   - We check for the correct number of command-line arguments (3) and exit with an error message if incorrect.
+
+2. Reading input files:
+   - We use the csv module to read the CSV database file into a list of dictionaries.
+   - We read the DNA sequence file as a single string.
+
+3. Extracting STRs:
+   - We extract the list of STRs from the CSV header, excluding the 'name' column.
+
+4. Computing STR counts:
+   - We implement a longest_match function to find the longest run of consecutive repeats for a given STR in the DNA sequence.
+   - We use this function to compute the counts for each STR in the sequence.
+
+5. Matching profiles:
+   - We iterate through each person in the database.
+   - For each person, we compare their STR counts with the computed counts from the sequence.
+   - If all STR counts match exactly, we print the person's name and exit.
+   - If no match is found after checking all profiles, we print "No match".
+
+6. Efficiency considerations:
+   - The longest_match function uses a sliding window approach to find the longest run efficiently.
+   - We avoid unnecessary string comparisons by using string slicing.
+
+This solution provides a balance between readability and efficiency, suitable for the given problem constraints.

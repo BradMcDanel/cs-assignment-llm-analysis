@@ -1,0 +1,350 @@
+{
+    "created": 1730999197.882256,
+    "duration": 0.19507217407226562,
+    "exitcode": 1,
+    "root": "/tmp/code_ibsr22s3",
+    "environment": {},
+    "summary": {
+        "error": 6,
+        "total": 6,
+        "collected": 6
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_Assignment4.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_Assignment4.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files0]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files1]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files2]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files3]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files4]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files5]",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files0]",
+            "lineno": 80,
+            "outcome": "error",
+            "keywords": [
+                "test_predators_and_prey[food_web_files0]",
+                "food_web_files0",
+                "test_Assignment4.py",
+                "code_ibsr22s3"
+            ],
+            "setup": {
+                "duration": 0.01670029992237687,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                    "lineno": 526,
+                    "message": "subprocess.CalledProcessError: Command '['python', 'Assignment4.py', 'AnotherFoodWeb.txt']' returned non-zero exit status 1."
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 74,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 16,
+                        "message": "in run_main_py"
+                    },
+                    {
+                        "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                        "lineno": 421,
+                        "message": "in check_output"
+                    },
+                    {
+                        "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                        "lineno": 526,
+                        "message": "CalledProcessError"
+                    }
+                ],
+                "stderr": "Traceback (most recent call last):\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 85, in <module>\n    main()\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 82, in main\n    calculate_heights(food_web)\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 60, in calculate_heights\n    if heights[predator] <= heights[prey]:\nKeyError: 'Plants'\n",
+                "longrepr": "food_web_files = ('AnotherFoodWeb.txt', 'AnotherFoodWeb_Output.txt')\n\n    @pytest.fixture\n    def main_output(food_web_files):\n        input_file, _ = food_web_files\n>       return run_main_py(input_file)\n\ntest_Assignment4.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntest_Assignment4.py:16: in run_main_py\n    return subprocess.check_output([\"python\", script_name, input_file], universal_newlines=True)\n/home/brad/.miniconda3/lib/python3.10/subprocess.py:421: in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput = None, capture_output = False, timeout = None, check = True\npopenargs = (['python', 'Assignment4.py', 'AnotherFoodWeb.txt'],)\nkwargs = {'stdout': -1, 'universal_newlines': True}\nprocess = <Popen: returncode: 1 args: ['python', 'Assignment4.py', 'AnotherFoodWeb.txt']>\nstdout = 'Predators and Prey:\\n  Fox eats Rabbit, Squirrel, Mouse, Seed Eating Bird, Insectivor Bird and Toad\\n  Hawk eats Rabb...nsect\\nApex Predators: Fox, Hawk and Snake\\nProducers: (None)\\nMost Flexible Eaters: Fox and Snake\\nTastiest: Plants\\n'\nstderr = None, retcode = 1\n\n    def run(*popenargs,\n            input=None, capture_output=False, timeout=None, check=False, **kwargs):\n        \"\"\"Run command with arguments and return a CompletedProcess instance.\n    \n        The returned instance will have attributes args, returncode, stdout and\n        stderr. By default, stdout and stderr are not captured, and those attributes\n        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,\n        or pass capture_output=True to capture both.\n    \n        If check is True and the exit code was non-zero, it raises a\n        CalledProcessError. The CalledProcessError object will have the return code\n        in the returncode attribute, and output & stderr attributes if those streams\n        were captured.\n    \n        If timeout is given, and the process takes too long, a TimeoutExpired\n        exception will be raised.\n    \n        There is an optional argument \"input\", allowing you to\n        pass bytes or a string to the subprocess's stdin.  If you use this argument\n        you may not also use the Popen constructor's \"stdin\" argument, as\n        it will be used internally.\n    \n        By default, all communication is in bytes, and therefore any \"input\" should\n        be bytes, and the stdout and stderr will be bytes. If in text mode, any\n        \"input\" should be a string, and stdout and stderr will be strings decoded\n        according to locale encoding, or by \"encoding\" if set. Text mode is\n        triggered by setting any of text, encoding, errors or universal_newlines.\n    \n        The other arguments are the same as for the Popen constructor.\n        \"\"\"\n        if input is not None:\n            if kwargs.get('stdin') is not None:\n                raise ValueError('stdin and input arguments may not both be used.')\n            kwargs['stdin'] = PIPE\n    \n        if capture_output:\n            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:\n                raise ValueError('stdout and stderr arguments may not be used '\n                                 'with capture_output.')\n            kwargs['stdout'] = PIPE\n            kwargs['stderr'] = PIPE\n    \n        with Popen(*popenargs, **kwargs) as process:\n            try:\n                stdout, stderr = process.communicate(input, timeout=timeout)\n            except TimeoutExpired as exc:\n                process.kill()\n                if _mswindows:\n                    # Windows accumulates the output in a single blocking\n                    # read() call run on child threads, with the timeout\n                    # being done in a join() on those threads.  communicate()\n                    # _after_ kill() is required to collect that and add it\n                    # to the exception.\n                    exc.stdout, exc.stderr = process.communicate()\n                else:\n                    # POSIX _communicate already populated the output so\n                    # far into the TimeoutExpired exception.\n                    process.wait()\n                raise\n            except:  # Including KeyboardInterrupt, communicate handled that.\n                process.kill()\n                # We don't call process.wait() as .__exit__ does that for us.\n                raise\n            retcode = process.poll()\n            if check and retcode:\n>               raise CalledProcessError(retcode, process.args,\n                                         output=stdout, stderr=stderr)\nE               subprocess.CalledProcessError: Command '['python', 'Assignment4.py', 'AnotherFoodWeb.txt']' returned non-zero exit status 1.\n\n/home/brad/.miniconda3/lib/python3.10/subprocess.py:526: CalledProcessError"
+            },
+            "teardown": {
+                "duration": 0.00011511403135955334,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files1]",
+            "lineno": 80,
+            "outcome": "error",
+            "keywords": [
+                "test_predators_and_prey[food_web_files1]",
+                "food_web_files1",
+                "test_Assignment4.py",
+                "code_ibsr22s3"
+            ],
+            "setup": {
+                "duration": 0.016804395942017436,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                    "lineno": 526,
+                    "message": "subprocess.CalledProcessError: Command '['python', 'Assignment4.py', 'AquaticFoodWeb.txt']' returned non-zero exit status 1."
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 74,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 16,
+                        "message": "in run_main_py"
+                    },
+                    {
+                        "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                        "lineno": 421,
+                        "message": "in check_output"
+                    },
+                    {
+                        "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                        "lineno": 526,
+                        "message": "CalledProcessError"
+                    }
+                ],
+                "stderr": "Traceback (most recent call last):\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 85, in <module>\n    main()\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 82, in main\n    calculate_heights(food_web)\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 60, in calculate_heights\n    if heights[predator] <= heights[prey]:\nKeyError: 'Seaweed'\n",
+                "longrepr": "food_web_files = ('AquaticFoodWeb.txt', 'AquaticFoodWeb_Output.txt')\n\n    @pytest.fixture\n    def main_output(food_web_files):\n        input_file, _ = food_web_files\n>       return run_main_py(input_file)\n\ntest_Assignment4.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntest_Assignment4.py:16: in run_main_py\n    return subprocess.check_output([\"python\", script_name, input_file], universal_newlines=True)\n/home/brad/.miniconda3/lib/python3.10/subprocess.py:421: in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput = None, capture_output = False, timeout = None, check = True\npopenargs = (['python', 'Assignment4.py', 'AquaticFoodWeb.txt'],)\nkwargs = {'stdout': -1, 'universal_newlines': True}\nprocess = <Popen: returncode: 1 args: ['python', 'Assignment4.py', 'AquaticFoodWeb.txt']>\nstdout = 'Predators and Prey:\\n  Bird eats Prawn, Mussels, Crab, Limpets and Whelk\\n  Crab eats Mussels and Limpets\\n  Fish eat...Apex Predators: Bird, Fish and Lobster\\nProducers: (None)\\nMost Flexible Eaters: Bird\\nTastiest: Mussels and Limpets\\n'\nstderr = None, retcode = 1\n\n    def run(*popenargs,\n            input=None, capture_output=False, timeout=None, check=False, **kwargs):\n        \"\"\"Run command with arguments and return a CompletedProcess instance.\n    \n        The returned instance will have attributes args, returncode, stdout and\n        stderr. By default, stdout and stderr are not captured, and those attributes\n        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,\n        or pass capture_output=True to capture both.\n    \n        If check is True and the exit code was non-zero, it raises a\n        CalledProcessError. The CalledProcessError object will have the return code\n        in the returncode attribute, and output & stderr attributes if those streams\n        were captured.\n    \n        If timeout is given, and the process takes too long, a TimeoutExpired\n        exception will be raised.\n    \n        There is an optional argument \"input\", allowing you to\n        pass bytes or a string to the subprocess's stdin.  If you use this argument\n        you may not also use the Popen constructor's \"stdin\" argument, as\n        it will be used internally.\n    \n        By default, all communication is in bytes, and therefore any \"input\" should\n        be bytes, and the stdout and stderr will be bytes. If in text mode, any\n        \"input\" should be a string, and stdout and stderr will be strings decoded\n        according to locale encoding, or by \"encoding\" if set. Text mode is\n        triggered by setting any of text, encoding, errors or universal_newlines.\n    \n        The other arguments are the same as for the Popen constructor.\n        \"\"\"\n        if input is not None:\n            if kwargs.get('stdin') is not None:\n                raise ValueError('stdin and input arguments may not both be used.')\n            kwargs['stdin'] = PIPE\n    \n        if capture_output:\n            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:\n                raise ValueError('stdout and stderr arguments may not be used '\n                                 'with capture_output.')\n            kwargs['stdout'] = PIPE\n            kwargs['stderr'] = PIPE\n    \n        with Popen(*popenargs, **kwargs) as process:\n            try:\n                stdout, stderr = process.communicate(input, timeout=timeout)\n            except TimeoutExpired as exc:\n                process.kill()\n                if _mswindows:\n                    # Windows accumulates the output in a single blocking\n                    # read() call run on child threads, with the timeout\n                    # being done in a join() on those threads.  communicate()\n                    # _after_ kill() is required to collect that and add it\n                    # to the exception.\n                    exc.stdout, exc.stderr = process.communicate()\n                else:\n                    # POSIX _communicate already populated the output so\n                    # far into the TimeoutExpired exception.\n                    process.wait()\n                raise\n            except:  # Including KeyboardInterrupt, communicate handled that.\n                process.kill()\n                # We don't call process.wait() as .__exit__ does that for us.\n                raise\n            retcode = process.poll()\n            if check and retcode:\n>               raise CalledProcessError(retcode, process.args,\n                                         output=stdout, stderr=stderr)\nE               subprocess.CalledProcessError: Command '['python', 'Assignment4.py', 'AquaticFoodWeb.txt']' returned non-zero exit status 1.\n\n/home/brad/.miniconda3/lib/python3.10/subprocess.py:526: CalledProcessError"
+            },
+            "teardown": {
+                "duration": 0.00010640290565788746,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files2]",
+            "lineno": 80,
+            "outcome": "error",
+            "keywords": [
+                "test_predators_and_prey[food_web_files2]",
+                "food_web_files2",
+                "test_Assignment4.py",
+                "code_ibsr22s3"
+            ],
+            "setup": {
+                "duration": 0.015179435955360532,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                    "lineno": 526,
+                    "message": "subprocess.CalledProcessError: Command '['python', 'Assignment4.py', 'GrasslandFoodWeb.txt']' returned non-zero exit status 1."
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 74,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 16,
+                        "message": "in run_main_py"
+                    },
+                    {
+                        "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                        "lineno": 421,
+                        "message": "in check_output"
+                    },
+                    {
+                        "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                        "lineno": 526,
+                        "message": "CalledProcessError"
+                    }
+                ],
+                "stderr": "Traceback (most recent call last):\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 85, in <module>\n    main()\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 82, in main\n    calculate_heights(food_web)\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 60, in calculate_heights\n    if heights[predator] <= heights[prey]:\nKeyError: 'Grass'\n",
+                "longrepr": "food_web_files = ('GrasslandFoodWeb.txt', 'GrasslandFoodWeb_Output.txt')\n\n    @pytest.fixture\n    def main_output(food_web_files):\n        input_file, _ = food_web_files\n>       return run_main_py(input_file)\n\ntest_Assignment4.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntest_Assignment4.py:16: in run_main_py\n    return subprocess.check_output([\"python\", script_name, input_file], universal_newlines=True)\n/home/brad/.miniconda3/lib/python3.10/subprocess.py:421: in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput = None, capture_output = False, timeout = None, check = True\npopenargs = (['python', 'Assignment4.py', 'GrasslandFoodWeb.txt'],)\nkwargs = {'stdout': -1, 'universal_newlines': True}\nprocess = <Popen: returncode: 1 args: ['python', 'Assignment4.py', 'GrasslandFoodWeb.t...>\nstdout = 'Predators and Prey:\\n  Grasshopper eats Grass\\n  Hawk eats Grasshopper, Lizard, Rabbit, Mouse and Snake\\n  Lizard eat...eats Grass\\n  Snake eats Mouse\\nApex Predators: Hawk\\nProducers: (None)\\nMost Flexible Eaters: Hawk\\nTastiest: Grass\\n'\nstderr = None, retcode = 1\n\n    def run(*popenargs,\n            input=None, capture_output=False, timeout=None, check=False, **kwargs):\n        \"\"\"Run command with arguments and return a CompletedProcess instance.\n    \n        The returned instance will have attributes args, returncode, stdout and\n        stderr. By default, stdout and stderr are not captured, and those attributes\n        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,\n        or pass capture_output=True to capture both.\n    \n        If check is True and the exit code was non-zero, it raises a\n        CalledProcessError. The CalledProcessError object will have the return code\n        in the returncode attribute, and output & stderr attributes if those streams\n        were captured.\n    \n        If timeout is given, and the process takes too long, a TimeoutExpired\n        exception will be raised.\n    \n        There is an optional argument \"input\", allowing you to\n        pass bytes or a string to the subprocess's stdin.  If you use this argument\n        you may not also use the Popen constructor's \"stdin\" argument, as\n        it will be used internally.\n    \n        By default, all communication is in bytes, and therefore any \"input\" should\n        be bytes, and the stdout and stderr will be bytes. If in text mode, any\n        \"input\" should be a string, and stdout and stderr will be strings decoded\n        according to locale encoding, or by \"encoding\" if set. Text mode is\n        triggered by setting any of text, encoding, errors or universal_newlines.\n    \n        The other arguments are the same as for the Popen constructor.\n        \"\"\"\n        if input is not None:\n            if kwargs.get('stdin') is not None:\n                raise ValueError('stdin and input arguments may not both be used.')\n            kwargs['stdin'] = PIPE\n    \n        if capture_output:\n            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:\n                raise ValueError('stdout and stderr arguments may not be used '\n                                 'with capture_output.')\n            kwargs['stdout'] = PIPE\n            kwargs['stderr'] = PIPE\n    \n        with Popen(*popenargs, **kwargs) as process:\n            try:\n                stdout, stderr = process.communicate(input, timeout=timeout)\n            except TimeoutExpired as exc:\n                process.kill()\n                if _mswindows:\n                    # Windows accumulates the output in a single blocking\n                    # read() call run on child threads, with the timeout\n                    # being done in a join() on those threads.  communicate()\n                    # _after_ kill() is required to collect that and add it\n                    # to the exception.\n                    exc.stdout, exc.stderr = process.communicate()\n                else:\n                    # POSIX _communicate already populated the output so\n                    # far into the TimeoutExpired exception.\n                    process.wait()\n                raise\n            except:  # Including KeyboardInterrupt, communicate handled that.\n                process.kill()\n                # We don't call process.wait() as .__exit__ does that for us.\n                raise\n            retcode = process.poll()\n            if check and retcode:\n>               raise CalledProcessError(retcode, process.args,\n                                         output=stdout, stderr=stderr)\nE               subprocess.CalledProcessError: Command '['python', 'Assignment4.py', 'GrasslandFoodWeb.txt']' returned non-zero exit status 1.\n\n/home/brad/.miniconda3/lib/python3.10/subprocess.py:526: CalledProcessError"
+            },
+            "teardown": {
+                "duration": 0.00011226418428122997,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files3]",
+            "lineno": 80,
+            "outcome": "error",
+            "keywords": [
+                "test_predators_and_prey[food_web_files3]",
+                "food_web_files3",
+                "test_Assignment4.py",
+                "code_ibsr22s3"
+            ],
+            "setup": {
+                "duration": 0.014985518995672464,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                    "lineno": 526,
+                    "message": "subprocess.CalledProcessError: Command '['python', 'Assignment4.py', 'MixedFoodWeb.txt']' returned non-zero exit status 1."
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 74,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 16,
+                        "message": "in run_main_py"
+                    },
+                    {
+                        "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                        "lineno": 421,
+                        "message": "in check_output"
+                    },
+                    {
+                        "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                        "lineno": 526,
+                        "message": "CalledProcessError"
+                    }
+                ],
+                "stderr": "Traceback (most recent call last):\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 85, in <module>\n    main()\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 82, in main\n    calculate_heights(food_web)\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 60, in calculate_heights\n    if heights[predator] <= heights[prey]:\nKeyError: 'Terrestrial plants'\n",
+                "longrepr": "food_web_files = ('MixedFoodWeb.txt', 'MixedFoodWeb_Output.txt')\n\n    @pytest.fixture\n    def main_output(food_web_files):\n        input_file, _ = food_web_files\n>       return run_main_py(input_file)\n\ntest_Assignment4.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntest_Assignment4.py:16: in run_main_py\n    return subprocess.check_output([\"python\", script_name, input_file], universal_newlines=True)\n/home/brad/.miniconda3/lib/python3.10/subprocess.py:421: in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput = None, capture_output = False, timeout = None, check = True\npopenargs = (['python', 'Assignment4.py', 'MixedFoodWeb.txt'],)\nkwargs = {'stdout': -1, 'universal_newlines': True}\nprocess = <Popen: returncode: 1 args: ['python', 'Assignment4.py', 'MixedFoodWeb.txt']>\nstdout = 'Predators and Prey:\\n  Grasshopper eats Terrestrial plants\\n  Harvest mouse eats Grasshopper and Terrestrial plants\\n..., Heron and Owl\\nProducers: (None)\\nMost Flexible Eaters: Hawk and Owl\\nTastiest: Terrestrial plants and Grasshopper\\n'\nstderr = None, retcode = 1\n\n    def run(*popenargs,\n            input=None, capture_output=False, timeout=None, check=False, **kwargs):\n        \"\"\"Run command with arguments and return a CompletedProcess instance.\n    \n        The returned instance will have attributes args, returncode, stdout and\n        stderr. By default, stdout and stderr are not captured, and those attributes\n        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,\n        or pass capture_output=True to capture both.\n    \n        If check is True and the exit code was non-zero, it raises a\n        CalledProcessError. The CalledProcessError object will have the return code\n        in the returncode attribute, and output & stderr attributes if those streams\n        were captured.\n    \n        If timeout is given, and the process takes too long, a TimeoutExpired\n        exception will be raised.\n    \n        There is an optional argument \"input\", allowing you to\n        pass bytes or a string to the subprocess's stdin.  If you use this argument\n        you may not also use the Popen constructor's \"stdin\" argument, as\n        it will be used internally.\n    \n        By default, all communication is in bytes, and therefore any \"input\" should\n        be bytes, and the stdout and stderr will be bytes. If in text mode, any\n        \"input\" should be a string, and stdout and stderr will be strings decoded\n        according to locale encoding, or by \"encoding\" if set. Text mode is\n        triggered by setting any of text, encoding, errors or universal_newlines.\n    \n        The other arguments are the same as for the Popen constructor.\n        \"\"\"\n        if input is not None:\n            if kwargs.get('stdin') is not None:\n                raise ValueError('stdin and input arguments may not both be used.')\n            kwargs['stdin'] = PIPE\n    \n        if capture_output:\n            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:\n                raise ValueError('stdout and stderr arguments may not be used '\n                                 'with capture_output.')\n            kwargs['stdout'] = PIPE\n            kwargs['stderr'] = PIPE\n    \n        with Popen(*popenargs, **kwargs) as process:\n            try:\n                stdout, stderr = process.communicate(input, timeout=timeout)\n            except TimeoutExpired as exc:\n                process.kill()\n                if _mswindows:\n                    # Windows accumulates the output in a single blocking\n                    # read() call run on child threads, with the timeout\n                    # being done in a join() on those threads.  communicate()\n                    # _after_ kill() is required to collect that and add it\n                    # to the exception.\n                    exc.stdout, exc.stderr = process.communicate()\n                else:\n                    # POSIX _communicate already populated the output so\n                    # far into the TimeoutExpired exception.\n                    process.wait()\n                raise\n            except:  # Including KeyboardInterrupt, communicate handled that.\n                process.kill()\n                # We don't call process.wait() as .__exit__ does that for us.\n                raise\n            retcode = process.poll()\n            if check and retcode:\n>               raise CalledProcessError(retcode, process.args,\n                                         output=stdout, stderr=stderr)\nE               subprocess.CalledProcessError: Command '['python', 'Assignment4.py', 'MixedFoodWeb.txt']' returned non-zero exit status 1.\n\n/home/brad/.miniconda3/lib/python3.10/subprocess.py:526: CalledProcessError"
+            },
+            "teardown": {
+                "duration": 0.0001108730211853981,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files4]",
+            "lineno": 80,
+            "outcome": "error",
+            "keywords": [
+                "test_predators_and_prey[food_web_files4]",
+                "food_web_files4",
+                "test_Assignment4.py",
+                "code_ibsr22s3"
+            ],
+            "setup": {
+                "duration": 0.01400301093235612,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                    "lineno": 526,
+                    "message": "subprocess.CalledProcessError: Command '['python', 'Assignment4.py', 'SimpleFoodWeb.txt']' returned non-zero exit status 1."
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 74,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 16,
+                        "message": "in run_main_py"
+                    },
+                    {
+                        "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                        "lineno": 421,
+                        "message": "in check_output"
+                    },
+                    {
+                        "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                        "lineno": 526,
+                        "message": "CalledProcessError"
+                    }
+                ],
+                "stderr": "Traceback (most recent call last):\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 85, in <module>\n    main()\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 82, in main\n    calculate_heights(food_web)\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 60, in calculate_heights\n    if heights[predator] <= heights[prey]:\nKeyError: 'Grass'\n",
+                "longrepr": "food_web_files = ('SimpleFoodWeb.txt', 'SimpleFoodWeb_Output.txt')\n\n    @pytest.fixture\n    def main_output(food_web_files):\n        input_file, _ = food_web_files\n>       return run_main_py(input_file)\n\ntest_Assignment4.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntest_Assignment4.py:16: in run_main_py\n    return subprocess.check_output([\"python\", script_name, input_file], universal_newlines=True)\n/home/brad/.miniconda3/lib/python3.10/subprocess.py:421: in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput = None, capture_output = False, timeout = None, check = True\npopenargs = (['python', 'Assignment4.py', 'SimpleFoodWeb.txt'],)\nkwargs = {'stdout': -1, 'universal_newlines': True}\nprocess = <Popen: returncode: 1 args: ['python', 'Assignment4.py', 'SimpleFoodWeb.txt']>\nstdout = 'Predators and Prey:\\n  Lion eats Zebra\\n  Zebra eats Grass\\nApex Predators: Lion\\nProducers: (None)\\nMost Flexible Eaters: Lion and Zebra\\nTastiest: Zebra and Grass\\n'\nstderr = None, retcode = 1\n\n    def run(*popenargs,\n            input=None, capture_output=False, timeout=None, check=False, **kwargs):\n        \"\"\"Run command with arguments and return a CompletedProcess instance.\n    \n        The returned instance will have attributes args, returncode, stdout and\n        stderr. By default, stdout and stderr are not captured, and those attributes\n        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,\n        or pass capture_output=True to capture both.\n    \n        If check is True and the exit code was non-zero, it raises a\n        CalledProcessError. The CalledProcessError object will have the return code\n        in the returncode attribute, and output & stderr attributes if those streams\n        were captured.\n    \n        If timeout is given, and the process takes too long, a TimeoutExpired\n        exception will be raised.\n    \n        There is an optional argument \"input\", allowing you to\n        pass bytes or a string to the subprocess's stdin.  If you use this argument\n        you may not also use the Popen constructor's \"stdin\" argument, as\n        it will be used internally.\n    \n        By default, all communication is in bytes, and therefore any \"input\" should\n        be bytes, and the stdout and stderr will be bytes. If in text mode, any\n        \"input\" should be a string, and stdout and stderr will be strings decoded\n        according to locale encoding, or by \"encoding\" if set. Text mode is\n        triggered by setting any of text, encoding, errors or universal_newlines.\n    \n        The other arguments are the same as for the Popen constructor.\n        \"\"\"\n        if input is not None:\n            if kwargs.get('stdin') is not None:\n                raise ValueError('stdin and input arguments may not both be used.')\n            kwargs['stdin'] = PIPE\n    \n        if capture_output:\n            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:\n                raise ValueError('stdout and stderr arguments may not be used '\n                                 'with capture_output.')\n            kwargs['stdout'] = PIPE\n            kwargs['stderr'] = PIPE\n    \n        with Popen(*popenargs, **kwargs) as process:\n            try:\n                stdout, stderr = process.communicate(input, timeout=timeout)\n            except TimeoutExpired as exc:\n                process.kill()\n                if _mswindows:\n                    # Windows accumulates the output in a single blocking\n                    # read() call run on child threads, with the timeout\n                    # being done in a join() on those threads.  communicate()\n                    # _after_ kill() is required to collect that and add it\n                    # to the exception.\n                    exc.stdout, exc.stderr = process.communicate()\n                else:\n                    # POSIX _communicate already populated the output so\n                    # far into the TimeoutExpired exception.\n                    process.wait()\n                raise\n            except:  # Including KeyboardInterrupt, communicate handled that.\n                process.kill()\n                # We don't call process.wait() as .__exit__ does that for us.\n                raise\n            retcode = process.poll()\n            if check and retcode:\n>               raise CalledProcessError(retcode, process.args,\n                                         output=stdout, stderr=stderr)\nE               subprocess.CalledProcessError: Command '['python', 'Assignment4.py', 'SimpleFoodWeb.txt']' returned non-zero exit status 1.\n\n/home/brad/.miniconda3/lib/python3.10/subprocess.py:526: CalledProcessError"
+            },
+            "teardown": {
+                "duration": 0.00010915286839008331,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files5]",
+            "lineno": 80,
+            "outcome": "error",
+            "keywords": [
+                "test_predators_and_prey[food_web_files5]",
+                "food_web_files5",
+                "test_Assignment4.py",
+                "code_ibsr22s3"
+            ],
+            "setup": {
+                "duration": 0.01369412592612207,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                    "lineno": 526,
+                    "message": "subprocess.CalledProcessError: Command '['python', 'Assignment4.py', 'TerrestrialFoodWeb.txt']' returned non-zero exit status 1."
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 74,
+                        "message": ""
+                    },
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 16,
+                        "message": "in run_main_py"
+                    },
+                    {
+                        "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                        "lineno": 421,
+                        "message": "in check_output"
+                    },
+                    {
+                        "path": "/home/brad/.miniconda3/lib/python3.10/subprocess.py",
+                        "lineno": 526,
+                        "message": "CalledProcessError"
+                    }
+                ],
+                "stderr": "Traceback (most recent call last):\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 85, in <module>\n    main()\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 82, in main\n    calculate_heights(food_web)\n  File \"/tmp/code_ibsr22s3/Assignment4.py\", line 60, in calculate_heights\n    if heights[predator] <= heights[prey]:\nKeyError: 'Plants'\n",
+                "longrepr": "food_web_files = ('TerrestrialFoodWeb.txt', 'TerrestrialFoodWeb_Output.txt')\n\n    @pytest.fixture\n    def main_output(food_web_files):\n        input_file, _ = food_web_files\n>       return run_main_py(input_file)\n\ntest_Assignment4.py:74: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntest_Assignment4.py:16: in run_main_py\n    return subprocess.check_output([\"python\", script_name, input_file], universal_newlines=True)\n/home/brad/.miniconda3/lib/python3.10/subprocess.py:421: in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput = None, capture_output = False, timeout = None, check = True\npopenargs = (['python', 'Assignment4.py', 'TerrestrialFoodWeb.txt'],)\nkwargs = {'stdout': -1, 'universal_newlines': True}\nprocess = <Popen: returncode: 1 args: ['python', 'Assignment4.py', 'TerrestrialFoodWeb...>\nstdout = 'Predators and Prey:\\n  Goat eats Plants\\n  Jackal eats Goat and Rabbit\\n  Kite eats Snake and Mouse\\n  Lion eats Goat...Rabbit and Mouse\\nApex Predators: Kite, Lion and Owl\\nProducers: (None)\\nMost Flexible Eaters: Lion\\nTastiest: Mouse\\n'\nstderr = None, retcode = 1\n\n    def run(*popenargs,\n            input=None, capture_output=False, timeout=None, check=False, **kwargs):\n        \"\"\"Run command with arguments and return a CompletedProcess instance.\n    \n        The returned instance will have attributes args, returncode, stdout and\n        stderr. By default, stdout and stderr are not captured, and those attributes\n        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,\n        or pass capture_output=True to capture both.\n    \n        If check is True and the exit code was non-zero, it raises a\n        CalledProcessError. The CalledProcessError object will have the return code\n        in the returncode attribute, and output & stderr attributes if those streams\n        were captured.\n    \n        If timeout is given, and the process takes too long, a TimeoutExpired\n        exception will be raised.\n    \n        There is an optional argument \"input\", allowing you to\n        pass bytes or a string to the subprocess's stdin.  If you use this argument\n        you may not also use the Popen constructor's \"stdin\" argument, as\n        it will be used internally.\n    \n        By default, all communication is in bytes, and therefore any \"input\" should\n        be bytes, and the stdout and stderr will be bytes. If in text mode, any\n        \"input\" should be a string, and stdout and stderr will be strings decoded\n        according to locale encoding, or by \"encoding\" if set. Text mode is\n        triggered by setting any of text, encoding, errors or universal_newlines.\n    \n        The other arguments are the same as for the Popen constructor.\n        \"\"\"\n        if input is not None:\n            if kwargs.get('stdin') is not None:\n                raise ValueError('stdin and input arguments may not both be used.')\n            kwargs['stdin'] = PIPE\n    \n        if capture_output:\n            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:\n                raise ValueError('stdout and stderr arguments may not be used '\n                                 'with capture_output.')\n            kwargs['stdout'] = PIPE\n            kwargs['stderr'] = PIPE\n    \n        with Popen(*popenargs, **kwargs) as process:\n            try:\n                stdout, stderr = process.communicate(input, timeout=timeout)\n            except TimeoutExpired as exc:\n                process.kill()\n                if _mswindows:\n                    # Windows accumulates the output in a single blocking\n                    # read() call run on child threads, with the timeout\n                    # being done in a join() on those threads.  communicate()\n                    # _after_ kill() is required to collect that and add it\n                    # to the exception.\n                    exc.stdout, exc.stderr = process.communicate()\n                else:\n                    # POSIX _communicate already populated the output so\n                    # far into the TimeoutExpired exception.\n                    process.wait()\n                raise\n            except:  # Including KeyboardInterrupt, communicate handled that.\n                process.kill()\n                # We don't call process.wait() as .__exit__ does that for us.\n                raise\n            retcode = process.poll()\n            if check and retcode:\n>               raise CalledProcessError(retcode, process.args,\n                                         output=stdout, stderr=stderr)\nE               subprocess.CalledProcessError: Command '['python', 'Assignment4.py', 'TerrestrialFoodWeb.txt']' returned non-zero exit status 1.\n\n/home/brad/.miniconda3/lib/python3.10/subprocess.py:526: CalledProcessError"
+            },
+            "teardown": {
+                "duration": 0.00011298805475234985,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

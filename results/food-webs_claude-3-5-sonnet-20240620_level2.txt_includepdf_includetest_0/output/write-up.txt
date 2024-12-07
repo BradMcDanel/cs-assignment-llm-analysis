@@ -1,0 +1,27 @@
+This implementation follows the requirements outlined in the assignment:
+
+1. Command-line argument handling: The program reads the food web file name from sys.argv[1]. If no argument is provided or too many arguments are given, it displays an error message and exits.
+
+2. File handling: The program attempts to open and read the specified file. If the file is not found, it displays an appropriate error message and exits.
+
+3. Data structure: The predator-prey relationships are stored in a dictionary where keys are predator names and values are lists of prey.
+
+4. Single file read: The file is only read once, in the load_food_web function.
+
+5. File closing: The file is opened using a 'with' statement, ensuring it's properly closed after reading.
+
+6. Function usage: The program is divided into appropriate functions for each part of the analysis (parts 2 through 6), with the main function orchestrating the overall flow.
+
+7. Code organization: All code is within function definitions, except for import statements and the call to the main function.
+
+8. No nested functions: Functions are defined at the top level, not nested within other functions.
+
+9. No global variables: The program doesn't use any global variables. Data is passed between functions as parameters and return values.
+
+10. Error handling: Basic error checking is implemented for file opening and command-line arguments.
+
+11. Coding style: The code uses meaningful variable names, includes comments for each function describing its purpose, parameters, and return values, and follows Python style guidelines.
+
+12. No use of break or continue: The implementation avoids using break and continue statements as requested.
+
+The program should correctly analyze various food webs and produce output matching the expected format for each part of the assignment.

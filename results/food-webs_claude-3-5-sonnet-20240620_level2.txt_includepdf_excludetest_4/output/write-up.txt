@@ -1,0 +1,22 @@
+This Python program analyzes food webs based on predator-prey relationships. Here's a brief explanation of its structure and functionality:
+
+1. The program uses a dictionary to store the food web, with predators as keys and lists of prey as values.
+
+2. It reads the food web data from a file specified as a command-line argument or prompts the user for input if no argument is provided.
+
+3. The main function orchestrates the analysis by calling various helper functions:
+
+   - display_predators_and_prey: Shows each predator and its prey.
+   - get_apex_predators and display_apex_predators: Identifies and displays apex predators (those not eaten by any other organism).
+   - get_producers and display_producers: Identifies and displays producers (organisms that don't eat any others).
+   - get_most_flexible_eaters and display_most_flexible_eaters: Finds and shows organisms that eat the most different prey.
+   - get_tastiest_organisms and display_tastiest_organisms: Determines and displays organisms eaten by the most predators.
+   - get_heights and display_heights: Calculates and shows the height of each organism in the food web.
+
+4. The program uses the provided formatList function to format output lists.
+
+5. Error handling is implemented for file opening and command-line arguments.
+
+6. The code is structured with separate functions for each analysis task, promoting modularity and readability.
+
+This implementation fulfills all the requirements specified in the assignment, including proper file handling, error checking, appropriate use of functions, and adherence to good programming style.

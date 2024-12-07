@@ -1,0 +1,288 @@
+{
+    "created": 1730996120.5940564,
+    "duration": 0.030593156814575195,
+    "exitcode": 1,
+    "root": "/tmp/code_mx7__l15",
+    "environment": {},
+    "summary": {
+        "failed": 3,
+        "passed": 5,
+        "total": 8,
+        "collected": 8
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_enigma.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_enigma.py::test_enigma_initialization",
+                    "type": "Function",
+                    "lineno": 6
+                },
+                {
+                    "nodeid": "test_enigma.py::test_key_press_and_release",
+                    "type": "Function",
+                    "lineno": 11
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_advance",
+                    "type": "Function",
+                    "lineno": 20
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_click",
+                    "type": "Function",
+                    "lineno": 29
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_encryption",
+                    "type": "Function",
+                    "lineno": 37
+                },
+                {
+                    "nodeid": "test_enigma.py::test_enigma_decryption",
+                    "type": "Function",
+                    "lineno": 48
+                },
+                {
+                    "nodeid": "test_enigma.py::test_rotor_full_rotation",
+                    "type": "Function",
+                    "lineno": 70
+                },
+                {
+                    "nodeid": "test_enigma.py::test_reflector",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_enigma.py::test_enigma_initialization",
+            "lineno": 6,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_initialization",
+                "test_enigma.py",
+                "code_mx7__l15"
+            ],
+            "setup": {
+                "duration": 9.820284321904182e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00011848285794258118,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_mx7__l15/test_enigma.py",
+                    "lineno": 10,
+                    "message": "assert False\n +  where False = all(<generator object test_enigma_initialization.<locals>.<genexpr> at 0x78458067db60>)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 10,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_enigma_initialization():\n        model = EnigmaModel()\n        assert len(model._rotors) == N_ROTORS\n>       assert all(model.get_rotor_letter(i) == 'A' for i in range(N_ROTORS))\nE       assert False\nE        +  where False = all(<generator object test_enigma_initialization.<locals>.<genexpr> at 0x78458067db60>)\n\ntest_enigma.py:10: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.00011550704948604107,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_key_press_and_release",
+            "lineno": 11,
+            "outcome": "passed",
+            "keywords": [
+                "test_key_press_and_release",
+                "test_enigma.py",
+                "code_mx7__l15"
+            ],
+            "setup": {
+                "duration": 6.81320670992136e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.324098937213421e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.561408422887325e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_advance",
+            "lineno": 20,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_advance",
+                "test_enigma.py",
+                "code_mx7__l15"
+            ],
+            "setup": {
+                "duration": 4.7931913286447525e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.70761801302433e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.898702561855316e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_click",
+            "lineno": 29,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_click",
+                "test_enigma.py",
+                "code_mx7__l15"
+            ],
+            "setup": {
+                "duration": 4.245014861226082e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.066705100238323e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.829901106655598e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_encryption",
+            "lineno": 37,
+            "outcome": "passed",
+            "keywords": [
+                "test_enigma_encryption",
+                "test_enigma.py",
+                "code_mx7__l15"
+            ],
+            "setup": {
+                "duration": 4.232092760503292e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.820292375981808e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 3.904709592461586e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_enigma_decryption",
+            "lineno": 48,
+            "outcome": "failed",
+            "keywords": [
+                "test_enigma_decryption",
+                "test_enigma.py",
+                "code_mx7__l15"
+            ],
+            "setup": {
+                "duration": 4.285410977900028e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0002113059163093567,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_mx7__l15/test_enigma.py",
+                    "lineno": 69,
+                    "message": "AssertionError: assert 'NORUT' == 'HELLO'\n  - HELLO\n  + NORUT"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 69,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_enigma_decryption():\n        model = EnigmaModel()\n        plaintext = \"HELLO\"\n        ciphertext = \"\"\n        for char in plaintext:\n            model.key_pressed(char)\n            ciphertext += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n    \n        # Reset rotor positions\n        for i in range(N_ROTORS):\n            while model.get_rotor_letter(i) != 'A':\n                model.rotor_clicked(i)\n    \n        decrypted = \"\"\n        for char in ciphertext:\n            model.key_pressed(char)\n            decrypted += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n    \n>       assert decrypted == plaintext\nE       AssertionError: assert 'NORUT' == 'HELLO'\nE         - HELLO\nE         + NORUT\n\ntest_enigma.py:69: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.154807776212692e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_rotor_full_rotation",
+            "lineno": 70,
+            "outcome": "passed",
+            "keywords": [
+                "test_rotor_full_rotation",
+                "test_enigma.py",
+                "code_mx7__l15"
+            ],
+            "setup": {
+                "duration": 5.8555975556373596e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0001460239291191101,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 4.17390838265419e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_enigma.py::test_reflector",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_reflector",
+                "test_enigma.py",
+                "code_mx7__l15"
+            ],
+            "setup": {
+                "duration": 4.453281871974468e-05,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0002582238521426916,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_mx7__l15/test_enigma.py",
+                    "lineno": 107,
+                    "message": "AssertionError: Inconsistent encryption for A\nassert 'F' == 'Z'\n  - Z\n  + F"
+                },
+                "traceback": [
+                    {
+                        "path": "test_enigma.py",
+                        "lineno": 107,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "def test_reflector():\n        model = EnigmaModel()\n        results = {}\n        for char in ALPHABET:\n            model.key_pressed(char)\n            result = next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n            results[char] = result\n    \n        # Check that we have 13 pairs of letters\n        assert len(set(results.values())) == 13\n    \n        # Check that no letter encrypts to itself\n        for char, result in results.items():\n            assert char != result\n    \n        # Reset rotors\n        for i in range(N_ROTORS):\n            while model.get_rotor_letter(i) != 'A':\n                model.rotor_clicked(i)\n    \n        # Check consistency of encryption\n        for char, expected_result in results.items():\n            model.key_pressed(char)\n            actual_result = next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n>           assert actual_result == expected_result, f\"Inconsistent encryption for {char}\"\nE           AssertionError: Inconsistent encryption for A\nE           assert 'F' == 'Z'\nE             - Z\nE             + F\n\ntest_enigma.py:107: AssertionError"
+            },
+            "teardown": {
+                "duration": 6.351596675813198e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

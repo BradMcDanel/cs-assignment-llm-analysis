@@ -1,0 +1,7 @@
+This Python program, profile.py, reads a CSV file containing STR counts for a list of individuals and a text file containing a DNA sequence. It then identifies to whom the DNA sequence most likely belongs by computing the longest run of consecutive repeats of each STR in the DNA sequence and matching it with the individuals in the CSV file.
+
+The program first reads the CSV file and the DNA sequence file into memory. For each STR in the CSV file, it computes the longest run of consecutive repeats in the DNA sequence. It then compares these counts with the individuals in the CSV file and prints the name of the matching individual if there is an exact match.
+
+If there is no exact match, it prints "No match". The program uses a helper function, compute_longest_run, to calculate the longest run of consecutive repeats for a given STR sequence in the DNA sequence.
+
+The program demonstrates the use of file I/O, string manipulation, and algorithmic thinking to solve a real-world problem of DNA profiling. It provides a practical application of Python programming concepts such as loops and dictionaries.

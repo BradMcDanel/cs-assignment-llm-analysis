@@ -1,0 +1,240 @@
+{
+    "created": 1731003636.6048458,
+    "duration": 0.03662276268005371,
+    "exitcode": 1,
+    "root": "/tmp/code_gjxwj61_",
+    "environment": {},
+    "summary": {
+        "failed": 4,
+        "passed": 1,
+        "total": 5,
+        "collected": 5
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py::test_valid_guess",
+                    "type": "Function",
+                    "lineno": 111
+                },
+                {
+                    "nodeid": "test_wordle.py::test_invalid_guess",
+                    "type": "Function",
+                    "lineno": 122
+                },
+                {
+                    "nodeid": "test_wordle.py::test_correct_color_update",
+                    "type": "Function",
+                    "lineno": 134
+                },
+                {
+                    "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+                    "type": "Function",
+                    "lineno": 143
+                },
+                {
+                    "nodeid": "test_wordle.py::test_game_over_condition",
+                    "type": "Function",
+                    "lineno": 156
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_wordle.py::test_valid_guess",
+            "lineno": 111,
+            "outcome": "failed",
+            "keywords": [
+                "test_valid_guess",
+                "test_wordle.py",
+                "code_gjxwj61_"
+            ],
+            "setup": {
+                "duration": 0.0001875970046967268,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 9.148311801254749e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_gjxwj61_/Wordle.py",
+                    "lineno": 25,
+                    "message": "IndexError: string index out of range"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 115,
+                        "message": ""
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 25,
+                        "message": "IndexError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x7206070fdff0>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x720606fe0f70>\n\n    def test_valid_guess(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n>       mock_window.enter_listeners[0]('apple'.upper())\n\ntest_wordle.py:115: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = 'APPLE'\n\n    def enter_action(s):\n        nonlocal current_row\n        guess = s.strip().lower()\n        if guess not in FIVE_LETTER_WORDS:\n            gw.show_message(\"Not in word list\")\n            return\n    \n        # Check if the guess matches the hidden word\n        correct = True\n        hidden_word = gw.get_square_letter(current_row, 0).lower()\n        letter_count = {}\n    \n        # Calculate letter frequency in hidden word\n        for letter in hidden_word:\n            letter_count[letter] = letter_count.get(letter, 0) + 1\n    \n        # First pass: mark correct positions\n        for col in range(N_COLS):\n            guessed_letter = guess[col]\n>           if guessed_letter == hidden_word[col]:\nE           IndexError: string index out of range\n\nWordle.py:25: IndexError"
+            },
+            "teardown": {
+                "duration": 0.0001763210166245699,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_invalid_guess",
+            "lineno": 122,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_guess",
+                "test_wordle.py",
+                "code_gjxwj61_"
+            ],
+            "setup": {
+                "duration": 0.0001502449158579111,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00012174108996987343,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.726616993546486e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_correct_color_update",
+            "lineno": 134,
+            "outcome": "failed",
+            "keywords": [
+                "test_correct_color_update",
+                "test_wordle.py",
+                "code_gjxwj61_"
+            ],
+            "setup": {
+                "duration": 0.0001232801005244255,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.165106944739819e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_gjxwj61_/Wordle.py",
+                    "lineno": 25,
+                    "message": "IndexError: string index out of range"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 138,
+                        "message": ""
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 25,
+                        "message": "IndexError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x7206070e6c50>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x720606fe32e0>\n\n    def test_correct_color_update(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n>       mock_window.enter_listeners[0]('apple'.upper())\n\ntest_wordle.py:138: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = 'APPLE'\n\n    def enter_action(s):\n        nonlocal current_row\n        guess = s.strip().lower()\n        if guess not in FIVE_LETTER_WORDS:\n            gw.show_message(\"Not in word list\")\n            return\n    \n        # Check if the guess matches the hidden word\n        correct = True\n        hidden_word = gw.get_square_letter(current_row, 0).lower()\n        letter_count = {}\n    \n        # Calculate letter frequency in hidden word\n        for letter in hidden_word:\n            letter_count[letter] = letter_count.get(letter, 0) + 1\n    \n        # First pass: mark correct positions\n        for col in range(N_COLS):\n            guessed_letter = guess[col]\n>           if guessed_letter == hidden_word[col]:\nE           IndexError: string index out of range\n\nWordle.py:25: IndexError"
+            },
+            "teardown": {
+                "duration": 9.456486441195011e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+            "lineno": 143,
+            "outcome": "failed",
+            "keywords": [
+                "test_present_and_missing_color_update",
+                "test_wordle.py",
+                "code_gjxwj61_"
+            ],
+            "setup": {
+                "duration": 0.00013945880346000195,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.958493031561375e-05,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_gjxwj61_/Wordle.py",
+                    "lineno": 25,
+                    "message": "IndexError: string index out of range"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 147,
+                        "message": ""
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 25,
+                        "message": "IndexError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x7206077b2e60>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x720606fe3370>\n\n    def test_present_and_missing_color_update(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n>       mock_window.enter_listeners[0]('ample'.upper())\n\ntest_wordle.py:147: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = 'AMPLE'\n\n    def enter_action(s):\n        nonlocal current_row\n        guess = s.strip().lower()\n        if guess not in FIVE_LETTER_WORDS:\n            gw.show_message(\"Not in word list\")\n            return\n    \n        # Check if the guess matches the hidden word\n        correct = True\n        hidden_word = gw.get_square_letter(current_row, 0).lower()\n        letter_count = {}\n    \n        # Calculate letter frequency in hidden word\n        for letter in hidden_word:\n            letter_count[letter] = letter_count.get(letter, 0) + 1\n    \n        # First pass: mark correct positions\n        for col in range(N_COLS):\n            guessed_letter = guess[col]\n>           if guessed_letter == hidden_word[col]:\nE           IndexError: string index out of range\n\nWordle.py:25: IndexError"
+            },
+            "teardown": {
+                "duration": 0.00010073999874293804,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_game_over_condition",
+            "lineno": 156,
+            "outcome": "failed",
+            "keywords": [
+                "test_game_over_condition",
+                "test_wordle.py",
+                "code_gjxwj61_"
+            ],
+            "setup": {
+                "duration": 0.00013800500892102718,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00010837381705641747,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_gjxwj61_/Wordle.py",
+                    "lineno": 25,
+                    "message": "IndexError: string index out of range"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 163,
+                        "message": ""
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 25,
+                        "message": "IndexError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x7206070fe260>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x720606fe0ee0>\n\n    def test_game_over_condition(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n    \n        # Make six incorrect guesses\n        for _ in range(6):\n>           mock_window.enter_listeners[0]('wrong'.upper())\n\ntest_wordle.py:163: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = 'WRONG'\n\n    def enter_action(s):\n        nonlocal current_row\n        guess = s.strip().lower()\n        if guess not in FIVE_LETTER_WORDS:\n            gw.show_message(\"Not in word list\")\n            return\n    \n        # Check if the guess matches the hidden word\n        correct = True\n        hidden_word = gw.get_square_letter(current_row, 0).lower()\n        letter_count = {}\n    \n        # Calculate letter frequency in hidden word\n        for letter in hidden_word:\n            letter_count[letter] = letter_count.get(letter, 0) + 1\n    \n        # First pass: mark correct positions\n        for col in range(N_COLS):\n            guessed_letter = guess[col]\n>           if guessed_letter == hidden_word[col]:\nE           IndexError: string index out of range\n\nWordle.py:25: IndexError"
+            },
+            "teardown": {
+                "duration": 8.927984163165092e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

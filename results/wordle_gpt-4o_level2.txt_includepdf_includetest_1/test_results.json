@@ -1,0 +1,196 @@
+{
+    "created": 1731003411.3245137,
+    "duration": 0.030514001846313477,
+    "exitcode": 1,
+    "root": "/tmp/code_au6olqo7",
+    "environment": {},
+    "summary": {
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "collected": 5
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_wordle.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_wordle.py::test_valid_guess",
+                    "type": "Function",
+                    "lineno": 111
+                },
+                {
+                    "nodeid": "test_wordle.py::test_invalid_guess",
+                    "type": "Function",
+                    "lineno": 122
+                },
+                {
+                    "nodeid": "test_wordle.py::test_correct_color_update",
+                    "type": "Function",
+                    "lineno": 134
+                },
+                {
+                    "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+                    "type": "Function",
+                    "lineno": 143
+                },
+                {
+                    "nodeid": "test_wordle.py::test_game_over_condition",
+                    "type": "Function",
+                    "lineno": 156
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_wordle.py::test_valid_guess",
+            "lineno": 111,
+            "outcome": "passed",
+            "keywords": [
+                "test_valid_guess",
+                "test_wordle.py",
+                "code_au6olqo7"
+            ],
+            "setup": {
+                "duration": 0.00017111189663410187,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 6.909901276230812e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 7.055187597870827e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_invalid_guess",
+            "lineno": 122,
+            "outcome": "passed",
+            "keywords": [
+                "test_invalid_guess",
+                "test_wordle.py",
+                "code_au6olqo7"
+            ],
+            "setup": {
+                "duration": 0.00011224113404750824,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.970910519361496e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.741308607161045e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_correct_color_update",
+            "lineno": 134,
+            "outcome": "passed",
+            "keywords": [
+                "test_correct_color_update",
+                "test_wordle.py",
+                "code_au6olqo7"
+            ],
+            "setup": {
+                "duration": 0.00010628602467477322,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.649914965033531e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.68051652610302e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_present_and_missing_color_update",
+            "lineno": 143,
+            "outcome": "passed",
+            "keywords": [
+                "test_present_and_missing_color_update",
+                "test_wordle.py",
+                "code_au6olqo7"
+            ],
+            "setup": {
+                "duration": 0.00011068396270275116,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 5.9443991631269455e-05,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 6.129918619990349e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_wordle.py::test_game_over_condition",
+            "lineno": 156,
+            "outcome": "failed",
+            "keywords": [
+                "test_game_over_condition",
+                "test_wordle.py",
+                "code_au6olqo7"
+            ],
+            "setup": {
+                "duration": 0.00010431790724396706,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0002441450487822294,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_au6olqo7/test_wordle.py",
+                    "lineno": 31,
+                    "message": "IndexError: list index out of range"
+                },
+                "traceback": [
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 163,
+                        "message": ""
+                    },
+                    {
+                        "path": "Wordle.py",
+                        "lineno": 39,
+                        "message": "in enter_action"
+                    },
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 52,
+                        "message": "in set_current_row"
+                    },
+                    {
+                        "path": "test_wordle.py",
+                        "lineno": 31,
+                        "message": "IndexError"
+                    }
+                ],
+                "longrepr": "mock_window = <test_wordle.MockWordleGWindow object at 0x78090efafca0>\nset_target_word = <function set_target_word.<locals>._set_target_word at 0x78090e7dcee0>\n\n    def test_game_over_condition(mock_window, set_target_word):\n        set_target_word('apple')\n        wordle()\n    \n        # Make six incorrect guesses\n        for _ in range(6):\n>           mock_window.enter_listeners[0]('wrong'.upper())\n\ntest_wordle.py:163: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nWordle.py:39: in enter_action\n    gw.set_current_row(current_row + 1)\ntest_wordle.py:52: in set_current_row\n    self.set_square_letter(row, col, \" \")\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <test_wordle.MockWordleGWindow object at 0x78090efafca0>, row = 6\ncol = 0, ch = ' '\n\n    def set_square_letter(self, row, col, ch):\n>       self.squares[row][col]['letter'] = ch\nE       IndexError: list index out of range\n\ntest_wordle.py:31: IndexError"
+            },
+            "teardown": {
+                "duration": 0.00010162312537431717,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

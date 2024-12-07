@@ -1,0 +1,25 @@
+Name: [Your Name]
+Student Number: [Your Student Number]
+
+Description:
+This program analyzes food webs from a CSV file containing predator-prey relationships. The program
+reads the data, processes it, and outputs various characteristics of the food web such as apex predators,
+producers, most flexible eaters, tastiest organisms, and the height of each organism in the food web.
+The program is divided into several functions, each handling a specific part of the assignment.
+
+Functions:
+- read_food_web_file: Reads and parses the food web data from a file.
+- display_predators_and_prey: Displays each predator and its prey.
+- identify_apex_predators: Finds and displays apex predators.
+- identify_producers: Identifies and displays producers.
+- identify_most_flexible_eaters: Finds organisms that eat the most types of prey.
+- identify_tastiest_organism: Finds organisms that are eaten by the most predators.
+- determine_heights: Calculates and displays the height of each organism in the food web.
+
+The program uses the `formatList` function from the `formatList.py` script to generate nicely formatted
+output for lists. The solution adheres to all requirements, including command line argument handling,
+error checking, and file reading conventions.
+
+For testing, I used the `sys.argv` override technique inside IDLE as recommended.
+
+End of write-up.

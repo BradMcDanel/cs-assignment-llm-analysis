@@ -1,0 +1,6 @@
+I have implemented the profile.py program as instructed. The program reads a CSV file containing STR counts for a list of individuals and a text file containing a DNA sequence to identify. It then computes the longest run of consecutive repeats of each STR in the DNA sequence and matches it with the individuals in the CSV file to identify the most likely owner of the DNA sequence. The program outputs the name of the matching individual or "No match" if there is no match.
+
+I have also included test cases in the test_profile.py script to verify the functionality of the program using unittest.
+
+To run the program, use the command:
+$ python profile.py data.csv sequence.txt

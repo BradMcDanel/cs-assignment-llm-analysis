@@ -1,0 +1,8 @@
+I have provided Python code snippets for implementing the Wordle game in stages as per the milestones outlined in the assignment. Each code snippet corresponds to a specific milestone and includes the necessary functions and logic to achieve the milestone objectives.
+
+- The first code block (wordle_milestone_1.py) picks a random word from the dictionary and displays it in the first row of boxes.
+- The second code block (wordle_milestone_2.py) checks whether the entered word is valid and displays appropriate messages.
+- The third code block (wordle_milestone_3.py) colors the boxes based on the correctness of the guessed word and progresses to the next row.
+- The fourth code block (wordle_milestone_4.py) colors the keys on the virtual keyboard based on the correctness of the letters in the guessed word.
+
+Please incorporate these code snippets into the Wordle project to achieve the specified milestones effectively.

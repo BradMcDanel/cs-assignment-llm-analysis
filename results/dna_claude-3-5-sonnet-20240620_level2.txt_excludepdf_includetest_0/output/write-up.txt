@@ -1,0 +1,30 @@
+This Python program implements a DNA profiling system that can identify individuals based on Short Tandem Repeats (STRs) in their DNA. Here's an overview of how the program works:
+
+1. Command-line arguments:
+   The program expects two command-line arguments:
+   - The name of a CSV file containing STR counts for individuals
+   - The name of a text file containing the DNA sequence to identify
+
+2. Reading input files:
+   - The CSV file is read using the csv module's DictReader, which creates a list of dictionaries representing each person's STR counts.
+   - The DNA sequence is read from the text file as a single string.
+
+3. STR counting:
+   - The program extracts the list of STRs from the CSV header.
+   - For each STR, it computes the longest run of consecutive repeats in the DNA sequence using the longest_match function.
+
+4. Matching:
+   - The program compares the computed STR counts against each person in the database.
+   - If an exact match is found for all STRs, it prints the person's name and exits.
+   - If no match is found, it prints "No match".
+
+5. The longest_match function:
+   - This helper function finds the longest run of consecutive repeats for a given STR in the DNA sequence.
+   - It uses a sliding window approach to check for repeats at each position in the sequence.
+
+The program efficiently handles the DNA profiling task by:
+- Using CSV and file I/O operations to read input data.
+- Employing string manipulation to analyze the DNA sequence.
+- Utilizing dictionaries and lists for efficient data storage and comparison.
+
+This implementation demonstrates the practical application of computer science concepts in the field of computational biology, showcasing how algorithms and data structures can be used to solve real-world problems in genetics and forensic science.

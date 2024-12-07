@@ -1,0 +1,6 @@
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+In this project, I learned how to analyze real-world data using Python dictionaries. I discovered the importance of meaningful variable names and comments for code readability. The project provided insights into the representation of different races in fatal police shootings and how it compares to the overall population demographics of the United States.

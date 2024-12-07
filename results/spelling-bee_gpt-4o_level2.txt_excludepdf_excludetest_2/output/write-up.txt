@@ -1,0 +1,14 @@
+**Milestone #1: Initialize the Beehive**
+In this milestone, we implemented the `puzzle_action` function to validate the input puzzle string. The function checks for exact seven unique alphabetic characters. If valid, it updates the beehive letters and displays a success message. Otherwise, it shows an error message.
+
+**Milestone #2: Display Legal Words**
+The `solve_action` function was updated to iterate through the dictionary, checking each word against the puzzle rules. Valid words are added to the display with their scores. The function also keeps track of the total score and number of words found.
+
+**Milestone #3: Scoring System**
+Implemented the scoring system where four-letter words score 1 point, longer words score their length in points, and pangrams get a 7-point bonus. The total score and number of words found are displayed to the user.
+
+**Milestone #4: User Interaction**
+This milestone involves allowing the user to input words and verify them against the puzzle. It wasn't fully implemented in the provided code but would involve adding a new text field for user input, verifying the word, and updating the display and score if valid.
+
+**Refactoring and Enhancements**
+Throughout the project, code refactoring was necessary to maintain clean and organized logic. Functions were broken down to handle specific tasks, making the implementation modular and easier to manage.

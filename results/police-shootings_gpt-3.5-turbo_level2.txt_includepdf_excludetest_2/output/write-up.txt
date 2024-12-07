@@ -1,0 +1,2 @@
+# In the write-up file, summarize the project, describe the tasks, and explain the process and outcomes of working with the data.
+# Include any challenges faced and lessons learned during the project.

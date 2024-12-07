@@ -1,0 +1,5 @@
+This Wordle implementation follows the milestones laid out in the assignment. We select a random word from the provided dictionary and display it on the grid. User input is checked against the dictionary to ensure it's a valid word. The grid is colored based on the user's guess, indicating correct, present, or missing letters. Finally, the virtual keyboard is updated to reflect the status of each letter.
+
+The game progresses row by row, and the user gets feedback on whether the guessed word is correct. The implementation respects the rules of Wordle, including handling duplicate letters carefully.
+
+Possible extensions could involve adding a more balanced dictionary, enhancing graphics, or maintaining user scores across sessions.

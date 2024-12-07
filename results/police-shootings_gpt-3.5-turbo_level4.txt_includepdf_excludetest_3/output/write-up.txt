@@ -1,0 +1,39 @@
+Fatal Police Shootings
+
+Task 1:
+Question 1:
+The data on fatal police shootings compiled by the Washington Post includes details such as the name, date, armed status, age, gender, race, state, and location of the incident. The data originates from the Washington Post's compilation efforts.
+
+Question 2:
+- id: Identifier for the shooting incident.
+  Examples: 3, 4, 5
+- date: Date of the shooting.
+  Examples: 2015-01-02, 2015-01-03, 2015-01-04
+- threat_type: Type of threat during the incident.
+  Examples: point, move, attack
+- flee_status: Fleeing status of the subject.
+  Examples: not, car, foot
+- ...
+
+Question 3:
+The percent of the United States population that is black is approximately 13.4% (as of 2021). [Source: U.S. Census Bureau]
+
+Task 2:
+Question 1:
+The columns "name", "date", "armed", "age", "gender", "race", and "state" from the data file are stored in the database.
+
+Question 2:
+The entry_id from the first column is used as the keys in the dictionary.
+
+Question 3:
+The type of the values in the dictionary is dict.
+
+Question 4:
+The values in the database store information about specific fatal police shootings, including details like name, date, armed status, age, gender, race, and state.
+
+Task 3:
+Question 1:
+The proportion of black subjects in fatal police shootings is higher compared to their representation in the United States population.
+
+Question 2:
+The proportion of black subjects in fatal police shootings where the subject is unarmed is higher compared to their representation in the United States population, and also higher compared to the proportion of black subjects in all police shootings.

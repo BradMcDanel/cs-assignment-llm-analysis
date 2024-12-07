@@ -1,0 +1,5 @@
+This project implements a simplified version of the popular Wordle game. The game randomly selects a word from a list of five-letter words and displays a graphical interface where the user can guess the word within six attempts.
+
+Milestone 1 involved selecting a random word and displaying it on the first row for testing purposes. Milestone 2 added functionality to check if the user's input is a valid word from the list and display a message accordingly. Milestone 3 implemented the core game logic of coloring the boxes based on correct, present, and missing letters in the user's guess. Finally, Milestone 4 enhanced the user experience by coloring the virtual keyboard keys based on the guesses, providing additional visual feedback to the player.
+
+The project can be extended with various features, such as maintaining scores across games, enhancing graphics, or even adding new game modes.

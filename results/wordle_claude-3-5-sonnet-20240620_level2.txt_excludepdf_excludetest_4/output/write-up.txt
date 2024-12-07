@@ -1,0 +1,29 @@
+Implementation details:
+
+1. The program chooses a random 5-letter word from the provided FIVE_LETTER_WORDS list.
+
+2. The secret word is displayed in the first row for testing purposes. This can be removed in the final version.
+
+3. The enter_action function is called when the user presses Enter:
+   - It checks if the guessed word is in the word list.
+   - If not, it displays "Not in word list" message.
+   - If it is, it colors the squares and keyboard keys appropriately.
+
+4. Coloring logic:
+   - Green for correct letters in correct positions.
+   - Yellow for correct letters in wrong positions.
+   - Gray for letters not in the word.
+
+5. The program keeps track of the current row and moves to the next row after each guess.
+
+6. The game ends when the word is guessed correctly or after 6 guesses.
+
+7. Appropriate messages are displayed for winning or losing the game.
+
+This implementation covers all the required milestones:
+- Milestone 1: Picks a random word and displays it.
+- Milestone 2: Checks if entered words are valid.
+- Milestone 3: Colors the boxes based on the guess.
+- Milestone 4: Colors the keyboard keys.
+
+The code uses the provided WordleGraphics module for all graphical operations and adheres to the game rules as described in the assignment.

@@ -1,0 +1,9 @@
+# In this solution, I have implemented a Python script named SpellingBeeSolver.py to solve the Spelling Bee puzzle as described in the assignment. The script reads the dictionary of English words from the provided file, checks if a word is valid based on the rules mentioned, and then displays the valid words on the screen.
+
+# The script consists of functions to read the dictionary, validate a word based on the puzzle letters, and solve the puzzle by iterating through the dictionary. The solve_action function is called when the user clicks the Solve button, and it clears the word list before solving the puzzle.
+
+# The spelling_bee function initializes the program by reading the dictionary and setting up the puzzle and solve actions. The puzzle_action function validates the user input for the puzzle and updates the beehive letters if the input is valid.
+
+# The script follows the provided guidelines for milestones and handles the functionality incrementally. It integrates with the SpellingBeeGraphics library to interact with the graphical interface provided.
+
+# Overall, this solution provides a basis for solving the Spelling Bee puzzle and can be extended further as per the possible extensions suggested in the assignment.

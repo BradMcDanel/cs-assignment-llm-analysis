@@ -1,0 +1,278 @@
+{
+    "created": 1730998302.6075761,
+    "duration": 0.11958765983581543,
+    "exitcode": 1,
+    "root": "/tmp/code_s1mmm9zh",
+    "environment": {},
+    "summary": {
+        "failed": 6,
+        "total": 6,
+        "collected": 6
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_Assignment4.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_Assignment4.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files0]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files1]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files2]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files3]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files4]",
+                    "type": "Function",
+                    "lineno": 80
+                },
+                {
+                    "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files5]",
+                    "type": "Function",
+                    "lineno": 80
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files0]",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_predators_and_prey[food_web_files0]",
+                "food_web_files0",
+                "test_Assignment4.py",
+                "code_s1mmm9zh"
+            ],
+            "setup": {
+                "duration": 0.01666063000448048,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0003272290341556072,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_s1mmm9zh/test_Assignment4.py",
+                    "lineno": 85,
+                    "message": "AssertionError: Predators and Prey mismatch. \n  Expected: ['Fox eats Insectivor Bird, Mouse, Rabbit, Seed Eating Bird, Squirrel and Toad', 'Hawk eats Insectivor Bird, Rabbit, Seed Eating Bird and Squirrel', 'Herbivor Insect eats Plants', 'Insectivor Bird eats Herbivor Insect and Spider', 'Mouse eats Plants', 'Predaceous Insect eats Herbivor Insect', 'Rabbit eats Plants', 'Seed Eating Bird eats Plants', 'Snake eats Herbivor Insect, Insectivor Bird, Mouse, Predaceous Insect, Seed Eating Bird and Toad', 'Spider eats Herbivor Insect and Predaceous Insect', 'Squirrel eats Plants', 'Toad eats Predaceous Insect']\n  Got: []\nassert False\n +  where False = compare_lists([], ['Fox eats Insectivor Bird, Mouse, Rabbit, Seed Eating Bird, Squirrel and Toad', 'Hawk eats Insectivor Bird, Rabbit, S... 'Insectivor Bird eats Herbivor Insect and Spider', 'Mouse eats Plants', 'Predaceous Insect eats Herbivor Insect', ...], is_predator_prey=True)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 85,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "main_output = ''\nexpected_output = 'Predators and Prey:\\n  Fox eats Insectivor Bird, Mouse, Rabbit, Seed Eating Bird, Squirrel and Toad\\n  Hawk eats Inse...and Squirrel\\n  Omnivores: (None)\\n  Carnivores: Fox, Hawk, Insectivor Bird, Predaceous Insect, Snake, Spider and Toad'\n\n    def test_predators_and_prey(main_output, expected_output):\n        main_predators = extract_section(main_output, \"Predators and Prey\")\n        expected_predators = extract_section(expected_output, \"Predators and Prey\")\n    \n>       assert compare_lists(main_predators, expected_predators, is_predator_prey=True), \\\n            f\"Predators and Prey mismatch. \\nExpected: {expected_predators}\\nGot: {main_predators}\"\nE       AssertionError: Predators and Prey mismatch. \nE         Expected: ['Fox eats Insectivor Bird, Mouse, Rabbit, Seed Eating Bird, Squirrel and Toad', 'Hawk eats Insectivor Bird, Rabbit, Seed Eating Bird and Squirrel', 'Herbivor Insect eats Plants', 'Insectivor Bird eats Herbivor Insect and Spider', 'Mouse eats Plants', 'Predaceous Insect eats Herbivor Insect', 'Rabbit eats Plants', 'Seed Eating Bird eats Plants', 'Snake eats Herbivor Insect, Insectivor Bird, Mouse, Predaceous Insect, Seed Eating Bird and Toad', 'Spider eats Herbivor Insect and Predaceous Insect', 'Squirrel eats Plants', 'Toad eats Predaceous Insect']\nE         Got: []\nE       assert False\nE        +  where False = compare_lists([], ['Fox eats Insectivor Bird, Mouse, Rabbit, Seed Eating Bird, Squirrel and Toad', 'Hawk eats Insectivor Bird, Rabbit, S... 'Insectivor Bird eats Herbivor Insect and Spider', 'Mouse eats Plants', 'Predaceous Insect eats Herbivor Insect', ...], is_predator_prey=True)\n\ntest_Assignment4.py:85: AssertionError"
+            },
+            "teardown": {
+                "duration": 0.00012586801312863827,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files1]",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_predators_and_prey[food_web_files1]",
+                "food_web_files1",
+                "test_Assignment4.py",
+                "code_s1mmm9zh"
+            ],
+            "setup": {
+                "duration": 0.017446730053052306,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00017647398635745049,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_s1mmm9zh/test_Assignment4.py",
+                    "lineno": 85,
+                    "message": "AssertionError: Predators and Prey mismatch. \n  Expected: ['Bird eats Crab, Limpets, Mussels, Prawn and Whelk', 'Crab eats Limpets and Mussels', 'Fish eats Prawn', 'Limpets eats Seaweed', 'Lobster eats Crab, Limpets, Mussels and Whelk', 'Mussels eats Phytoplankton and Zooplankton', 'Prawn eats Zooplankton', 'Whelk eats Limpets and Mussels', 'Zooplankton eats Phytoplankton']\n  Got: []\nassert False\n +  where False = compare_lists([], ['Bird eats Crab, Limpets, Mussels, Prawn and Whelk', 'Crab eats Limpets and Mussels', 'Fish eats Prawn', 'Limpets eats Seaweed', 'Lobster eats Crab, Limpets, Mussels and Whelk', 'Mussels eats Phytoplankton and Zooplankton', ...], is_predator_prey=True)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 85,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "main_output = ''\nexpected_output = 'Predators and Prey:\\n  Bird eats Crab, Limpets, Mussels, Prawn and Whelk\\n  Crab eats Limpets and Mussels\\n  Fish eat...n  Herbivores: Limpets and Zooplankton\\n  Omnivores: Mussels\\n  Carnivores: Bird, Crab, Fish, Lobster, Prawn and Whelk'\n\n    def test_predators_and_prey(main_output, expected_output):\n        main_predators = extract_section(main_output, \"Predators and Prey\")\n        expected_predators = extract_section(expected_output, \"Predators and Prey\")\n    \n>       assert compare_lists(main_predators, expected_predators, is_predator_prey=True), \\\n            f\"Predators and Prey mismatch. \\nExpected: {expected_predators}\\nGot: {main_predators}\"\nE       AssertionError: Predators and Prey mismatch. \nE         Expected: ['Bird eats Crab, Limpets, Mussels, Prawn and Whelk', 'Crab eats Limpets and Mussels', 'Fish eats Prawn', 'Limpets eats Seaweed', 'Lobster eats Crab, Limpets, Mussels and Whelk', 'Mussels eats Phytoplankton and Zooplankton', 'Prawn eats Zooplankton', 'Whelk eats Limpets and Mussels', 'Zooplankton eats Phytoplankton']\nE         Got: []\nE       assert False\nE        +  where False = compare_lists([], ['Bird eats Crab, Limpets, Mussels, Prawn and Whelk', 'Crab eats Limpets and Mussels', 'Fish eats Prawn', 'Limpets eats Seaweed', 'Lobster eats Crab, Limpets, Mussels and Whelk', 'Mussels eats Phytoplankton and Zooplankton', ...], is_predator_prey=True)\n\ntest_Assignment4.py:85: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.34929121285677e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files2]",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_predators_and_prey[food_web_files2]",
+                "food_web_files2",
+                "test_Assignment4.py",
+                "code_s1mmm9zh"
+            ],
+            "setup": {
+                "duration": 0.016807675827294588,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.0001583790872246027,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_s1mmm9zh/test_Assignment4.py",
+                    "lineno": 85,
+                    "message": "AssertionError: Predators and Prey mismatch. \n  Expected: ['Grasshopper eats Grass', 'Hawk eats Grasshopper, Lizard, Mouse, Rabbit and Snake', 'Lizard eats Grasshopper', 'Mouse eats Grass', 'Rabbit eats Grass', 'Snake eats Mouse']\n  Got: []\nassert False\n +  where False = compare_lists([], ['Grasshopper eats Grass', 'Hawk eats Grasshopper, Lizard, Mouse, Rabbit and Snake', 'Lizard eats Grasshopper', 'Mouse eats Grass', 'Rabbit eats Grass', 'Snake eats Mouse'], is_predator_prey=True)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 85,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "main_output = ''\nexpected_output = 'Predators and Prey:\\n  Grasshopper eats Grass\\n  Hawk eats Grasshopper, Lizard, Mouse, Rabbit and Snake\\n  Lizard eat...\\n\\nFor an A+:\\n  Herbivores: Grasshopper, Mouse and Rabbit\\n  Omnivores: (None)\\n  Carnivores: Hawk, Lizard and Snake'\n\n    def test_predators_and_prey(main_output, expected_output):\n        main_predators = extract_section(main_output, \"Predators and Prey\")\n        expected_predators = extract_section(expected_output, \"Predators and Prey\")\n    \n>       assert compare_lists(main_predators, expected_predators, is_predator_prey=True), \\\n            f\"Predators and Prey mismatch. \\nExpected: {expected_predators}\\nGot: {main_predators}\"\nE       AssertionError: Predators and Prey mismatch. \nE         Expected: ['Grasshopper eats Grass', 'Hawk eats Grasshopper, Lizard, Mouse, Rabbit and Snake', 'Lizard eats Grasshopper', 'Mouse eats Grass', 'Rabbit eats Grass', 'Snake eats Mouse']\nE         Got: []\nE       assert False\nE        +  where False = compare_lists([], ['Grasshopper eats Grass', 'Hawk eats Grasshopper, Lizard, Mouse, Rabbit and Snake', 'Lizard eats Grasshopper', 'Mouse eats Grass', 'Rabbit eats Grass', 'Snake eats Mouse'], is_predator_prey=True)\n\ntest_Assignment4.py:85: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.538000449538231e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files3]",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_predators_and_prey[food_web_files3]",
+                "food_web_files3",
+                "test_Assignment4.py",
+                "code_s1mmm9zh"
+            ],
+            "setup": {
+                "duration": 0.01571494503878057,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00019036908634006977,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_s1mmm9zh/test_Assignment4.py",
+                    "lineno": 85,
+                    "message": "AssertionError: Predators and Prey mismatch. \n  Expected: ['Grasshopper eats Terrestrial plants', 'Harvest mouse eats Grasshopper and Terrestrial plants', 'Hawk eats Harvest mouse, Rat, Shrew and Vole', 'Heron eats Shrimp and Smelt', 'Mallard eats Grasshopper, Shrimp and Terrestrial plants', 'Owl eats Mallard, Rat, Sandpiper and Sparrow', 'Rat eats Grasshopper, Sparrow and Terrestrial plants', 'Sandpiper eats Shrimp', 'Shrew eats Grasshopper', 'Shrimp eats Aquatic plants', 'Smelt eats Aquatic plants and Shrimp', 'Sparrow eats Grasshopper and Terrestrial plants', 'Vole eats Grasshopper and Terrestrial plants']\n  Got: []\nassert False\n +  where False = compare_lists([], ['Grasshopper eats Terrestrial plants', 'Harvest mouse eats Grasshopper and Terrestrial plants', 'Hawk eats Harvest mo...Smelt', 'Mallard eats Grasshopper, Shrimp and Terrestrial plants', 'Owl eats Mallard, Rat, Sandpiper and Sparrow', ...], is_predator_prey=True)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 85,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "main_output = ''\nexpected_output = 'Predators and Prey:\\n  Grasshopper eats Terrestrial plants\\n  Harvest mouse eats Grasshopper and Terrestrial plants\\n...  Omnivores: Harvest mouse, Mallard, Rat, Smelt, Sparrow and Vole\\n  Carnivores: Hawk, Heron, Owl, Sandpiper and Shrew'\n\n    def test_predators_and_prey(main_output, expected_output):\n        main_predators = extract_section(main_output, \"Predators and Prey\")\n        expected_predators = extract_section(expected_output, \"Predators and Prey\")\n    \n>       assert compare_lists(main_predators, expected_predators, is_predator_prey=True), \\\n            f\"Predators and Prey mismatch. \\nExpected: {expected_predators}\\nGot: {main_predators}\"\nE       AssertionError: Predators and Prey mismatch. \nE         Expected: ['Grasshopper eats Terrestrial plants', 'Harvest mouse eats Grasshopper and Terrestrial plants', 'Hawk eats Harvest mouse, Rat, Shrew and Vole', 'Heron eats Shrimp and Smelt', 'Mallard eats Grasshopper, Shrimp and Terrestrial plants', 'Owl eats Mallard, Rat, Sandpiper and Sparrow', 'Rat eats Grasshopper, Sparrow and Terrestrial plants', 'Sandpiper eats Shrimp', 'Shrew eats Grasshopper', 'Shrimp eats Aquatic plants', 'Smelt eats Aquatic plants and Shrimp', 'Sparrow eats Grasshopper and Terrestrial plants', 'Vole eats Grasshopper and Terrestrial plants']\nE         Got: []\nE       assert False\nE        +  where False = compare_lists([], ['Grasshopper eats Terrestrial plants', 'Harvest mouse eats Grasshopper and Terrestrial plants', 'Hawk eats Harvest mo...Smelt', 'Mallard eats Grasshopper, Shrimp and Terrestrial plants', 'Owl eats Mallard, Rat, Sandpiper and Sparrow', ...], is_predator_prey=True)\n\ntest_Assignment4.py:85: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.640306234359741e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files4]",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_predators_and_prey[food_web_files4]",
+                "food_web_files4",
+                "test_Assignment4.py",
+                "code_s1mmm9zh"
+            ],
+            "setup": {
+                "duration": 0.01327957003377378,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00012846500612795353,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_s1mmm9zh/test_Assignment4.py",
+                    "lineno": 85,
+                    "message": "AssertionError: Predators and Prey mismatch. \n  Expected: ['Lion eats Zebra', 'Zebra eats Grass']\n  Got: []\nassert False\n +  where False = compare_lists([], ['Lion eats Zebra', 'Zebra eats Grass'], is_predator_prey=True)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 85,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "main_output = ''\nexpected_output = 'Predators and Prey:\\n  Lion eats Zebra\\n  Zebra eats Grass\\n\\nApex Predators: Lion\\nProducers: Grass\\nMost Flexible E...eights:\\n  Grass: 0\\n  Lion: 2\\n  Zebra: 1\\n\\nFor an A+:\\n  Herbivores: Zebra\\n  Omnivores: (None)\\n  Carnivores: Lion'\n\n    def test_predators_and_prey(main_output, expected_output):\n        main_predators = extract_section(main_output, \"Predators and Prey\")\n        expected_predators = extract_section(expected_output, \"Predators and Prey\")\n    \n>       assert compare_lists(main_predators, expected_predators, is_predator_prey=True), \\\n            f\"Predators and Prey mismatch. \\nExpected: {expected_predators}\\nGot: {main_predators}\"\nE       AssertionError: Predators and Prey mismatch. \nE         Expected: ['Lion eats Zebra', 'Zebra eats Grass']\nE         Got: []\nE       assert False\nE        +  where False = compare_lists([], ['Lion eats Zebra', 'Zebra eats Grass'], is_predator_prey=True)\n\ntest_Assignment4.py:85: AssertionError"
+            },
+            "teardown": {
+                "duration": 9.30598471313715e-05,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_Assignment4.py::test_predators_and_prey[food_web_files5]",
+            "lineno": 80,
+            "outcome": "failed",
+            "keywords": [
+                "test_predators_and_prey[food_web_files5]",
+                "food_web_files5",
+                "test_Assignment4.py",
+                "code_s1mmm9zh"
+            ],
+            "setup": {
+                "duration": 0.015207584016025066,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 0.00016422918997704983,
+                "outcome": "failed",
+                "crash": {
+                    "path": "/tmp/code_s1mmm9zh/test_Assignment4.py",
+                    "lineno": 85,
+                    "message": "AssertionError: Predators and Prey mismatch. \n  Expected: ['Goat eats Plants', 'Jackal eats Goat and Rabbit', 'Kite eats Mouse and Snake', 'Lion eats Goat, Jackal and Wild Cat', 'Mouse eats Plants', 'Owl eats Mouse', 'Rabbit eats Plants', 'Snake eats Mouse', 'Wild Cat eats Mouse and Rabbit']\n  Got: []\nassert False\n +  where False = compare_lists([], ['Goat eats Plants', 'Jackal eats Goat and Rabbit', 'Kite eats Mouse and Snake', 'Lion eats Goat, Jackal and Wild Cat', 'Mouse eats Plants', 'Owl eats Mouse', ...], is_predator_prey=True)"
+                },
+                "traceback": [
+                    {
+                        "path": "test_Assignment4.py",
+                        "lineno": 85,
+                        "message": "AssertionError"
+                    }
+                ],
+                "longrepr": "main_output = ''\nexpected_output = 'Predators and Prey:\\n  Goat eats Plants\\n  Jackal eats Goat and Rabbit\\n  Kite eats Mouse and Snake\\n  Lion eats Goat...\\n  Herbivores: Goat, Mouse and Rabbit\\n  Omnivores: (None)\\n  Carnivores: Jackal, Kite, Lion, Owl, Snake and Wild Cat'\n\n    def test_predators_and_prey(main_output, expected_output):\n        main_predators = extract_section(main_output, \"Predators and Prey\")\n        expected_predators = extract_section(expected_output, \"Predators and Prey\")\n    \n>       assert compare_lists(main_predators, expected_predators, is_predator_prey=True), \\\n            f\"Predators and Prey mismatch. \\nExpected: {expected_predators}\\nGot: {main_predators}\"\nE       AssertionError: Predators and Prey mismatch. \nE         Expected: ['Goat eats Plants', 'Jackal eats Goat and Rabbit', 'Kite eats Mouse and Snake', 'Lion eats Goat, Jackal and Wild Cat', 'Mouse eats Plants', 'Owl eats Mouse', 'Rabbit eats Plants', 'Snake eats Mouse', 'Wild Cat eats Mouse and Rabbit']\nE         Got: []\nE       assert False\nE        +  where False = compare_lists([], ['Goat eats Plants', 'Jackal eats Goat and Rabbit', 'Kite eats Mouse and Snake', 'Lion eats Goat, Jackal and Wild Cat', 'Mouse eats Plants', 'Owl eats Mouse', ...], is_predator_prey=True)\n\ntest_Assignment4.py:85: AssertionError"
+            },
+            "teardown": {
+                "duration": 8.800206705927849e-05,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

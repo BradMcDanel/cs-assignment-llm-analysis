@@ -1,0 +1,25 @@
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The dataset contains information on fatal police shootings in the United States, compiled by the Washington Post. It includes data such as the date of the incident, the type of threat presented, whether the suspect was armed, and demographic information of the individuals involved. This data has been collected from news reports, public records, and social media.
+
+Question 2:
+--------------------------------------------------------
+Column "id": This is a unique identifier for each incident. Examples include 3, 4, 5.
+Column "date": This column records the date of the shooting. Examples include 2015-01-02, 2015-01-03.
+Column "threat_type": Indicates the type of threat perceived. Examples include "point", "move".
+Column "flee_status": Describes the suspect's status regarding attempting to flee. Examples include "not", "car".
+Column "armed_with": Describes what the suspect was armed with. Examples include "gun", "knife", "unarmed".
+Column "city": The city where the incident occurred. Examples include "Shelton", "Aloha".
+Column "state": The state where the incident occurred. Examples include "WA", "OR".
+Column "name": The name of the individual involved in the shooting. Examples include "Tim Elliot", "Lewis Lee Lembke".
+Column "age": The age of the individual. Examples include 53, 47.
+Column "gender": The gender of the individual. Examples include "male", "female".
+Column "race": The race of the individual. Examples include "W", "B", "H".
+
+Question 3:
+--------------------------------------------------------
+According to a 2020 estimate from the U.S. Census Bureau, approximately 13.4% of the United States population is Black or African American. (Source: U.S. Census Bureau)

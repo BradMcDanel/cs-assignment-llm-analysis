@@ -1,0 +1,92 @@
+Fatal Police Shootings
+
+********************************************************************************************************************************
+Task 1, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The Washington Post has compiled a database of every fatal shooting in the United States by a police officer in the line of duty since January 1, 2015. This data is collected from news reports, social media posts, and police reports. It includes information about the race, age, and gender of the deceased, as well as details about whether the person was armed and the circumstances of the shooting.
+
+Question 2:
+--------------------------------------------------------
+id: Unique identifier for each incident
+date: Date of the incident (YYYY-MM-DD format)
+threat_type: Type of threat posed by the deceased
+flee_status: Whether the deceased was attempting to flee
+armed_with: Type of weapon, if any, the deceased was armed with
+city: City where the incident occurred
+county: County where the incident occurred
+state: State where the incident occurred
+latitude: Latitude coordinate of the incident location
+longitude: Longitude coordinate of the incident location
+location_precision: Precision of the location data
+name: Name of the deceased
+age: Age of the deceased
+gender: Gender of the deceased
+race: Race of the deceased (W: White, B: Black, A: Asian, H: Hispanic, O: Other)
+race_source: Source of the race information
+was_mental_illness_related: Whether mental illness was related to the incident
+body_camera: Whether body camera footage is available
+agency_ids: Identifiers for the law enforcement agencies involved
+
+Question 3:
+--------------------------------------------------------
+According to the U.S. Census Bureau's 2020 data, approximately 13.4% of the United States population identifies as Black or African American alone.
+
+Source: U.S. Census Bureau, QuickFacts: United States, https://www.census.gov/quickfacts/fact/table/US/PST045222
+
+********************************************************************************************************************************
+Task 2, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The database stores information from the following columns: id, name, date, armed_with, age, gender, race, and state.
+
+Question 2:
+--------------------------------------------------------
+The keys in the database are the unique identifier (id) for each incident.
+
+Question 3:
+--------------------------------------------------------
+The type of the values in the database is dict (dictionary).
+
+Question 4:
+--------------------------------------------------------
+Each value in the database is a dictionary containing information about a specific incident. For example:
+{
+    'name': 'John Doe',
+    'date': '2015-01-02',
+    'armed': 'gun',
+    'age': '35',
+    'gender': 'male',
+    'race': 'W',
+    'state': 'CA'
+}
+
+********************************************************************************************************************************
+Task 3, write your answers to the corresponding questions.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+The proportion of fatal police shootings with a black subject (approximately 23.2%) is significantly higher than the proportion of black people in the United States population (13.4%). This suggests that black individuals are disproportionately represented among the subjects of fatal police shootings compared to their representation in the general population.
+
+Question 2:
+--------------------------------------------------------
+The proportion of unarmed fatal police shootings with a black subject (approximately 31.9%) is even higher than the proportion of black subjects in all police shootings (23.2%). Both of these proportions are significantly higher than the representation of black people in the United States population (13.4%). This data suggests that black individuals, especially when unarmed, are disproportionately represented among the subjects of fatal police shootings.
+
+********************************************************************************************************************************
+Task 4, write your answers to the corresponding question.  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+Through this project, I learned the importance of data analysis in understanding complex social issues. Working with real-world data on fatal police shootings provided valuable insights into the disproportionate impact on certain racial groups, particularly Black individuals. I was struck by the stark contrast between the representation of Black people in the general population and their representation among victims of police shootings, especially unarmed victims.
+
+The process of working with the data taught me the importance of careful data handling and interpretation. It reinforced the need for clean, well-structured data and the power of Python dictionaries for organizing and analyzing complex datasets. I also learned the value of breaking down a large problem into smaller, manageable tasks and the importance of clear, well-commented code.
+
+This project highlighted the potential of data science to shed light on critical social issues and the responsibility that comes with interpreting and presenting such sensitive data. It emphasized the need for continued research and analysis to address systemic issues in law enforcement and racial disparities in policing outcomes.
+
+Overall, this project was a sobering but enlightening experience that demonstrated the real-world applications of programming and data analysis skills in addressing important societal challenges.

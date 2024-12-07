@@ -1,0 +1,28 @@
+# Wordle Implementation Write-up
+
+## Overview
+
+This implementation of Wordle uses a graphical interface provided by the WordleGraphics module. The game randomly selects a five-letter word, and the player must guess this word within six attempts. The implementation is divided into milestones, each building upon the previous.
+
+## Milestones
+
+1. **Display the Secret Word:** The first milestone involves selecting a random word and displaying it in the first row of the game board. This step helps verify that the word selection and display mechanisms are functioning.
+
+2. **Word Validation:** The second milestone checks if the word entered by the player is valid. If the word is not in the provided dictionary, a message is displayed, allowing players to correct their guess before proceeding.
+
+3. **Box Coloring:** In the third milestone, the game colors the boxes based on the player's guess. Correctly positioned letters are colored green, letters present in the word but in the wrong position are yellow, and letters not in the word are gray.
+
+4. **Key Coloring:** The final milestone involves updating the virtual keyboard's colors to reflect the player's guesses, helping players keep track of which letters have been used.
+
+## Challenges
+
+- Handling duplicate letters in the secret word and guesses required careful tracking of letter occurrences.
+- Ensuring the graphical display updated correctly without reusing colors improperly on the keyboard.
+
+## Extensions
+
+Potential extensions include creating a more balanced dictionary, adding animations, and implementing a scoring system to track player statistics across games.
+
+## Conclusion
+
+The Wordle game implementation provides a fun and interactive way to practice Python programming, particularly in handling strings and graphical interfaces.

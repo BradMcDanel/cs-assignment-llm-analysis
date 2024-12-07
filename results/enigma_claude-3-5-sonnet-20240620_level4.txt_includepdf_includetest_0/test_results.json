@@ -1,8 +1,8 @@
 {
-    "created": 1719502655.9051843,
-    "duration": 0.026864051818847656,
+    "created": 1730997946.2785845,
+    "duration": 0.027281761169433594,
     "exitcode": 1,
-    "root": "/tmp/code__nyb8s67",
+    "root": "/tmp/code_3mna85rl",
     "environment": {},
     "summary": {
         "passed": 6,
@@ -76,18 +76,18 @@
             "keywords": [
                 "test_enigma_initialization",
                 "test_enigma.py",
-                "code__nyb8s67"
+                "code_3mna85rl"
             ],
             "setup": {
-                "duration": 7.828208617866039e-05,
+                "duration": 8.371192961931229e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 7.583806291222572e-05,
+                "duration": 7.639499381184578e-05,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 4.653097130358219e-05,
+                "duration": 6.447290070354939e-05,
                 "outcome": "passed"
             }
         },
@@ -98,18 +98,18 @@
             "keywords": [
                 "test_key_press_and_release",
                 "test_enigma.py",
-                "code__nyb8s67"
+                "code_3mna85rl"
             ],
             "setup": {
-                "duration": 4.593096673488617e-05,
+                "duration": 4.8724934458732605e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 7.436913438141346e-05,
+                "duration": 7.457984611392021e-05,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 3.8255006074905396e-05,
+                "duration": 4.03369776904583e-05,
                 "outcome": "passed"
             }
         },
@@ -120,18 +120,18 @@
             "keywords": [
                 "test_rotor_advance",
                 "test_enigma.py",
-                "code__nyb8s67"
+                "code_3mna85rl"
             ],
             "setup": {
-                "duration": 4.292186349630356e-05,
+                "duration": 4.282919690012932e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 6.758095696568489e-05,
+                "duration": 6.492086686193943e-05,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 3.704288974404335e-05,
+                "duration": 3.9794016629457474e-05,
                 "outcome": "passed"
             }
         },
@@ -142,18 +142,18 @@
             "keywords": [
                 "test_rotor_click",
                 "test_enigma.py",
-                "code__nyb8s67"
+                "code_3mna85rl"
             ],
             "setup": {
-                "duration": 4.127202555537224e-05,
+                "duration": 4.192907363176346e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 5.9986021369695663e-05,
+                "duration": 5.928915925323963e-05,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 3.653811290860176e-05,
+                "duration": 4.035094752907753e-05,
                 "outcome": "passed"
             }
         },
@@ -164,18 +164,18 @@
             "keywords": [
                 "test_enigma_encryption",
                 "test_enigma.py",
-                "code__nyb8s67"
+                "code_3mna85rl"
             ],
             "setup": {
-                "duration": 4.1665975004434586e-05,
+                "duration": 4.4977059587836266e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 8.378690108656883e-05,
+                "duration": 8.445605635643005e-05,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 3.651203587651253e-05,
+                "duration": 3.764289431273937e-05,
                 "outcome": "passed"
             }
         },
@@ -186,17 +186,17 @@
             "keywords": [
                 "test_enigma_decryption",
                 "test_enigma.py",
-                "code__nyb8s67"
+                "code_3mna85rl"
             ],
             "setup": {
-                "duration": 4.472699947655201e-05,
+                "duration": 4.241010174155235e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 0.0002430069725960493,
+                "duration": 0.00019963481463491917,
                 "outcome": "failed",
                 "crash": {
-                    "path": "/tmp/code__nyb8s67/test_enigma.py",
+                    "path": "/tmp/code_3mna85rl/test_enigma.py",
                     "lineno": 69,
                     "message": "AssertionError: assert 'WHQFD' == 'HELLO'\n  - HELLO\n  + WHQFD"
                 },
@@ -210,7 +210,7 @@
                 "longrepr": "def test_enigma_decryption():\n        model = EnigmaModel()\n        plaintext = \"HELLO\"\n        ciphertext = \"\"\n        for char in plaintext:\n            model.key_pressed(char)\n            ciphertext += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n    \n        # Reset rotor positions\n        for i in range(N_ROTORS):\n            while model.get_rotor_letter(i) != 'A':\n                model.rotor_clicked(i)\n    \n        decrypted = \"\"\n        for char in ciphertext:\n            model.key_pressed(char)\n            decrypted += next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n    \n>       assert decrypted == plaintext\nE       AssertionError: assert 'WHQFD' == 'HELLO'\nE         - HELLO\nE         + WHQFD\n\ntest_enigma.py:69: AssertionError"
             },
             "teardown": {
-                "duration": 6.301421672105789e-05,
+                "duration": 6.942497566342354e-05,
                 "outcome": "passed"
             }
         },
@@ -221,18 +221,18 @@
             "keywords": [
                 "test_rotor_full_rotation",
                 "test_enigma.py",
-                "code__nyb8s67"
+                "code_3mna85rl"
             ],
             "setup": {
-                "duration": 5.2140094339847565e-05,
+                "duration": 5.940091796219349e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 0.00017316010780632496,
+                "duration": 0.00016741803847253323,
                 "outcome": "passed"
             },
             "teardown": {
-                "duration": 4.004710353910923e-05,
+                "duration": 4.233303479850292e-05,
                 "outcome": "passed"
             }
         },
@@ -243,19 +243,19 @@
             "keywords": [
                 "test_reflector",
                 "test_enigma.py",
-                "code__nyb8s67"
+                "code_3mna85rl"
             ],
             "setup": {
-                "duration": 4.3252017349004745e-05,
+                "duration": 5.17750158905983e-05,
                 "outcome": "passed"
             },
             "call": {
-                "duration": 0.00026020011864602566,
+                "duration": 0.00026071001775562763,
                 "outcome": "failed",
                 "crash": {
-                    "path": "/tmp/code__nyb8s67/test_enigma.py",
+                    "path": "/tmp/code_3mna85rl/test_enigma.py",
                     "lineno": 91,
-                    "message": "AssertionError: assert 18 == 13\n +  where 18 = len({'A', 'B', 'C', 'D', 'E', 'F', ...})\n +    where {'A', 'B', 'C', 'D', 'E', 'F', ...} = set(dict_values(['Q', 'J', 'C', 'P', 'O', 'I', 'A', 'L', 'X', 'C', 'B', 'F', 'F', 'B', 'S', 'S', 'H', 'N', 'I', 'E', 'U', 'R', 'J', 'H', 'B', 'D']))\n +      where dict_values(['Q', 'J', 'C', 'P', 'O', 'I', 'A', 'L', 'X', 'C', 'B', 'F', 'F', 'B', 'S', 'S', 'H', 'N', 'I', 'E', 'U', 'R', 'J', 'H', 'B', 'D']) = <built-in method values of dict object at 0x72c4d40e4dc0>()\n +        where <built-in method values of dict object at 0x72c4d40e4dc0> = {'A': 'Q', 'B': 'J', 'C': 'C', 'D': 'P', ...}.values"
+                    "message": "AssertionError: assert 18 == 13\n +  where 18 = len({'A', 'B', 'C', 'D', 'E', 'F', ...})\n +    where {'A', 'B', 'C', 'D', 'E', 'F', ...} = set(dict_values(['Q', 'J', 'C', 'P', 'O', 'I', 'A', 'L', 'X', 'C', 'B', 'F', 'F', 'B', 'S', 'S', 'H', 'N', 'I', 'E', 'U', 'R', 'J', 'H', 'B', 'D']))\n +      where dict_values(['Q', 'J', 'C', 'P', 'O', 'I', 'A', 'L', 'X', 'C', 'B', 'F', 'F', 'B', 'S', 'S', 'H', 'N', 'I', 'E', 'U', 'R', 'J', 'H', 'B', 'D']) = <built-in method values of dict object at 0x7c1917de9c00>()\n +        where <built-in method values of dict object at 0x7c1917de9c00> = {'A': 'Q', 'B': 'J', 'C': 'C', 'D': 'P', ...}.values"
                 },
                 "traceback": [
                     {
@@ -264,10 +264,10 @@
                         "message": "AssertionError"
                     }
                 ],
-                "longrepr": "def test_reflector():\n        model = EnigmaModel()\n        results = {}\n        for char in ALPHABET:\n            model.key_pressed(char)\n            result = next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n            results[char] = result\n    \n        # Check that we have 13 pairs of letters\n>       assert len(set(results.values())) == 13\nE       AssertionError: assert 18 == 13\nE        +  where 18 = len({'A', 'B', 'C', 'D', 'E', 'F', ...})\nE        +    where {'A', 'B', 'C', 'D', 'E', 'F', ...} = set(dict_values(['Q', 'J', 'C', 'P', 'O', 'I', 'A', 'L', 'X', 'C', 'B', 'F', 'F', 'B', 'S', 'S', 'H', 'N', 'I', 'E', 'U', 'R', 'J', 'H', 'B', 'D']))\nE        +      where dict_values(['Q', 'J', 'C', 'P', 'O', 'I', 'A', 'L', 'X', 'C', 'B', 'F', 'F', 'B', 'S', 'S', 'H', 'N', 'I', 'E', 'U', 'R', 'J', 'H', 'B', 'D']) = <built-in method values of dict object at 0x72c4d40e4dc0>()\nE        +        where <built-in method values of dict object at 0x72c4d40e4dc0> = {'A': 'Q', 'B': 'J', 'C': 'C', 'D': 'P', ...}.values\n\ntest_enigma.py:91: AssertionError"
+                "longrepr": "def test_reflector():\n        model = EnigmaModel()\n        results = {}\n        for char in ALPHABET:\n            model.key_pressed(char)\n            result = next(letter for letter in ALPHABET if model.is_lamp_on(letter))\n            model.key_released(char)\n            results[char] = result\n    \n        # Check that we have 13 pairs of letters\n>       assert len(set(results.values())) == 13\nE       AssertionError: assert 18 == 13\nE        +  where 18 = len({'A', 'B', 'C', 'D', 'E', 'F', ...})\nE        +    where {'A', 'B', 'C', 'D', 'E', 'F', ...} = set(dict_values(['Q', 'J', 'C', 'P', 'O', 'I', 'A', 'L', 'X', 'C', 'B', 'F', 'F', 'B', 'S', 'S', 'H', 'N', 'I', 'E', 'U', 'R', 'J', 'H', 'B', 'D']))\nE        +      where dict_values(['Q', 'J', 'C', 'P', 'O', 'I', 'A', 'L', 'X', 'C', 'B', 'F', 'F', 'B', 'S', 'S', 'H', 'N', 'I', 'E', 'U', 'R', 'J', 'H', 'B', 'D']) = <built-in method values of dict object at 0x7c1917de9c00>()\nE        +        where <built-in method values of dict object at 0x7c1917de9c00> = {'A': 'Q', 'B': 'J', 'C': 'C', 'D': 'P', ...}.values\n\ntest_enigma.py:91: AssertionError"
             },
             "teardown": {
-                "duration": 6.108288653194904e-05,
+                "duration": 6.203306838870049e-05,
                 "outcome": "passed"
             }
         }
